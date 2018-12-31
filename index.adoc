@@ -1,9 +1,8 @@
----
-layout: default
-title: Virtual Domain-Driven Design
-permalink: /
----
+:page-layout: default
+:page-title: Virtual Domain-Driven Design
+:page-permalink: /
 
+++++
 <!-- Slider Start -->
 <section id="slider">
   <div class="container">
@@ -52,4 +51,4 @@ permalink: /
   </div>
 </div>
 </section>
-
+++++
