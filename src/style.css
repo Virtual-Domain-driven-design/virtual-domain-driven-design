@@ -1,0 +1,81 @@
+ @tailwind preflight;
+
+ @tailwind components;
+
+ @tailwind utilities;
+
+a {
+    @apply text-white no-underline;
+}
+
+
+.navbar {
+    @apply bg-white text-blue-darker h-16 fixed pin-t pin-x z-50;
+}
+
+.navbar-transparent {
+    transition: background-color .3s ease-in-out;
+    @apply bg-transparent text-white;
+}
+
+.navbar-opaque {
+    transition: background-color .3s ease-in-out;
+    @apply bg-grey-dark shadow-md;
+}
+ 
+.navbar-permanent {
+    @apply navbar-opaque;    
+}
+
+.nav-item {
+    @apply p-4 text-white font-bold text-2xl cursor-pointer;
+}
+
+.nav-item:hover {
+    @apply bg-grey text-blue-darker;
+}
+ 
+.overlay {
+    @apply z-0 absolute pin bg-black opacity-75;
+}
+
+.hero {
+    height: fit-content;
+    @apply relative bg-scroll h-full;
+}
+
+.hero-content {
+    @apply h-full flex flex-col items-center justify-start;
+}
+
+.hero-logo {
+    @apply z-10 mt-24;
+}
+
+.hero-text {
+    @apply z-10 text-white leading-loose text-2xl;
+}
+
+.skyline {
+    opacity: 0.6;
+    min-width: 100%;
+    @apply absolute pin-b;
+}
+
+.tickets {
+    height: 1000px;
+    width: 100%;
+}
+
+
+.section{
+    @apply bg-grey-lighter text-blue-darker flex flex-col items-center justify-center;
+}
+ 
+.content{
+    @apply bg-grey-lighter leading-normal text-justify text-blue-darkest py-4 flex flex-col items-center justify-center;
+}
+
+.footer {
+    @apply bg-grey-dark flex flex-col items-center justify-center;
+}
