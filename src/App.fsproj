@@ -8,7 +8,7 @@
     <Compile Include="View.Navigation.fs" />
     <Compile Include="View.CodeOfConduct.fs" />
     <Compile Include="View.Footer.fs" />
-    <Compile Include="App.fs" />
+    <Compile Include="Main.fs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Fable.Core" Version="2.0.2" />
