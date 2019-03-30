@@ -9,6 +9,7 @@ open App.Types
 open App.Interop
 open App.Views.Navigation
 open App.Views.CodeOfConduct
+open App.Views.Hero
 open App.Views.About
 open App.Views.Footer
 
@@ -30,7 +31,9 @@ let update (msg:Msg) (model:Model) =
       { model with view = p ; menu_open = false }, Cmd.attemptFunc scrollIntoView "top" OnLogError
       
   | ScrollTo s ->
-      { model with menu_open = false } , Cmd.attemptFunc scrollIntoView s OnLogError
+      { model with
+            view = Landingpage
+            menu_open = false } , Cmd.attemptFunc scrollIntoView s OnLogError
       
   | OnLogError e ->
       model, Cmd.none
@@ -40,19 +43,9 @@ let update (msg:Msg) (model:Model) =
 
 
 let landingpage model dispatch =
-    div [ Class "hero"
-          Style [ Background "url(./img/kandddinsky.jpg)"
-                  BackgroundSize "cover"
-                  BackgroundPosition "center" ] ]
-      [ div [ Class "overlay" ] []
-        div [ Class "hero-content" ]
-          [ div [ Class "h-64"] []
-            div [ Class "hero-text sm:text-3xl md:text-4xl xl:text-5xl w-full sm:w-3/4 mt-8 flex flex-col items-center justify-center" ]
-              [ div [ Class "font-black" ]
-                 [ str "Virtual Domain-Driven Design" ]                  
-                div [ Class "text-xl font-medium" ] 
-                  [ str "An online Domain-Driven Design meetup and conference." ] ] 
-            div [ Class "h-64"] []   ] ] 
+  div []
+    [ hero model dispatch
+      about model dispatch ]
 
 
 let view (model:Model) dispatch =

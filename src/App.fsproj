@@ -11,6 +11,7 @@
     <Compile Include="Interop.fs" />
     <Compile Include="Views\View.Navigation.fs" />
     <Compile Include="Views/View.CodeOfConduct.fs" />
+    <Compile Include="Views\View.Hero.fs" />
     <Compile Include="Views/View.About.fs" />
     <Compile Include="Views/View.Footer.fs" />
     <Compile Include="Main.fs" />
