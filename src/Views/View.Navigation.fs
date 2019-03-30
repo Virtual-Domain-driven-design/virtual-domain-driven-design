@@ -1,4 +1,4 @@
-module App.View_Navigation
+module App.Views.Navigation
 
 open App.Types
 open Fable.Helpers.React

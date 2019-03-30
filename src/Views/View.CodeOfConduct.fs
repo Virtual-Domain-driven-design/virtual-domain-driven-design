@@ -1,11 +1,11 @@
-module App.View_CodeOfConduct
+module App.Views.CodeOfConduct
 
 open Fable.Helpers.React
 open Fable.Helpers.React.Props
 
 
 let codeofconduct model dispatch =
-    div [ Class "content pt-12" ; Id "codeofconduct"]
+    div [ Class "content" ; Id "codeofconduct"]
       [ div [ Class "w-4/5 md:w-1/2 lg:w-1/2 xl:w-1/3" ]
           [ h2 [ ]
               [ str "Code of conduct"]

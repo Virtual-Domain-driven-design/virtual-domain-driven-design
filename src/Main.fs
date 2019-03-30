@@ -5,12 +5,12 @@ open Elmish.React
 open Fable.Helpers.React
 open Fable.Helpers.React.Props
 open Fable.Core.JsInterop
-open Fable.Import.Browser
 open App.Types
 open App.Interop
-open App.View_Navigation
-open App.View_CodeOfConduct
-open App.View_Footer
+open App.Views.Navigation
+open App.Views.CodeOfConduct
+open App.Views.About
+open App.Views.Footer
 
 
 importAll "./style.css"
