@@ -5,22 +5,22 @@
  @tailwind utilities;
 
 a {
-    @apply text-white no-underline;
+    @apply text-blue-dark no-underline;
 }
 
 
 .navbar {
-    @apply bg-white text-blue-darker h-16 fixed pin-t pin-x z-50;
+    @apply bg-white text-blue-dark h-16 fixed pin-t pin-x z-50;
 }
 
 .navbar-transparent {
     transition: background-color .3s ease-in-out;
-    @apply bg-transparent text-white;
+    @apply bg-transparent;
 }
 
 .navbar-opaque {
     transition: background-color .3s ease-in-out;
-    @apply bg-grey-dark shadow-md;
+    @apply bg-white shadow-md;
 }
  
 .navbar-permanent {
@@ -28,11 +28,11 @@ a {
 }
 
 .nav-item {
-    @apply p-4 text-white font-bold text-2xl cursor-pointer;
+    @apply p-4 font-bold text-2xl cursor-pointer;
 }
 
 .nav-item:hover {
-    @apply bg-grey text-blue-darker;
+    @apply rounded-lg bg-grey-light text-blue-darker;
 }
  
 .overlay {
@@ -77,5 +77,5 @@ a {
 }
 
 .footer {
-    @apply bg-grey-dark flex flex-col items-center justify-center;
+    @apply bg-white flex flex-col items-center justify-center p-4;
 }
