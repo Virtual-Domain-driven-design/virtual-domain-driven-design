@@ -34,7 +34,20 @@ a {
 .nav-item:hover {
     @apply rounded-lg bg-grey-light text-blue-darker;
 }
+
+.link {
+    @apply text-blue-dark;
+}
  
+.link:hover {
+    @apply text-blue-lighter cursor-pointer;
+}
+ 
+.textwrap {
+    clear: right;
+    float: left;    
+}
+
 .overlay {
     @apply z-0 absolute pin bg-black opacity-75;
 }
@@ -56,24 +69,12 @@ a {
     @apply z-10 text-white leading-loose text-2xl;
 }
 
-.skyline {
-    opacity: 0.6;
-    min-width: 100%;
-    @apply absolute pin-b;
-}
-
-.tickets {
-    height: 1000px;
-    width: 100%;
-}
-
-
 .section{
     @apply bg-grey-lighter text-blue-darker flex flex-col items-center justify-center;
 }
  
 .content{
-    @apply bg-grey-lighter leading-normal text-justify text-blue-darkest py-4 flex flex-col items-center justify-center;
+    @apply leading-normal text-justify text-blue-darkest py-4 flex flex-col items-center justify-center;
 }
 
 .footer {
