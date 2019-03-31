@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="../tailwind.js">
+      <Link>tailwind.js</Link>
+    </Content>
+    <Content Include="style.css" />
+    <Compile Include="Types.fs" />
+    <Compile Include="Interop.fs" />
+    <Compile Include="Views\View.Navigation.fs" />
+    <Compile Include="Views/View.CodeOfConduct.fs" />
+    <Compile Include="Views\View.Hero.fs" />
+    <Compile Include="Views/View.About.fs" />
+    <Compile Include="Views\View.Sessions.fs" />
+    <Compile Include="Views/View.Footer.fs" />
+    <Compile Include="Main.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Fable.Core" Version="2.0.2" />
+    <PackageReference Include="Fable.Elmish.React" Version="2.1.0" />
+  </ItemGroup>
+</Project>
