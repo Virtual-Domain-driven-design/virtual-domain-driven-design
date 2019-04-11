@@ -16,7 +16,7 @@ type Sessiondetails = {
   date: DateTime
   img: string option
   description: string
-  link: Link option
+  links: Link list
 }
 
 type Session =

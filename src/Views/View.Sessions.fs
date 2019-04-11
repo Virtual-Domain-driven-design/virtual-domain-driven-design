@@ -19,14 +19,12 @@ let session dispatch s =
           str s.description ]
         
       div [ Class "mt-4 pt-2 border-t border-solid" ]
-        [ (match s.link with
-            | Some l ->
-                  a [ Class "link"
-                      Href l.url
-                      Target "_blank"]
-                    [ str l.label ]
-            | None -> div [] [] )
-         ] ]
+        (s.links
+        |> List.map (fun l ->
+              a [ Class "link mr-4"
+                  Href l.url
+                  Target "_blank"]
+                [ str l.label ])) ] 
     
 let sessions model dispatch =
   div [ Class "content bg-grey-lighter" ; Id "sessions"]
