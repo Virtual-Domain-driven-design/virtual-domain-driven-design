@@ -7,8 +7,10 @@ open App.Types
 
 let session dispatch s =
   div [ Class "bg-white w-full rounded-lg shadow-lg p-2 md:p-8 mt-6" ]
-    [ div [ Class "font-bold my-2" ]
+    [ div [ Class "font-bold" ]
         [ str s.title ]
+      div [ Class "mb-2 text-grey-dark text-sm" ]
+        [ str s.date ]
       div [ Class "" ]
         [ (match s.img with
             | Some pic ->

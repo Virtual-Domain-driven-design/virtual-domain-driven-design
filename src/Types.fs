@@ -13,7 +13,7 @@ type Link = {
 
 type Sessiondetails = {
   title: string
-  date: DateTime
+  date: string
   img: string option
   description: string
   links: Link list
