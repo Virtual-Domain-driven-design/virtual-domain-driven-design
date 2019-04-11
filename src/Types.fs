@@ -15,6 +15,7 @@ type Sessiondetails = {
   title: string
   date: string
   img: string option
+  video: string option
   description: string
   links: Link list
 }

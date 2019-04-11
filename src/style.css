@@ -43,10 +43,6 @@ a {
     @apply text-blue-lighter cursor-pointer;
 }
  
-.textwrap {
-    clear: right;
-    float: left;    
-}
 
 .overlay {
     @apply z-0 absolute pin bg-black opacity-75;
@@ -89,4 +85,14 @@ a {
 
 .footer {
     @apply bg-white flex flex-col items-center justify-center p-4;
+}
+
+.videoframe {
+    padding-top:56.25%;
+    @apply relative
+}
+
+.videostream {
+    top:0;left:0;width:100%;height:100%;
+    @apply absolute;
 }
