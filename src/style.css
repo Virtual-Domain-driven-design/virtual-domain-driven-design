@@ -10,7 +10,7 @@ a {
 
 
 .navbar {
-    @apply bg-white text-blue-dark h-16 fixed pin-t pin-x z-50;
+    @apply bg-white text-blue-dark h-16 sticky pin-t pin-x z-50;
 }
 
 .navbar-transparent {
@@ -66,8 +66,18 @@ a {
 }
 
 .hero-text {
-    @apply z-10 text-white leading-loose text-2xl;
+    @apply z-10 text-white leading-loose;
 }
+
+.hero-title {
+    font-size: calc(2vw + 1rem);
+    @apply font-black;
+}
+
+ .hero-subtitle {
+     font-size: calc(1vw + 0.5rem);
+     @apply font-medium;
+ }
 
 .section{
     @apply bg-grey-lighter text-blue-darker flex flex-col items-center justify-center;

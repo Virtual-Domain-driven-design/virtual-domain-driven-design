@@ -57,7 +57,7 @@ let view (model:Model) dispatch =
         OnClick (fun _ -> Clicked_Anywhere |> dispatch )]    
     [ navbar model dispatch
       
-      div [ Class "pt-16" ]
+      div [ ]
         [ (match model.view with
           | Landingpage -> landingpage model dispatch
           | Code_of_conduct -> codeofconduct model dispatch )]
