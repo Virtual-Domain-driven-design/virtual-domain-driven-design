@@ -9,11 +9,12 @@
     <Content Include="style.css" />
     <Compile Include="Types.fs" />
     <Compile Include="Interop.fs" />
-    <Compile Include="Views\View.Navigation.fs" />
+    <Compile Include="Data\Queries.fs" />
+    <Compile Include="Views/View.Navigation.fs" />
     <Compile Include="Views/View.CodeOfConduct.fs" />
-    <Compile Include="Views\View.Hero.fs" />
+    <Compile Include="Views/View.Hero.fs" />
     <Compile Include="Views/View.About.fs" />
-    <Compile Include="Views\View.Sessions.fs" />
+    <Compile Include="Views/View.Sessions.fs" />
     <Compile Include="Views/View.Footer.fs" />
     <Compile Include="Main.fs" />
   </ItemGroup>

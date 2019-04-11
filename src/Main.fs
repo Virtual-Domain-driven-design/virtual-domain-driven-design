@@ -7,6 +7,7 @@ open Fable.Helpers.React.Props
 open Fable.Core.JsInterop
 open App.Types
 open App.Interop
+open App.Data
 open App.Views.Navigation
 open App.Views.CodeOfConduct
 open App.Views.Hero
@@ -14,12 +15,12 @@ open App.Views.About
 open App.Views.Sessions
 open App.Views.Footer
 
-
 importAll "./style.css"
 
 let init() = 
   { menu_open = false
     view = Landingpage
+    sessions = Queries.sessions
   }, Cmd.none
 
 
