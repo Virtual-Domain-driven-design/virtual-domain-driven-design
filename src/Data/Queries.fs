@@ -5,18 +5,20 @@ open App.Types
 
 let sessions =
     [
-//        Upcoming_session {
-//              title = "The amazing Spider-Kenney catches bugs"
-//              date = "Tuesday, June 5th. 2019 - 19:00 GMT"
-//              img = None
-//              video = None
-//              description = "Spider-Kenney, Spider-Kennes, does whatever a Spider-Kenney does. Spinns a web, Sticks a note, he has radio active code..."
-//              links =
-//                  [
-//                   { label = "Amazing link" ; url = "https://www.beamazed.com" }
-//                   { label = "Another amazing link" ; url = "https://www.beamazed.com" }
-//                   { label = "Follow the white rabbit" ; url = "https://www.beamazed.com" }
-//                  ] }
+        Upcoming_session {
+              title = "Live stream of DDD Budapest CraftConf meetup with Nick Tune and Helin Akgul"
+              date = "Wednesday, May 8th. 2019 - 18:30 GMT"
+              img = Some "https://secure.meetupstatic.com/photos/event/3/c/b/6/highres_480975542.jpeg"
+              video = None
+              description = "Nick Tune is coming to talk at Craft Conference (yaaay!!) and whilst he is here in Budapest he brings us one of his future talks (Strategic Microservice Patterns - find details below) and present it on this meetup, so DO NOT MISS IT :)
+                              I am also pleased to announce another great presenter Helin Akgul. She will be talking about DDD practices in TransferWise, and she will be giving some examples around how they are using product engineering to create domain experts, and tips and tricks to adopting DDD practices gradually.
+                              I will post the abstract of her talk very soon.
+                              "
+              links =
+                  [
+                      { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/261134675/" }
+                      { label = "Hosted by DDD Budapest" ; url = "https://www.meetup.com/DDD-Practitioners-in-Budapest/events/260694621/" }
+                  ] }
         
         Past_session {
               title = "Patterns for the People - Kevlin Henney"
@@ -33,12 +35,4 @@ let sessions =
                   { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/260116772/" }
                   { label = "Hosted by DDD Budapest" ; url = "https://www.meetup.com/DDD-Practitioners-in-Budapest/" }
                 ] }
-    
-//        Past_session {
-//              title = "This could have been another first session"
-//              date = "07.04.2019 - 19:00 GMT"
-//              img = Some "https://secure.meetupstatic.com/photos/event/d/8/f/0/highres_479875536.jpeg"
-//              video = None
-//              description = "... but noone came and so we wept for a few years and stared into the abyss... waiting for the unspoke horrors to return from the dream land of Kadath."
-//              links = List.empty }
     ]
