@@ -43,11 +43,30 @@ let session dispatch s =
         
 let sessions model dispatch =
   div [ Class "content bg-grey-lighter" ; Id "sessions"]
-    [ div [ Class "my-8 w-4/5 lg:w-2/3 xl:w-1/2" ]
-        [ h2 [ ]
-                [ str "Sessions"]
-          div [ Class "flex flex-col items-center justify-start" ]
-            (model.sessions
-            |> List.map (function Past_session s -> (session dispatch s) | Upcoming_session s -> (session dispatch s) ))
-            
-            ] ]
+    [ (match model.sessions
+        |> List.filter (function Past_session _ -> false | Upcoming_session _ -> true)
+        |> List.length with
+        | 0 -> div [] []
+        | _ -> div [ Class "my-8 w-4/5 lg:w-2/3 xl:w-1/2" ]
+                  [ h2 [ ]
+                          [ str "Upcoming Sessions"]
+                    div [ Class "flex flex-col items-center justify-start" ]
+                      (model.sessions
+                      |> List.filter (function Past_session _ -> false | Upcoming_session _ -> true)
+                      |> List.map (function Past_session s -> (session dispatch s) | Upcoming_session s -> (session dispatch s) ))
+                      ])
+      (match model.sessions
+        |> List.filter (function Past_session _ -> true | Upcoming_session _ -> false)
+        |> List.length with
+        | 0 -> div [] []
+        | _ -> div [ Class "my-8 w-4/5 lg:w-2/3 xl:w-1/2" ]
+                [ h2 [ ]
+                        [ str "Past Sessions"]
+                  div [ Class "flex flex-col items-center justify-start" ]
+                    (model.sessions
+                    |> List.filter (function Past_session _ -> true | Upcoming_session _ -> false)
+                    |> List.map (function Past_session s -> (session dispatch s) | Upcoming_session s -> (session dispatch s) ))
+                    ]) ]
+ 
+// let upcoming_sessions model dispatch =
+   
