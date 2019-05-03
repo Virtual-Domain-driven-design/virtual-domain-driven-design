@@ -46,7 +46,13 @@ let sessions model dispatch =
     [ (match model.sessions
         |> List.filter (function Past_session _ -> false | Upcoming_session _ -> true)
         |> List.length with
-        | 0 -> div [] []
+        | 0 -> div [ Class "my-8 w-4/5 lg:w-2/3 xl:w-1/2" ]
+                  [ h2 [  ]
+                          [ str "Upcoming Sessions"] 
+                    div [ Class "flex flex-col items-center justify-start" ]
+                      [ div [ Class "bg-white w-full rounded-lg shadow-lg p-2 md:p-8 mt-6" ]
+                          [ str "More sessions are coming to you eventually consistant, check again later...."]
+                      ] ]
         | _ -> div [ Class "my-8 w-4/5 lg:w-2/3 xl:w-1/2" ]
                   [ h2 [ ]
                           [ str "Upcoming Sessions"]
