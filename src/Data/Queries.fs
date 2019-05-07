@@ -10,6 +10,7 @@ let sessions =
               date = "Wednesday, May 8th. 2019 - 18:30 GMT"
               img = None
               video = Some "https://www.ustream.tv/embed/23647668?html5ui"
+              embedded = Some "https://www.ustream.tv/socialstream/23647668?videos=0"
               description = "Nick Tune is coming to talk at Craft Conference (yaaay!!) and whilst he is here in Budapest he brings us one of his future talks (Strategic Microservice Patterns - find details below) and present it on this meetup, so DO NOT MISS IT :)
                               I am also pleased to announce another great presenter Helin Akgul. She will be talking about DDD practices in TransferWise, and she will be giving some examples around how they are using product engineering to create domain experts, and tips and tricks to adopting DDD practices gradually.
                               I will post the abstract of her talk very soon.
@@ -25,6 +26,7 @@ let sessions =
               date = "Tuesday, April 2nd. 2019"
               img = None
               video = Some "https://www.ustream.tv/embed/recorded/120901497"
+              embedded = None
               description = "Have you thought about that maybe all you know about patterns is just misconceptions? 
                 In this talk, Kevlin will take us to an alternative tour of patterns, one that is based on improving the habitability of code, communication, exploration, empiricism, reasoning, incremental development, sharing design and bridging rather than barricading different levels of expertise. 
                 Apparently, everyone knows about patterns. Except for those who don't. Which is basically all the people who've never come across patterns... plus many of the people who have. 

@@ -32,6 +32,17 @@ let session dispatch s =
       
       div [ Class "py-2" ]
         [ str s.description ]
+
+      (match s.embedded with
+      | Some content ->
+           div [ Class "videoframe" ]
+             [ iframe [ Class "videostream"
+                        AllowFullScreen true
+                        Src content
+                        Scrolling "no"
+                        FrameBorder 0 ]
+                 [ ] ]
+       | None -> div [] [])  
           
       div [ Class "mt-4 pt-2 border-t border-solid flex items-center justify-start flex-wrap" ]
         (s.links
@@ -40,6 +51,7 @@ let session dispatch s =
                     Href l.url
                     Target "_blank"]
                   [ str l.label ] )) ] 
+        
         
 let sessions model dispatch =
   div [ Class "content bg-grey-lighter" ; Id "sessions"]
