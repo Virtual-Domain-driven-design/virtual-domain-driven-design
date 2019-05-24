@@ -22,6 +22,7 @@ let sessions =
               links =
                   [
                       { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/257656741/" }
+                      { label = "The event on Twitch" ; url = "https://www.twitch.tv/events/_KOmwj0dSCmWNJVKV9Odyg" }
                   ]
                   }
         
