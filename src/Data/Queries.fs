@@ -8,7 +8,7 @@ let sessions =
         Upcoming_session {
               title = "SunDDDay discussion: EventStorming and User story mapping for domain discovery"
               date = "Sunday, May 26th. 2019 - 15:30 GMT / 16:30 CET"
-              img = Some "https://secure.meetupstatic.com/photos/event/6/f/a/2/highres_477448578.jpeg"
+              img = Some "https://secure.meetupstatic.com/photos/event/b/3/b/3/highres_481606003.jpeg"
               video = None
               embedded = None
               description = "On this first SunDDDay 26th May at 16:30 Central European Time (Amsterdam GMT +2), virtual DDD meetup will hold an online panel discussion where you can ask questions!
