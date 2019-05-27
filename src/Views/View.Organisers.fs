@@ -12,12 +12,20 @@ let organisers model dispatch =
                   
             div [ Class "flex -mx-2" ]
               [ div [ Class "m-2 bg-white w-1/3 rounded-lg shadow-lg md:p-8 mt-6" ]
-                  [ str "Zsofia Herendi" ]
-                  
+                   [ div [ Class "organiser-1" ]
+                      [ str "Zsofia Herendi" ]
+                     div [ Class "org-pic1" ]
+                      [ img [ Src "./img/zsofia.jpeg" ] ] ]  
                 div [ Class "m-2 bg-white w-1/3 rounded-lg shadow-lg md:p-8 mt-6" ]
-                  [ str "Marco Heimeshoff" ]
+                   [ div [ Class "organiser-2" ]
+                       [ str "Marco Heimeshoff" ]
+                     div [ Class "org-pic2" ]
+                      [ img [ Src "./img/MarcoHeimeshoff.jpg" ] ] ]  
                 div [ Class "m-2 bg-white w-1/3 rounded-lg shadow-lg md:p-8 mt-6" ]
-                  [ str "Kenny Baas-Schwegler" ]
+                   [ div [ Class "organiser-1" ]
+                       [ str "Kenny Baas-Schwegler" ]
+                     div [ Class "org-pic1" ]
+                      [ img [ Src "./img/kenny.jpg" ] ] ]  
               ]
               
               
