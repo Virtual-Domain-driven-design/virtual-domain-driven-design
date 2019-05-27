@@ -16,5 +16,5 @@ let about model dispatch =
                 [ str "Inspired by the virtualjug community, we strive to create a community of like-minded people eager to dive more into Domain Driven Design. We are going to organise panel discussions, community talks and more. So feel free to join us!" ] ]
           div [ Class "m-4 md:w-1/3" ]
             [ img [ Src "./img/ddd-book.jpg" ] ]
-            ]
-        ]
+         ]
+    ]

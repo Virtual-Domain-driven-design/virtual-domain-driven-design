@@ -23,7 +23,9 @@ let links model dispatch =
           img [
             Class "ml-2 h-6"
             Src "./img/meetup.svg"
-          ] ] ]
+          ]
+        ]
+    ]
 
 
 let navbar (model:Model) dispatch =
