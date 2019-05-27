@@ -5,11 +5,11 @@ open App.Types
 
 let sessions =
     [
-        Upcoming_session {
+        Past_session {
               title = "SunDDDay discussion: EventStorming and User story mapping for domain discovery"
               date = "Sunday, May 26th. 2019 - 15:30 GMT / 16:30 CET"
-              img = Some "https://secure.meetupstatic.com/photos/event/b/3/b/3/highres_481606003.jpeg"
-              video = None
+              img = None
+              video = Some "https://www.youtube.com/embed/H553KZPCJQk"
               embedded = None
               description = "On this first SunDDDay 26th May at 16:30 Central European Time (Amsterdam GMT +2), virtual DDD meetup will hold an online panel discussion where you can ask questions!
 
@@ -22,9 +22,7 @@ let sessions =
               links =
                   [
                       { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/257656741/" }
-                      { label = "Watch live on Youtube" ; url = "https://www.youtube.com/watch?v=H553KZPCJQk" }
-                  ]
-                  }
+                  ] }
         
         Past_session
           {
