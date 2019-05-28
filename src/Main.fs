@@ -8,11 +8,14 @@ open Fable.Core.JsInterop
 open App.Types
 open App.Interop
 open App.Data
+open App.Views
+
 open App.Views.Navigation
 open App.Views.CodeOfConduct
 open App.Views.Hero
 open App.Views.About
 open App.Views.Sessions
+open Organisers
 open App.Views.Footer
 
 importAll "./style.css"
@@ -61,7 +64,9 @@ let view (model:Model) dispatch =
         [ (match model.view with
           | Landingpage -> landingpage model dispatch
           | Code_of_conduct -> codeofconduct model dispatch )]
-      
+
+      organisers model dispatch
+
       footer model dispatch ]
 
 
