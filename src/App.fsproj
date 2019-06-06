@@ -14,6 +14,7 @@
     <Compile Include="Views/View.CodeOfConduct.fs" />
     <Compile Include="Views/View.Hero.fs" />
     <Compile Include="Views/View.About.fs" />
+    <Compile Include="Views\View.Organisers.fs" />
     <Compile Include="Views/View.Sessions.fs" />
     <Compile Include="Views/View.Footer.fs" />
     <Compile Include="Main.fs" />

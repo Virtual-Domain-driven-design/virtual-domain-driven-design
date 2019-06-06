@@ -13,7 +13,7 @@
     "fable-loader": "^2.1.0",
     "html-webpack-plugin": "^3.0.6",
     "postcss": "^6.0.19",
-    "postcss-loader": "^2.1.1",
+    "postcss-loader": "^3.0.0",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "style-loader": "^0.20.3",
