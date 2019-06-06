@@ -84,7 +84,7 @@ a {
 }
 
 .footer {
-    @apply bg-white flex flex-col items-center justify-center p-4;
+    @apply flex flex-col items-center justify-center p-4;
 }
 
 .videoframe {

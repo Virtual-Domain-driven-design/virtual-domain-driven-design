@@ -6,7 +6,7 @@ open App.Types
 
 
 let footer model dispatch =
-  div [ Class "footer" ]
+  div [ Class "footer bg-grey-lighter" ]
     [ div [ ] [ str "Copyright © Virtual Domain-Driven Design"]
       
       div [ ] [ str "Developed by Kenny Baas-Schwegler & Marco Heimeshoff "]
