@@ -15,6 +15,10 @@ let links model dispatch =
       div [ Class "nav-item"
             OnClick (fun e -> e.stopPropagation() ; ScrollTo "sessions" |> dispatch) ]
         [ str "Sessions" ]
+      
+      div [ Class "nav-item"
+            OnClick (fun e -> e.stopPropagation() ; ScrollTo "organisers" |> dispatch) ]
+        [ str "Organisers" ]
 
       a [ Class "nav-item"
           Href "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/"

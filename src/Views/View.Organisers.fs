@@ -17,8 +17,19 @@ let organisers model dispatch =
                             [ str "Zsofia Herendi" ] ]
                      div [ Class "organiser-picture" ]
                       [ img [ Src "./img/zsofia.jpeg" ] ]
+                     div [ Class "organiser-name text-center" ]
+                      [ h4 []
+                            [ str "Flow addict PM" ] ]
                      div [ Class "org-social" ]
                         [ a [
+                            Class "website-icon"
+                            Href "https://zherendi.com/"
+                            Target "_blank"]
+                            [ img [
+                                Class "ml-2 h-10"
+                                Src "./img/website.png" ]
+                            ]
+                          a [
                            Class "twitter-icon"
                            Href "https://twitter.com/ZHerendi"
                            Target "_blank"]
@@ -43,8 +54,19 @@ let organisers model dispatch =
                             [ str "Marco Heimeshoff" ] ]
                      div [ Class "organiser-picture" ]
                       [ img [ Src "./img/MarcoHeimeshoff.jpg" ] ]
+                     div [ Class "organiser-name text-center" ]
+                      [ h4 []
+                            [ str "Organiser of KanDDDinsky" ] ]
                      div [ Class "org-social" ]
                         [ a [
+                            Class "website-icon"
+                            Href "https://heimeshoff.de/"
+                            Target "_blank"]
+                            [ img [
+                                Class "ml-2 h-10"
+                                Src "./img/website.png" ]
+                            ]
+                          a [
                             Class "twitter-icon"
                             Href "https://twitter.com/Heimeshoff"
                             Target "_blank"]
@@ -68,8 +90,19 @@ let organisers model dispatch =
                             [ str "Kenny Baas-Schwegler" ] ]
                      div [ Class "organiser-picture" ]
                       [ img [ Src "./img/kenny.jpg" ] ] 
+                     div [ Class "organiser-name text-center" ]
+                      [ h4 []
+                            [ str "Sociotechnical stoic" ] ]
                      div [ Class "org-social" ]
                         [ a [
+                            Class "website-icon"
+                            Href "https://baasie.com"
+                            Target "_blank"]
+                            [ img [
+                                Class "ml-2 h-10"
+                                Src "./img/website.png" ]
+                            ]
+                          a [
                             Class "twitter-icon"
                             Href "https://twitter.com/kenny_baas"
                             Target "_blank"]
