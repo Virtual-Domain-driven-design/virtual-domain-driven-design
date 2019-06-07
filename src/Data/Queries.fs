@@ -5,6 +5,24 @@ open App.Types
 
 let sessions =
     [
+        Upcoming_session {
+              title = "Impact Mapping to manage change and strategic design"
+              date = "Thursday, June 13th. 2019 - 18:30 Paris-Amsterdam / 17:30 London Time"
+              img = Some "https://secure.meetupstatic.com/photos/event/4/6/e/d/highres_481998157.jpeg"
+              video = None
+              embedded = None
+              description = "In this next virtual DDD meetup, João Rosa and Krisztina Hirth will discuss with us how impact mapping helps to find the possible solutions to achieve a measurable goal before you even know what to visualize. Also, how can you then combine it with other visualisation tools like EventStorming to guide your strategic design?
+
+                             In our industry, we have been assisting in digital transformations; the digital transformations have different labels, DevOps, Agile, Cloud, amongst others. However, most of these transformations just following a script, applying the same recipe everywhere. This approach has its merits, but also its pitfalls.
+
+                               To balance the change, visualisation techniques can be applied, aiding people, teams and organisations to manage the change and guide strategic design.
+                              "
+              links =
+                  [
+                      { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/262096256/" }
+                      { label = "Youtube Live Stream" ; url = "https://www.youtube.com/watch?v=7u-EtXVKR5g" }
+                  ] }
+        
         Past_session {
               title = "SunDDDay discussion: EventStorming and User story mapping for domain discovery"
               date = "Sunday, May 26th. 2019 - 15:30 GMT / 16:30 CET"
