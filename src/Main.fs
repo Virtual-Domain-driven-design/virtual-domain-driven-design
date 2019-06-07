@@ -16,6 +16,7 @@ open App.Views.Hero
 open App.Views.About
 open App.Views.Sessions
 open Organisers
+open Cfp
 open App.Views.Footer
 
 importAll "./style.css"
@@ -66,6 +67,8 @@ let view (model:Model) dispatch =
           | Code_of_conduct -> codeofconduct model dispatch )]
 
       organisers model dispatch
+      
+      cfp model dispatch
 
       footer model dispatch ]
 
