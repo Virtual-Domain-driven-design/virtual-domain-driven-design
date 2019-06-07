@@ -23,7 +23,7 @@ let organisers model dispatch =
                      div [ Class "org-social" ]
                         [ a [
                             Class "website-icon"
-                            Href "https://zherendi.com/"
+                            Href "https://www.zherendi.com/"
                             Target "_blank"]
                             [ img [
                                 Class "ml-2 h-10"
