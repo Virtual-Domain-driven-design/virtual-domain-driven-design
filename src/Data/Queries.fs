@@ -6,10 +6,30 @@ open App.Types
 let sessions =
     [
         Upcoming_session {
+              title = "Can business capabilities be useful in DDD with Trond Hjorteland"
+              date = "Tuesday, June 25th. 2019 - 20:00 Paris-Amsterdam / 19:00 London Time"
+              img = Some "https://secure.meetupstatic.com/photos/event/9/1/a/5/highres_482017285.jpeg"
+              video = None
+              embedded = None
+              description = "In this SPA conference special, we will talk with Trond Hjorteland about if business capabilities are useful in DDD.
+
+                            The DDD community seems to consist of mostly technical people, or at least with some sort of hands-on programming experience, both now an back when the blue book was published. The decision to put the technical patterns at the start of that book was strategic (!) in that it was meant to invite the programmers in. As a consequence of that, it seems that most know very little about the enterprises' architecture space, and if they do, it seems to be with disdain for those dreaded ivory architects. And, for good reason in a lot of large waterfall-driven enterprises.
+
+                            My thesis is that by this approach we as a community is throwing the baby out with the bathwater, at least some parts. There are things we ought to take a look at and incorporate into our toolbox, like architectural principles and business capabilities. The latter has been something I have had a special keen interest for, coming from the SOA space, and see a lot of parallels with the strategic patterns in DDD. I even believe it can be a great technique for getting started with discovering the problem space and even guide defining the bounded contexts.
+
+                            I would love to have a good discussion on this and maybe we all can gain some new insights. That is always good, right?
+                              "
+              links =
+                  [
+                      { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/262123121/" }
+                      { label = "Youtube Live Stream" ; url = "https://www.youtube.com/watch?v=WSAHL7oHGUw" }
+                  ] }
+        
+        Past_session {
               title = "Impact Mapping to manage change and strategic design"
               date = "Thursday, June 13th. 2019 - 18:30 Paris-Amsterdam / 17:30 London Time"
-              img = Some "https://secure.meetupstatic.com/photos/event/4/6/e/d/highres_481998157.jpeg"
-              video = None
+              img = None
+              video = Some "https://www.youtube.com/embed/7u-EtXVKR5g"
               embedded = None
               description = "In this next virtual DDD meetup, João Rosa and Krisztina Hirth will discuss with us how impact mapping helps to find the possible solutions to achieve a measurable goal before you even know what to visualize. Also, how can you then combine it with other visualisation tools like EventStorming to guide your strategic design?
 
