@@ -5,11 +5,11 @@ open App.Types
 
 let sessions =
     [
-        Upcoming_session {
+        Past_session {
               title = "Can business capabilities be useful in DDD with Trond Hjorteland"
               date = "Tuesday, June 25th. 2019 - 20:00 Paris-Amsterdam / 19:00 London Time"
-              img = Some "https://secure.meetupstatic.com/photos/event/9/1/a/5/highres_482017285.jpeg"
-              video = None
+              img = None
+              video = Some "https://www.youtube.com/embed/WSAHL7oHGUw"
               embedded = None
               description = "In this SPA conference special, we will talk with Trond Hjorteland about if business capabilities are useful in DDD.
 
@@ -22,7 +22,6 @@ let sessions =
               links =
                   [
                       { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/262123121/" }
-                      { label = "Youtube Live Stream" ; url = "https://www.youtube.com/watch?v=WSAHL7oHGUw" }
                   ] }
         
         Past_session {
@@ -40,7 +39,6 @@ let sessions =
               links =
                   [
                       { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/262096256/" }
-                      { label = "Youtube Live Stream" ; url = "https://www.youtube.com/watch?v=7u-EtXVKR5g" }
                   ] }
         
         Past_session {
