@@ -27,11 +27,7 @@ let sessions =
               img = Some "https://secure.meetupstatic.com/photos/event/8/1/6/5/highres_482853125.jpeg"
               video = None 
               embedded = None
-              description = "Over more than 15 years ago Eric Evans published the book Domain-Driven Design.
-                             The blue book, as it is called today, has a fast amount of knowledge on software architecture.
-                             Eric's law states 'Every new idea on software architecture, you can already find somewhere in the book'.
-                             Because the knowledge is so fast to take in at one go, a lot of people who bought the book never finished the book, mostly stopped reading before Part IV, strategic design.
-                             Therefore in this #VDDD special 'How to read the blue book,' Mathias Verraes will discuss with us the strategic parts.
+              description = "Over more than 15 years ago, Eric Evans published the book Domain-Driven Design. The blue book, as it is called today, has a vast amount of knowledge on software architecture. As Paul Rayner once stated 'Every new idea on software architecture; you can already find somewhere in the blue book'. Because the knowledge is so fast to take in at one go, a lot of people who bought the book never finished the book, mostly stopped reading before Part IV, strategic design. Therefore in this #VDDD special 'How to read the blue book,' Mathias Verraes will discuss with the strategic parts.
                               "
               links =
                   [
