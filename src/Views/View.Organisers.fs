@@ -24,21 +24,21 @@ let organiser name profile =
           [ img [ Src profile.Image ] ]
         ]
               
-       div [ Class "my-1 flex items-center justify-center" ]
-          [ a [ Class "website-icon"
+       div [ Class "my-1 w-full flex items-center justify-around" ]
+          [ a [ Class ""
                 Href profile.Website
                 Target "_blank"]
-              [ img [ Class "ml-2 h-10"
+              [ img [ Class "rounded-full h-10 hover:shadow-md"
                       Src "./img/website.png" ] ]
             a [ Class "twitter-icon"
                 Href ("https://twitter.com/" + profile.Twitter )
                 Target "_blank"]
-              [ img [ Class "ml-2 h-10"
+              [ img [ Class "rounded-full h-10 hover:shadow-md"
                       Src "./img/twitter.png" ] ]
             a [ Class "twitter-icon"
                 Href ("https://www.linkedin.com/in/"+ profile.Linkedin + "/")
                 Target "_blank"]
-              [ img [ Class "ml-2 h-10"
+              [ img [ Class "rounded-full h-10 hover:shadow-md"
                       Src "./img/linkedin.png" ] ]
           ]
       ]

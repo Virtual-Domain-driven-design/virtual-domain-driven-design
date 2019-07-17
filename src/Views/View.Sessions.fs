@@ -47,7 +47,7 @@ let session dispatch s =
       div [ Class "mt-4 pt-2 border-t border-solid flex items-center justify-start flex-wrap" ]
         (s.links
         |> List.map (fun l ->
-                a [ Class "link bg-grey-lighter hover:bg-grey-lightest rounded-lg shadow-md p-2 m-2"
+                a [ Class "bg-grey-lighter card-hoverable p-2 m-2"
                     Href l.url
                     Target "_blank"]
                   [ str l.label ] )) ] 
