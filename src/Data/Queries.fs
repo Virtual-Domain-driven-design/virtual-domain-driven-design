@@ -5,21 +5,6 @@ open App.Types
 
 let sessions =
     [
-        Upcoming_session {
-              title = "Socio-technical architecture with Ora Egozi-Barzilai and Evelyn van Kelle"
-              date = "Thursday, July 18th. 2019 - 18:30 Paris-Amsterdam / 17:30 London Time"
-              img = Some "https://secure.meetupstatic.com/photos/event/8/1/3/e/highres_482853086.jpeg"
-              video = None 
-              embedded = None
-              description = "In this # VDDD meetup, we will talk with Ora Egozi-Barzilai and Evelyn van Kelle about their experience with socio-technical architecture. Socio-technical refers to the interrelatedness of social and technical aspects of an organization. Specific for this meetup we will discuss how teams affect the boundaries between bounded contexts and vice versa. These effects will give challenges in the way we design software architecture and organize teams around software to be highly aligned with business goals.
-
-                             Come join us, because together we can ask questions and discuss heuristics and patterns with Ora and Evelyn about socio-technical architecture!
-                              "
-              links =
-                  [
-                      { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/262894709/" }
-                      { label = "Youtube live Stream" ; url = "https://youtu.be/YqbXEhO237w" }
-                  ] }
                   
         Upcoming_session {
               title = "How To Read the Blue Book: Strategic Design with Mathias Verraes"
@@ -34,6 +19,21 @@ let sessions =
                       { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/262894722/" }
                       { label = "Youtube live Stream" ; url = "https://youtu.be/jZo44tbff1c" }
                           ] }
+        
+        Past_session {
+              title = "Socio-technical architecture with Ora Egozi-Barzilai and Evelyn van Kelle"
+              date = "Thursday, July 18th. 2019 - 18:30 Paris-Amsterdam / 17:30 London Time"
+              img = None
+              video = Some "https://www.youtube.com/embed/YqbXEhO237w" 
+              embedded = None
+              description = "In this # VDDD meetup, we will talk with Ora Egozi-Barzilai and Evelyn van Kelle about their experience with socio-technical architecture. Socio-technical refers to the interrelatedness of social and technical aspects of an organization. Specific for this meetup we will discuss how teams affect the boundaries between bounded contexts and vice versa. These effects will give challenges in the way we design software architecture and organize teams around software to be highly aligned with business goals.
+
+                             Come join us, because together we can ask questions and discuss heuristics and patterns with Ora and Evelyn about socio-technical architecture!
+                              "
+              links =
+                  [
+                      { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/262894709/" }
+                  ] }
         
         Past_session {
               title = "Can business capabilities be useful in DDD with Trond Hjorteland"
