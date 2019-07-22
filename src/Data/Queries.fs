@@ -1,6 +1,5 @@
 module App.Data.Queries
 
-open System
 open App.Types
 
 let sessions =
@@ -8,7 +7,8 @@ let sessions =
                   
         Upcoming_session {
               title = "How To Read the Blue Book: Strategic Design with Mathias Verraes"
-              date = "Tuesday, July 23th. 2019 - 19:00 Paris-Amsterdam / 18:00 London Time"
+              date = "Tuesday, July 23th. 2019"
+              time = "19:00 Paris-Amsterdam / 18:00 London Time"
               img = Some "https://secure.meetupstatic.com/photos/event/8/1/6/5/highres_482853125.jpeg"
               video = None 
               embedded = None
@@ -22,7 +22,8 @@ let sessions =
         
         Past_session {
               title = "Socio-technical architecture with Ora Egozi-Barzilai and Evelyn van Kelle"
-              date = "Thursday, July 18th. 2019 - 18:30 Paris-Amsterdam / 17:30 London Time"
+              date = "Thursday, July 18th. 2019"
+              time = "18:30 Paris-Amsterdam / 17:30 London Time"
               img = None
               video = Some "https://www.youtube.com/embed/YqbXEhO237w" 
               embedded = None
@@ -37,7 +38,8 @@ let sessions =
         
         Past_session {
               title = "Can business capabilities be useful in DDD with Trond Hjorteland"
-              date = "Tuesday, June 25th. 2019 - 20:00 Paris-Amsterdam / 19:00 London Time"
+              date = "Tuesday, June 25th. 2019"
+              time = "20:00 Paris-Amsterdam / 19:00 London Time"
               img = None
               video = Some "https://www.youtube.com/embed/WSAHL7oHGUw"
               embedded = None
@@ -56,7 +58,8 @@ let sessions =
         
         Past_session {
               title = "Impact Mapping to manage change and strategic design"
-              date = "Thursday, June 13th. 2019 - 18:30 Paris-Amsterdam / 17:30 London Time"
+              date = "Thursday, June 13th. 2019"
+              time = "18:30 Paris-Amsterdam / 17:30 London Time"
               img = None
               video = Some "https://www.youtube.com/embed/7u-EtXVKR5g"
               embedded = None
@@ -73,7 +76,8 @@ let sessions =
         
         Past_session {
               title = "SunDDDay discussion: EventStorming and User story mapping for domain discovery"
-              date = "Sunday, May 26th. 2019 - 15:30 GMT / 16:30 CET"
+              date = "Sunday, May 26th. 2019"
+              time = "15:30 GMT / 16:30 CET"
               img = None
               video = Some "https://www.youtube.com/embed/H553KZPCJQk"
               embedded = None
@@ -94,6 +98,7 @@ let sessions =
           {
               title = "CraftConf meetup with Nick Tune and Helin Akgul"
               date = "Wednesday, May 8th. 2019"
+              time = ""
               img = None
               video = Some "https://www.ustream.tv/embed/recorded/121763272"
               embedded = None
@@ -106,10 +111,12 @@ let sessions =
                       { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/261134675/" }
                       { label = "Hosted by DDD Budapest" ; url = "https://www.meetup.com/DDD-Practitioners-in-Budapest/events/260694621/" }
                   ] }
+
         Past_session
           {
               title = "Patterns for the People - Kevlin Henney"
               date = "Tuesday, April 2nd. 2019"
+              time = ""
               img = None
               video = Some "https://www.ustream.tv/embed/recorded/120901497"
               embedded = None

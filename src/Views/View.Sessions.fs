@@ -6,7 +6,7 @@ open App.Types
 
 
 let session dispatch s =
-  div [ Class "bg-white w-full rounded-lg shadow-lg p-2 md:p-8 mt-6" ]
+  div [ Class "bg-white w-full rounded-lg shadow-md p-2 md:p-8 mt-6" ]
     [ div [ Class "font-bold" ]
         [ str s.title ]
 
@@ -30,7 +30,7 @@ let session dispatch s =
                  [ ] ]
        | None -> div [] [])  
       
-      div [ Class "py-2" ]
+      div [ Class "py-2 text-justify" ]
         [ str s.description ]
 
       (match s.embedded with
@@ -52,6 +52,28 @@ let session dispatch s =
                     Target "_blank"]
                   [ str l.label ] )) ] 
         
+
+let session_small dispatch s =
+  match s.video with 
+  | Some video -> 
+      div [ Class "bg-white w-64 card-hoverable shadow-md p-4 m-2" ]
+        [ div [ Class "text-sm text-grey-dark"]
+            [ str s.date ]
+
+          div [ Class "videoframe" ]
+           [ iframe [ Class "videostream"
+                      AllowFullScreen true
+                      Src video
+                      Scrolling "no"
+                      FrameBorder 0 ]
+               [ ] ]
+          
+          a [ Class "text-sm text-left font-bold link"
+              Href video
+              Target "_blank"]
+            [ str s.title ] ]
+
+  | None -> div [] []
         
 let sessions model dispatch =
   div [ Class "content bg-grey-lighter" ; Id "sessions"]
@@ -77,14 +99,12 @@ let sessions model dispatch =
         |> List.filter (function Past_session _ -> true | Upcoming_session _ -> false)
         |> List.length with
         | 0 -> div [] []
-        | _ -> div [ Class "my-8 w-4/5 lg:w-2/3 xl:w-1/2" ]
-                [ h2 [ ]
-                        [ str "Past Sessions"]
-                  div [ Class "flex flex-col items-center justify-start" ]
-                    (model.sessions
-                    |> List.filter (function Past_session _ -> true | Upcoming_session _ -> false)
-                    |> List.map (function Past_session s -> (session dispatch s) | Upcoming_session s -> (session dispatch s) ))
-                    ]) ]
- 
-// let upcoming_sessions model dispatch =
-   
+        | _ -> div [ Class "w-full flex flex-col items-center justify-start"]
+                [ h2 [ Class "my-6 w-4/5 lg:w-2/3 xl:w-1/2" ]
+                    [ str "Past Sessions"]
+                  div [ Class "w-11/12 md:w-5/6" ]
+                    [ div [ Class "flex items-stretch justify-center flex-wrap" ]
+                        (model.sessions
+                        |> List.filter (function Past_session _ -> true | Upcoming_session _ -> false)
+                        |> List.map (function Past_session s -> (session_small dispatch s) | Upcoming_session s -> (session dispatch s) ))
+                        ] ] )]  

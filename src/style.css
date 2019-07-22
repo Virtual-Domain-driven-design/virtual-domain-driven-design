@@ -40,7 +40,7 @@ a {
 }
  
 .link:hover {
-    @apply text-blue-lighter cursor-pointer;
+    @apply text-blue-light cursor-pointer;
 }
  
 
@@ -80,7 +80,7 @@ a {
 }
  
 .content{
-    @apply leading-normal text-justify text-blue-darkest py-4 flex flex-col items-center justify-center;
+    @apply leading-normal text-blue-darkest py-4 flex flex-col items-center justify-center;
 }
 
 .footer {

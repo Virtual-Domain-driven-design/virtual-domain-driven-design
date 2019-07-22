@@ -1,5 +1,4 @@
 module App.Types
-open System
 
 
 type Content =
@@ -14,6 +13,7 @@ type Link = {
 type Sessiondetails = {
   title: string
   date: string
+  time: string
   img: string option
   video: string option
   embedded: string option
