@@ -74,7 +74,7 @@ let session_small dispatch s =
             [ str s.title ] ]
 
   | None -> div [] []
-        
+
 let sessions model dispatch =
   div [ Class "content bg-grey-lighter" ; Id "sessions"]
     [ (match model.sessions
@@ -84,8 +84,14 @@ let sessions model dispatch =
                   [ h2 [  ]
                           [ str "Upcoming Sessions"] 
                     div [ Class "flex flex-col items-center justify-start" ]
-                      [ div [ Class "bg-white w-full rounded-lg shadow-lg p-2 md:p-8 mt-6" ]
-                          [ str "More sessions are coming to you eventually consistant, check again later...."]
+                      [
+                        img [ Src "./img/no_upcoming.svg"
+                              Class "h-64 mb-6"]
+                        div [ Class "" ] [ str "More sessions are coming to you eventually consistant..." ]
+                        a [ Href "mailto:submissions@virtualddd.com"
+                            Target "_blank"
+                            Class "p-4 mt-6 bg-blue-light card-hoverable text-white" ]
+                          [ str "Propose a session"]
                       ] ]
         | _ -> div [ Class "my-8 w-4/5 lg:w-2/3 xl:w-1/2" ]
                   [ h2 [ ]
