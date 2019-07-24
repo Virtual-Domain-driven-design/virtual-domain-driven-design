@@ -5,19 +5,18 @@ open App.Types
 let sessions =
     [
                   
-        Upcoming_session {
+        Past_session {
               title = "How To Read the Blue Book: Strategic Design with Mathias Verraes"
               date = "Tuesday, July 23th. 2019"
               time = "19:00 Paris-Amsterdam / 18:00 London Time"
-              img = Some "https://secure.meetupstatic.com/photos/event/8/1/6/5/highres_482853125.jpeg"
-              video = None 
+              img = None 
+              video = Some "https://www.youtube.com/embed/jZo44tbff1c"  
               embedded = None
               description = "Over more than 15 years ago, Eric Evans published the book Domain-Driven Design. The blue book, as it is called today, has a vast amount of knowledge on software architecture. As Paul Rayner once stated 'Every new idea on software architecture; you can already find somewhere in the blue book'. Because the knowledge is so fast to take in at one go, a lot of people who bought the book never finished the book, mostly stopped reading before Part IV, strategic design. Therefore in this #VDDD special 'How to read the blue book,' Mathias Verraes will discuss with the strategic parts.
                               "
               links =
                   [
                       { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/262894722/" }
-                      { label = "Youtube live Stream" ; url = "https://youtu.be/jZo44tbff1c" }
                           ] }
         
         Past_session {
