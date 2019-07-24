@@ -66,10 +66,10 @@ let view (model:Model) dispatch =
           | Landingpage -> landingpage model dispatch
           | Code_of_conduct -> codeofconduct model dispatch )]
 
-      organisers model dispatch
-      
       cfp model dispatch
 
+      organisers model dispatch
+      
       footer model dispatch ]
 
 
