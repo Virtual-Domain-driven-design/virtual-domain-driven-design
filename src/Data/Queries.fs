@@ -4,6 +4,22 @@ open App.Types
 
 let sessions =
     [
+        Upcoming_session {
+              title = "EventStorming Types and Heuristics with Rebecca, Paul and Alberto"
+              date = "Thursday, August 8th. 2019"
+              time = "24:00 Paris-Amsterdam / 23:00 London Time / 18:00 Eastern Time (US and Canada)"
+              img = Some "https://secure.meetupstatic.com/photos/event/5/e/c/b/highres_483804267.jpeg"
+              video = None
+              embedded = None
+              description = "Rebecca Wirfs-Brock, Paul Rayner en Alberto Brandolini will join us in this VDDD meetup and talk about what types of EventStorming there are, and what heuristics they use.
+
+                            Join us through youtube or zoom webinar in this discussion. You can interact with us and ask your questions through chat, or raise your hand in the zoom webinar and join us live to ask your questions fishbowl style!
+                              "
+              links =
+                  [
+                      { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/263800593/" }
+                      { label = "Youtube" ; url = "https://www.youtube.com/watch?v=jFEC7Pb1FtM" }
+                  ] }
                   
         Past_session {
               title = "How To Read the Blue Book: Strategic Design with Mathias Verraes"
@@ -21,7 +37,7 @@ let sessions =
         
         Past_session {
               title = "Socio-technical architecture with Ora Egozi-Barzilai and Evelyn van Kelle"
-              date = "Thursday, July 18th. 2019"
+              date = "Thursdayup, July 18th. 2019"
               time = "18:30 Paris-Amsterdam / 17:30 London Time"
               img = None
               video = Some "https://www.youtube.com/embed/YqbXEhO237w" 
