@@ -19,6 +19,7 @@ let sessions =
                   [
                       { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/263800593/" }
                       { label = "Youtube" ; url = "https://www.youtube.com/watch?v=jFEC7Pb1FtM" }
+                      { label = "Zoom" ; url = "https://zoom.us/j/800393345" }
                   ] }
                   
         Past_session {
