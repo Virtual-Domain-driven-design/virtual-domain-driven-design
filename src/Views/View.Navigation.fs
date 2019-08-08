@@ -21,6 +21,10 @@ let links model dispatch =
         [ str "CFP" ]
 
       div [ Class "nav-item"
+            OnClick (fun e -> e.stopPropagation() ; ScrollTo "sponsors" |> dispatch) ]
+        [ str "Sponsors" ]
+        
+      div [ Class "nav-item"
             OnClick (fun e -> e.stopPropagation() ; ScrollTo "organisers" |> dispatch) ]
         [ str "Organisers" ]
 

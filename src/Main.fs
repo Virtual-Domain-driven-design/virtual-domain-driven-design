@@ -16,6 +16,7 @@ open App.Views.Hero
 open App.Views.About
 open App.Views.Sessions
 open Organisers
+open Sponsors
 open Cfp
 open App.Views.Footer
 
@@ -67,6 +68,8 @@ let view (model:Model) dispatch =
           | Code_of_conduct -> codeofconduct model dispatch )]
 
       cfp model dispatch
+      
+      sponsors model dispatch
 
       organisers model dispatch
       

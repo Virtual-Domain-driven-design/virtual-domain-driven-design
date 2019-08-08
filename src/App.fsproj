@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
@@ -15,6 +15,7 @@
     <Compile Include="Views/View.Hero.fs" />
     <Compile Include="Views/View.About.fs" />
     <Compile Include="Views/View.Organisers.fs" />
+    <Compile Include="Views\View.Sponsers.fs" />
     <Compile Include="Views/View.Cfp.fs" />
     <Compile Include="Views/View.Sessions.fs" />
     <Compile Include="Views/View.Footer.fs" />
