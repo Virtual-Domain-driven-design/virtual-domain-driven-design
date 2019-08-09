@@ -32,7 +32,7 @@ let sponsors model dispatch =
                 sponsor "Ubiquitous AS"
                   {
                     Image = "./img/Ubiquitous.png" 
-                    Website = "http://www.ubiquitous.no/"
+                    Website = "https://www.ubiquitous.no/"
                   }
               ]   
           ]
