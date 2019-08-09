@@ -4,12 +4,12 @@ open App.Types
 
 let sessions =
     [
-        Upcoming_session {
+        Past_session {
               title = "EventStorming Types and Heuristics with Rebecca, Paul and Alberto"
               date = "Thursday, August 8th. 2019"
               time = "24:00 Paris-Amsterdam / 23:00 London Time / 18:00 Eastern Time (US and Canada)"
-              img = Some "https://secure.meetupstatic.com/photos/event/5/e/c/b/highres_483804267.jpeg"
-              video = None
+              img = None
+              video = Some "https://www.youtube.com/embed/jFEC7Pb1FtM"
               embedded = None
               description = "Rebecca Wirfs-Brock, Paul Rayner en Alberto Brandolini will join us in this VDDD meetup and talk about what types of EventStorming there are, and what heuristics they use.
 
@@ -18,8 +18,6 @@ let sessions =
               links =
                   [
                       { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/263800593/" }
-                      { label = "Youtube" ; url = "https://www.youtube.com/watch?v=jFEC7Pb1FtM" }
-                      { label = "Zoom" ; url = "https://zoom.us/j/800393345" }
                   ] }
                   
         Past_session {
