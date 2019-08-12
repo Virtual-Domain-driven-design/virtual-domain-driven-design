@@ -1,9 +1,10 @@
 module App.Types
 
 
-type Content =
+type Page =
   | Landingpage
   | Code_of_conduct
+  | Books
 
 type Link = {
   url: string
@@ -27,14 +28,14 @@ type Session =
 
 type Model = {
   menu_open: bool
-  view: Content
+  page: Page
   sessions: Session list
 }
 
 
 type Msg = 
   | Toggle_menu
-  | Show of Content
+  | GoTo of Page
   | ScrollTo of string
   | OnLogError of exn
   | Clicked_Anywhere

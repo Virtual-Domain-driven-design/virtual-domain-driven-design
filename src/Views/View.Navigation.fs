@@ -28,6 +28,10 @@ let links model dispatch =
             OnClick (fun e -> e.stopPropagation() ; ScrollTo "organisers" |> dispatch) ]
         [ str "Organisers" ]
 
+      div [ Class "nav-item"
+            OnClick (fun e -> e.stopPropagation() ; GoTo Books |> dispatch) ]
+        [ str "Books" ]
+
       a [ Class "nav-item"
           Href "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/"
           Target "_blank"]
@@ -50,7 +54,7 @@ let navbar (model:Model) dispatch =
     [ div [ Class "lg:hidden navbar navbar-opaque " ]
         [ div [ Class "w-full flex flex-row items-center justify-between" ]
             [ div [ Class "nav-item"
-                    OnClick (fun _ -> Show Landingpage |> dispatch)]
+                    OnClick (fun _ -> GoTo Landingpage |> dispatch)]
                   [ str "virtualDDD.com"]
               button [ Class "flex-no-shrink flex items-center m-4 px-3 py-2 border rounded border-white hover:text-blue-light hover:border-blue-light"
                        OnClick (fun e -> e.stopPropagation() ; Toggle_menu |> dispatch ) ]
@@ -64,6 +68,6 @@ let navbar (model:Model) dispatch =
       div [ Class ("navbar-permanent hidden lg:flex flex-row items-center justify-center navbar"); Id "navbar" ]
         [ div [ Class "w-4/5 xl:w-2/3 flex flex-col lg:flex-row items-center justify-between" ]
             [ div [ Class "nav-item "  
-                    OnClick (fun _ -> Show Landingpage |> dispatch) ]
+                    OnClick (fun _ -> GoTo Landingpage |> dispatch) ]
                   [ str "virtualDDD.com"]
               links model dispatch ] ] ]

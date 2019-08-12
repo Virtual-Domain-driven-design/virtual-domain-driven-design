@@ -17,6 +17,9 @@ module.exports =  function (evn, argv) {
     devServer: {
         contentBase: "./public",
         port: 8080,
+        historyApiFallback: {
+          index: 'index.html'
+        },        
     },
     module: {
         rules: [

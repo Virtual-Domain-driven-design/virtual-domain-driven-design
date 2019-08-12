@@ -2,6 +2,8 @@ module Main
 
 open Elmish
 open Elmish.React
+open Elmish.Browser.UrlParser
+open Elmish.Browser.Navigation
 open Fable.Helpers.React
 open Fable.Helpers.React.Props
 open Fable.Core.JsInterop
@@ -15,31 +17,34 @@ open App.Views.CodeOfConduct
 open App.Views.Hero
 open App.Views.About
 open App.Views.Sessions
+open App.Views.Books
 open Organisers
 open Sponsors
 open Cfp
 open App.Views.Footer
 
+open Router
+
 importAll "./style.css"
 
-let init() = 
-  { menu_open = false
-    view = Landingpage
-    sessions = Queries.sessions
-  }, Cmd.none
-
+let init result  =
+  let (model, cmd) = urlUpdate result { menu_open = false ; page = Landingpage ; sessions = Queries.sessions }
+  model, Cmd.none
 
 let update (msg:Msg) (model:Model) =
   match msg with
   | Toggle_menu ->
       { model with menu_open = not model.menu_open }, Cmd.none
       
-  | Show p ->
-      { model with view = p ; menu_open = false }, Cmd.attemptFunc scrollIntoView "top" OnLogError
-      
+  | GoTo p ->
+      { model with page = p ; menu_open = false }, 
+        Cmd.batch 
+          [ Navigation.modifyUrl (toPage p)
+            Cmd.attemptFunc scrollIntoView "top" OnLogError ]
+
   | ScrollTo s ->
       { model with
-            view = Landingpage
+            page = Landingpage
             menu_open = false } , Cmd.attemptFunc scrollIntoView s OnLogError
       
   | OnLogError e ->
@@ -48,36 +53,35 @@ let update (msg:Msg) (model:Model) =
   | Clicked_Anywhere ->
       { model with menu_open = false }, Cmd.none
 
-
 let landingpage model dispatch =
   div []
     [ hero model dispatch
       about model dispatch
-      sessions model dispatch ]
+      sessions model dispatch
+      organisers model dispatch 
+      cfp model dispatch
+    ]
 
 
 let view (model:Model) dispatch =
-        
   div [ Class "font-sans"; Id "top"
         OnClick (fun _ -> Clicked_Anywhere |> dispatch )]    
     [ navbar model dispatch
       
       div [ ]
-        [ (match model.view with
+        [ (match model.page with
           | Landingpage -> landingpage model dispatch
-          | Code_of_conduct -> codeofconduct model dispatch )]
-
-      cfp model dispatch
-      
+          | Code_of_conduct -> codeofconduct model dispatch 
+          | Books -> books model dispatch 
+        )]
+        
       sponsors model dispatch
-
-      organisers model dispatch
-      
       footer model dispatch ]
 
 
 
 Program.mkProgram init update view
+|> Program.toNavigable (parsePath pageParser) urlUpdate
 |> Program.withReact "elmish-app"
 #if DEBUG
 |> Program.withConsoleTrace

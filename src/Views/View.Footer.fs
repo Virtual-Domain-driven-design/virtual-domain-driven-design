@@ -12,5 +12,5 @@ let footer model dispatch =
       div [ ] [ str "Developed by Kenny Baas-Schwegler & Marco Heimeshoff "]
       
       div [ Class "link p-2"
-            OnClick (fun e -> e.stopPropagation() ; Show Code_of_conduct |> dispatch) ]
+            OnClick (fun e -> e.stopPropagation() ; GoTo Code_of_conduct |> dispatch) ]
         [ str "Code of Conduct" ] ]  
