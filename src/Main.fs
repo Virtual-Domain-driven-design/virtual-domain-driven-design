@@ -61,6 +61,7 @@ let landingpage model dispatch =
       sessions model dispatch
       organisers model dispatch 
       cfp model dispatch
+      sponsors model dispatch
     ]
 
 
@@ -73,10 +74,9 @@ let view (model:Model) dispatch =
         [ (match model.page with
           | Landingpage -> landingpage model dispatch
           | Code_of_conduct -> codeofconduct model dispatch 
-          | Books -> books model dispatch 
+          | Books -> books model dispatch
         )]
         
-      sponsors model dispatch
       footer model dispatch ]
 
 
