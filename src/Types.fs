@@ -26,12 +26,21 @@ type Session =
   | Past_session of Sessiondetails
   | Upcoming_session of Sessiondetails
 
+type BookInfo = {
+  title: string
+  author: string
+  img: string
+}
+
+type Books =
+  | Book of BookInfo
+
 type Model = {
   menu_open: bool
   page: Page
   sessions: Session list
+  books: Books list
 }
-
 
 type Msg = 
   | Toggle_menu
@@ -39,3 +48,4 @@ type Msg =
   | ScrollTo of string
   | OnLogError of exn
   | Clicked_Anywhere
+  

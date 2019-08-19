@@ -2,8 +2,37 @@ module App.Data.Queries
 
 open App.Types
 
+let books = 
+    [
+        Book {
+              title = "Domain-Driven Design Tackling Complexity in the Heart of Software"
+              author = "Eric Evans"
+              img = "/img/books/domain-driven-design.jpg"
+        }
+        
+        Book {
+              title = "Implementing Domain-driven design"
+              author = "Vaughn Vernon"
+              img = "/img/books/implementing-domain-driven-design.jpeg"
+        }
+        
+        Book {
+              title = "Applying Domain-driven design and Patterns"
+              author = "Jimmy Nilsson"
+              img = "/img/books/Applying-Domain-Driven-Design-and-Patterns-by-Jimmy-Nilsson.jpeg"
+        }
+        
+        Book {
+              title = "Patterns, Principles, and Practices of Domain-Driven Design"
+              author = "Scott Millett, Nick Tune"
+              img = "/img/books/patterns-principles-and-practices-of-domain-driven-design.jpeg"
+        }
+    ]
+
 let sessions =
     [
+        
+        
         Past_session {
               title = "EventStorming Types and Heuristics with Rebecca, Paul and Alberto"
               date = "Thursday, August 8th. 2019"

@@ -5,7 +5,7 @@ open Fable.Helpers.React.Props
 open App.Types
 
 
-let session dispatch s =
+let session dispatch (s:Sessiondetails) =
   div [ Class "bg-white w-full rounded-lg shadow-md p-2 md:p-8 mt-6" ]
     [ div [ Class "font-bold" ]
         [ str s.title ]
@@ -87,7 +87,7 @@ let sessions model dispatch =
                       [
                         img [ Src "./img/no_upcoming.svg"
                               Class "h-64 mb-6"]
-                        div [ Class "" ] [ str "More sessions are coming to you eventually consistant..." ]
+                        div [ Class "" ] [ str "More sessions are coming to you eventually consistent..." ]
                         a [ Href "mailto:submissions@virtualddd.com"
                             Target "_blank"
                             Class "p-4 mt-6 bg-blue-light card-hoverable text-white" ]
@@ -113,4 +113,7 @@ let sessions model dispatch =
                         (model.sessions
                         |> List.filter (function Past_session _ -> true | Upcoming_session _ -> false)
                         |> List.map (function Past_session s -> (session_small dispatch s) | Upcoming_session s -> (session dispatch s) ))
-                        ] ] )]  
+                        ]
+                    ]
+                )
+      ]  

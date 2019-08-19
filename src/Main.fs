@@ -18,17 +18,18 @@ open App.Views.Hero
 open App.Views.About
 open App.Views.Sessions
 open App.Views.Books
-open Organisers
-open Sponsors
-open Cfp
+open App.Views.Organisers
+open App.Views.Sponsors
+open App.Views.Cfp
 open App.Views.Footer
 
+open App.Data
 open Router
 
 importAll "./style.css"
 
 let init result  =
-  let (model, cmd) = urlUpdate result { menu_open = false ; page = Landingpage ; sessions = Queries.sessions }
+  let (model, cmd) = urlUpdate result { menu_open = false ; page = Landingpage ; sessions = Queries.sessions ; books = Queries.books }
   model, Cmd.none
 
 let update (msg:Msg) (model:Model) =
