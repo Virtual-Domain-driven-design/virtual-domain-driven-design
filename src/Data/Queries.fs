@@ -28,7 +28,7 @@ let books =
         Book {
               title = "Patterns, Principles, and Practices of Domain-Driven Design"
               author = "Scott Millett, Nick Tune"
-              img = "/img/books/patterns-priPatterns, Principles, and Practices of Domain-Driven Designnciples-and-practices-of-domain-driven-design.jpeg"
+              img = "/img/books/patterns-principles-and-practices-of-domain-driven-design.jpeg"
               tags = ["essential, csharp"]
         }
         
