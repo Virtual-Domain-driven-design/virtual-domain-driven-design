@@ -58,9 +58,9 @@ let landingpage model dispatch =
     [ hero model dispatch
       about model dispatch
       sessions model dispatch
-      organisers model dispatch 
       cfp model dispatch
       sponsors model dispatch
+      organisers model dispatch 
     ]
 
 
