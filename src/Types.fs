@@ -27,7 +27,7 @@ type Session =
   | Upcoming_session of Sessiondetails
 
 type BookInfo = {
-  title: strings
+  title: string
   author: string
   img: string
   tags: string list
