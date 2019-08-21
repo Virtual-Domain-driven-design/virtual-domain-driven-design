@@ -10,6 +10,7 @@
     <Compile Include="Types.fs" />
     <Compile Include="Interop.fs" />
     <Compile Include="Data/Queries.fs" />
+    <Compile Include="Data\Queries.books.fs" />
     <Compile Include="Views/View.Navigation.fs" />
     <Compile Include="Views/View.CodeOfConduct.fs" />
     <Compile Include="Views/View.Hero.fs" />

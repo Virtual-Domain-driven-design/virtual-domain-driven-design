@@ -23,13 +23,12 @@ open App.Views.Sponsors
 open App.Views.Cfp
 open App.Views.Footer
 
-open App.Data
 open Router
 
 importAll "./style.css"
 
 let init result  =
-  let (model, cmd) = urlUpdate result { menu_open = false ; page = Landingpage ; sessions = Queries.sessions ; books = Queries.books }
+  let (model, cmd) = urlUpdate result { menu_open = false ; page = Landingpage ; sessions = Queries.sessions ; books = Queries_books.books }
   model, Cmd.none
 
 let update (msg:Msg) (model:Model) =
