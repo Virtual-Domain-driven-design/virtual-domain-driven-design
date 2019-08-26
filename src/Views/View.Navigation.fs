@@ -32,6 +32,10 @@ let links model dispatch =
             OnClick (fun e -> e.stopPropagation() ; GoTo Books |> dispatch) ]
         [ str "Books" ]
 
+      div [ Class "nav-item"
+            OnClick (fun e -> e.stopPropagation() ; GoTo Podcasts |> dispatch) ]
+        [ str "Podcasts" ]
+
       a [ Class "nav-item"
           Href "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/"
           Target "_blank"]

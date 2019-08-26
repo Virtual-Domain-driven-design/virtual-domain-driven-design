@@ -18,6 +18,7 @@ open App.Views.Hero
 open App.Views.About
 open App.Views.Sessions
 open App.Views.Books
+open App.Views.Podcasts
 open App.Views.Organisers
 open App.Views.Sponsors
 open App.Views.Cfp
@@ -74,6 +75,7 @@ let view (model:Model) dispatch =
           | Landingpage -> landingpage model dispatch
           | Code_of_conduct -> codeofconduct model dispatch 
           | Books -> books model dispatch
+          | Podcasts -> podcasts model dispatch
         )]
         
       footer model dispatch ]

@@ -12,6 +12,7 @@ let sessions =
               img = None
               video = Some "https://www.youtube.com/embed/5e7lhY2q8WQ"
               embedded = None
+              podcast = None
               description = "In the next SunDDDay discussion Alexey Zimarev and Marco Heimeshoff will join us and share their experience in building systems with CQRS and Event Sourcing. We will discuss what it exactly is, where it came from, what the strength and weaknesses are, when and how to use it, and how to design and maintain these systems.
 
                              Join us through zoom webinar or follow the live youtube stream. You can interact with us and ask your questions through chat, or raise your hand in the zoom webinar and join us live to ask your questions fishbowl style!"
@@ -27,6 +28,7 @@ let sessions =
               img = None
               video = Some "https://www.youtube.com/embed/jFEC7Pb1FtM"
               embedded = None
+              podcast = None
               description = "Rebecca Wirfs-Brock, Paul Rayner en Alberto Brandolini will join us in this VDDD meetup and talk about what types of EventStorming there are, and what heuristics they use.
 
                             Join us through youtube or zoom webinar in this discussion. You can interact with us and ask your questions through chat, or raise your hand in the zoom webinar and join us live to ask your questions fishbowl style!
@@ -43,6 +45,7 @@ let sessions =
               img = None 
               video = Some "https://www.youtube.com/embed/jZo44tbff1c"  
               embedded = None
+              podcast = Some "//html5-player.libsyn.com/embed/destination/id/1498139/height/360/theme/legacy/thumbnail/yes/direction/backward/no-cache/true/"
               description = "Over more than 15 years ago, Eric Evans published the book Domain-Driven Design. The blue book, as it is called today, has a vast amount of knowledge on software architecture. As Paul Rayner once stated 'Every new idea on software architecture; you can already find somewhere in the blue book'. Because the knowledge is so fast to take in at one go, a lot of people who bought the book never finished the book, mostly stopped reading before Part IV, strategic design. Therefore in this #VDDD special 'How to read the blue book,' Mathias Verraes will discuss with the strategic parts.
                               "
               links =
@@ -57,6 +60,7 @@ let sessions =
               img = None
               video = Some "https://www.youtube.com/embed/YqbXEhO237w" 
               embedded = None
+              podcast = None
               description = "In this # VDDD meetup, we will talk with Ora Egozi-Barzilai and Evelyn van Kelle about their experience with socio-technical architecture. Socio-technical refers to the interrelatedness of social and technical aspects of an organization. Specific for this meetup we will discuss how teams affect the boundaries between bounded contexts and vice versa. These effects will give challenges in the way we design software architecture and organize teams around software to be highly aligned with business goals.
 
                              Come join us, because together we can ask questions and discuss heuristics and patterns with Ora and Evelyn about socio-technical architecture!
@@ -73,6 +77,7 @@ let sessions =
               img = None
               video = Some "https://www.youtube.com/embed/WSAHL7oHGUw"
               embedded = None
+              podcast = None
               description = "In this SPA conference special, we will talk with Trond Hjorteland about if business capabilities are useful in DDD.
 
                             The DDD community seems to consist of mostly technical people, or at least with some sort of hands-on programming experience, both now an back when the blue book was published. The decision to put the technical patterns at the start of that book was strategic (!) in that it was meant to invite the programmers in. As a consequence of that, it seems that most know very little about the enterprises' architecture space, and if they do, it seems to be with disdain for those dreaded ivory architects. And, for good reason in a lot of large waterfall-driven enterprises.
@@ -93,6 +98,7 @@ let sessions =
               img = None
               video = Some "https://www.youtube.com/embed/7u-EtXVKR5g"
               embedded = None
+              podcast = None
               description = "In this next virtual DDD meetup, João Rosa and Krisztina Hirth will discuss with us how impact mapping helps to find the possible solutions to achieve a measurable goal before you even know what to visualize. Also, how can you then combine it with other visualisation tools like EventStorming to guide your strategic design?
 
                              In our industry, we have been assisting in digital transformations; the digital transformations have different labels, DevOps, Agile, Cloud, amongst others. However, most of these transformations just following a script, applying the same recipe everywhere. This approach has its merits, but also its pitfalls.
@@ -111,6 +117,7 @@ let sessions =
               img = None
               video = Some "https://www.youtube.com/embed/H553KZPCJQk"
               embedded = None
+              podcast = None
               description = "On this first SunDDDay 26th May at 16:30 Central European Time (Amsterdam GMT +2), virtual DDD meetup will hold an online panel discussion where you can ask questions!
 
                              Marco Heimeshoff, and Kenny baas-Schwegler (with a possible attendance by Zsófia Herendi and Trond Hjorteland) will discuss their experience with EventStorming and User story mapping for domain discovery.
@@ -132,6 +139,7 @@ let sessions =
               img = None
               video = Some "https://www.ustream.tv/embed/recorded/121763272"
               embedded = None
+              podcast = None
               description = "Nick Tune is coming to talk at Craft Conference (yaaay!!) and whilst he is here in Budapest he brings us one of his future talks (Strategic Microservice Patterns - find details below) and present it on this meetup, so DO NOT MISS IT :)
                               I am also pleased to announce another great presenter Helin Akgul. She will be talking about DDD practices in TransferWise, and she will be giving some examples around how they are using product engineering to create domain experts, and tips and tricks to adopting DDD practices gradually.
                               I will post the abstract of her talk very soon.
@@ -150,6 +158,7 @@ let sessions =
               img = None
               video = Some "https://www.ustream.tv/embed/recorded/120901497"
               embedded = None
+              podcast = None
               description = "Have you thought about that maybe all you know about patterns is just misconceptions? 
                 In this talk, Kevlin will take us to an alternative tour of patterns, one that is based on improving the habitability of code, communication, exploration, empiricism, reasoning, incremental development, sharing design and bridging rather than barricading different levels of expertise. 
                 Apparently, everyone knows about patterns. Except for those who don't. Which is basically all the people who've never come across patterns... plus many of the people who have. 

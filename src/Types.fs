@@ -5,6 +5,7 @@ type Page =
   | Landingpage
   | Code_of_conduct
   | Books
+  | Podcasts
 
 type Link = {
   url: string
@@ -18,6 +19,7 @@ type Sessiondetails = {
   img: string option
   video: string option
   embedded: string option
+  podcast: string option
   description: string
   links: Link list
 }

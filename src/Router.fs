@@ -12,12 +12,14 @@ let pageParser : Parser<Page->Page,Page> =
         UrlParser.map Landingpage (s "home") 
         UrlParser.map Code_of_conduct (s "codeofconduct")
         UrlParser.map Books (s "books")
+        UrlParser.map Podcasts (s "podcasts")
     ]
     
 let toPage = function
     | Landingpage -> "/home"
     | Code_of_conduct -> "/codeofconduct"
     | Books -> "/books"
+    | Podcasts -> "/podcasts"
 
 
 let urlUpdate (result: Option<Page>) model =
