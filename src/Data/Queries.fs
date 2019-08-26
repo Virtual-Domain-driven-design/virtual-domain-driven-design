@@ -5,12 +5,12 @@ open App.Types
 let sessions =
     [
         
-        Upcoming_session {
+        Past_session {
               title = "SunDDDay discussion: CQRS & Event Sourcing systems with Alexey and Marco"
               date = "Sunday, August 25th. 2019"
               time = "19:00 Paris-Amsterdam / 18:00 London Time / 13:00 Eastern Time (US and Canada)"
-              img = Some "https://secure.meetupstatic.com/photos/event/c/7/3/3/highres_484130995.jpeg"
-              video = None 
+              img = None
+              video = Some "https://www.youtube.com/embed/5e7lhY2q8WQ"
               embedded = None
               description = "In the next SunDDDay discussion Alexey Zimarev and Marco Heimeshoff will join us and share their experience in building systems with CQRS and Event Sourcing. We will discuss what it exactly is, where it came from, what the strength and weaknesses are, when and how to use it, and how to design and maintain these systems.
 
@@ -18,8 +18,6 @@ let sessions =
               links =
                   [
                       { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/264122914/" }
-                      { label = "Zoom" ; url = "https://zoom.us/j/393540720" }
-                      { label = "Youtube" ; url = "https://www.youtube.com/watch?v=5e7lhY2q8WQ" }
                   ] }
         
         Past_session {
