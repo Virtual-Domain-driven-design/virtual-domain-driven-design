@@ -45,7 +45,7 @@ let sessions =
               img = None 
               video = Some "https://www.youtube.com/embed/jZo44tbff1c"  
               embedded = None
-              podcast = Some "//html5-player.libsyn.com/embed/destination/id/1498139/height/360/theme/legacy/thumbnail/yes/direction/backward/no-cache/true/"
+              podcast = Some "https://oembed.libsyn.com/embed?item_id=10995584"
               description = "Over more than 15 years ago, Eric Evans published the book Domain-Driven Design. The blue book, as it is called today, has a vast amount of knowledge on software architecture. As Paul Rayner once stated 'Every new idea on software architecture; you can already find somewhere in the blue book'. Because the knowledge is so fast to take in at one go, a lot of people who bought the book never finished the book, mostly stopped reading before Part IV, strategic design. Therefore in this #VDDD special 'How to read the blue book,' Mathias Verraes will discuss with the strategic parts.
                               "
               links =
@@ -60,7 +60,7 @@ let sessions =
               img = None
               video = Some "https://www.youtube.com/embed/YqbXEhO237w" 
               embedded = None
-              podcast = None
+              podcast = Some "https://oembed.libsyn.com/embed?item_id=11027246"
               description = "In this # VDDD meetup, we will talk with Ora Egozi-Barzilai and Evelyn van Kelle about their experience with socio-technical architecture. Socio-technical refers to the interrelatedness of social and technical aspects of an organization. Specific for this meetup we will discuss how teams affect the boundaries between bounded contexts and vice versa. These effects will give challenges in the way we design software architecture and organize teams around software to be highly aligned with business goals.
 
                              Come join us, because together we can ask questions and discuss heuristics and patterns with Ora and Evelyn about socio-technical architecture!

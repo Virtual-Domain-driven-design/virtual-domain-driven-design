@@ -7,18 +7,15 @@ open Fable.Helpers.React.Props
 let podcast dispatch (s:Sessiondetails) =
     match s.podcast with
     | Some src ->
-        
-        div [ Class "videoframe" ]
-             [
-               div [  ]
-                //Weird this only helped FIXME later
-                [ str s.title]
-               iframe [ Class "videostream"
-                        AllowFullScreen true
-                        Src src
-                        Scrolling "no"
-                        FrameBorder 0 ]
-                 [ ] ]
+        div [ Class "bg-white w-full h-24 rounded-lg shadow-md" ]
+          [ div [ Class "videoframe" ]
+                 [
+                   iframe [ Class "videostream"
+                            AllowFullScreen true
+                            Src src
+                            Scrolling "no"
+                            FrameBorder 0 ]
+                     [ ] ] ]
     | None -> div [] []
 
 let podcasts model dispatch =
@@ -52,7 +49,7 @@ let podcasts model dispatch =
                          ]
                   ]
                   
-              div [ ]
+              div [ Class "my-8 w-4/5 lg:w-2/3" ]
                   [ div [ Class "flex items-stretch justify-center flex-wrap" ]
                       (model.sessions
                         |> List.filter (function Past_session _ -> true | Upcoming_session _ -> false)
