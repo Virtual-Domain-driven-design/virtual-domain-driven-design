@@ -19,13 +19,6 @@ let books =
         }
         
         Book {
-              title = "Applying Domain-driven design and Patterns"
-              author = "Jimmy Nilsson"
-              img = "/img/books/Applying-Domain-Driven-Design-and-Patterns-by-Jimmy-Nilsson.jpeg"
-              tags = ["essential, csharp, dotnet"]
-        }
-        
-        Book {
               title = "Patterns, Principles, and Practices of Domain-Driven Design"
               author = "Scott Millett, Nick Tune"
               img = "/img/books/patterns-principles-and-practices-of-domain-driven-design.jpeg"
@@ -51,5 +44,12 @@ let books =
               author = "Scott Wlaschin"
               img = "/img/books/domain-modeling-made-functional.jpeg"
               tags = ["essential, fsharp"]
+        }
+        
+        Book {
+              title = "Applying Domain-driven design and Patterns"
+              author = "Jimmy Nilsson"
+              img = "/img/books/Applying-Domain-Driven-Design-and-Patterns-by-Jimmy-Nilsson.jpeg"
+              tags = ["essential, csharp, dotnet"]
         }
     ]
