@@ -98,7 +98,7 @@ let sessions =
               img = None
               video = Some "https://www.youtube.com/embed/7u-EtXVKR5g"
               embedded = None
-              podcast = None
+              podcast = Some "https://oembed.libsyn.com/embed?item_id=11057267"
               description = "In this next virtual DDD meetup, João Rosa and Krisztina Hirth will discuss with us how impact mapping helps to find the possible solutions to achieve a measurable goal before you even know what to visualize. Also, how can you then combine it with other visualisation tools like EventStorming to guide your strategic design?
 
                              In our industry, we have been assisting in digital transformations; the digital transformations have different labels, DevOps, Agile, Cloud, amongst others. However, most of these transformations just following a script, applying the same recipe everywhere. This approach has its merits, but also its pitfalls.
