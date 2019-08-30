@@ -37,6 +37,15 @@ let podcasts model dispatch =
                                  ]
                                 str "Spotify"
                                  ]
+                            a [ Href "https://podcasts.google.com/?feed=aHR0cHM6Ly92aXJ0dWFsZGRkLmxpYnN5bi5jb20vcnNz"
+                                Target "_blank"
+                                Class "nav-item " ]
+                              [ img [
+                                   Class "ml-2 h-6"
+                                   Src "./img/google_podcast.png"
+                                 ]
+                                str "Google Podcasts"
+                                 ]
                             a [ Href "https://virtualddd.libsyn.com/rss"
                                 Target "_blank"
                                 Class "nav-item " ]
