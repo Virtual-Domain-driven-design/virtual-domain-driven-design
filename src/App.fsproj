@@ -10,18 +10,18 @@
     <Compile Include="Types.fs" />
     <Compile Include="Interop.fs" />
     <Compile Include="data/Queries.fs" />
-    <Compile Include="data\Queries.books.fs" />
+    <Compile Include="data/Queries.books.fs" />
     <Compile Include="view/Navigation.fs" />
     <Compile Include="view/CodeOfConduct.fs" />
     <Compile Include="view/Hero.fs" />
     <Compile Include="view/About.fs" />
     <Compile Include="view/Organisers.fs" />
-    <Compile Include="view\Sponsers.fs" />
+    <Compile Include="view/Sponsers.fs" />
     <Compile Include="view/Cfp.fs" />
     <Compile Include="view/Sessions.fs" />
     <Compile Include="view/Books.fs" />
     <Compile Include="view/Footer.fs" />
-    <Compile Include="view\Podcasts.fs" />
+    <Compile Include="view/Podcasts.fs" />
     <Compile Include="Router.fs" />    
     <Compile Include="Main.fs" />
   </ItemGroup>
