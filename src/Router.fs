@@ -5,7 +5,7 @@ open Elmish.Browser
 open Elmish.Browser.UrlParser
 open Elmish.Browser.Navigation
 
-open App.Types
+open VDDD
 
 let pageParser : Parser<Page->Page,Page> =
     oneOf [

@@ -1,4 +1,4 @@
-module App.Types
+namespace VDDD
 
 
 type Page =

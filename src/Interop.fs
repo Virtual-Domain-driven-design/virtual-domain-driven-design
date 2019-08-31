@@ -1,4 +1,4 @@
-module App.Interop
+module VDDD.Interop
 
 open Fable.Core
 

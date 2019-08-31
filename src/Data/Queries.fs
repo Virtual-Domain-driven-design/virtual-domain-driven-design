@@ -1,6 +1,6 @@
-module App.Data.Queries
+module VDDD.Data.Queries
 
-open App.Types
+open VDDD
 
 let sessions =
     [
