@@ -2,7 +2,6 @@ namespace VDDD
 
 module Books =
 
-  open VDDD
   open Fable.Helpers.React
   open Fable.Helpers.React.Props
 
@@ -16,7 +15,7 @@ module Books =
             a [ Class "text-sm text-left font-bold"]
               [ str b.title ] ]
 
-  let books model dispatch =
+  let render model dispatch =
     div [ Class "content bg-grey-lighter" ; Id "books"]
          [ div [ Class "w-full flex flex-col items-center justify-start"]
               [ h2 [ Class "my-6 w-4/5 lg:w-2/3 xl:w-1/2" ]

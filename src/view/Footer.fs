@@ -4,10 +4,9 @@ module Footer =
 
   open Fable.Helpers.React
   open Fable.Helpers.React.Props
-  open VDDD
 
 
-  let footer model dispatch =
+  let render model dispatch =
     div [ Class "footer bg-grey-lighter" ]
       [ div [ ] [ str "Copyright © Virtual Domain-Driven Design"]
         

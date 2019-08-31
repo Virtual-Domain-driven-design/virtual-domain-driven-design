@@ -46,7 +46,7 @@ module Organisers =
         ]
 
 
-  let organisers model dispatch =
+  let render model dispatch =
     div [ Class "content"; Id "organisers" ]
       [ div [ Class "mt-8 w-4/5 lg:w-2/3 xl:w-1/2" ]
             [ h2 []

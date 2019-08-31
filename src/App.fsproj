@@ -9,8 +9,10 @@
     <Content Include="style.css" />
     <Compile Include="Types.fs" />
     <Compile Include="Interop.fs" />
+    <Compile Include="Router.fs" />
     <Compile Include="data/Queries.fs" />
     <Compile Include="data/Queries.books.fs" />
+    <Compile Include="State.fs" />
     <Compile Include="view/Navigation.fs" />
     <Compile Include="view/CodeOfConduct.fs" />
     <Compile Include="view/Hero.fs" />
@@ -22,8 +24,8 @@
     <Compile Include="view/Books.fs" />
     <Compile Include="view/Footer.fs" />
     <Compile Include="view/Podcasts.fs" />
-    <Compile Include="Router.fs" />    
-    <Compile Include="Main.fs" />
+    <Compile Include="View.fs" />
+    <Compile Include="App.fs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Fable.Core" Version="2.0.2" />

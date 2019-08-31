@@ -2,7 +2,6 @@ namespace VDDD
 
 module Podcasts =
 
-  open VDDD
   open Fable.Helpers.React
   open Fable.Helpers.React.Props
 
@@ -20,7 +19,7 @@ module Podcasts =
                        [ ] ] ]
       | None -> div [] []
 
-  let podcasts model dispatch =
+  let render model dispatch =
     div [ Class "content" ; Id "podcasts"]
          [ div [ Class "my-8 w-4/5 lg:w-2/3 xl:w-1/2 flex flex-col items-center justify-start"]
               [ h2 [ Class "my-8 w-4/5 lg:w-2/3 xl:w-1/2" ]

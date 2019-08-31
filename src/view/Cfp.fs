@@ -5,7 +5,7 @@ module Cfp =
   open Fable.Helpers.React
   open Fable.Helpers.React.Props
 
-  let cfp model dispatch =
+  let render model dispatch =
     div [ Class "content"; Id "cfp" ]
       [ div [ Class "my-8 w-4/5 lg:w-2/3 xl:w-1/2 flex flex-col items-center justify-start" ]
             [ h2 []

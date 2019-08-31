@@ -6,7 +6,7 @@ module Hero =
   open Fable.Helpers.React.Props
 
 
-  let hero model dispatch =
+  let render model dispatch =
       div [ Class "hero"
             Style [ Background "url(./img/kandddinsky.jpg)"
                     BackgroundSize "cover"

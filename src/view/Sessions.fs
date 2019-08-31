@@ -4,7 +4,6 @@ module Sessions =
 
   open Fable.Helpers.React
   open Fable.Helpers.React.Props
-  open VDDD
 
 
   let session dispatch (s:Sessiondetails) =
@@ -77,7 +76,7 @@ module Sessions =
 
     | None -> div [] []
 
-  let sessions model dispatch =
+  let render model dispatch =
     div [ Class "content bg-grey-lighter" ; Id "sessions"]
       [ (match model.sessions
           |> List.filter (function Past_session _ -> false | Upcoming_session _ -> true)

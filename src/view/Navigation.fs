@@ -2,7 +2,6 @@ namespace VDDD
 
 module Navigation =
 
-  open VDDD
   open Fable.Helpers.React
   open Fable.Helpers.React.Props
 
@@ -50,7 +49,7 @@ module Navigation =
       ]
 
 
-  let navbar (model:Model) dispatch =
+  let render (model:Model) dispatch =
     let visibility =
       match model.menu_open with
       | true -> "block"
