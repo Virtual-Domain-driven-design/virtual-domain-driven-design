@@ -1,4 +1,4 @@
-module App.Views.Cfp
+module App.Cfp
 
 open Fable.Helpers.React
 open Fable.Helpers.React.Props

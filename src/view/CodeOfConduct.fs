@@ -1,4 +1,4 @@
-module App.Views.CodeOfConduct
+module App.CodeOfConduct
 
 open Fable.Helpers.React
 open Fable.Helpers.React.Props

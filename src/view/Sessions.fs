@@ -1,4 +1,4 @@
-module App.Views.Sessions
+module App.Sessions
 
 open Fable.Helpers.React
 open Fable.Helpers.React.Props

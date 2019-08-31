@@ -1,4 +1,4 @@
-module App.Views.Podcasts
+module App.Podcasts
 
 open App.Types
 open Fable.Helpers.React

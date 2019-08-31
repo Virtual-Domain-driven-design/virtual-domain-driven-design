@@ -1,4 +1,4 @@
-module App.Views.Books
+module App.Books
 
 open App.Types
 open Fable.Helpers.React

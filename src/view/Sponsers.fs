@@ -1,4 +1,4 @@
-module App.Views.Sponsors
+module App.Sponsors
 
 open Fable.Helpers.React
 open Fable.Helpers.React.Props

@@ -10,19 +10,18 @@ open Fable.Core.JsInterop
 open App.Types
 open App.Interop
 open App.Data
-open App.Views
 
-open App.Views.Navigation
-open App.Views.CodeOfConduct
-open App.Views.Hero
-open App.Views.About
-open App.Views.Sessions
-open App.Views.Books
-open App.Views.Podcasts
-open App.Views.Organisers
-open App.Views.Sponsors
-open App.Views.Cfp
-open App.Views.Footer
+open App.Navigation
+open App.CodeOfConduct
+open App.Hero
+open App.About
+open App.Sessions
+open App.Books
+open App.Podcasts
+open App.Organisers
+open App.Sponsors
+open App.Cfp
+open App.Footer
 
 open Router
 

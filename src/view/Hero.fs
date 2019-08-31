@@ -1,4 +1,4 @@
-module App.Views.Hero
+module App.Hero
 
 open Fable.Helpers.React
 open Fable.Helpers.React.Props

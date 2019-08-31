@@ -1,4 +1,4 @@
-module App.Views.Organisers
+module App.Organisers
 
 open Fable.Helpers.React
 open Fable.Helpers.React.Props

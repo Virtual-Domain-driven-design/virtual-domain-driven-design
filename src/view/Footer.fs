@@ -1,4 +1,4 @@
-module App.Views.Footer
+module App.Footer
 
 open Fable.Helpers.React
 open Fable.Helpers.React.Props
