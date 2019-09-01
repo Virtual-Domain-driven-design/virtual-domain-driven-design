@@ -4,6 +4,25 @@ open VDDD.Types
 
 let sessions =
     [
+        Upcoming_session {
+                      title = "Introducing DDD to your Company with Barry O Sullivan"
+                      date = "Tuesday, September 24th. 2019"
+                      time = "19:00 Paris-Amsterdam / 18:00 London Time / 13:00 Eastern Time (US and Canada)"
+                      img = Some "https://secure.meetupstatic.com/photos/event/d/e/7/4/highres_484436948.jpeg"
+                      video = None
+                      embedded = None
+                      podcast = None
+                      description = "DDD is about enabling developers and business owners to work together on a collaborative model, but how do you introduce the concept? In a world rife with acronyms and buzzword, people can be hesitant to try out new ideas, especially ones that involve changing the status quo.
+
+                                    In this session, we'll discuss various techniques and ideas for introducing DDD to an organisation, with a focus on the needs of the company and individuals, and how to approach those needs. Afterwards, you'll be better able to demonstrate the value of DDD to stakeholders, without scaring them off with a load of new jargon.
+
+                                    Join us in this conversation with Barry O Sullivan. You can join the conversation through zoom webinar fishbowl style asking questions live. Alternatively, you can always ask questions through the chat on zoom or youtube or just sit back and relax and watch the youtube stream!"
+                      links =
+                          [
+                              { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/264423503/" }
+                              { label = "Zoom" ; url = "https://zoom.us/j/978311850" }
+                              { label = "Youtube" ; url = "https://zoom.us/j/978311850" }
+                          ] }
         
         Past_session {
               title = "SunDDDay discussion: CQRS & Event Sourcing systems with Alexey and Marco"
