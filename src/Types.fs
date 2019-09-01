@@ -1,8 +1,8 @@
-namespace VDDD
+namespace VDDD.Types
 
 
 type Page =
-  | Landingpage
+  | Landingpage of string
   | Code_of_conduct
   | Books
   | Podcasts
@@ -48,7 +48,6 @@ type Model = {
 type Msg = 
   | Toggle_menu
   | GoTo of Page
-  | ScrollTo of string
   | OnLogError of exn
   | Clicked_Anywhere
   

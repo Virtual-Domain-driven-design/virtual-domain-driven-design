@@ -4,49 +4,29 @@ module Navigation =
 
   open Fable.Helpers.React
   open Fable.Helpers.React.Props
+  open VDDD.Types
 
+  let entry label onClick =
+    div [ Class "px-2 py-4 text-lg leading-tight cursor-pointer flex-no-shrink rounded-lg hover:bg-grey-light hover:text-blue-darker"
+          OnClick (fun e -> e.stopPropagation() ; onClick() ) ]
+      [ label |> ofString ]    
 
   let links model dispatch =
     div [ Class "flex flex-col lg:flex-row items-stretch justify-end" ]
-      [
-        div [ Class "nav-item"
-              OnClick (fun e -> e.stopPropagation() ; ScrollTo "about" |> dispatch) ]
-          [ str "About" ]
-          
-        div [ Class "nav-item"
-              OnClick (fun e -> e.stopPropagation() ; ScrollTo "sessions" |> dispatch) ]
-          [ str "Sessions" ]
-        
-        div [ Class "nav-item"
-              OnClick (fun e -> e.stopPropagation() ; ScrollTo "cfp" |> dispatch) ]
-          [ str "CFP" ]
+      [ entry "About" (fun _ -> GoTo (Landingpage "about") |> dispatch)
+        entry "Sessions" (fun _ -> GoTo (Landingpage "sessions") |> dispatch)
+        entry "CFP" (fun _ -> GoTo (Landingpage "cfp") |> dispatch)
+        entry "Sponsors" (fun _ -> GoTo (Landingpage "sponsors") |> dispatch)
+        entry "Organisers" (fun _ -> GoTo (Landingpage "organisers") |> dispatch)
+        entry "Books" (fun _ -> GoTo Books |> dispatch)
+        entry "Podcasts" (fun _ -> GoTo Podcasts |> dispatch)
 
-        div [ Class "nav-item"
-              OnClick (fun e -> e.stopPropagation() ; ScrollTo "sponsors" |> dispatch) ]
-          [ str "Sponsors" ]
-          
-        div [ Class "nav-item"
-              OnClick (fun e -> e.stopPropagation() ; ScrollTo "organisers" |> dispatch) ]
-          [ str "Organisers" ]
-
-        div [ Class "nav-item"
-              OnClick (fun e -> e.stopPropagation() ; GoTo Books |> dispatch) ]
-          [ str "Books" ]
-
-        div [ Class "nav-item"
-              OnClick (fun e -> e.stopPropagation() ; GoTo Podcasts |> dispatch) ]
-          [ str "Podcasts" ]
-
-        a [ Class "nav-item"
+        a [ Class "px-2 py-4 text-lg leading-tight cursor-pointer flex-no-shrink rounded-lg hover:bg-grey-light hover:text-blue-darker flex items-center justify-center"
             Href "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/"
             Target "_blank"]
-          [ str "Join the "
-            img [
-              Class "ml-2 h-6"
-              Src "./img/meetup.svg"
-            ]
-          ]
-      ]
+          [ "Join the " |> ofString
+            img [ Class "ml-2 h-6"
+                  Src "./img/meetup.svg" ] ] ]
 
 
   let render (model:Model) dispatch =
@@ -58,8 +38,8 @@ module Navigation =
     div [ Class "navbar" ]
       [ div [ Class "lg:hidden navbar navbar-opaque " ]
           [ div [ Class "w-full flex flex-row items-center justify-between" ]
-              [ div [ Class "nav-item"
-                      OnClick (fun _ -> GoTo Landingpage |> dispatch)]
+              [ div [ Class "p-4 font-bold text-lg cursor-pointer flex-no-shrink flex items-center justify-center rounded-lg hover:bg-grey-light hover:text-blue-darker"
+                      OnClick (fun _ -> GoTo (Landingpage "top") |> dispatch)]
                     [ str "virtualDDD.com"]
                 button [ Class "flex-no-shrink flex items-center m-4 px-3 py-2 border rounded border-white hover:text-blue-light hover:border-blue-light"
                          OnClick (fun e -> e.stopPropagation() ; Toggle_menu |> dispatch ) ]
@@ -72,7 +52,7 @@ module Navigation =
               
         div [ Class ("navbar-permanent hidden lg:flex flex-row items-center justify-center navbar"); Id "navbar" ]
           [ div [ Class "w-4/5 xl:w-2/3 flex flex-col lg:flex-row items-center justify-between" ]
-              [ div [ Class "nav-item "  
-                      OnClick (fun _ -> GoTo Landingpage |> dispatch) ]
+              [ div [ Class "p-4 font-bold text-lg cursor-pointer flex-no-shrink flex items-center justify-center rounded-lg hover:bg-grey-light hover:text-blue-darker"  
+                      OnClick (fun _ -> GoTo (Landingpage "top") |> dispatch) ]
                     [ str "virtualDDD.com"]
                 links model dispatch ] ] ]

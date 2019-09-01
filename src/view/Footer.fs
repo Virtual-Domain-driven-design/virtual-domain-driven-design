@@ -4,7 +4,7 @@ module Footer =
 
   open Fable.Helpers.React
   open Fable.Helpers.React.Props
-
+  open VDDD.Types
 
   let render model dispatch =
     div [ Class "footer bg-grey-lighter" ]

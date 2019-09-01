@@ -4,9 +4,15 @@ module View =
 
     open Fable.Helpers.React
     open Fable.Helpers.React.Props
+    open VDDD.Types
+    open Interop
 
     let landingpage model dispatch =
-      div []
+      let hash =
+        ( match model.page with 
+          | Landingpage h -> h 
+          | _ -> "top") 
+      div [ OnLoad (fun _ -> scrollIntoView hash) ]
         [ Hero.render model dispatch
           About.render model dispatch
           Sessions.render model dispatch
@@ -23,7 +29,7 @@ module View =
           
           div [ ]
             [ (match model.page with
-              | Landingpage -> landingpage model dispatch
+              | Landingpage _ -> landingpage model dispatch
               | Code_of_conduct -> CodeOfConduct.render model dispatch 
               | Books -> Books.render model dispatch
               | Podcasts -> Podcasts.render model dispatch

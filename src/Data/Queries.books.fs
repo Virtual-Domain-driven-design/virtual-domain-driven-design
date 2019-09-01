@@ -1,6 +1,6 @@
 module VDDD.Data.Queries_books
 
-open VDDD
+open VDDD.Types
 
 let books = 
     [

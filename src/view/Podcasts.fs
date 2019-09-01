@@ -4,7 +4,8 @@ module Podcasts =
 
   open Fable.Helpers.React
   open Fable.Helpers.React.Props
-
+  open VDDD.Types
+  
   let podcast dispatch (s:Sessiondetails) =
       match s.podcast with
       | Some src ->

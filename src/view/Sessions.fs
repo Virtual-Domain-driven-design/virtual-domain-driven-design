@@ -4,7 +4,7 @@ module Sessions =
 
   open Fable.Helpers.React
   open Fable.Helpers.React.Props
-
+  open VDDD.Types
 
   let session dispatch (s:Sessiondetails) =
     div [ Class "bg-white w-full rounded-lg shadow-md p-2 md:p-8 mt-6" ]

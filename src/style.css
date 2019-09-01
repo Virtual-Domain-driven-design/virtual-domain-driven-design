@@ -27,14 +27,6 @@ a {
     @apply navbar-opaque;    
 }
 
-.nav-item {
-    @apply p-4 font-bold text-lg cursor-pointer flex-no-shrink flex items-center justify-center;
-}
-
-.nav-item:hover {
-    @apply rounded-lg bg-grey-light text-blue-darker;
-}
-
 .link {
     @apply text-blue-dark;
 }

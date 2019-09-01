@@ -42,13 +42,15 @@
   </head>
   <body>
       <div id="elmish-app" class="elmish-app"></div>
-      <script src="bundle.js"></script>
       <script>
         function scrollIntoView(hash) {
           let elem = document.getElementById(hash);
-          elem.scrollIntoView({ left: 0, block: 'start', behavior: 'smooth' });
-          e.preventDefault();
+          if (elem) 
+          {
+            elem.scrollIntoView({ left: 0, block: 'start', behavior: 'smooth' });
+          }
         };
       </script>
+      <script src="bundle.js"></script>
   </body>
 </html>

@@ -4,7 +4,8 @@ module Books =
 
   open Fable.Helpers.React
   open Fable.Helpers.React.Props
-
+  open VDDD.Types
+  
   let book dispatch (b:BookInfo) =
     div [ Class "bg-white w-64 card-hoverable shadow-md p-4 m-2" ]
           [
