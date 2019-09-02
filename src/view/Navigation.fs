@@ -22,11 +22,20 @@ module Navigation =
         entry "Podcasts" (fun _ -> GoTo Podcasts |> dispatch)
 
         a [ Class "px-2 py-4 text-lg leading-tight cursor-pointer flex-no-shrink rounded-lg hover:bg-grey-light hover:text-blue-darker flex items-center justify-center"
+            Href "https://t.co/MRxpx0rLH2?amp=1"
+            Target "_blank"]
+          [ "Join " |> ofString
+            img [ Class "ml-2 h-6"
+                  Src "./img/slack_icon.png" ] ]
+        
+        a [ Class "px-2 py-4 text-lg leading-tight cursor-pointer flex-no-shrink rounded-lg hover:bg-grey-light hover:text-blue-darker flex items-center justify-center"
             Href "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/"
             Target "_blank"]
           [ "Join the " |> ofString
             img [ Class "ml-2 h-6"
-                  Src "./img/meetup.svg" ] ] ]
+                  Src "./img/meetup.svg" ] ]
+       
+       ]
 
 
   let render (model:Model) dispatch =
