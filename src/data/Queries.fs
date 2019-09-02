@@ -96,7 +96,7 @@ let sessions =
               img = None
               video = Some "https://www.youtube.com/embed/WSAHL7oHGUw"
               embedded = None
-              podcast = None
+              podcast = Some "https://oembed.libsyn.com/embed?item_id=11085401"
               description = "In this SPA conference special, we will talk with Trond Hjorteland about if business capabilities are useful in DDD.
 
                             The DDD community seems to consist of mostly technical people, or at least with some sort of hands-on programming experience, both now an back when the blue book was published. The decision to put the technical patterns at the start of that book was strategic (!) in that it was meant to invite the programmers in. As a consequence of that, it seems that most know very little about the enterprises' architecture space, and if they do, it seems to be with disdain for those dreaded ivory architects. And, for good reason in a lot of large waterfall-driven enterprises.
