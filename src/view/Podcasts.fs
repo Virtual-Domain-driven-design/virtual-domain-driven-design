@@ -48,6 +48,15 @@ module Podcasts =
                                    ]
                                   str "Google Podcasts"
                                    ]
+                              a [ Href "https://podcasts.apple.com/nl/podcast/virtual-domain-driven-design/id1478089740?l=en"
+                                  Target "_blank"
+                                  Class "nav-item " ]
+                                [ img [
+                                     Class "ml-2 h-6"
+                                     Src "./img/apple_podcast.png"
+                                   ]
+                                  str "Apple Podcasts"
+                                   ]
                               a [ Href "https://virtualddd.libsyn.com/rss"
                                   Target "_blank"
                                   Class "nav-item " ]
