@@ -3,6 +3,7 @@
 @tailwind components;
 
 .reveal-menu-content { @apply relative; }
+
 .menu-content { @apply absolute pin-t pin-r mt-16 bg-white rounded shadow-lg z-30 hidden; }
 
 .menu-content:hover,

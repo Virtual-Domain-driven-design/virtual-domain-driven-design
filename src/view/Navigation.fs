@@ -36,6 +36,15 @@ module Navigation =
           ]
       ] 
 
+  let submenu_resources dispatch =
+    button [ Class (sprintf "reveal-menu-content %s text-blue-dark focus:outline-none" menuitem_style) ]
+      [ "Resources" |> ofString
+        div [ Class "menu-content w-32"]
+          [ entry "Books" (fun _ -> GoTo Books |> dispatch)
+            entry "Podcasts" (fun _ -> GoTo Podcasts |> dispatch) ]
+      ]
+
+
   let links model dispatch =
     div [ Class "flex flex-col lg:flex-row items-stretch justify-end" ]
       [ entry "About" (fun _ -> GoTo (Landingpage "about") |> dispatch)
@@ -43,8 +52,7 @@ module Navigation =
         entry "CFP" (fun _ -> GoTo (Landingpage "cfp") |> dispatch)
         entry "Sponsors" (fun _ -> GoTo (Landingpage "sponsors") |> dispatch)
         entry "Organisers" (fun _ -> GoTo (Landingpage "organisers") |> dispatch)
-        entry "Books" (fun _ -> GoTo Books |> dispatch)
-        entry "Podcasts" (fun _ -> GoTo Podcasts |> dispatch)
+        submenu_resources dispatch
         submenu_social dispatch
       ]
 
@@ -69,7 +77,7 @@ module Navigation =
                   
             div [ Class (visibility + " bg-white w-full z-25") ]
               [ links model dispatch] ]  
-              
+
         div [ Class ("navbar-permanent hidden lg:flex flex-row items-center justify-center navbar"); Id "navbar" ]
           [ div [ Class "w-4/5 xl:w-2/3 flex flex-col lg:flex-row items-center justify-between" ]
               [ div [ Class "p-4 font-bold text-lg cursor-pointer flex-no-shrink flex items-center justify-center rounded-lg hover:bg-grey-light hover:text-blue-darker"  
