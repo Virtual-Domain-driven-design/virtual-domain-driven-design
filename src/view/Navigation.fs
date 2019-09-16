@@ -22,11 +22,10 @@ module Navigation =
 
   let links model dispatch =
     div [ Class "flex flex-col lg:flex-row items-stretch justify-end" ]
-      [ entry "About" (fun _ -> GoTo (Landingpage "about") |> dispatch)
-        entry "Sessions" (fun _ -> GoTo (Landingpage "sessions") |> dispatch)
+      [ entry "Sessions" (fun _ -> GoTo (Landingpage "sessions") |> dispatch)
         entry "CFP" (fun _ -> GoTo (Landingpage "cfp") |> dispatch)
         entry "Sponsors" (fun _ -> GoTo (Landingpage "sponsors") |> dispatch)
-        entry "Organisers" (fun _ -> GoTo (Landingpage "organisers") |> dispatch)
+        entry "About" (fun _ -> GoTo (Landingpage "about") |> dispatch)
         submenu "Resources"
           [ entry "Books" (fun _ -> GoTo Books |> dispatch)
             entry "Podcasts" (fun _ -> GoTo Podcasts |> dispatch) ]
