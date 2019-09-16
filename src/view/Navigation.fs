@@ -6,10 +6,35 @@ module Navigation =
   open Fable.Helpers.React.Props
   open VDDD.Types
 
+  let menuitem_style = 
+    "px-2 py-4 text-lg leading-tight cursor-pointer flex-no-shrink rounded-lg hover:bg-grey-light hover:text-blue-darker"
+
+
   let entry label onClick =
-    div [ Class "px-2 py-4 text-lg leading-tight cursor-pointer flex-no-shrink rounded-lg hover:bg-grey-light hover:text-blue-darker"
+    div [ Class menuitem_style
           OnClick (fun e -> e.stopPropagation() ; onClick() ) ]
       [ label |> ofString ]    
+
+
+  let submenu_social dispatch =
+    button [ Class (sprintf "reveal-menu-content %s text-blue-dark focus:outline-none" menuitem_style) ]
+      [ "Social" |> ofString
+        div [ Class "menu-content w-32"]
+          [ a [ Class "w-full px-2 py-4 text-lg leading-tight cursor-pointer flex-no-shrink rounded-lg hover:bg-grey-light hover:text-blue-darker flex items-center justify-center"
+                Href "https://t.co/MRxpx0rLH2?amp=1"
+                Target "_blank"]
+              [ img [ Class "mr-2 h-6"
+                      Src "./img/slack_icon.png" ] 
+                div [ Class "pt-1"] ["Slack " |> ofString ]
+              ]
+            
+            a [ Class "w-full px-2 py-4 text-lg leading-tight cursor-pointer flex-no-shrink rounded-lg hover:bg-grey-light hover:text-blue-darker flex items-center justify-center"
+                Href "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/"
+                Target "_blank"]
+              [ img [ Class "ml-2 h-6"
+                      Src "./img/meetup.svg" ] ]
+          ]
+      ] 
 
   let links model dispatch =
     div [ Class "flex flex-col lg:flex-row items-stretch justify-end" ]
@@ -20,22 +45,8 @@ module Navigation =
         entry "Organisers" (fun _ -> GoTo (Landingpage "organisers") |> dispatch)
         entry "Books" (fun _ -> GoTo Books |> dispatch)
         entry "Podcasts" (fun _ -> GoTo Podcasts |> dispatch)
-
-        a [ Class "px-2 py-4 text-lg leading-tight cursor-pointer flex-no-shrink rounded-lg hover:bg-grey-light hover:text-blue-darker flex items-center justify-center"
-            Href "https://t.co/MRxpx0rLH2?amp=1"
-            Target "_blank"]
-          [ "Join " |> ofString
-            img [ Class "ml-2 h-6"
-                  Src "./img/slack_icon.png" ] ]
-        
-        a [ Class "px-2 py-4 text-lg leading-tight cursor-pointer flex-no-shrink rounded-lg hover:bg-grey-light hover:text-blue-darker flex items-center justify-center"
-            Href "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/"
-            Target "_blank"]
-          [ "Join the " |> ofString
-            img [ Class "ml-2 h-6"
-                  Src "./img/meetup.svg" ] ]
-       
-       ]
+        submenu_social dispatch
+      ]
 
 
   let render (model:Model) dispatch =

@@ -1,8 +1,15 @@
- @tailwind preflight;
+@tailwind preflight;
 
- @tailwind components;
+@tailwind components;
 
- @tailwind utilities;
+.reveal-menu-content { @apply relative; }
+.menu-content { @apply absolute pin-t pin-r mt-16 bg-white rounded shadow-lg z-30 hidden; }
+
+.menu-content:hover,
+.reveal-menu-content:focus > .menu-content { @apply block; }
+
+
+@tailwind utilities;
 
 a {
     @apply text-blue-dark no-underline;
