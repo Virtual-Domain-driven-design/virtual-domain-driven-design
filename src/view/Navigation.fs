@@ -9,17 +9,29 @@ module Navigation =
   let menuitem_style = 
     "px-2 py-4 text-lg leading-tight cursor-pointer flex-no-shrink rounded-lg hover:bg-grey-light hover:text-blue-darker"
 
-
   let entry label onClick =
     div [ Class menuitem_style
           OnClick (fun e -> e.stopPropagation() ; onClick() ) ]
       [ label |> ofString ]    
 
-
-  let submenu_social dispatch =
+  let submenu label content =
     button [ Class (sprintf "reveal-menu-content %s text-blue-dark focus:outline-none" menuitem_style) ]
-      [ "Social" |> ofString
+      [ label |> ofString
         div [ Class "menu-content w-32"]
+          content ]
+
+  let links model dispatch =
+    div [ Class "flex flex-col lg:flex-row items-stretch justify-end" ]
+      [ entry "About" (fun _ -> GoTo (Landingpage "about") |> dispatch)
+        entry "Sessions" (fun _ -> GoTo (Landingpage "sessions") |> dispatch)
+        entry "CFP" (fun _ -> GoTo (Landingpage "cfp") |> dispatch)
+        entry "Sponsors" (fun _ -> GoTo (Landingpage "sponsors") |> dispatch)
+        entry "Organisers" (fun _ -> GoTo (Landingpage "organisers") |> dispatch)
+        submenu "Resources"
+          [ entry "Books" (fun _ -> GoTo Books |> dispatch)
+            entry "Podcasts" (fun _ -> GoTo Podcasts |> dispatch) ]
+
+        submenu "Social" 
           [ a [ Class "w-full px-2 py-4 text-lg leading-tight cursor-pointer flex-no-shrink rounded-lg hover:bg-grey-light hover:text-blue-darker flex items-center justify-center"
                 Href "https://t.co/MRxpx0rLH2?amp=1"
                 Target "_blank"]
@@ -34,26 +46,6 @@ module Navigation =
               [ img [ Class "ml-2 h-6"
                       Src "./img/meetup.svg" ] ]
           ]
-      ] 
-
-  let submenu_resources dispatch =
-    button [ Class (sprintf "reveal-menu-content %s text-blue-dark focus:outline-none" menuitem_style) ]
-      [ "Resources" |> ofString
-        div [ Class "menu-content w-32"]
-          [ entry "Books" (fun _ -> GoTo Books |> dispatch)
-            entry "Podcasts" (fun _ -> GoTo Podcasts |> dispatch) ]
-      ]
-
-
-  let links model dispatch =
-    div [ Class "flex flex-col lg:flex-row items-stretch justify-end" ]
-      [ entry "About" (fun _ -> GoTo (Landingpage "about") |> dispatch)
-        entry "Sessions" (fun _ -> GoTo (Landingpage "sessions") |> dispatch)
-        entry "CFP" (fun _ -> GoTo (Landingpage "cfp") |> dispatch)
-        entry "Sponsors" (fun _ -> GoTo (Landingpage "sponsors") |> dispatch)
-        entry "Organisers" (fun _ -> GoTo (Landingpage "organisers") |> dispatch)
-        submenu_resources dispatch
-        submenu_social dispatch
       ]
 
 
