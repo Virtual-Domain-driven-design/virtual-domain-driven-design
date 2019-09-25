@@ -28,7 +28,7 @@ let sessions =
                       date = "Tuesday, September 24th. 2019"
                       time = "19:00 Paris-Amsterdam / 18:00 London Time / 13:00 Eastern Time (US and Canada)"
                       img = None 
-                      video = Some "https://youtu.be/Vb7ZwYQPqqQ"
+                      video = Some "https://www.youtube.com/embed/Vb7ZwYQPqqQ"
                       embedded = None
                       podcast = Some "https://oembed.libsyn.com/embed?item_id=11387732"
                       description = "DDD is about enabling developers and business owners to work together on a collaborative model, but how do you introduce the concept? In a world rife with acronyms and buzzword, people can be hesitant to try out new ideas, especially ones that involve changing the status quo.
@@ -39,8 +39,6 @@ let sessions =
                       links =
                           [
                               { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/264423503/" }
-                              { label = "Zoom" ; url = "https://zoom.us/j/978311850" }
-                              { label = "Youtube" ; url = "https://youtu.be/Vb7ZwYQPqqQ" }
                           ] }
         
         Past_session {
