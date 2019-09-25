@@ -5,13 +5,32 @@ open VDDD.Types
 let sessions =
     [
         Upcoming_session {
-                      title = "Introducing DDD to your Company with Barry O Sullivan"
-                      date = "Tuesday, September 24th. 2019"
+                      title = "How to read the blue book: Large-scale structure for strategic design deep dive"
+                      date = "Tuesday, November 12th. 2019"
                       time = "19:00 Paris-Amsterdam / 18:00 London Time / 13:00 Eastern Time (US and Canada)"
-                      img = Some "https://secure.meetupstatic.com/photos/event/d/e/7/4/highres_484436948.jpeg"
+                      img = Some "https://secure.meetupstatic.com/photos/event/8/1/6/5/highres_482853125.jpeg"
                       video = None
                       embedded = None
                       podcast = None
+                      description = "Have you never read the strategic part IV from Eric Evans blue book? Then here is your chance to get some valuable insights into large-scale structure for strategic design. In a large system without any overarching principle that allows elements to be interpreted in term of their role in patterns that span de whole design, developers cannot see the forest for the trees. Therefore we devise a pattern of rules or roles and relationships that will span the entire system and that allows some understanding of each part's place in the while — even without detailed knowledge of the part's responsibility.
+
+                                    Join us in this blue book deep-dive discussion with Mathias Verraes about the theory from the blue book about Large-scale structure for strategic design."
+                      links =
+                          [
+                              { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/264521950/" }
+                              { label = "Zoom" ; url = "https://zoom.us/j/850723380" }
+                              { label = "Youtube" ; url = "https://youtu.be/7_KZ8_R4oOU" }
+                          ]
+        }
+        
+        Past_session {
+                      title = "Introducing DDD to your Company with Barry O Sullivan"
+                      date = "Tuesday, September 24th. 2019"
+                      time = "19:00 Paris-Amsterdam / 18:00 London Time / 13:00 Eastern Time (US and Canada)"
+                      img = None 
+                      video = Some "https://youtu.be/Vb7ZwYQPqqQ"
+                      embedded = None
+                      podcast = Some "https://oembed.libsyn.com/embed?item_id=11387732"
                       description = "DDD is about enabling developers and business owners to work together on a collaborative model, but how do you introduce the concept? In a world rife with acronyms and buzzword, people can be hesitant to try out new ideas, especially ones that involve changing the status quo.
 
                                     In this session, we'll discuss various techniques and ideas for introducing DDD to an organisation, with a focus on the needs of the company and individuals, and how to approach those needs. Afterwards, you'll be better able to demonstrate the value of DDD to stakeholders, without scaring them off with a load of new jargon.
