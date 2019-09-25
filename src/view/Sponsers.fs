@@ -32,6 +32,10 @@ module Sponsors =
                     { Image = "./img/sponsors/Ubiquitous.png" 
                       Website = "https://www.ubiquitous.no/"
                     }
+                  sponsor "Xebia"
+                    { Image = "./img/sponsors/xebia.png" 
+                      Website = "https://www.xebia.com/"
+                    }
                 ]   
             ]
       ]
