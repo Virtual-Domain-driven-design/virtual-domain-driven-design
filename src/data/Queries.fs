@@ -153,7 +153,7 @@ let sessions =
               img = None
               video = Some "https://www.youtube.com/embed/H553KZPCJQk"
               embedded = None
-              podcast = None
+              podcast = Some "https://oembed.libsyn.com/embed?item_id=11445518"
               description = "On this first SunDDDay 26th May at 16:30 Central European Time (Amsterdam GMT +2), virtual DDD meetup will hold an online panel discussion where you can ask questions!
 
                              Marco Heimeshoff, and Kenny baas-Schwegler (with a possible attendance by Zsófia Herendi and Trond Hjorteland) will discuss their experience with EventStorming and User story mapping for domain discovery.
