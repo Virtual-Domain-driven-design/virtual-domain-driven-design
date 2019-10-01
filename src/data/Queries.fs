@@ -64,7 +64,7 @@ let sessions =
               img = None
               video = Some "https://www.youtube.com/embed/jFEC7Pb1FtM"
               embedded = None
-              podcast = None
+              podcast = Some "https://oembed.libsyn.com/embed?item_id=11469908"
               description = "Rebecca Wirfs-Brock, Paul Rayner en Alberto Brandolini will join us in this VDDD meetup and talk about what types of EventStorming there are, and what heuristics they use.
 
                             Join us through youtube or zoom webinar in this discussion. You can interact with us and ask your questions through chat, or raise your hand in the zoom webinar and join us live to ask your questions fishbowl style!
