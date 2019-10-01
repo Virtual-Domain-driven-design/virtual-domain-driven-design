@@ -57,6 +57,15 @@ module Podcasts =
                                    ]
                                   str "Apple Podcasts"
                                    ]
+                              a [ Href "https://soundcloud.com/user-755244939"
+                                  Target "_blank"
+                                  Class "nav-item " ]
+                                [ img [
+                                     Class "ml-2 h-6"
+                                     Src "./img/soundcloud.png"
+                                   ]
+                                  str "Soundcloud"
+                                   ]
                               a [ Href "https://virtualddd.libsyn.com/rss"
                                   Target "_blank"
                                   Class "nav-item " ]
