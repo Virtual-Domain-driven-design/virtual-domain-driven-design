@@ -68,7 +68,7 @@ let sessions =
               img = None
               video = Some "https://www.youtube.com/embed/5e7lhY2q8WQ"
               embedded = None
-              podcast = None
+              podcast = Some "https://oembed.libsyn.com/embed?item_id=11736308"
               description = "In the next SunDDDay discussion Alexey Zimarev and Marco Heimeshoff will join us and share their experience in building systems with CQRS and Event Sourcing. We will discuss what it exactly is, where it came from, what the strength and weaknesses are, when and how to use it, and how to design and maintain these systems.
 
                              Join us through zoom webinar or follow the live youtube stream. You can interact with us and ask your questions through chat, or raise your hand in the zoom webinar and join us live to ask your questions fishbowl style!"
