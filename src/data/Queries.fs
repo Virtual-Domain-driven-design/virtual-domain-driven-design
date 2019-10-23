@@ -5,6 +5,26 @@ open VDDD.Types
 let sessions =
     [
         Upcoming_session {
+                      title = "What is an aggregate with Thomas Ploch"
+                      date = "Wednesday, November 6th. 2019"
+                      time = "18:30 Berlin "
+                      img = Some "https://secure.meetupstatic.com/photos/event/1/c/b/8/highres_486007352.jpeg"
+                      video = None
+                      embedded = None
+                      podcast = None
+                      description = "Within the community there is been an ongoing discussion about the aggregate pattern. From Eric Evans perspective it is:
+
+                                    An architectural pattern that enforces the consistency of a set of interrelated constraints, by defining a transactional boundary, a concurrency boundary, and a distribution boundary.
+                                    A lot of people seem to have different perceptions, different explanations or altogether don't think we need to use the pattern. In this #VDDD meetup, Thomas Ploch will tell us his vision and after we will open the dialogue and try to make more explicit: What is an aggregate and how do we teach this to other people."
+                      links =
+                          [
+                              { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/265895741/" }
+                              { label = "Zoom" ; url = "https://zoom.us/j/441297649" }
+                              { label = "Youtube" ; url = "https://youtu.be/7h3DqZmvF9A" }
+                          ]
+        }
+        
+        Upcoming_session {
                       title = "How to read the blue book: Large-scale structure for strategic design deep dive"
                       date = "Tuesday, November 12th. 2019"
                       time = "19:00 Paris-Amsterdam / 18:00 London Time / 13:00 Eastern Time (US and Canada)"
