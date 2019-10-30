@@ -25,19 +25,19 @@ let sessions =
         }
         
         Upcoming_session {
-                      title = "How to read the blue book: Large-scale structure for strategic design deep dive"
+                      title = "Make your tests tell the story of your domain with Anne and Mads"
                       date = "Tuesday, November 12th. 2019"
-                      time = "19:00 Paris-Amsterdam / 18:00 London Time / 13:00 Eastern Time (US and Canada)"
-                      img = Some "https://secure.meetupstatic.com/photos/event/8/1/6/5/highres_482853125.jpeg"
+                      time = "19:00 Amsterdam"
+                      img = Some "https://secure.meetupstatic.com/photos/event/a/0/e/a/highres_486221194.jpegs"
                       video = None
                       embedded = None
                       podcast = None
-                      description = "Have you never read the strategic part IV from Eric Evans blue book? Then here is your chance to get some valuable insights into large-scale structure for strategic design. In a large system without any overarching principle that allows elements to be interpreted in term of their role in patterns that span de whole design, developers cannot see the forest for the trees. Therefore we devise a pattern of rules or roles and relationships that will span the entire system and that allows some understanding of each part's place in the while — even without detailed knowledge of the part's responsibility.
+                      description = "Even with perfect naming and perfect code, it is hard to read the story of your domain straight out of it. You can be certain that you’ll have forgotten some of the nuances about the code the next time you see it. Or someone else sees it, because very few of us live our professional coding lives in an area where it’s only me ever handling the code. Someone is going to come back to your code - in five days, three months or five years.
 
-                                    Join us in this blue book deep-dive discussion with Mathias Verraes about the theory from the blue book about Large-scale structure for strategic design."
+                                    Luckily, if you write your tests the right way, they can tell the story of your domain in a way your production code can't. Let us show you how to create your tests so you can get rid of your stale documentation."
                       links =
                           [
-                              { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/264521950/" }
+                              { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/266077606/" }
                               { label = "Zoom" ; url = "https://zoom.us/j/850723380" }
                               { label = "Youtube" ; url = "https://youtu.be/7_KZ8_R4oOU" }
                           ]
