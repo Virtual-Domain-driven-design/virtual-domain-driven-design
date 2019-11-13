@@ -4,22 +4,20 @@ open VDDD.Types
 
 let sessions =
     [        
-        Upcoming_session {
+        Past_session {
                       title = "Make your tests tell the story of your domain with Anne and Mads"
                       date = "Tuesday, November 12th. 2019"
                       time = "19:00 Amsterdam"
-                      img = Some "https://secure.meetupstatic.com/photos/event/a/0/e/a/highres_486221194.jpeg"
-                      video = None
+                      img = None
+                      video = Some "https://www.youtube.com/embed/7_KZ8_R4oOU"
                       embedded = None
-                      podcast = None
+                      podcast = Some "https://oembed.libsyn.com/embed?item_id=12018827"
                       description = "Even with perfect naming and perfect code, it is hard to read the story of your domain straight out of it. You can be certain that you’ll have forgotten some of the nuances about the code the next time you see it. Or someone else sees it, because very few of us live our professional coding lives in an area where it’s only me ever handling the code. Someone is going to come back to your code - in five days, three months or five years.
 
                                     Luckily, if you write your tests the right way, they can tell the story of your domain in a way your production code can't. Let us show you how to create your tests so you can get rid of your stale documentation."
                       links =
                           [
                               { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/266077606/" }
-                              { label = "Zoom" ; url = "https://zoom.us/j/850723380" }
-                              { label = "Youtube" ; url = "https://youtu.be/7_KZ8_R4oOU" }
                           ]
         }
         
