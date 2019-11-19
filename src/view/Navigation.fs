@@ -59,7 +59,8 @@ module Navigation =
           [ div [ Class "w-full flex flex-row items-center justify-between" ]
               [ div [ Class "p-4 font-bold text-lg cursor-pointer flex-no-shrink flex items-center justify-center rounded-lg hover:bg-grey-light hover:text-blue-darker"
                       OnClick (fun _ -> GoTo (Landingpage "top") |> dispatch)]
-                    [ str "virtualDDD.com"]
+                    [ img [ Class "object-contain mr-2 h-8"
+                            Src "./img/vddd_logo_tp.png" ] ]
                 button [ Class "flex-no-shrink flex items-center m-4 px-3 py-2 border rounded border-white hover:text-blue-light hover:border-blue-light"
                          OnClick (fun e -> e.stopPropagation() ; Toggle_menu |> dispatch ) ]
                   [ svg [ Class "fill-current h-3 w-3" ; HTMLAttr.Custom ("viewBox", "0 0 20 20") ; HTMLAttr.Custom ("xmlns", "http://www.w3.org/2000/svg") ]
@@ -73,5 +74,6 @@ module Navigation =
           [ div [ Class "w-4/5 xl:w-2/3 flex flex-col lg:flex-row items-center justify-between" ]
               [ div [ Class "p-4 font-bold text-lg cursor-pointer flex-no-shrink flex items-center justify-center rounded-lg hover:bg-grey-light hover:text-blue-darker"  
                       OnClick (fun _ -> GoTo (Landingpage "top") |> dispatch) ]
-                    [ str "virtualDDD.com"]
+                    [ img [ Class "object-contain mr-2 h-8"
+                            Src "./img/vddd_logo_tp.png" ] ]
                 links model dispatch ] ] ]
