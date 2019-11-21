@@ -37,7 +37,7 @@ let sessions =
                           [
                               { label = "Zoom" ; url = "https://zoom.us/j/266604287" }
                               { label = "YouTube" ; url = "https://www.youtube.com/watch?v=hKBSmQCMEqQ" }
-                              { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/266560974/" }
+                              { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/266604287/" }
                           ]
         }
         
