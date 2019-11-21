@@ -21,6 +21,25 @@ let sessions =
                               { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/266560974/" }
                           ]
         }
+        Upcoming_session {
+                      title = "Does a Domain-driven design approach need an agile business?"
+                      date = "Tuesday, December 3st. 2019"
+                      time = "19:30 Amsterdam"
+                      img = Some "https://secure.meetupstatic.com/photos/event/6/4/a/e/highres_486805774.jpeg"
+                      video = None
+                      embedded = None
+                      podcast = None
+                      description = "On twitter, a discussion started between Trond, Anton and Krisztina about working in agile product development without a clear business goal. Since twitter is a restricted medium to discuss these issues, we are taking it upon our VirtualDDD Meetup.
+
+                                     Join us with Trond, Anton and Krisztina and let's have an honest discussion about what it means to work agile. What are the pros and cons? We dig into the underlying principles and philosophy of agile, diving into the practical instead of the theoretics of business agility. Do we need the business to be agile to do proper Domain-driven design, and what are the overlaps between agile and Domain-driven design?"
+                      
+                      links =
+                          [
+                              { label = "Zoom" ; url = "https://zoom.us/j/266604287" }
+                              { label = "YouTube" ; url = "https://www.youtube.com/watch?v=hKBSmQCMEqQ" }
+                              { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/266560974/" }
+                          ]
+        }
         
         Past_session {
                       title = "Make your tests tell the story of your domain with Anne and Mads"
