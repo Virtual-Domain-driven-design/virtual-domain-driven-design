@@ -21,10 +21,12 @@ let sessions =
                               { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/266560974/" }
                           ]
         }
+        
         Upcoming_session {
                       title = "Does a Domain-driven design approach need an agile business?"
                       date = "Tuesday, December 3st. 2019"
                       time = "19:30 Amsterdam"
+
                       img = Some "https://secure.meetupstatic.com/photos/event/6/4/a/e/highres_486805774.jpeg"
                       video = None
                       embedded = None
@@ -40,9 +42,10 @@ let sessions =
                               { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/266604287/" }
                           ]
         }
+        
         Upcoming_session {
                       title = "Combatting the Near Enemies of Domain Driven Design at Scale"
-                      date = "Wednesday, December 11st. 2019"
+                      date = "Wednesday, December 11th. 2019"
                       time = "19:00 Amsterdam"
                       img = Some "https://secure.meetupstatic.com/photos/event/9/3/6/8/highres_486937736.jpeg"
                       video = None
@@ -50,7 +53,7 @@ let sessions =
                       podcast = None
                       description = "For the past decade and a half, Domain-Driven Design has been giving teams the tools to successfully tackle the complexity at the heart of software. But lots of people fail when they try to put its techniques and patterns into practise, especially at scale.
 
-                                    Why? It can't just be because the Bluebook is so thick? We're going to argue that the near 'enemies' of DDD are to blame. Things which look like DDD, but which are in fact counterfeits that push us farther away from our goal.
+                                    Why? It can't just be because the Bluebook is so thick? We're going to argue that the near enemies of DDD are to blame. Things which look like DDD, but which are in fact counterfeits that push us farther away from our goal.
 
                                     Join us with Gayathri and Andrew who will tell the story of a large-scale DDD implementation that got complicated. They'll talk about how took stock of the situation as they found it, how they identified where the root problems lay, how they set everyone off on a course of success, and the mistakes we made along the way.
 
