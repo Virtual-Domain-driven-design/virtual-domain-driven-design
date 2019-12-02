@@ -47,6 +47,28 @@ let sessions =
                           ]
         }
         
+        Upcoming_session {
+                      title = "Trying out online EventStorming"
+                      date = "Tuesday, January 21th. 2020"
+                      time = "19:00 Amsterdam"
+                      img = Some "https://secure.meetupstatic.com/photos/event/4/7/6/a/highres_487098282.jpeg"
+                      video = None
+                      embedded = None
+                      podcast = None
+                      description = "EventStorming is the smartest approach to collaboration beyond silo boundaries. Within the DDD community, it is the go-to visualisation and collaboration tool to start exploring and discovering together.
+
+                                        We believe firmly that the power of EventStorming is with having all the smart people who together have all the knowledge in a room. However, this poses a challenge when you work with people off-site, and it is a question that has been asked a lot by many people.
+
+                                        So join us in this session where we will do an online software modelling EventStorming on miro board together with some community friends! During the EventStorming, we will discuss what concerns we have, and where we might actually see it work. We will together distil our heuristics for online EventStorming!"
+                      
+                      links =
+                          [
+                              { label = "Zoom" ; url = "https://zoom.us/j/896431709" }
+                              { label = "YouTube" ; url = "https://youtu.be/CbPEibNUe0s" }
+                              { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/266891201/" }
+                          ]
+        }
+        
         Past_session {
                       title = "SunDDDay Discussion: Growing your local DDD community"
                       date = "Tuesday, December 1st. 2019"
