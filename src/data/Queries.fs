@@ -4,23 +4,6 @@ open VDDD.Types
 
 let sessions =
     [
-        Upcoming_session {
-                      title = "SunDDDay Discussion: Growing your local DDD community"
-                      date = "Tuesday, December 1st. 2019"
-                      time = "19:00 Amsterdam"
-                      img = Some "https://secure.meetupstatic.com/photos/event/b/0/8/d/highres_486765197.jpeg"
-                      video = None
-                      embedded = None
-                      podcast = None
-                      description = "Getting started or advancing your Domain-Driven Design knowledge on your own can be a frustrating experience. Especially when you have so many questions to ask and exciting domains to model. How do you then grow if there is no one in your company or area that shares your passion for DDD?
-                                    During this Virtual DDD meetup Zsofia and Kacper will share their experiences in building communities in Hungary and London. They will discuss on topics such as finding speakers, venues, managing attendance and how to deal with no-shows. You will have an opportunity to join in and ask questions that we can crunch further. Let’s make it easier to start an own meetup group and try to figure out together how to grow as a domain modeller and meetup organiser."
-                      links =
-                          [
-                              { label = "Zoom" ; url = "https://zoom.us/j/781816084" }
-                              { label = "YouTube" ; url = "https://youtu.be/sXdSjhWNeMg" }
-                              { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/266560974/" }
-                          ]
-        }
         
         Upcoming_session {
                       title = "Does a Domain-driven design approach need an agile business?"
@@ -61,6 +44,22 @@ let sessions =
                               { label = "Zoom" ; url = "https://zoom.us/j/187125515" }
                               { label = "YouTube" ; url = "https://youtu.be/3CFyA4iecng" }
                               { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/266722931/" }
+                          ]
+        }
+        
+        Past_session {
+                      title = "SunDDDay Discussion: Growing your local DDD community"
+                      date = "Tuesday, December 1st. 2019"
+                      time = "19:00 Amsterdam"
+                      img = None
+                      video = Some "https://www.youtube.com/embed/sXdSjhWNeMg"
+                      embedded = None
+                      podcast = Some "https://oembed.libsyn.com/embed?item_id=12244241"
+                      description = "Getting started or advancing your Domain-Driven Design knowledge on your own can be a frustrating experience. Especially when you have so many questions to ask and exciting domains to model. How do you then grow if there is no one in your company or area that shares your passion for DDD?
+                                    During this Virtual DDD meetup Zsofia and Kacper will share their experiences in building communities in Hungary and London. They will discuss on topics such as finding speakers, venues, managing attendance and how to deal with no-shows. You will have an opportunity to join in and ask questions that we can crunch further. Let’s make it easier to start an own meetup group and try to figure out together how to grow as a domain modeller and meetup organiser."
+                      links =
+                          [
+                              { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/266560974/" }
                           ]
         }
         
