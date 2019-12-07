@@ -4,7 +4,7 @@
 
 .reveal-menu-content { @apply relative; }
 
-.menu-content { @apply absolute pin-t pin-r mt-16 bg-white rounded shadow-lg z-30 hidden; }
+.menu-content { @apply absolute pin-t pin-r mt-14 w-32 bg-white rounded shadow-lg z-30 hidden; }
 
 .menu-content:hover,
 .reveal-menu-content:focus > .menu-content { @apply block; }
@@ -26,13 +26,9 @@ a {
     @apply bg-transparent;
 }
 
-.navbar-opaque {
+.navbar-permanent {
     transition: background-color .3s ease-in-out;
     @apply bg-white shadow-md;
-}
- 
-.navbar-permanent {
-    @apply navbar-opaque;    
 }
 
 .link {
