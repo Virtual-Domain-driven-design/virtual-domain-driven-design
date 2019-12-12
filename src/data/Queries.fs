@@ -4,27 +4,7 @@ open VDDD.Types
 
 let sessions =
     [
-               
-        Upcoming_session {
-                      title = "Combatting the Near Enemies of Domain Driven Design at Scale"
-                      date = "Wednesday, December 11th. 2019"
-                      time = "19:00 Amsterdam"
-                      img = Some "https://secure.meetupstatic.com/photos/event/9/3/6/8/highres_486937736.jpeg"
-                      video = None
-                      embedded = None
-                      podcast = None
-                      description = "For the past decade and a half, Domain-Driven Design has been giving teams the tools to successfully tackle the complexity at the heart of software. But lots of people fail when they try to put its techniques and patterns into practise, especially at scale.
-                                    Why? It can't just be because the Bluebook is so thick? We're going to argue that the near enemies of DDD are to blame. Things which look like DDD, but which are in fact counterfeits that push us farther away from our goal.
-                                    Join us with Gayathri and Andrew who will tell the story of a large-scale DDD implementation that got complicated. They'll talk about how took stock of the situation as they found it, how they identified where the root problems lay, how they set everyone off on a course of success, and the mistakes we made along the way.
-                                    Regardless of whether you are working with serverless, microservices or a more monolithic architecture (nothing wrong there!) - this fun talk is for those who want to learn the lessons of implementing DDD at scale, with a healthy dose of pitfalls and hazards to watch out for too."
-                      
-                      links =
-                          [
-                              { label = "Zoom" ; url = "https://zoom.us/j/187125515" }
-                              { label = "YouTube" ; url = "https://youtu.be/3CFyA4iecng" }
-                              { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/266722931/" }
-                          ]
-        }
+           
         
         Upcoming_session {
                       title = "Trying out online EventStorming"
@@ -45,6 +25,25 @@ let sessions =
                               { label = "Zoom" ; url = "https://zoom.us/j/896431709" }
                               { label = "YouTube" ; url = "https://youtu.be/CbPEibNUe0s" }
                               { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/266891201/" }
+                          ]
+        }
+        
+        Past_session {
+                      title = "Combatting the Near Enemies of Domain Driven Design at Scale"
+                      date = "Wednesday, December 11th. 2019"
+                      time = "19:00 Amsterdam"
+                      img = None
+                      video = Some "https://www.youtube.com/embed/3CFyA4iecng"
+                      embedded = None
+                      podcast = Some "https://oembed.libsyn.com/embed?item_id=12378590"
+                      description = "For the past decade and a half, Domain-Driven Design has been giving teams the tools to successfully tackle the complexity at the heart of software. But lots of people fail when they try to put its techniques and patterns into practise, especially at scale.
+                                    Why? It can't just be because the Bluebook is so thick? We're going to argue that the near enemies of DDD are to blame. Things which look like DDD, but which are in fact counterfeits that push us farther away from our goal.
+                                    Join us with Gayathri and Andrew who will tell the story of a large-scale DDD implementation that got complicated. They'll talk about how took stock of the situation as they found it, how they identified where the root problems lay, how they set everyone off on a course of success, and the mistakes we made along the way.
+                                    Regardless of whether you are working with serverless, microservices or a more monolithic architecture (nothing wrong there!) - this fun talk is for those who want to learn the lessons of implementing DDD at scale, with a healthy dose of pitfalls and hazards to watch out for too."
+                      
+                      links =
+                          [
+                              { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/266722931/" }
                           ]
         }
         
