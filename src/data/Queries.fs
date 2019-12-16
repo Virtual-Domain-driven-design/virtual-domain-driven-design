@@ -25,7 +25,7 @@ let sessions =
         }
         
         Upcoming_session {
-                      title = "Virtual Lean Coffee fishbowl: UX, DDD and BDD"
+                      title = "Virtual Lean Coffee Fishbowl: UX, DDD and BDD"
                       date = "Tuesday, January 16th. 2020"
                       time = "20:00 Amsterdam"
                       img = Some "https://secure.meetupstatic.com/photos/event/2/c/7/7/highres_487451383.jpeg"
