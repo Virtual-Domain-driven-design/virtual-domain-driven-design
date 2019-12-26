@@ -28,21 +28,18 @@ type Session =
   | Past_session of Sessiondetails
   | Upcoming_session of Sessiondetails
 
-type BookInfo = {
+type Book = {
   title: string
   author: string
   img: string
   tags: string list
 }
 
-type Books =
-  | Book of BookInfo
-
 type Model = {
   menu_open: bool
   page: Page
   sessions: Session list
-  books: Books list
+  books: Book list
 }
 
 type Msg = 
