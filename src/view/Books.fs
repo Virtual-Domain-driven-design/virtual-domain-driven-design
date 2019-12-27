@@ -7,17 +7,18 @@ module Books =
   open VDDD.Types
 
   let tag t =
-    div [ Class "flex-no-shrink leading-tight bg-blue-lightest text-grey-darker rounded-lg px-2 py-1 m-1" ] 
+    div [ Class "flex-no-shrink leading-none text-xs tracking-tighter bg-grey-lighter text-grey-darker rounded-md p-1 m-1" ] 
       [ t |> ofString ]
   
   let tagline tags =
-    div [ Class "flex flex-row flex-wrap" ]
+    div [ Class "px-1 w-full flex flex-row flex-wrap" ]
       ( tags
         |> Seq.map tag )
 
   let book (b:Book) =
-    div [ Class "group bg-white w-64 rounded-lg shadow-md p-4 m-2" ]
-      [ img [ Src b.img ] 
+    div [ Class "group bg-white w-48 rounded-lg shadow-md m-2 flex flex-col items-center justify-start" ]
+      [ img [ Class "p-2"
+              Src b.img ] 
         tagline b.tags ]
 
   let render model dispatch =
