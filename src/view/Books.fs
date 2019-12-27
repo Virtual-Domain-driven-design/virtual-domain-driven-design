@@ -28,6 +28,7 @@ module Books =
                 div [ Class "w-11/12 md:w-5/6" ]
                   [ div [ Class "flex justify-center flex-wrap" ]
                       ( model.books
+                        |> List.filter (fun b -> (model.searchterm.Length = 0) or (b.tags |> List.contains model.searchterm))
                         |> List.map book )
                   ]
               ]

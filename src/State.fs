@@ -16,6 +16,7 @@ module State =
         urlUpdate result 
           { menu_open = false 
             page = (Landingpage "top") 
+            searchterm = ""
             sessions = Queries.sessions 
             books = Queries_books.books }
       model, Cmd.none

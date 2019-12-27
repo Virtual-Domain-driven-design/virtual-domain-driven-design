@@ -38,6 +38,7 @@ type Book = {
 type Model = {
   menu_open: bool
   page: Page
+  searchterm: string
   sessions: Session list
   books: Book list
 }
