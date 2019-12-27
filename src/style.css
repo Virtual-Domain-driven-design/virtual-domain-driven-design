@@ -1,10 +1,12 @@
-@tailwind preflight;
+@tailwind base;
+
+h2 { @apply text-xl font-semibold; }
 
 @tailwind components;
 
 .reveal-menu-content { @apply relative; }
 
-.menu-content { @apply absolute pin-t pin-r mt-14 w-32 bg-white rounded shadow-lg z-30 hidden; }
+.menu-content { @apply absolute top-0 right-0 mt-14 w-32 bg-white rounded shadow-lg z-30 hidden; }
 
 .menu-content:hover,
 .reveal-menu-content:focus > .menu-content { @apply block; }
@@ -13,12 +15,12 @@
 @tailwind utilities;
 
 a {
-    @apply text-blue-dark no-underline;
+    @apply text-blue-600 no-underline;
 }
 
 
 .navbar {
-    @apply bg-white text-blue-dark h-16 sticky pin-t pin-x z-50;
+    @apply bg-white text-blue-600 h-16 sticky top-0 inset-x-0 z-50;
 }
 
 .navbar-transparent {
@@ -32,16 +34,16 @@ a {
 }
 
 .link {
-    @apply text-blue-dark;
+    @apply text-blue-600;
 }
  
 .link:hover {
-    @apply text-blue-light cursor-pointer;
+    @apply text-blue-400 cursor-pointer;
 }
- 
+
 
 .overlay {
-    @apply z-0 absolute pin bg-black opacity-75;
+    @apply z-0 absolute inset-0 bg-gray-900 opacity-75;
 }
 
 .hero {
@@ -72,11 +74,11 @@ a {
  }
 
 .section{
-    @apply bg-grey-lighter text-blue-darker flex flex-col items-center justify-center;
+    @apply bg-gray-200 text-blue-700 flex flex-col items-center justify-center;
 }
  
 .content{
-    @apply leading-normal text-blue-darkest py-4 flex flex-col items-center justify-center;
+    @apply leading-normal text-blue-800 py-4 flex flex-col items-center justify-center;
 }
 
 .footer {

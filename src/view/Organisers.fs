@@ -16,10 +16,10 @@ module Organisers =
     div [ Class "pt-4 m-4 bg-white card-hoverable flex flex-col items-stretch justify-between" ]
        [ div [ Class "flex flex-col items-center justify-start" ]
           [
-           div [ Class "text-grey-darkest text-sm text-center" ]
+           div [ Class "text-gray-800 text-sm text-center" ]
             [ h3 [] [ str name ] ]
 
-           div [ Class "text-grey-darker text-xs italic text-center" ]
+           div [ Class "text-gray-700 text-xs italic text-center" ]
             [ h4 [] [ str profile.Tagline ] ]
            
            div [ ]

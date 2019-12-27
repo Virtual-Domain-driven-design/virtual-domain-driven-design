@@ -11,7 +11,7 @@ module Sessions =
       [ div [ Class "font-bold" ]
           [ str s.title ]
 
-        div [ Class "mb-2 text-grey-dark text-sm" ]
+        div [ Class "mb-2 text-gray-600 text-sm" ]
           [ str s.date ]
 
         (match s.img with
@@ -48,7 +48,7 @@ module Sessions =
         div [ Class "mt-4 pt-2 border-t border-solid flex items-center justify-start flex-wrap" ]
           (s.links
           |> List.map (fun l ->
-                  a [ Class "bg-grey-lighter card-hoverable p-2 m-2"
+                  a [ Class "bg-gray-200 card-hoverable p-2 m-2"
                       Href l.url
                       Target "_blank"]
                     [ str l.label ] )) ] 
@@ -58,7 +58,7 @@ module Sessions =
     match s.video with 
     | Some video -> 
         div [ Class "bg-white w-64 card-hoverable shadow-md p-4 m-2" ]
-          [ div [ Class "text-sm text-grey-dark"]
+          [ div [ Class "text-sm text-gray-600"]
               [ str s.date ]
 
             div [ Class "videoframe" ]
@@ -77,7 +77,7 @@ module Sessions =
     | None -> div [] []
 
   let render model dispatch =
-    div [ Class "content bg-grey-lighter" ; Id "sessions"]
+    div [ Class "content bg-gray-200" ; Id "sessions"]
       [ (match model.sessions
           |> List.filter (function Past_session _ -> false | Upcoming_session _ -> true)
           |> List.length with
@@ -91,7 +91,7 @@ module Sessions =
                           div [ Class "" ] [ str "More sessions are coming to you eventually consistent..." ]
                           a [ Href "mailto:submissions@virtualddd.com"
                               Target "_blank"
-                              Class "p-4 mt-6 bg-blue-light card-hoverable text-white" ]
+                              Class "p-4 mt-6 bg-blue-400 card-hoverable text-white" ]
                             [ str "Propose a session"]
                         ] ]
           | _ -> div [ Class "my-8 w-4/5 lg:w-2/3 xl:w-1/2" ]

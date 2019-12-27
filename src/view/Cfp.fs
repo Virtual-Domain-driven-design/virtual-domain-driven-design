@@ -14,7 +14,7 @@ module Cfp =
                   [ str "We are always looking for interesting topics to share with our community, and that community is you! If you have anything interesting you want to share in a talk or a discussion please send us your proposal." ]
               a [ Href "mailto:submissions@virtualddd.com"
                   Target "_blank"
-                  Class "p-4 mt-4 bg-blue-light card-hoverable text-white" ]
+                  Class "p-4 mt-4 bg-blue-300 card-hoverable text-white" ]
                 [ str "Propose a session"]
                  
 

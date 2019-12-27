@@ -7,7 +7,7 @@ module Books =
   open VDDD.Types
 
   let tag t =
-    div [ Class "flex-no-shrink leading-none text-xs tracking-tighter bg-grey-lighter text-grey-darker rounded-md p-1 m-1" ] 
+    div [ Class "flex-shrink-0 leading-none text-xs tracking-tighter bg-gray-200 text-gray-700 rounded-md p-1 m-1" ] 
       [ t |> ofString ]
   
   let tagline tags =
@@ -22,14 +22,14 @@ module Books =
         tagline b.tags ]
 
   let render model dispatch =
-    div [ Class "content bg-grey-lighter" ; Id "books"]
+    div [ Class "content bg-gray-200" ; Id "books"]
           [ div [ Class "w-full flex flex-col items-center justify-start"]
               [ h2 [ Class "my-6 w-4/5 lg:w-2/3 xl:w-1/2" ]
                   [ str "Books"]
                 div [ Class "w-11/12 md:w-5/6" ]
                   [ div [ Class "flex justify-center flex-wrap" ]
                       ( model.books
-                        |> List.filter (fun b -> (model.searchterm.Length = 0) or (b.tags |> List.contains model.searchterm))
+                        |> List.filter (fun b -> (model.searchterm.Length = 0) || (b.tags |> List.contains model.searchterm))
                         |> List.map book )
                   ]
               ]
