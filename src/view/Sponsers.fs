@@ -36,6 +36,14 @@ module Sponsors =
                     { Image = "./img/sponsors/xebia.png" 
                       Website = "https://www.xebia.com/"
                     }
+                  sponsor "KDDD Conf"
+                    { Image = "./img/sponsors/KDDD-conf.jpeg" 
+                      Website = "https://kandddinsky.de/"
+                    }
+                  sponsor "DDD Europe"
+                    { Image = "./img/sponsors/DDDEU20 Icon.jpg" 
+                      Website = "https://dddeurope.com/"
+                    }
                 ]   
             ]
       ]
