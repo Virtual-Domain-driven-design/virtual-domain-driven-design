@@ -20,6 +20,10 @@ module Navigation =
         render_entry "About" (fun _ -> GoTo (Landingpage "about") |> dispatch)
         render_submenu "Resources"
           [ render_entry "Books" (fun _ -> GoTo Books |> dispatch)
+            a [ Class "p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center "
+                Href "https://dddheuristics.com"
+                Target "_blank"]
+              [ str "DDD Heuristics" ]
             render_entry "Podcasts" (fun _ -> GoTo Podcasts |> dispatch) ]
         render_submenu "Social" 
           [ a [ Class "p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center "
