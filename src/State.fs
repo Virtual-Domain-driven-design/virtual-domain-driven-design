@@ -18,7 +18,8 @@ module State =
             page = (Landingpage "top") 
             searchterm = ""
             sessions = Queries.sessions 
-            books = Queries_books.books }
+            books = Queries_books.books
+            communityEvents = Queries_community_events.communityEvents}
       model, Cmd.none
 
     let update (msg:Msg) (model:Model) =

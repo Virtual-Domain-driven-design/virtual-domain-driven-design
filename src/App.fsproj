@@ -12,6 +12,7 @@
     <Compile Include="Router.fs" />
     <Compile Include="data/Queries.fs" />
     <Compile Include="data/Queries.books.fs" />
+    <Compile Include="data/Queries.CommunitiesEvents.fs" />
     <Compile Include="State.fs" />
     <Compile Include="view/Navigation.fs" />
     <Compile Include="view/CodeOfConduct.fs" />
@@ -24,6 +25,7 @@
     <Compile Include="view/Books.fs" />
     <Compile Include="view/Footer.fs" />
     <Compile Include="view/Podcasts.fs" />
+    <Compile Include="view/CommunityEvents.fs" />
     <Compile Include="View.fs" />
     <Compile Include="App.fs" />
   </ItemGroup>

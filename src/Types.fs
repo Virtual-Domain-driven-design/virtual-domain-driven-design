@@ -35,12 +35,22 @@ type Book = {
   tags: string list
 }
 
+type CommunityEvent = {
+  community: string
+  event: string
+  country: string
+  city: string
+  date: string
+  url: string
+}
+
 type Model = {
   menu_open: bool
   page: Page
   searchterm: string
   sessions: Session list
   books: Book list
+  communityEvents: CommunityEvent list
 }
 
 type Msg = 
