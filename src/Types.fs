@@ -44,6 +44,14 @@ type CommunityEvent = {
   url: string
 }
 
+type Conference = {
+  name: string
+  img: string
+  date: string
+  location: string
+  url: string
+}
+
 type Model = {
   menu_open: bool
   page: Page

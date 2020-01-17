@@ -3,43 +3,7 @@ module VDDD.Data.Queries
 open VDDD.Types
 
 let sessions =
-    [
-                
-        Upcoming_session {
-                      title = "Virtual Lean Coffee Fishbowl: UX, DDD and BDD"
-                      date = "Thursday, January 16th. 2020"
-                      time = "20:00 Amsterdam"
-                      img = Some "https://secure.meetupstatic.com/photos/event/2/c/7/7/highres_487451383.jpeg"
-                      video = None
-                      embedded = None
-                      podcast = None
-                      description = "It all started with a tweet by John Cutler <>. And it seemed that a lot of people from these communities learned a lot from each other. And we would love to learn more about different areas of overlap. It seems like goals and culture are aligned in both communities.
-
-                                    Join us in this Virtual Lean Coffee, where a panel of 10-15 people from the UX, DDD and BDD community will exchange topics that overlap with each community. The great thing is, you can participate because we are making the Lean Coffee a fishbowl! Join zoom and join us live in the discussion, or just sit back and enjoy the stream from youtube and ask questions in the chat! Hope to see you there!
-
-                                    The people who have confirmed so far are:
-                                    Dawn Ahukanna
-                                    Indi Young
-                                    Rebecca Wirfs-Brock
-                                    Fredrik Matheson
-                                    Gojko Adzic
-                                    John Cutler
-                                    Matt Wynne
-                                    Paul Rayner
-                                    Robert Meaney
-                                    Steve Tooke
-                                    Jabe Bloom
-                                    Sam Hatoum
-                                    John Ferguson Smart
-                                    and more to come...."
-
-                      links =
-                          [
-                              { label = "Zoom" ; url = "https://zoom.us/j/457149119" }
-                              { label = "YouTube" ; url = "https://youtu.be/QelbEUblpLo" }
-                              { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/267220779/" }
-                          ]
-        }   
+    [   
         
         Upcoming_session {
                       title = "Trying out online EventStorming"
@@ -67,6 +31,40 @@ let sessions =
                               { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/266891201/" }
                           ]
         }
+        
+        Past_session {
+                      title = "Virtual Lean Coffee Fishbowl: UX, DDD and BDD"
+                      date = "Thursday, January 16th. 2020"
+                      time = "20:00 Amsterdam"
+                      img = None
+                      video = Some "https://www.youtube.com/embed/QelbEUblpLo"
+                      embedded = None
+                      podcast = Some "https://oembed.libsyn.com/embed?item_id=12776882"
+                      description = "It all started with a tweet by John Cutler <>. And it seemed that a lot of people from these communities learned a lot from each other. And we would love to learn more about different areas of overlap. It seems like goals and culture are aligned in both communities.
+
+                                    Join us in this Virtual Lean Coffee, where a panel of 10-15 people from the UX, DDD and BDD community will exchange topics that overlap with each community. The great thing is, you can participate because we are making the Lean Coffee a fishbowl! Join zoom and join us live in the discussion, or just sit back and enjoy the stream from youtube and ask questions in the chat! Hope to see you there!
+
+                                    The people who have confirmed so far are:
+                                    Dawn Ahukanna
+                                    Indi Young
+                                    Rebecca Wirfs-Brock
+                                    Fredrik Matheson
+                                    Gojko Adzic
+                                    John Cutler
+                                    Matt Wynne
+                                    Paul Rayner
+                                    Robert Meaney
+                                    Steve Tooke
+                                    Jabe Bloom
+                                    Sam Hatoum
+                                    John Ferguson Smart
+                                    and more to come...."
+
+                      links =
+                          [
+                              { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/267220779/" }
+                          ]
+        }
 
         Past_session {
                       title = "How feature branching affects domain-driven design with Thierry de Pauw"
@@ -85,6 +83,8 @@ let sessions =
                               { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/267162816/" }
                           ]
         }
+        
+        
         
         Past_session {
                       title = "Combatting the Near Enemies of Domain Driven Design at Scale"

@@ -44,6 +44,10 @@ module Sponsors =
                     { Image = "./img/sponsors/DDDEU20 Icon.jpg" 
                       Website = "https://dddeurope.com/"
                     }
+                  sponsor "Explore DDD"
+                    { Image = "./img/sponsors/EDDD_Logo.png" 
+                      Website = "https://exploreddd.com/"
+                    }
                 ]   
             ]
       ]
