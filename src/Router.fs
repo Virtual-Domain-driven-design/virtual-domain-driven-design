@@ -18,6 +18,7 @@ let toPage = function
     | Landingpage _ -> "/home"
     | Code_of_conduct -> "/codeofconduct"
     | Books -> "/books"
+    | Conference -> "/conferences"
     | Podcasts -> "/podcasts"
 
 

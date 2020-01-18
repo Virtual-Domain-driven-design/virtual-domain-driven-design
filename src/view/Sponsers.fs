@@ -38,7 +38,7 @@ module Sponsors =
                     }
                   sponsor "KDDD Conf"
                     { Image = "./img/sponsors/KDDD-conf.jpeg" 
-                      Website = "https://kandddinsky.de/"
+                      Website = "https://kddconf.com/"
                     }
                   sponsor "DDD Europe"
                     { Image = "./img/sponsors/DDDEU20 Icon.jpg" 

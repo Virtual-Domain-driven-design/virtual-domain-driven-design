@@ -5,6 +5,7 @@ type Page =
   | Landingpage of string
   | Code_of_conduct
   | Books
+  | Conferences
   | Podcasts
 
 type Link = {

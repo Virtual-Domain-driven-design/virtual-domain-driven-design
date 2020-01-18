@@ -32,6 +32,7 @@ module View =
               | Landingpage _ -> landingpage model dispatch
               | Code_of_conduct -> CodeOfConduct.render model dispatch 
               | Books -> Books.render model dispatch
+              | Conferences -> Conferences.render model dispatch
               | Podcasts -> Podcasts.render model dispatch
             )]
             

@@ -49,36 +49,36 @@ module Organisers =
   let render model dispatch =
     div [ Class "content"; Id "organisers" ]
       [ div [ Class "mt-8 w-4/5 lg:w-2/3 xl:w-1/2" ]
-            [ h2 []
-                [ str "Organisers" ]
-              div [ Class "flex flex-col md:flex-row justify-between items-center" ]
-                [
-                  organiser "Zsofia Herendi"
-                    {
-                      Image = "./img/zsofia.jpeg" 
-                      Tagline = "Flow addict PM"
-                      Website = "https://www.zherendi.com/"
-                      Twitter = "ZHerendi"
-                      Linkedin = "zsófia-herendi-2296b48"
-                    }
+          [ h2 []
+              [ str "Organisers" ]
+            div [ Class "flex flex-col md:flex-row justify-between items-center" ]
+              [
+                organiser "Zsofia Herendi"
+                  {
+                    Image = "./img/zsofia.jpeg" 
+                    Tagline = "Flow addict PM"
+                    Website = "https://www.zherendi.com/"
+                    Twitter = "ZHerendi"
+                    Linkedin = "zsófia-herendi-2296b48"
+                  }
 
-                  organiser "Marco Heimeshoff"
-                    {
-                      Image = "./img/MarcoHeimeshoff.jpg"
-                      Tagline = "Business software artist"
-                      Website = "https://www.heimeshoff.de/"
-                      Twitter = "Heimeshoff"
-                      Linkedin = "heimeshoff"
-                    }
-                     
-                  organiser "Kenny Baas-Schwegler"
-                    {
-                      Image = "./img/kenny.jpg"
-                      Tagline = "Sociotechnical stoic"
-                      Website = "https://baasie.com"
-                      Twitter = "kenny_baas"
-                      Linkedin = "kenny-baas"
-                    }
-                ]   
-            ]
+                organiser "Marco Heimeshoff"
+                  {
+                    Image = "./img/MarcoHeimeshoff.jpg"
+                    Tagline = "Business software artist"
+                    Website = "https://www.heimeshoff.de/"
+                    Twitter = "Heimeshoff"
+                    Linkedin = "heimeshoff"
+                  }
+                   
+                organiser "Kenny Baas-Schwegler"
+                  {
+                    Image = "./img/kenny.jpg"
+                    Tagline = "Sociotechnical stoic"
+                    Website = "https://baasie.com"
+                    Twitter = "kenny_baas"
+                    Linkedin = "kenny-baas"
+                  }
+              ]   
+          ]
       ]

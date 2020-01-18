@@ -1,6 +1,6 @@
 namespace VDDD
 
-module Podcasts =
+module CommunityEvents =
 
   open Fable.Helpers.React
   open Fable.Helpers.React.Props
