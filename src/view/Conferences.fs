@@ -14,7 +14,7 @@ module Conferences =
   
     let conference name profile =
         div [ Class "pt-4 m-4 bg-white card-hoverable flex flex-col items-stretch justify-between" ]
-           [ div [ Class "flex flex-col items-center justify-start h-64" ]
+           [ div [ Class "flex flex-col items-center justify-start h-64 w-64" ]
               [
                div [ Class "text-gray-800 text-sm text-center" ]
                 [ h3 [] [ str name ] ]
@@ -28,7 +28,7 @@ module Conferences =
                a [ Class ""
                    Href profile.Website
                    Target "_blank"]
-                [ img [ Class "w-64"
+                [ img [ Class "h-48 w-64 object-contain"
                         Src profile.Image ] ]
               ]
              ]
@@ -36,8 +36,8 @@ module Conferences =
   
   let render model dispatch =
      div [ Class "content bg-gray-200" ; Id "books"]
-        [ div [ Class "mt-8 w-4/5 lg:w-2/3 xl:w-1/2" ]
-            [ h2 [  ]
+        [ div [ Class "w-full flex flex-col items-center justify-start" ]
+            [ h2 [ Class "my-6 w-4/5 lg:w-2/3 xl:w-1/2" ]
                 [ str "Conferences"]
               div [ Class "flex flex-col md:flex-row justify-between items-center" ]
                 [ conference "Domain-Driven Design Europe"

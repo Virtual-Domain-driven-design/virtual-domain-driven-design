@@ -19,7 +19,8 @@ module State =
             searchterm = ""
             sessions = Queries.sessions 
             books = Queries_books.books
-            communityEvents = Queries_community_events.communityEvents}
+            communityEvents = Queries_community_events.communityEvents
+            communities = Queries_communities.communities}
       model, Cmd.none
 
     let update (msg:Msg) (model:Model) =

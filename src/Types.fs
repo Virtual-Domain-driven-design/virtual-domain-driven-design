@@ -5,6 +5,7 @@ type Page =
   | Landingpage of string
   | Code_of_conduct
   | Books
+  | Communities
   | Conferences
   | Podcasts
 
@@ -36,6 +37,14 @@ type Book = {
   tags: string list
 }
 
+type Community = {
+  name: string
+  country: string
+  city: string option
+  url: string
+  img: string
+}
+
 type CommunityEvent = {
   community: string
   event: string
@@ -60,6 +69,7 @@ type Model = {
   sessions: Session list
   books: Book list
   communityEvents: CommunityEvent list
+  communities: Community list
 }
 
 type Msg = 
