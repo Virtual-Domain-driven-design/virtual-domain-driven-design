@@ -12,7 +12,7 @@ let pageParser : Parser<Page->Page,Page> =
         UrlParser.map Code_of_conduct (s "codeofconduct")
         UrlParser.map Books (s "books")
         UrlParser.map Communities (s "communities")
-        UrlParser.map Conferences (s "conference")
+        UrlParser.map Conferences (s "conferences")
         UrlParser.map Podcasts (s "podcasts")
     ]
     

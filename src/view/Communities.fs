@@ -13,7 +13,7 @@ module Communities =
     Website : string }
   
   let community (c:Community) =
-   div [ Class "pt-4 m-4 bg-white card-hoverable flex flex-col items-stretch justify-between w-1/5" ]
+   div [ Class "group bg-white w-48 rounded-lg shadow-md m-2 flex flex-col items-center justify-start" ]
            [ div [ Class "flex flex-col items-center justify-start h-64" ]
               [
                div [ Class "text-gray-800 text-sm text-center" ]

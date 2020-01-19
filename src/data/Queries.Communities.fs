@@ -25,4 +25,11 @@ let communities =
               url = "https://www.meetup.com/DDD-Paris/"
               img = "https://secure.meetupstatic.com/photos/event/8/8/0/9/600_476374825.jpeg"
         }
+        {
+              name = "DDD Budapest"
+              country = "Hungary"
+              city = Some "Budapest"
+              url = "https://www.meetup.com/DDD-Practitioners-in-Budapest/"
+              img = "https://secure.meetupstatic.com/photos/event/6/d/4/e/600_479247982.jpeg"
+        }
     ]
