@@ -32,4 +32,18 @@ let communities =
               url = "https://www.meetup.com/dddlondon/"
               img = "https://secure.meetupstatic.com/photos/event/7/e/a/6/600_483992422.jpeg"
         }
+        {
+              name = "DDD Belgium"
+              country = "Belgium"
+              city = None
+              url = "http://dddbelgium.be/"
+              img = "https://secure.meetupstatic.com/photos/event/d/0/0/6/600_433373254.jpeg"
+         }
+         {
+              name = "DDD Europe"
+              country = "Europe"
+              city = None
+              url = "https://dddeurope.com/"
+              img = "https://res.cloudinary.com/value-object/image/upload/v1579547590/Logos/DDDEU20_black_high_res.jpg"
+         }
     ]
