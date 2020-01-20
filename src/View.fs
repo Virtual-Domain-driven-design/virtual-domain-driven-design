@@ -14,6 +14,7 @@ module View =
           | _ -> "top") 
       div [ OnLoad (fun _ -> scrollIntoView hash) ]
         [ Hero.render model dispatch
+          Communities.render model dispatch
           Sponsors.render model dispatch
           Organisers.render model dispatch 
         ]

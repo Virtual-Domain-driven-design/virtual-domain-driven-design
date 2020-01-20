@@ -27,18 +27,26 @@ module Navigation =
               [ str "DDD Heuristics" ]
             render_entry "Podcasts" (fun _ -> GoTo Podcasts |> dispatch) ]
         render_submenu "Social" 
-          [ a [ Class "p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center "
+          [ a [ Class "p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center"
+                Href "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/"
+                Target "_blank"]
+              [ img [ Class "ml-2 h-6"
+                      Src "./img/meetup.svg" ] ]
+            a [ Class "p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center "
                 Href "https://t.co/MRxpx0rLH2?amp=1"
                 Target "_blank"]
               [ img [ Class "mr-2 h-6"
                       Src "./img/slack_icon.png" ] 
                 div [ Class "pt-1"] ["Slack " |> ofString ]
               ]
-            a [ Class "p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center"
-                Href "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/"
+            a [ Class "p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center "
+                Href "https://twitter.com/VirtualDDD"
                 Target "_blank"]
-              [ img [ Class "ml-2 h-6"
-                      Src "./img/meetup.svg" ] ] ] ]
+              [ img [ Class "mr-2 h-6"
+                      Src "./img/twitter.png" ] 
+                div [ Class "pt-1"] ["Twitter " |> ofString ]
+              ]                           
+             ] ]
 
 
   let entry_mobile label onClick =

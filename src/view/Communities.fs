@@ -13,19 +13,19 @@ module Communities =
     Website : string }
   
   let community (c:Community) =
-   div [ Class "group bg-white w-48 rounded-lg shadow-md m-2 flex flex-col items-center justify-start" ]
+   div [ Class "group card-hoverable bg-white w-48 rounded-lg shadow-md m-2 flex flex-col items-center justify-start" ]
            [ div [ Class "flex flex-col items-center justify-start h-64" ]
               [
-               div [ Class "text-gray-800 text-sm text-center" ]
-                [ h3 [] [ str c.name ] ]
+               div [ Class "m-2 font-semibold text-gray-800 text-sm text-center" ]
+                [ str c.name ]
   
                div [ Class "text-gray-700 text-xs italic text-center" ]
-                [ h4 [] [ str c.country ] ]
-                
-               (match c.city with
-                | Some place -> div [ Class "text-gray-700 text-xs italic text-center" ]
-                                 [ h4 [] [ str place ] ]
-                | None -> div [] [] )
+                [ 
+                  ( match c.city with
+                    | Some place -> str (place + ", ")
+                    | None -> str "" )
+                  str c.country 
+                ] 
                
                a [ Class ""
                    Href c.url
@@ -36,7 +36,7 @@ module Communities =
              ]
   
   let render model dispatch =
-     div [ Class "content bg-gray-200" ; Id "books"]
+     div [ Class "content bg-gray-200" ; Id "communities"]
         [ div [ Class "w-full flex flex-col items-center justify-start" ]
             [ h2 [ Class "my-6 w-4/5 lg:w-2/3 xl:w-1/2" ]
                 [ str "Communities"]
