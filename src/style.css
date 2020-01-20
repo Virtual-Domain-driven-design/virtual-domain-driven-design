@@ -20,7 +20,7 @@ a {
 
 
 .navbar {
-    @apply bg-white text-blue-600 h-16 sticky top-0 inset-x-0 z-50;
+    @apply bg-white shadow-md text-blue-600 h-16 sticky top-0 inset-x-0 z-50;
 }
 
 .navbar-transparent {
