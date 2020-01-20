@@ -48,7 +48,7 @@ module Sessions =
         div [ Class "mt-4 pt-2 border-t border-solid flex items-center justify-start flex-wrap" ]
           (s.links
           |> List.map (fun l ->
-                  a [ Class "bg-gray-200 card-hoverable p-2 m-2"
+                  a [ Class "bg-gray-200 floating-action-button p-2 m-2"
                       Href l.url
                       Target "_blank"]
                     [ str l.label ] )) ] 
@@ -105,7 +105,7 @@ module Sessions =
                             div [ Class "" ] [ str "More sessions are coming to you eventually consistent..." ]
                             a [ Href "mailto:submissions@virtualddd.com"
                                 Target "_blank"
-                                Class "p-4 mt-6 bg-blue-400 card-hoverable text-white" ]
+                                Class "p-4 mt-6 bg-blue-400 floating-action-button text-white" ]
                               [ str "Propose a session"]
                           ] ]
           | Some s -> div [ Class "my-8 w-4/5 lg:w-2/3 xl:w-1/2" ]

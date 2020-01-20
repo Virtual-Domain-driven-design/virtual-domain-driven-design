@@ -33,7 +33,7 @@ module Hero =
                     [ "Share your deep, creative, productive or crazy ideas!" |> ofString ]
                   a [ Href "mailto:submissions@virtualddd.com"
                       Target "_blank"
-                      Class "p-4 bg-blue-500 card-hoverable text-white" ]
+                      Class "p-4 bg-blue-500 floating-action-button text-white" ]
                     [ str "Propose a session"]                      
                 ]
               div [ Class "mt-4 flex items-center justify-center" ]

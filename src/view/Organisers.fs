@@ -13,7 +13,7 @@ module Organisers =
     Linkedin : string }
 
   let organiser name profile =
-    div [ Class "pt-4 m-4 bg-white card-hoverable flex flex-col items-stretch justify-between" ]
+    div [ Class "pt-4 m-4 bg-white rounded-lg shadow-md flex flex-col items-stretch justify-between" ]
        [ div [ Class "flex flex-col items-center justify-start" ]
           [
            div [ Class "text-gray-800 text-sm text-center" ]
@@ -27,20 +27,20 @@ module Organisers =
           ]
                 
          div [ Class "my-1 w-full flex items-center justify-around" ]
-            [ a [ Class ""
+            [ a [ Class "floating-action-button rounded-full"
                   Href profile.Website
                   Target "_blank"]
-                [ img [ Class "rounded-full h-10 hover:shadow-md"
+                [ img [ Class "h-10"
                         Src "./img/website.png" ] ]
-              a [ Class "twitter-icon"
+              a [ Class "twitter-icon floating-action-button rounded-full"
                   Href ("https://twitter.com/" + profile.Twitter )
                   Target "_blank"]
-                [ img [ Class "rounded-full h-10 hover:shadow-md"
+                [ img [ Class "h-10"
                         Src "./img/twitter.png" ] ]
-              a [ Class "twitter-icon"
+              a [ Class "twitter-icon floating-action-button rounded-full"
                   Href ("https://www.linkedin.com/in/"+ profile.Linkedin + "/")
                   Target "_blank"]
-                [ img [ Class "rounded-full h-10 hover:shadow-md"
+                [ img [ Class "h-10"
                         Src "./img/linkedin.png" ] ]
             ]
         ]

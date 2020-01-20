@@ -13,7 +13,7 @@ module Conferences =
     Website : string }
   
     let conference name profile =
-        div [ Class "pt-4 m-4 bg-white card-hoverable flex flex-col items-stretch justify-between" ]
+        div [ Class "pt-4 m-4 bg-white floating-action-button flex flex-col items-stretch justify-between" ]
            [ div [ Class "flex flex-col items-center justify-start h-64 w-64" ]
               [
                div [ Class "text-gray-800 text-sm text-center" ]
