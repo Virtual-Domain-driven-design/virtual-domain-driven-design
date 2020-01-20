@@ -12,8 +12,8 @@ We have build in the functionality to add a Domain-Driven Design community. All 
     name = "The name of your community"
     country = "The country"
     city = "If your community is bound to a city, it is an optional field"
-    url: "Url to the website of your community"
-    img: "A image you want to show"
+    url = "Url to the website of your community"
+    img = "A image you want to show"
   }
 ```
 
