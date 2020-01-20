@@ -3,6 +3,7 @@ namespace VDDD.Types
 
 type Page =
   | Landingpage of string
+  | Sessions
   | Code_of_conduct
   | Books
   | Communities

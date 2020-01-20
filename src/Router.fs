@@ -10,6 +10,7 @@ let pageParser : Parser<Page->Page,Page> =
     oneOf [
         UrlParser.map (Landingpage "top") (s "home") 
         UrlParser.map Code_of_conduct (s "codeofconduct")
+        UrlParser.map Sessions (s "sessions")
         UrlParser.map Books (s "books")
         UrlParser.map Communities (s "communities")
         UrlParser.map Conferences (s "conferences")
@@ -19,6 +20,7 @@ let pageParser : Parser<Page->Page,Page> =
 let toPage = function
     | Landingpage _ -> "/home"
     | Code_of_conduct -> "/codeofconduct"
+    | Sessions -> "/sessions"
     | Books -> "/books"
     | Communities -> "/communities"
     | Conferences -> "/conferences"

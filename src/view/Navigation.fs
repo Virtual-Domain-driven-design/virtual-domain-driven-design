@@ -14,10 +14,8 @@ module Navigation =
 
   let links render_entry render_submenu dispatch =
     div [ Class "flex flex-col lg:flex-row items-start lg:items-stretch justify-end" ]
-      [ render_entry "Sessions" (fun _ -> GoTo (Landingpage "sessions") |> dispatch)
-        render_entry "CFP" (fun _ -> GoTo (Landingpage "cfp") |> dispatch)
+      [ render_entry "Sessions" (fun _ -> GoTo Sessions |> dispatch)
         render_entry "Sponsors" (fun _ -> GoTo (Landingpage "sponsors") |> dispatch)
-        render_entry "About" (fun _ -> GoTo (Landingpage "about") |> dispatch)
 //        render_submenu "Offline"
 //          [ render_entry "Communities" (fun _ -> GoTo Communities |> dispatch)
 //            render_entry "Conferences" (fun _ -> GoTo Conferences |> dispatch)]

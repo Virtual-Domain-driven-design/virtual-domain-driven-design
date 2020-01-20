@@ -4,7 +4,6 @@ open VDDD.Types
 
 let sessions =
     [   
-        
         Upcoming_session {
                       title = "Trying out online EventStorming"
                       date = "Tuesday, January 21th. 2020"
@@ -31,7 +30,7 @@ let sessions =
                               { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/266891201/" }
                           ]
         }
-        
+
         Past_session {
                       title = "Virtual Lean Coffee Fishbowl: UX, DDD and BDD"
                       date = "Thursday, January 16th. 2020"
