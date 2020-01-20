@@ -10,7 +10,7 @@ module Sponsors =
     Website : string }
 
   let sponsor name profile =
-    div [ Class "m-4 bg-white floating-action-button flex flex-col items-center justify-center" ]
+    div [ Class "m-4 w-full sm:w-48 flex-shrink-0 bg-white floating-action-button flex flex-col items-center justify-center" ]
       [ a [ Class ""
             Href profile.Website
             Target "_blank"]
@@ -23,7 +23,7 @@ module Sponsors =
       [ div [ Class "mt-8 w-4/5 lg:w-2/3 xl:w-1/2" ]
             [ h2 []
                 [ str "Sponsors" ]
-              div [ Class "flex flex-col md:flex-row justify-center items-stretch" ]
+              div [ Class "w-full flex-wrap flex flex-col sm:flex-row justify-center items-stretch" ]
                 [ sponsor "Heimeshoff IT"
                     { Image = "./img/sponsors/heimeshoffit.png" 
                       Website = "https://www.heimeshoff.de/"
