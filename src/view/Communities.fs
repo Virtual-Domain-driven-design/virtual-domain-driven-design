@@ -72,6 +72,12 @@ module Communities =
                         Date = "October"
                         Website = "https://kddconf.com/"
                       }
+                    conference "DDD China"
+                      { Image = "https://avatars0.githubusercontent.com/u/32388073?s=200&v=4"
+                        Location = "Beijing, China"
+                        Date = "November"
+                        Website = "https://ddd-china.com/"
+                      }
                   ]
                 ]
             ]
