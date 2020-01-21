@@ -7,7 +7,6 @@ type Page =
   | Code_of_conduct
   | Books
   | Communities
-  | Conferences
   | Podcasts
 
 type Link = {
@@ -46,30 +45,12 @@ type Community = {
   img: string
 }
 
-type CommunityEvent = {
-  community: string
-  event: string
-  country: string
-  city: string
-  date: string
-  url: string
-}
-
-type Conference = {
-  name: string
-  img: string
-  date: string
-  location: string
-  url: string
-}
-
 type Model = {
   menu_open: bool
   page: Page
   searchterm: string
   sessions: Session list
   books: Book list
-  communityEvents: CommunityEvent list
   communities: Community list
 }
 

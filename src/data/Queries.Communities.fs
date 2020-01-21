@@ -38,12 +38,5 @@ let communities =
               city = None
               url = "http://dddbelgium.be/"
               img = "https://secure.meetupstatic.com/photos/event/d/0/0/6/600_433373254.jpeg"
-         }
-         {
-              name = "DDD Europe"
-              country = "Europe"
-              city = None
-              url = "https://dddeurope.com/"
-              img = "https://res.cloudinary.com/value-object/image/upload/v1579547590/Logos/DDDEU20_black_high_res.jpg"
-         }
+        }
     ]

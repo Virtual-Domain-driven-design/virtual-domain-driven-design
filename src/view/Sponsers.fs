@@ -10,13 +10,16 @@ module Sponsors =
     Website : string }
 
   let sponsor name profile =
-    div [ Class "m-4 w-full sm:w-48 flex-shrink-0 bg-white floating-action-button flex flex-col items-center justify-center" ]
-      [ a [ Class ""
-            Href profile.Website
-            Target "_blank"]
-          [ img [ Class "w-64"
-                  Src profile.Image ] ]
-       ]
+    a [ Href profile.Website
+        Target "_blank"
+        Class "group floating-action-button bg-white w-full sm:w-48 rounded-lg shadow-md m-2 flex flex-col items-center justify-start" ]
+      [ div [ Class "flex flex-col items-center justify-start" ]
+          [ div [ Class "m-2 h-8 font-semibold text-gray-800 text-sm text-center" ]
+              [ str name ]
+            img [ Class "my-2 w-64 h-32 object-contain"
+                  Src profile.Image ]
+           ]
+        ]
        
   let render model dispatch =
     div [ Class "content"; Id "sponsors" ]

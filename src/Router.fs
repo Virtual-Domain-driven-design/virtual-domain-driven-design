@@ -13,7 +13,6 @@ let pageParser : Parser<Page->Page,Page> =
         UrlParser.map Sessions (s "sessions")
         UrlParser.map Books (s "books")
         UrlParser.map Communities (s "communities")
-        UrlParser.map Conferences (s "conferences")
         UrlParser.map Podcasts (s "podcasts")
     ]
     
@@ -23,7 +22,6 @@ let toPage = function
     | Sessions -> "/sessions"
     | Books -> "/books"
     | Communities -> "/communities"
-    | Conferences -> "/conferences"
     | Podcasts -> "/podcasts"
 
 
