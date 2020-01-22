@@ -4,12 +4,12 @@ open VDDD.Types
 
 let sessions =
     [   
-        Upcoming_session {
+        Past_session {
                       title = "Trying out online EventStorming"
                       date = "Tuesday, January 21th. 2020"
                       time = "19:00 Amsterdam"
-                      img = Some "https://secure.meetupstatic.com/photos/event/4/7/6/a/highres_487098282.jpeg"
-                      video = None
+                      img = None 
+                      video = Some "https://www.youtube.com/embed/CbPEibNUe0s"
                       embedded = None
                       podcast = None
                       description = "EventStorming is the smartest approach to collaboration beyond silo boundaries. Within the DDD community, it is the go-to visualisation and collaboration tool to start exploring and discovering together.
@@ -25,8 +25,6 @@ let sessions =
                       
                       links =
                           [
-                              { label = "Zoom" ; url = "https://zoom.us/j/896431709" }
-                              { label = "YouTube" ; url = "https://youtu.be/CbPEibNUe0s" }
                               { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/266891201/" }
                           ]
         }
