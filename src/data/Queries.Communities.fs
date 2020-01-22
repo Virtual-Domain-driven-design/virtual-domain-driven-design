@@ -46,4 +46,11 @@ let communities =
               url = "http://dddwro.pl"
               img = "https://secure.meetupstatic.com/photos/event/3/9/6/f/600_488354703.jpeg"
         }
+        {
+              name = "DDD-KRK"
+              country = "Poland"
+              city = Some "Krakow"
+              url = "https://www.meetup.com/pl-PL/DDD-KRK"
+              img = "https://secure.meetupstatic.com/photos/event/4/2/1/e/600_484336926.jpeg"
+        }
     ]
