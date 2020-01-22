@@ -39,4 +39,11 @@ let communities =
               url = "http://dddbelgium.be/"
               img = "https://secure.meetupstatic.com/photos/event/d/0/0/6/600_433373254.jpeg"
         }
+        {
+              name = "DDDWRO"
+              country = "Poland"
+              city = Some "Wrocław"
+              url = "http://dddwro.pl"
+              img = "https://secure.meetupstatic.com/photos/event/3/9/6/f/600_488354703.jpeg"
+        }
     ]
