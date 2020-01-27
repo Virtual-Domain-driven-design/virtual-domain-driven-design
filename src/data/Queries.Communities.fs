@@ -53,4 +53,11 @@ let communities =
               url = "https://www.meetup.com/pl-PL/DDD-KRK"
               img = "https://secure.meetupstatic.com/photos/event/4/2/1/e/600_484336926.jpeg"
         }
+		{
+              name = "Domain-Driven Design Barcelona"
+              country = "Spain"
+              city = Some "Barcelona"
+              url = "https://www.meetup.com/dddbcn/"
+              img = "https://secure.meetupstatic.com/photos/event/7/e/f/2/600_480152498.jpeg"
+        }
     ]
