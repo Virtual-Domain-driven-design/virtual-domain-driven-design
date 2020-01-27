@@ -59,7 +59,8 @@ let communities =
               city = Some "Vienna"
               url = "https://www.meetup.com/ddd-vienna/"
               img = "https://secure.meetupstatic.com/photos/event/1/e/d/8/highres_481327896.jpeg"
-		    {
+        }
+        {
               name = "Domain-Driven Design Barcelona"
               country = "Spain"
               city = Some "Barcelona"
