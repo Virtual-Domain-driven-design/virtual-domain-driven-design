@@ -33,7 +33,7 @@ module Navigation =
               [ img [ Class "ml-2 h-6"
                       Src "./img/meetup.svg" ] ]
             a [ Class "p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center "
-                Href "https://t.co/MRxpx0rLH2?amp=1"
+                Href "https://j.mp/ddd-es-cqrs"
                 Target "_blank"]
               [ img [ Class "mr-2 h-6"
                       Src "./img/slack_icon.png" ] 
