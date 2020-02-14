@@ -39,7 +39,7 @@ module Sponsors =
                     { Image = "./img/sponsors/xebia.png" 
                       Website = "https://www.xebia.com/"
                     }
-                  sponsor "KDDD Conf"
+                  sponsor "KanDDDinsky"
                     { Image = "./img/sponsors/KDDD-conf.png" 
                       Website = "https://kandddinsky.de/"
                     }
