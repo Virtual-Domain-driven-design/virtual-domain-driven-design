@@ -57,7 +57,7 @@ module Communities =
                   [ conference "Domain-Driven Design Europe"
                       { Image = "https://res.cloudinary.com/value-object/image/upload/v1579547590/Logos/DDDEU20_black_high_res.jpg"
                         Location = "Amsterdam, Netherlands"
-                        Date = "February 3-7"
+                        Date = "February"
                         Website = "https://dddeurope.com/"
                       }
                     conference "Explore DDD"
