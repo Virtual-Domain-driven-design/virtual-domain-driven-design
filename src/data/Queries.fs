@@ -4,6 +4,26 @@ open VDDD.Types
 
 let sessions =
     [   
+        Upcoming_session {
+                      title = "Trying out online EventStorming"
+                      date = "Tuesday, February 18th. 2020"
+                      time = "20:00 Amsterdam"
+                      img = Some "https://secure.meetupstatic.com/photos/event/e/5/d/5/highres_488998837.jpeg" 
+                      video = None
+                      embedded = None
+                      podcast = None
+                      description = "Domain Storytelling (http://domainstorytelling.org) is a collaborative modelling method. It brings together domain experts and development teams and helps them to understand a domain, find bounded contexts, to establish a ubiquitous language, and to talk about requirements.
+
+                                    The meetup features a live-modelling session."
+                      
+                      links =
+                          [
+                              { label = "Zoom" ; url = "https://zoom.us/j/211809940" }
+                              { label = "Youtube" ; url = "https://youtu.be/d9k9Szkdprk" }
+                              { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/268709233/" }
+                          ]
+        }
+
         Past_session {
                       title = "Trying out online EventStorming"
                       date = "Tuesday, January 21th. 2020"
