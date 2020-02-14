@@ -5,7 +5,7 @@ open VDDD.Types
 let sessions =
     [   
         Upcoming_session {
-                      title = "Trying out online EventStorming"
+                      title = "An Introduction to Domain Storytelling"
                       date = "Tuesday, February 18th. 2020"
                       time = "20:00 Amsterdam"
                       img = Some "https://secure.meetupstatic.com/photos/event/e/5/d/5/highres_488998837.jpeg" 
