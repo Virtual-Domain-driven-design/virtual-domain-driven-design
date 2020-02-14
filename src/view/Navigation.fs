@@ -16,9 +16,6 @@ module Navigation =
     div [ Class "flex flex-col lg:flex-row items-start lg:items-stretch justify-end" ]
       [ render_entry "Sessions" (fun _ -> GoTo Sessions |> dispatch)
         render_entry "Sponsors" (fun _ -> GoTo (Landingpage "sponsors") |> dispatch)
-//        render_submenu "Offline"
-//          [ render_entry "Communities" (fun _ -> GoTo Communities |> dispatch)
-//            render_entry "Conferences" (fun _ -> GoTo Conferences |> dispatch)]
         render_submenu "Resources"
           [ render_entry "Books" (fun _ -> GoTo Books |> dispatch)
             a [ Class "p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center "
