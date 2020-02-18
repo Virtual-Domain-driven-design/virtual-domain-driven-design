@@ -67,4 +67,11 @@ let communities =
               url = "https://www.meetup.com/dddbcn/"
               img = "https://secure.meetupstatic.com/photos/event/7/e/f/2/600_480152498.jpeg"
         }
+        {
+              name = "Domain-Driven Design Rhein/Main"
+              country = "Germany"
+              city = Some "Frankfurt am Main"
+              url = "https://www.meetup.com/Domain-Driven-Design-Rhein-Main/"
+              img = "https://secure.meetupstatic.com/photos/event/c/7/f/8/600_471111192.jpeg"
+        }
     ]
