@@ -4,25 +4,6 @@ open VDDD.Types
 
 let sessions =
     [   
-        Upcoming_session {
-                      title = "An Introduction to Domain Storytelling"
-                      date = "Tuesday, February 18th. 2020"
-                      time = "20:00 Amsterdam"
-                      img = Some "https://secure.meetupstatic.com/photos/event/e/5/d/5/highres_488998837.jpeg" 
-                      video = None
-                      embedded = None
-                      podcast = None
-                      description = "Domain Storytelling (http://domainstorytelling.org) is a collaborative modelling method. It brings together domain experts and development teams and helps them to understand a domain, find bounded contexts, to establish a ubiquitous language, and to talk about requirements.
-
-                                    The meetup features a live-modelling session."
-                      
-                      links =
-                          [
-                              { label = "Zoom" ; url = "https://zoom.us/j/211809940" }
-                              { label = "Youtube" ; url = "https://youtu.be/d9k9Szkdprk" }
-                              { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/268709233/" }
-                          ]
-        }
         
         Upcoming_session {
                       title = "Lost in bounded context translations with Julie, Indu, Michael and Nick"
@@ -40,6 +21,24 @@ let sessions =
                           [
                               { label = "Youtube" ; url = "https://youtu.be/u-5sKvh48-g" }
                               { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/268706059/" }
+                          ]
+        }
+        
+        Past_session {
+                      title = "An Introduction to Domain Storytelling"
+                      date = "Tuesday, February 18th. 2020"
+                      time = "20:00 Amsterdam"
+                      img = None
+                      video = Some "https://www.youtube.com/embed/d9k9Szkdprk"
+                      embedded = None
+                      podcast = None
+                      description = "Domain Storytelling (http://domainstorytelling.org) is a collaborative modelling method. It brings together domain experts and development teams and helps them to understand a domain, find bounded contexts, to establish a ubiquitous language, and to talk about requirements.
+
+                                    The meetup features a live-modelling session."
+                      
+                      links =
+                          [
+                              { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/268709233/" }
                           ]
         }
 
