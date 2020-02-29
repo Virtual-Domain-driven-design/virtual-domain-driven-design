@@ -6,6 +6,7 @@ type Page =
   | Sessions
   | Code_of_conduct
   | Books
+  | Videos
   | Communities
   | Podcasts
 
@@ -37,6 +38,14 @@ type Book = {
   tags: string list
 }
 
+type Video = {
+  title: string
+  source: string
+  url: string
+  level: string //Introductory | Intermediate | Advanced | Expert
+  tags: string list
+}
+
 type Community = {
   name: string
   country: string
@@ -52,6 +61,7 @@ type Model = {
   sessions: Session list
   books: Book list
   communities: Community list
+  videos: Video list
 }
 
 type Msg = 

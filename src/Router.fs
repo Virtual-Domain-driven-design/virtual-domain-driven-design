@@ -12,6 +12,7 @@ let pageParser : Parser<Page->Page,Page> =
         UrlParser.map Code_of_conduct (s "codeofconduct")
         UrlParser.map Sessions (s "sessions")
         UrlParser.map Books (s "books")
+        UrlParser.map Videos (s "videos")
         UrlParser.map Communities (s "communities")
         UrlParser.map Podcasts (s "podcasts")
     ]
@@ -21,6 +22,7 @@ let toPage = function
     | Code_of_conduct -> "/codeofconduct"
     | Sessions -> "/sessions"
     | Books -> "/books"
+    | Videos -> "/videos"
     | Communities -> "/communities"
     | Podcasts -> "/podcasts"
 

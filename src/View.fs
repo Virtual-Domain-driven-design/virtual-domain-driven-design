@@ -31,6 +31,7 @@ module View =
               | Sessions -> Sessions.render model dispatch 
               | Code_of_conduct -> CodeOfConduct.render model dispatch 
               | Books -> Books.render model dispatch
+              | Videos -> Videos.render model dispatch
               | Communities -> Communities.render model dispatch
               | Podcasts -> Podcasts.render model dispatch
             )]
