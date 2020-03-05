@@ -6,7 +6,6 @@ module State =
     open Elmish.Browser.Navigation
 
     open VDDD.Types
-    open VDDD.Data
     open Router
 
     open Interop
@@ -17,10 +16,10 @@ module State =
           { menu_open = false 
             page = (Landingpage "top") 
             searchterm = ""
-            sessions = Queries.sessions 
-            books = Queries_books.books
-            communities = Queries_communities.communities
-            videos = Queries_videos_kandddinsky.videos}
+            sessions = VDDD.Data.Sessions.sessions
+            books = VDDD.Data.Books.books
+            communities = VDDD.Data.Communities.communities
+            videos = VDDD.Data.Videos.kandddinsky}
       model, Cmd.none
 
     let update (msg:Msg) (model:Model) =

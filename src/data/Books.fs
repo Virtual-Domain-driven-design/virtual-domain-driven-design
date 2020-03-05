@@ -1,4 +1,4 @@
-module VDDD.Data.Queries_books
+module VDDD.Data.Books
 
 open VDDD.Types
 

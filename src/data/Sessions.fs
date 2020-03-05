@@ -1,4 +1,4 @@
-module VDDD.Data.Queries
+module VDDD.Data.Sessions
 
 open VDDD.Types
 

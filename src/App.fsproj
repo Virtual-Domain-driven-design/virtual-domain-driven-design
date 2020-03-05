@@ -10,10 +10,11 @@
     <Compile Include="Types.fs" />
     <Compile Include="Interop.fs" />
     <Compile Include="Router.fs" />
-    <Compile Include="data/Queries.fs" />
-    <Compile Include="data/Queries.books.fs" />
-    <Compile Include="data/Queries.Communities.fs" />
-    <Compile Include="data/Queries.Video.Kandddinsky.fs" />
+    <Compile Include="data/Common.fs" />
+    <Compile Include="data/Sessions.fs" />
+    <Compile Include="data/Books.fs" />
+    <Compile Include="data/Communities.fs" />
+    <Compile Include="data/Videos.fs" />
     <Compile Include="State.fs" />
     <Compile Include="view/Navigation.fs" />
     <Compile Include="view/CodeOfConduct.fs" />

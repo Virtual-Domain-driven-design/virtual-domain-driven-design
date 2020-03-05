@@ -1,4 +1,4 @@
-module VDDD.Data.Queries_communities
+module VDDD.Data.Communities
 
 open VDDD.Types
 
