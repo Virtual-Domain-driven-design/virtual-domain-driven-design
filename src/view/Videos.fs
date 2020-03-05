@@ -5,7 +5,8 @@ module Videos =
   open Fable.Helpers.React
   open Fable.Helpers.React.Props
   open VDDD.Types
-
+  open VDDD.Data.Common
+  
   let tag t =
     div [ Class "flex-shrink-0 leading-none text-xs tracking-tighter bg-gray-200 text-gray-700 rounded-md p-1 m-1" ] 
       [ t |> ofString ]
@@ -26,7 +27,7 @@ module Videos =
                       Scrolling "no"
                       FrameBorder 0 ]
                [ ] ]
-        tag b.level
+        tag (level b.level)
         tagline b.tags
           ]
 

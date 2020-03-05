@@ -15,6 +15,8 @@ type Link = {
   label: string
 }
 
+type Level = Introductory | Intermediate | Advanced | Expert
+
 type Sessiondetails = {
   title: string
   date: string
@@ -42,7 +44,7 @@ type Video = {
   title: string
   source: string
   url: string
-  level: string //Introductory | Intermediate | Advanced | Expert
+  level: Level 
   tags: string list
 }
 
