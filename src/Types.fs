@@ -9,6 +9,7 @@ type Page =
   | Videos
   | Communities
   | Podcasts
+  | DDDDD
 
 type Link = {
   url: string

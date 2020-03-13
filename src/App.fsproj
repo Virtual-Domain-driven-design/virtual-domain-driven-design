@@ -28,6 +28,7 @@
     <Compile Include="view/CommunityEvents.fs" />
     <Compile Include="view/Communities.fs" />
     <Compile Include="view/Videos.fs" />
+    <Compile Include="view/DDDDD.fs" />
     <Compile Include="View.fs" />
     <Compile Include="App.fs" />
   </ItemGroup>

@@ -1,19 +1,18 @@
 namespace VDDD
 
-module Hero =
+module DDDDD =
 
   open Fable.Helpers.React
   open Fable.Helpers.React.Props
   open VDDD.Types
 
 
-  let social_link label url =
+    let social_link label url =
     a [ Class "text-xl m-2 p-2 text-white rounded-lg border-2 border-blue-500 hover:border-blue-400" 
         Href url 
         Target "_blank" ] 
       [ label |> ofString ]
- 
-
+  
   let render model dispatch =
       div [ Class "hero flex flex-col items-center justify-center lg:flex-row-reverse lg:items-start"
             Style [ Background "url(./img/kandddinsky.jpg)"
@@ -28,17 +27,16 @@ module Hero =
                   img [ Class "hidden lg:block object-contain h-8 mb-4"
                         Src "./img/vddd_logo_tp.png" ]
                   div [ Class "mb-4 text-justify" ]
-                    [ "A community driven meetup for people who want to get more in-depth knowledge of DDD from anywhere at anytime, join this virtual DDD community for online panel discussions, community talks and more. Everybody is welcome to join us, we love learning and growing together." |> ofString ]
+                    [ "From the our last offline retro at DDD Europe, more and more people felt the need for an online conference. DDDDD is our call to that to start exploring the world of online collaboration and sharing of knowledge. We will present more details the closer we go to the conference date." |> ofString ]
                   div [ Class "mb-4 font-semibold" ]
                     [ "Share your deep, creative, productive or crazy ideas!" |> ofString ]
-                  a [ Href "mailto:submissions@virtualddd.com"
+                  a [ Href "https://sessionize.com/ddddd/"
                       Target "_blank"
                       Class "p-4 bg-blue-500 floating-action-button text-white" ]
                     [ str "Propose a session"]                      
                 ]
               div [ Class "mt-4 flex items-center justify-center" ]
                 [
-                  social_link "Meetup" "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/"
                   social_link "Slack" "https://j.mp/ddd-es-cqrs"
                   social_link "Twitter" "https://twitter.com/VirtualDDD"
                 ]
@@ -46,19 +44,26 @@ module Hero =
 
           div [ Class "w-full mt-8 lg:w-2/3  flex flex-col items-center justify-center" ]
             [
-              ( match Sessions.upcomming model.sessions with
-                | Some s -> 
-                    div [ Class "w-5/6 z-10 flex flex-col items-center" ] 
+                div [ Class "w-5/6 z-10 flex flex-col items-center" ] 
+                  [
+                    div [ Class "w-full hidden md:flex items-stretch justify-start my-2 "] 
                       [
-                        Sessions.session s.Head
-                        div [ Class "w-full hidden md:flex items-stretch justify-start my-2 "] 
-                          ( s.Tail 
-                            |> List.truncate 3
-                            |> List.map Sessions.session_small )
-                        div [ Class "text-xl mb-4 p-2 cursor-pointer text-white rounded-lg border-2 border-blue-500 hover:border-blue-400"
-                              OnClick (fun _ -> GoTo Sessions |> dispatch) ]
-                          [ "Show all sessions" |> ofString ]
+                         div [ Class "bg-white w-full rounded-lg shadow-md p-4 md:p-8 mb-2" ]
+                          [ div [ Class "font-bold" ]
+                              [ str "Distributed Domain-Driven Design Day" ]
+
+                            div [ Class "mb-2 text-gray-600 text-sm" ]
+                              [ str "Friday, May 15th 2020" ]
+                            img [ Class "w-full"
+                                  Src "./img/conference.jpeg" ]
+                            div [ Class "py-2 text-justify" ]
+                              [ str "Distributed Domain-Driven Design Day is a virtualDDD online community conference. We are looking for an online experience that comes as close as possible to an offline conference experience. That is why we have slightly different sessions during the day that only online talks.  We will have online panel discussion, the same as we do on meetups. Pre-recorded talks with live Q&A by the speaker as by the idea of Liz Keogh. Online collaborative modelling and other hands-on sessions." ]
+                          ]
+                       
+                       
                       ]
-                | None -> div [] []  )
+                  ]
+               
             ]
         ]
+      
