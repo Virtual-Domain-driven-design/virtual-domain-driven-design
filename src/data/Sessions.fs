@@ -7,7 +7,7 @@ let sessions =
         
         Upcoming_session {
                       title = "Lost in bounded context translations with Julie, Indu, Michael and Nick"
-                      date = "Tuesday, Marh 17th. 2020"
+                      date = "Tuesday, March 17th. 2020"
                       time = "19:00 Amsterdam"
                       img = Some "https://secure.meetupstatic.com/photos/event/d/a/3/6/highres_488995862.jpeg" 
                       video = None
@@ -19,6 +19,7 @@ let sessions =
                       
                       links =
                           [
+                              { label = "Zoom" ; url = "https://zoom.us/j/503553465" }
                               { label = "Youtube" ; url = "https://youtu.be/u-5sKvh48-g" }
                               { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/268706059/" }
                           ]
