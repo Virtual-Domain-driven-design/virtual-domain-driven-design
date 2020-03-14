@@ -51,6 +51,10 @@ module Sponsors =
                     { Image = "./img/sponsors/EDDD_Logo.png" 
                       Website = "https://exploreddd.com/"
                     }
+                  sponsor "Sessionize"
+                    { Image = "./img/sponsors/sessionize.png" 
+                      Website = "https://sessionize.com/"
+                    }
                 ]   
             ]
       ]
