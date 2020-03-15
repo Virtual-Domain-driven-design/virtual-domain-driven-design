@@ -66,17 +66,17 @@ module Communities =
                         Date = "September 14-18"
                         Website = "https://exploreddd.com/"
                       }
-                    conference "KDDD Conf"
+                    conference "KanDDDinsky"
                       { Image = "/img/sponsors/KDDD-conf.png"
                         Location = "Berlin, Germany"
-                        Date = "October"
-                        Website = "https://kddconf.com/"
+                        Date = "29-30 October"
+                        Website = "https://kandddinsky.de/"
                       }
                     conference "DDD China"
                       { Image = "https://avatars0.githubusercontent.com/u/32388073?s=200&v=4"
                         Location = "Beijing, China"
                         Date = "November"
-                        Website = "https://ddd-china.com/"
+                        Website = "http://ddd-china.com/"
                       }
                   ]
                 ]
