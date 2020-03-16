@@ -74,4 +74,11 @@ let communities =
               url = "https://www.meetup.com/Domain-Driven-Design-Rhein-Main/"
               img = "https://secure.meetupstatic.com/photos/event/c/7/f/8/600_471111192.jpeg"
         }
+        {
+              name = "Domain-Driven Design Cologne/Bonn"
+              country = "Germany"
+              city = Some "Cologne"
+              url = "https://www.meetup.com/Domain-Driven-Design-Koln-Bonn/"
+              img = "https://secure.meetupstatic.com/photos/event/d/2/4/b/600_463013835.jpeg"
+        }        
     ]
