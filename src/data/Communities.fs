@@ -80,5 +80,12 @@ let communities =
               city = Some "Cologne"
               url = "https://www.meetup.com/Domain-Driven-Design-Koln-Bonn/"
               img = "https://secure.meetupstatic.com/photos/event/d/2/4/b/600_463013835.jpeg"
-        }        
+        }
+        {
+              name = "Domain-Driven Design Injection Kharkiv"
+              country = "Ukraine"
+              city = Some "Kharkiv"
+              url = "https://dddi.dev/"
+              img = "https://secure.meetupstatic.com/photos/event/a/8/7/3/600_485983123.jpeg"
+        }
     ]
