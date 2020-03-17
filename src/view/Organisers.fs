@@ -74,7 +74,7 @@ module Organisers =
                 organiser "Kenny Baas-Schwegler"
                   {
                     Image = "./img/kenny.jpg"
-                    Tagline = "Sociotechnical stoic"
+                    Tagline = "Socio-technical stoic"
                     Website = "https://baasie.com"
                     Twitter = "kenny_baas"
                     Linkedin = "kenny-baas"
