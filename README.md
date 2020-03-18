@@ -38,8 +38,10 @@ All you need to develop is the F# Project in the src folder. All other files are
 
 ## Build and deploy
 
+To build use:
+
 ```
 yarn build
 ```
 
-After building, upload the content of the folder '/public' to the webserver.
+To deploy commit and push the updated style.css and bundle.js.
