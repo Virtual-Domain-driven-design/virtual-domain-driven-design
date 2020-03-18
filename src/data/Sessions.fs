@@ -5,22 +5,20 @@ open VDDD.Types
 let sessions =
     [   
         
-        Upcoming_session {
+        Past_session {
                       title = "Lost in bounded context translations with Julie, Indu, Michael and Nick"
                       date = "Tuesday, March 17th. 2020"
                       time = "19:00 Amsterdam"
-                      img = Some "https://secure.meetupstatic.com/photos/event/d/a/3/6/highres_488995862.jpeg" 
-                      video = None
+                      img = None
+                      video = Some "https://www.youtube.com/embed/u-5sKvh48-g"
                       embedded = None
-                      podcast = None
+                      podcast = Some "https://oembed.libsyn.com/embed?item_id=13594496" 
                       description = "Language is a big topic in the Domain-Driven Design community. We want to have small bounded contexts, each with there own ubiquitous language. Having many ubiquitous languages means having a lot of translation between the bounded context. And having many translations means we can get lost. So what is the nuance between internal and external bounded context or services translation?
 
                                      Join us in a conversation with Julie Lerman, Indu Alagarsamy, Michael Plod and Nick Tune to talk about these nuances. We will talk about all the concept of dealing with these translations. From Anti-corruption, interchange, gateway, upcasting events plus the relationship patterns like the conformist, partnership and newer patterns."
                       
                       links =
                           [
-                              { label = "Zoom" ; url = "https://zoom.us/j/503553465" }
-                              { label = "Youtube" ; url = "https://youtu.be/u-5sKvh48-g" }
                               { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/268706059/" }
                           ]
         }
