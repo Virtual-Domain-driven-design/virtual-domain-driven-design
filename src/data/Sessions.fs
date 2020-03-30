@@ -5,6 +5,26 @@ open VDDD.Types
 let sessions =
     [   
         
+        
+        
+        Upcoming_session {
+                      title = "Secure by Domain-driven design with Jessica, Dan Bergh and Daniel"
+                      date = "Friday, April 3th. 2020"
+                      time = "16:00 Amsterdam"
+                      img = Some "https://secure.meetupstatic.com/photos/event/d/c/7/e/highres_489956446.jpeg"
+                      video = None 
+                      embedded = None
+                      podcast = None 
+                      description = "Let's talk about the confluence between domain-driven design and security. Deep understanding of the domain lets us define what we DO want to happen, which helps us stop things that we DON'T want to happen. Jessica Kerr will start the meeting up with an exposition of her favorite parts of the book Secure By Design and together with Dan Bergh Johnsson and Daniel Deogun we will do a panel discussion and Q&A. Come add your perspective at the Virtual DDD meetup."
+                      
+                      links =
+                          [
+                              { label = "Zoom" ; url = "https://zoom.us/j/198448016" }
+                              { label = "Youtube" ; url = "https://youtu.be/BpMzn9AxNcw" }
+                              { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/269741788/" }
+                          ]
+        }
+        
         Past_session {
                       title = "Lost in bounded context translations with Julie, Indu, Michael and Nick"
                       date = "Tuesday, March 17th. 2020"
