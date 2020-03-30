@@ -61,7 +61,7 @@ module DDDDD =
                                       Src "./img/conference.jpeg" ]
                                 div [ Class "py-2 text-justify" ]
                                   [ str "Distributed Domain-Driven Design Day is a virtualDDD online community conference. In this pandemic time where conferences are cancelled or postponed all over the world, we offer some solace by offering an online experience that comes as close to an offline conference experience as possible. We are looking for talks, online panel discussions as we do on meetups and any other creative ideas you can come up with. The day will be framed by pre-recorded talks with live Q&A by the speaker as inspired by Liz Keogh, and spiced up by online collaborative modelling and other hands-on sessions.
-                                          This day will be a 24-hour long worldwide live event." ]
+                                          This day will be a 24-hour long worldwide live event, starting at 0:00 GMT and ending at 24:00 GMT" ]
                               ]
                            
                            
