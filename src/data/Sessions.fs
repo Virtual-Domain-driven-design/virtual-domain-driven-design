@@ -4,9 +4,6 @@ open VDDD.Types
 
 let sessions =
     [   
-        
-        
-        
         Upcoming_session {
                       title = "Secure by Domain-driven design with Jessica, Dan Bergh and Daniel"
                       date = "Friday, April 3th. 2020"
@@ -22,6 +19,24 @@ let sessions =
                               { label = "Zoom" ; url = "https://zoom.us/j/198448016" }
                               { label = "Youtube" ; url = "https://youtu.be/BpMzn9AxNcw" }
                               { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/269741788/" }
+                          ]
+        }
+        
+        Upcoming_session {
+                      title = "How cognitive biases and ranking kills your modelling sessions"
+                      date = "Tuesday, April 7th. 2020"
+                      time = "19:00 Amsterdam"
+                      img = Some "https://secure.meetupstatic.com/photos/event/4/7/3/4/highres_489978228.jpeg"
+                      video = None 
+                      embedded = None
+                      podcast = None 
+                      description = ""
+                      
+                      links =
+                          [
+                              { label = "Zoom" ; url = "https://zoom.us/j/137043267" }
+                              { label = "Youtube" ; url = "https://youtu.be/djbbZnOIGE0" }
+                              { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/269784134/" }
                           ]
         }
         
