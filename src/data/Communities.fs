@@ -87,11 +87,11 @@ let communities =
               city = Some "Kharkiv"
               url = "https://dddi.dev/"
               img = "https://secure.meetupstatic.com/photos/event/a/8/7/3/600_485983123.jpeg"
-        },
+        }
         {
             name = "Copenhagen DDD Meetup"
             country = "Denmark"
-            city = "Copenhagen"
+            city = Some "Copenhagen"
             url = "https://www.meetup.com/Copenhagen-Domain-Driven-Design-Meetup/"
             img = "https://images.unsplash.com/photo-1520430825812-775990ecfb13?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
         }

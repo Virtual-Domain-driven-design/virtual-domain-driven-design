@@ -4,23 +4,6 @@ open VDDD.Types
 
 let sessions =
     [   
-        Upcoming_session {
-                      title = "Secure by Domain-driven design with Jessica, Dan Bergh and Daniel"
-                      date = "Friday, April 3th. 2020"
-                      time = "16:00 Amsterdam"
-                      img = Some "https://secure.meetupstatic.com/photos/event/d/c/7/e/highres_489956446.jpeg"
-                      video = None 
-                      embedded = None
-                      podcast = None 
-                      description = "Let's talk about the confluence between domain-driven design and security. Deep understanding of the domain lets us define what we DO want to happen, which helps us stop things that we DON'T want to happen. Jessica Kerr will start the meeting up with an exposition of her favorite parts of the book Secure By Design and together with Dan Bergh Johnsson and Daniel Deogun we will do a panel discussion and Q&A. Come add your perspective at the Virtual DDD meetup."
-                      
-                      links =
-                          [
-                              { label = "Zoom" ; url = "https://zoom.us/j/198448016" }
-                              { label = "Youtube" ; url = "https://youtu.be/BpMzn9AxNcw" }
-                              { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/269741788/" }
-                          ]
-        }
         
         Upcoming_session {
                       title = "How cognitive biases and ranking kills your modelling sessions"
@@ -41,9 +24,25 @@ let sessions =
         }
         
         Past_session {
+                      title = "Secure by Domain-driven design with Jessica, Dan Bergh and Daniel"
+                      date = "Friday, April 3th. 2020"
+                      time = "16:00 CEST"
+                      img = None
+                      video = Some "https://www.youtube.com/embed/BpMzn9AxNcw"
+                      embedded = None
+                      podcast = Some "https://oembed.libsyn.com/embed?item_id=13843517" 
+                      description = "Let's talk about the confluence between domain-driven design and security. Deep understanding of the domain lets us define what we DO want to happen, which helps us stop things that we DON'T want to happen. Jessica Kerr will start the meeting up with an exposition of her favorite parts of the book Secure By Design and together with Dan Bergh Johnsson and Daniel Deogun we will do a panel discussion and Q&A. Come add your perspective at the Virtual DDD meetup."
+                      
+                      links =
+                          [
+                              { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/269741788/" }
+                          ]
+        }
+        
+        Past_session {
                       title = "Lost in bounded context translations with Julie, Indu, Michael and Nick"
                       date = "Tuesday, March 17th. 2020"
-                      time = "19:00 Amsterdam"
+                      time = "19:00 CET"
                       img = None
                       video = Some "https://www.youtube.com/embed/u-5sKvh48-g"
                       embedded = None
@@ -61,7 +60,7 @@ let sessions =
         Past_session {
                       title = "An Introduction to Domain Storytelling"
                       date = "Tuesday, February 18th. 2020"
-                      time = "20:00 Amsterdam"
+                      time = "20:00 CET"
                       img = None
                       video = Some "https://www.youtube.com/embed/d9k9Szkdprk"
                       embedded = None
@@ -79,7 +78,7 @@ let sessions =
         Past_session {
                       title = "Trying out online EventStorming"
                       date = "Tuesday, January 21th. 2020"
-                      time = "19:00 Amsterdam"
+                      time = "19:00 CET"
                       img = None 
                       video = Some "https://www.youtube.com/embed/CbPEibNUe0s"
                       embedded = None
@@ -104,7 +103,7 @@ let sessions =
         Past_session {
                       title = "Virtual Lean Coffee Fishbowl: UX, DDD and BDD"
                       date = "Thursday, January 16th. 2020"
-                      time = "20:00 Amsterdam"
+                      time = "20:00 CET"
                       img = None
                       video = Some "https://www.youtube.com/embed/QelbEUblpLo"
                       embedded = None
@@ -138,7 +137,7 @@ let sessions =
         Past_session {
                       title = "How feature branching affects domain-driven design with Thierry de Pauw"
                       date = "Tuesday, January 8th. 2020"
-                      time = "19:00 Amsterdam"
+                      time = "19:00 CET"
                       img = None 
                       video = Some "https://www.youtube.com/embed/mKaIR-EjoC0"
                       embedded = None
@@ -158,7 +157,7 @@ let sessions =
         Past_session {
                       title = "Combatting the Near Enemies of Domain Driven Design at Scale"
                       date = "Wednesday, December 11th. 2019"
-                      time = "19:00 Amsterdam"
+                      time = "19:00 CET"
                       img = None
                       video = Some "https://www.youtube.com/embed/3CFyA4iecng"
                       embedded = None
@@ -177,7 +176,7 @@ let sessions =
         Past_session {
                       title = "Does a Domain-driven design approach need an agile business?"
                       date = "Tuesday, December 3st. 2019"
-                      time = "19:30 Amsterdam"
+                      time = "19:30 CET"
                       img = None
                       video = Some "https://www.youtube.com/embed/hKBSmQCMEqQ"
                       embedded = None
@@ -195,7 +194,7 @@ let sessions =
         Past_session {
                       title = "SunDDDay Discussion: Growing your local DDD community"
                       date = "Tuesday, December 1st. 2019"
-                      time = "19:00 Amsterdam"
+                      time = "19:00 CET"
                       img = None
                       video = Some "https://www.youtube.com/embed/sXdSjhWNeMg"
                       embedded = None
@@ -211,7 +210,7 @@ let sessions =
         Past_session {
                       title = "Make your tests tell the story of your domain with Anne and Mads"
                       date = "Tuesday, November 12th. 2019"
-                      time = "19:00 Amsterdam"
+                      time = "19:00 CET"
                       img = None
                       video = Some "https://www.youtube.com/embed/7_KZ8_R4oOU"
                       embedded = None
@@ -228,7 +227,7 @@ let sessions =
         Past_session {
                       title = "What is an aggregate with Thomas Ploch"
                       date = "Wednesday, November 6th. 2019"
-                      time = "18:30 Berlin "
+                      time = "18:30 CET"
                       img = None
                       video = Some "https://www.youtube.com/embed/7h3DqZmvF9A"
                       embedded = None
@@ -246,7 +245,7 @@ let sessions =
         Past_session {
                       title = "Introducing DDD to your Company with Barry O Sullivan"
                       date = "Tuesday, September 24th. 2019"
-                      time = "19:00 Paris-Amsterdam / 18:00 London Time / 13:00 Eastern Time (US and Canada)"
+                      time = "19:00 CEST"
                       img = None 
                       video = Some "https://www.youtube.com/embed/Vb7ZwYQPqqQ"
                       embedded = None
@@ -264,7 +263,7 @@ let sessions =
         Past_session {
               title = "SunDDDay discussion: CQRS & Event Sourcing systems with Alexey and Marco"
               date = "Sunday, August 25th. 2019"
-              time = "19:00 Paris-Amsterdam / 18:00 London Time / 13:00 Eastern Time (US and Canada)"
+              time = "19:00 CEST"
               img = None
               video = Some "https://www.youtube.com/embed/5e7lhY2q8WQ"
               embedded = None
@@ -280,7 +279,7 @@ let sessions =
         Past_session {
               title = "EventStorming Types and Heuristics with Rebecca, Paul and Alberto"
               date = "Thursday, August 8th. 2019"
-              time = "24:00 Paris-Amsterdam / 23:00 London Time / 18:00 Eastern Time (US and Canada)"
+              time = "24:00 CEST"
               img = None
               video = Some "https://www.youtube.com/embed/jFEC7Pb1FtM"
               embedded = None
@@ -297,7 +296,7 @@ let sessions =
         Past_session {
               title = "How To Read the Blue Book: Strategic Design with Mathias Verraes"
               date = "Tuesday, July 23th. 2019"
-              time = "19:00 Paris-Amsterdam / 18:00 London Time"
+              time = "19:00 CEST"
               img = None 
               video = Some "https://www.youtube.com/embed/jZo44tbff1c"  
               embedded = None
@@ -311,8 +310,8 @@ let sessions =
         
         Past_session {
               title = "Socio-technical architecture with Ora Egozi-Barzilai and Evelyn van Kelle"
-              date = "Thursdayup, July 18th. 2019"
-              time = "18:30 Paris-Amsterdam / 17:30 London Time"
+              date = "Thursday, July 18th. 2019"
+              time = "18:30 CEST"
               img = None
               video = Some "https://www.youtube.com/embed/YqbXEhO237w" 
               embedded = None
@@ -329,7 +328,7 @@ let sessions =
         Past_session {
               title = "Can business capabilities be useful in DDD with Trond Hjorteland"
               date = "Tuesday, June 25th. 2019"
-              time = "20:00 Paris-Amsterdam / 19:00 London Time"
+              time = "20:00 CEST"
               img = None
               video = Some "https://www.youtube.com/embed/WSAHL7oHGUw"
               embedded = None
@@ -350,7 +349,7 @@ let sessions =
         Past_session {
               title = "Impact Mapping to manage change and strategic design"
               date = "Thursday, June 13th. 2019"
-              time = "18:30 Paris-Amsterdam / 17:30 London Time"
+              time = "18:30 CEST"
               img = None
               video = Some "https://www.youtube.com/embed/7u-EtXVKR5g"
               embedded = None
@@ -369,7 +368,7 @@ let sessions =
         Past_session {
               title = "SunDDDay discussion: EventStorming and User story mapping for domain discovery"
               date = "Sunday, May 26th. 2019"
-              time = "15:30 GMT / 16:30 CET"
+              time = "16:30 CET"
               img = None
               video = Some "https://www.youtube.com/embed/H553KZPCJQk"
               embedded = None
