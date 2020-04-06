@@ -8,18 +8,40 @@ let sessions =
         Upcoming_session {
                       title = "How cognitive biases and ranking kills your modelling sessions"
                       date = "Tuesday, April 7th. 2020"
-                      time = "19:00 Amsterdam"
+                      time = "19:00 CEST"
                       img = Some "https://secure.meetupstatic.com/photos/event/4/7/3/4/highres_489978228.jpeg"
                       video = None 
                       embedded = None
                       podcast = None 
-                      description = ""
+                      description = "The power of collaborative modelling comes from having a diverse group of people who, together, have a lot of wisdom and knowledge. You would expect that all this knowledge will be put to use, co-creating, and to design a model. In reality, we don’t actually listen to all the available input and perspectives due to cognitive biases and ranking. Good modelling needs all the insights and perception to design the best one. If you are not aware, cognitive biases and ranking kills those insights and kills the effectiveness of your models!
+
+                                        Join us in this session talking with Evelyn van Kelle and Romeu Moura about how awareness of your own cognitive biases and your ranking in the group can create more effective models! We will discuss how to use biases and ranking in your favour, making sure people are not excluded, and every knowledge is rally heard and put to good use in your models!"
                       
                       links =
                           [
                               { label = "Zoom" ; url = "https://zoom.us/j/137043267" }
                               { label = "Youtube" ; url = "https://youtu.be/djbbZnOIGE0" }
                               { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/269784134/" }
+                          ]
+        }
+        
+        Upcoming_session {
+                      title = "How to improve modelling with Behaviour-driven development"
+                      date = "Tuesday, April 14th. 2020"
+                      time = "19:30 CEST"
+                      img = Some "https://secure.meetupstatic.com/photos/event/2/e/f/4/highres_490032020.jpeg"
+                      video = None 
+                      embedded = None
+                      podcast = None 
+                      description = "Behaviour Driven Development (BDD) is a term that was coined by Dan North in 2006. It came about as a response to a very specific problem – teaching developers how to think about testing their code. It incorporates the ubiquitous language idea from Eric Evan’s book Domain-Driven Design, and this evolved into a technique used by the whole team to collaboratively specify how the finished system should behave. While both approaches focus on collaboration, DDD focuses on a shared model for building software and BDD focusses on specifying the behaviour of the system. So what can we learn from both our techniques?
+
+                                    Join us in this session were Seb Rose, Steve Tooke and Matt Wynne will discuss with us how we can improve modelling with BDD. We will bust popular BDD myths and talk about their favourite collaboration techniques."
+                      
+                      links =
+                          [
+                              { label = "Zoom" ; url = "https://zoom.us/j/481492741" }
+                              { label = "Youtube" ; url = "https://youtu.be/HvT8wNE1C2U" }
+                              { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/269885290/" }
                           ]
         }
         
