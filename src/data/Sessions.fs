@@ -4,27 +4,7 @@ open VDDD.Types
 
 let sessions =
     [   
-        
-        Upcoming_session {
-                      title = "How cognitive biases and ranking kills your modelling sessions"
-                      date = "Tuesday, April 7th. 2020"
-                      time = "19:00 CEST"
-                      img = Some "https://secure.meetupstatic.com/photos/event/4/7/3/4/highres_489978228.jpeg"
-                      video = None 
-                      embedded = None
-                      podcast = None 
-                      description = "The power of collaborative modelling comes from having a diverse group of people who, together, have a lot of wisdom and knowledge. You would expect that all this knowledge will be put to use, co-creating, and to design a model. In reality, we don’t actually listen to all the available input and perspectives due to cognitive biases and ranking. Good modelling needs all the insights and perception to design the best one. If you are not aware, cognitive biases and ranking kills those insights and kills the effectiveness of your models!
-
-                                        Join us in this session talking with Evelyn van Kelle and Romeu Moura about how awareness of your own cognitive biases and your ranking in the group can create more effective models! We will discuss how to use biases and ranking in your favour, making sure people are not excluded, and every knowledge is rally heard and put to good use in your models!"
-                      
-                      links =
-                          [
-                              { label = "Zoom" ; url = "https://zoom.us/j/137043267" }
-                              { label = "Youtube" ; url = "https://youtu.be/djbbZnOIGE0" }
-                              { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/269784134/" }
-                          ]
-        }
-        
+               
         Upcoming_session {
                       title = "How to improve modelling with Behaviour-driven development"
                       date = "Tuesday, April 14th. 2020"
@@ -42,6 +22,25 @@ let sessions =
                               { label = "Zoom" ; url = "https://zoom.us/j/481492741" }
                               { label = "Youtube" ; url = "https://youtu.be/HvT8wNE1C2U" }
                               { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/269885290/" }
+                          ]
+        }
+        
+        
+        Past_session {
+                      title = "How cognitive biases and ranking kills your modelling sessions"
+                      date = "Tuesday, April 7th. 2020"
+                      time = "19:00 CEST"
+                      img = Some "https://secure.meetupstatic.com/photos/event/4/7/3/4/highres_489978228.jpeg"
+                      video = Some "https://www.youtube.com/embed/djbbZnOIGE0"
+                      embedded = None
+                      podcast = Some "https://oembed.libsyn.com/embed?item_id=13899341" 
+                      description = "The power of collaborative modelling comes from having a diverse group of people who, together, have a lot of wisdom and knowledge. You would expect that all this knowledge will be put to use, co-creating, and to design a model. In reality, we don’t actually listen to all the available input and perspectives due to cognitive biases and ranking. Good modelling needs all the insights and perception to design the best one. If you are not aware, cognitive biases and ranking kills those insights and kills the effectiveness of your models!
+
+                                        Join us in this session talking with Evelyn van Kelle and Romeu Moura about how awareness of your own cognitive biases and your ranking in the group can create more effective models! We will discuss how to use biases and ranking in your favour, making sure people are not excluded, and every knowledge is rally heard and put to good use in your models!"
+                      
+                      links =
+                          [
+                              { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/269784134/" }
                           ]
         }
         
