@@ -31,7 +31,7 @@ module Hero =
                     [ "A community driven meetup for people who want to get more in-depth knowledge of DDD from anywhere at anytime, join this virtual DDD community for online panel discussions, community talks and more. Everybody is welcome to join us, we love learning and growing together." |> ofString ]
                   div [ Class "mb-4 font-semibold" ]
                     [ "Share your deep, creative, productive or crazy ideas!" |> ofString ]
-                  a [ Href "mailto:submissions@virtualddd.com"
+                  a [ Href "https://sessionize.com/virtual-ddd-meetup"
                       Target "_blank"
                       Class "p-4 bg-blue-500 floating-action-button text-white" ]
                     [ str "Propose a session"]                      
