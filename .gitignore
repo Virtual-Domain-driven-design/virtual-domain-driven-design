@@ -198,3 +198,4 @@ docs/tools/FSharp.Formatting.svclog
 *.bak
 project.lock.json
 .ionide/*
+public/bundle.js
