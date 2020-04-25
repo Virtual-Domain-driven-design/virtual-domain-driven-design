@@ -4,6 +4,28 @@ open VDDD.Types
 
 let sessions =
     [   
+             
+        Past_session {
+                      title = "Experimenting with Remote Wardley Mapping with Nick Tune"
+                      date = "Friday, May 1st. 2020"
+                      time = "19:00 CEST"
+                      img = Some "https://secure.meetupstatic.com/photos/event/6/4/2/4/highres_490225636.jpeg"
+                      video = None 
+                      embedded = None
+                      podcast = None
+                      description = "Wardley Mapping is a strategic tool for anticipating how domains will evolve over time.
+                                     
+                                     In this session, we’ll learn the basic theory behind Wardley Maps and then jump into hands-on exercises.
+                                     
+                                     It is recommended that you read Ben Mosior’s excellent article before attending this session: Wardley Mapping with Miro.
+                                     
+                                     https://miro.com/blog/wardley-maps-whiteboard-canvas/"
+                      
+                      links =
+                          [
+                              { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270234608/" }
+                          ]
+        }
                
         Past_session {
                       title = "How to improve modelling with Behaviour-driven development"
@@ -22,7 +44,6 @@ let sessions =
                               { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/269885290/" }
                           ]
         }
-        
         
         Past_session {
                       title = "How cognitive biases and ranking kills your modelling sessions"
