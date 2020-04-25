@@ -2,8 +2,8 @@ namespace VDDD
 
 module Sponsors =
 
-  open Fable.Helpers.React
-  open Fable.Helpers.React.Props
+  open Fable.React
+  open Fable.React.Props
 
   type Profile = {
     Image : string

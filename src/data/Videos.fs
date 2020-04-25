@@ -1,10 +1,11 @@
-module VDDD.Data.Videos
+namespace VDDD.Data
 
-open VDDD.Types
+module Videos =
 
+    open VDDD
 
-let kandddinsky = 
-    [
+    let kandddinsky = 
+      [
         {
               title = "Keynote: What really matters - Jimmy Nilsson"
               source = "KanDDDinsky"
@@ -84,4 +85,4 @@ let kandddinsky =
               level = Introductory
               tags = ["Tactical Patterns" ; "context map"]
         }
-    ]
+      ]

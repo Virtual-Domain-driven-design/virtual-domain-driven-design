@@ -2,9 +2,8 @@ namespace VDDD
 
 module CommunityEvents =
 
-  open Fable.Helpers.React
-  open Fable.Helpers.React.Props
-  open VDDD.Types
+  open Fable.React
+  open Fable.React.Props
   
   let podcast dispatch (s:Sessiondetails) =
       match s.podcast with

@@ -1,4 +1,4 @@
-namespace VDDD.Types
+namespace VDDD
 
 
 type Page =
@@ -11,12 +11,15 @@ type Page =
   | Podcasts
   | DDDDD
 
+
 type Link = {
   url: string
   label: string
 }
 
+
 type Level = Introductory | Intermediate | Advanced | Expert
+
 
 type Sessiondetails = {
   title: string
@@ -30,9 +33,11 @@ type Sessiondetails = {
   links: Link list
 }
 
+
 type Session =
   | Past_session of Sessiondetails
   | Upcoming_session of Sessiondetails
+
 
 type Book = {
   title: string
@@ -40,6 +45,7 @@ type Book = {
   img: string
   tags: string list
 }
+
 
 type Video = {
   title: string
@@ -49,6 +55,7 @@ type Video = {
   tags: string list
 }
 
+
 type Community = {
   name: string
   country: string
@@ -56,6 +63,7 @@ type Community = {
   url: string
   img: string
 }
+
 
 type Model = {
   menu_open: bool
@@ -67,9 +75,10 @@ type Model = {
   videos: Video list
 }
 
+
 type Msg = 
   | Toggle_menu
-  | GoTo of Page
+  | Page_changed of Page
   | OnLogError of exn
   | Clicked_Anywhere
   

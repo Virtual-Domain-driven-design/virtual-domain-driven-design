@@ -2,9 +2,8 @@ namespace VDDD
 
 module DDDDD =
 
-    open Fable.Helpers.React
-    open Fable.Helpers.React.Props
-    open VDDD.Types
+    open Fable.React
+    open Fable.React.Props
 
 
     let social_link label url =

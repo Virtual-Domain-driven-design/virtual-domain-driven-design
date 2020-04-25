@@ -2,9 +2,10 @@ namespace VDDD
 
 module Footer =
 
-  open Fable.Helpers.React
-  open Fable.Helpers.React.Props
-  open VDDD.Types
+  open Fable.React
+  open Fable.React.Props
+  open Routing
+
 
   let render model dispatch =
     div [ Class "footer bg-gray-200" ]
@@ -12,6 +13,6 @@ module Footer =
         
         div [ ] [ str "Developed by Kenny Baas-Schwegler & Marco Heimeshoff "]
         
-        div [ Class "link p-2"
-              OnClick (fun e -> e.stopPropagation() ; GoTo Code_of_conduct |> dispatch) ]
+        a [ Class "link p-2"
+            Href (link_to Code_of_conduct) ]
           [ str "Code of Conduct" ] ]  

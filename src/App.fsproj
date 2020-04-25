@@ -3,13 +3,10 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="../tailwind.js">
-      <Link>tailwind.js</Link>
-    </Content>
     <Content Include="style.css" />
     <Compile Include="Types.fs" />
+    <Compile Include="Routing.fs" />
     <Compile Include="Interop.fs" />
-    <Compile Include="Router.fs" />
     <Compile Include="data/Common.fs" />
     <Compile Include="data/Sessions.fs" />
     <Compile Include="data/Books.fs" />
@@ -33,8 +30,12 @@
     <Compile Include="App.fs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Fable.Core" Version="2.0.2" />
-    <PackageReference Include="Fable.Elmish.React" Version="2.1.0" />
-    <PackageReference Include="Fable.Elmish.Browser" Version="2.0.2" />
+    <PackageReference Include="Fable.Core" Version="3.1.5" />
+    <PackageReference Include="Fable.Elmish.HMR" Version="4.0.1" />
+    <PackageReference Include="Fable.Elmish.React" Version="3.0.1" />
+    <PackageReference Include="Fable.Elmish.Browser" Version="3.0.4" />
+    <PackageReference Include="Feliz" Version="0.74.1" />
+    <PackageReference Include="Feliz.Router" Version="2.0.0" />
+    <PackageReference Include="Zanaptak.TypedCssClasses" Version="0.2.0" />
   </ItemGroup>
 </Project>

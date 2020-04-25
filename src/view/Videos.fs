@@ -2,10 +2,9 @@ namespace VDDD
 
 module Videos =
 
-  open Fable.Helpers.React
-  open Fable.Helpers.React.Props
-  open VDDD.Types
-  open VDDD.Data.Common
+  open Fable.React
+  open Fable.React.Props
+  open Data.Common
   
   let tag t =
     div [ Class "flex-shrink-0 leading-none text-xs tracking-tighter bg-gray-200 text-gray-700 rounded-md p-1 m-1" ] 

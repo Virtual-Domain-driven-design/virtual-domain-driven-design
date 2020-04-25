@@ -2,9 +2,9 @@ namespace VDDD
 
 module Sessions =
 
-  open Fable.Helpers.React
-  open Fable.Helpers.React.Props
-  open VDDD.Types
+  open Fable.React
+  open Fable.React.Props
+
 
   let session (s:Sessiondetails) =
     div [ Class "bg-white w-full rounded-lg shadow-md p-4 md:p-8 mb-2" ]

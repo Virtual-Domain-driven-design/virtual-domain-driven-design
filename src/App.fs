@@ -1,20 +1,16 @@
-module App
+namespace VDDD
 
-open Elmish
-open Elmish.React
-open Elmish.Browser.UrlParser
-open Elmish.Browser.Navigation
-open Fable.Core.JsInterop
+module App =
 
-open VDDD
-open Router
+  open Elmish
+  open Elmish.React
+  open Browser.Dom
+  open Elmish.HMR
+ 
 
-importAll "./style.css"
-
-Program.mkProgram State.init State.update View.render
-|> Program.toNavigable (parsePath pageParser) urlUpdate
-|> Program.withReact "elmish-app"
-#if DEBUG
-|> Program.withConsoleTrace
-#endif
-|> Program.run
+  Program.mkProgram State.init State.update View.render
+  |> Program.withReactBatched "elmish-app"
+  #if DEBUG
+  |> Program.withConsoleTrace
+  #endif
+  |> Program.run

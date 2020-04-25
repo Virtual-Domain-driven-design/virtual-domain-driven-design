@@ -1,10 +1,12 @@
-module VDDD.Data.Common
+namespace VDDD.Data
 
-open VDDD.Types
+module Common =
 
-let level l =
-    match l with
-    | Introductory -> "Introductory"
-    | Intermediate -> "Intermediate"
-    | Advanced -> "Advanced"
-    | Expert -> "Expert"
+    open VDDD
+        
+    let level l =
+        match l with
+        | Introductory -> "Introductory"
+        | Intermediate -> "Intermediate"
+        | Advanced -> "Advanced"
+        | Expert -> "Expert"

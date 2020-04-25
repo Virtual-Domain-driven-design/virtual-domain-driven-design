@@ -2,9 +2,8 @@ namespace VDDD
 
 module Communities =
 
-  open Fable.Helpers.React
-  open Fable.Helpers.React.Props
-  open VDDD.Types
+  open Fable.React
+  open Fable.React.Props
   
     type Conference = {
     Image : string

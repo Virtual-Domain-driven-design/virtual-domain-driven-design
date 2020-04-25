@@ -2,10 +2,9 @@ namespace VDDD
 
 module Hero =
 
-  open Fable.Helpers.React
-  open Fable.Helpers.React.Props
-  open VDDD.Types
-
+  open Fable.React
+  open Fable.React.Props
+  open Routing
 
   let social_link label url =
     a [ Class "text-xl m-2 p-2 text-white rounded-lg border-2 border-blue-500 hover:border-blue-400" 
@@ -55,8 +54,8 @@ module Hero =
                           ( s.Tail 
                             |> List.truncate 3
                             |> List.map Sessions.session_small )
-                        div [ Class "text-xl mb-4 p-2 cursor-pointer text-white rounded-lg border-2 border-blue-500 hover:border-blue-400"
-                              OnClick (fun _ -> GoTo Sessions |> dispatch) ]
+                        a [ Class "text-xl mb-4 p-2 cursor-pointer text-white rounded-lg border-2 border-blue-500 hover:border-blue-400"
+                            Href (link_to Sessions) ]
                           [ "Show all sessions" |> ofString ]
                       ]
                 | None -> div [] []  )
