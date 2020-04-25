@@ -5,7 +5,7 @@ open VDDD.Types
 let sessions =
     [   
              
-        Past_session {
+        Upcoming_session {
                       title = "Experimenting with Remote Wardley Mapping with Nick Tune"
                       date = "Friday, May 1st. 2020"
                       time = "19:00 CEST"
