@@ -199,3 +199,4 @@ docs/tools/FSharp.Formatting.svclog
 project.lock.json
 .ionide/*
 public/bundle.js
+deploy/
