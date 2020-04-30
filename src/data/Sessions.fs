@@ -26,6 +26,9 @@ module Sessions =
                           links =
                               [
                                   { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270234608/" }
+                                  { label = "Youtube" ; url = "https://youtu.be/Rvt7k542fOI" }
+                                  { label = "Zoom" ; url = "https://zoom.us/j/84649365514" }
+
                               ]
             }
                    
