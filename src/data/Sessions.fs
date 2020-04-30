@@ -15,7 +15,9 @@ module Sessions =
                           video = None 
                           embedded = None
                           podcast = None
-                          description = "Wardley Mapping is a strategic tool for anticipating how domains will evolve over time.
+                          description = "
+                                        ** If you want to participate, RSVP to the meetup and you will get a password protected zoom Link, else just enjoy youtube ***   
+                                        Wardley Mapping is a strategic tool for anticipating how domains will evolve over time.
                                          
                                          In this session, we’ll learn the basic theory behind Wardley Maps and then jump into hands-on exercises.
                                          
@@ -27,7 +29,6 @@ module Sessions =
                               [
                                   { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270234608/" }
                                   { label = "Youtube" ; url = "https://youtu.be/Rvt7k542fOI" }
-                                  { label = "Zoom" ; url = "https://zoom.us/j/84649365514" }
 
                               ]
             }
