@@ -6,13 +6,12 @@ module Sessions =
 
     let sessions =
         [   
-                 
-            Upcoming_session {
+            Past_session {
                           title = "Experimenting with Remote Wardley Mapping with Nick Tune"
                           date = "Friday, May 1st. 2020"
                           time = "19:00 CEST"
-                          img = Some "https://secure.meetupstatic.com/photos/event/6/4/2/4/highres_490225636.jpeg"
-                          video = None 
+                          img = None
+                          video = Some "https://www.youtube.com/embed/Rvt7k542fOI"
                           embedded = None
                           podcast = None
                           description = "
@@ -28,7 +27,6 @@ module Sessions =
                           links =
                               [
                                   { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270234608/" }
-                                  { label = "Youtube" ; url = "https://youtu.be/Rvt7k542fOI" }
 
                               ]
             }
