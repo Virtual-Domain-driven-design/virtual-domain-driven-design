@@ -7,6 +7,30 @@ module Sessions =
     let sessions =
         [   
             Past_session {
+                          title = "[DDD London] DDD-Lite: Independent Service Heuristics with Matthew Skeleton"
+                          date = "Friday, May 12th. 2020"
+                          time = "19:30 CEST"
+                          img = Some "https://secure.meetupstatic.com/photos/event/7/e/a/6/600_483992422.jpeg"
+                          video = None
+                          embedded = None
+                          podcast = None
+                          description = "
+                                        When designing organizations for fast flow of change, we need to find effective boundaries between different streams of change. Techniques like Domain-Driven Design (DDD) are very powerful for this but can be quite involved and difficult to learn. A lightweight intermediate approach is to ask 'could this thing be run as a cloud-hosted (SaaS) service or product?'.
+
+                                        This session explores the Independent Service Heuristics, a kind of “DDD-Lite” approach based on some ideas in the book Team Topologies by Matthew Skelton and Manuel Pais. The Independent Service Heuristics help teams to find candidate services and domains for running as a separate value stream or separate service.
+
+                                        The Independent Service Heuristics have proven useful for various organizations improving flow. In this session, we would really welcome feedback and critique of the approach. Where might the approach not work? What pitfalls might there be? Are there questions or material missing?
+
+                                        See the Independent Service Heuristics on GitHub at https://github.com/TeamTopologies/Independent-Service-Heuristics - send a Pull Request! The material is Creative Commons CC BY-SA."
+                          
+                          links =
+                              [
+                                  { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270457433/" }
+
+                              ]
+            }
+
+            Past_session {
                           title = "Experimenting with Remote Wardley Mapping with Nick Tune"
                           date = "Friday, May 1st. 2020"
                           time = "19:00 CEST"
