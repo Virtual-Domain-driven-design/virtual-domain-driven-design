@@ -6,7 +6,7 @@ module Sessions =
 
     let sessions =
         [   
-            Past_session {
+            Upcoming_session {
                           title = "[DDD London] DDD-Lite: Independent Service Heuristics with Matthew Skeleton"
                           date = "Friday, May 12th. 2020"
                           time = "19:30 CEST"
