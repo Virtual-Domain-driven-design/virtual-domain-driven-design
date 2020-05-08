@@ -97,4 +97,11 @@ module Communities =
               url = "https://www.meetup.com/Copenhagen-Domain-Driven-Design-Meetup/"
               img = "https://images.unsplash.com/photo-1520430825812-775990ecfb13?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
           }
+          {
+              name = "Domain Driven Design Taiwan Community"
+              country = "Taiwan"
+              city = None
+              url = "https://dddtaiwan.kktix.cc/"
+              img = "https://t.kfs.io/upload_images/95467/51032883_642651092818994_6274069289485991936_n_promote.jpg"
+          }
       ]
