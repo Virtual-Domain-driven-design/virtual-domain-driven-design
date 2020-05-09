@@ -36,7 +36,7 @@ module View =
                 | Videos -> Videos.render model dispatch
                 | Communities -> Communities.render model dispatch
                 | Podcasts -> Podcasts.render model dispatch
-                | DDDDD -> DDDDD.render model dispatch )
+                | DDDDD -> DDDDD.View.render model dispatch )
 
               Sponsors.render model dispatch
               Organisers.render model dispatch                 

@@ -1,8 +1,9 @@
-namespace VDDD
+namespace VDDD.DDDDD
 
-module DDDDD =
+module View =
 
   open Feliz
+  open Schedule 
 
   let description =
     Html.div [
@@ -58,12 +59,6 @@ module DDDDD =
       ]
     ]  
 
-
-  let conference_schedule =
-    Html.div [
-      prop.className "section w-full"
-      prop.text "schedule"
-    ]
 
   let render model dispatch =
     Html.div [

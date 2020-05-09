@@ -25,6 +25,8 @@
     <Compile Include="view/CommunityEvents.fs" />
     <Compile Include="view/Communities.fs" />
     <Compile Include="view/Videos.fs" />
+    <Compile Include="view/ddddd/2020_05/Types.fs" />
+    <Compile Include="view/ddddd/2020_05/Schedule.fs" />
     <Compile Include="view/ddddd/2020_05/View.fs" />
     <Compile Include="View.fs" />
     <Compile Include="App.fs" />
