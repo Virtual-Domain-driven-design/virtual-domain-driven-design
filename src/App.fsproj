@@ -25,7 +25,7 @@
     <Compile Include="view/CommunityEvents.fs" />
     <Compile Include="view/Communities.fs" />
     <Compile Include="view/Videos.fs" />
-    <Compile Include="view/DDDDD.fs" />
+    <Compile Include="view/ddddd/2020_05/View.fs" />
     <Compile Include="View.fs" />
     <Compile Include="App.fs" />
   </ItemGroup>
@@ -34,8 +34,8 @@
     <PackageReference Include="Fable.Elmish.HMR" Version="4.0.1" />
     <PackageReference Include="Fable.Elmish.React" Version="3.0.1" />
     <PackageReference Include="Fable.Elmish.Browser" Version="3.0.4" />
-    <PackageReference Include="Feliz" Version="0.74.1" />
-    <PackageReference Include="Feliz.Router" Version="2.0.0" />
+    <PackageReference Include="Feliz" Version="0.85.0" />
+    <PackageReference Include="Feliz.Router" Version="2.0.1" />
     <PackageReference Include="Zanaptak.TypedCssClasses" Version="0.2.0" />
   </ItemGroup>
 </Project>

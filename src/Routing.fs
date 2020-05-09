@@ -25,3 +25,4 @@ module Routing =
     | [ "videos" ] -> Videos
     | [ "communities" ] -> Communities
     | [ "podcasts" ] -> Podcasts
+    | _ -> Landingpage "top"

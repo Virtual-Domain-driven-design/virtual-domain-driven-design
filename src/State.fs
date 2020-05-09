@@ -3,10 +3,12 @@ namespace VDDD
 module State =
 
     open Elmish
+    open Routing
+    open Feliz.Router
 
     let init result  =
       { menu_open = false 
-        page = (Landingpage "top") 
+        page = parseUrl (Router.currentUrl())
         searchterm = ""
         sessions = Data.Sessions.sessions
         books = Data.Books.books
