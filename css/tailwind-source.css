@@ -41,7 +41,6 @@ a {
     @apply text-blue-400 cursor-pointer;
 }
 
-
 .overlay {
     @apply z-0 absolute inset-0 bg-gray-900 opacity-75;
 }
@@ -74,9 +73,9 @@ a {
  }
 
 .section{
-    @apply bg-white text-blue-700 flex flex-col items-center justify-center;
+    @apply bg-gray-200 text-blue-800 flex flex-col items-center justify-center;
 }
-.section:nth-child(odd) { @apply bg-gray-200 }
+.section:nth-child(odd) { @apply bg-white }
  
 .content{
     @apply leading-normal text-blue-800 py-4 flex flex-col items-center justify-center;

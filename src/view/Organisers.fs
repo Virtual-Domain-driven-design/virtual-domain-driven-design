@@ -13,7 +13,7 @@ module Organisers =
     Linkedin : string }
 
   let organiser name profile =
-    div [ Class "content pt-4 m-4 rounded-lg shadow-md flex flex-col items-stretch justify-between" ]
+    div [ Class "bg-white py-4 m-4 rounded-lg shadow-md flex flex-col items-stretch justify-between" ]
        [ div [ Class "flex flex-col items-center justify-start" ]
           [
            div [ Class "text-gray-800 text-sm text-center" ]
