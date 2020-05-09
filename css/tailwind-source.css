@@ -74,8 +74,9 @@ a {
  }
 
 .section{
-    @apply bg-gray-200 text-blue-700 flex flex-col items-center justify-center;
+    @apply bg-white text-blue-700 flex flex-col items-center justify-center;
 }
+.section:nth-child(odd) { @apply bg-gray-200 }
  
 .content{
     @apply leading-normal text-blue-800 py-4 flex flex-col items-center justify-center;

@@ -21,7 +21,7 @@ module Books =
         tagline b.tags ]
 
   let render model dispatch =
-    div [ Class "content bg-gray-200" ; Id "books"]
+    div [ Class "section bg-gray-200" ; Id "books"]
           [ div [ Class "w-full flex flex-col items-center justify-start"]
               [ h2 [ Class "my-6 w-4/5 lg:w-2/3 xl:w-1/2" ]
                   [ str "Books"]

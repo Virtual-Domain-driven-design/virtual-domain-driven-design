@@ -101,7 +101,7 @@ module Sessions =
       
 
   let render model dispatch =
-    div [ Class "content bg-gray-200" ; Id "sessions"]
+    div [ Class "section" ; Id "sessions"]
       [ (match upcomming model.sessions with
           | None -> div [ Class "my-8 w-4/5 lg:w-2/3 xl:w-1/2" ]
                       [ h2 [  ]

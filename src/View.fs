@@ -13,11 +13,10 @@ module View =
         ( match model.page with 
           | Landingpage h -> h 
           | _ -> "top") 
-      div [ OnLoad (fun _ -> scrollIntoView hash) ]
+      div [ OnLoad (fun _ -> scrollIntoView hash)
+            Class "section" ]
         [ Hero.render model dispatch
           Communities.render model dispatch
-          Sponsors.render model dispatch
-          Organisers.render model dispatch 
         ]
 
 
@@ -29,18 +28,18 @@ module View =
                 OnClick (fun _ -> Clicked_Anywhere |> dispatch )]    
             [ Navigation.render model dispatch
               
-              div [ ]
-                [ (match model.page with
-                  | Landingpage _ -> landingpage model dispatch
-                  | Sessions -> Sessions.render model dispatch 
-                  | Code_of_conduct -> CodeOfConduct.render model dispatch 
-                  | Books -> Books.render model dispatch
-                  | Videos -> Videos.render model dispatch
-                  | Communities -> Communities.render model dispatch
-                  | Podcasts -> Podcasts.render model dispatch
-                  | DDDDD -> DDDDD.render model dispatch
-                )]
-                
+              ( match model.page with
+                | Landingpage _ -> landingpage model dispatch
+                | Sessions -> Sessions.render model dispatch 
+                | Code_of_conduct -> CodeOfConduct.render model dispatch 
+                | Books -> Books.render model dispatch
+                | Videos -> Videos.render model dispatch
+                | Communities -> Communities.render model dispatch
+                | Podcasts -> Podcasts.render model dispatch
+                | DDDDD -> DDDDD.render model dispatch )
+
+              Sponsors.render model dispatch
+              Organisers.render model dispatch                 
               Footer.render model dispatch 
             ]
         ]

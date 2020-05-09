@@ -7,7 +7,7 @@ module CodeOfConduct =
 
 
   let render model dispatch =
-      div [ Class "content" ; Id "codeofconduct"]
+      div [ Class "section" ; Id "codeofconduct"]
         [ div [ Class "w-4/5 md:w-1/2 lg:w-1/2 xl:w-1/3" ]
             [ h2 [ ]
                 [ str "Code of conduct"]

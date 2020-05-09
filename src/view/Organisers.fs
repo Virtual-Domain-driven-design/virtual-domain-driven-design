@@ -13,7 +13,7 @@ module Organisers =
     Linkedin : string }
 
   let organiser name profile =
-    div [ Class "pt-4 m-4 bg-white rounded-lg shadow-md flex flex-col items-stretch justify-between" ]
+    div [ Class "content pt-4 m-4 rounded-lg shadow-md flex flex-col items-stretch justify-between" ]
        [ div [ Class "flex flex-col items-center justify-start" ]
           [
            div [ Class "text-gray-800 text-sm text-center" ]
@@ -47,7 +47,7 @@ module Organisers =
 
 
   let render model dispatch =
-    div [ Class "content bg-gray-200"; Id "organisers" ]
+    div [ Class "section bg-gray-200"; Id "organisers" ]
       [ div [ Class "mt-8 w-4/5 lg:w-2/3 xl:w-1/2" ]
           [ h2 []
               [ str "Organisers" ]

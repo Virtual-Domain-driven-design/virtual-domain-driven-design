@@ -8,7 +8,7 @@ module Footer =
 
 
   let render model dispatch =
-    div [ Class "footer bg-gray-200" ]
+    div [ Class "section footer bg-gray-200" ]
       [ div [ ] [ str "Copyright © Virtual Domain-Driven Design"]
         
         div [ ] [ str "Developed by Kenny Baas-Schwegler & Marco Heimeshoff "]

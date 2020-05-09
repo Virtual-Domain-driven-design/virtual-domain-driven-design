@@ -20,7 +20,7 @@ module Podcasts =
       | None -> div [] []
 
   let render model dispatch =
-    div [ Class "content bg-gray-200"; Id "podcasts"]
+    div [ Class "section bg-gray-200"; Id "podcasts"]
          [ div [ Class "my-8 w-4/5 lg:w-2/3 xl:w-1/2 flex flex-col items-center justify-start"]
               [ h2 [ Class "my-8 w-4/5 lg:w-2/3 xl:w-1/2" ]
                   [ str "Podcasts"]
