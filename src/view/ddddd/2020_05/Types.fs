@@ -6,6 +6,7 @@ type Sessiontype =
     | LiveTalk
     | Panel
     | HandsOn
+    | LiveCoding
 
 
 type Link = {
@@ -16,6 +17,7 @@ type Link = {
 
 type Session = {
   sessiontype: Sessiontype
+  time: string
   host: string
   speakerimg: string
   title: string
