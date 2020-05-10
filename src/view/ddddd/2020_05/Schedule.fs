@@ -8,10 +8,6 @@ module Schedule =
     Html.tr [
       prop.children [
         Html.th [
-          prop.className "font-light"
-          prop.text "Time (GMT)"
-        ]
-        Html.th [
           prop.text "Talks & Panels"
         ]
         Html.th [
@@ -82,31 +78,24 @@ module Schedule =
     ]
 
 
-  let slot (time:string) (s:Session) (handsOn:Session option) =
+  let slot (s:Session) (handsOn:Session option) =
       Html.tr [
         prop.children [
-          Html.td [
-            prop.className "text-center align-top"
-            prop.text time
-          ]
           match handsOn with
           | Some h -> 
               Html.td [
-                prop.className "text-center"
                 prop.children [
                   session s
                 ]
               ]
               Html.td [
                 prop.rowSpan 2
-                prop.className "text-center"
                 prop.children [
                   session h
                 ]
               ]
           | None -> 
               Html.td [
-                prop.className "text-center"
                 prop.children [
                   session s
                 ]
@@ -115,17 +104,18 @@ module Schedule =
       ]
 
 
-  let pause (time:string) (element:string) =
+  let pause (element:string) =
     Html.tr [
       prop.children [
         Html.td [
-          prop.className "text-center"
-          prop.text time
-        ]
-        Html.td [
           prop.colSpan 2
-          prop.className "text-center py-2"
-          prop.text element
+          prop.className "py-2"
+          prop.children [
+            Html.div [
+              prop.className "w-full text-center"
+              prop.text element
+            ]
+          ]
         ]
       ]
     ]
@@ -143,7 +133,6 @@ module Schedule =
               prop.children [
                 table_head
                 slot 
-                  "04:00" 
                   {
                     sessiontype = RecordedTalk
                     time = "4:00-4:45 GMT"
@@ -159,7 +148,6 @@ module Schedule =
                   ( None)
                 
                 slot 
-                  "05:00" 
                   {
                     sessiontype = RecordedTalk
                     time = "5:00 - 6:00 GMT"
@@ -175,10 +163,9 @@ module Schedule =
                   None
                 
                 pause 
-                  "06:00" "Break"
+                  "(06:00 - 06:30) Break"
 
                 slot 
-                  "06:30" 
                   {
                     sessiontype = RecordedTalk
                     time = "6:30 - 7:15 GMT"
@@ -222,7 +209,6 @@ module Schedule =
                     })
                   
                 slot 
-                  "07:30" 
                   {
                     sessiontype = LiveTalk
                     time = "7:30 - 8:30 GMT"
@@ -242,10 +228,9 @@ module Schedule =
                   None
 
                 pause 
-                  "08:30" "Break"
+                  "(08:30 - 09:00) Break"
 
                 slot 
-                  "09:00" 
                   {
                     sessiontype = RecordedTalk
                     time = "9:00 - 9:45 GMT"
@@ -279,7 +264,6 @@ module Schedule =
                     })
                   
                 slot 
-                  "10:00" 
                   {
                     sessiontype = Panel
                     time = "10:00 - 11:00 GMT"
@@ -296,11 +280,10 @@ module Schedule =
                   None
 
                 pause 
-                  "11:00" "Break"
+                  "(11:00 - 13:00) Break"
 
 
                 slot 
-                  "13:00" 
                   {
                     sessiontype = LiveTalk
                     time = "13:00 - 13:45 GMT"
@@ -331,7 +314,6 @@ module Schedule =
                     })
                   
                 slot 
-                  "14:00" 
                   {
                     sessiontype = Panel
                     time = "14:00 - 15:00 GMT"
@@ -355,11 +337,10 @@ module Schedule =
                   None
 
                 pause 
-                  "15:00" "Break"
+                  "(15:00 - 15:30) Break"
 
 
                 slot 
-                  "15:30" 
                   {
                     sessiontype = LiveCoding
                     time = "15:30 - 16:30"
@@ -389,7 +370,6 @@ module Schedule =
                     })
                   
                 slot 
-                  "16:45" 
                   {
                     sessiontype = Panel
                     time = "16:45 - 17:45 GMT"
@@ -407,11 +387,10 @@ module Schedule =
                   None
 
                 pause 
-                  "17:30/45" "Break"
+                  "(17:45 - 19:00) Break (17:30 - 19:00)"
 
 
                 slot 
-                  "19:00" 
                   {
                     sessiontype = RecordedTalk
                     time = "19:00 - 19:45 GMT"
@@ -469,7 +448,6 @@ module Schedule =
                     })
                   
                 slot 
-                  "20:00" 
                   {
                     sessiontype = Panel
                     time = "20:00 - 21:30 GMT"
@@ -486,7 +464,7 @@ module Schedule =
                   None
 
                 pause 
-                  "21:30" "The End"
+                  "(21:30) The End"
 
               ]
             ]
