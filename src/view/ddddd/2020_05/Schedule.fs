@@ -147,7 +147,7 @@ module Schedule =
                   {
                     sessiontype = RecordedTalk
                     time = "4:00-4:45 GMT"
-                    host = "Kim Ko"
+                    host = "Kim Kao"
                     speakerimg = "https://sessionize.com/image?f=fe2a92d92789432cfc4ef0c10ab71850,200,200,1,0,13-3cb6-45c5-aaa9-e2f75f3c7efa.8b884685-a4fc-47eb-a3d3-0f590fa672e7.jpg"
                     title = "Aggregate Canvas: A fluent way to walk through Strategical modeling to tactical design"
                     description = "As DDD topics become popular in Asia, more and more people still encounter obstacles in their domain model design, unable to move smoothly from domain concepts to code implementation, although there are already a lot of method has been proven to be valid, but still full of uncertainty. In this conference, I will introduce to you a solid approach - Aggregate Canvas. This Aggregate Canvas is created by KuoChao Chang, the co-organizer of DDD Taiwan Community. We would like to guide you to understand how to engage in a conversation with a team by a clear and complete mind to bring domain concepts into implementation, where a lot of elements mentioned in EventStorming are used to guide development teams through design."
@@ -317,11 +317,16 @@ module Schedule =
                   ( Some {
                     sessiontype = HandsOn
                     time = "13:00 - 15:00 GMT"
-                    host = "To be Announced"
-                    speakerimg = "https://getdrawings.com/free-icon/people-icon-free-54.png"
-                    title = "To be Announced"
-                    description = "To be Announced"
+                    host = "Marco Emrich"
+                    speakerimg = "https://sessionize.com/image?f=490b96708530a7946b8f08ee737666f3,200,200,1,0,3a-2c01-4478-9860-40b938640d67.d4291023-35f1-4167-a50f-f0aca8925154.jpg"
+                    title = "Functional Domain Modelling in Practice"
+                    description = "Functional programming enables the modeling of business domains based on a type system. This allows to prevent invariants already at runtime and customers have the possibility to give feedback directly to the code.
+
+                                    In this workshop you can try it out yourself. We model a domain and check the resulting type descriptions against a set of business rules. We will take a look at tactical design patterns in Functional Programming and try out a first implementation."
                     links = [
+                        { label = "Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270524029/"}
+                        { label = "Zoom" ; url = "https://xebia.zoom.us/j/91505689053" }
+                        { label = "YouTube" ; url = "https://youtu.be/3JECDkZ2_6Q" }
                     ]
                     })
                   
