@@ -84,7 +84,7 @@ module Organisers =
                   {
                     Image = "./img/photo_maxime_s.jpg"
                     Tagline = "Connecting people circa 97"
-                    Website = "ncrafts.io "
+                    Website = "https://ncrafts.io "
                     Twitter = "__MaxS__"
                     Linkedin = "ncrafts"
                   }
