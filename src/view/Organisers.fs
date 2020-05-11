@@ -79,6 +79,15 @@ module Organisers =
                     Twitter = "kenny_baas"
                     Linkedin = "kenny-baas"
                   }
+                   
+                organiser "Maxime Sanglan-Charlier"
+                  {
+                    Image = "http://www.brownbaglunch.fr/img/baggers/photo_maxime_s.jpg"
+                    Tagline = "Connecting people circa 97 - @ncraftsConf co-organizer."
+                    Website = "ncrafts.io "
+                    Twitter = "__MaxS__"
+                    Linkedin = "ncrafts"
+                  }
               ]   
           ]
       ]
