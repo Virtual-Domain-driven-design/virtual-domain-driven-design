@@ -362,7 +362,7 @@ module Schedule =
                     sessiontype = HandsOn
                     time = "15:30 - 17:30 GMT"
                     host = "To be Announced"
-                    speakerimg = "https://getdrawings.com/free-icon/people-icon-free-54.png"
+                    speakerimg = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSv5n2OBDyD1p-KFc8-FNG4kOYl7uxk1VslPnggzPhLYaSJ9FaV&usqp=CAU"
                     title = "To be Announced"
                     description = "To be Announced"
                     links = [
