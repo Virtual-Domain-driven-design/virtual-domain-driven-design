@@ -14,7 +14,7 @@ module View =
           prop.children [
             Html.div [
               prop.className "font-bold text-4xl"
-              prop.text "DDDDD"
+              prop.text "#DDDDD"
             ]
             Html.div [
               prop.className "font-medium text-2xl text-center"
@@ -27,6 +27,12 @@ module View =
             Html.div [ 
               prop.className "my-4 text-justify"
               prop.text "Distributed Domain-Driven Design Day is a virtualDDD online community conference. In this pandemic time where conferences are cancelled or postponed all over the world, we offer some solace by offering an online experience that comes as close to an offline conference experience as possible. We are looking for talks, online panel discussions as we do on meetups and any other creative ideas you can come up with. The day will be framed by pre-recorded talks with live Q&A by the speaker as inspired by Liz Keogh, and spiced up by online collaborative modelling and other hands-on sessions. This day will be a 24-hour long worldwide live event, starting at 4:00 GMT and ending at 22:00 GMT"
+            ]
+            Html.a [ 
+                prop.className "text-xl m-2 p-2 text-black rounded-lg border-2 border-blue-500 hover:border-blue-400" 
+                prop.target "_blank"
+                prop.href "https://j.mp/ddd-es-cqrs" 
+                prop.text "Join the interaction on slack #virtualddd"
             ]
           ]
         ]
