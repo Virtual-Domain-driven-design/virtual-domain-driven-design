@@ -317,7 +317,7 @@ module Schedule =
                   {
                     sessiontype = Panel
                     time = "14:00 - 15:00 GMT"
-                    host = "Michael Plöd, Gien Verschatse & More TBA"
+                    host = "Michael Plöd, Gien Verschatse, Zsofia Herendi & Kacper Gunia"
                     speakerimg = "https://sessionize.com/image?f=3157ed0b63356d31cbeb0a4b4e42fccf,200,200,1,0,aca6063c-cd27-4ef5-8c20-672f064d21f5.jpg"
                     title = "Remote DDD related trainings"
                     description = "The market for in person / presence training is pretty much gone right now due to the current situation. However each crisis brings up new opportunities. Some folks in the Domain-driven Design community have already gathered experiences in conduction and attending remote trainings about our favorite topic. This panel aims at sharing experiences among traininers and attendees as well. The questions we will discuss will include:
@@ -361,11 +361,15 @@ module Schedule =
                   ( Some {
                     sessiontype = HandsOn
                     time = "15:30 - 17:30 GMT"
-                    host = "To be Announced"
-                    speakerimg = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSv5n2OBDyD1p-KFc8-FNG4kOYl7uxk1VslPnggzPhLYaSJ9FaV&usqp=CAU"
-                    title = "To be Announced"
-                    description = "To be Announced"
+                    host = "Jennifer Carlston"
+                    speakerimg = "https://sessionize.com/image?f=1c3738e060b25fbf97cf29e89564ef87,200,200,1,0,c7-b058-41dc-ad18-100b8c83b91d.fad9b7ad-0827-4ad9-a08b-ed0a65bc5216.jpg"
+                    title = "Build a Bounded Context Mob Firedrill"
+                    description = "Let's see what it takes to get a Web BC online. How far can we get? What should it include? How will we do it and work together to get it done?
+                                    Constraints: Visual Studio Code. Docker. "
                     links = [
+                        { label = "Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270524035/"}
+                        { label = "Zoom" ; url = "https://xebia.zoom.us/j/97880459870" }
+                        { label = "YouTube" ; url = "https://youtu.be/Dg478xHcDrY" }
                     ]
                     })
                   
