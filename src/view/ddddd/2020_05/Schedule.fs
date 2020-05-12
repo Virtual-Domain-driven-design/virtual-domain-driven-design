@@ -141,7 +141,7 @@ module Schedule =
                     title = "Aggregate Canvas: A fluent way to walk through Strategical modeling to tactical design"
                     description = "As DDD topics become popular in Asia, more and more people still encounter obstacles in their domain model design, unable to move smoothly from domain concepts to code implementation, although there are already a lot of method has been proven to be valid, but still full of uncertainty. In this conference, I will introduce to you a solid approach - Aggregate Canvas. This Aggregate Canvas is created by KuoChao Chang, the co-organizer of DDD Taiwan Community. We would like to guide you to understand how to engage in a conversation with a team by a clear and complete mind to bring domain concepts into implementation, where a lot of elements mentioned in EventStorming are used to guide development teams through design."
                     links = [
-                      { label = "Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270524415/"}
+                      { label = "Register on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270524415/"}
                       { label = "YouTube" ; url = "https://youtu.be/AF880t1RUU4" }
                     ]
                   }  
@@ -156,7 +156,7 @@ module Schedule =
                     title = "Bounded Contexts, Microservices, and Everything In Between"
                     description = "“95% of the words are spent extolling the benefits of ‘modularity’ and that little, if anything, is said about how to achieve it” - Glenford J. Myers, 1978. This quote is 40 years old. Today, 4 decades later, nothing has changed except terminology. Time to change this. I want to talk about the various strategies of decomposing systems into modular components. You will learn what exactly Bounded Contexts and Microservices are, and what are the differences between the two notions. We will analyze what happens between services - how data flows, and how these flows can be optimized. Ultimately, we will explore different decomposition strategies and heuristics for designing modular systems - systems that aren’t driven by ever-changing fads, but by your business needs."
                     links = [
-                      { label = "Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270524442/"}
+                      { label = "Register on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270524442/"}
                       { label = "YouTube" ; url = "https://youtu.be/Z0RgR9xIQE4" }
                     ]
                   }
@@ -190,7 +190,7 @@ module Schedule =
 
                                     Examples will mostly be haskell, but we'll start with JS to ease into it more easily (someone once said that 67% of the NPM ecosystem could be replaced with `traverse`)."
                     links = [
-                      { label = "Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270524459/"}
+                      { label = "Register on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270524459/"}
                       { label = "YouTube" ; url = "https://youtu.be/sIJr3SCKhjo" }
                     ]
                   }
@@ -202,7 +202,7 @@ module Schedule =
                       title = "Remote Bounded Context Modelling"
                       description = "(It doesn't matter if you've practiced DDD before or never heard of Bounded Contexts you can attend and get value from this workshop. Developers, Testers, Product Managers, Architects, all welcome). Digital tools give us new powers to collaboratively model software architectures as DDD Bounded Contexts. We can copy and paste entire EventStorms and allow each person or group of people to organise the EventStorm into their own Bounded Contexts. Digital tools also give us the power to create and continuously modify clearer architectural diagrams which enable us to communicate ideas better and receive feedback from others. In this workshop, we'll extract as much value as we can from digital modelling tools like Miro to break an EventStorm down into bounded contexts, and then use Eric Evan's model exploration whirlpool to challenge and refine our model by applying concrete use cases."
                       links = [
-                        { label = "Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270523835/"}
+                        { label = "Register on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270523835/"}
                         { label = "Zoom" ; url = "https://xebia.zoom.us/j/97861188324" }
                         { label = "YouTube" ; url = "https://youtu.be/QoGvpbkzZTQ" }
                       ]
@@ -220,7 +220,7 @@ module Schedule =
 
                                   The concept of business capabilities from business architecture can be one approach to take a closer look at, with its holistic outside-in perspective of the company. The capability vantage point inherently abstracts away the 'what' a company does from the 'how' , describing the essence of what the business offers. In this talk we will take a closer look at what they are and what they can help us with, all the way from business strategies and analysis, via organisational design to data management and technical design. They may just be the tool we need to design services, micro or not, holistically in a business aligned sociotechnical system, where people, information, processes, and technology defined by the business capability they supports. "
                     links = [
-                        { label = "Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270524474/"}
+                        { label = "Register on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270524474/"}
                         { label = "Zoom" ; url = "https://us02web.zoom.us/j/85957582548" }
                         { label = "YouTube" ; url = "https://youtu.be/rH7On4Z_Lzo" }
                     ]
@@ -243,7 +243,7 @@ module Schedule =
 
                                     This talk tries to make Bourdieu's ideas accessible. Learn how to improve your environment immediately; see why meritocracy is a dangerous lie; recognise oppression and submission when it happens; and gain the tools to fight it day to day."
                     links = [
-                        { label = "Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270526772/"}
+                        { label = "Register on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270526772/"}
                         { label = "YouTube" ; url = "https://youtu.be/1PoTCoF9-tY" }
                     ]
                   }
@@ -257,7 +257,7 @@ module Schedule =
 
                                     A rough knowledge of DDD and bounded contexts would be desirable. "
                     links = [
-                        { label = "Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270523939/"}
+                        { label = "Register on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270523939/"}
                         { label = "Zoom" ; url = "https://xebia.zoom.us/j/97471563408" }
                         { label = "YouTube" ; url = "https://youtu.be/8TDiuQ3vdh0" }
                     ]
@@ -272,7 +272,7 @@ module Schedule =
                     title = "Event Sourcing, Really"
                     description = "During recent years Alexey participated in building several production-grade, customer-facing systems with Event Sourcing at heart. What was the driver to choose Event Sourcing as the implementation pattern? What does it have to do with Domain-Driven Design? What about microservices? How new components integrate with the legacy? Does it scale? What went well? What went wrong? These are the topics that raise so many questions and Alexey will be happy to share his experience with you during this session."
                     links = [
-                        { label = "Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270526826/"}
+                        { label = "Register on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270526826/"}
                         { label = "Zoom" ; url = "https://us02web.zoom.us/j/87303140569" }
                         { label = "YouTube" ; url = "https://youtu.be/uB0SkrElPRo" }
                     ]
@@ -292,7 +292,7 @@ module Schedule =
                     title = "Extreme Context Mapping"
                     description = "Just when I thought I squeezed everything out of context mapping I've found myself using the format in unconventional ways. If you're interested in what happens when your organization is dealing with multiple business lines, when your technology stack is polluting your language, but nobody seems to notice or when your customer journey seems to have a life of its own this is the talk for you."
                     links = [
-                        { label = "Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270526863/"}
+                        { label = "Register on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270526863/"}
                         { label = "Zoom" ; url = "https://us02web.zoom.us/j/86805962254" }
                         { label = "YouTube" ; url = "https://youtu.be/yaiDzBLi1-A" }
                     ]
@@ -307,7 +307,7 @@ module Schedule =
 
                                     In this workshop you can try it out yourself. We model a domain and check the resulting type descriptions against a set of business rules. We will take a look at tactical design patterns in Functional Programming and try out a first implementation."
                     links = [
-                        { label = "Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270524029/"}
+                        { label = "Register on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270524029/"}
                         { label = "Zoom" ; url = "https://xebia.zoom.us/j/91505689053" }
                         { label = "YouTube" ; url = "https://youtu.be/3JECDkZ2_6Q" }
                     ]
@@ -329,7 +329,7 @@ module Schedule =
                                   - How to spread theory and practice in a remote environment?
                                   - What should potential participants look out for when choosing between remote training offerings?"
                     links = [
-                        { label = "Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270526897/"}
+                        { label = "Register on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270526897/"}
                         { label = "Zoom" ; url = "https://us02web.zoom.us/j/86891167461" }
                         { label = "YouTube" ; url = "https://youtu.be/q3Oh9zVKHKo" }
                     ]
@@ -353,7 +353,7 @@ module Schedule =
 
                                   But the secret behind our success will be our Dogged Determination to Descriptive naming. We’ll observe how our domain language crystallises, how patterns emerge, and how we end up with code that communicates intent. "
                     links = [
-                        { label = "Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270526945/"}
+                        { label = "Register on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270526945/"}
                         { label = "Zoom" ; url = "https://us02web.zoom.us/j/89125972078" }
                         { label = "YouTube" ; url = "https://youtu.be/FtxPdXp_FTA" }
                     ]
@@ -367,7 +367,7 @@ module Schedule =
                     description = "Let's see what it takes to get a Web BC online. How far can we get? What should it include? How will we do it and work together to get it done?
                                     Constraints: Visual Studio Code. Docker. "
                     links = [
-                        { label = "Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270524035/"}
+                        { label = "Register on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270524035/"}
                         { label = "Zoom" ; url = "https://xebia.zoom.us/j/97880459870" }
                         { label = "YouTube" ; url = "https://youtu.be/Dg478xHcDrY" }
                     ]
@@ -383,7 +383,7 @@ module Schedule =
                     description = "Finding the right boundaries of contexts is hard - implementing them can be even harder if the organisation does not change. But how can one change the organisation, how can one be sure that it changes in the right direction?
                                   There are signs, mostly perceived as a blocker but I see them as an enabler, as a pointer to the right boundaries. This idea combined with observing and measuring the value stream could lead to the right boundaries for teams and for code."
                     links = [
-                        { label = "Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270527115/"}
+                        { label = "Register on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270527115/"}
                         { label = "Zoom" ; url = "https://us02web.zoom.us/j/87553899796" }
                         { label = "YouTube" ; url = "https://youtu.be/yMRuP3tcugQ" }
                     ]
@@ -407,7 +407,7 @@ module Schedule =
 
                                     If you're an engineering leader in a small product organization that wants to make an impact, then this one is for you!"
                     links = [
-                        { label = "Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270527279/"}
+                        { label = "Register on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270527279/"}
                         { label = "YouTube" ; url = "https://youtu.be/Xw_eh9vLAio" }
                     ]
                   }
@@ -446,7 +446,7 @@ module Schedule =
                             In this talk, I'll link to practice materials to try at home.
                             "
                     links = [
-                        { label = "Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270527364/"}
+                        { label = "Register on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270527364/"}
                         { label = "YouTube" ; url = "https://youtu.be/zPvYqrASCRA" }
                     ]
                     })
@@ -460,7 +460,7 @@ module Schedule =
                     title = "Ending panel, topic TBA"
                     description = "To be announced"
                     links = [
-                        { label = "Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270527311/"}
+                        { label = "Register on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270527311/"}
                         { label = "Zoom" ; url = "https://us02web.zoom.us/j/85618676523" }
                         { label = "YouTube" ; url = "https://youtu.be/GimWdjmJGek" }
                     ]
