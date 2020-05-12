@@ -7,11 +7,27 @@ module Sessions =
     let sessions =
         [   
             Upcoming_session {
+                          title = "Distributed Domain-Driven Design Day #DDDDD"
+                          date = "Friday, May 15th. 2020"
+                          time = "04:00 - 22:00 GMT"
+                          img = Some ""
+                          video = None
+                          embedded = None
+                          podcast = None
+                          description = "Distributed Domain-Driven Design Day is a virtualDDD online community conference. In this pandemic time where conferences are cancelled or postponed all over the world, we offer some solace by offering an online experience that comes as close to an offline conference experience as possible. We are looking for talks, online panel discussions as we do on meetups and any other creative ideas you can come up with. The day will be framed by pre-recorded talks with live Q&A by the speaker as inspired by Liz Keogh, and spiced up by online collaborative modelling and other hands-on sessions. This day will be a 24-hour long worldwide live event, starting at 4:00 GMT and ending at 22:00 GMT"
+                          
+                          links =
+                              [
+                                  { label = "Goto the schedule" ; url = "https://virtualddd.com/#/conference" }
+                              ]
+            }
+
+            Past_session {
                           title = "[DDD London] DDD-Lite: Independent Service Heuristics with Matthew Skelton"
                           date = "Friday, May 12th. 2020"
                           time = "19:30 CEST"
-                          img = Some "https://secure.meetupstatic.com/photos/event/7/e/a/6/600_483992422.jpeg"
-                          video = None
+                          img = None
+                          video = Some "https://www.youtube.com/embed/UQq-Ayml0iI"
                           embedded = None
                           podcast = None
                           description = "
@@ -26,9 +42,6 @@ module Sessions =
                           links =
                               [
                                   { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270457433/" }
-                                  { label = "Zoom" ; url = "https://us02web.zoom.us/j/81504988822" }
-                                  { label = "YouTube" ; url = "https://youtu.be/UQq-Ayml0iI" }
-
                               ]
             }
 
