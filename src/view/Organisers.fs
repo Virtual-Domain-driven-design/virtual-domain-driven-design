@@ -86,7 +86,7 @@ module Organisers =
                     Tagline = "Connecting people circa 97"
                     Website = "https://ncrafts.io "
                     Twitter = "__MaxS__"
-                    Linkedin = "ncrafts"
+                    Linkedin = "company/ncrafts/"
                   }
               ]   
           ]

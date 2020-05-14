@@ -457,7 +457,7 @@ module Schedule =
                     time = "20:00 - 21:30 GMT"
                     host = "Rebecca Wirfs-Brock, Woody Zuill, Paul Rayner & Julie Lerman"
                     speakerimg = "https://exploreddd.com/2017/img/speakers/Rebecca-Wirfs-Brock-ON.png"
-                    title = "Experimentions in design "
+                    title = "Experimentations in design "
                     description = "In this panel, we will discuss how experimentations makes our lives better as engineers to create a sustainable flexible design. Experimentation is a big idea in mobbing. We don't just crank out products like a feature factory, we make our lives better as we go...and sustain ourselves and our software."
                     links = [
                         { label = "Register on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270527311/"}
