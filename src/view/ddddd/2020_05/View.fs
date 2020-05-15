@@ -34,6 +34,12 @@ module View =
                 prop.href "https://j.mp/ddd-es-cqrs" 
                 prop.text "Join the interaction on slack #virtualddd"
             ]
+            Html.a [ 
+                prop.className "text-xl m-2 p-2 text-black rounded-lg border-2 border-blue-500 hover:border-blue-400" 
+                prop.target "_blank"
+                prop.href "https://t.co/ahwZHbH3n1?amp=1" 
+                prop.text "Please leave feedback"
+            ]
           ]
         ]
       ]
