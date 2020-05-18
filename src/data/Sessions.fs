@@ -7,18 +7,24 @@ module Sessions =
     let sessions =
         [   
             Upcoming_session {
-                          title = "Distributed Domain-Driven Design Day #DDDDD"
-                          date = "Friday, May 15th. 2020"
-                          time = "04:00 - 22:00 GMT"
-                          img = Some "./img/conference.jpeg"
+                          title = "[DDD London] Creating a Playbook for DDD Newcomers"
+                          date = "Thursday, May 21th. 2020"
+                          time = "19:00 CEST"
+                          img = Some "https://secure.meetupstatic.com/photos/event/7/e/a/6/600_483992422.jpeg"
                           video = None
                           embedded = None
                           podcast = None
-                          description = "Distributed Domain-Driven Design Day is a virtualDDD online community conference. In this pandemic time where conferences are cancelled or postponed all over the world, we offer some solace by offering an online experience that comes as close to an offline conference experience as possible. We are looking for talks, online panel discussions as we do on meetups and any other creative ideas you can come up with. The day will be framed by pre-recorded talks with live Q&A by the speaker as inspired by Liz Keogh, and spiced up by online collaborative modelling and other hands-on sessions. This day will be a 24-hour long worldwide live event, starting at 4:00 GMT and ending at 22:00 GMT"
+                          description = "Introducing DDD to a company is not easy, especially if you are new to DDD yourself.
+
+                                            In this meetup, we are going to brainstorm and catalogue a collection of techniques and strategies DDD newcomers can use to help people in their organisations see the benefits of Domain-Driven Design.
+
+                                            If you are new to DDD and would like help, or if you are experienced and would like to offer your advice, please attend this highly-collaborative session and share your ideas. We'll be working on Miro, the online whiteboard, for collaborating.
+
+                                            Following this session, the ideas we collect will be shared as an open source github repository so they are freely available to anyone new to DDD. The repository will also allow anyone to make a pull request at any time if they have a problem or advice."
                           
                           links =
                               [
-                                  { label = "Goto the schedule" ; url = "https://virtualddd.com/#/conference" }
+                                  { label = "The event on Meetup" ; url = "https://www.meetup.com/dddlondon/events/270693800/" }
                               ]
             }
 
@@ -29,7 +35,7 @@ module Sessions =
                           img = None
                           video = Some "https://www.youtube.com/embed/UQq-Ayml0iI"
                           embedded = None
-                          podcast = None
+                          podcast = Some "https://oembed.libsyn.com/embed?item_id=14463848"
                           description = "
                                         When designing organizations for fast flow of change, we need to find effective boundaries between different streams of change. Techniques like Domain-Driven Design (DDD) are very powerful for this but can be quite involved and difficult to learn. A lightweight intermediate approach is to ask 'could this thing be run as a cloud-hosted (SaaS) service or product?'.
 
