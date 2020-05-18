@@ -149,7 +149,7 @@ module Schedule =
                 slot 
                   {
                     sessiontype = RecordedTalk
-                    time = "5:00 - 6:00 GMT"
+                    time = "5:00 - 5:45 GMT"
                     host = "Vladik Khononov"
                     speakerimg = "https://sessionize.com/image?f=3e49f839877c87b0fbd27734b894247e,200,200,1,0,33-0d08-411a-8f8a-0ba18b8d21c7.c4b28500-4af8-4fd9-b92a-03a1f2d42f7c.jpg"
                     title = "Bounded Contexts, Microservices, and Everything In Between"
@@ -301,7 +301,7 @@ module Schedule =
                   {
                     sessiontype = Panel
                     time = "14:00 - 15:00 GMT"
-                    host = "Michael Plöd, Gien Verschatse, Zsofia Herendi & Kacper Gunia"
+                    host = "Michael Plöd, Gien Verschatse, Zsofia Herendi, Kacper Gunia & Stefan Priebsch"
                     speakerimg = "https://sessionize.com/image?f=3157ed0b63356d31cbeb0a4b4e42fccf,200,200,1,0,aca6063c-cd27-4ef5-8c20-672f064d21f5.jpg"
                     title = "Remote DDD related trainings"
                     description = "The market for in person / presence training is pretty much gone right now due to the current situation. However each crisis brings up new opportunities. Some folks in the Domain-driven Design community have already gathered experiences in conduction and attending remote trainings about our favorite topic. This panel aims at sharing experiences among traininers and attendees as well. The questions we will discuss will include:
@@ -431,8 +431,8 @@ module Schedule =
                     time = "20:00 - 21:30 GMT"
                     host = "Rebecca Wirfs-Brock, Woody Zuill, Paul Rayner & Julie Lerman"
                     speakerimg = "https://exploreddd.com/2017/img/speakers/Rebecca-Wirfs-Brock-ON.png"
-                    title = "Ending panel, topic TBA"
-                    description = "To be announced"
+                    title = "Experimentations in design "
+                    description = "In this panel, we will discuss how experimentations makes our lives better as engineers to create a sustainable flexible design. Experimentation is a big idea in mobbing. We don't just crank out products like a feature factory, we make our lives better as we go...and sustain ourselves and our software."
                     links = [
                         { label = "YouTube" ; url = "https://youtu.be/GimWdjmJGek" }
                     ]

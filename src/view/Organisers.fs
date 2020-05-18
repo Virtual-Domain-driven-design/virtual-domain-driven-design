@@ -38,7 +38,7 @@ module Organisers =
                 [ img [ Class "h-10"
                         Src "./img/twitter.png" ] ]
               a [ Class "twitter-icon floating-action-button rounded-full"
-                  Href ("https://www.linkedin.com/in/"+ profile.Linkedin + "/")
+                  Href ("https://www.linkedin.com/"+ profile.Linkedin + "/")
                   Target "_blank"]
                 [ img [ Class "h-10"
                         Src "./img/linkedin.png" ] ]
@@ -59,7 +59,7 @@ module Organisers =
                     Tagline = "Flow addict PM"
                     Website = "https://www.zherendi.com/"
                     Twitter = "ZHerendi"
-                    Linkedin = "zsófia-herendi-2296b48"
+                    Linkedin = "in/zsófia-herendi-2296b48"
                   }
 
                 organiser "Marco Heimeshoff"
@@ -68,7 +68,7 @@ module Organisers =
                     Tagline = "Business software artist"
                     Website = "https://www.heimeshoff.de/"
                     Twitter = "Heimeshoff"
-                    Linkedin = "heimeshoff"
+                    Linkedin = "in/heimeshoff"
                   }
                    
                 organiser "Kenny Baas-Schwegler"
@@ -77,7 +77,7 @@ module Organisers =
                     Tagline = "Socio-technical stoic"
                     Website = "https://baasie.com"
                     Twitter = "kenny_baas"
-                    Linkedin = "kenny-baas"
+                    Linkedin = "in/kenny-baas"
                   }
                    
                 organiser "Maxime Sanglan-Charlier"
@@ -86,7 +86,7 @@ module Organisers =
                     Tagline = "Connecting people circa 97"
                     Website = "https://ncrafts.io "
                     Twitter = "__MaxS__"
-                    Linkedin = "ncrafts"
+                    Linkedin = "company/ncrafts"
                   }
               ]   
           ]
