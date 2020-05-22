@@ -74,7 +74,7 @@ module Organisers =
                 organiser "Kenny Baas-Schwegler"
                   {
                     Image = "./img/kenny.jpg"
-                    Tagline = "Socio-technical stoic"
+                    Tagline = "Deep Democratic modeller"
                     Website = "https://baasie.com"
                     Twitter = "kenny_baas"
                     Linkedin = "in/kenny-baas"
@@ -87,6 +87,15 @@ module Organisers =
                     Website = "https://ncrafts.io "
                     Twitter = "__MaxS__"
                     Linkedin = "company/ncrafts"
+                  }
+                   
+                organiser "Evelyn van Kelle"
+                  {
+                    Image = "./img/evelyn.jpg"
+                    Tagline = "Socio-technical super fan"
+                    Website = "https://medium.com/@e.vankelle"
+                    Twitter = "EvelynvanKelle"
+                    Linkedin = "in/evelynvankelle"
                   }
               ]   
           ]
