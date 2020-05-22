@@ -22,8 +22,12 @@ module Navigation =
             a [ Class "p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center "
                 Href "https://dddheuristics.com"
                 Target "_blank"]
-              [ str "DDD Heuristics" ]
-            render_entry "Podcasts" Podcasts ]
+              [ str "Heuristics" ]
+            render_entry "Podcasts" Podcasts 
+            a [ Class "p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center "
+                Href "https://github.com/ddd-crew/ddd-starter-modelling-process"
+                Target "_blank"]
+              [ str "Starter modelling process" ]]
         render_submenu "Social" 
           [ a [ Class "p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center"
                 Href "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/"
