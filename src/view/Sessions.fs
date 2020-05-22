@@ -33,14 +33,6 @@ module Sessions =
         
         div [ Class "py-2 text-justify" ]
           [ str s.description ]
-        div [ Class "font-bold" ]
-          [ str "If you want to participate" ]
-        div [ Class "" ]
-          [ str "Join us on zoom and be able to ask questions, answers the occasional poll or even raise your hand and join our panel live!!" ]
-        div [ Class "py-2 font-bold" ]
-          [ str "If you just want to sit back and relax, occasionally ask a question" ]
-        div [ Class "" ]
-          [ str "Just follow the live stream on youtube!!" ]
 
         (match s.embedded with
         | Some content ->

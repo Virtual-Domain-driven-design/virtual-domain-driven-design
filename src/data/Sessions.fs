@@ -6,12 +6,36 @@ module Sessions =
 
     let sessions =
         [   
+
             Upcoming_session {
+                          title = "Creating a Playbook for DDD for the inside of your team with Julie Lerman"
+                          date = "Thursday, June 2th. 2020"
+                          time = "19:00 CEST"
+                          img = Some "https://secure.meetupstatic.com/photos/event/6/a/a/1/highres_490527297.jpeg"
+                          video = None
+                          embedded = None
+                          podcast = None
+                          description = "Introducing DDD to a company is not easy, especially if you are new to DDD yourself.
+
+                                        Following up from the Domain-Driven Design Starter Modelling Process that started describing a step-by-step guide for learning DDD. In this session, we want to extend and improve that process and see if we can describe a step-by-step guide from the inside-out.
+
+                                        So what path do we need to take if you cannot start with the big picture strategic modelling? And what dangers lie ahead starting from the inside-out? If your team is your biggest constraint, how can we apply Domain-Driven design pragmatically?
+
+                                        If you are new to DDD and would like help, or if you are experienced and would like to offer your advice, please attend this highly-collaborative session and share your ideas. We'll be working on Miro, the online whiteboard, for collaborating.
+                                        "
+                          links =
+                              [
+                                  { label = "Register on Meetup for the Zoom link" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270805901/" }
+                                  { label = "YouTube" ; url = "https://youtu.be/GVa5vI19kZo" }
+                              ]
+            }
+
+            Past_session {
                           title = "[DDD London] Creating a Playbook for DDD Newcomers"
                           date = "Thursday, May 21th. 2020"
                           time = "19:00 CEST"
-                          img = Some "https://secure.meetupstatic.com/photos/event/7/e/a/6/600_483992422.jpeg"
-                          video = None
+                          img = None
+                          video = Some "https://www.youtube.com/embed/v=1aICKlpQRoc"
                           embedded = None
                           podcast = None
                           description = "Introducing DDD to a company is not easy, especially if you are new to DDD yourself.
