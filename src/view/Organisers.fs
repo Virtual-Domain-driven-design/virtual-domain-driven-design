@@ -97,6 +97,15 @@ module Organisers =
                     Twitter = "EvelynvanKelle"
                     Linkedin = "in/evelynvankelle"
                   }
+                   
+                organiser "Kacper Gunia"
+                  {
+                    Image = "./img/kacper.jpg"
+                    Tagline = "Domain Explorer"
+                    Website = "https://domaincentric.net/"
+                    Twitter = "cakper"
+                    Linkedin = "in/cakper"
+                  }
               ]   
           ]
       ]
