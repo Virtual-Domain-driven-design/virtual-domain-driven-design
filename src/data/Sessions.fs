@@ -7,12 +7,33 @@ module Sessions =
     let sessions =
         [   
 
+
             Upcoming_session {
+                          title = "Virtual Lean Coffee Fishbowl: UX, DDD and BDD - take 2"
+                          date = "Wednesday, June 17th. 2020"
+                          time = "20:30 CEST"
+                          img = Some "https://secure.meetupstatic.com/photos/event/2/c/7/7/highres_487451383.jpeg"
+                          video = None
+                          embedded = None
+                          podcast = None
+                          description = "It all started with a tweet by John Cutler 'Wonder how many BBD / DDD enthusiasts are aware of the body of similar work in #ux research and vica versa'. And it seemed that a lot of people from these communities learned a lot from each other. And we would love to learn more about different areas of overlap. It seems like goals and culture are aligned in both communities.
+
+                                          Join us in our second Virtual Lean Coffee, where a panel of around 15 people from the UX, DDD and BDD community will exchange topics that overlap with each community. The great thing is, you can participate because we are making the Lean Coffee a fishbowl! Join zoom and join us live in the discussion, or just sit back and enjoy the stream from youtube and ask questions in the chat! Hope to see you there! "
+                          links =
+                              [
+                                  { label = "The Event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270805965/" }
+                                  { label = "Zoom" ; url = "https://us02web.zoom.us/j/82895666561" }
+                                  { label = "YouTube" ; url = "https://youtu.be/wF0OHhVELyo" }
+                              ]
+            }
+
+
+            Past_session {
                           title = "Creating a Playbook for DDD for the inside of your team with Julie Lerman"
                           date = "Thursday, June 2th. 2020"
                           time = "19:00 CEST"
-                          img = Some "https://secure.meetupstatic.com/photos/event/6/a/a/1/highres_490527297.jpeg"
-                          video = None
+                          img = None
+                          video = Some "https://www.youtube.com/embed/GVa5vI19kZo"
                           embedded = None
                           podcast = None
                           description = "Introducing DDD to a company is not easy, especially if you are new to DDD yourself.
@@ -25,8 +46,8 @@ module Sessions =
                                         "
                           links =
                               [
-                                  { label = "Register on Meetup for the Zoom link" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270805901/" }
-                                  { label = "YouTube" ; url = "https://youtu.be/GVa5vI19kZo" }
+                                  { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270805901/" }
+                               
                               ]
             }
 
