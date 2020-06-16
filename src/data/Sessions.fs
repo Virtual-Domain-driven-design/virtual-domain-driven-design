@@ -6,8 +6,6 @@ module Sessions =
 
     let sessions =
         [   
-
-
             Upcoming_session {
                           title = "Virtual Lean Coffee Fishbowl: UX, DDD and BDD - take 2"
                           date = "Wednesday, June 17th. 2020"
@@ -24,6 +22,33 @@ module Sessions =
                                   { label = "The Event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270805965/" }
                                   { label = "Zoom" ; url = "https://us02web.zoom.us/j/82895666561" }
                                   { label = "YouTube" ; url = "https://youtu.be/wF0OHhVELyo" }
+                              ]
+            }
+
+            Upcoming_session {
+                          title = "Balancing upfront design versus iterative design"
+                          date = "Thursday, June 25th. 2020"
+                          time = "20:00 CEST"
+                          img = Some "https://secure.meetupstatic.com/photos/event/9/9/d/8/highres_490779384.jpeg"
+                          video = None
+                          embedded = None
+                          podcast = None
+                          description = "We want early feedback to inform foundational or load-bearing decision making before committing to hard/expensive to change design decisions. But we don’t want to start building based on flawed design decisions, the consequences of which are hard/expensive to change when we discover it is faulty. The problem is, how do we balance these two polarities from an either-or to both-and thinking.
+
+                                        In this session, we will explore contexts and tradeoffs in upfront design versus iterative design. Joining us to share their perspectives and experiences in a never-ending discussion are:
+                                        *Dawn Ahukanna (Design Principal and Front-End Architect)
+                                        *Rebecca Wirfs-Brock (Architecture, Design Heuristics, and Agile Practices)
+                                        *Diana Montalion (Architecting content systems strategies for enterprise)
+                                        *Vladik Khononov (Software Engineer and Cloud Architect) and
+                                        *Trond Hjorteland (IT Architect and aspiring sociotechnical systems designer).
+
+                                        We will facilitate using a polarity map from Barry Johnson to guide the conversation and find out the patterns and signs to observe to start managing these polarities for yourselves."
+                          
+                          links =
+                              [
+                                  { label = "The Event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/271202418/" }
+                                  { label = "Zoom" ; url = "https://us02web.zoom.us/j/82702032811" }
+                                  { label = "YouTube" ; url = "https://youtu.be/6Mzff5zbQ6c" }
                               ]
             }
 
