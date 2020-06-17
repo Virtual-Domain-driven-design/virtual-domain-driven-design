@@ -101,7 +101,7 @@ module Communities =
               name = "Domain Driven Design Taiwan Community"
               country = "Taiwan"
               city = None
-              url = "https://dddtaiwan.kktix.cc/"
-              img = "https://t.kfs.io/upload_images/95467/51032883_642651092818994_6274069289485991936_n_promote.jpg"
+              url = "https://www.meetup.com/Taiwan-Domain-Driven-Design-Meetup-Group"
+              img = "https://secure.meetupstatic.com/photos/event/1/7/9/7/600_487866039.jpeg"
           }
       ]
