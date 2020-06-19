@@ -76,7 +76,7 @@ module Sessions =
             }
 
             Past_session {
-                          title = "[DDDDD] Bounded Contexts, Microservices, and Everything In Between"
+                          title = "#DDDDD Bounded Contexts, Microservices, and Everything In Between"
                           date = "Friday, May 15th. 2020"
                           time = "07:00 CEST"
                           img = None
