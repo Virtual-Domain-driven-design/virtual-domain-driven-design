@@ -76,6 +76,28 @@ module Sessions =
             }
 
             Past_session {
+                          title = "[DDDDD] Bounded Contexts, Microservices, and Everything In Between"
+                          date = "Friday, May 15th. 2020"
+                          time = "07:00 CEST"
+                          img = None
+                          video = Some "https://www.youtube.com/embed/Z0RgR9xIQE4"
+                          embedded = None
+                          podcast = Some "https://oembed.libsyn.com/embed?item_id=14464859"
+                          description = "Bounded Contexts, Microservices, and Everything In Between
+                                            “95% of the words are spent extolling the benefits of ‘modularity’ and that little, if anything, is said about how to achieve it” - Glenford J. Myers, 1978.
+
+                                            This quote is 40 years old. Today, 4 decades later, nothing has changed except terminology. Time to change this. I want to talk about the various strategies of decomposing systems into modular components.
+
+                                            You will learn what exactly Bounded Contexts and Microservices are, and what are the differences between the two notions. We will analyze what happens between services - how data flows, and how these flows can be optimized.
+
+                                            Ultimately, we will explore different decomposition strategies and heuristics for designing modular systems - systems that aren’t driven by ever-changing fads, but by your business needs."
+                          links =
+                              [
+                                  { label = "The event on Meetup" ; url = "https://www.meetup.com/dddlondon/events/270524442/" }
+                              ]
+            }
+
+            Past_session {
                           title = "[DDD London] Creating a Playbook for DDD Newcomers"
                           date = "Thursday, May 21th. 2020"
                           time = "19:00 CEST"
