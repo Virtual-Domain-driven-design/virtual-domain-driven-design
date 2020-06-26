@@ -7,14 +7,14 @@ module Sessions =
     let sessions =
         [   
 
-            Upcoming_session {
+            Past_session {
                           title = "Balancing upfront design versus iterative design"
                           date = "Thursday, June 25th. 2020"
                           time = "20:00 CEST"
-                          img = Some "https://secure.meetupstatic.com/photos/event/9/9/d/8/highres_490779384.jpeg"
-                          video = None
+                          img = None
+                          video = Some "https://www.youtube.com/embed/6Mzff5zbQ6c"
                           embedded = None
-                          podcast = None
+                          podcast = Some "https://oembed.libsyn.com/embed?item_id=14978306"
                           description = "We want early feedback to inform foundational or load-bearing decision making before committing to hard/expensive to change design decisions. But we don’t want to start building based on flawed design decisions, the consequences of which are hard/expensive to change when we discover it is faulty. The problem is, how do we balance these two polarities from an either-or to both-and thinking.
 
                                         In this session, we will explore contexts and tradeoffs in upfront design versus iterative design. Joining us to share their perspectives and experiences in a never-ending discussion are:
@@ -29,8 +29,6 @@ module Sessions =
                           links =
                               [
                                   { label = "The Event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/271202418/" }
-                                  { label = "Zoom" ; url = "https://us02web.zoom.us/j/82702032811" }
-                                  { label = "YouTube" ; url = "https://youtu.be/6Mzff5zbQ6c" }
                               ]
             }
 
