@@ -104,4 +104,11 @@ module Communities =
               url = "https://www.meetup.com/Taiwan-Domain-Driven-Design-Meetup-Group"
               img = "https://secure.meetupstatic.com/photos/event/1/7/9/7/600_487866039.jpeg"
           }
+          {
+              name = "DDDevotion"
+              country = "Russia"
+              city = None
+              url = "https://t.me/dddevotion"
+              img = "https://images2.imagebam.com/01/96/2f/5eb8f71348056944.png"
+          }
       ]
