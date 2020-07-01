@@ -109,6 +109,6 @@ module Communities =
               country = "Russia"
               city = None
               url = "https://t.me/dddevotion"
-              img = "https://images2.imagebam.com/01/96/2f/5eb8f71348056944.png"
+              img = "https://habrastorage.org/webt/ap/9c/3w/ap9c3w9gs7kug9micev_ak3gnxs.png"
           }
       ]
