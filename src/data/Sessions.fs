@@ -7,6 +7,24 @@ module Sessions =
     let sessions =
         [   
 
+            Upcoming_session {
+                          title = "Experimenting with remote Big Picture EventStorming"
+                          date = "Wednesday, July 15th. 2020"
+                          time = "19:00 CEST"
+                          img = Some "https://secure.meetupstatic.com/photos/event/e/f/e/highres_491223838.jpeg"
+                          video = None 
+                          embedded = None
+                          podcast = None
+                          description =  "Big Picture EventStorming is a really nice tool to start finding emergent bounded context, create a shared mindset about the problem space of your business and find the next biggest constraint in the flow of business value. The visualisation tool works because you have all the people in the same room collaborating. Unfortunately with Covid-19, it won't be possible to do these anymore and we are constraint to online sessions.
+
+                                           Join us in this session in a hands-on big picture eventstorming and try to find out how we can get the collaboration of offline as close to the online world. We will still start with doing the chaotic exploration at the start, but then together decide first on pivotal events to self-organise in smaller groups through discord. We will share our experience with offline vs online big picture EventStormings and see what we can learn to improve our online collaboration!"
+                          
+                          links =
+                              [
+                                  { label = "Go to Discord" ; url = "https://discord.gg/8kPmvKr" }
+                                  { label = "The Event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/271792285/" }
+                              ]
+            }
             Past_session {
                           title = "Balancing upfront design versus iterative design"
                           date = "Thursday, June 25th. 2020"
