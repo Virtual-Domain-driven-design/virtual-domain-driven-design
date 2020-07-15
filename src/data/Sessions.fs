@@ -17,11 +17,10 @@ module Sessions =
                           podcast = None
                           description =  "Big Picture EventStorming is a really nice tool to start finding emergent bounded context, create a shared mindset about the problem space of your business and find the next biggest constraint in the flow of business value. The visualisation tool works because you have all the people in the same room collaborating. Unfortunately with Covid-19, it won't be possible to do these anymore and we are constraint to online sessions.
 
-                                           Join us in this session in a hands-on big picture eventstorming and try to find out how we can get the collaboration of offline as close to the online world. We will still start with doing the chaotic exploration at the start, but then together decide first on pivotal events to self-organise in smaller groups through discord. We will share our experience with offline vs online big picture EventStormings and see what we can learn to improve our online collaboration!"
+                                            Join us in this session in a hands-on big picture eventstorming and try to find out how we can get heuristics of collaboration for offline as close to the online world. We will start by doing the chaotic exploration using miro and spatial.chat and try to mimic a real-life setting. We will share our experience with offline vs online big picture EventStormings and see what we can learn to improve our online collaboration!"
                           
                           links =
                               [
-                                  { label = "Go to Discord" ; url = "https://discord.gg/8kPmvKr" }
                                   { label = "The Event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/271792285/" }
                               ]
             }
@@ -44,6 +43,26 @@ module Sessions =
                                   { label = "The Event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/271767297/" }
                               ]
             }
+
+            Upcoming_session {
+                          title = "[Hands-on] Speaking truth to power: practice argumentation with Diana"
+                          date = "Monday, July 21th. 2020"
+                          time = "19:00 CEST"
+                          img = Some "https://secure.meetupstatic.com/photos/event/e/5/1/c/highres_491338652.jpeg"
+                          video = None 
+                          embedded = None
+                          podcast = None
+                          description =  "If you could influence one impactful decision today, what would it be? If you could be heard and trusted for 10 minutes, what would you say? To whom?
+
+                                       More importantly, how do you transform recommendations into well-reasoned decisions arrived at collectively?
+                                       In this workshop, we’ll strengthen our ability to craft a strategic argument that gets heard. We’ll work together to strengthen a position and the reasons that support it. We’ll explore the fundamental skills required and brainstorm follow-up activities."
+
+                          links =
+                              [
+                                  { label = "The Event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/271938834/" }
+                              ]
+            }
+
 
 
 
