@@ -6,25 +6,6 @@ module Sessions =
 
     let sessions =
         [   
-
-            Upcoming_session {
-                          title = "Experimenting with remote Big Picture EventStorming"
-                          date = "Wednesday, July 15th. 2020"
-                          time = "19:00 CEST"
-                          img = Some "https://secure.meetupstatic.com/photos/event/e/f/e/highres_491223838.jpeg"
-                          video = None 
-                          embedded = None
-                          podcast = None
-                          description =  "Big Picture EventStorming is a really nice tool to start finding emergent bounded context, create a shared mindset about the problem space of your business and find the next biggest constraint in the flow of business value. The visualisation tool works because you have all the people in the same room collaborating. Unfortunately with Covid-19, it won't be possible to do these anymore and we are constraint to online sessions.
-
-                                            Join us in this session in a hands-on big picture eventstorming and try to find out how we can get heuristics of collaboration for offline as close to the online world. We will start by doing the chaotic exploration using miro and spatial.chat and try to mimic a real-life setting. We will share our experience with offline vs online big picture EventStormings and see what we can learn to improve our online collaboration!"
-                          
-                          links =
-                              [
-                                  { label = "The Event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/271792285/" }
-                              ]
-            }
-
             Upcoming_session {
                           title = "Free Trial Workshop: First Steps in DDD with Andrew (#BlackLivesMatter edition)"
                           date = "Monday, July 20th. 2020"
@@ -64,6 +45,25 @@ module Sessions =
             }
 
 
+
+
+            Past_session {
+                          title = "Experimenting with remote Big Picture EventStorming"
+                          date = "Wednesday, July 15th. 2020"
+                          time = "19:00 CEST"
+                          img = Some "https://secure.meetupstatic.com/photos/event/e/f/e/highres_491223838.jpeg"
+                          video = None 
+                          embedded = None
+                          podcast = None
+                          description =  "Big Picture EventStorming is a really nice tool to start finding emergent bounded context, create a shared mindset about the problem space of your business and find the next biggest constraint in the flow of business value. The visualisation tool works because you have all the people in the same room collaborating. Unfortunately with Covid-19, it won't be possible to do these anymore and we are constraint to online sessions.
+
+                                            Join us in this session in a hands-on big picture eventstorming and try to find out how we can get heuristics of collaboration for offline as close to the online world. We will start by doing the chaotic exploration using miro and spatial.chat and try to mimic a real-life setting. We will share our experience with offline vs online big picture EventStormings and see what we can learn to improve our online collaboration!"
+                          
+                          links =
+                              [
+                                  { label = "The Event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/271792285/" }
+                              ]
+            }
 
 
 
@@ -130,6 +130,49 @@ module Sessions =
                               [
                                   { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270805901/" }
                                
+                              ]
+            }
+
+            Past_session {
+                          title = "#DDDDD Speaking truth to power: a foundational skillset"
+                          date = "Friday, May 15th. 2020"
+                          time = "21:00 CEST"
+                          img = None
+                          video = Some "https://www.youtube.com/embed/zPvYqrASCRA"
+                          embedded = None
+                          podcast = Some "https://oembed.libsyn.com/embed?item_id=15231635"
+                          description = "As complexity increases, are you (too often) shouting into the wind? Do you see icebergs ahead yet fail to convince others to avoid them? Are your architecture-focused discussions more exhausting than productive? Does the accountant understand the value of your work?
+
+                            The thinking and communication skills we've developed on the job often fail us when we face more-complex challenges. That is why we are learning DDD. Rather than double down on code-specific solutions, we are developing different, more effective conceptual approaches.
+
+                            Yet, there is an underlying skillset the nourishes and supports our ability to practice DDD or any approach that challenges traditional 'power' structures. In this workshop, we'll focus on that skillset.
+
+                            We'll explore the four fundamental truths:
+
+                            - Conway was right: communication architects software and systems
+
+                            - Uncertainty is always a factor
+
+                            - Fred Brooks was right: conceptual integrity matters most
+
+                            - Continuous learning is essential: the modern hero is the person who weaves everyone else's expertise into a cohesive, trustworthy whole
+
+                            And we'll explore four fundamental practices:
+
+                            - Argumentation: creating strong and valid solutions based on sound reasoning
+
+                            - Structuring collective reasoning: thinking well together
+
+                            - Recognizing conceptual fallacies
+
+                            - Cultivating the right types of energy: aka thoughts are only part of communication
+
+                            In this talk, I'll link to practice materials to try at home.
+                            "
+
+                          links =
+                              [
+                                  { label = "The event on Meetup" ; url = "https://www.meetup.com/dddlondon/events/270527364/" }
                               ]
             }
 
