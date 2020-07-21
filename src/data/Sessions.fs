@@ -8,25 +8,6 @@ module Sessions =
         [   
 
             Upcoming_session {
-                          title = "[Hands-on] Speaking truth to power: practice argumentation with Diana"
-                          date = "Tuesday, July 21th. 2020"
-                          time = "19:00 CEST"
-                          img = Some "https://secure.meetupstatic.com/photos/event/e/5/1/c/highres_491338652.jpeg"
-                          video = None 
-                          embedded = None
-                          podcast = None
-                          description =  "If you could influence one impactful decision today, what would it be? If you could be heard and trusted for 10 minutes, what would you say? To whom?
-
-                                       More importantly, how do you transform recommendations into well-reasoned decisions arrived at collectively?
-                                       In this workshop, we’ll strengthen our ability to craft a strategic argument that gets heard. We’ll work together to strengthen a position and the reasons that support it. We’ll explore the fundamental skills required and brainstorm follow-up activities."
-
-                          links =
-                              [
-                                  { label = "The Event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/271938834/" }
-                              ]
-            }
-
-            Upcoming_session {
                           title = "[Panel] One user to bind them all? Products, teams and bounded contexts"
                           date = "Wednesday, July 29th. 2020"
                           time = "19:00 CEST"
@@ -43,6 +24,25 @@ module Sessions =
                                   { label = "Panel on Zoom" ; url = "https://us02web.zoom.us/j/85795612303" }
                                   { label = "YouTube live stream" ; url = "https://youtu.be/wMX9PdRYuRo" }
                                   { label = "The Event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/272058374/" }
+                              ]
+            }
+
+            Past_session {
+                          title = "[Hands-on] Speaking truth to power: practice argumentation with Diana"
+                          date = "Tuesday, July 21th. 2020"
+                          time = "19:00 CEST"
+                          img = Some "https://secure.meetupstatic.com/photos/event/e/5/1/c/highres_491338652.jpeg"
+                          video = None 
+                          embedded = None
+                          podcast = None
+                          description =  "If you could influence one impactful decision today, what would it be? If you could be heard and trusted for 10 minutes, what would you say? To whom?
+
+                                       More importantly, how do you transform recommendations into well-reasoned decisions arrived at collectively?
+                                       In this workshop, we’ll strengthen our ability to craft a strategic argument that gets heard. We’ll work together to strengthen a position and the reasons that support it. We’ll explore the fundamental skills required and brainstorm follow-up activities."
+
+                          links =
+                              [
+                                  { label = "The Event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/271938834/" }
                               ]
             }
 
