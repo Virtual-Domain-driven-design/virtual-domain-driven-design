@@ -9,7 +9,7 @@ module Sessions =
 
             Upcoming_session {
                           title = "[Hands-on] Speaking truth to power: practice argumentation with Diana"
-                          date = "Monday, July 21th. 2020"
+                          date = "Tuesday, July 21th. 2020"
                           time = "19:00 CEST"
                           img = Some "https://secure.meetupstatic.com/photos/event/e/5/1/c/highres_491338652.jpeg"
                           video = None 
@@ -23,6 +23,26 @@ module Sessions =
                           links =
                               [
                                   { label = "The Event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/271938834/" }
+                              ]
+            }
+
+            Upcoming_session {
+                          title = "[Panel] One user to bind them all? Products, teams and bounded contexts"
+                          date = "Wednesday, July 29th. 2020"
+                          time = "19:00 CEST"
+                          img = Some "https://secure.meetupstatic.com/photos/event/8/9/2/8/highres_491435112.jpeg"
+                          video = None 
+                          embedded = None
+                          podcast = None
+                          description =  "In the last meetup, Krisztina found something Jessica said interesting to dive into: 'We are talking in DDD about Bounded Contexts and independent teams and applications, but then we all coupled by having the same user.' That statement led to an exciting dialogue by inviting Dawn: 'It is not so much coupling at the user as that sounds as if the user has to fit into what has built but starting with the user in the centre or intersection of the various 'contexts'. If your context no longer aligns with the user, who are you problem-solving/building the solution for?'
+                                            Joining us with Krisztina, Jessica and Dawn will be Manuel from the Book team topologies, and together we will explore heuristics to organise teams, and their interaction and design bounded context for fast flow, which each serve the same customer."
+
+
+                          links =
+                              [
+                                  { label = "Panel on Zoom" ; url = "https://us02web.zoom.us/j/85795612303" }
+                                  { label = "YouTube live stream" ; url = "https://youtu.be/wMX9PdRYuRo" }
+                                  { label = "The Event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/272058374/" }
                               ]
             }
 
