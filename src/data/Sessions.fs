@@ -6,24 +6,6 @@ module Sessions =
 
     let sessions =
         [   
-            Upcoming_session {
-                          title = "Free Trial Workshop: First Steps in DDD with Andrew (#BlackLivesMatter edition)"
-                          date = "Monday, July 20th. 2020"
-                          time = "16:00 CEST"
-                          img = Some "https://secure.meetupstatic.com/photos/event/4/8/7/a/highres_491238554.jpeg"
-                          video = None 
-                          embedded = None
-                          podcast = None
-                          description =  "To support the #BlackLivesMatter community Andrew Harmel-Law will be doing a FREE trial workshop 'First Steps in Domain-Driven Design'online course for that community. (Sorry, if you don't identify as a member of the #BlackLivesMatter community, you'll have to wait for the next run which I promise will be available soon.)
-
-                                            It'll be 3 hours on Zoom and is aimed at all developers with at least basic object-oriented skills who want to get their feet wet with this key technique. There's a lot of hands-on coding (in Java), but Business Analysts have also found it very useful."
-
-
-                          links =
-                              [
-                                  { label = "The Event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/271767297/" }
-                              ]
-            }
 
             Upcoming_session {
                           title = "[Hands-on] Speaking truth to power: practice argumentation with Diana"
@@ -41,6 +23,25 @@ module Sessions =
                           links =
                               [
                                   { label = "The Event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/271938834/" }
+                              ]
+            }
+
+            Past_session {
+                          title = "Free Trial Workshop: First Steps in DDD with Andrew (#BlackLivesMatter edition)"
+                          date = "Monday, July 20th. 2020"
+                          time = "16:00 CEST"
+                          img = Some "https://secure.meetupstatic.com/photos/event/4/8/7/a/highres_491238554.jpeg"
+                          video = None 
+                          embedded = None
+                          podcast = None
+                          description =  "To support the #BlackLivesMatter community Andrew Harmel-Law will be doing a FREE trial workshop 'First Steps in Domain-Driven Design'online course for that community. (Sorry, if you don't identify as a member of the #BlackLivesMatter community, you'll have to wait for the next run which I promise will be available soon.)
+
+                                            It'll be 3 hours on Zoom and is aimed at all developers with at least basic object-oriented skills who want to get their feet wet with this key technique. There's a lot of hands-on coding (in Java), but Business Analysts have also found it very useful."
+
+
+                          links =
+                              [
+                                  { label = "The Event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/271767297/" }
                               ]
             }
 
