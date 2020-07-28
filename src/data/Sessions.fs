@@ -210,7 +210,24 @@ module Sessions =
 
                           links =
                               [
-                                  { label = "The event on Meetup" ; url = "https://www.meetup.com/dddlondon/events/270527364/" }
+                                  { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270527364/" }
+                              ]
+            }
+
+            Past_session {
+                          title = "Natural Boundaries - how to read the signs and benefit from the problems"
+                          date = "Friday, May 15th. 2020"
+                          time = "18:45 CEST"
+                          img = None
+                          video = Some "https://youtu.be/yMRuP3tcugQ"
+                          embedded = None
+                          podcast = Some "https://oembed.libsyn.com/embed?item_id=15382136"
+                          description =   "Finding the right boundaries of contexts is hard - implementing them can be even harder if the organisation does not change. But how can one change the organisation, how can one be sure that it changes in the right direction?
+                                           There are signs, mostly perceived as a blocker but I see them as an enabler, as a pointer to the right boundaries. This idea combined with observing and measuring the value stream could lead to the right boundaries for teams and for code."
+                          
+                          links =
+                              [
+                                  { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270527115/" }
                               ]
             }
 
@@ -232,7 +249,7 @@ module Sessions =
                                             Ultimately, we will explore different decomposition strategies and heuristics for designing modular systems - systems that aren’t driven by ever-changing fads, but by your business needs."
                           links =
                               [
-                                  { label = "The event on Meetup" ; url = "https://www.meetup.com/dddlondon/events/270524442/" }
+                                  { label = "The event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270524442/" }
                               ]
             }
 
