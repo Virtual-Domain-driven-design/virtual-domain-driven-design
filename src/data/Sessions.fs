@@ -28,6 +28,23 @@ module Sessions =
             }
 
             Past_session {
+                          title = "[Panel] What can we learn from open-source with Matteo Collina"
+                          date = "Tuesday, August 4th. 2020"
+                          time = "18:30 CEST"
+                          img = Some "https://secure.meetupstatic.com/photos/event/5/7/8/8/highres_491542408.jpeg"
+                          video = None 
+                          embedded = None
+                          podcast = None
+                          description =  "Thanks to Krisztina we will have Matteo Collina as a special guest on our next panel. Matteo is a long time Nodejs contributor and TSC member. Open-source software is a success story, and undoubtedly one, we can learn from. In OSS the clocks tick differently, but it is software built for users, to solve problems - both relatively unknowns factors at the beginning. So what can DDD developers for businesses learn from that experience: how to handle these uncertainties,  how is the Ubiquitous Language developed in the Open source world? How do you do design in OSS? And many more questions!"
+                          links =
+                              [
+                                  { label = "Panel on Zoom" ; url = "https://us02web.zoom.us/j/89077595529" }
+                                  { label = "YouTube live stream" ; url = "https://youtu.be/F4SwUssweGY" }
+                                  { label = "The Event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/272201468/" }
+                              ]
+            }
+
+            Past_session {
                           title = "[Hands-on] Speaking truth to power: practice argumentation with Diana"
                           date = "Tuesday, July 21th. 2020"
                           time = "19:00 CEST"
