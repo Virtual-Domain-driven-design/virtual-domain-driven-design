@@ -27,7 +27,7 @@ module Sessions =
                               ]
             }
 
-            Past_session {
+            Upcoming_session {
                           title = "[Panel] What can we learn from open-source with Matteo Collina"
                           date = "Tuesday, August 4th. 2020"
                           time = "18:30 CEST"
