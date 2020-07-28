@@ -65,6 +65,15 @@ module Podcasts =
                                    ]
                                   str "Soundcloud"
                                    ]
+                              a [ Href "https://www.deezer.com/nl/show/1549342"
+                                  Target "_blank"
+                                  Class "nav-item " ]
+                                [ img [
+                                     Class "ml-2 h-6"
+                                     Src "./img/deezer_podcast.png"
+                                   ]
+                                  str "Deezerdeezer logo"
+                                   ]
                               a [ Href "https://virtualddd.libsyn.com/rss"
                                   Target "_blank"
                                   Class "nav-item " ]
