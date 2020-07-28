@@ -72,7 +72,7 @@ module Podcasts =
                                      Class "ml-2 h-6"
                                      Src "./img/deezer_podcast.png"
                                    ]
-                                  str "Deezerdeezer logo"
+                                  str "Deezer"
                                    ]
                               a [ Href "https://virtualddd.libsyn.com/rss"
                                   Target "_blank"
