@@ -8,26 +8,6 @@ module Sessions =
         [   
 
             Upcoming_session {
-                          title = "[Panel] One user to bind them all? Products, teams and bounded contexts"
-                          date = "Wednesday, July 29th. 2020"
-                          time = "19:00 CEST"
-                          img = Some "https://secure.meetupstatic.com/photos/event/8/9/2/8/highres_491435112.jpeg"
-                          video = None 
-                          embedded = None
-                          podcast = None
-                          description =  "In the last meetup, Krisztina found something Jessica said interesting to dive into: 'We are talking in DDD about Bounded Contexts and independent teams and applications, but then we all coupled by having the same user.' That statement led to an exciting dialogue by inviting Dawn: 'It is not so much coupling at the user as that sounds as if the user has to fit into what has built but starting with the user in the centre or intersection of the various 'contexts'. If your context no longer aligns with the user, who are you problem-solving/building the solution for?'
-                                            Joining us with Krisztina, Jessica and Dawn will be Manuel from the Book team topologies, and together we will explore heuristics to organise teams, and their interaction and design bounded context for fast flow, which each serve the same customer."
-
-
-                          links =
-                              [
-                                  { label = "Panel on Zoom" ; url = "https://us02web.zoom.us/j/85795612303" }
-                                  { label = "YouTube live stream" ; url = "https://youtu.be/wMX9PdRYuRo" }
-                                  { label = "The Event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/272058374/" }
-                              ]
-            }
-
-            Upcoming_session {
                           title = "[Panel] What can we learn from open-source with Matteo Collina"
                           date = "Tuesday, August 4th. 2020"
                           time = "18:30 CEST"
@@ -41,6 +21,54 @@ module Sessions =
                                   { label = "Panel on Zoom" ; url = "https://us02web.zoom.us/j/89077595529" }
                                   { label = "YouTube live stream" ; url = "https://youtu.be/F4SwUssweGY" }
                                   { label = "The Event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/272201468/" }
+                              ]
+            }
+
+            Upcoming_session {
+                          title = "[Hands-on] Exploring Techniques For Modelling Bounded Context Collaboration"
+                          date = "Thursday, August 13th. 2020"
+                          time = "19:00 CEST"
+                          img = Some "https://secure.meetupstatic.com/photos/event/e/f/e/highres_491223838.jpeg"
+                          video = None 
+                          embedded = None
+                          podcast = None
+                          description =  "As Vladik Khononov says, minimising complexity in software systems is about balancing local vs global complexity. A major source of global complexity is the interaction between components in an architecture.
+
+                                            In DDD, architectural components are bounded contexts and they interact using commands, queries, and events. While this is clear, the tools for modelling and visualising bounded context interaction are not so clear.
+
+                                            In this hands-on meetup, we're going to explore different techniques that are used to design and visualise bounded context integration including:
+
+                                            - UML Sequence Diagrams
+                                            - Domain Storytelling
+                                            - EventStorming
+                                            - Domain Message Flow Modelling
+
+                                            We will look at the pros & cons of each technique, and we will discuss ways to improve each technique. You will also have the chance to share other techniques you think are useful.
+
+                                            The second part of this workshop will involve splitting into small groups and modelling a scenario using one or more of the discussed techniques."
+                          
+                          links =
+                              [
+                                  { label = "YouTube live stream" ; url = "https://youtu.be/oj4zGj6sPDc" }
+                                  { label = "Register on meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/271938901/" }
+                              ]
+            }
+
+            Past_session {
+                          title = "[Panel] One user to bind them all? Products, teams and bounded contexts"
+                          date = "Wednesday, July 29th. 2020"
+                          time = "19:00 CEST"
+                          img = None
+                          video = Some "https://www.youtube.com/embed/wMX9PdRYuRo"
+                          embedded = None
+                          podcast = Some "https://oembed.libsyn.com/embed?item_id=15410591"
+                          description =  "In the last meetup, Krisztina found something Jessica said interesting to dive into: 'We are talking in DDD about Bounded Contexts and independent teams and applications, but then we all coupled by having the same user.' That statement led to an exciting dialogue by inviting Dawn: 'It is not so much coupling at the user as that sounds as if the user has to fit into what has built but starting with the user in the centre or intersection of the various 'contexts'. If your context no longer aligns with the user, who are you problem-solving/building the solution for?'
+                                            Joining us with Krisztina, Jessica and Dawn will be Manuel from the Book team topologies, and together we will explore heuristics to organise teams, and their interaction and design bounded context for fast flow, which each serve the same customer."
+
+
+                          links =
+                              [
+                                  { label = "The Event on Meetup" ; url = "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/272058374/" }
                               ]
             }
 
