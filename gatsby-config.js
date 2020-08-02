@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Gatsby Typescript Tailwind`,
+    description: `An example config of Gatsby + TypeScript + Tailwind CSS`,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -13,6 +13,15 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    "gatsby-plugin-postcss",
+    {
+      resolve: "gatsby-plugin-purgecss",
+      options: {
+        tailwind: true,
+        purgeOnly: ["src/css/index.css"],
+      },
+    },
+    `gatsby-plugin-typescript`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -24,7 +33,19 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `docs/logo.svg`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: "gatsby-plugin-eslint",
+      options: {
+        test: /\.ts$|\.tsx$/,
+        exclude: /(node_modules|.cache|public)/,
+        stages: ["develop", "build-javascript"],
+        options: {
+          emitWarning: true,
+          failOnError: false,
+        },
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
