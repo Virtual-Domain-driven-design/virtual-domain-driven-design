@@ -63,7 +63,7 @@ const SocialMenu = ({ data }) => {
   )
 }
 
-const NavigationItem = ({ to, label }) => {
+const DesktopNavigationItem = ({ to, label }) => {
   return (
     <Link
       to={to}
@@ -74,9 +74,74 @@ const NavigationItem = ({ to, label }) => {
   )
 }
 
-const NavBar = ({}: Props): ReactElement => {
-  const [isMenuOpen, setMenuOpen] = useState(false)
+const MobileNavigationItem = ({ to, label }) => {
+  return (
+    <Link
+      to={to}
+      className="w-full p-4 text-lg leading-tight cursor-pointer flex-shrink-0 hover:bg-gray-400 hover:text-blue-700"
+    >
+      {label}
+    </Link>
+  )
+}
 
+const NavbarMobile = ({ data }) => {
+  const [isMenuOpen, setMenuOpen] = useState(false)
+  const visibility = () => {
+    if (isMenuOpen) {
+      return "block bg-white w-full z-25 shadow-md"
+    }
+    return "hidden bg-white w-full z-25 shadow-md"
+  }
+  return (
+    <div className="lg:hidden">
+      <div className="w-full flex flex-row items-center justify-between shadow-md">
+        <VDDDLogo data={data}></VDDDLogo>
+        <button
+          className="reveal-menu-content flex-shrink-0 flex items-center m-4 px-3 py-2 border rounded border-white hover:text-blue-400 hover:border-blue-400"
+          onClick={() => {
+            setMenuOpen(isMenuOpen => !isMenuOpen)
+          }}
+        >
+          <svg
+            className="fill-current h-3 w-3"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div className={visibility()}>
+        <div className="flex flex-col lg:flex-row items-start lg:items-stretch justify-end">
+          <MobileNavigationItem
+            to="/sessions"
+            label="Sessions"
+          ></MobileNavigationItem>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+const NavbarDesktop = ({ data }) => {
+  return (
+    <div className="w-4/5 xl:w-2/3 flex items-center justify-between">
+      <VDDDLogo data={data}></VDDDLogo>
+      <div className="flex flex-col lg:flex-row items-start lg:items-stretch justify-end">
+        <DesktopNavigationItem
+          to="/sessions"
+          label="Sessions"
+        ></DesktopNavigationItem>
+        <SocialMenu data={data}></SocialMenu>
+      </div>
+    </div>
+  )
+}
+
+const NavBar = ({}: Props): ReactElement => {
   const data = useStaticQuery(graphql`
     query {
       vdddLogoTp: file(relativePath: { eq: "logo/vddd_logo_tp.png" }) {
@@ -105,35 +170,9 @@ const NavBar = ({}: Props): ReactElement => {
 
   return (
     <div className="navbar">
-      <div className="lg:hidden">
-        <button
-          onClick={() => {
-            setMenuOpen(isMenuOpen => !isMenuOpen)
-          }}
-          className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
-        >
-          <svg
-            className="fill-current h-3 w-3"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
-        </button>
-      </div>
-      <div
-        className={`w-full ${
-          isMenuOpen ? "block" : "hidden"
-        } lg:flex flex-row items-center justify-center`}
-      >
-        <div className="w-4/5 xl:w-2/3 flex items-center justify-between">
-          <VDDDLogo data={data}></VDDDLogo>
-          <div className="flex flex-col lg:flex-row items-start lg:items-stretch justify-end">
-            <NavigationItem to="/sessions" label="Sessions"></NavigationItem>
-            <SocialMenu data={data}></SocialMenu>
-          </div>
-        </div>
+      <NavbarMobile data={data}></NavbarMobile>
+      <div className="hidden lg:flex flex-row items-center justify-center">
+        <NavbarDesktop data={data}></NavbarDesktop>
       </div>
     </div>
   )
