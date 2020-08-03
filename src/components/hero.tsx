@@ -121,13 +121,12 @@ const Hero = ({}: Props): ReactElement => {
           <div className="w-full hidden md:flex items-stretch justify-start my-2">
             <Session></Session>
           </div>
-          <a
+          <Link
+            to="/sessions"
             className="text-xl mb-4 p-2 cursor-pointer text-white rounded-lg border-2 border-blue-500 hover:border-blue-400"
-            href="/sessions"
-            target="_blank"
           >
             Show all sessions
-          </a>
+          </Link>
         </div>
       </div>
     </BackgroundImage>
