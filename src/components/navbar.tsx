@@ -4,6 +4,20 @@ import Img from "gatsby-image"
 
 interface Props {}
 
+const VDDDLogo = ({ data }) => {
+  return (
+    <Link
+      to="/"
+      className="p-4 cursor-pointer flex-shrink-0 flex items-center justify-center rounded-lg hover:bg-gray-400"
+    >
+      <Img
+        fixed={data.vdddLogoTp.childImageSharp.fixed}
+        className="object-contain mr-2 h-8"
+      />
+    </Link>
+  )
+}
+
 const NavBar = ({}: Props): ReactElement => {
   const [isMenuOpen, setMenuOpen] = useState(false)
   const [isSocialOpen, setSocialOpen] = useState(false)
@@ -59,15 +73,7 @@ const NavBar = ({}: Props): ReactElement => {
         } lg:flex flex-row items-center justify-center`}
       >
         <div className="w-4/5 xl:w-2/3 flex items-center justify-between">
-          <Link
-            to="/"
-            className="p-4 cursor-pointer flex-shrink-0 flex items-center justify-center rounded-lg hover:bg-gray-400"
-          >
-            <Img
-              fixed={data.vdddLogoTp.childImageSharp.fixed}
-              className="object-contain mr-2 h-8"
-            />
-          </Link>
+          <VDDDLogo data={data}></VDDDLogo>
           <div className="flex flex-col lg:flex-row items-start lg:items-stretch justify-end">
             <button
               onClick={() => {
