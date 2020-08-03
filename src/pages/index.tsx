@@ -1,4 +1,4 @@
-import React, { ReactElement, useState } from "react"
+import React, { ReactElement } from "react"
 import NavBar from "../components/navbar"
 import Hero from "../components/hero"
 

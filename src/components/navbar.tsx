@@ -35,13 +35,15 @@ const SocialMenu = ({ data }) => {
           className="p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center"
           href="https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/"
           target="_blank"
+          rel="noopener noreferrer"
         >
-          Meetup
+          <MeetupLogo className="mr-2 h-8" />
         </a>
         <a
           className="p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center"
           href="https://j.mp/ddd-es-cqrs"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <Img
             fixed={data.slackLogo.childImageSharp.fixed}
@@ -53,6 +55,7 @@ const SocialMenu = ({ data }) => {
           className="p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center"
           href="https://twitter.com/VirtualDDD"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <Img
             fixed={data.twitterLogo.childImageSharp.fixed}
@@ -143,7 +146,7 @@ const NavbarDesktop = ({ data }) => {
   )
 }
 
-const NavBar = ({}: Props): ReactElement => {
+const NavBar = (): ReactElement => {
   const data = useStaticQuery(graphql`
     query {
       vdddLogoTp: file(relativePath: { eq: "logo/vddd_logo_tp.png" }) {

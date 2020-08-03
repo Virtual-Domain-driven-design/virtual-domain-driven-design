@@ -1,4 +1,4 @@
-import React, { ReactElement, useState } from "react"
+import React, { ReactElement } from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
@@ -12,6 +12,7 @@ const SocialLink = ({ url, label }) => {
       className="text-xl m-2 p-2 text-white rounded-lg border-2 border-blue-500 hover:border-blue-400"
       href={url}
       target="_blank"
+      rel="noopener noreferrer"
     >
       {label}
     </a>
@@ -38,6 +39,7 @@ const VDDDInfo = ({ data }) => {
         className="p-4 bg-blue-500 floating-action-button text-white"
         href="https://sessionize.com/virtual-ddd-meetup"
         target="_blank"
+        rel="noopener noreferrer"
       >
         Propose a session
       </a>
@@ -53,15 +55,17 @@ const Session = ({ data }) => {
       <div className="text-sm text-gray-600">
         {nextSession.date} - {nextSession.time}
       </div>
-      <img className="w-full" src={nextSession.img}></img>
+      <img className="w-full" alt="" src={nextSession.img}></img>
       <div className="py-2 text-justify">{nextSession.description}</div>
       <div className="mt-4 pt-2 border-t border-solid flex items-center justify-start flex-wrap">
         {nextSession.links.map((data, index) => {
           return (
             <a
+              key={index}
               className="bg-gray-200 floating-action-button p-2 m-2"
               href={data.url}
               target="_blank"
+              rel="noopener noreferrer"
             >
               {data.label}
             </a>
@@ -72,7 +76,7 @@ const Session = ({ data }) => {
   )
 }
 
-const Hero = ({}: Props): ReactElement => {
+const Hero = (): ReactElement => {
   const data = useStaticQuery(graphql`
     query {
       backgroundImage: file(relativePath: { eq: "kandddinsky.jpg" }) {
