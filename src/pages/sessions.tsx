@@ -1,10 +1,7 @@
 import React, { ReactElement, useState } from "react"
 import NavBar from "../components/navbar"
-import Hero from "../components/hero"
 
-interface Props {}
-
-function Sessions({}: Props): ReactElement {
+function Sessions(): ReactElement {
   return (
     <>
       <NavBar></NavBar>

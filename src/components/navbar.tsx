@@ -18,9 +18,64 @@ const VDDDLogo = ({ data }) => {
   )
 }
 
+const SocialMenu = ({ data }) => {
+  const [isSocialOpen, setSocialOpen] = useState(false)
+  return (
+    <button
+      onClick={() => {
+        setSocialOpen(isSocialOpen => !isSocialOpen)
+      }}
+      className="reveal-menu-content px-2 py-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 text-blue-600 focus:outline-none"
+    >
+      Social
+      <div className="menu-content">
+        <a
+          className="p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center"
+          href="https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/"
+          target="_blank"
+        >
+          Meetup
+        </a>
+        <a
+          className="p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center"
+          href="https://j.mp/ddd-es-cqrs"
+          target="_blank"
+        >
+          <Img
+            fixed={data.slackLogo.childImageSharp.fixed}
+            className="mr-2 h-8"
+          />
+          Slack
+        </a>
+        <a
+          className="p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center"
+          href="https://twitter.com/VirtualDDD"
+          target="_blank"
+        >
+          <Img
+            fixed={data.twitterLogo.childImageSharp.fixed}
+            className="mr-2 h-8"
+          />
+          twitter
+        </a>
+      </div>
+    </button>
+  )
+}
+
+const NavigationItem = ({ to, label }) => {
+  return (
+    <Link
+      to={to}
+      className="reveal-menu-content px-2 py-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 text-blue-600 focus:outline-none"
+    >
+      {label}
+    </Link>
+  )
+}
+
 const NavBar = ({}: Props): ReactElement => {
   const [isMenuOpen, setMenuOpen] = useState(false)
-  const [isSocialOpen, setSocialOpen] = useState(false)
 
   const data = useStaticQuery(graphql`
     query {
@@ -75,45 +130,8 @@ const NavBar = ({}: Props): ReactElement => {
         <div className="w-4/5 xl:w-2/3 flex items-center justify-between">
           <VDDDLogo data={data}></VDDDLogo>
           <div className="flex flex-col lg:flex-row items-start lg:items-stretch justify-end">
-            <button
-              onClick={() => {
-                setSocialOpen(isSocialOpen => !isSocialOpen)
-              }}
-              className="reveal-menu-content px-2 py-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 text-blue-600 focus:outline-none"
-            >
-              Social
-              <div className="menu-content">
-                <a
-                  className="p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center"
-                  href="https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/"
-                  target="_blank"
-                >
-                  Meetup
-                </a>
-                <a
-                  className="p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center"
-                  href="https://j.mp/ddd-es-cqrs"
-                  target="_blank"
-                >
-                  <Img
-                    fixed={data.slackLogo.childImageSharp.fixed}
-                    className="mr-2 h-8"
-                  />
-                  Slack
-                </a>
-                <a
-                  className="p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center"
-                  href="https://twitter.com/VirtualDDD"
-                  target="_blank"
-                >
-                  <Img
-                    fixed={data.twitterLogo.childImageSharp.fixed}
-                    className="mr-2 h-8"
-                  />
-                  twitter
-                </a>
-              </div>
-            </button>
+            <NavigationItem to="/sessions" label="Sessions"></NavigationItem>
+            <SocialMenu data={data}></SocialMenu>
           </div>
         </div>
       </div>
