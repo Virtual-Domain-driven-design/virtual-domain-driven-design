@@ -14,10 +14,26 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/src/content`,
+        plugins: [`gatsby-transformer-json`],
+      },
+    },
+    {
       resolve: "gatsby-background-image",
       options: {
         // add your own characters to escape, replacing the default ':/'
         specialChars: "/:",
+      },
+    },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /images/, // See below to configure properly
+        },
       },
     },
     "gatsby-plugin-postcss",

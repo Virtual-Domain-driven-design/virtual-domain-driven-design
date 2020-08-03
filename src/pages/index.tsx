@@ -5,8 +5,10 @@ import Hero from "../components/hero"
 function Index(): ReactElement {
   return (
     <>
-      <NavBar></NavBar>
-      <Hero></Hero>
+      <div id="top" className="font-sans">
+        <NavBar></NavBar>
+        <Hero></Hero>
+      </div>
     </>
   )
 }

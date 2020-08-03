@@ -2,6 +2,8 @@ import React, { ReactElement, useState } from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
+import MeetupLogo from "../images/logo/meetup.svg"
+
 interface Props {}
 
 const VDDDLogo = ({ data }) => {

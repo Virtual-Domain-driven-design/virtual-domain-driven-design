@@ -2,8 +2,6 @@ import React, { ReactElement, useState } from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
-import SessionsData from "./../content/sessions.json"
-
 import BackgroundImage from "gatsby-background-image"
 
 interface Props {}
@@ -47,8 +45,8 @@ const VDDDInfo = ({ data }) => {
   )
 }
 
-const Session = () => {
-  const nextSession = SessionsData.upcoming_sessions[0]
+const Session = ({ data }) => {
+  const nextSession = data.contentJson.upcoming_sessions[0]
   return (
     <div className="bg-white w-full rounded-lg shadow-md p-4 md:p-8 mb-2">
       <div className="font-bold">{nextSession.title}</div>
@@ -91,6 +89,19 @@ const Hero = ({}: Props): ReactElement => {
           }
         }
       }
+      contentJson {
+        upcoming_sessions {
+          date
+          description
+          img
+          time
+          title
+          links {
+            label
+            url
+          }
+        }
+      }
     }
   `)
   const imageData = data.backgroundImage.childImageSharp.fluid
@@ -119,7 +130,7 @@ const Hero = ({}: Props): ReactElement => {
       <div className="w-full mt-8 lg:w-2/3  flex flex-col items-center justify-center">
         <div className="w-5/6 z-10 flex flex-col items-center">
           <div className="w-full hidden md:flex items-stretch justify-start my-2">
-            <Session></Session>
+            <Session data={data}></Session>
           </div>
           <Link
             to="/sessions"
