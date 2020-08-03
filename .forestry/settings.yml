@@ -5,10 +5,8 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
-  path: src/data/sessions.json
+  path: src/content/sessions.json
   label: Sessions
-  match: "**/*"
-  read_only: false
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
