@@ -1,6 +1,7 @@
 import React, { ReactElement } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import NavBar from "../components/navbar"
+import UpcomingSession from "../components/upcoming-session"
 
 import NoUpcomingImg from "../images/no_upcoming.svg"
 
@@ -14,31 +15,10 @@ const UpcomingSessions = ({ data }) => {
         <div className="flex flex-col items-center justify-start">
           {sessions.map((session, index) => {
             return (
-              <div
-                key={index}
-                className="bg-white w-full rounded-lg shadow-md p-4 md:p-8 mb-2"
-              >
-                <div className="font-bold">{session.title}</div>
-                <div className="text-sm text-gray-600">
-                  {session.date} - {session.time}
-                </div>
-                <img className="w-full" alt="" src={session.img}></img>
-                <div className="py-2 text-justify">{session.description}</div>
-                <div className="mt-4 pt-2 border-t border-solid flex items-center justify-start flex-wrap">
-                  {session.links.map((link, index) => {
-                    return (
-                      <a
-                        className="bg-gray-200 floating-action-button p-2 m-2"
-                        href={link.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        {link.label}
-                      </a>
-                    )
-                  })}
-                </div>
-              </div>
+              <UpcomingSession
+                index={index}
+                session={session}
+              ></UpcomingSession>
             )
           })}
         </div>

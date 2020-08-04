@@ -1,4 +1,13 @@
 ---
+  # - title: ""
+  #   date: ""
+  #   time: ""
+  #   img: ""
+  #   description: 
+  #     ""
+  #   links:
+  #     - label: ""
+  #       url: ""
 upcomingSessions:
   - title: "[Panel] What can we learn from open-source with Matteo Collina"
     date: "Tuesday, August 4th. 2020"

@@ -1,4 +1,14 @@
 ---
+# - title: ""
+#   date: ""
+#   time: ""
+#   video: ""
+#   podcast: ""
+#   description:
+#     ""
+#   links:
+#     - label: ""
+#       url: ""
 sessions:
   - title: "[Panel] One user to bind them all? Products, teams and bounded contexts"
     date: "Wednesday, July 29th. 2020"
@@ -34,3 +44,20 @@ sessions:
     links:
       - label: "The Event on Meetup"
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/271938834/"
+  - title: "Balancing upfront design versus iterative design"
+    date: "Thursday, June 25th. 2020"
+    time: "20:00 CEST"
+    video: "https://www.youtube.com/embed/6Mzff5zbQ6c"
+    podcast: "https://oembed.libsyn.com/embed?item_id=14978306"
+    description:
+      "We want early feedback to inform foundational or load-bearing decision making before committing to hard/expensive to change design decisions. But we don’t want to start building based on flawed design decisions, the consequences of which are hard/expensive to change when we discover it is faulty. The problem is, how do we balance these two polarities from an either-or to both-and thinking.
+      In this session, we will explore contexts and tradeoffs in upfront design versus iterative design. Joining us to share their perspectives and experiences in a never-ending discussion are:
+      *Dawn Ahukanna (Design Principal and Front-End Architect)
+      *Rebecca Wirfs-Brock (Architecture, Design Heuristics, and Agile Practices)
+      *Diana Montalion (Architecting content systems strategies for enterprise)
+      *Vladik Khononov (Software Engineer and Cloud Architect) and
+      *Trond Hjorteland (IT Architect and aspiring sociotechnical systems designer).
+      We will facilitate using a polarity map from Barry Johnson to guide the conversation and find out the patterns and signs to observe to start managing these polarities for yourselves."
+    links:
+      - label: "The Event on Meetup"
+        url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/271202418/"
