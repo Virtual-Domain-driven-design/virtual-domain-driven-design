@@ -36,7 +36,7 @@ const Organiser = ({
         >
           <Img
             className="h-10 w-10"
-            fluid={data.website.childImageSharp.fixed}
+            fluid={data.website.childImageSharp.fluid}
             imgStyle={{ objectFit: "contain" }}
           ></Img>
         </a>
@@ -74,8 +74,8 @@ const Organisers = (): ReactElement => {
     query {
       website: file(relativePath: { eq: "logo/website.png" }) {
         childImageSharp {
-          fixed {
-            ...GatsbyImageSharpFixed
+          fluid {
+            ...GatsbyImageSharpFluid
           }
         }
       }

@@ -1,11 +1,18 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Typescript Tailwind`,
-    description: `An example config of Gatsby + TypeScript + Tailwind CSS`,
-    author: `@gatsbyjs`,
+    title: `Virtual Domain-Driven Design`,
+    description: `The website for the virtualDDD community`,
+    author: `@virtualDDD`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-feed-mdx`,
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [".mdx", ".md"],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -46,18 +53,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-typescript`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `docs/logo.svg`, // This path is relative to the root of the site.
-      },
-    },
     {
       resolve: "gatsby-plugin-eslint",
       options: {

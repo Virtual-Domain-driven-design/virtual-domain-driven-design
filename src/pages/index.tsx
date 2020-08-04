@@ -5,6 +5,7 @@ import Conferences from "../components/conferences"
 import Communities from "../components/communities"
 import Sponsors from "../components/sponsors"
 import Organisers from "../components/organisers"
+import Footer from "../components/footer"
 
 function Index(): ReactElement {
   return (
@@ -16,6 +17,7 @@ function Index(): ReactElement {
         <Communities></Communities>
         <Sponsors></Sponsors>
         <Organisers></Organisers>
+        <Footer></Footer>
       </div>
     </>
   )

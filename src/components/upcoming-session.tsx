@@ -16,6 +16,7 @@ const UpcomingSession = ({ index, session }): ReactElement => {
         {session.links.map((link, index) => {
           return (
             <a
+              key={index}
               className="bg-gray-200 floating-action-button p-2 m-2"
               href={link.url}
               target="_blank"

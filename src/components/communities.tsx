@@ -4,11 +4,11 @@ import { graphql, useStaticQuery } from "gatsby"
 const Community = ({ index, community }) => {
   return (
     <a
-      index={index}
       className="group floating-action-button bg-white w-full sm:w-48 rounded-lg shadow-md m-2 flex flex-col items-center justify-start"
       href={community.url}
       target="_blank"
       rel="noopener noreferrer"
+      key={index}
     >
       <div className="flex flex-col items-center justify-start">
         <div className="m-2 h-8 font-semibold text-gray-800 text-sm text-center">
@@ -60,7 +60,7 @@ const Communities = (): ReactElement => {
         <div className="w-16/12 md:w-5/6">
           <div className="flex justify-center flex-wrap">
             {communities.map((community, index) => {
-              return <Community community={community}></Community>
+              return <Community index={index} community={community}></Community>
             })}
           </div>
         </div>

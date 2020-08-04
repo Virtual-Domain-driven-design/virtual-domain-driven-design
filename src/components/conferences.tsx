@@ -5,6 +5,7 @@ import Img from "gatsby-image"
 const Conference = ({ name, image, location, date, website }) => {
   return (
     <a
+      key={name}
       className="group floating-action-button bg-white w-full sm:w-64 rounded-lg shadow-md m-2 flex flex-col items-center justify-start"
       href={website}
       target="_blank"
@@ -16,7 +17,7 @@ const Conference = ({ name, image, location, date, website }) => {
         </div>
         <div className="text-gray-800 text-sm text-center">{date}</div>
         <Img
-          fixed={image}
+          fluid={image}
           className="my-2 w-64 h-32"
           imgStyle={{ objectFit: "contain" }}
         />
