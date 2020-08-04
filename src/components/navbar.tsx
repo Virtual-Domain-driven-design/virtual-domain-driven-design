@@ -125,6 +125,15 @@ const NavbarMobile = ({ data }) => {
             to="/sessions"
             label="Sessions"
           ></MobileNavigationItem>
+          <MobileNavigationItem
+            to="/learning-ddd"
+            label="Learning DDD"
+          ></MobileNavigationItem>
+          <MobileNavigationItem
+            to="/conference"
+            label="Conference"
+          ></MobileNavigationItem>
+          {/* TODO social link */}
         </div>
       </div>
     </div>
@@ -139,6 +148,14 @@ const NavbarDesktop = ({ data }) => {
         <DesktopNavigationItem
           to="/sessions"
           label="Sessions"
+        ></DesktopNavigationItem>
+        <DesktopNavigationItem
+          to="/learning-ddd"
+          label="Learning DDD"
+        ></DesktopNavigationItem>
+        <DesktopNavigationItem
+          to="/conference"
+          label="Conference"
         ></DesktopNavigationItem>
         <SocialMenu data={data}></SocialMenu>
       </div>
