@@ -3,6 +3,7 @@ import NavBar from "../components/navbar"
 import Hero from "../components/hero"
 import Conferences from "../components/conferences"
 import Communities from "../components/communities"
+import Sponsors from "../components/sponsors"
 
 function Index(): ReactElement {
   return (
@@ -12,6 +13,7 @@ function Index(): ReactElement {
         <Hero></Hero>
         <Conferences></Conferences>
         <Communities></Communities>
+        <Sponsors></Sponsors>
       </div>
     </>
   )

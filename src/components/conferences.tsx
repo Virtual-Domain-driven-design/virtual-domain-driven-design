@@ -32,28 +32,28 @@ const Conferences = (): ReactElement => {
       dddeu: file(relativePath: { eq: "logo/dddeu.jpg" }) {
         childImageSharp {
           fluid {
-            ...GatsbyImageSharpFluid_withWebp
+            ...GatsbyImageSharpFluid
           }
         }
       }
       eddd: file(relativePath: { eq: "logo/EDDD_Logo.png" }) {
         childImageSharp {
           fluid {
-            ...GatsbyImageSharpFluid_withWebp
+            ...GatsbyImageSharpFluid
           }
         }
       }
       kddd: file(relativePath: { eq: "logo/KDDD-conf.png" }) {
         childImageSharp {
           fluid {
-            ...GatsbyImageSharpFluid_withWebp
+            ...GatsbyImageSharpFluid
           }
         }
       }
       dddchina: file(relativePath: { eq: "logo/ddd-china.png" }) {
         childImageSharp {
           fluid {
-            ...GatsbyImageSharpFluid_withWebp
+            ...GatsbyImageSharpFluid
           }
         }
       }
