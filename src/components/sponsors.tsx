@@ -1,5 +1,5 @@
 import React, { ReactElement } from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
 const Sponsor = ({ name, image, website }) => {

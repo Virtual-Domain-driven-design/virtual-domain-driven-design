@@ -6,7 +6,14 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-feed-mdx`,
+    {
+      resolve: `gatsby-plugin-feed-mdx`,
+      options: {
+        defaultLayouts: {
+          default: require.resolve(`./src/components/layout.tsx`),
+        },
+      },
+    },
     {
       resolve: `gatsby-plugin-mdx`,
       options: {

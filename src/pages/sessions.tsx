@@ -1,9 +1,9 @@
 import React, { ReactElement } from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import NavBar from "../components/navbar"
 import UpcomingSession from "../components/upcoming-session"
 
 import NoUpcomingImg from "../images/no_upcoming.svg"
+import Layout from "../components/layout"
 
 const UpcomingSessions = ({ sessions }) => {
   if (sessions.length > 0) {
@@ -118,17 +118,14 @@ function Sessions(): ReactElement {
     }
   `)
   return (
-    <>
-      <div id="top" className="font-sans">
-        <NavBar></NavBar>
-        <div className="section" id="Sessions">
-          <UpcomingSessions
-            sessions={data.upcomingSessionsYaml.upcomingSessions}
-          ></UpcomingSessions>
-          <PastSessions sessions={data.sessionsYaml.sessions}></PastSessions>
-        </div>
+    <Layout>
+      <div className="section" id="Sessions">
+        <UpcomingSessions
+          sessions={data.upcomingSessionsYaml.upcomingSessions}
+        ></UpcomingSessions>
+        <PastSessions sessions={data.sessionsYaml.sessions}></PastSessions>
       </div>
-    </>
+    </Layout>
   )
 }
 

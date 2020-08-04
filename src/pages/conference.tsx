@@ -1,14 +1,8 @@
 import React, { ReactElement } from "react"
-import NavBar from "../components/navbar"
+import Layout from "../components/layout"
 
 function Conference(): ReactElement {
-  return (
-    <>
-      <div id="top" className="font-sans">
-        <NavBar></NavBar>
-      </div>
-    </>
-  )
+  return <Layout></Layout>
 }
 
 export default Conference
