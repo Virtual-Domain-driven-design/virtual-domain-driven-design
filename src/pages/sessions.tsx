@@ -5,8 +5,7 @@ import UpcomingSession from "../components/upcoming-session"
 
 import NoUpcomingImg from "../images/no_upcoming.svg"
 
-const UpcomingSessions = ({ data }) => {
-  const sessions = data.upcomingSessionsYaml.upcomingSessions
+const UpcomingSessions = ({ sessions }) => {
   if (sessions.length > 0) {
     console.log("YES")
     return (
@@ -44,6 +43,50 @@ const UpcomingSessions = ({ data }) => {
   )
 }
 
+const PastSessions = ({ sessions }) => {
+  if (sessions.length > 0) {
+    return (
+      <div className="w-full flex flex-col items-center justify-start">
+        <h2>Upcoming Sessions</h2>
+        <div className="w-11/12 md:w-5/6">
+          <div className="flex items-stretch justify-center flex-wrap">
+            {sessions.map((session, index) => {
+              if (session.video) {
+                return (
+                  <div
+                    index={index}
+                    className="bg-white w-64 rounded-lg shadow-md p-2 m-1"
+                  >
+                    <div className="text-sm text-gray-600">{sessions.date}</div>
+                    <div className="videoframe">
+                      <iframe
+                        className="videostream"
+                        allowFullScreen={true}
+                        src={session.video}
+                        scrolling="no"
+                        frameBorder={0}
+                      ></iframe>
+                    </div>
+                    <a
+                      className="text-sm text-left font-bold link"
+                      href={session.video}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {session.title}
+                    </a>
+                  </div>
+                )
+              }
+            })}
+          </div>
+        </div>
+      </div>
+    )
+  }
+  return <div></div>
+}
+
 function Sessions(): ReactElement {
   const data = useStaticQuery(graphql`
     query {
@@ -60,6 +103,16 @@ function Sessions(): ReactElement {
           }
         }
       }
+      sessionsYaml {
+        sessions {
+          title
+          date
+          description
+          podcast
+          time
+          video
+        }
+      }
     }
   `)
   return (
@@ -67,7 +120,10 @@ function Sessions(): ReactElement {
       <div id="top" className="font-sans">
         <NavBar></NavBar>
         <div className="section" id="Sessions">
-          <UpcomingSessions data={data}></UpcomingSessions>
+          <UpcomingSessions
+            sessions={data.upcomingSessionsYaml.upcomingSessions}
+          ></UpcomingSessions>
+          <PastSessions sessions={data.sessionsYaml.sessions}></PastSessions>
         </div>
       </div>
     </>
