@@ -47,7 +47,7 @@ const PastSessions = ({ sessions }) => {
   if (sessions.length > 0) {
     return (
       <div className="w-full flex flex-col items-center justify-start">
-        <h2>Upcoming Sessions</h2>
+        <h2 className="my-6 w-4/5 lg:w-2/3 xl:w-1/2">Past Sessions</h2>
         <div className="w-11/12 md:w-5/6">
           <div className="flex items-stretch justify-center flex-wrap">
             {sessions.map((session, index) => {
