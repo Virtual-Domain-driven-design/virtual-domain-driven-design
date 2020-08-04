@@ -60,6 +60,7 @@ const PastSessions = ({ sessions }) => {
                     <div className="text-sm text-gray-600">{sessions.date}</div>
                     <div className="videoframe">
                       <iframe
+                        title={session.title}
                         className="videostream"
                         allowFullScreen={true}
                         src={session.video}
@@ -78,6 +79,7 @@ const PastSessions = ({ sessions }) => {
                   </div>
                 )
               }
+              return <div></div>
             })}
           </div>
         </div>
