@@ -11,6 +11,7 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+        plugins: [`gatsby-transformer-sharp`, `gatsby-plugin-sharp`],
       },
     },
     {
@@ -18,7 +19,7 @@ module.exports = {
       options: {
         name: `content`,
         path: `${__dirname}/src/content`,
-        plugins: [`gatsby-transformer-json`],
+        plugins: [`gatsby-transformer-yaml-full`],
       },
     },
     {
@@ -45,8 +46,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-typescript`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

@@ -48,7 +48,7 @@ const VDDDInfo = ({ data }) => {
 }
 
 const Session = ({ data }) => {
-  const nextSession = data.contentJson.upcoming_sessions[0]
+  const nextSession = data.upcomingSessionsYaml.upcomingSessions[0]
   return (
     <div className="bg-white w-full rounded-lg shadow-md p-4 md:p-8 mb-2">
       <div className="font-bold">{nextSession.title}</div>
@@ -93,8 +93,8 @@ const Hero = (): ReactElement => {
           }
         }
       }
-      contentJson {
-        upcoming_sessions {
+      upcomingSessionsYaml {
+        upcomingSessions {
           date
           description
           img

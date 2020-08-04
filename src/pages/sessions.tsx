@@ -5,7 +5,7 @@ import NavBar from "../components/navbar"
 import NoUpcomingImg from "../images/no_upcoming.svg"
 
 const UpcomingSessions = ({ data }) => {
-  const sessions = data.contentJson.upcoming_sessions
+  const sessions = data.upcomingSessionsYaml.upcomingSessions
   if (sessions.length > 0) {
     console.log("YES")
     return (
@@ -67,8 +67,8 @@ const UpcomingSessions = ({ data }) => {
 function Sessions(): ReactElement {
   const data = useStaticQuery(graphql`
     query {
-      contentJson {
-        upcoming_sessions {
+      upcomingSessionsYaml {
+        upcomingSessions {
           date
           description
           img
