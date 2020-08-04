@@ -2,6 +2,8 @@ import React, { ReactElement } from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
+import UpcomingSession from "./upcoming-session"
+
 import BackgroundImage from "gatsby-background-image"
 
 interface Props {}
@@ -43,35 +45,6 @@ const VDDDInfo = ({ data }) => {
       >
         Propose a session
       </a>
-    </div>
-  )
-}
-
-const Session = ({ data }) => {
-  const nextSession = data.upcomingSessionsYaml.upcomingSessions[0]
-  return (
-    <div className="bg-white w-full rounded-lg shadow-md p-4 md:p-8 mb-2">
-      <div className="font-bold">{nextSession.title}</div>
-      <div className="text-sm text-gray-600">
-        {nextSession.date} - {nextSession.time}
-      </div>
-      <img className="w-full" alt="" src={nextSession.img}></img>
-      <div className="py-2 text-justify">{nextSession.description}</div>
-      <div className="mt-4 pt-2 border-t border-solid flex items-center justify-start flex-wrap">
-        {nextSession.links.map((data, index) => {
-          return (
-            <a
-              key={index}
-              className="bg-gray-200 floating-action-button p-2 m-2"
-              href={data.url}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {data.label}
-            </a>
-          )
-        })}
-      </div>
     </div>
   )
 }
@@ -134,7 +107,10 @@ const Hero = (): ReactElement => {
       <div className="w-full mt-8 lg:w-2/3  flex flex-col items-center justify-center">
         <div className="w-5/6 z-10 flex flex-col items-center">
           <div className="w-full hidden md:flex items-stretch justify-start my-2">
-            <Session data={data}></Session>
+            <UpcomingSession
+              index="0"
+              session={data.upcomingSessionsYaml.upcomingSessions[0]}
+            ></UpcomingSession>
           </div>
           <Link
             to="/sessions"
