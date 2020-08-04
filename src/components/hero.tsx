@@ -6,8 +6,6 @@ import UpcomingSession from "./upcoming-session"
 
 import BackgroundImage from "gatsby-background-image"
 
-interface Props {}
-
 const SocialLink = ({ url, label }) => {
   return (
     <a
