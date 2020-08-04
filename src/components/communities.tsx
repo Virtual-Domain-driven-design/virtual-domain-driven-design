@@ -15,7 +15,7 @@ const Community = ({ index, community }) => {
           {community.name}
         </div>
         <img
-          className="my-2 w-64 object-contain"
+          className="my-2 w-64 h-32 object-contain"
           alt=""
           src={community.img}
         ></img>

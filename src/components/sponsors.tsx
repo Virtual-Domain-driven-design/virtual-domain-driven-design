@@ -8,14 +8,14 @@ const Sponsor = ({ name, image, website }) => {
       href={website}
       target="_blank"
       rel="noopener noreferrer"
-      className="group floating-action-button bg-white w-full sm:w-48 rounded-lg shadow-md m-2 flex flex-col items-center justify-start"
+      className="group floating-action-button bg-white w-full sm:w-64 rounded-lg shadow-md m-2 flex flex-col items-center justify-start"
     >
-      <div className="bg-white flex flex-col items-center justify-start">
+      <div className="flex flex-col items-center justify-start">
         <div className="m-2 h-8 font-semibold text-gray-800 text-sm text-center">
           {name}
         </div>
         <Img
-          className="my-2 w-64 h-32 object-contain"
+          className="my-2 w-64 h-32"
           fluid={image}
           imgStyle={{ objectFit: "contain" }}
         ></Img>

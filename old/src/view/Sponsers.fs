@@ -14,7 +14,7 @@ module Sponsors =
         Target "_blank"
         Class "group floating-action-button bg-white w-full sm:w-48 rounded-lg shadow-md m-2 flex flex-col items-center justify-start" ]
       [ div [ Class "bg-white flex flex-col items-center justify-start" ]
-          [ div [ Class "m-2 h-8 font-semibold text-gray-800 text-sm text-center" ]
+          [ div [ Class "m-2 h-64 font-semibold text-gray-800 text-sm text-center" ]
               [ str name ]
             img [ Class "my-2 w-64 h-32 object-contain"
                   Src profile.Image ]
