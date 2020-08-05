@@ -110,7 +110,6 @@ function Sessions(): ReactElement {
           title
           date
           description
-          podcast
           time
           video
         }
