@@ -5,9 +5,10 @@ const Podcast = ({ session }) => {
   if (session.podcast) {
     return (
       <div className="group bg-white w-64 rounded-lg shadow-md p-2 m-1">
-        <div className="player">
+        <div className="embed-responsive aspect-ratio-16/9">
           <iframe
             title={session.title}
+            className="embed-responsive-item"
             allowFullScreen={true}
             src={session.podcast}
             scrolling="no"
