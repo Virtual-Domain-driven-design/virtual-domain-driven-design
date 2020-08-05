@@ -52,6 +52,8 @@
     "lint-staged": "10.2.11",
     "prettier": "2.0.5",
     "tailwindcss": "1.4.6",
+    "tailwindcss-aspect-ratio": "^3.0.0",
+    "tailwindcss-responsive-embed": "^1.0.0",
     "typescript": "3.9.6"
   },
   "scripts": {

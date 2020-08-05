@@ -2,9 +2,9 @@ import React, { ReactElement, useState } from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
-import MeetupLogo from "../images/logo/meetup.svg"
+import MeetupSvg from "../images/logo/meetup.svg"
 
-interface Props {}
+// TODO: NEEDS MAJOR REFACTORING AND DYNAMIC CONFIG, this is UGLY but it works =). Problem I face now is the meetup SVG logo which cannot be imported from graphql dynamicly like other images can (See books for an example)
 
 const VDDDLogo = ({ data }) => {
   return (
@@ -25,46 +25,116 @@ const SocialMenu = ({ data }) => {
   return (
     <button
       onClick={() => {
-        setSocialOpen(isSocialOpen => !isSocialOpen)
+        setSocialOpen((isSocialOpen) => !isSocialOpen)
       }}
       className="reveal-menu-content px-2 py-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 text-blue-600 focus:outline-none"
     >
       Social
       <div className="menu-content">
-        <a
-          className="p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center"
-          href="https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <MeetupLogo className="mr-2 h-8" />
-        </a>
-        <a
-          className="p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center"
-          href="https://j.mp/ddd-es-cqrs"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Img
-            fixed={data.slackLogo.childImageSharp.fixed}
-            className="mr-2 h-8"
-          />
-          Slack
-        </a>
-        <a
-          className="p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center"
-          href="https://twitter.com/VirtualDDD"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Img
-            fixed={data.twitterLogo.childImageSharp.fixed}
-            className="mr-2 h-8"
-          />
-          twitter
-        </a>
+        <SocialSubItems data={data}></SocialSubItems>
       </div>
     </button>
+  )
+}
+
+const SocialMobileMenu = ({ data }) => {
+  return (
+    <div className="relative border-t border-gray-400 w-full">
+      <div className="absolute top-0 right-0 text-gray-500 pt-2 pr-4 text-md">
+        Social
+      </div>
+      <SocialSubItems data={data}></SocialSubItems>
+    </div>
+  )
+}
+
+const ResourcesMenu = () => {
+  const [isSocialOpen, setSocialOpen] = useState(false)
+  return (
+    <button
+      onClick={() => {
+        setSocialOpen((isSocialOpen) => !isSocialOpen)
+      }}
+      className="reveal-menu-content px-2 py-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 text-blue-600 focus:outline-none"
+    >
+      Resources
+      <div className="menu-content">
+        <ResourcesSubItems></ResourcesSubItems>
+      </div>
+    </button>
+  )
+}
+
+const ResourcesMobileMenu = () => {
+  return (
+    <div className="relative border-t border-gray-400 w-full">
+      <div className="absolute top-0 right-0 text-gray-500 pt-2 pr-4 text-md">
+        Resources
+      </div>
+      <ResourcesSubItems></ResourcesSubItems>
+    </div>
+  )
+}
+
+const ResourcesSubItems = () => {
+  return (
+    <div>
+      <a
+        className="p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center"
+        href="https://dddheuristics.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Heuristics
+      </a>
+      <a
+        className="p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center"
+        href="https://github.com/ddd-crew/ddd-starter-modelling-process"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Starter modelling process
+      </a>
+    </div>
+  )
+}
+
+const SocialSubItems = ({ data }) => {
+  return (
+    <div>
+      <a
+        className="p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center"
+        href="https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <MeetupSvg className="mr-2 h-8" />
+      </a>
+      <a
+        className="p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center"
+        href="https://j.mp/ddd-es-cqrs"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Img
+          fixed={data.slackLogo.childImageSharp.fixed}
+          className="mr-2 h-8"
+        />
+        Slack
+      </a>
+      <a
+        className="p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center"
+        href="https://twitter.com/VirtualDDD"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Img
+          fixed={data.twitterLogo.childImageSharp.fixed}
+          className="mr-2 h-8"
+        />
+        twitter
+      </a>
+    </div>
   )
 }
 
@@ -105,7 +175,7 @@ const NavbarMobile = ({ data }) => {
         <button
           className="reveal-menu-content flex-shrink-0 flex items-center m-4 px-3 py-2 border rounded border-white hover:text-blue-400 hover:border-blue-400"
           onClick={() => {
-            setMenuOpen(isMenuOpen => !isMenuOpen)
+            setMenuOpen((isMenuOpen) => !isMenuOpen)
           }}
         >
           <svg
@@ -133,7 +203,8 @@ const NavbarMobile = ({ data }) => {
             to="/conference"
             label="Conference"
           ></MobileNavigationItem>
-          {/* TODO social link */}
+          <ResourcesMobileMenu></ResourcesMobileMenu>
+          <SocialMobileMenu data={data}></SocialMobileMenu>
         </div>
       </div>
     </div>
@@ -157,6 +228,7 @@ const NavbarDesktop = ({ data }) => {
           to="/conference"
           label="Conference"
         ></DesktopNavigationItem>
+        <ResourcesMenu></ResourcesMenu>
         <SocialMenu data={data}></SocialMenu>
       </div>
     </div>
