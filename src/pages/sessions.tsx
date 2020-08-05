@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import UpcomingSession from "../components/upcoming-session"
 
 import NoUpcomingImg from "../images/no_upcoming.svg"
-import Layout from "../components/layout"
+import Layout from "../templates/layout"
 
 const UpcomingSessions = ({ sessions }) => {
   if (sessions.length > 0) {

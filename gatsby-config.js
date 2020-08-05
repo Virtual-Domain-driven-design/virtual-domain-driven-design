@@ -7,25 +7,12 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-plugin-feed-mdx`,
-      options: {
-        defaultLayouts: {
-          default: require.resolve(`./src/components/layout.tsx`),
-        },
-      },
-    },
-    {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [".mdx", ".md"],
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-        plugins: [`gatsby-transformer-sharp`, `gatsby-plugin-sharp`],
+        defaultLayouts: {
+          default: require.resolve(`./src/templates/page-layout.tsx`),
+        },
       },
     },
     {
@@ -36,6 +23,15 @@ module.exports = {
         plugins: [`gatsby-transformer-yaml-full`],
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: "gatsby-background-image",
       options: {

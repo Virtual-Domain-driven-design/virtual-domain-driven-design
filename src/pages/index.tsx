@@ -4,7 +4,7 @@ import Conferences from "../components/conferences"
 import Communities from "../components/communities"
 import Sponsors from "../components/sponsors"
 import Organisers from "../components/organisers"
-import Layout from "../components/layout"
+import Layout from "../templates/layout"
 
 function Index(): ReactElement {
   return (
