@@ -5,4 +5,8 @@ We are continuously updating the website and functionality, if you have any idea
 
 ## Add a new DDD community
 
+TBD
+
 ## To help develop Virtual Domain-Driven Design
+
+TBD
