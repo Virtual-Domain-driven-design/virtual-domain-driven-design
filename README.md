@@ -5,16 +5,17 @@ We are continuously updating the website and functionality, if you have any idea
 
 ## Add a new DDD community
 
-TBD
+Update `src/content/communities.yaml`, use the fields described int he comments to add your own community.
+Send your change as a PR.
 
 ## To help develop Virtual Domain-Driven Design
 
 Virtual Domain-Driven Design is build with Gatsby and has the following plugins build in:
 
-- Typescript
-- Tailwind
-- MDX
-- SVG Image
+- gatsby-plugin-typescript
+- gatsby-plugin-postcss, gatsby-plugin-purgecss with Tailwind
+- gatsby-plugin-mdx
+- gatsby-plugin-react-svg
 
 To help and start develop you need to following on your machine:
 

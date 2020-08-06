@@ -1,9 +1,9 @@
 ---
-# - name: ""
-#   country: ""
-#   city: ""
-#   url: ""
-#   img: ""
+# - name: "Name of your community"
+#   country: "COuntry of the community"
+#   city: "optional - the city the community is in"
+#   url: "The url to the website of the community"
+#   img: "An external image for your community"
 communities:
   - name: "DDD FR"
     country: "France"
