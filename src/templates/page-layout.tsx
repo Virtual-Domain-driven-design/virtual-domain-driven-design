@@ -12,10 +12,8 @@ import Layout from "./layout"
 const PageLayout = ({ children }) => {
   return (
     <Layout>
-      <div className="section" id="codeofconduct">
-        <div className="content w-4/5 md:w-1/2 lg:w-1/2 xl:w-1/3">
-          {children}
-        </div>
+      <div className="flex flex-col items-center" id="codeofconduct">
+        <div className="markdown w-3/5">{children}</div>
       </div>
     </Layout>
   )
