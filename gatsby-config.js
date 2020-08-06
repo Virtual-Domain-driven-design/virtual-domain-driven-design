@@ -6,6 +6,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-remark-images`,
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
@@ -13,6 +14,11 @@ module.exports = {
         defaultLayouts: {
           default: require.resolve(`./src/templates/page-layout.tsx`),
         },
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+          },
+        ],
       },
     },
     {
@@ -28,6 +34,13 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-git`,
+      options: {
+        name: `ddd-crew-starter-modelling`,
+        remote: `https://github.com/ddd-crew/ddd-starter-modelling-process.git`,
       },
     },
     `gatsby-plugin-sharp`,

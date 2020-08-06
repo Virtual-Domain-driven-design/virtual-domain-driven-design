@@ -11,6 +11,8 @@
     "gatsby-cli": "^2.12.60",
     "gatsby-plugin-mdx": "^1.2.33",
     "gatsby-plugin-react-svg": "^3.0.0",
+    "gatsby-remark-images": "^3.3.25",
+    "gatsby-source-git": "^1.1.0",
     "gatsby-transformer-json": "^2.4.11",
     "gatsby-transformer-yaml": "^2.4.10",
     "gatsby-transformer-yaml-full": "^0.3.4",
