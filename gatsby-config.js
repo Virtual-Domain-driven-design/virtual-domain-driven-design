@@ -43,6 +43,13 @@ module.exports = {
         remote: `https://github.com/ddd-crew/ddd-starter-modelling-process.git`,
       },
     },
+    {
+      resolve: `gatsby-source-git`,
+      options: {
+        name: `ddd-crew-eventstorming-glossary-cheat-sheet`,
+        remote: `https://github.com/ddd-crew/eventstorming-glossary-cheat-sheet.git`,
+      },
+    },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
