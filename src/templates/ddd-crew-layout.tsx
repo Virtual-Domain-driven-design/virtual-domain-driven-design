@@ -18,10 +18,12 @@ const shortcodes = { Link } // Provide common components here
 const DDDCrewLayout = ({ data: { mdx } }) => {
   return (
     <Layout>
-      <div className="section" id="codeofconduct">
-        <MDXProvider components={shortcodes}>
-          <MDXRenderer>{mdx.body}</MDXRenderer>
-        </MDXProvider>
+      <div className="flex flex-col items-center" id="markdown">
+        <div className="markdown w-3/5">
+          <MDXProvider components={shortcodes}>
+            <MDXRenderer>{mdx.body}</MDXRenderer>
+          </MDXProvider>
+        </div>
       </div>
     </Layout>
   )
