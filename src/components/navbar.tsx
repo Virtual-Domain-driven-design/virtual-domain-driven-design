@@ -48,57 +48,6 @@ const SocialMobileMenu = ({ data }) => {
   )
 }
 
-const ResourcesMenu = () => {
-  const [isSocialOpen, setSocialOpen] = useState(false)
-  return (
-    <button
-      onClick={() => {
-        setSocialOpen((isSocialOpen) => !isSocialOpen)
-      }}
-      className="reveal-menu-content px-2 py-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 text-blue-600 focus:outline-none"
-    >
-      Resources
-      <div className="menu-content">
-        <ResourcesSubItems></ResourcesSubItems>
-      </div>
-    </button>
-  )
-}
-
-const ResourcesMobileMenu = () => {
-  return (
-    <div className="relative border-t border-gray-400 w-full">
-      <div className="absolute top-0 right-0 text-gray-500 pt-2 pr-4 text-md">
-        Resources
-      </div>
-      <ResourcesSubItems></ResourcesSubItems>
-    </div>
-  )
-}
-
-const ResourcesSubItems = () => {
-  return (
-    <div>
-      <a
-        className="p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center"
-        href="https://dddheuristics.com"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Heuristics
-      </a>
-      <a
-        className="p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center"
-        href="https://github.com/ddd-crew/ddd-starter-modelling-process"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Starter modelling process
-      </a>
-    </div>
-  )
-}
-
 const SocialSubItems = ({ data }) => {
   return (
     <div>
@@ -203,7 +152,14 @@ const NavbarMobile = ({ data }) => {
             to="/conference"
             label="Conference"
           ></MobileNavigationItem>
-          <ResourcesMobileMenu></ResourcesMobileMenu>
+          <a
+            className="p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center"
+            href="https://dddheuristics.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Heuristics
+          </a>
           <SocialMobileMenu data={data}></SocialMobileMenu>
         </div>
       </div>
@@ -228,7 +184,14 @@ const NavbarDesktop = ({ data }) => {
           to="/conference"
           label="Conference"
         ></DesktopNavigationItem>
-        <ResourcesMenu></ResourcesMenu>
+        <a
+          className="p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center"
+          href="https://dddheuristics.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Heuristics
+        </a>
         <SocialMenu data={data}></SocialMenu>
       </div>
     </div>
