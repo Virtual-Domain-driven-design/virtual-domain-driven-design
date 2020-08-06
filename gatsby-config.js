@@ -78,6 +78,13 @@ module.exports = {
         remote: `https://github.com/ddd-crew/core-domain-charts.git`,
       },
     },
+    {
+      resolve: `gatsby-source-git`,
+      options: {
+        name: `ddd-crew-bounded-context-canvas`,
+        remote: `https://github.com/ddd-crew/bounded-context-canvas.git`,
+      },
+    },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
