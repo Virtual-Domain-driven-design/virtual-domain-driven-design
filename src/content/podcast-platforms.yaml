@@ -1,0 +1,20 @@
+---
+podcastsPlatforms:
+  - name: spotify
+    img: "../images/podcasts/spotify.png"
+    url: "https://open.spotify.com/show/7vYfWVbOjnQupUDgFuEqac"
+  - name: Google
+    img: "../images/podcasts/google_podcast.png"
+    url: "https://podcasts.google.com/?feed=aHR0cHM6Ly92aXJ0dWFsZGRkLmxpYnN5bi5jb20vcnNz"
+  - name: Apple
+    img: "../images/podcasts/apple_podcast.png"
+    url: "https://podcasts.apple.com/nl/podcast/virtual-domain-driven-design/id1478089740?l=en"
+  - name: Soundcloud
+    img: "../images/podcasts/soundcloud.png"
+    url: "https://soundcloud.com/user-755244939"
+  - name: Deezer
+    img: "../images/podcasts/deezer_podcast.png"
+    url: "https://www.deezer.com/nl/show/1549342"
+  - name: RSS
+    img: "../images/podcasts/rss.png"
+    url: "https://virtualddd.libsyn.com/rss"
