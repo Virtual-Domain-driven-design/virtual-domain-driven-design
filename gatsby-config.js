@@ -16,7 +16,21 @@ module.exports = {
         },
         gatsbyRemarkPlugins: [
           {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: {
+              className: `header-link-icon`,
+              maintainCase: false,
+              removeAccents: true,
+              isIconAfterHeader: true,
+            },
+          },
+          {
             resolve: `gatsby-remark-images`,
+            options: {
+              linkImagesToOriginal: true,
+              maxWidth: 1000,
+              wrapperStyle: (result) => `width: 100%;margin-left: 0;`,
+            },
           },
         ],
       },
