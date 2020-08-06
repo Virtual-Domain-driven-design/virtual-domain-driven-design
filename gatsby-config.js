@@ -50,6 +50,20 @@ module.exports = {
         remote: `https://github.com/ddd-crew/eventstorming-glossary-cheat-sheet.git`,
       },
     },
+    {
+      resolve: `gatsby-source-git`,
+      options: {
+        name: `ddd-crew-context-mapping`,
+        remote: `https://github.com/ddd-crew/context-mapping.git`,
+      },
+    },
+    {
+      resolve: `gatsby-source-git`,
+      options: {
+        name: `ddd-crew-core-domain-charts`,
+        remote: `https://github.com/ddd-crew/core-domain-charts.git`,
+      },
+    },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
