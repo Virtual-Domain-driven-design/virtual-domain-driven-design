@@ -1,36 +1,50 @@
 backend:
-  name: github
+  name: git-gateway
   # change repo to your git repository url
-  repo: Virtual-Domain-driven-design/virtual-domain-driven-design
-  
-publish_mode: editorial_workflow
+  # repo: Virtual-Domain-driven-design/virtual-domain-driven-design
 
-media_folder: src/images/
-public_folder: /images
+
+# publish_mode: editorial_workflow
+
+media_folder: src/images/uploads
 
 site_url: https://virtualddd.com
 display_url: https://virtualddd.com
 
 collections:
-  - name: curating
-    label: Curated content
+  - name: "learning-ddd"
+    label: "Learning DDD"
     files:
-      - name: books
-        label: Curated Books
-        file: src/content/books.yml
+      - name: "books"
+        label: "Books"
+        file: "src/content/books.yml"
+        extension: "yml"
         media_folder: ../images/books
-        public_folder: /images/books
         fields:
-          - label: Books, 
-            name: books, 
-            widget: list, 
-            summary: '{{fields.img}}'
+          - name: "books"
+            label: "Books"
+            widget: "list"
+            summary: '{{fields.title}}'
             fields:
-              - {label: Title, name: title, widget: string, required: true}
-              - {label: Author, name: author, widget: string, required: true}
-              - {label: Image, name: img, widget: image, allow_multiple: false, required: true}
-              - {label: Tags, name: tags, widget: list, required: true}
-
-        
-
-      
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Author", name: "author", widget: "string" }
+              - { label: "Image", name: "img", widget: "image", allow_multiple: false}
+              - { label: "Tags", name: "tags", widget: "list"}
+  - name: "communities"
+    label: "DDD Communities"
+    files:
+      - name: "communities"
+        label: "Communities"
+        file: "src/content/communities.yml"
+        extension: "yml"
+        fields:
+          - name: "communities"
+            label: "Communities"
+            widget: "list"
+            summary: '{{fields.name}}'
+            fields:
+              - { label: "Name", name: "name", widget: "string"}
+              - { label: "Country", name: "country", widget: "string"}
+              - { label: "City", name: "city", widget: "string", required: false}
+              - { label: "Url", name: "url", widget: "string"}
+              - { label: "Img", name: "img", widget: "string"}
