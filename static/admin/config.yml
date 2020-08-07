@@ -17,8 +17,8 @@ collections:
     files:
       - name: "books"
         label: "Books"
-        file: "src/content/books.yml"
-        extension: "yml"
+        file: "src/content/books.yaml"
+        extension: "yaml"
         media_folder: ../images/books
         fields:
           - name: "books"
@@ -35,8 +35,8 @@ collections:
     files:
       - name: "communities"
         label: "Communities"
-        file: "src/content/communities.yml"
-        extension: "yml"
+        file: "src/content/communities.yaml"
+        extension: "yaml"
         fields:
           - name: "communities"
             label: "Communities"
