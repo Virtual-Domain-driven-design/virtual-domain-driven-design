@@ -1,8 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `Virtual Domain-Driven Design`,
-    description: `The website for the virtualDDD community`,
-    author: `@virtualDDD`,
+    titleTemplate: "%s - A community of practise",
+    description: `Learn, explore and collaborate with the Domain-Driven Design community`,
+    url: "https://virtualddd.com",
+    twitterUsername: "@virtualddd",
+    image: "/images/kandddsinky.jpg",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
