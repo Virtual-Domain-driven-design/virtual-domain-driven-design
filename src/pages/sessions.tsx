@@ -7,7 +7,6 @@ import Layout from "../templates/layout"
 
 const UpcomingSessions = ({ sessions }) => {
   if (sessions.length > 0) {
-    console.log("YES")
     return (
       <div className="my-8 w-4/5 lg:w-2/3 xl:w-1/2">
         <h2>Upcoming Sessions</h2>
@@ -93,7 +92,7 @@ function Sessions(): ReactElement {
   const data = useStaticQuery(graphql`
     query {
       upcoming: allContentYaml(
-        filter: { sessions: { elemMatch: { title: { ne: null } } } }
+        filter: { upcomingSessions: { elemMatch: { title: { ne: null } } } }
       ) {
         nodes {
           upcomingSessions {
