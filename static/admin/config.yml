@@ -1,0 +1,36 @@
+backend:
+  name: github
+  # change repo to your git repository url
+  repo: Virtual-Domain-driven-design/virtual-domain-driven-design
+  
+publish_mode: editorial_workflow
+
+media_folder: src/images/
+public_folder: /images
+
+site_url: https://virtualddd.com
+display_url: https://virtualddd.com
+
+collections:
+  - name: curating
+    label: Curated content
+    files:
+      - name: books
+        label: Curated Books
+        file: src/content/books.yml
+        media_folder: ../images/books
+        public_folder: /images/books
+        fields:
+          - label: Books, 
+            name: books, 
+            widget: list, 
+            summary: '{{fields.img}}'
+            fields:
+              - {label: Title, name: title, widget: string, required: true}
+              - {label: Author, name: author, widget: string, required: true}
+              - {label: Image, name: img, widget: image, allow_multiple: false, required: true}
+              - {label: Tags, name: tags, widget: list, required: true}
+
+        
+
+      
