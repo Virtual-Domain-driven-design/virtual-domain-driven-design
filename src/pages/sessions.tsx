@@ -130,7 +130,7 @@ function Sessions(): ReactElement {
         <UpcomingSessions
           sessions={data.upcoming.nodes[0].upcomingSessions}
         ></UpcomingSessions>
-        <PastSessions sessions={data.past.node[0].sessions}></PastSessions>
+        <PastSessions sessions={data.past.nodes[0].sessions}></PastSessions>
       </div>
     </Layout>
   )
