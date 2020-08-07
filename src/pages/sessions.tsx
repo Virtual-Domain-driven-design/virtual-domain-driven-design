@@ -92,26 +92,34 @@ const PastSessions = ({ sessions }) => {
 function Sessions(): ReactElement {
   const data = useStaticQuery(graphql`
     query {
-      contentYaml {
-        upcomingSessions {
-          date
-          description
-          img
-          time
-          title
-          links {
-            label
-            url
+      upcoming: allContentYaml(
+        filter: { sessions: { elemMatch: { title: { ne: null } } } }
+      ) {
+        nodes {
+          upcomingSessions {
+            date
+            description
+            img
+            time
+            title
+            links {
+              label
+              url
+            }
           }
         }
       }
-      contentYaml {
-        sessions {
-          title
-          date
-          description
-          time
-          video
+      past: allContentYaml(
+        filter: { sessions: { elemMatch: { title: { ne: null } } } }
+      ) {
+        nodes {
+          sessions {
+            title
+            date
+            description
+            time
+            video
+          }
         }
       }
     }
@@ -120,9 +128,9 @@ function Sessions(): ReactElement {
     <Layout>
       <div className="section" id="Sessions">
         <UpcomingSessions
-          sessions={data.contentYaml.upcomingSessions}
+          sessions={data.upcoming.nodes[0].upcomingSessions}
         ></UpcomingSessions>
-        <PastSessions sessions={data.contentYaml.sessions}></PastSessions>
+        <PastSessions sessions={data.past.node[0].sessions}></PastSessions>
       </div>
     </Layout>
   )

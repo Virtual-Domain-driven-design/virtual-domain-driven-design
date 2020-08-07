@@ -30,18 +30,22 @@ const Community = ({ index, community }) => {
 const Communities = (): ReactElement => {
   const data = useStaticQuery(graphql`
     query {
-      contentYaml {
-        communities {
-          city
-          country
-          name
-          url
-          img
+      allContentYaml(
+        filter: { communities: { elemMatch: { name: { ne: null } } } }
+      ) {
+        nodes {
+          communities {
+            city
+            country
+            name
+            url
+            img
+          }
         }
       }
     }
   `)
-  const communities = data.contentYaml.communities
+  const communities = data.allContentYaml.nodes[0].communities
   return (
     <div className="section bg-gray-200" id="communities">
       <div className="w-full flex flex-col items-center justify-start">

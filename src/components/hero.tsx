@@ -6,7 +6,7 @@ import UpcomingSession from "./upcoming-session"
 
 import BackgroundImage from "gatsby-background-image"
 
-const SocialLink = ({ url, label }) => {
+const Sociallink = ({ url, label }) => {
   return (
     <a
       className="text-xl m-2 p-2 text-white rounded-lg border-2 border-blue-500 hover:border-blue-400"
@@ -64,16 +64,20 @@ const Hero = (): ReactElement => {
           }
         }
       }
-      contentYaml {
-        upcomingSessions {
-          date
-          description
-          img
-          time
-          title
-          links {
-            label
-            url
+      allContentYaml(
+        filter: { upcomingSessions: { elemMatch: { title: { ne: null } } } }
+      ) {
+        nodes {
+          upcomingSessions {
+            date
+            description
+            img
+            time
+            title
+            links {
+              label
+              url
+            }
           }
         }
       }
@@ -90,15 +94,15 @@ const Hero = (): ReactElement => {
       <div className="w-full lg:w-1/3 flex flex-col items-center justify-center z-10">
         <VDDDInfo data={data}></VDDDInfo>
         <div className="mt-4 flex items-center justify-center">
-          <SocialLink
+          <Sociallink
             url="https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/"
             label="Meetup"
-          ></SocialLink>
-          <SocialLink url="https://j.mp/ddd-es-cqrs" label="Slack"></SocialLink>
-          <SocialLink
+          ></Sociallink>
+          <Sociallink url="https://j.mp/ddd-es-cqrs" label="Slack"></Sociallink>
+          <Sociallink
             url="https://j.mp/ddd-es-cqrs"
             label="Twitter"
-          ></SocialLink>
+          ></Sociallink>
         </div>
       </div>
 
@@ -107,7 +111,7 @@ const Hero = (): ReactElement => {
           <div className="w-full hidden md:flex items-stretch justify-start my-2">
             <UpcomingSession
               index="0"
-              session={data.contentYaml.upcomingSessions[0]}
+              session={data.allContentYaml.nodes[0].upcomingSessions[0]}
             ></UpcomingSession>
           </div>
           <Link

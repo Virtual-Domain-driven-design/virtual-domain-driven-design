@@ -40,20 +40,28 @@ const PodcastPlatform = ({ platform }) => {
 const Podcasts = (): ReactElement => {
   const data = useStaticQuery(graphql`
     query {
-      contentYaml {
-        sessions {
-          title
-          podcast
+      sessions: allContentYaml(
+        filter: { sessions: { elemMatch: { title: { ne: null } } } }
+      ) {
+        nodes {
+          sessions {
+            title
+            podcast
+          }
         }
       }
-      contentYaml {
-        podcastsPlatforms {
-          name
-          url
-          img {
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
+      podcasts: allContentYaml(
+        filter: { podcastsPlatforms: { elemMatch: { name: { ne: null } } } }
+      ) {
+        nodes {
+          podcastsPlatforms {
+            name
+            url
+            img {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
               }
             }
           }
@@ -66,17 +74,18 @@ const Podcasts = (): ReactElement => {
       <h2 className="my-6 w-4/5 lg:w-2/3 xl:w-1/2">Podcasts</h2>
       <div>
         <p className="italic text-justify">
-          Listen to the VDDD podcast by clicking on one of the platforms below
+          childImageSharp Listen to the VDDD podcast by clicking on one of the
+          platforms below
         </p>
         <div className="my-1 w-full flex items-center justify-around">
-          {data.contentYaml.podcastsPlatforms.map((platform, index) => {
+          {data.podcasts.nodes[0].podcastsPlatforms.map((platform, index) => {
             return <PodcastPlatform platform={platform}></PodcastPlatform>
           })}
         </div>
       </div>
       <div className="w-11/12 md:w-5/6">
         <div className="flex items-stretch justify-center flex-wrap">
-          {data.contentYaml.sessions.map((session, index) => {
+          {data.sessions.nodes[0].sessions.map((session, index) => {
             return <Podcast session={session}></Podcast>
           })}
         </div>

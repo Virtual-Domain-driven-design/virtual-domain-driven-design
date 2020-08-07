@@ -26,15 +26,19 @@ const Book = ({ book }) => {
 const Books = (): ReactElement => {
   const data = useStaticQuery(graphql`
     query {
-      contentYaml {
-        books {
-          author
-          title
-          tags
-          img {
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
+      allContentYaml(
+        filter: { books: { elemMatch: { title: { ne: null } } } }
+      ) {
+        nodes {
+          books {
+            author
+            title
+            tags
+            img {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
               }
             }
           }
@@ -47,7 +51,7 @@ const Books = (): ReactElement => {
       <h2 className="my-6 w-4/5 lg:w-2/3 xl:w-1/2">Books</h2>
       <div className="w-11/12 md:w-5/6">
         <div className="flex justify-center flex-wrap">
-          {data.contentYaml.books.map((book, index) => {
+          {data.allContentYaml.nodes[0].books.map((book, index) => {
             return <Book book={book}></Book>
           })}
         </div>

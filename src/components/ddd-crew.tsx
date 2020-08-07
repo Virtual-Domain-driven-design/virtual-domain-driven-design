@@ -26,15 +26,19 @@ const Repo = ({ repo }) => {
 const DDDCrew = (): ReactElement => {
   const data = useStaticQuery(graphql`
     query {
-      contentYaml {
-        dddCrew {
-          excerpt
-          name
-          to
-          img {
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
+      allContentYaml(
+        filter: { dddCrew: { elemMatch: { name: { ne: null } } } }
+      ) {
+        nodes {
+          dddCrew {
+            excerpt
+            name
+            to
+            img {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
               }
             }
           }
@@ -57,7 +61,7 @@ const DDDCrew = (): ReactElement => {
       </div>
       <div className="w-11/12 md:w-5/6">
         <div className="flex justify-center flex-wrap">
-          {data.contentYaml.dddCrew.map((repo, index) => {
+          {data.allContentYaml.nodes[0].dddCrew.map((repo, index) => {
             return <Repo repo={repo}></Repo>
           })}
         </div>

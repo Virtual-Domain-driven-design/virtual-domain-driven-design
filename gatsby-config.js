@@ -11,6 +11,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-remark-images`,
+    `gatsby-transformer-yaml`,
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
@@ -44,7 +45,6 @@ module.exports = {
       options: {
         name: `content`,
         path: `${__dirname}/src/content`,
-        plugins: [`gatsby-transformer-yaml-full`],
       },
     },
     {
