@@ -1,4 +1,3 @@
----
 podcastsPlatforms:
   - name: spotify
     img: "../images/podcasts/spotify.png"

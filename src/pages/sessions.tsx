@@ -92,7 +92,7 @@ const PastSessions = ({ sessions }) => {
 function Sessions(): ReactElement {
   const data = useStaticQuery(graphql`
     query {
-      upcomingSessionsYaml {
+      contentYaml {
         upcomingSessions {
           date
           description
@@ -105,7 +105,7 @@ function Sessions(): ReactElement {
           }
         }
       }
-      sessionsYaml {
+      contentYaml {
         sessions {
           title
           date

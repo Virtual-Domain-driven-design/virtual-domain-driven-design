@@ -64,7 +64,7 @@ const Hero = (): ReactElement => {
           }
         }
       }
-      upcomingSessionsYaml {
+      contentYaml {
         upcomingSessions {
           date
           description

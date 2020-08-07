@@ -30,7 +30,7 @@ const Community = ({ index, community }) => {
 const Communities = (): ReactElement => {
   const data = useStaticQuery(graphql`
     query {
-      communitiesYaml {
+      contentYaml {
         communities {
           city
           country

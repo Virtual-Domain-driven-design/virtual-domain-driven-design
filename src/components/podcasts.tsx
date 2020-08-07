@@ -40,24 +40,20 @@ const PodcastPlatform = ({ platform }) => {
 const Podcasts = (): ReactElement => {
   const data = useStaticQuery(graphql`
     query {
-      sessionsYaml {
+      contentYaml {
         sessions {
           title
           podcast
         }
       }
-      allPodcastPlatformsYaml {
-        edges {
-          node {
-            podcastsPlatforms {
-              name
-              url
-              img {
-                childImageSharp {
-                  fluid {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
+      contentYaml {
+        podcastsPlatforms {
+          name
+          url
+          img {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
               }
             }
           }

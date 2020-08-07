@@ -26,19 +26,15 @@ const Book = ({ book }) => {
 const Books = (): ReactElement => {
   const data = useStaticQuery(graphql`
     query {
-      allBooksYaml {
-        edges {
-          node {
-            books {
-              author
-              title
-              tags
-              img {
-                childImageSharp {
-                  fluid {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
+      contentYaml {
+        books {
+          author
+          title
+          tags
+          img {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
               }
             }
           }

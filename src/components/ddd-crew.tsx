@@ -26,7 +26,7 @@ const Repo = ({ repo }) => {
 const DDDCrew = (): ReactElement => {
   const data = useStaticQuery(graphql`
     query {
-      dddCrewYaml {
+      contentYaml {
         dddCrew {
           excerpt
           name
