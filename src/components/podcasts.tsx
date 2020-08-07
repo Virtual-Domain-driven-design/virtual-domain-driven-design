@@ -69,16 +69,14 @@ const Podcasts = (): ReactElement => {
           Listen to the VDDD podcast by clicking on one of the platforms below
         </p>
         <div className="my-1 w-full flex items-center justify-around">
-          {data.allPodcastPlatformsYaml.edges[0].node.podcastsPlatforms.map(
-            (platform, index) => {
-              return <PodcastPlatform platform={platform}></PodcastPlatform>
-            }
-          )}
+          {data.contentYaml.podcastsPlatforms.map((platform, index) => {
+            return <PodcastPlatform platform={platform}></PodcastPlatform>
+          })}
         </div>
       </div>
       <div className="w-11/12 md:w-5/6">
         <div className="flex items-stretch justify-center flex-wrap">
-          {data.sessionsYaml.sessions.map((session, index) => {
+          {data.contentYaml.sessions.map((session, index) => {
             return <Podcast session={session}></Podcast>
           })}
         </div>

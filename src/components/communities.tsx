@@ -41,7 +41,7 @@ const Communities = (): ReactElement => {
       }
     }
   `)
-  const communities = data.communitiesYaml.communities
+  const communities = data.contentYaml.communities
   return (
     <div className="section bg-gray-200" id="communities">
       <div className="w-full flex flex-col items-center justify-start">

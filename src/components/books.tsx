@@ -47,7 +47,7 @@ const Books = (): ReactElement => {
       <h2 className="my-6 w-4/5 lg:w-2/3 xl:w-1/2">Books</h2>
       <div className="w-11/12 md:w-5/6">
         <div className="flex justify-center flex-wrap">
-          {data.allBooksYaml.edges[0].node.books.map((book, index) => {
+          {data.contentYaml.books.map((book, index) => {
             return <Book book={book}></Book>
           })}
         </div>

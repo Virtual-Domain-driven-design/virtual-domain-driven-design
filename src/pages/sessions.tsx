@@ -120,9 +120,9 @@ function Sessions(): ReactElement {
     <Layout>
       <div className="section" id="Sessions">
         <UpcomingSessions
-          sessions={data.upcomingSessionsYaml.upcomingSessions}
+          sessions={data.contentYaml.upcomingSessions}
         ></UpcomingSessions>
-        <PastSessions sessions={data.sessionsYaml.sessions}></PastSessions>
+        <PastSessions sessions={data.contentYaml.sessions}></PastSessions>
       </div>
     </Layout>
   )

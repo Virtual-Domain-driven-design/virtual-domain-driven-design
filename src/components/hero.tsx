@@ -107,7 +107,7 @@ const Hero = (): ReactElement => {
           <div className="w-full hidden md:flex items-stretch justify-start my-2">
             <UpcomingSession
               index="0"
-              session={data.upcomingSessionsYaml.upcomingSessions[0]}
+              session={data.contentYaml.upcomingSessions[0]}
             ></UpcomingSession>
           </div>
           <Link
