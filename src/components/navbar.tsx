@@ -29,7 +29,7 @@ const SocialMenu = ({ data }) => {
       }}
       className="reveal-menu-content px-2 py-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 text-blue-600 focus:outline-none"
     >
-      Social
+      Socials
       <div className="menu-content">
         <SocialSubItems data={data}></SocialSubItems>
       </div>
@@ -41,7 +41,7 @@ const SocialMobileMenu = ({ data }) => {
   return (
     <div className="relative border-t border-gray-400 w-full">
       <div className="absolute top-0 right-0 text-gray-500 pt-2 pr-4 text-md">
-        Social
+        Socials
       </div>
       <SocialSubItems data={data}></SocialSubItems>
     </div>
@@ -82,6 +82,65 @@ const SocialSubItems = ({ data }) => {
           className="mr-2 h-8"
         />
         twitter
+      </a>
+    </div>
+  )
+}
+
+const ContributionMenu = ({ data }) => {
+  const [isCOntributionOpen, setContributionOpen] = useState(false)
+  return (
+    <button
+      onClick={() => {
+        setContributionOpen((isCOntributionOpen) => !isCOntributionOpen)
+      }}
+      className="reveal-menu-content px-2 py-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 text-blue-600 focus:outline-none"
+    >
+      Contribute
+      <div className="menu-content">
+        <ContributionSubItems data={data}></ContributionSubItems>
+      </div>
+    </button>
+  )
+}
+
+const ContributionMobileMenu = ({ data }) => {
+  return (
+    <div className="relative border-t border-gray-400 w-full">
+      <div className="absolute top-0 right-0 text-gray-500 pt-2 pr-4 text-md">
+        Contribute
+      </div>
+      <ContributionSubItems data={data}></ContributionSubItems>
+    </div>
+  )
+}
+
+const ContributionSubItems = ({ data }) => {
+  return (
+    <div>
+      <a
+        className="p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center"
+        href="https://github.com/Virtual-Domain-driven-design/virtual-domain-driven-design"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Img
+          fixed={data.githubLogo.childImageSharp.fixed}
+          className="mr-2 h-8"
+        />
+        Github
+      </a>
+      <a
+        className="p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center"
+        href="https://virtualddd.com/admin"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Img
+          fixed={data.netlifyLogo.childImageSharp.fixed}
+          className="mr-2 h-8"
+        />
+        Netlify CMS
       </a>
     </div>
   )
@@ -161,6 +220,7 @@ const NavbarMobile = ({ data }) => {
             Heuristics
           </a>
           <SocialMobileMenu data={data}></SocialMobileMenu>
+          <ContributionMobileMenu data={data}></ContributionMobileMenu>
         </div>
       </div>
     </div>
@@ -193,6 +253,7 @@ const NavbarDesktop = ({ data }) => {
           Heuristics
         </a>
         <SocialMenu data={data}></SocialMenu>
+        <ContributionMenu data={data}></ContributionMenu>
       </div>
     </div>
   )
@@ -216,6 +277,20 @@ const NavBar = (): ReactElement => {
         }
       }
       twitterLogo: file(relativePath: { eq: "logo/twitter.png" }) {
+        childImageSharp {
+          fixed(height: 24, width: 24) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      githubLogo: file(relativePath: { eq: "logo/github.png" }) {
+        childImageSharp {
+          fixed(height: 24, width: 24) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      netlifyLogo: file(relativePath: { eq: "logo/netlify.png" }) {
         childImageSharp {
           fixed(height: 24, width: 24) {
             ...GatsbyImageSharpFixed
