@@ -43,6 +43,12 @@ books:
       - essential
       - csharp
       - dotnet
+  - title: "Domain-Driven Design: The First 15 Years — Essays from the community"
+    author: The DDD Community
+    img: ../images/books/ddd15years.jpg
+    tags:
+      - essential
+      - anthology
   - title: " Object Design: Roles, Responsibilities, and Collaborations "
     author: Rebecca Wirfs-Brock and Alan McKean
     img: ../images/books/object-design-rdd.jpg
