@@ -1,6 +1,8 @@
-import React, { ReactElement } from "react"
+import React, { ReactElement, useState } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
+
+import Pagination from "./core/pagination"
 
 const Book = ({ book }) => {
   return (
@@ -24,7 +26,9 @@ const Book = ({ book }) => {
 }
 
 const Books = (): ReactElement => {
-  const data = useStaticQuery(graphql`
+  const pageLimit = 6
+  let currentPage = 1
+  const allBooks = useStaticQuery(graphql`
     query {
       allContentYaml(
         filter: { books: { elemMatch: { title: { ne: null } } } }
@@ -45,19 +49,41 @@ const Books = (): ReactElement => {
         }
       }
     }
-  `)
+  `).allContentYaml.nodes[0].books
+  const totalBooks = allBooks.length
+
+  const offset = (currentPage - 1) * pageLimit
+  const [currentBooks, setCurrentBooks] = useState(
+    allBooks.slice(offset, offset + pageLimit)
+  )
+
+  const onPageChanged = (changed) => {
+    const offset = (changed.currentPage - 1) * pageLimit
+    setCurrentBooks(allBooks.slice(offset, offset + pageLimit))
+  }
+
   return (
     <div className="w-full flex flex-col items-center justify-start">
       <h2 className="my-6 w-4/5 lg:w-2/3 xl:w-1/2">Books</h2>
       <div className="w-11/12 md:w-5/6">
         <div className="flex justify-center flex-wrap">
-          {data.allContentYaml.nodes[0].books.map((book, index) => {
+          {currentBooks.map((book, index) => {
             return <Book book={book}></Book>
           })}
+        </div>
+        <div className="d-flex flex-row py-4 align-items-center">
+          <Pagination
+            totalRecords={totalBooks}
+            pageLimit={pageLimit}
+            pageNeighbours={1}
+            onPageChanged={onPageChanged}
+          />
         </div>
       </div>
     </div>
   )
 }
+
+export const getQuery
 
 export default Books
