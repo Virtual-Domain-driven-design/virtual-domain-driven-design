@@ -50,3 +50,9 @@ books:
       - essential
       - object-design
       - Responsibilities
+  - title: Visual Collaboration Tools - for teams building software
+    author: Community Driven
+    img: ../images/books/visual-collaboration.png
+    tags:
+      - Visual-collaboration
+      - collaborative-modelling
