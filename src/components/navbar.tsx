@@ -21,14 +21,8 @@ const VDDDLogo = ({ data }) => {
 }
 
 const SocialMenu = ({ data }) => {
-  const [isSocialOpen, setSocialOpen] = useState(false)
   return (
-    <button
-      onClick={() => {
-        setSocialOpen((isSocialOpen) => !isSocialOpen)
-      }}
-      className="reveal-menu-content px-2 py-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 text-blue-600 focus:outline-none"
-    >
+    <button className="reveal-menu-content px-2 py-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 text-blue-600 focus:outline-none">
       Socials
       <div className="menu-content">
         <SocialSubItems data={data}></SocialSubItems>
@@ -88,14 +82,8 @@ const SocialSubItems = ({ data }) => {
 }
 
 const ContributionMenu = ({ data }) => {
-  const [isCOntributionOpen, setContributionOpen] = useState(false)
   return (
-    <button
-      onClick={() => {
-        setContributionOpen((isCOntributionOpen) => !isCOntributionOpen)
-      }}
-      className="reveal-menu-content px-2 py-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 text-blue-600 focus:outline-none"
-    >
+    <button className="reveal-menu-content px-2 py-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 text-blue-600 focus:outline-none">
       Contribute
       <div className="menu-content">
         <ContributionSubItems data={data}></ContributionSubItems>
