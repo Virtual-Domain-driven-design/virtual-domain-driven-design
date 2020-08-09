@@ -2,7 +2,11 @@ import React, { ReactElement, useState } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
-import Pagination from "./core/pagination"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faChevronCircleLeft,
+  faChevronCircleRight,
+} from "@fortawesome/free-solid-svg-icons"
 
 const Book = ({ book }) => {
   return (
@@ -63,21 +67,23 @@ const Books = (): ReactElement => {
   }
 
   return (
-    <div className="w-full flex flex-col items-center justify-start">
-      <h2 className="my-6 w-4/5 lg:w-2/3 xl:w-1/2">Books</h2>
-      <div className="w-11/12 md:w-5/6">
-        <div className="flex justify-center flex-wrap">
+    <div className="w-full flex flex-col items-center">
+      <h2 className="my-6 lg:w-2/3 xl:w-1/2">Books</h2>
+      <div className="flex flex-row justify-center">
+        <div className="flex justify-center items-center w-1/20">
+          <button className="transition duration-500 text-blue-700 hover:text-blue-400">
+            <FontAwesomeIcon icon={faChevronCircleLeft} size="4x" />
+          </button>
+        </div>
+        <div className="flex flex-row flex-wrap items-center w18/20">
           {currentBooks.map((book, index) => {
             return <Book book={book}></Book>
           })}
         </div>
-        <div className="d-flex flex-row py-4 align-items-center">
-          <Pagination
-            totalRecords={totalBooks}
-            pageLimit={pageLimit}
-            pageNeighbours={1}
-            onPageChanged={onPageChanged}
-          />
+        <div className="flex justify-center items-center w-1/20">
+          <button className="transition duration-500 text-blue-700 hover:text-blue-400">
+            <FontAwesomeIcon icon={faChevronCircleRight} size="4x" />
+          </button>
         </div>
       </div>
     </div>
