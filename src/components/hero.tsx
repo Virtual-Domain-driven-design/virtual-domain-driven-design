@@ -28,19 +28,30 @@ const VDDDInfo = ({ data }) => {
         fixed={data.vdddLogoTp.childImageSharp.fixed}
         className="hidden lg:block object-contain h-8 mb-4"
       />
-      <div className="mb-4 text-justify">
-        A community driven meetup for people who want to get more in-depth
-        knowledge of DDD from anywhere at anytime, join this virtual DDD
-        community for online panel discussions, community talks and more.
-        Everybody is welcome to join us, we love learning and growing together.
+      <div className="mb-4 text-center">
+        A community driven site for people who want to get more in-depth
+        knowledge of Domain-Driven Design. Go to the learning DDD part of the
+        site, contribute your knowledge to the world on our website or attend
+        one of our meetups anywhere at anytime. Everybody is welcome to join us,
+        we love learning and growing together.
       </div>
       <div className="mb-4 font-semibold">
         Share your deep, creative, productive or crazy ideas!
       </div>
-      <BlueButton
-        href="https://sessionize.com/virtual-ddd-meetup"
-        label="Propose a session"
-      />
+      <div className="flex flex-row space-x-4">
+        <BlueButton
+          href="https://sessionize.com/virtual-ddd-meetup"
+          label="Propose a Meetup"
+        />
+        <BlueButton
+          href="https://github.com/Virtual-Domain-driven-design/virtual-domain-driven-design"
+          label="Contribute on Github"
+        />
+        <BlueButton
+          href="https://virtualddd.com/admin"
+          label="Contribute on Netlify CMS"
+        />
+      </div>
     </div>
   )
 }
