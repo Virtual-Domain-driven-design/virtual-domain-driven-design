@@ -31,7 +31,7 @@ const Book = ({ book }) => {
 
 const Books = (): ReactElement => {
   const pageLimit = 6
-  let currentPage = 1
+  const [currentPage, setCurrentPage] = useState(1)
   const allBooks = useStaticQuery(graphql`
     query {
       allContentYaml(
@@ -61,8 +61,17 @@ const Books = (): ReactElement => {
     allBooks.slice(offset, offset + pageLimit)
   )
 
-  const onPageChanged = (changed) => {
-    const offset = (changed.currentPage - 1) * pageLimit
+  const handleMoveLeft = (evt) => {
+    const newPage = currentPage - 1
+    const offset = (newPage - 1) * pageLimit
+    setCurrentPage(newPage)
+    setCurrentBooks(allBooks.slice(offset, offset + pageLimit))
+  }
+
+  const handleMoveRight = (evt) => {
+    const newPage = currentPage + 1
+    const offset = (newPage - 1) * pageLimit
+    setCurrentPage(newPage)
     setCurrentBooks(allBooks.slice(offset, offset + pageLimit))
   }
 
@@ -71,7 +80,10 @@ const Books = (): ReactElement => {
       <h2 className="my-6 lg:w-2/3 xl:w-1/2">Books</h2>
       <div className="flex flex-row justify-center">
         <div className="flex justify-center items-center w-1/20">
-          <button className="transition duration-500 text-blue-700 hover:text-blue-400">
+          <button
+            onClick={handleMoveLeft}
+            className="transition duration-500 text-blue-700 hover:text-blue-400"
+          >
             <FontAwesomeIcon icon={faChevronCircleLeft} size="4x" />
           </button>
         </div>
@@ -81,7 +93,10 @@ const Books = (): ReactElement => {
           })}
         </div>
         <div className="flex justify-center items-center w-1/20">
-          <button className="transition duration-500 text-blue-700 hover:text-blue-400">
+          <button
+            onClick={handleMoveRight}
+            className="transition duration-500 text-blue-700 hover:text-blue-400"
+          >
             <FontAwesomeIcon icon={faChevronCircleRight} size="4x" />
           </button>
         </div>
