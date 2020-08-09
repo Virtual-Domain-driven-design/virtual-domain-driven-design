@@ -133,6 +133,4 @@ const Books = (): ReactElement => {
   )
 }
 
-export const getQuery
-
 export default Books
