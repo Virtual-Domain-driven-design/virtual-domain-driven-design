@@ -62,7 +62,7 @@ const DDDCrew = (): ReactElement => {
       <div className="w-11/12 md:w-5/6">
         <div className="flex justify-center flex-wrap">
           {data.allContentYaml.nodes[0].dddCrew.map((repo, index) => {
-            return <Repo repo={repo}></Repo>
+            return <Repo key={index} repo={repo}></Repo>
           })}
         </div>
       </div>

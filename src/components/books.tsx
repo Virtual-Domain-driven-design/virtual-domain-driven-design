@@ -19,7 +19,10 @@ const Book = ({ book }) => {
       <div className="px-1 w-full flex flex-row flex-wrap">
         {book.tags.map((tag, index) => {
           return (
-            <div className="flex-shrink-0 leading-none text-xs tracking-tighter bg-gray-200 text-gray-700 rounded-md p-1 m-1">
+            <div
+              key={index}
+              className="flex-shrink-0 leading-none text-xs tracking-tighter bg-gray-200 text-gray-700 rounded-md p-1 m-1"
+            >
               {tag}
             </div>
           )
@@ -114,7 +117,7 @@ const Books = (): ReactElement => {
         </div>
         <div className="flex flex-row flex-wrap items-center w18/20">
           {currentBooks.map((book, index) => {
-            return <Book book={book}></Book>
+            return <Book key={index} book={book}></Book>
           })}
         </div>
         <div className="flex justify-center items-center w-1/20">

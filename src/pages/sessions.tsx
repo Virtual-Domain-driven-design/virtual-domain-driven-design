@@ -13,10 +13,7 @@ const UpcomingSessions = ({ sessions }) => {
         <div className="flex flex-col items-center justify-start">
           {sessions.map((session, index) => {
             return (
-              <UpcomingSession
-                index={index}
-                session={session}
-              ></UpcomingSession>
+              <UpcomingSession key={index} session={session}></UpcomingSession>
             )
           })}
         </div>
@@ -53,7 +50,7 @@ const PastSessions = ({ sessions }) => {
               if (session.video) {
                 return (
                   <div
-                    index={index}
+                    key={index}
                     className="bg-white w-64 rounded-lg shadow-md p-2 m-1"
                   >
                     <div className="text-sm text-gray-600">{sessions.date}</div>
@@ -78,7 +75,7 @@ const PastSessions = ({ sessions }) => {
                   </div>
                 )
               }
-              return <div></div>
+              return <div key={index}></div>
             })}
           </div>
         </div>

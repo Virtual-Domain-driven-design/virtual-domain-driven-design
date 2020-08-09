@@ -64,7 +64,7 @@ const Communities = (): ReactElement => {
         <div className="w-16/12 md:w-5/6">
           <div className="flex justify-center flex-wrap">
             {communities.map((community, index) => {
-              return <Community index={index} community={community}></Community>
+              return <Community key={index} community={community}></Community>
             })}
           </div>
         </div>

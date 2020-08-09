@@ -133,7 +133,12 @@ const Podcasts = (): ReactElement => {
         </p>
         <div className="my-1 w-full flex items-center justify-around">
           {allPodcastsPlatforms.map((platform, index) => {
-            return <PodcastPlatform platform={platform}></PodcastPlatform>
+            return (
+              <PodcastPlatform
+                key={index}
+                platform={platform}
+              ></PodcastPlatform>
+            )
           })}
         </div>
       </div>
@@ -151,7 +156,7 @@ const Podcasts = (): ReactElement => {
         </div>
         <div className="flex flex-row flex-wrap items-center w18/20">
           {currentPodcasts.map((session, index) => {
-            return <Podcast session={session}></Podcast>
+            return <Podcast key={index} session={session}></Podcast>
           })}
         </div>
         <div className="flex justify-center items-center w-1/20">
