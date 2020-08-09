@@ -2,6 +2,8 @@ import React, { ReactElement } from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
+import BlueButton from "./core/blue-button"
+
 import UpcomingSession from "./upcoming-session"
 
 import BackgroundImage from "gatsby-background-image"
@@ -35,14 +37,10 @@ const VDDDInfo = ({ data }) => {
       <div className="mb-4 font-semibold">
         Share your deep, creative, productive or crazy ideas!
       </div>
-      <a
-        className="p-4 bg-blue-500 floating-action-button text-white"
+      <BlueButton
         href="https://sessionize.com/virtual-ddd-meetup"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Propose a session
-      </a>
+        label="Propose a session"
+      />
     </div>
   )
 }

@@ -15,6 +15,7 @@
     "gatsby-cli": "^2.12.60",
     "gatsby-plugin-mdx": "^1.2.33",
     "gatsby-plugin-netlify-cms": "^4.1.38",
+    "gatsby-plugin-page-creator": "^2.3.20",
     "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-remark-autolink-headers": "^2.3.11",
     "gatsby-remark-images": "^3.3.25",

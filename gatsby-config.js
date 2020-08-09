@@ -13,6 +13,12 @@ module.exports = {
     `gatsby-remark-images`,
     `gatsby-transformer-yaml`,
     {
+      resolve: `gatsby-plugin-page-creator`,
+      options: {
+        path: `${__dirname}/src/pages/learning-ddd`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [".mdx", ".md"],

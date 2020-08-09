@@ -1,47 +1,14 @@
 import React, { ReactElement, useState } from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
+import Podcast from "./podcast"
+import PodcastPlatforms from "./podcast-platforms"
+import BlueButton from "./core/blue-button"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faChevronCircleLeft,
   faChevronCircleRight,
 } from "@fortawesome/free-solid-svg-icons"
-
-const Podcast = ({ session }) => {
-  if (session.podcast) {
-    return (
-      <div className="group bg-white w-64 rounded-lg shadow-md p-2 m-1">
-        <div className="embed-responsive aspect-ratio-16/9">
-          <iframe
-            title={session.title}
-            className="embed-responsive-item"
-            allowFullScreen={true}
-            src={session.podcast}
-            scrolling="no"
-            frameBorder={0}
-          ></iframe>
-        </div>
-        <div className="text-sm text-left font-bold link">{session.title}</div>
-      </div>
-    )
-  }
-  return <div></div>
-}
-
-const PodcastPlatform = ({ platform }) => {
-  return (
-    <a
-      key={platform.name}
-      className="floating-action-button rounded-full"
-      href={platform.url}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <Img fluid={platform.img.childImageSharp.fluid} className="h-10 w-10" />
-    </a>
-  )
-}
 
 const PodcastsOverview = (): ReactElement => {
   const pageLimit = 6
@@ -134,10 +101,10 @@ const PodcastsOverview = (): ReactElement => {
         <div className="my-1 w-full flex items-center justify-around">
           {allPodcastsPlatforms.map((platform, index) => {
             return (
-              <PodcastPlatform
+              <PodcastPlatforms
                 key={index}
                 platform={platform}
-              ></PodcastPlatform>
+              ></PodcastPlatforms>
             )
           })}
         </div>
@@ -171,6 +138,7 @@ const PodcastsOverview = (): ReactElement => {
           </button>
         </div>
       </div>
+      <BlueButton to="/learning-ddd/podcasts" label="All Podcasts" />
     </div>
   )
 }

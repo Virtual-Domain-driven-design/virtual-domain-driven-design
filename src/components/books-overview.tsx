@@ -1,36 +1,13 @@
 import React, { ReactElement, useState } from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
+import Book from "./book"
+import BlueButton from "./core/blue-button"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faChevronCircleLeft,
   faChevronCircleRight,
 } from "@fortawesome/free-solid-svg-icons"
-
-const Book = ({ book }) => {
-  return (
-    <div className="group bg-white w-48 rounded-lg shadow-md m-2 flex flex-col items-center justify-start">
-      <Img
-        className="my-2 w-48 h-64"
-        fluid={book.img.childImageSharp.fluid}
-        imgStyle={{ objectFit: "contain" }}
-      ></Img>
-      <div className="px-1 w-full flex flex-row flex-wrap">
-        {book.tags.map((tag, index) => {
-          return (
-            <div
-              key={index}
-              className="flex-shrink-0 leading-none text-xs tracking-tighter bg-gray-200 text-gray-700 rounded-md p-1 m-1"
-            >
-              {tag}
-            </div>
-          )
-        })}
-      </div>
-    </div>
-  )
-}
 
 const BooksOverview = (): ReactElement => {
   const pageLimit = 6
@@ -132,6 +109,7 @@ const BooksOverview = (): ReactElement => {
           </button>
         </div>
       </div>
+      <BlueButton to="/learning-ddd/books" label="All Books" />
     </div>
   )
 }
