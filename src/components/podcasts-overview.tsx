@@ -43,7 +43,7 @@ const PodcastPlatform = ({ platform }) => {
   )
 }
 
-const Podcasts = (): ReactElement => {
+const PodcastsOverview = (): ReactElement => {
   const pageLimit = 6
   const [currentPage, setCurrentPage] = useState(1)
   const data = useStaticQuery(graphql`
@@ -175,4 +175,4 @@ const Podcasts = (): ReactElement => {
   )
 }
 
-export default Podcasts
+export default PodcastsOverview

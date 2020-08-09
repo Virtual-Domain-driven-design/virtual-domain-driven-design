@@ -23,7 +23,7 @@ const Repo = ({ repo }) => {
   )
 }
 
-const DDDCrew = (): ReactElement => {
+const DDDCrewOverview = (): ReactElement => {
   const data = useStaticQuery(graphql`
     query {
       allContentYaml(
@@ -70,4 +70,4 @@ const DDDCrew = (): ReactElement => {
   )
 }
 
-export default DDDCrew
+export default DDDCrewOverview

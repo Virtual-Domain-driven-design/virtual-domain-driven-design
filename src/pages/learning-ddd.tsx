@@ -1,15 +1,15 @@
 import React, { ReactElement } from "react"
 import Layout from "../templates/layout"
-import DDDCrew from "../components/ddd-crew"
-import Books from "../components/books"
-import Podcasts from "../components/podcasts"
+import DDDCrewOverview from "../components/ddd-crew-overview"
+import BooksOverview from "../components/books-overview"
+import PodcastsOverview from "../components/podcasts-overview"
 
 function LearningDDD(): ReactElement {
   return (
     <Layout>
-      <DDDCrew></DDDCrew>
-      <Books></Books>
-      <Podcasts></Podcasts>
+      <DDDCrewOverview></DDDCrewOverview>
+      <BooksOverview></BooksOverview>
+      <PodcastsOverview></PodcastsOverview>
     </Layout>
   )
 }

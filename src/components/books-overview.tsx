@@ -32,7 +32,7 @@ const Book = ({ book }) => {
   )
 }
 
-const Books = (): ReactElement => {
+const BooksOverview = (): ReactElement => {
   const pageLimit = 6
   const [currentPage, setCurrentPage] = useState(1)
   const allBooks = useStaticQuery(graphql`
@@ -136,4 +136,4 @@ const Books = (): ReactElement => {
   )
 }
 
-export default Books
+export default BooksOverview
