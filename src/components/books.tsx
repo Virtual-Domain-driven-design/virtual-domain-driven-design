@@ -54,25 +54,47 @@ const Books = (): ReactElement => {
       }
     }
   `).allContentYaml.nodes[0].books
-  const totalBooks = allBooks.length
+  const totalBooksLength = allBooks.length
+
+  const defineRightArrowVisibility = (newPage) => {
+    if (totalBooksLength > pageLimit * newPage) {
+      return ""
+    } else {
+      return "invisible"
+    }
+  }
+
+  const [leftInvisible, setLeftInvisible] = useState("invisible")
+  const [rightInvisible, setRightInvisible] = useState(
+    defineRightArrowVisibility(1)
+  )
 
   const offset = (currentPage - 1) * pageLimit
   const [currentBooks, setCurrentBooks] = useState(
     allBooks.slice(offset, offset + pageLimit)
   )
 
-  const handleMoveLeft = (evt) => {
+  const handleMoveLeft = () => {
     const newPage = currentPage - 1
     const offset = (newPage - 1) * pageLimit
-    setCurrentPage(newPage)
-    setCurrentBooks(allBooks.slice(offset, offset + pageLimit))
+    pageChange(offset, newPage)
   }
 
-  const handleMoveRight = (evt) => {
+  const handleMoveRight = () => {
     const newPage = currentPage + 1
     const offset = (newPage - 1) * pageLimit
+    pageChange(offset, newPage)
+  }
+
+  const pageChange = (offset, newPage) => {
     setCurrentPage(newPage)
     setCurrentBooks(allBooks.slice(offset, offset + pageLimit))
+    if (newPage > 1) {
+      setLeftInvisible("")
+    } else {
+      setLeftInvisible("invisible")
+    }
+    setRightInvisible(defineRightArrowVisibility(newPage))
   }
 
   return (
@@ -82,7 +104,10 @@ const Books = (): ReactElement => {
         <div className="flex justify-center items-center w-1/20">
           <button
             onClick={handleMoveLeft}
-            className="transition duration-500 text-blue-700 hover:text-blue-400"
+            className={
+              leftInvisible +
+              " transition duration-500 text-blue-700 hover:text-blue-400"
+            }
           >
             <FontAwesomeIcon icon={faChevronCircleLeft} size="4x" />
           </button>
@@ -95,7 +120,10 @@ const Books = (): ReactElement => {
         <div className="flex justify-center items-center w-1/20">
           <button
             onClick={handleMoveRight}
-            className="transition duration-500 text-blue-700 hover:text-blue-400"
+            className={
+              rightInvisible +
+              " transition duration-500 text-blue-700 hover:text-blue-400"
+            }
           >
             <FontAwesomeIcon icon={faChevronCircleRight} size="4x" />
           </button>
