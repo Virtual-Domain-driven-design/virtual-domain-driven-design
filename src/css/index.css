@@ -23,6 +23,11 @@ h2 {
   height: 20rem;
 }
 
+
+.ddd-crew {
+  height: 20rem;
+}
+
 @tailwind utilities;
 
 a {

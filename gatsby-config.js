@@ -95,6 +95,27 @@ module.exports = {
         remote: `https://github.com/ddd-crew/bounded-context-canvas.git`,
       },
     },
+    {
+      resolve: `gatsby-source-git`,
+      options: {
+        name: `ddd-crew-virtual-modelling-template`,
+        remote: `https://github.com/ddd-crew/virtual-modelling-templates.git`,
+      },
+    },
+    {
+      resolve: `gatsby-source-git`,
+      options: {
+        name: `ddd-crew-aggregate-design-canvas`,
+        remote: `https://github.com/ddd-crew/aggregate-design-canvas.git`,
+      },
+    },
+    {
+      resolve: `gatsby-source-git`,
+      options: {
+        name: `ddd-crew-domain-message-flow-modelling`,
+        remote: `https://github.com/ddd-crew/domain-message-flow-modelling.git`,
+      },
+    },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {

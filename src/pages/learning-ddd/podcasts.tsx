@@ -5,7 +5,7 @@ import Layout from "../../templates/layout"
 import Podcast from "../../components/podcast"
 import PodcastPlatforms from "../../components/podcast-platforms"
 
-function LearningDDD(): ReactElement {
+function Podcasts(): ReactElement {
   const data = useStaticQuery(graphql`
     query {
       sessions: allContentYaml(
@@ -73,4 +73,4 @@ function LearningDDD(): ReactElement {
   )
 }
 
-export default LearningDDD
+export default Podcasts

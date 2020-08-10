@@ -1,30 +1,19 @@
-import React, { ReactElement } from "react"
-import { graphql, useStaticQuery, Link } from "gatsby"
-import Img from "gatsby-image"
+import React, { ReactElement, useState } from "react"
+import { graphql, useStaticQuery } from "gatsby"
 
-const Repo = ({ repo }) => {
-  return (
-    <Link
-      className="group floating-action-button bg-white w-full sm:w-64 rounded-lg shadow-md m-2 flex flex-col items-center justify-start"
-      to={repo.to}
-    >
-      <div className="flex flex-col items-center justify-start">
-        <div className="m-2 h-8 font-semibold text-gray-800 text-sm text-center">
-          {repo.name}
-        </div>
-        <Img
-          fluid={repo.img.childImageSharp.fluid}
-          className="my-2 w-64 h-32"
-          imgStyle={{ objectFit: "contain" }}
-        />
-        <div className="text-gray-800 text-sm text-center">{repo.excerpt}</div>
-      </div>
-    </Link>
-  )
-}
+import DDDCrew from "./ddd-crew"
+
+import BlueButton from "./core/blue-button"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faChevronCircleLeft,
+  faChevronCircleRight,
+} from "@fortawesome/free-solid-svg-icons"
 
 const DDDCrewOverview = (): ReactElement => {
-  const data = useStaticQuery(graphql`
+  const pageLimit = 4
+  const [currentPage, setCurrentPage] = useState(1)
+  const allDDDCrew = useStaticQuery(graphql`
     query {
       allContentYaml(
         filter: { dddCrew: { elemMatch: { name: { ne: null } } } }
@@ -45,27 +34,87 @@ const DDDCrewOverview = (): ReactElement => {
         }
       }
     }
-  `)
+  `).allContentYaml.nodes[0].dddCrew
+  const totalDDDCrewLength = allDDDCrew.length
+
+  const defineRightArrowVisibility = (newPage) => {
+    if (totalDDDCrewLength > pageLimit * newPage) {
+      return ""
+    } else {
+      return "invisible"
+    }
+  }
+
+  const [leftInvisible, setLeftInvisible] = useState("invisible")
+  const [rightInvisible, setRightInvisible] = useState(
+    defineRightArrowVisibility(1)
+  )
+
+  const offset = (currentPage - 1) * pageLimit
+  const [currentDDDCrew, setCurrentDDDCrew] = useState(
+    allDDDCrew.slice(offset, offset + pageLimit)
+  )
+
+  const handleMoveLeft = () => {
+    const newPage = currentPage - 1
+    const offset = (newPage - 1) * pageLimit
+    pageChange(offset, newPage)
+  }
+
+  const handleMoveRight = () => {
+    const newPage = currentPage + 1
+    const offset = (newPage - 1) * pageLimit
+    pageChange(offset, newPage)
+  }
+
+  const pageChange = (offset, newPage) => {
+    setCurrentPage(newPage)
+    setCurrentDDDCrew(allDDDCrew.slice(offset, offset + pageLimit))
+    if (newPage > 1) {
+      setLeftInvisible("")
+    } else {
+      setLeftInvisible("invisible")
+    }
+    setRightInvisible(defineRightArrowVisibility(newPage))
+  }
+
   return (
-    <div className="w-full flex flex-col items-center justify-start">
-      <h2 className="my-6 w-4/5 lg:w-2/3 xl:w-1/2">DDD-crew</h2>
-      <div>
-        <a
-          className="my-8 bg-blue-500 floating-action-button text-white rounded-lg border-2"
-          href="https://github.com/ddd-crew"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Get involved with the ddd-crew on Github
-        </a>
-      </div>
-      <div className="w-11/12 md:w-5/6">
-        <div className="flex justify-center flex-wrap">
-          {data.allContentYaml.nodes[0].dddCrew.map((repo, index) => {
-            return <Repo key={index} repo={repo}></Repo>
+    <div className="w-full flex flex-col items-center">
+      <h2 className="my-6 lg:w-2/3 xl:w-1/2">DDD-crew</h2>
+      <BlueButton
+        href="https://github.com/ddd-crew"
+        label="Get involved with the ddd-crew on Github"
+      />
+      <div className="flex flex-row justify-center">
+        <div className="flex justify-center items-center w-1/20">
+          <button
+            onClick={handleMoveLeft}
+            className={
+              leftInvisible +
+              " transition duration-500 text-blue-700 hover:text-blue-400"
+            }
+          >
+            <FontAwesomeIcon icon={faChevronCircleLeft} size="4x" />
+          </button>
+        </div>
+        <div className="flex flex-row flex-wrap items-center w18/20">
+          {currentDDDCrew.map((repo, index) => {
+            return <DDDCrew key={index} repo={repo}></DDDCrew>
           })}
         </div>
+        <div className="flex justify-center items-center w-1/20">
+          <button
+            onClick={handleMoveRight}
+            className={
+              rightInvisible +
+              " transition duration-500 text-blue-700 hover:text-blue-400"
+            }
+          >
+            <FontAwesomeIcon icon={faChevronCircleRight} size="4x" />
+          </button>
+        </div>
       </div>
+      <BlueButton to="/learning-ddd/ddd-crew" label="All DDD-Crew" />
     </div>
   )
 }
