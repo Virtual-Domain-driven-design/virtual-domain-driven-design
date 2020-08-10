@@ -29,6 +29,7 @@ collections:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Author", name: "author", widget: "string" }
               - { label: "Image", name: "img", widget: "image", allow_multiple: false}
+              - { label: "Level", name: "level", widget: "select", options: ["all", "beginner", "intermediate", "advanced"] }
               - { label: "Tags", name: "tags", widget: "list"}
   - name: "communities"
     label: "DDD Communities"

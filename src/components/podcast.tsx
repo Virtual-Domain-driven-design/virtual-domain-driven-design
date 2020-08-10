@@ -2,8 +2,8 @@ import React, { ReactElement } from "react"
 
 const Podcast = ({ session }): ReactElement => {
   return (
-    <div className="group bg-white w-64 rounded-lg shadow-md p-2 m-1">
-      <div className="embed-responsive aspect-ratio-16/9">
+    <div className="group bg-white w-64 h-48 rounded-lg shadow-md p-2 m-1">
+      <div className="embed-responsive aspect-ratio-21/9">
         <iframe
           title={session.title}
           className="embed-responsive-item"

@@ -21,6 +21,7 @@ const BooksOverview = (): ReactElement => {
           books {
             author
             title
+            level
             tags
             img {
               childImageSharp {

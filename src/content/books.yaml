@@ -2,28 +2,37 @@ books:
   - title: Domain-Driven Design Tackling Complexity in the Heart of Software
     author: Eric Evans
     img: ../images/books/domain-driven-design.jpg
+    level: all
     tags:
       - essential
+      - core
   - title: Implementing Domain-driven design
     author: Vaughn Vernon
     img: ../images/books/implementing-domain-driven-design.jpg
+    category: core
+    level: intermediate
     tags:
       - essential
+      - core
       - java
   - title: Patterns, Principles and Practices of Domain-Driven Design
     author: Scott Millett, Nick Tune
     img: ../images/books/patterns_principles_practices.jpg
+    level: intermediate
     tags:
       - essential
       - csharp
   - title: Domain-driven design distilled
     author: Vaughn Vernon
     img: ../images/books/domain-driven-design-distilled.jpg
+    level: beginner
     tags:
       - essential
+      - introductory
   - title: Hands-On Domain-Driven Design with .NET Core
     author: Alexey Zimarev
     img: ../images/books/hands-on-domain-driven-design-with-dotnet-core.jpg
+    level: intermediate
     tags:
       - essential
       - dotnet core
@@ -33,12 +42,15 @@ books:
   - title: Domain Modeling Made Functional
     author: Scott Wlaschin
     img: ../images/books/domain-modeling-made-functional.jpg
+    level: beginner
     tags:
       - essential
       - fsharp
+      - functional programming
   - title: Applying Domain-driven design and Patterns
     author: Jimmy Nilsson
     img: ../images/books/Applying-Domain-Driven-Design-and-Patterns-by-Jimmy-Nilsson.jpg
+    level: beginner
     tags:
       - essential
       - csharp
@@ -46,12 +58,22 @@ books:
   - title: "Domain-Driven Design: The First 15 Years — Essays from the community"
     author: The DDD Community
     img: ../images/books/ddd15years.jpg
+    level: all
     tags:
       - essential
       - anthology
+  - title: "Iintroducing EventStorming"
+    author: Alberto Brandolini
+    img: ../images/books/eventstorming.jpg
+    level: all
+    tags:
+      - essential
+      - eventstorming
+      - bounded context
   - title: " Object Design: Roles, Responsibilities, and Collaborations "
     author: Rebecca Wirfs-Brock and Alan McKean
     img: ../images/books/object-design-rdd.jpg
+    level: intermediate
     tags:
       - essential
       - object-design
@@ -59,6 +81,7 @@ books:
   - title: Visual Collaboration Tools - for teams building software
     author: Community Driven
     img: ../images/books/visual-collaboration.png
+    level: beginner
     tags:
       - Visual-collaboration
       - collaborative-modelling
