@@ -42,6 +42,7 @@ Fill in your own based on the following template:
 - title: "The title of the book"
   author: "The Author of the book"
   img: "location "../images/books/" + image name
+  level: "Select one: all, beginner, intermediate or advanced"
   tags: "list of tags free to fill in, examples:"
     - essential
     - collaborative-modelling
