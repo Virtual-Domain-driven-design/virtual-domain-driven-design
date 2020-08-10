@@ -14,6 +14,10 @@ The CMS now supports the following contribution:
 
 - Communities
 - Books
+- Videos
+- DDD Europe Videos
+- KanDDDinsky Videos
+- ExploreDDD Videos
 
 More will be added later!
 
@@ -48,6 +52,20 @@ Fill in your own based on the following template:
     - collaborative-modelling
 ```
 
+### Videos
+
+The videos on the site are sources from `src/content/videos.yaml` except for DDD Europe `src/content/dddeu.yaml`, KanDDDinsky `src/content/kandddinsky.yaml` and ExploreDDD `src/content/exploreddd.yaml`.
+Fill in your own based on the following template:
+
+```
+- title: "The title of the book"
+  video: "Embedded link to the video, Example for youtube: https://youtube.com/embed/{id}"
+  level: "Select one: all, beginner, intermediate or advanced"
+  tags: "list of tags free to fill in, examples:"
+    - essential
+    - collaborative-modelling
+```
+
 ## Help develop the website
 
 We love community contribution and we build Virtual Domain-Driven Design with Gatsby to make it and flexible and hopefully easy enough so that people can contribute on building the website.
@@ -59,6 +77,15 @@ The following Gatsby plugins are already configured, but don't shy away from add
 - gatsby-plugin-react-svg
 - gatsby-plugin-netlify-cms
 - gatsby-source-git
+- gatsby-plugin-offline
+- gatsby-plugin-breadcrumb (Not used yet)
+
+Also included is frontawesome:
+
+- fortawesome/fontawesome-svg-core
+- fortawesome/free-brands-svg-icons
+- fortawesome/free-solid-svg-icons
+- fortawesome/react-fontawesome
 
 Requirements to build:
 
