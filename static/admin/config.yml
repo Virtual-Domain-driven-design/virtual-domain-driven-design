@@ -31,6 +31,62 @@ collections:
               - { label: "Image", name: "img", widget: "image", allow_multiple: false}
               - { label: "Level", name: "level", widget: "select", options: ["all", "beginner", "intermediate", "advanced"] }
               - { label: "Tags", name: "tags", widget: "list", hint: "List of comma seperated tags"}
+      - name: "videos"
+        label: "Videos"
+        file: "src/content/videos.yaml"
+        extension: "yaml"
+        fields:
+          - name: "videos"
+            label: "Videos"
+            widget: "list"
+            summary: '{{fields.title}}'
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Video URL", name: "video", widget: "string", hint: "Embedded link to the video, Example for youtube: https://youtube.com/embed/{id}" }
+              - { label: "Level", name: "level", widget: "select", options: ["all", "beginner", "intermediate", "advanced"] }
+              - { label: "Tags", name: "tags", widget: "list", hint: "List of comma seperated tags"}
+      - name: "dddeu"
+        label: "DDD Europe Videos"
+        file: "src/content/dddeu.yaml"
+        extension: "yaml"
+        fields:
+          - name: "videos"
+            label: "Videos"
+            widget: "list"
+            summary: '{{fields.title}}'
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Video URL", name: "video", widget: "string", hint: "Embedded link to the video, Example for youtube: https://youtube.com/embed/{id}" }
+              - { label: "Level", name: "level", widget: "select", options: ["all", "beginner", "intermediate", "advanced"] }
+              - { label: "Tags", name: "tags", widget: "list", hint: "List of comma seperated tags"}
+      - name: "kandddinsky"
+        label: "KanDDDinsky Videos"
+        file: "src/content/kandddinsky.yaml"
+        extension: "yaml"
+        fields:
+          - name: "videos"
+            label: "Videos"
+            widget: "list"
+            summary: '{{fields.title}}'
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Video URL", name: "video", widget: "string", hint: "Embedded link to the video, Example for youtube: https://youtube.com/embed/{id}" }
+              - { label: "Level", name: "level", widget: "select", options: ["all", "beginner", "intermediate", "advanced"] }
+              - { label: "Tags", name: "tags", widget: "list", hint: "List of comma seperated tags"}
+      - name: "exploreddd"
+        label: "ExploreDDD Videos"
+        file: "src/content/exploreddd.yaml"
+        extension: "yaml"
+        fields:
+          - name: "videos"
+            label: "Videos"
+            widget: "list"
+            summary: '{{fields.title}}'
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Video URL", name: "video", widget: "string", hint: "Embedded link to the video, Example for youtube: https://youtube.com/embed/{id}" }
+              - { label: "Level", name: "level", widget: "select", options: ["all", "beginner", "intermediate", "advanced"] }
+              - { label: "Tags", name: "tags", widget: "list", hint: "List of comma seperated tags"}
   - name: "communities"
     label: "DDD Communities"
     files:

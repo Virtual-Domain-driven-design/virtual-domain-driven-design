@@ -1,0 +1,15 @@
+videos:
+  - title: "The Art of Discovering Bounded Contexts by Nick Tune"
+    video: "https://www.youtube.com/embed/ez9GWESKG4I"
+    level: beginner
+    tags:
+      - essential
+      - bounded context
+      - collaborative modelling
+  - title: "DDD & Microservices: At Last, Some Boundaries! • Eric Evans"
+    video: "https://www.youtube.com/embed/yPvef9R3k-M"
+    level: beginner
+    tags:
+      - microservices
+      - essential
+      - bounded context

@@ -1,0 +1,14 @@
+videos:
+  - title: "Rebecca Wirfs-Brock - Keynote: Cultivating Your Design Heuristics"
+    video: "https://www.youtube.com/embed/fWCt5KWfTuo"
+    level: beginner
+    tags:
+      - essential
+      - design heuristics
+  - title: "Ward Cunningham - Keynote: Observation of Emergent Schema in Organized Development"
+    video: "https://www.youtube.com/embed/oPJIXPC_vn8"
+    level: intermediate
+    tags:
+      - keynote
+      - organisation development
+      - emergent design

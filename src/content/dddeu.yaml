@@ -1,0 +1,14 @@
+videos:
+  - title: "Eric Evans — Tackling Complexity in the Heart of Software"
+    video: "https://www.youtube.com/embed/dnUFEg68ESM"
+    level: beginner
+    tags:
+      - essential
+      - core
+  - title: "Greg Young — A Decade of DDD, CQRS, Event Sourcing"
+    video: "https://www.youtube.com/embed/LDW0QWie21s"
+    level: beginner
+    tags:
+      - essential
+      - core
+      - cqrs/es

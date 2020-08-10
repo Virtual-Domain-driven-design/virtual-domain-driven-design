@@ -1,0 +1,15 @@
+videos:
+  - title: "KanDDDinsky Keynote 2017 - Alberto Brandolini"
+    video: "https://www.youtube.com/embed/2bDgCCZ2Sy0"
+    level: beginner
+    tags:
+      - essential
+      - core
+  - title: "High-scalability domain models: SkuVault case study - Rinat Abdullin"
+    video: "https://www.youtube.com/embed/6BLNcv-sPlk"
+    level: intermediate
+    tags:
+      - essential
+      - core
+      - emergent design
+      - cqrs/es

@@ -221,7 +221,7 @@ sessions:
   - title: "Natural Boundaries - how to read the signs and benefit from the problems"
     date: "Friday, May 15th. 2020"
     time: "18:45 CEST"
-    video: "https://youtu.be/yMRuP3tcugQ"
+    video: "https://www.youtube.com/embed/yMRuP3tcugQ"
     podcast: "https://oembed.libsyn.com/embed?item_id=15382136"
     level: advanced
     description:
@@ -297,7 +297,7 @@ sessions:
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270457433/"
     tags:
       - service design
-      - heuristics
+      - design heuristics
       - team topologies
 
 
@@ -440,7 +440,7 @@ sessions:
     tags:
       - remote work
       - eventstorming
-      - heuristics
+      - design heuristics
 
   - title: "Virtual Lean Coffee Fishbowl: UX, DDD and BDD"
     date: "Thursday, January 16th. 2020"
@@ -631,7 +631,7 @@ sessions:
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/263800593/"
     tags:
       - eventstorming
-      - heuristics
+      - design heuristics
       - big picture
       
 
