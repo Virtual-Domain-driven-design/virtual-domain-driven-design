@@ -19,6 +19,10 @@ h2 {
   @apply block;
 }
 
+.session {
+  height: 20rem;
+}
+
 @tailwind utilities;
 
 a {

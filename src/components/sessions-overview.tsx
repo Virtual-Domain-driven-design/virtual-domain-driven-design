@@ -1,8 +1,8 @@
 import React, { ReactElement, useState } from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import Podcast from "./podcast"
-import PodcastPlatforms from "./podcast-platforms"
 import BlueButton from "./core/blue-button"
+
+import Session from "./session"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
@@ -10,48 +10,29 @@ import {
   faChevronCircleRight,
 } from "@fortawesome/free-solid-svg-icons"
 
-const PodcastsOverview = (): ReactElement => {
+const SessionOverview = (): ReactElement => {
   const pageLimit = 5
   const [currentPage, setCurrentPage] = useState(1)
-  const data = useStaticQuery(graphql`
+  const allSessions = useStaticQuery(graphql`
     query {
-      sessions: allContentYaml(
+      allContentYaml(
         filter: { sessions: { elemMatch: { title: { ne: null } } } }
       ) {
         nodes {
           sessions {
             title
-            podcast
-          }
-        }
-      }
-      podcasts: allContentYaml(
-        filter: { podcastsPlatforms: { elemMatch: { name: { ne: null } } } }
-      ) {
-        nodes {
-          podcastsPlatforms {
-            name
-            url
-            img {
-              childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
+            level
+            video
+            tags
           }
         }
       }
     }
-  `)
-  const allPodcastsPlatforms = data.podcasts.nodes[0].podcastsPlatforms
-  const allPodcasts = data.sessions.nodes[0].sessions.filter(
-    (session) => session.podcast != null
-  )
-  const totalPodcastsLength = allPodcasts.length
+  `).allContentYaml.nodes[0].sessions.filter((session) => session.video)
+  const totalSessionsLength = allSessions.length
 
   const defineRightArrowVisibility = (newPage) => {
-    if (totalPodcastsLength > pageLimit * newPage) {
+    if (totalSessionsLength > pageLimit * newPage) {
       return ""
     } else {
       return "invisible"
@@ -64,8 +45,8 @@ const PodcastsOverview = (): ReactElement => {
   )
 
   const offset = (currentPage - 1) * pageLimit
-  const [currentPodcasts, setCurrentPodcasts] = useState(
-    allPodcasts.slice(offset, offset + pageLimit)
+  const [currentSessions, setCurrentSessions] = useState(
+    allSessions.slice(offset, offset + pageLimit)
   )
 
   const handleMoveLeft = () => {
@@ -82,7 +63,7 @@ const PodcastsOverview = (): ReactElement => {
 
   const pageChange = (offset, newPage) => {
     setCurrentPage(newPage)
-    setCurrentPodcasts(allPodcasts.slice(offset, offset + pageLimit))
+    setCurrentSessions(allSessions.slice(offset, offset + pageLimit))
     if (newPage > 1) {
       setLeftInvisible("")
     } else {
@@ -93,22 +74,7 @@ const PodcastsOverview = (): ReactElement => {
 
   return (
     <div className="w-full flex flex-col items-center">
-      <h2 className="my-6 lg:w-2/3 xl:w-1/2">Podcasts</h2>
-      <div>
-        <p className="italic text-justify">
-          Listen to the VDDD podcast by clicking on one of the platforms below
-        </p>
-        <div className="my-1 w-full flex items-center justify-around">
-          {allPodcastsPlatforms.map((platform, index) => {
-            return (
-              <PodcastPlatforms
-                key={index}
-                platform={platform}
-              ></PodcastPlatforms>
-            )
-          })}
-        </div>
-      </div>
+      <h2 className="my-6 lg:w-2/3 xl:w-1/2">VDDD Sessions</h2>
       <div className="flex flex-row justify-center">
         <div className="flex justify-center items-center w-1/20">
           <button
@@ -122,8 +88,8 @@ const PodcastsOverview = (): ReactElement => {
           </button>
         </div>
         <div className="flex flex-row flex-wrap items-center w18/20">
-          {currentPodcasts.map((session, index) => {
-            return <Podcast key={index} session={session}></Podcast>
+          {currentSessions.map((session, index) => {
+            return <Session key={index} session={session} />
           })}
         </div>
         <div className="flex justify-center items-center w-1/20">
@@ -138,9 +104,9 @@ const PodcastsOverview = (): ReactElement => {
           </button>
         </div>
       </div>
-      <BlueButton to="/learning-ddd/podcasts" label="All Podcasts" />
+      <BlueButton to="/sessions" label="All Sessions" />
     </div>
   )
 }
 
-export default PodcastsOverview
+export default SessionOverview

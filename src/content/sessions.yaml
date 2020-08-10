@@ -3,6 +3,7 @@
 #   time: ""
 #   video: ""
 #   podcast: ""
+#   level: "all, beginner, intermediate or advanced"
 #   description:
 #     ""
 #   links:
@@ -14,6 +15,7 @@ sessions:
     time: "18:30 CEST"
     video: "https://www.youtube.com/embed/F4SwUssweGY"
     podcast: "https://oembed.libsyn.com/embed?item_id=15490481"
+    level: intermediate
     description:
       "Thanks to Krisztina we will have Matteo Collina as a special guest
       on our next panel. Matteo is a long time Nodejs contributor and TSC member. Open-source
@@ -26,12 +28,15 @@ sessions:
     links:
       - label: "The Event on Meetup"
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/272201468/"
+    tags:
+      - OSS
 
   - title: "[Panel One user to bind them all? Products, teams and bounded contexts"
     date: "Wednesday, July 29th. 2020"
     time: "19:00 CEST"
     video: "https://www.youtube.com/embed/wMX9PdRYuRo"
     podcast: "https://oembed.libsyn.com/embed?item_id=15410591"
+    level: advanced
     description:
       "In the last meetup, Krisztina found something Jessica said interesting to dive into:
       'We are talking in DDD about Bounded Contexts and independent teams and applications,
@@ -46,12 +51,19 @@ sessions:
     links:
       - label: "The Event on Meetup"
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/272058374/"
+    tags:
+      - ux
+      - bounded context
+      - team topology
+      - socio-technical
+      - strategic design
 
   - title: "[Hands-on Speaking truth to power: practice argumentation with Diana"
     date: "Tuesday, July 21th. 2020"
     time: "19:00 CEST"
     video:
     podcast:
+    level: advanced
     description:
       "If you could influence one impactful decision today, what would it be? If you could be heard
       and trusted for 10 minutes, what would you say? To whom? More importantly,
@@ -62,12 +74,16 @@ sessions:
     links:
       - label: "The Event on Meetup"
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/271938834/"
+    tags:
+      - socio-technical
+      - decision-making
 
   - title: "Free Trial Workshop: First Steps in DDD with Andrew (#BlackLivesMatter edition)"
     date: "Monday, July 20th. 2020"
     time: "16:00 CEST"
     video: 
     podcast:
+    level: all
     description:
       "To support the #BlackLivesMatter community Andrew Harmel-Law will be doing a FREE trial workshop 'First Steps in Domain-Driven Design'online course for that community.
       (Sorry, if you don't identify as a member of the #BlackLivesMatter community, you'll have to wait for the next run which I promise will be available soon.)
@@ -76,12 +92,16 @@ sessions:
     links:
       - label: "The Event on Meetup"
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/271767297/"
+    tags:
+      - hands-on
+      - essential
 
   - title: "Experimenting with remote Big Picture EventStorming"
     date: "Wednesday, July 15th. 2020"
     time: "19:00 CEST"
     video:
     podcast:
+    level: advanced
     description:
       "Big Picture EventStorming is a really nice tool to start finding emergent bounded context, create a shared mindset about the problem space of your business and find the next biggest constraint in the flow of business value.
       The visualisation tool works because you have all the people in the same room collaborating. Unfortunately with Covid-19, it won't be possible to do these anymore and we are constraint to online sessions.
@@ -91,12 +111,16 @@ sessions:
     links:
       - label: "The Event on Meetup"
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/271792285/"
+    tags:
+      - eventstorming
+      - remote work
 
   - title: "Balancing upfront design versus iterative design"
     date: "Thursday, June 25th. 2020"
     time: "20:00 CEST"
     video: "https://www.youtube.com/embed/6Mzff5zbQ6c"
     podcast: "https://oembed.libsyn.com/embed?item_id=14978306"
+    level: intermediate
     description:
       "We want early feedback to inform foundational or load-bearing decision making before committing to hard/expensive to change design decisions. But we don’t want to start building based on flawed design decisions, the consequences of which are hard/expensive to change when we discover it is faulty. The problem is, how do we balance these two polarities from an either-or to both-and thinking.
       In this session, we will explore contexts and tradeoffs in upfront design versus iterative design. Joining us to share their perspectives and experiences in a never-ending discussion are:
@@ -109,12 +133,17 @@ sessions:
     links:
       - label: "The Event on Meetup"
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/271202418/"
+    tags:
+      - software architecture
+      - strategic design
+      - ux
 
   - title: "Virtual Lean Coffee Fishbowl: UX, DDD and BDD - take 2"
     date: "Wednesday, June 17th. 2020"
     time: "20:30 CEST"
     video: "https://www.youtube.com/embed/wF0OHhVELyo"
     podcast: "https://oembed.libsyn.com/embed?item_id=14873369"
+    level: advanced
     description:
       "It all started with a tweet by John Cutler 'Wonder how many BBD / DDD enthusiasts are aware of the body of similar work in #ux research and vica versa'.
       And it seemed that a lot of people from these communities learned a lot from each other. And we would love to learn more about different areas of overlap.
@@ -123,12 +152,18 @@ sessions:
     links:
       - label: "The Event on Meetup"
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270805965/"
+    tags:
+      - bdd
+      - strategic design
+      - ux
+
 
   - title: "Creating a Playbook for DDD for the inside of your team with Julie Lerman"
     date: "Thursday, June 2th. 2020"
     time: "19:00 CEST"
     video: "https://www.youtube.com/embed/GVa5vI19kZo"
     podcast:
+    level: beginner
     description:
       "Introducing DDD to a company is not easy, especially if you are new to DDD yourself. Following up from the Domain-Driven Design Starter Modelling Process that started describing a step-by-step guide for learning DDD.
       In this session, we want to extend and improve that process and see if we can describe a step-by-step guide from the inside-out. So what path do we need to take if you cannot start with the big picture strategic modelling?
@@ -138,12 +173,17 @@ sessions:
     links:
       - label: "The Event on Meetup"
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270805901/"
+    tags:
+      - inside-out
+      - socio-technical
+      - essential
 
   - title: "#DDDDD Speaking truth to power: a foundational skillset"
     date: "Friday, May 15th. 2020"
     time: "21:00 CEST"
     video: "https://www.youtube.com/embed/zPvYqrASCRA"
     podcast: "https://oembed.libsyn.com/embed?item_id=15231635"
+    level: advanced
     description:
       "As complexity increases, are you (too often) shouting into the wind? Do you see icebergs ahead yet fail to convince others to avoid them? Are your architecture-focused discussions more exhausting than productive?
       Does the accountant understand the value of your work? The thinking and communication skills we've developed on the job often fail us when we face more-complex challenges.
@@ -174,24 +214,33 @@ sessions:
     links:
       - label: "The Event on Meetup"
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270527364/"
+    tags:
+      - socio-technical
+      - decision-making
 
   - title: "Natural Boundaries - how to read the signs and benefit from the problems"
     date: "Friday, May 15th. 2020"
     time: "18:45 CEST"
     video: "https://youtu.be/yMRuP3tcugQ"
     podcast: "https://oembed.libsyn.com/embed?item_id=15382136"
+    level: advanced
     description:
       "Finding the right boundaries of contexts is hard - implementing them can be even harder if the organisation does not change. But how can one change the organisation, how can one be sure that it changes in the right direction?
       There are signs, mostly perceived as a blocker but I see them as an enabler, as a pointer to the right boundaries. This idea combined with observing and measuring the value stream could lead to the right boundaries for teams and for code."
     links:
       - label: "The Event on Meetup"
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270527115/"
+    tags:
+      - bounded context
+      - socio-technical
+      - ux
 
   - title: "#DDDDD Bounded Contexts, Microservices, and Everything In Between"
     date: "Friday, May 15th. 2020"
     time: "07:00 CEST"
     video: "https://www.youtube.com/embed/Z0RgR9xIQE4"
     podcast: "https://oembed.libsyn.com/embed?item_id=14464859"
+    level: beginner
     description: "Bounded Contexts, Microservices, and Everything In Between
       “95% of the words are spent extolling the benefits of ‘modularity’ and that little, if anything, is said about how to achieve it” - Glenford J. Myers, 1978.
 
@@ -203,12 +252,18 @@ sessions:
     links:
       - label: "The Event on Meetup"
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270524442/"
+    tags:
+      - bounded context
+      - socio-technical
+      - microservices
+      - software architecture
 
-  - title: "[DDD London Creating a Playbook for DDD Newcomers"
+  - title: "[DDD London] Creating a Playbook for DDD Newcomers"
     date: "Thursday, May 21th. 2020"
     time: "19:00 CEST"
     video: "https://www.youtube.com/embed/v=1aICKlpQRoc"
     podcast:
+    level: beginner
     description:
       "Introducing DDD to a company is not easy, especially if you are new to DDD yourself.
 
@@ -220,12 +275,15 @@ sessions:
     links:
       - label: "The Event on Meetup"
         url: "https://www.meetup.com/dddlondon/events/270693800/"
+    tags:
+      - essential
 
-  - title: "[DDD London DDD-Lite: Independent Service Heuristics with Matthew Skelton"
+  - title: "[DDD London] DDD-Lite: Independent Service Heuristics with Matthew Skelton"
     date: "Friday, May 12th. 2020"
     time: "19:30 CEST"
     video: "https://www.youtube.com/embed/UQq-Ayml0iI"
     podcast: "https://oembed.libsyn.com/embed?item_id=14463848"
+    level: intermediate
     description:
       "When designing organizations for fast flow of change, we need to find effective boundaries between different streams of change. Techniques like Domain-Driven Design (DDD) are very powerful for this but can be quite involved and difficult to learn. A lightweight intermediate approach is to ask 'could this thing be run as a cloud-hosted (SaaS) service or product?'.
 
@@ -237,12 +295,18 @@ sessions:
     links:
       - label: "The Event on Meetup"
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270457433/"
+    tags:
+      - service design
+      - heuristics
+      - team topologies
+
 
   - title: "Experimenting with Remote Wardley Mapping with Nick Tune"
     date: "Friday, May 1st. 2020"
     time: "19:00 CEST"
     video: "https://www.youtube.com/embed/Rvt7k542fOI"
     podcast:
+    level: beginner
     description:
       " ** If you want to participate, RSVP to the meetup and you will get a password protected zoom Link, else just enjoy youtube ***
       Wardley Mapping is a strategic tool for anticipating how domains will evolve over time.
@@ -256,12 +320,18 @@ sessions:
     links:
       - label: "The Event on Meetup"
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/270234608/"
+    tags:
+      - strategic design
+      - remote work
+      - collaborative modelling
+      - wardley maps
 
   - title: "How to improve modelling with Behaviour-driven development"
     date: "Tuesday, April 14th. 2020"
     time: "19:30 CEST"
     video: "https://www.youtube.com/embed/HvT8wNE1C2U"
     podcast: "https://oembed.libsyn.com/embed?item_id=13996931"
+    level: beginner
     description:
       "Behaviour Driven Development (BDD) is a term that was coined by Dan North in 2006. It came about as a response to a very specific problem – teaching developers how to think about testing their code.
       It incorporates the ubiquitous language idea from Eric Evan’s book Domain-Driven Design, and this evolved into a technique used by the whole team to collaboratively specify how the finished system should behave.
@@ -270,12 +340,16 @@ sessions:
     links:
       - label: "The Event on Meetup"
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/269885290/"
+    tags:
+     - bdd
+     - collaborative modelling
 
   - title: "How cognitive biases and ranking kills your modelling sessions"
     date: "Tuesday, April 7th. 2020"
     time: "19:00 CEST"
     video: "https://www.youtube.com/embed/djbbZnOIGE0"
     podcast: "https://oembed.libsyn.com/embed?item_id=13899341"
+    level: advanced
     description:
       "The power of collaborative modelling comes from having a diverse group of people who, together, have a lot of wisdom and knowledge.
       You would expect that all this knowledge will be put to use, co-creating, and to design a model. In reality, we don’t actually listen to all the available input and perspectives due to cognitive biases and ranking.
@@ -285,12 +359,17 @@ sessions:
     links:
       - label: "The Event on Meetup"
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/269784134/"
+    tags:
+      - socio-technical
+      - bias
+      - deep democracy
 
   - title: "Secure by Domain-driven design with Jessica, Dan Bergh and Daniel"
     date: "Friday, April 3th. 2020"
     time: "16:00 CEST"
     video: "https://www.youtube.com/embed/BpMzn9AxNcw"
     podcast: "https://oembed.libsyn.com/embed?item_id=13843517"
+    level: intermediate
     description:
       "Let's talk about the confluence between domain-driven design and security. Deep understanding of the domain lets us define what we DO want to happen, which helps us stop things that we DON'T want to happen.
       Jessica Kerr will start the meeting up with an exposition of her favorite parts of the book Secure By Design and together with Dan Bergh Johnsson and Daniel Deogun we will do a panel discussion and Q&A.
@@ -298,12 +377,15 @@ sessions:
     links:
       - label: "The Event on Meetup"
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/269741788/"
+    tags:
+      - secure by design
 
   - title: "Lost in bounded context translations with Julie, Indu, Michael and Nick"
     date: "Tuesday, March 17th. 2020"
     time: "19:00 CET"
     video: "https://www.youtube.com/embed/u-5sKvh48-g"
     podcast: "https://oembed.libsyn.com/embed?item_id=13594496"
+    level: intermediate
     description:
       "Language is a big topic in the Domain-Driven Design community. We want to have small bounded contexts, each with there own ubiquitous language. Having many ubiquitous languages means having a lot of translation between the bounded context.
       And having many translations means we can get lost. So what is the nuance between internal and external bounded context or services translation?
@@ -313,12 +395,17 @@ sessions:
     links:
       - label: "The Event on Meetup"
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/268706059/"
+    tags:
+      - bounded context
+      - strategic design
+
 
   - title: "An Introduction to Domain Storytelling"
     date: "Tuesday, February 18th. 2020"
     time: "20:00 CET"
     video: "https://www.youtube.com/embed/d9k9Szkdprk"
     podcast:
+    level: beginner
     description:
       "Domain Storytelling (http://domainstorytelling.org) is a collaborative modelling method.
       It brings together domain experts and development teams and helps them to understand a domain, find bounded contexts, to establish a ubiquitous language, and to talk about requirements.
@@ -326,12 +413,17 @@ sessions:
     links:
       - label: "The Event on Meetup"
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/268709233/"
+    tags:
+      - collaborative modelling
+      - domain storytelling
+      - remote work
 
   - title: "Trying out online EventStorming"
     date: "Tuesday, January 21th. 2020"
     time: "19:00 CET"
     video: "https://www.youtube.com/embed/CbPEibNUe0s"
     podcast:
+    level: beginner
     description:
       "EventStorming is the smartest approach to collaboration beyond silo boundaries. Within the DDD community, it is the go-to visualisation and collaboration tool to start exploring and discovering together.
       We believe firmly that the power of EventStorming is with having all the smart people who together have all the knowledge in a room.
@@ -345,12 +437,17 @@ sessions:
     links:
       - label: "The Event on Meetup"
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/266891201/"
+    tags:
+      - remote work
+      - eventstorming
+      - heuristics
 
   - title: "Virtual Lean Coffee Fishbowl: UX, DDD and BDD"
     date: "Thursday, January 16th. 2020"
     time: "20:00 CET"
     video: "https://www.youtube.com/embed/QelbEUblpLo"
     podcast: "https://oembed.libsyn.com/embed?item_id=12776882"
+    level: advanced
     description:
       "It all started with a tweet by John Cutler <>. And it seemed that a lot of people from these communities learned a lot from each other.
       And we would love to learn more about different areas of overlap. It seems like goals and culture are aligned in both communities.
@@ -376,12 +473,17 @@ sessions:
     links:
       - label: "The Event on Meetup"
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/267220779/"
+    tags:
+      - ux
+      - bdd
+      - socio-technical
 
   - title: "How feature branching affects domain-driven design with Thierry de Pauw"
     date: "Tuesday, January 8th. 2020"
     time: "19:00 CET"
     video: "https://www.youtube.com/embed/mKaIR-EjoC0"
     podcast: "https://oembed.libsyn.com/embed?item_id=12672260"
+    level: beginner
     description:
       "Feature branching is again gaining in popularity due to the rise of distributed version control systems. Although branch creation has become very easy, it comes with a specific cost.
       Long living branches break the flow of the software delivery process, impacting throughput and stability, but does it also affect the quality of our domain model?
@@ -390,12 +492,15 @@ sessions:
     links:
       - label: "The Event on Meetup"
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/267162816/"
+    tags:
+      - continuous delivery
 
   - title: "Combatting the Near Enemies of Domain Driven Design at Scale"
     date: "Wednesday, December 11th. 2019"
     time: "19:00 CET"
     video: "https://www.youtube.com/embed/3CFyA4iecng"
     podcast: "https://oembed.libsyn.com/embed?item_id=12378590"
+    level: intermediate
     description:
       "For the past decade and a half, Domain-Driven Design has been giving teams the tools to successfully tackle the complexity at the heart of software. But lots of people fail when they try to put its techniques and patterns into practise, especially at scale.
       Why? It can't just be because the Bluebook is so thick? We're going to argue that the near enemies of DDD are to blame. Things which look like DDD, but which are in fact counterfeits that push us farther away from our goal.
@@ -404,24 +509,31 @@ sessions:
     links:
       - label: "The Event on Meetup"
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/266722931/"
+    tags:
+      - strategic design
 
   - title: "Does a Domain-driven design approach need an agile business?"
     date: "Tuesday, December 3st. 2019"
     time: "19:30 CET"
     video: "https://www.youtube.com/embed/hKBSmQCMEqQ"
     podcast: "https://oembed.libsyn.com/embed?item_id=12275561"
+    level: intermediate
     description:
       "On twitter, a discussion started between Trond, Anton and Krisztina about working in agile product development without a clear business goal. Since twitter is a restricted medium to discuss these issues, we are taking it upon our VirtualDDD Meetup.
       Join us with Trond, Anton and Krisztina and let's have an honest discussion about what it means to work agile. What are the pros and cons? We dig into the underlying principles and philosophy of agile, diving into the practical instead of the theoretics of business agility. Do we need the business to be agile to do proper Domain-driven design, and what are the overlaps between agile and Domain-driven design?"
     links:
       - label: "The Event on Meetup"
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/266604287/"
+    tags:
+      - agile
+      - essential
 
   - title: "SunDDDay Discussion: Growing your local DDD community"
     date: "Tuesday, December 1st. 2019"
     time: "19:00 CET"
     video: "https://www.youtube.com/embed/sXdSjhWNeMg"
     podcast: "https://oembed.libsyn.com/embed?item_id=12244241"
+    level: beginner
     description:
       "Getting started or advancing your Domain-Driven Design knowledge on your own can be a frustrating experience. Especially when you have so many questions to ask and exciting domains to model.
       How do you then grow if there is no one in your company or area that shares your passion for DDD?
@@ -431,24 +543,32 @@ sessions:
     links:
       - label: "The Event on Meetup"
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/266560974/"
+    tags:
+      - community
 
   - title: "Make your tests tell the story of your domain with Anne and Mads"
     date: "Tuesday, November 12th. 2019"
     time: "19:00 CET"
     video: "https://www.youtube.com/embed/7_KZ8_R4oOU"
     podcast: "https://oembed.libsyn.com/embed?item_id=12018827"
+    level: beginner
     description:
       "Even with perfect naming and perfect code, it is hard to read the story of your domain straight out of it. You can be certain that you’ll have forgotten of the nuances about the code the next time you see it. Or someone else sees it, because very few of us live our professional coding lives in an area where it’s only me ever handling the code. Someone is going to come back to your code - in five days, three months or five years.
       Luckily, if you write your tests the right way, they can tell the story of your domain in a way your production code can't. Let us show you how to create your tests so you can get rid of your stale documentation."
     links:
       - label: "The Event on Meetup"
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/266077606/"
+    tags:
+      - testing
+      - collaborative modelling
+      - essential
 
   - title: "What is an aggregate with Thomas Ploch"
     date: "Wednesday, November 6th. 2019"
     time: "18:30 CET"
     video: "https://www.youtube.com/embed/7h3DqZmvF9A"
     podcast: "https://oembed.libsyn.com/embed?item_id=11938403"
+    level: advanced
     description:
       "Within the community there is been an ongoing discussion about the aggregate pattern. From Eric Evans perspective it is:
 
@@ -457,12 +577,17 @@ sessions:
     links:
       - label: "The Event on Meetup"
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/265895741/"
+    tags:
+      - aggregate
+      - functional programming
+      - tactical design
 
   - title: "Introducing DDD to your Company with Barry O Sullivan"
     date: "Tuesday, September 24th. 2019"
     time: "19:00 CEST"
     video: "https://www.youtube.com/embed/Vb7ZwYQPqqQ"
     podcast: "https://oembed.libsyn.com/embed?item_id=11387732"
+    level: beginner
     description:
       "DDD is about enabling developers and business owners to work together on a collaborative model, but how do you introduce the concept? In a world rife with acronyms and buzzword, people can be hesitant to try out new ideas, especially ones that involve changing the status quo.
       In this session, we'll discuss various techniques and ideas for introducing DDD to an organisation, with a focus on the needs of the company and individuals, and how to approach those needs. Afterwards, you'll be better able to demonstrate the value of DDD to stakeholders, without scaring them off with a load of new jargon.
@@ -470,24 +595,32 @@ sessions:
     links:
       - label: "The Event on Meetup"
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/264423503/"
+    tags:
+      - essential
 
   - title: "SunDDDay discussion: CQRS & Event Sourcing systems with Alexey and Marco"
     date: "Sunday, August 25th. 2019"
     time: "19:00 CEST"
     video: "https://www.youtube.com/embed/5e7lhY2q8WQ"
     podcast: "https://oembed.libsyn.com/embed?item_id=11736308"
+    level: beginner
     description:
       "In the next SunDDDay discussion Alexey Zimarev and Marco Heimeshoff will join us and share their experience in building systems with CQRS and Event Sourcing. We will discuss what it exactly is, where it came from, what the strength and weaknesses are, when and how to use it, and how to design and maintain these systems.
       Join us through zoom webinar or follow the live youtube stream. You can interact with us and ask your questions through chat, or raise your hand in the zoom webinar and join us live to ask your questions fishbowl style!"
     links:
       - label: "The event on Meetup"
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/264122914/"
+    tags:
+      - cqrs/es
+      - event sourcing
+      - cqrs
 
   - title: "EventStorming Types and Heuristics with Rebecca, Paul and Alberto"
     date: "Thursday, August 8th. 2019"
     time: "24:00 CEST"
     video: "https://www.youtube.com/embed/jFEC7Pb1FtM"
     podcast: "https://oembed.libsyn.com/embed?item_id=11469908"
+    level: beginner
     description:
       "Rebecca Wirfs-Brock, Paul Rayner en Alberto Brandolini will join us in this VDDD meetup and talk about what types of EventStorming there are, and what heuristics they use.
 
@@ -496,12 +629,18 @@ sessions:
     links:
       - label: "The event on Meetup"
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/263800593/"
+    tags:
+      - eventstorming
+      - heuristics
+      - big picture
+      
 
   - title: "How To Read the Blue Book: Strategic Design with Mathias Verraes"
     date: "Tuesday, July 23th. 2019"
     time: "19:00 CEST"
     video: "https://www.youtube.com/embed/jZo44tbff1c"
     podcast: "https://oembed.libsyn.com/embed?item_id=10995584"
+    level: intermediate
     description:
       "Over more than 15 years ago, Eric Evans published the book Domain-Driven Design. The blue book, as it is called today, has a vast amount of knowledge on software architecture.
       As Paul Rayner once stated 'Every new idea on software architecture; you can already find somewhere in the blue book'.
@@ -510,12 +649,15 @@ sessions:
     links:
       - label: "The event on Meetup"
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/262894722/"
+    tags:
+      - strategic design
 
   - title: "Socio-technical architecture with Ora Egozi-Barzilai and Evelyn van Kelle"
     date: "Thursday, July 18th. 2019"
     time: "18:30 CEST"
     video: "https://www.youtube.com/embed/YqbXEhO237w"
     podcast: "https://oembed.libsyn.com/embed?item_id=11027246"
+    level: intermediate
     description:
       "In this # VDDD meetup, we will talk with Ora Egozi-Barzilai and Evelyn van Kelle about their experience with socio-technical architecture. Socio-technical refers to the interrelatedness of social and technical aspects of an organization.
       Specific for this meetup we will discuss how teams affect the boundaries between bounded contexts and vice versa. These effects will give challenges in the way we design software architecture and organize teams around software to be highly aligned with business goals.
@@ -523,12 +665,16 @@ sessions:
     links:
       - label: "The event on Meetup"
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/262894709/"
+    tags:
+      - socio-technical
+      - strategic design
 
   - title: "Can business capabilities be useful in DDD with Trond Hjorteland"
     date: "Tuesday, June 25th. 2019"
     time: "20:00 CEST"
     video: "https://www.youtube.com/embed/WSAHL7oHGUw"
     podcast: "https://oembed.libsyn.com/embed?item_id=11085401"
+    level: intermediate
     description:
       "In this SPA conference special, we will talk with Trond Hjorteland about if business capabilities are useful in DDD.
       The DDD community seems to consist of mostly technical people, or at least with sort of hands-on programming experience, both now an back when the blue book was published. The decision to put the technical patterns at the start of that book was strategic (!) in that it was meant to invite the programmers in. As a consequence of that, it seems that most know very little about the enterprises' architecture space, and if they do, it seems to be with disdain for those dreaded ivory architects. And, for good reason in a lot of large waterfall-driven enterprises.
@@ -539,12 +685,16 @@ sessions:
     links:
       - label: "The event on Meetup"
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/262123121/"
+    tags:
+      - capability modelling
+      - software architecture
 
   - title: "Impact Mapping to manage change and strategic design"
     date: "Thursday, June 13th. 2019"
     time: "18:30 CEST"
     video: "https://www.youtube.com/embed/7u-EtXVKR5g"
     podcast: "https://oembed.libsyn.com/embed?item_id=11057267"
+    level: beginner
     description:
       "In this next virtual DDD meetup, João Rosa and Krisztina Hirth will discuss with us how impact mapping helps to find the possible solutions to achieve a measurable goal before you even know what to visualize.
       Also, how can you then combine it with other visualisation tools like EventStorming to guide your strategic design?
@@ -556,12 +706,17 @@ sessions:
     links:
       - label: "The event on Meetup"
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/262096256/"
+    tags:
+      - impact mapping
+      - collaborative modelling
+      - strategic design
 
   - title: "SunDDDay discussion: EventStorming and User story mapping for domain discovery"
     date: "Sunday, May 26th. 2019"
     time: "16:30 CET"
     video: "https://www.youtube.com/embed/H553KZPCJQk"
     podcast: "https://oembed.libsyn.com/embed?item_id=11445518"
+    level: beginner
     description:
       "On this first SunDDDay 26th May at 16:30 Central European Time (Amsterdam GMT +2), virtual DDD meetup will hold an online panel discussion where you can ask questions!
 
@@ -573,12 +728,17 @@ sessions:
     links:
       - label: "The event on Meetup"
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/257656741/"
+    tags:
+      - eventstorming
+      - user story mapping
+      - collaborative modelling
 
   - title: "CraftConf meetup with Nick Tune and Helin Akgul"
     date: "Wednesday, May 8th. 2019"
     time: ""
     video: "https://www.ustream.tv/embed/recorded/121763272"
     podcast:
+    level: intermediate
     description:
       "Nick Tune is coming to talk at Craft Conference (yaaay!!) and whilst he is here in Budapest he brings us one of his future talks (Strategic Microservice Patterns - find details below) and present it on this meetup, so DO NOT MISS IT :)
       I am also pleased to announce another great presenter Helin Akgul. She will be talking about DDD practices in TransferWise, and she will be giving examples around how they are using product engineering to create domain experts, and tips and tricks to adopting DDD practices gradually.
@@ -588,11 +748,16 @@ sessions:
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/261134675/"
       - label: "Hosted by DDD Budapest"
         url: "https://www.meetup.com/DDD-Practitioners-in-Budapest/events/260694621/"
+    tags:
+      - microservices
+      - strategic design
+      - essential
 
   - title: "Patterns for the People - Kevlin Henney"
     date: "Tuesday, April 2nd. 2019"
     time: ""
     video: "https://www.ustream.tv/embed/recorded/120901497"
+    level: intermediate
     podcast:
     description:
       "Have you thought about that maybe all you know about patterns is just misconceptions?
@@ -605,3 +770,5 @@ sessions:
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/260116772/"
       - label: "Hosted by DDD Budapest"
         url: "https://www.meetup.com/DDD-Practitioners-in-Budapest/"
+    tags:
+      - patterns

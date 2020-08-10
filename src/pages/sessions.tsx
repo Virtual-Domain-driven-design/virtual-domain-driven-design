@@ -5,6 +5,8 @@ import UpcomingSession from "../components/upcoming-session"
 import NoUpcomingImg from "../images/no_upcoming.svg"
 import Layout from "../templates/layout"
 
+import Session from "../components/session"
+
 const UpcomingSessions = ({ sessions }) => {
   if (sessions.length > 0) {
     return (
@@ -47,35 +49,7 @@ const PastSessions = ({ sessions }) => {
         <div className="w-11/12 md:w-5/6">
           <div className="flex items-stretch justify-center flex-wrap">
             {sessions.map((session, index) => {
-              if (session.video) {
-                return (
-                  <div
-                    key={index}
-                    className="bg-white w-64 rounded-lg shadow-md p-2 m-1"
-                  >
-                    <div className="text-sm text-gray-600">{sessions.date}</div>
-                    <div className="videoframe">
-                      <iframe
-                        title={session.title}
-                        className="videostream"
-                        allowFullScreen={true}
-                        src={session.video}
-                        scrolling="no"
-                        frameBorder={0}
-                      ></iframe>
-                    </div>
-                    <a
-                      className="text-sm text-left font-bold link"
-                      href={session.video}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {session.title}
-                    </a>
-                  </div>
-                )
-              }
-              return <div key={index}></div>
+              return <Session key={index} session={session} />
             })}
           </div>
         </div>
@@ -112,9 +86,9 @@ function Sessions(): ReactElement {
           sessions {
             title
             date
-            description
-            time
+            level
             video
+            tags
           }
         }
       }
@@ -126,7 +100,11 @@ function Sessions(): ReactElement {
         <UpcomingSessions
           sessions={data.upcoming.nodes[0].upcomingSessions}
         ></UpcomingSessions>
-        <PastSessions sessions={data.past.nodes[0].sessions}></PastSessions>
+        <PastSessions
+          sessions={data.past.nodes[0].sessions.filter(
+            (session) => session.video
+          )}
+        ></PastSessions>
       </div>
     </Layout>
   )

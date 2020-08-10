@@ -6,6 +6,7 @@ books:
     tags:
       - essential
       - core
+      - software architecture
   - title: Implementing Domain-driven design
     author: Vaughn Vernon
     img: ../images/books/implementing-domain-driven-design.jpg
@@ -62,7 +63,7 @@ books:
     tags:
       - essential
       - anthology
-  - title: "Iintroducing EventStorming"
+  - title: "Introducing EventStorming"
     author: Alberto Brandolini
     img: ../images/books/eventstorming.jpg
     level: all
@@ -70,6 +71,15 @@ books:
       - essential
       - eventstorming
       - bounded context
+  - title: "Team Topologies"
+    author: Matthew Skelton and Manuel Pais
+    img: ../images/books/team-topologies.jpg
+    level: intermediate
+    tags:
+      - software architecture
+      - team topologies
+      - bounded context
+      - socio-technical
   - title: " Object Design: Roles, Responsibilities, and Collaborations "
     author: Rebecca Wirfs-Brock and Alan McKean
     img: ../images/books/object-design-rdd.jpg
