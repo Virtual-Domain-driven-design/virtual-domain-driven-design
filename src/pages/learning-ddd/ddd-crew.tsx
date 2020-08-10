@@ -3,6 +3,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import Layout from "../../templates/layout"
 
 import DDDCrew from "../../components/ddd-crew"
+import SEO from "../../components/seo"
 
 function DDDCrews(): ReactElement {
   const dddCrew = useStaticQuery(graphql`
@@ -30,6 +31,12 @@ function DDDCrews(): ReactElement {
 
   return (
     <Layout>
+      <SEO
+        title="Domain-Driven Design community knowledge"
+        description="DDD Crew community knowledge"
+        image
+        article
+      />
       <div className="w-full flex flex-col items-center">
         <h2 className="my-6 lg:w-2/3 xl:w-1/2">DDD Crew</h2>
         <div className="flex flex-row justify-center">

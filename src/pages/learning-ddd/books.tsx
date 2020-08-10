@@ -3,6 +3,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import Layout from "../../templates/layout"
 
 import Book from "../../components/book"
+import SEO from "../../components/seo"
 
 function Books(): ReactElement {
   const books = useStaticQuery(graphql`
@@ -31,6 +32,12 @@ function Books(): ReactElement {
 
   return (
     <Layout>
+      <SEO
+        title="Domain-Driven Design books"
+        description="A curated list of DDD related books"
+        image
+        article
+      />
       <div className="w-full flex flex-col items-center">
         <h2 className="my-6 lg:w-2/3 xl:w-1/2">Books</h2>
         <div className="flex flex-row justify-center">

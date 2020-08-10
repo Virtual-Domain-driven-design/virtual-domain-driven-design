@@ -7,6 +7,8 @@ import Layout from "../templates/layout"
 
 import Session from "../components/session"
 
+import SEO from "../components/seo"
+
 const UpcomingSessions = ({ sessions }) => {
   if (sessions.length > 0) {
     return (
@@ -96,6 +98,12 @@ function Sessions(): ReactElement {
   `)
   return (
     <Layout>
+      <SEO
+        title="Virtual Domain-Driven Design sessions"
+        description="An online community and meetup for Domain-Driven Design"
+        image
+        article
+      />
       <div className="section" id="Sessions">
         <UpcomingSessions
           sessions={data.upcoming.nodes[0].upcomingSessions}

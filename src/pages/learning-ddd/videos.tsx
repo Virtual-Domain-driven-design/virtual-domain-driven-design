@@ -3,6 +3,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import Layout from "../../templates/layout"
 
 import Video from "../../components/video"
+import SEO from "../../components/seo"
 
 function Videos(): ReactElement {
   const videos = useStaticQuery(graphql`
@@ -26,6 +27,12 @@ function Videos(): ReactElement {
 
   return (
     <Layout>
+      <SEO
+        title="Domain-Driven Design videos"
+        description="A curated list of DDD related videos"
+        image
+        article
+      />
       <div className="w-full flex flex-col items-center">
         <h2 className="my-6 lg:w-2/3 xl:w-1/2">Videos</h2>
         <div className="flex flex-row justify-center">

@@ -4,6 +4,7 @@ import Layout from "../../templates/layout"
 
 import Podcast from "../../components/podcast"
 import PodcastPlatforms from "../../components/podcast-platforms"
+import SEO from "../../components/seo"
 
 function Podcasts(): ReactElement {
   const data = useStaticQuery(graphql`
@@ -44,6 +45,12 @@ function Podcasts(): ReactElement {
 
   return (
     <Layout>
+      <SEO
+        title="Domain-Driven Design podcasts"
+        description="A curated list of DDD related podcasts"
+        image
+        article
+      />
       <div className="w-full flex flex-col items-center">
         <h2 className="my-6 lg:w-2/3 xl:w-1/2">Podcasts</h2>
         <div>
