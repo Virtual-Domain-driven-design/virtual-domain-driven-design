@@ -13,6 +13,7 @@
     "@mdx-js/react": "^1.6.16",
     "gatsby-background-image": "^1.1.1",
     "gatsby-cli": "^2.12.60",
+    "gatsby-plugin-breadcrumb": "^10.0.0",
     "gatsby-plugin-mdx": "^1.2.33",
     "gatsby-plugin-netlify-cms": "^4.1.38",
     "gatsby-plugin-page-creator": "^2.3.20",
