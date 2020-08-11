@@ -63,7 +63,7 @@ books:
     tags:
       - essential
       - anthology
-  - title: "Introducing EventStorming"
+  - title: Introducing EventStorming
     author: Alberto Brandolini
     img: ../images/books/eventstorming.jpg
     level: all
@@ -71,7 +71,7 @@ books:
       - essential
       - eventstorming
       - bounded context
-  - title: "Team Topologies"
+  - title: Team Topologies
     author: Matthew Skelton and Manuel Pais
     img: ../images/books/team-topologies.jpg
     level: intermediate
@@ -95,3 +95,10 @@ books:
     tags:
       - Visual-collaboration
       - collaborative-modelling
+  - title: What is Domain-Driven Design?
+    level: beginner
+    author: Vladik Khononov
+    img: ../images/books/whatisddd.jpg
+    tags:
+      - essential
+      - introductory
