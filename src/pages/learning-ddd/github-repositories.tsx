@@ -1,18 +1,20 @@
-import React, { ReactElement } from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import Layout from "../../templates/layout"
+import React, { FC } from "react"
 
-import DDDCrew from "../../components/ddd-crew"
+import GithubRepo, { GithubRepoContent } from "../../components/github-repo"
+import Layout from "../../templates/layout"
 import SEO from "../../components/seo"
 
-function DDDCrews(): ReactElement {
-  const dddCrew = useStaticQuery(graphql`
+const DDDCrews: FC = () => {
+  const githubRepos = useStaticQuery<{
+    allContentYaml: { nodes: { githubRepositories: GithubRepoContent[] }[] }
+  }>(graphql`
     query {
       allContentYaml(
-        filter: { dddCrew: { elemMatch: { name: { ne: null } } } }
+        filter: { githubRepositories: { elemMatch: { name: { ne: null } } } }
       ) {
         nodes {
-          dddCrew {
+          githubRepositories {
             excerpt
             name
             to
@@ -27,7 +29,7 @@ function DDDCrews(): ReactElement {
         }
       }
     }
-  `).allContentYaml.nodes[0].dddCrew
+  `).allContentYaml.nodes[0].githubRepositories
 
   return (
     <Layout>
@@ -38,11 +40,13 @@ function DDDCrews(): ReactElement {
         article
       />
       <div className="w-full flex flex-col items-center">
-        <h2 className="my-6 lg:w-2/3 xl:w-1/2">DDD Crew</h2>
+        <h2 className="my-6 lg:w-2/3 xl:w-1/2">Github Repos</h2>
         <div className="flex flex-row justify-center">
           <div className="flex flex-row flex-wrap items-center w18/20">
-            {dddCrew.map((repo, index) => {
-              return <DDDCrew key={index} repo={repo}></DDDCrew>
+            {githubRepos.map((githubRepo, index) => {
+              return (
+                <GithubRepo key={index} githubRepo={githubRepo}></GithubRepo>
+              )
             })}
           </div>
         </div>

@@ -2,14 +2,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import React, { FC, useState } from "react"
 
 import ContentGallery from "./core/content-gallery"
-import DDDCrew from "./ddd-crew"
-
-interface GithubRepo {
-  excerpt: string
-  img: string
-  name: string
-  to: string
-}
+import GithubRepo, { GithubRepoContent } from "./github-repo"
 
 interface GithubRepoProps {
   levelFilter: string[]
@@ -19,17 +12,19 @@ const GithubRepoOverview: FC<GithubRepoProps> = ({ levelFilter }) => {
   const [offset, setOffset] = useState(0)
   const pageLimit = 4
   const allGithubRepos = useStaticQuery<{
-    allContentYaml: { nodes: { dddCrew: GithubRepo[] }[] }
+    allContentYaml: { nodes: { githubRepositories: GithubRepoContent[] }[] }
   }>(graphql`
     query {
       allContentYaml(
-        filter: { dddCrew: { elemMatch: { name: { ne: null } } } }
+        filter: { githubRepositories: { elemMatch: { name: { ne: null } } } }
       ) {
         nodes {
-          dddCrew {
+          githubRepositories {
             excerpt
             name
             to
+            tags
+            level
             img {
               childImageSharp {
                 fluid {
@@ -41,13 +36,11 @@ const GithubRepoOverview: FC<GithubRepoProps> = ({ levelFilter }) => {
         }
       }
     }
-  `).allContentYaml.nodes[0].dddCrew
+  `).allContentYaml.nodes[0].githubRepositories
 
-  //TODO
-  const filteredGithubRepos = allGithubRepos
-  // const filteredGithubRepos = allGithubRepos.filter((githubRepo) =>
-  //   levelFilter.includes(githubRepo.level)
-  // )
+  const filteredGithubRepos = allGithubRepos.filter((githubRepo) =>
+    levelFilter.includes(githubRepo.level)
+  )
   let filteredOffSet = offset
   if (filteredOffSet > filteredGithubRepos.length) {
     filteredOffSet =
@@ -66,11 +59,11 @@ const GithubRepoOverview: FC<GithubRepoProps> = ({ levelFilter }) => {
       pageLimit={pageLimit}
       setOffset={setOffset}
       title="Github Repositories"
-      allTo="/learning-ddd/ddd-crew"
+      allTo="/learning-ddd/github-repositories"
     >
       <div className="flex flex-row flex-wrap items-center w18/20">
-        {currentGithubRepos.map((repo, index) => {
-          return <DDDCrew key={index} repo={repo}></DDDCrew>
+        {currentGithubRepos.map((githubRepo, index) => {
+          return <GithubRepo key={index} githubRepo={githubRepo}></GithubRepo>
         })}
       </div>
     </ContentGallery>

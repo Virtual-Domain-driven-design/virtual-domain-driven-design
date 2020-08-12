@@ -24,14 +24,15 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   }
 
   result.data.allMdx.edges.forEach(({ node }) => {
-    const indexOfDDDCrew = node.fileAbsolutePath.indexOf("ddd-crew")
-    const subPath = node.fileAbsolutePath.substring(indexOfDDDCrew)
+    const indexOfGithubRepo = node.fileAbsolutePath.indexOf("github-repo")
+    const subPath = node.fileAbsolutePath.substring(indexOfGithubRepo)
     const indexOfSlash = subPath.indexOf("/")
-    const pathName = subPath.substring(0, indexOfSlash)
+    //12 start to remove github-repo-
+    const pathName = subPath.substring(12, indexOfSlash)
     console.log("creating page: " + "/learning-ddd/" + pathName)
     createPage({
       path: "/learning-ddd/" + pathName,
-      component: require.resolve(`./src/templates/ddd-crew-layout.tsx`),
+      component: require.resolve(`./src/templates/github-repo-layout.tsx`),
       context: { id: node.id },
     })
   })

@@ -15,7 +15,7 @@ import Layout from "./layout"
 
 const shortcodes = { Link } // Provide common components here
 
-const DDDCrewLayout = ({ data: { mdx } }) => {
+const GithubRepoLayout = ({ data: { mdx } }) => {
   return (
     <Layout>
       <div className="flex flex-col items-center" id="markdown">
@@ -29,7 +29,7 @@ const DDDCrewLayout = ({ data: { mdx } }) => {
   )
 }
 
-export default DDDCrewLayout
+export default GithubRepoLayout
 
 export const query = graphql`
   query($id: String) {

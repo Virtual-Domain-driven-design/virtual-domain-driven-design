@@ -77,56 +77,56 @@ module.exports = {
     {
       resolve: `gatsby-source-git`,
       options: {
-        name: `ddd-crew-starter-modelling`,
+        name: `github-repo-ddd-crew-starter-modelling`,
         remote: `https://github.com/ddd-crew/ddd-starter-modelling-process.git`,
       },
     },
     {
       resolve: `gatsby-source-git`,
       options: {
-        name: `ddd-crew-eventstorming-glossary-cheat-sheet`,
+        name: `github-repo-ddd-crew-eventstorming-glossary-cheat-sheet`,
         remote: `https://github.com/ddd-crew/eventstorming-glossary-cheat-sheet.git`,
       },
     },
     {
       resolve: `gatsby-source-git`,
       options: {
-        name: `ddd-crew-context-mapping`,
+        name: `github-repo-ddd-crew-context-mapping`,
         remote: `https://github.com/ddd-crew/context-mapping.git`,
       },
     },
     {
       resolve: `gatsby-source-git`,
       options: {
-        name: `ddd-crew-core-domain-charts`,
+        name: `github-repo-ddd-crew-core-domain-charts`,
         remote: `https://github.com/ddd-crew/core-domain-charts.git`,
       },
     },
     {
       resolve: `gatsby-source-git`,
       options: {
-        name: `ddd-crew-bounded-context-canvas`,
+        name: `github-repo-ddd-crew-bounded-context-canvas`,
         remote: `https://github.com/ddd-crew/bounded-context-canvas.git`,
       },
     },
     {
       resolve: `gatsby-source-git`,
       options: {
-        name: `ddd-crew-virtual-modelling-template`,
+        name: `github-repo-ddd-crew-virtual-modelling-template`,
         remote: `https://github.com/ddd-crew/virtual-modelling-templates.git`,
       },
     },
     {
       resolve: `gatsby-source-git`,
       options: {
-        name: `ddd-crew-aggregate-design-canvas`,
+        name: `github-repo-ddd-crew-aggregate-design-canvas`,
         remote: `https://github.com/ddd-crew/aggregate-design-canvas.git`,
       },
     },
     {
       resolve: `gatsby-source-git`,
       options: {
-        name: `ddd-crew-domain-message-flow-modelling`,
+        name: `github-repo-ddd-crew-domain-message-flow-modelling`,
         remote: `https://github.com/ddd-crew/domain-message-flow-modelling.git`,
       },
     },
