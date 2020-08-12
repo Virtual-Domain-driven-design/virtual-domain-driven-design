@@ -18,7 +18,7 @@ const Podcasts: FC = () => {
     allContentYaml: { nodes: { sessions: Podcast[] }[] }
   }>(graphql`
     query {
-      sessions: allContentYaml(
+      allContentYaml(
         filter: { sessions: { elemMatch: { title: { ne: null } } } }
       ) {
         nodes {
