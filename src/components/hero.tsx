@@ -39,18 +39,15 @@ const VDDDInfo = ({ data }) => {
         Share your deep, creative, productive or crazy ideas!
       </div>
       <div className="flex flex-row space-x-4">
-        <BlueButton
-          href="https://sessionize.com/virtual-ddd-meetup"
-          label="Propose a Meetup"
-        />
-        <BlueButton
-          href="https://github.com/Virtual-Domain-driven-design/virtual-domain-driven-design"
-          label="Contribute on Github"
-        />
-        <BlueButton
-          href="https://virtualddd.com/admin"
-          label="Contribute on Netlify CMS"
-        />
+        <BlueButton href="https://sessionize.com/virtual-ddd-meetup">
+          Propose a Meetup
+        </BlueButton>
+        <BlueButton href="https://github.com/Virtual-Domain-driven-design/virtual-domain-driven-design">
+          Contribute on Github
+        </BlueButton>
+        <BlueButton href="https://virtualddd.com/admin">
+          Contribute on Netlify CMS
+        </BlueButton>
       </div>
     </div>
   )

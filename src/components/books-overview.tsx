@@ -1,18 +1,32 @@
-import React, { ReactElement, useState } from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import Book from "./book"
-import BlueButton from "./core/blue-button"
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faChevronCircleLeft,
   faChevronCircleRight,
 } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { graphql, useStaticQuery } from "gatsby"
+import React, { FC, useState } from "react"
 
-const BooksOverview = (): ReactElement => {
+import Book from "./book"
+import BlueButton from "./core/blue-button"
+
+interface Book {
+  author: string
+  img: string
+  level: string
+  tags: string[]
+  title: string
+}
+
+interface BooksOverviewProps {
+  levelFilter: string[]
+}
+
+const BooksOverview: FC<BooksOverviewProps> = ({ levelFilter }) => {
+  const [offset, setOffset] = useState(0)
   const pageLimit = 6
-  const [currentPage, setCurrentPage] = useState(1)
-  const allBooks = useStaticQuery(graphql`
+  const allBooks = useStaticQuery<{
+    allContentYaml: { nodes: { books: Book[] }[] }
+  }>(graphql`
     query {
       allContentYaml(
         filter: { books: { elemMatch: { title: { ne: null } } } }
@@ -35,48 +49,21 @@ const BooksOverview = (): ReactElement => {
       }
     }
   `).allContentYaml.nodes[0].books
-  const totalBooksLength = allBooks.length
 
-  const defineRightArrowVisibility = (newPage) => {
-    if (totalBooksLength > pageLimit * newPage) {
-      return ""
-    } else {
-      return "invisible"
-    }
-  }
-
-  const [leftInvisible, setLeftInvisible] = useState("invisible")
-  const [rightInvisible, setRightInvisible] = useState(
-    defineRightArrowVisibility(1)
+  const filteredBooks = allBooks.filter((book) =>
+    levelFilter.includes(book.level)
   )
+  let filteredOffSet = offset
+  if (filteredOffSet > filteredBooks.length) {
+    filteredOffSet = Math.floor(filteredBooks.length / pageLimit) * pageLimit
+  }
 
-  const offset = (currentPage - 1) * pageLimit
-  const [currentBooks, setCurrentBooks] = useState(
-    allBooks.slice(offset, offset + pageLimit)
+  const currentBooks = filteredBooks.slice(
+    filteredOffSet,
+    filteredOffSet + pageLimit
   )
-
-  const handleMoveLeft = () => {
-    const newPage = currentPage - 1
-    const offset = (newPage - 1) * pageLimit
-    pageChange(offset, newPage)
-  }
-
-  const handleMoveRight = () => {
-    const newPage = currentPage + 1
-    const offset = (newPage - 1) * pageLimit
-    pageChange(offset, newPage)
-  }
-
-  const pageChange = (offset, newPage) => {
-    setCurrentPage(newPage)
-    setCurrentBooks(allBooks.slice(offset, offset + pageLimit))
-    if (newPage > 1) {
-      setLeftInvisible("")
-    } else {
-      setLeftInvisible("invisible")
-    }
-    setRightInvisible(defineRightArrowVisibility(newPage))
-  }
+  const leftVisible = filteredOffSet > 0
+  const rightVisible = filteredBooks.length > filteredOffSet + pageLimit
 
   return (
     <div className="w-full flex flex-col items-center">
@@ -84,11 +71,11 @@ const BooksOverview = (): ReactElement => {
       <div className="flex flex-row justify-center">
         <div className="flex justify-center items-center w-1/20">
           <button
-            onClick={handleMoveLeft}
-            className={
-              leftInvisible +
-              " transition duration-500 text-blue-700 hover:text-blue-400"
-            }
+            onClick={() => setOffset(filteredOffSet - pageLimit)}
+            className={[
+              leftVisible ? "" : "invisible",
+              "transition duration-500 text-blue-700 hover:text-blue-400",
+            ].join(" ")}
           >
             <FontAwesomeIcon icon={faChevronCircleLeft} size="4x" />
           </button>
@@ -100,17 +87,18 @@ const BooksOverview = (): ReactElement => {
         </div>
         <div className="flex justify-center items-center w-1/20">
           <button
-            onClick={handleMoveRight}
-            className={
-              rightInvisible +
-              " transition duration-500 text-blue-700 hover:text-blue-400"
-            }
+            onClick={() => setOffset(filteredOffSet + pageLimit)}
+            className={[
+              rightVisible ? "" : "invisible",
+              "transition duration-500 text-blue-700 hover:text-blue-400",
+            ].join(" ")}
           >
             <FontAwesomeIcon icon={faChevronCircleRight} size="4x" />
           </button>
         </div>
       </div>
-      <BlueButton to="/learning-ddd/books" label="All Books" />
+
+      <BlueButton to="/learning-ddd/books">All Books</BlueButton>
     </div>
   )
 }

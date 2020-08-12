@@ -1,19 +1,31 @@
-import React, { ReactElement, useState } from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import BlueButton from "./core/blue-button"
-
-import Video from "./video"
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faChevronCircleLeft,
   faChevronCircleRight,
 } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { graphql, useStaticQuery } from "gatsby"
+import React, { FC, useState } from "react"
 
-const VideosOverview = (): ReactElement => {
+import BlueButton from "./core/blue-button"
+import Video from "./video"
+
+interface Video {
+  level: string
+  tags: string[]
+  title: string
+  video: string
+}
+
+interface VideosOverviewProps {
+  levelFilter: string[]
+}
+
+const VideosOverview: FC<VideosOverviewProps> = ({ levelFilter }) => {
+  const [offset, setOffset] = useState(0)
   const pageLimit = 5
-  const [currentPage, setCurrentPage] = useState(1)
-  const allVideos = useStaticQuery(graphql`
+  const allVideos = useStaticQuery<{
+    allContentYaml: { nodes: { videos: Video[] }[] }
+  }>(graphql`
     query {
       allContentYaml(
         filter: { videos: { elemMatch: { title: { ne: null } } } }
@@ -32,48 +44,20 @@ const VideosOverview = (): ReactElement => {
     .allContentYaml.nodes.map((node) => node.videos)
     .flat()
 
-  const totalVideosLength = allVideos.length
-
-  const defineRightArrowVisibility = (newPage) => {
-    if (totalVideosLength > pageLimit * newPage) {
-      return ""
-    } else {
-      return "invisible"
-    }
-  }
-
-  const [leftInvisible, setLeftInvisible] = useState("invisible")
-  const [rightInvisible, setRightInvisible] = useState(
-    defineRightArrowVisibility(1)
+  const filteredVideos = allVideos.filter((video) =>
+    levelFilter.includes(video.level)
   )
+  let filteredOffSet = offset
+  if (filteredOffSet > filteredVideos.length) {
+    filteredOffSet = Math.floor(filteredVideos.length / pageLimit) * pageLimit
+  }
 
-  const offset = (currentPage - 1) * pageLimit
-  const [currentVideos, setCurrentVideos] = useState(
-    allVideos.slice(offset, offset + pageLimit)
+  const currentVideos = filteredVideos.slice(
+    filteredOffSet,
+    filteredOffSet + pageLimit
   )
-
-  const handleMoveLeft = () => {
-    const newPage = currentPage - 1
-    const offset = (newPage - 1) * pageLimit
-    pageChange(offset, newPage)
-  }
-
-  const handleMoveRight = () => {
-    const newPage = currentPage + 1
-    const offset = (newPage - 1) * pageLimit
-    pageChange(offset, newPage)
-  }
-
-  const pageChange = (offset, newPage) => {
-    setCurrentPage(newPage)
-    setCurrentVideos(allVideos.slice(offset, offset + pageLimit))
-    if (newPage > 1) {
-      setLeftInvisible("")
-    } else {
-      setLeftInvisible("invisible")
-    }
-    setRightInvisible(defineRightArrowVisibility(newPage))
-  }
+  const leftVisible = filteredOffSet > 0
+  const rightVisible = filteredVideos.length > filteredOffSet + pageLimit
 
   return (
     <div className="w-full flex flex-col items-center">
@@ -81,11 +65,11 @@ const VideosOverview = (): ReactElement => {
       <div className="flex flex-row justify-center">
         <div className="flex justify-center items-center w-1/20">
           <button
-            onClick={handleMoveLeft}
-            className={
-              leftInvisible +
-              " transition duration-500 text-blue-700 hover:text-blue-400"
-            }
+            onClick={() => setOffset(filteredOffSet - pageLimit)}
+            className={[
+              leftVisible ? "" : "invisible",
+              "transition duration-500 text-blue-700 hover:text-blue-400",
+            ].join(" ")}
           >
             <FontAwesomeIcon icon={faChevronCircleLeft} size="4x" />
           </button>
@@ -97,17 +81,17 @@ const VideosOverview = (): ReactElement => {
         </div>
         <div className="flex justify-center items-center w-1/20">
           <button
-            onClick={handleMoveRight}
-            className={
-              rightInvisible +
-              " transition duration-500 text-blue-700 hover:text-blue-400"
-            }
+            onClick={() => setOffset(filteredOffSet + pageLimit)}
+            className={[
+              rightVisible ? "" : "invisible",
+              "transition duration-500 text-blue-700 hover:text-blue-400",
+            ].join(" ")}
           >
             <FontAwesomeIcon icon={faChevronCircleRight} size="4x" />
           </button>
         </div>
       </div>
-      <BlueButton to="/learning-ddd/videos" label="All Videos" />
+      <BlueButton to="/learning-ddd/videos">All Videos</BlueButton>
     </div>
   )
 }

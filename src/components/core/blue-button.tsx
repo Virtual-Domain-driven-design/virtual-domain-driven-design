@@ -1,7 +1,12 @@
-import React, { ReactElement } from "react"
+import React, { FC } from "react"
 import { Link } from "gatsby"
 
-const BlueButton = ({ to, href, label }): ReactElement => {
+interface BlueButtonProps {
+  to?: string
+  href?: string
+}
+
+const BlueButton: FC<BlueButtonProps> = ({ children, to, href }) => {
   const className =
     "rounded-lg border-2 p-4 bg-blue-500 floating-action-button text-white"
   if (href) {
@@ -12,17 +17,19 @@ const BlueButton = ({ to, href, label }): ReactElement => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        {label}
+        {children}
       </a>
     )
   }
   if (to) {
     return (
       <Link className={className} to={to}>
-        {label}
+        {children}
       </Link>
     )
   }
+
+  return null
 }
 
 export default BlueButton

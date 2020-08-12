@@ -7,68 +7,71 @@ import { graphql, useStaticQuery } from "gatsby"
 import React, { FC, useState } from "react"
 
 import BlueButton from "./core/blue-button"
-import Podcast from "./podcast"
-import PodcastPlatforms from "./podcast-platforms"
+import DDDCrew from "./ddd-crew"
 
-interface Podcast {
-  title: string
-  level: string
-  podcast: string
-  tags: string[]
+interface GithubRepo {
+  excerpt: string
+  img: string
+  name: string
+  to: string
 }
 
-interface PodcastsOverviewProps {
+interface GithubRepoProps {
   levelFilter: string[]
 }
 
-const PodcastsOverview: FC<PodcastsOverviewProps> = ({ levelFilter }) => {
+const GithubRepoOverview: FC<GithubRepoProps> = ({ levelFilter }) => {
   const [offset, setOffset] = useState(0)
-  const pageLimit = 5
-  const allPodcasts = useStaticQuery<{
-    allContentYaml: { nodes: { sessions: Podcast[] }[] }
+  const pageLimit = 4
+  const allGithubRepos = useStaticQuery<{
+    allContentYaml: { nodes: { dddCrew: GithubRepo[] }[] }
   }>(graphql`
     query {
       allContentYaml(
-        filter: { sessions: { elemMatch: { title: { ne: null } } } }
+        filter: { dddCrew: { elemMatch: { name: { ne: null } } } }
       ) {
         nodes {
-          sessions {
-            title
-            level
-            podcast
-            tags
+          dddCrew {
+            excerpt
+            name
+            to
+            img {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }
     }
-  `).allContentYaml.nodes[0].sessions.filter(
-    (session) => session.podcast != null
-  )
+  `).allContentYaml.nodes[0].dddCrew
 
-  const filteredPodcasts = allPodcasts.filter((podcast) =>
-    levelFilter.includes(podcast.level)
-  )
+  //TODO
+  const filteredGithubRepos = allGithubRepos
+  // const filteredGithubRepos = allGithubRepos.filter((githubRepo) =>
+  //   levelFilter.includes(githubRepo.level)
+  // )
   let filteredOffSet = offset
-  if (filteredOffSet > filteredPodcasts.length) {
-    filteredOffSet = Math.floor(filteredPodcasts.length / pageLimit) * pageLimit
+  if (filteredOffSet > filteredGithubRepos.length) {
+    filteredOffSet =
+      Math.floor(filteredGithubRepos.length / pageLimit) * pageLimit
   }
 
-  const currentPodcasts = filteredPodcasts.slice(
+  const currentGithubRepos = filteredGithubRepos.slice(
     filteredOffSet,
     filteredOffSet + pageLimit
   )
   const leftVisible = filteredOffSet > 0
-  const rightVisible = filteredPodcasts.length > filteredOffSet + pageLimit
+  const rightVisible = filteredGithubRepos.length > filteredOffSet + pageLimit
 
   return (
     <div className="w-full flex flex-col items-center">
-      <h2 className="my-6 lg:w-2/3 xl:w-1/2">Podcasts</h2>
-      <div>
-        <p className="italic text-justify">
-          Listen to the VDDD podcast by clicking on one of the platforms below
-        </p>
-        <PodcastPlatforms />
-      </div>
+      <h2 className="my-6 lg:w-2/3 xl:w-1/2">DDD-crew</h2>
+      <BlueButton href="https://github.com/ddd-crew">
+        Get involved with the ddd-crew on Github
+      </BlueButton>
       <div className="flex flex-row justify-center">
         <div className="flex justify-center items-center w-1/20">
           <button
@@ -82,8 +85,8 @@ const PodcastsOverview: FC<PodcastsOverviewProps> = ({ levelFilter }) => {
           </button>
         </div>
         <div className="flex flex-row flex-wrap items-center w18/20">
-          {currentPodcasts.map((session, index) => {
-            return <Podcast key={index} session={session}></Podcast>
+          {currentGithubRepos.map((repo, index) => {
+            return <DDDCrew key={index} repo={repo}></DDDCrew>
           })}
         </div>
         <div className="flex justify-center items-center w-1/20">
@@ -98,9 +101,9 @@ const PodcastsOverview: FC<PodcastsOverviewProps> = ({ levelFilter }) => {
           </button>
         </div>
       </div>
-      <BlueButton to="/learning-ddd/podcasts">All Podcasts</BlueButton>
+      <BlueButton to="/learning-ddd/ddd-crew">All DDD-Crew</BlueButton>
     </div>
   )
 }
 
-export default PodcastsOverview
+export default GithubRepoOverview
