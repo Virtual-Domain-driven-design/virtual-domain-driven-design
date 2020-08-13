@@ -6,6 +6,7 @@ import BooksOverview from "../components/books-overview"
 import PodcastsOverview from "../components/podcasts-overview"
 import SessionsOverview from "../components/sessions-overview"
 import VideoOverview from "../components/video-overview"
+import PapersOverview from "../components/papers-overview"
 
 import SEO from "../components/seo"
 import BackgroundImage from "gatsby-background-image"
@@ -127,6 +128,7 @@ function LearningDDD(): ReactElement {
       <GithubRepoOverview levelFilter={levelFilter}></GithubRepoOverview>
       <VideoOverview levelFilter={levelFilter}></VideoOverview>
       <BooksOverview levelFilter={levelFilter}></BooksOverview>
+      <PapersOverview levelFilter={levelFilter}></PapersOverview>
       <SessionsOverview levelFilter={levelFilter}></SessionsOverview>
       <PodcastsOverview levelFilter={levelFilter}></PodcastsOverview>
     </Layout>

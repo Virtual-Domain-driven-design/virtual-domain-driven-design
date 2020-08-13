@@ -1,0 +1,31 @@
+papers:
+  - title: "A design methodology for reliable software systems"
+    authors: "Barbara Liskov"
+    year: "1972"
+    link: "https://pdfs.semanticscholar.org/d420/c8b473a23b80241fd7c90757becb59b1136c.pdf"
+    excerpt: "Because systems of any size can al-ways be expected to be subject to changes in require-ments, the project goal is to produce not only reliable software, but readable software which is  relatively easy to modify and maintain. This paper describes a  design methodology developed as part of that project"
+    level: intermediate
+    tags:
+      - software architecture
+      - software design
+  - title: "Splitting the Organization and Integrating the Code:Conway's Law Revisited"
+    authors: "James D. Herbsleb and Rebecca E. Grinter"
+    year: "1999"
+    link: "https://www.cs.cmu.edu/afs/cs/Web/People/jdh/collaboratory/research_papers/ICSE99.pdf"
+    excerpt: "This paper presents a case study of what indeed turned out to be the most difficult part of a geographically distributed software project, i.e., integration."
+    level: intermediate
+    tags:
+      - software architecture
+      - software design
+      - conways law
+  - title: "On the Criteria to Be Used in Decomposing Systems into Modules"
+    authors: "D. L. Parnas"
+    year: "1972"
+    link: "https://www.win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf"
+    excerpt: "This paper discusses modularization as a mechanism for improving the flexibility and comprehensibility of a system while allowing the shortening of its development time."
+    level: intermediate
+    tags:
+      - software architecture
+      - software design
+      - modularity
+      

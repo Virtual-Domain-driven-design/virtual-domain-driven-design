@@ -31,6 +31,22 @@ collections:
               - { label: "Image", name: "img", widget: "image", allow_multiple: false}
               - { label: "Level", name: "level", widget: "select", options: ["all", "beginner", "intermediate", "advanced"] }
               - { label: "Tags", name: "tags", widget: "list", hint: "List of comma seperated tags"}
+      - name: "papers"
+        label: "Papers"
+        file: "src/content/papers.yaml"
+        extension: "yaml"
+        fields:
+          - name: "papers"
+            label: "Papers"
+            widget: "list"
+            summary: '{{fields.title}}'
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Authors", name: "authors", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
+              - { label: "Excerpt", name: "excerpt", widget: "string" }
+              - { label: "Level", name: "level", widget: "select", options: ["all", "beginner", "intermediate", "advanced"] }
+              - { label: "Tags", name: "tags", widget: "list", hint: "List of comma seperated tags"}
       - name: "videos"
         label: "Videos"
         file: "src/content/videos.yaml"
