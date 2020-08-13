@@ -10,6 +10,14 @@
         - strategic ddd
         - bounded context
         - tactical ddd
+    - name: "SATURN 2019 Workshop -- Architecture Island"
+      repo: "https://github.com/michaelkeeling/saturn2019-architecture-island-workshop.git"
+      img: "../images/github-repositories/saturn-2019.jpg"
+      to: "/learning-ddd/saturn2019-architecture-island-workshop"
+      excerpt: "Our goal is to identify the most important concepts, ideas, strategies, methods, patterns, and so on, that all software engineers must know about software architecture."
+      level: intermediate
+      tags:
+        - software architecture
     - name: "EventStorming Glossary & Cheat sheet"
       repo: "https://github.com/ddd-crew/eventstorming-glossary-cheat-sheet.git"
       img: "../images/github-repositories/domain-event.png"

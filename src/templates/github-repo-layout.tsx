@@ -9,18 +9,21 @@ import React from "react"
 import { graphql } from "gatsby"
 import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import { Link } from "gatsby"
+
+import MarkdownLink from "../plugins/markdown-link"
 
 import Layout from "./layout"
 
-const shortcodes = { Link } // Provide common components here
-
-const GithubRepoLayout = ({ data: { mdx } }) => {
+const GithubRepoLayout = ({ location, data: { mdx } }) => {
   return (
     <Layout>
       <div className="flex flex-col items-center" id="markdown">
         <div className="markdown w-3/5">
-          <MDXProvider components={shortcodes}>
+          <MDXProvider
+            components={{
+              a: (props) => <MarkdownLink location={location} {...props} />,
+            }}
+          >
             <MDXRenderer>{mdx.body}</MDXRenderer>
           </MDXProvider>
         </div>

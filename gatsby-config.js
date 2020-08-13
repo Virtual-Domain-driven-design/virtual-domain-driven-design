@@ -43,6 +43,23 @@ module.exports = {
               wrapperStyle: (result) => `width: 100%;margin-left: 0;`,
             },
           },
+          {
+            resolve: `gatsby-remark-copy-linked-files`,
+            options: {
+              ignoreFileExtensions: [
+                `md`,
+                `mdx`,
+                `png`,
+                `jpg`,
+                `jpeg`,
+                `bmp`,
+                `tiff`,
+              ],
+            },
+          },
+          {
+            resolve: `gatsby-remark-smartypants`,
+          },
         ],
       },
     },
@@ -79,6 +96,13 @@ module.exports = {
       options: {
         name: `github-repo-ddd-crew-starter-modelling`,
         remote: `https://github.com/ddd-crew/ddd-starter-modelling-process.git`,
+      },
+    },
+    {
+      resolve: `gatsby-source-git`,
+      options: {
+        name: `github-repo-saturn2019-architecture-island-workshop`,
+        remote: `https://github.com/michaelkeeling/saturn2019-architecture-island-workshop.git`,
       },
     },
     {
