@@ -22,6 +22,8 @@ const GithubRepoLayout = ({ location, data: { mdx } }) => {
           <MDXProvider
             components={{
               a: (props) => <MarkdownLink location={location} {...props} />,
+              // NEED TO ESCAPE BECAUSE OF A BUG
+              embed: () => <div></div>,
             }}
           >
             <MDXRenderer>{mdx.body}</MDXRenderer>
