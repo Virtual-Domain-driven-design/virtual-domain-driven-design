@@ -29,7 +29,7 @@ const ContentGallery: FC<ContentGalleryProps> = ({
   const rightVisible = itemsLenght > filteredOffSet + pageLimit
   return (
     <div className="w-full flex flex-col items-center">
-      <h2 className="my-6 lg:w-2/3 xl:w-1/2">{title}</h2>
+      <h2 className="my-6 font-bold text-2xl lg:w-2/3 xl:w-1/2">{title}</h2>
       <div className="flex flex-row justify-center">
         <div className="flex justify-center items-center w-1/20">
           <button
