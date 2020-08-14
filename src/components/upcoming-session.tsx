@@ -1,11 +1,26 @@
-import React, { ReactElement } from "react"
+import React, { FC } from "react"
 
-const UpcomingSession = ({ index, session }): ReactElement => {
+export interface UpcomingSessionContent {
+  date: string
+  description: string
+  img: any
+  links: UpcomingSessionContentLink[]
+  time: string
+  title: string
+}
+
+interface UpcomingSessionContentLink {
+  index: string
+  label: string
+}
+
+interface UpcomingSessionProps {
+  session: UpcomingSessionContent
+}
+
+const UpcomingSession: FC<UpcomingSessionProps> = ({ session }) => {
   return (
-    <div
-      key={index}
-      className="bg-white w-full rounded-lg shadow-md p-4 md:p-8 mb-2"
-    >
+    <div className="bg-white w-full rounded-lg shadow-md p-4 md:p-8 mb-2">
       <div className="font-bold">{session.title}</div>
       <div className="text-sm text-gray-600">
         {session.date} - {session.time}

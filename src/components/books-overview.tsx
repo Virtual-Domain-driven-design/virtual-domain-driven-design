@@ -1,16 +1,8 @@
 import { graphql, useStaticQuery } from "gatsby"
 import React, { FC, useState } from "react"
 
-import Book from "./book"
+import Book, { BookContent } from "./book"
 import ContentGallery from "./core/content-gallery"
-
-interface Book {
-  author: string
-  img: string
-  level: string
-  tags: string[]
-  title: string
-}
 
 interface BooksOverviewProps {
   levelFilter: string[]
@@ -20,7 +12,7 @@ const BooksOverview: FC<BooksOverviewProps> = ({ levelFilter }) => {
   const [offset, setOffset] = useState(0)
   const pageLimit = 6
   const allBooks = useStaticQuery<{
-    allContentYaml: { nodes: { books: Book[] }[] }
+    allContentYaml: { nodes: { books: BookContent[] }[] }
   }>(graphql`
     query {
       allContentYaml(

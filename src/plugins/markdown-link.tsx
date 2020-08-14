@@ -11,7 +11,7 @@ const domainRegex = /http[s]*:\/\/[www.]*virtualddd\.com[/]?/
 // /http[s]*:\/\/[www.]*YOURDOMAIN\.com(?!\/i-am-external|\/me-too)[/]?/
 
 interface MarkdownLinkProps {
-  location: string
+  location: { pathname: string }
   href: string
 }
 

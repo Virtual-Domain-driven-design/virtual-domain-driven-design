@@ -1,6 +1,18 @@
-import React, { ReactElement } from "react"
+import React, { FC } from "react"
 
-const Session = ({ session }): ReactElement => {
+export interface SessionContent {
+  date: string
+  level: string
+  tags: string[]
+  title: string
+  video: string
+}
+
+interface SessionProps {
+  session: SessionContent
+}
+
+const Session: FC<SessionProps> = ({ session }) => {
   return (
     <div className="session bg-white w-64 rounded-lg shadow-md p-2 m-2 flex flex-col">
       <div className="text-sm text-gray-600">{session.date}</div>

@@ -1,7 +1,19 @@
-import React, { ReactElement } from "react"
+import React, { FC } from "react"
 import Img from "gatsby-image"
 
-const Book = ({ book }): ReactElement => {
+export interface BookContent {
+  author: string
+  img: any
+  level: string
+  tags: string[]
+  title: string
+}
+
+interface BookProps {
+  book: BookContent
+}
+
+const Book: FC<BookProps> = ({ book }) => {
   return (
     <div className="group bg-white w-48 h-64 rounded-lg shadow-md m-2 flex flex-col items-center justify-start">
       <Img

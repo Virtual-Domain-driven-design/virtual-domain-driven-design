@@ -1,12 +1,14 @@
-import React, { ReactElement } from "react"
 import { graphql, useStaticQuery } from "gatsby"
+import React, { FC } from "react"
+
 import Layout from "../../templates/layout"
-
-import Video from "../../components/video"
 import SEO from "../../components/seo"
+import Video, { VideoContent } from "../../components/video"
 
-function Videos(): ReactElement {
-  const videos = useStaticQuery(graphql`
+const Videos: FC = () => {
+  const videos = useStaticQuery<{
+    allContentYaml: { nodes: { videos: VideoContent[] }[] }
+  }>(graphql`
     query {
       allContentYaml(
         filter: { videos: { elemMatch: { title: { ne: null } } } }
@@ -29,9 +31,7 @@ function Videos(): ReactElement {
     <Layout>
       <SEO
         title="Domain-Driven Design videos"
-        description="A curated list of DDD related videos"
-        image
-        article
+        description="A curated list of Domain-Driven Design and Software Architecture related videos"
       />
       <div className="w-full flex flex-col items-center">
         <h2 className="my-6 lg:w-2/3 xl:w-1/2">Videos</h2>

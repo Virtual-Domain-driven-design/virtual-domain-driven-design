@@ -31,10 +31,8 @@ const Papers: FC = () => {
   return (
     <Layout>
       <SEO
-        title="Domain-Driven Design community knowledge"
-        description="DDD Crew community knowledge"
-        image
-        article
+        title="Domain-Driven Design papers"
+        description="A curated list of Domain-Driven Design and Software Architecture related papers"
       />
       <div className="w-full flex flex-col items-center">
         <h2 className="my-6 lg:w-2/3 xl:w-1/2">Papers</h2>

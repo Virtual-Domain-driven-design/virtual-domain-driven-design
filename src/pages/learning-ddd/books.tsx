@@ -1,12 +1,14 @@
-import React, { ReactElement } from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import Layout from "../../templates/layout"
+import React, { FC } from "react"
 
-import Book from "../../components/book"
+import Book, { BookContent } from "../../components/book"
+import Layout from "../../templates/layout"
 import SEO from "../../components/seo"
 
-function Books(): ReactElement {
-  const books = useStaticQuery(graphql`
+const Books: FC = () => {
+  const books = useStaticQuery<{
+    allContentYaml: { nodes: { books: BookContent[] }[] }
+  }>(graphql`
     query {
       allContentYaml(
         filter: { books: { elemMatch: { title: { ne: null } } } }
@@ -34,9 +36,7 @@ function Books(): ReactElement {
     <Layout>
       <SEO
         title="Domain-Driven Design books"
-        description="A curated list of DDD related books"
-        image
-        article
+        description="A curated list of Domain-Driven Design and Software Architecture related Books"
       />
       <div className="w-full flex flex-col items-center">
         <h2 className="my-6 lg:w-2/3 xl:w-1/2">Books</h2>

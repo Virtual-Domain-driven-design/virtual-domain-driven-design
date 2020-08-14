@@ -1,6 +1,17 @@
-import React, { ReactElement } from "react"
+import React, { FC } from "react"
 
-const Podcast = ({ session }): ReactElement => {
+export interface PodcastContent {
+  title: string
+  level: string
+  podcast: string
+  tags: string[]
+}
+
+interface PodcastProps {
+  session: PodcastContent
+}
+
+const Podcast: FC<PodcastProps> = ({ session }) => {
   return (
     <div className="group bg-white w-64 h-48 rounded-lg shadow-md p-2 m-1">
       <div className="embed-responsive aspect-ratio-21/9">

@@ -1,6 +1,17 @@
-import React, { ReactElement } from "react"
+import React, { FC } from "react"
 
-const Video = ({ video }): ReactElement => {
+export interface VideoContent {
+  title: string
+  level: string
+  tags: string[]
+  video: string
+}
+
+interface VideoProps {
+  video: VideoContent
+}
+
+const Video: FC<VideoProps> = ({ video }) => {
   return (
     <div className="session bg-white w-64 rounded-lg shadow-md p-2 m-2 flex flex-col">
       <div className="videoframe">

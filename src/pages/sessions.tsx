@@ -1,15 +1,20 @@
-import React, { ReactElement } from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import UpcomingSession from "../components/upcoming-session"
+import React, { FC } from "react"
+
+import Layout from "../templates/layout"
+import UpcomingSession, {
+  UpcomingSessionContent,
+} from "../components/upcoming-session"
+import SEO from "../components/seo"
+import Session, { SessionContent } from "../components/session"
 
 import NoUpcomingImg from "../images/no_upcoming.svg"
-import Layout from "../templates/layout"
 
-import Session from "../components/session"
+interface UpcomingSessionProps {
+  sessions: UpcomingSessionContent[]
+}
 
-import SEO from "../components/seo"
-
-const UpcomingSessions = ({ sessions }) => {
+const UpcomingSessions: FC<UpcomingSessionProps> = ({ sessions }) => {
   if (sessions.length > 0) {
     return (
       <div className="my-8 w-4/5 lg:w-2/3 xl:w-1/2">
@@ -43,7 +48,11 @@ const UpcomingSessions = ({ sessions }) => {
   )
 }
 
-const PastSessions = ({ sessions }) => {
+interface PastSessionProps {
+  sessions: SessionContent[]
+}
+
+const PastSessions: FC<PastSessionProps> = ({ sessions }) => {
   if (sessions.length > 0) {
     return (
       <div className="w-full flex flex-col items-center justify-start">
@@ -61,7 +70,7 @@ const PastSessions = ({ sessions }) => {
   return <div></div>
 }
 
-function Sessions(): ReactElement {
+const Sessions: FC = () => {
   const data = useStaticQuery(graphql`
     query {
       upcoming: allContentYaml(
@@ -96,23 +105,23 @@ function Sessions(): ReactElement {
       }
     }
   `)
+  const upcomingSessions: UpcomingSessionContent[] =
+    data.upcoming.nodes[0].upcomingSessions
+  const pastSessions: SessionContent[] = data.past.nodes[0].sessions.filter(
+    (session: SessionContent) => session.video
+  )
+
   return (
     <Layout>
       <SEO
-        title="Virtual Domain-Driven Design sessions"
+        title="Virtual Domain-Driven Design meetups and sessions"
         description="An online community and meetup for Domain-Driven Design"
-        image
-        article
+        keywords="Domain-Driven Design,Software Architecture,meetup"
+        image={data.upcoming.nodes[0].upcomingSessions[0].img}
       />
       <div className="section" id="Sessions">
-        <UpcomingSessions
-          sessions={data.upcoming.nodes[0].upcomingSessions}
-        ></UpcomingSessions>
-        <PastSessions
-          sessions={data.past.nodes[0].sessions.filter(
-            (session) => session.video
-          )}
-        ></PastSessions>
+        <UpcomingSessions sessions={upcomingSessions}></UpcomingSessions>
+        <PastSessions sessions={pastSessions}></PastSessions>
       </div>
     </Layout>
   )

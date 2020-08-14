@@ -6,6 +6,8 @@ module.exports = {
     url: "https://virtualddd.com",
     twitterUsername: "@virtualddd",
     image: "/images/kandddsinky.jpg",
+    defaultKeywords:
+      "Domain-Driven Design,Software Architecture,Socio-technical,Sociotechnical,Microservices,cqrs/es,evenstorming,event storming,strategic design",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

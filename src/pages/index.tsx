@@ -1,4 +1,5 @@
-import React, { ReactElement } from "react"
+import React, { FC } from "react"
+
 import Hero from "../components/hero"
 import Conferences from "../components/conferences"
 import Communities from "../components/communities"
@@ -6,7 +7,7 @@ import Sponsors from "../components/sponsors"
 import Organisers from "../components/organisers"
 import Layout from "../templates/layout"
 
-function Index(): ReactElement {
+const Index: FC = () => {
   return (
     <Layout>
       <Hero></Hero>

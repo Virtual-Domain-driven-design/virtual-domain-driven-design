@@ -72,9 +72,7 @@ function LearningDDD(): ReactElement {
     <Layout>
       <SEO
         title="Learn Domain-Driven Design"
-        description="The one place of Curated DDD content"
-        image
-        article
+        description="The place for all your Domain-Driven Design and Software Architecture content"
       />
       <BackgroundImage
         Tag="section"
