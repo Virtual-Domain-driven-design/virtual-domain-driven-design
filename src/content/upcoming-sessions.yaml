@@ -8,22 +8,12 @@
   #     - label: ""
   #       url: ""
 upcomingSessions:
-  - title: "[Hands-on] Exploring Techniques For Modelling Bounded Context Collaboration"
-    date: "Thursday, August 13th. 2020"
-    time: "19:00 CEST"
-    img: "https://secure.meetupstatic.com/photos/event/e/f/e/highres_491223838.jpeg"
-    description:
-      "As Vladik Khononov says, minimising complexity in software systems is about balancing local vs global complexity. A major source of global complexity is the interaction between components in an architecture.
-      In DDD, architectural components are bounded contexts and they interact using commands, queries, and events. While this is clear, the tools for modelling and visualising bounded context interaction are not so clear.
-      In this hands-on meetup, we're going to explore different techniques that are used to design and visualise bounded context integration including:
-      - UML Sequence Diagrams
-      - Domain Storytelling
-      - EventStorming
-      - Domain Message Flow Modelling
-      We will look at the pros & cons of each technique, and we will discuss ways to improve each technique. You will also have the chance to share other techniques you think are useful.
-      The second part of this workshop will involve splitting into small groups and modelling a scenario using one or more of the discussed techniques."
+  - title: ""
+    date: ""
+    time: ""
+    img: ""
+    description: 
+      ""
     links:
-      - label: "YouTube live stream"
-        url: "https://youtu.be/oj4zGj6sPDc"
-      - label: "The Event on Meetup"
-        url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/271938901/"
+      - label: ""
+        url: ""

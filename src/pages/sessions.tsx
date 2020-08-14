@@ -15,7 +15,7 @@ interface UpcomingSessionProps {
 }
 
 const UpcomingSessions: FC<UpcomingSessionProps> = ({ sessions }) => {
-  if (sessions.length > 0) {
+  if (sessions.length > 0 && sessions[0].title) {
     return (
       <div className="my-8 w-4/5 lg:w-2/3 xl:w-1/2">
         <h2>Upcoming Sessions</h2>
