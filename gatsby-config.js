@@ -7,13 +7,14 @@ module.exports = {
     twitterUsername: "@virtualddd",
     image: "/images/kandddsinky.jpg",
     defaultKeywords:
-      "Domain-Driven Design,Software Architecture,Socio-technical,Sociotechnical,Microservices,cqrs/es,evenstorming,event storming,strategic design",
+      "Domain-Driven Design, Domain Driven Design, Behaviour-Driven Development, Software Architecture, Socio-technical, Sociotechnical, Socio-technical architecture, Sociotechnical architecture, Microservices, cqrs/es, evenstorming, event storming, strategic design, organisational design",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-remark-images`,
     `gatsby-transformer-yaml`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-page-creator`,
       options: {
@@ -201,5 +202,28 @@ module.exports = {
       },
     },
     `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: "UA-175493349-2",
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: false,
+        // Setting this parameter is optional
+        anonymize: true,
+        // Setting this parameter is also optional
+        respectDNT: true,
+        // Delays sending pageview hits on route update (in milliseconds)
+        pageTransitionDelay: 0,
+        // Enables Google Optimize using your container Id
+        // optimizeId: "YOUR_GOOGLE_OPTIMIZE_TRACKING_ID",
+        // Enables Google Optimize Experiment ID
+        // experimentId: "YOUR_GOOGLE_EXPERIMENT_ID",
+        // Set Variation ID. 0 for original 1,2,3....
+        // variationId: "YOUR_GOOGLE_OPTIMIZE_VARIATION_ID",
+        // Defers execution of google analytics script after page load
+        defer: false,
+      },
+    },
   ],
 }
