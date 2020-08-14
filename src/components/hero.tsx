@@ -125,7 +125,6 @@ const Hero = (): ReactElement => {
         <div className="w-5/6 z-10 flex flex-col items-center">
           <div className="w-full hidden md:flex items-stretch justify-start my-2">
             <UpcomingSession
-              index="0"
               session={data.allContentYaml.nodes[0].upcomingSessions[0]}
             ></UpcomingSession>
           </div>
