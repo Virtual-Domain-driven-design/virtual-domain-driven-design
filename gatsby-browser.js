@@ -5,3 +5,4 @@
  */
 import "./src/css/index.css"
 import "gatsby-plugin-breadcrumb/gatsby-plugin-breadcrumb.css"
+import "tailwindcss/dist/base.min.css"

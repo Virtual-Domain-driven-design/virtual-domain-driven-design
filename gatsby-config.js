@@ -200,5 +200,6 @@ module.exports = {
         precachePages: [`/learning-ddd/`, `/learning-ddd/*`],
       },
     },
+    `gatsby-plugin-styled-components`,
   ],
 }
