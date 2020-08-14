@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: `https://virtualddd.com`,
     title: `Virtual Domain-Driven Design`,
     titleTemplate: "%s - A community of practise",
     description: `Learn, explore and collaborate with the Domain-Driven Design community`,
