@@ -8,12 +8,27 @@
   #     - label: ""
   #       url: ""
 upcomingSessions:
-  - title: ""
-    date: ""
-    time: ""
-    img: ""
+  - title: "[Panel] Design better products with real cross-functional teams - Jutta & Maryse"
+    date: "Aug 26, 2020"
+    time: "19:00 CEST"
+    img: "https://secure.meetupstatic.com/photos/event/8/5/0/b/highres_491854059.jpeg"
     description: 
-      ""
+      "Too many products have been developed that serve one kind of client only. 
+      The reason is that the composition of the teams leads (subconsciously) to the development of products that serve only people that resemble the people in the team. 
+      One “famous” example is the soap dispenser that only works if your skin is white.
+
+      If teams are really cross-functional and are resembling the diversity of the market, the products they’re creating are also better. 
+      Thus, if the whole team has the full business expertise, knows the market, reflects the full diversity of the clients, 
+      then it can even disrupt the market and isn’t waiting for some person (e.g. the Product Owner) to decide on priorities. 
+      With this real cross-functionality, the team can fully understand the company’s business and has a holistic view of it, knowing its contribution to the company’s value stream.
+
+      Join us in a Panel dialogue with Jutta Eckstein and Maryse Meinen about that 
+      real cross-functional teams are an essential building block for implementing company-wide agility and 
+      the organization benefits by creating better and in a way more real products and by having more options when entering the war of talent."
     links:
-      - label: ""
-        url: ""
+      - label: "The event on Meetup"
+        url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/272620372/"
+      - label: "Join on Zoom"
+        url: "https://us02web.zoom.us/j/83346526349"
+      - label: "Join on Youtube"
+        url: "https://youtu.be/RM0uErMljoA"
