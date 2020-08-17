@@ -196,12 +196,12 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        precachePages: [`/learning-ddd/`, `/learning-ddd/*`],
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-offline`,
+    //   options: {
+    //     precachePages: [`/learning-ddd/`, `/learning-ddd/*`],
+    //   },
+    // },
     `gatsby-plugin-styled-components`,
   ],
 }
