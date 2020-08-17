@@ -61,11 +61,9 @@ const GithubRepoOverview: FC<GithubRepoProps> = ({ levelFilter }) => {
       title="Github Repositories"
       allTo="/learning-ddd/github-repositories"
     >
-      <div className="flex flex-row flex-wrap items-center w18/20">
-        {currentGithubRepos.map((githubRepo, index) => {
-          return <GithubRepo key={index} githubRepo={githubRepo}></GithubRepo>
-        })}
-      </div>
+      {currentGithubRepos.map((githubRepo, index) => {
+        return <GithubRepo key={index} githubRepo={githubRepo}></GithubRepo>
+      })}
     </ContentGallery>
   )
 }

@@ -61,11 +61,9 @@ const VideosOverview: FC<VideosOverviewProps> = ({ levelFilter }) => {
       title="Videos"
       allTo="/learning-ddd/videos"
     >
-      <div className="flex flex-row flex-wrap items-center w18/20">
-        {currentVideos.map((video, index) => {
-          return <Video key={index} video={video}></Video>
-        })}
-      </div>
+      {currentVideos.map((video, index) => {
+        return <Video key={index} video={video}></Video>
+      })}
     </ContentGallery>
   )
 }

@@ -55,11 +55,9 @@ const PapersOverview: FC<PapersOverviewProps> = ({ levelFilter }) => {
       title="Papers"
       allTo="/learning-ddd/papers"
     >
-      <div className="flex flex-row flex-wrap items-center w18/20">
-        {currentPapers.map((paper, index) => {
-          return <Paper key={index} paper={paper}></Paper>
-        })}
-      </div>
+      {currentPapers.map((paper, index) => {
+        return <Paper key={index} paper={paper}></Paper>
+      })}
     </ContentGallery>
   )
 }

@@ -61,11 +61,9 @@ const PodcastsOverview: FC<PodcastsOverviewProps> = ({ levelFilter }) => {
       title="Podcasts"
       allTo="/learning-ddd/podcasts"
     >
-      <div className="flex flex-row flex-wrap items-center w18/20">
-        {currentPodcasts.map((session, index) => {
-          return <Podcast key={index} session={session}></Podcast>
-        })}
-      </div>
+      {currentPodcasts.map((session, index) => {
+        return <Podcast key={index} session={session}></Podcast>
+      })}
     </ContentGallery>
   )
 }

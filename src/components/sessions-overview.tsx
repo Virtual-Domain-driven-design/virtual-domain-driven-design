@@ -2,24 +2,17 @@ import { graphql, useStaticQuery } from "gatsby"
 import React, { FC, useState } from "react"
 
 import ContentGallery from "./core/content-gallery"
-import Session from "./session"
-
-interface Session {
-  level: string
-  tags: string[]
-  title: string
-  video: string
-}
+import Session, { SessionContent } from "./session"
 
 interface SessionOverviewProps {
   levelFilter: string[]
 }
 
-const SessionOverview: FC<SessionsOverviewProps> = ({ levelFilter }) => {
+const SessionOverview: FC<SessionOverviewProps> = ({ levelFilter }) => {
   const [offset, setOffset] = useState(0)
   const pageLimit = 5
   const allSessions = useStaticQuery<{
-    allContentYaml: { nodes: { sessions: Session[] }[] }
+    allContentYaml: { nodes: { sessions: SessionContent[] }[] }
   }>(graphql`
     query {
       allContentYaml(
@@ -59,11 +52,9 @@ const SessionOverview: FC<SessionsOverviewProps> = ({ levelFilter }) => {
       title="VDDD Sessions"
       allTo="/sessions"
     >
-      <div className="flex flex-row flex-wrap items-center w18/20">
-        {currentSessions.map((session, index) => {
-          return <Session key={index} session={session} />
-        })}
-      </div>
+      {currentSessions.map((session, index) => {
+        return <Session key={index} session={session} />
+      })}
     </ContentGallery>
   )
 }

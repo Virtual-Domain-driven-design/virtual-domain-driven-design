@@ -59,11 +59,9 @@ const BooksOverview: FC<BooksOverviewProps> = ({ levelFilter }) => {
       title="Books"
       allTo="/learning-ddd/books"
     >
-      <div className="flex flex-row flex-wrap items-center w18/20">
-        {currentBooks.map((book, index) => {
-          return <Book key={index} book={book}></Book>
-        })}
-      </div>
+      {currentBooks.map((book, index) => {
+        return <Book key={index} book={book}></Book>
+      })}
     </ContentGallery>
   )
 }
