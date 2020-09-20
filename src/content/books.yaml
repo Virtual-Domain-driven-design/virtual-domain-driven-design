@@ -102,3 +102,12 @@ books:
     tags:
       - essential
       - introductory
+  - title: Functional and Reactive Domain Modeling
+    level: beginner
+    author: Debasish Ghosh
+    img: ../images/books/functional-and-reactive-domain-modeling.jpg
+    tags:
+      - essential
+      - introductory
+      - scala
+      - functional programming
