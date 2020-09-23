@@ -10,6 +10,21 @@
 #     - label: ""
 #       url: ""
 sessions:
+  - title: "[Panel] Remote facilitation with Kirsten Clacey, Jay-Allen Morris and Jo Perold"
+    date: "Sep 22, 2020"
+    time: "19:00 CEST"
+    video: "https://www.youtube.com/embed/hi_DlT_dNg4"
+    podcast: "https://oembed.libsyn.com/embed?item_id=16123616"
+    level: intermediate
+    description: 
+      "Collaboration in remote meetings doesn’t have to be difficult, learn how to make it effective, enjoyable and valuable. Join us for a panel discussion and see how we as a DDD community can improve our remote collaborative modelling sessions from Kirsten Clacey and Jay-Allen Morris, authors of The Remote Facilitator’s Pocket Guide and Jo Perold Coach and Trainer at Agile42 & keynote speaker at conferences."
+    tags:
+      - agile teams
+      - cross functional
+      - remote facilitation
+      - remote collaboration
+      - collaborative modelling
+      - socio-technical
   - title: "[Panel] Design better products with real cross-functional teams - Jutta & Maryse"
     date: "Aug 26, 2020"
     time: "19:00 CEST"
