@@ -8,12 +8,25 @@
   #     - label: ""
   #       url: ""
 upcomingSessions:
-  - title: ""
-    date: ""
-    time: ""
-    img: ""
+  - title: "[Panel] What makes you a DDD'er?"
+    date: "Oct 19th, 2020"
+    time: "19:00 CEST"
+    img: "https://secure.meetupstatic.com/photos/event/2/0/4/1/highres_493028257.jpeg"
     description: 
-      " " 
+      " From twitter: https://twitter.com/mathiasverraes/status/1298665213978447873?s=20
+        Using collaborative modelling to build a shared understanding of your domain and use it to guide your design _is_ the philosophy behind DDD though. The rest is the principles, patterns, and practices. But perhaps just doing EventStorming does not actually make you a DDD'er, but what is?
+
+        In today's panel, we will discuss with several people from the community what makes you a DDD'er? Joining us are:
+
+        Emanuela Damiani
+        Krisztina Hirth
+        Mathias Verraes
+        Jessica White
+        Nick Tune" 
     links:
-      - label: ""
-        url: ""
+      - label: "RSVP on Meetup"
+        url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/273949280/"
+      - label: "Interact on Zoom"
+        url: "https://us02web.zoom.us/j/84220011452"
+      - label: "Watch on Youtube"
+        url: "https://youtu.be/ndUKsGn0Ybs"
