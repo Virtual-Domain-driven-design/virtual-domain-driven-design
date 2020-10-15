@@ -69,8 +69,8 @@ const Conferences = (): ReactElement => {
             <Conference
               name="Domain-Driven Design Europe"
               image={data.dddeu.childImageSharp.fluid}
-              location="Amsterdam, Netherlands"
-              date="February"
+              location="Online-only"
+              date="February (Online)"
               website="https://dddeurope.com/"
             ></Conference>
             <Conference
