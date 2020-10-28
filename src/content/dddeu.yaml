@@ -110,3 +110,131 @@ videos:
       - f#
       - functional programming
       - code
+  - title: "Eric Evans - Good Design is Imperfect Design"
+    video: "https://www.youtube.com/embed/lY54TmmEllY"
+    level: beginner
+    tags:
+      - essential
+      - core
+      - software design
+  - title: "David West - The Past and Future of Domain-Driven Design"
+    video: "https://www.youtube.com/embed/XH_awPS6hK4"
+    level: beginner
+    tags:
+      - software development
+      - history
+  - title: "Alberto Brandolini - Transactions Redefined"
+    video: "https://www.youtube.com/embed/NqKNqIsB8_k"
+    level: intermediate
+    tags:
+      - essential
+      - transactions
+  - title: "Udi Dahan - If (domain logic) then CQRS, or Saga?"
+    video: "https://www.youtube.com/embed/fWU8ZK0Dmxs"
+    level: intermediate
+    tags:
+      - cqrs/es
+      - saga
+      - consistency
+  - title: "Design Matters — Rebecca Wirfs-Brock"
+    video: "https://www.youtube.com/embed/NZ5mI6-tNUc"
+    level: beginner
+    tags:
+      - software design
+      - responsibility-driven development
+  - title: "You can’t fight Conway’s law — Avraham Poupko"
+    video: "https://www.youtube.com/embed/BDagiC8Sw48"
+    level: intermediate
+    tags:
+      - socio-technical complexity
+      - conway's law
+      - strategic design
+  - title: "Turn your startup in a stayup with DDD — Marijn Huizendveld"
+    video: "https://www.youtube.com/embed/E8QAa55tCtw"
+    level: beginner
+    tags:
+      - practical example
+      - real-world problem
+  - title: "The Language of Actors - Vaughn Vernon"
+    video: "https://www.youtube.com/embed/KtRLIzG5c54"
+    level: intermediate
+    tags:
+      - actor model
+      - tactical patterns
+  - title: "Aligning Organisational & Technical Boundaries to Maximise Team Autonomy — Nick Tune"
+    video: "https://www.youtube.com/embed/5bgxzaHCyCs"
+    level: intermediate
+    tags:
+      - socio-technical architecture
+      - bounded context
+      - teams autonomy
+  - title: "To DDD or not to DDD? What to do if your domain is boring? — Weronika Łabaj"
+    video: "https://www.youtube.com/embed/h6WvetICeo4"
+    level: beginner
+    tags:
+      - patterns
+      - practical example
+  - title: "Predictive Models of Development Teams and the Systems They Build - Robert Smallshire"
+    video: "https://www.youtube.com/embed/_0hjcq6LAHw"
+    level: intermediate
+    tags:
+      - socio-technical systems
+      - software engineering laws
+      - metrics
+  - title: "Domain Invariants & Property-Based Testing for the Masses - Romeu Moura"
+    video: "https://www.youtube.com/embed/pX44CoRSIpg"
+    level: intermediate
+    tags:
+      - property-based testing
+      - domain invariants
+  - title: "Designing with Capabilities - Scott Wlaschin"
+    video: "https://www.youtube.com/embed/fi1FsDW1QeY"
+    level: beginner
+    tags:
+      - code
+      - capabilities
+      - API
+  - title: "Refactoring to Deeper Insight: Lessons Learned Applying DDD to Large Scale - Paul Rayner"
+    video: "https://www.youtube.com/embed/10ixgC8wBLI"
+    level: intermediate
+    tags:
+      - rafactoring
+      - domain modelling
+  - title: "Extreme Domain-Driven Design - Jimmy Nilsson"
+    video: "https://www.youtube.com/embed/4yHcKDM1yNk"
+    level: intermediate
+    tags:
+      - practical example
+      - solution space
+      - problem space
+  - title: "DDD patterns that were not in the book - Cyrille Martraire"
+    video: "https://www.youtube.com/embed/Ia8SQbQKLNQ"
+    level: intermediate
+    tags:
+      - patterns
+      - practical example
+      - code
+  - title: "Event Sourcing, Functionally - Arnaud Bailly"
+    video: "https://www.youtube.com/embed/lKIPlARq1z8"
+    level: intermediate
+    tags:
+      - cqrs/es
+      - functional programming
+  - title: "Consider the Development Feedback Loop - Mel Conway"
+    video: "https://www.youtube.com/embed/u6eP77G6KbM"
+    level: beginner
+    tags:
+      - feedback
+      - conway's law
+      - collaboration
+  - title: "Thermodynamics of Software - Jérémie Chassaing"
+    video: "https://www.youtube.com/embed/_ELWaiut-8M"
+    level: advanced
+    tags:
+      - software design
+  - title: "Let's be open about failure and learn from it - Yves Lorphelin"
+    video: "https://www.youtube.com/embed/a4_wk7aEgaM"
+    level: advanced
+    tags:
+      - continuous learning
+      - messaging
