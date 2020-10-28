@@ -13,3 +13,76 @@ videos:
       - core
       - emergent design
       - cqrs/es
+  - title: "Design in the small - Yves Reynhout"
+    video: "https://www.youtube.com/embed/3iLW4puXHvc"
+    level: intermediate
+    tags:
+      - tactical patterns
+      - code
+      - practical examples
+  - title: "The Good, The Bad and the Ugly, An Event Sourcing Retrospective - Dennis Doomen"
+    video: "https://www.youtube.com/embed/u8Y-_mCuDG4"
+    level: beginner
+    tags:
+      - cqrs/es
+      - code
+      - heuristics
+  - title: "From legacy chaos to the Promised Land of DDD - Anita Kvamme & Ellen Lippe"
+    video: "https://www.youtube.com/embed/le7we1akl2g"
+    level: beginner
+    tags:
+      - experience report
+      - practical examples
+  - title: "50.000 orange stickies later - Alberto Brandolini"
+    video: "https://www.youtube.com/embed/cG-G6tNCGqY"
+    level: beginner
+    tags:
+      - eventstorming
+      - essential
+  - title: "Designing Autonomous Services & Teams Together - Nick Tune"
+    video: "https://www.youtube.com/embed/JOQNJaXuNRE"
+    level: intermediate
+    tags:
+      - bounded context
+      - strategic patterns
+      - Theory of constraints
+      - socio-technical system
+  - title: "Code as a first language - Felienne Hermans"
+    video: "https://www.youtube.com/embed/ygPXJn6m73s"
+    level: intermediate
+    tags:
+      - code
+      - practical examples
+      - language
+  - title: "Conversational UIs through Domain-Driven Design - Dennis Traub"
+    video: "https://www.youtube.com/embed/grotDKSSKmQ"
+    level: intermediate
+    tags:
+      - language
+      - german
+  - title: "Fighting technical debts with DDD - Carola Lilienthal"
+    video: "https://www.youtube.com/embed/eJjadzMRQAk"
+    level: intermediate
+    tags:
+      - essential
+      - technical debt
+  - title: "Let your domain events flow - Bernd Rücker & Martin Schimak"
+    video: "https://www.youtube.com/embed/g2bin2mrjBo"
+    level: intermediate
+    tags:
+      - sagas
+      - process managers
+      - event-driven
+  - title: "Develop by describing the problem (not the solution) - Romeu Moura"
+    video: "https://www.youtube.com/embed/HG_-Y_vOqj0"
+    level: intermediate
+    tags:
+      - testing
+      - declarative
+  - title: "This is not DDD you're looking for - Alexey Zimarev"
+    video: "https://www.youtube.com/embed/xegm5DsYADw"
+    level: intermediate
+    tags:
+      - essential
+      - tactical patterns
+      - heuristics

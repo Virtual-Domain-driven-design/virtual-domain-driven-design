@@ -1,4 +1,10 @@
 videos:
+  - title: "Eric Evans - Keynote: Tackling Complexity in the Heart of Software"
+    video: "https://www.youtube.com/embed/kIKwPNKXaLU"
+    level: beginner
+    tags:
+      - essential
+      - core
   - title: "Rebecca Wirfs-Brock - Keynote: Cultivating Your Design Heuristics"
     video: "https://www.youtube.com/embed/fWCt5KWfTuo"
     level: beginner
@@ -12,3 +18,170 @@ videos:
       - keynote
       - organisation development
       - emergent design
+  - title: "Martin Schimak - Tackling Complex Event Flows"
+    video: "https://www.youtube.com/embed/_pJGwvVRwpg"
+    level: intermediate
+    tags:
+      - sagas
+      - process managers
+      - event-driven
+  - title: "Steven A. Lowe - Three Rules for Domain-Driven Design"
+    video: "https://www.youtube.com/embed/NXDCkpD74mE"
+    level: beginner
+    tags:
+      - essential
+      - core
+  - title: "Vaughn Vernon - Reactive DDD: Modeling Uncertainty"
+    video: "https://www.youtube.com/embed/TPctjavH_Zw"
+    level: intermediate
+    tags:
+      - reactive
+      - event-driven
+      - essential
+  - title: "David Laribee - Legendary Adventures In Legacy Code"
+    video: "https://www.youtube.com/embed/_H4Db0GJGgY"
+    level: beginner
+    tags:
+      - legacy
+      - code
+      - practical examples
+  - title: "Chris Richardson - There is No Such Thing as a Microservice!"
+    video: "https://www.youtube.com/embed/FXCLLsCGY0s"
+    level: beginner
+    tags:
+      - microservices
+      - software architecture
+      - patterns
+  - title: "Dan Sharp - DDD in the Real World: Building a Real Estate Aggregation Data Pipeline"
+    video: "https://www.youtube.com/embed/9FC_0WMmgKk"
+    level: intermediate
+    tags:
+      - practical example
+      - real-world problem
+  - title: "Jean-François Cloutier - Modeling The Mind Of An Autonomous Robot"
+    video: "https://www.youtube.com/embed/AKMV8OW9R50"
+    level: intermediate
+    tags:
+      - domain modelling
+      - language
+      - real-world problem
+  - title: "Allard Buijze - Pragmatic Event-Driven (Micro)Services"
+    video: "https://www.youtube.com/embed/Amcv06xxSD8"
+    level: intermediate
+    tags:
+      - microservices
+      - event-driven architecture
+      - patterns
+  - title: "Scott Bellware and Nathan Ladd - The Aggregate, The Cohesion, And The Cargo Cult"
+    video: "https://www.youtube.com/embed/sb-WO-KcODE"
+    level: beginner
+    tags:
+      - aggregate
+      - tactical patterns
+      - core
+  - title: "Jimmy Bogard - The DDD Do-Over"
+    video: "https://www.youtube.com/embed/_HkCMrbw1cA"
+    level: intermediate
+    tags:
+      - real-world problem
+      - tactical patterns
+  - title: "Javier Fernández - Black Ops DDD Using The Business Model Canvas"
+    video: "https://www.youtube.com/embed/M5CbbWmdsFU"
+    level: intermediate
+    tags:
+      - problem space
+      - strategic patterns
+      - socio-technical systems
+  - title: "Ellen Lippe & Anita Kvamme - From Legacy Chaos To The Promised Land Of DDD"
+    video: "https://www.youtube.com/embed/ShMUiCWQYIQ"
+    level: beginner
+    tags:
+      - experience report
+      - practical examples
+  - title: "Eric Evans - Exploring Time"
+    video: "https://www.youtube.com/embed/Zm95cYAtAa8"
+    level: advanced
+    tags:
+      - domain modelling
+      - tactical patterns
+      - domain modelling
+  - title: "Mathias Verraes - Emergent Boundaries"
+    video: "https://www.youtube.com/embed/ECM1rPYxvD4"
+    level: advanced
+    tags:
+      - domain modelling
+      - strategic patterns
+      - bounded context
+  - title: "Jeroen Soeters - Fast Data in Supply Chain Planning"
+    video: "https://www.youtube.com/embed/UaugV0hyYbY"
+    level: intermediate
+    tags:
+      - real-world problem
+      - practical example
+  - title: "Paul Rayner - Refactoring to a Deeper Model"
+    video: "https://www.youtube.com/embed/vO86vdkv0wM"
+    level: intermediate
+    tags:
+      - rafactoring
+      - domain modelling
+  - title: "Alberto Brandolini - 50,000 Orange Stickies Later"
+    video: "https://www.youtube.com/embed/1i6QYvYhlYQ"
+    level: beginner
+    tags:
+      - eventstorming
+      - essential
+  - title: "Nicolò Pignatelli - Metaphor Driven Design"
+    video: "https://www.youtube.com/embed/W48jCt2fImY"
+    level: intermediate
+    tags:
+      - software design
+      - problem space
+  - title: "Julie Lerman - DDD With TLC: Evolving Legacy Software And Legacy Minds"
+    video: "https://www.youtube.com/embed/IlAxebJ4E7c"
+    level: intermediate
+    tags:
+      - legacy
+      - socio-technical systems
+      - experience report
+  - title: "Indu Alagarsamy - Autonomy & Asynchrony: The Key To Designing Reliable Systems"
+    video: "https://www.youtube.com/embed/v-7RevY6No4"
+    level: intermediate
+    tags:
+      - reliable systems
+      - event-driven architecture
+      - software architecture
+  - title: "Derek Comartin - Fat Controller CQRS Diet"
+    video: "https://www.youtube.com/embed/OlcWDZN99w4"
+    level: intermediate
+    tags:
+      - cqrs/es
+      - patterns
+  - title: "Vladik Khononov- Tackling Complexity In Large-Scale Marketing Systems"
+    video: "https://www.youtube.com/embed/k2LazT39-8Y"
+    level: intermediate
+    tags:
+      - real-world problem
+      - practical example
+      - strategic patterns
+  - title: "Yves Reynhout - Trench Talk: Evolving a Model"
+    video: "https://www.youtube.com/embed/7StN-vNjRSw"
+    level: intermediate
+    tags:
+      - real-world problem
+      - practical example
+      - domain modelling
+  - title: "Dan Bergh Johnsson & Daniel Deogun - Domain Primitives in Action: Making it Secure by Design"
+    video: "https://www.youtube.com/embed/ogjOKlXHi08"
+    level: intermediate
+    tags:
+      - secure-by-design
+      - software design
+      - language
+  - title: "Thomas Pierrain & Bruno Boucard - How To Distill The Core Domain From Your Legacy App (Live Coding)"
+    video: "https://www.youtube.com/embed/mZzPwt9vhHM"
+    level: intermediate
+    tags:
+      - code
+      - practical example
+      - tactical patterns
+      - refactoring

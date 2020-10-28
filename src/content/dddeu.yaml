@@ -12,3 +12,101 @@ videos:
       - essential
       - core
       - cqrs/es
+  - title: "Liz Keogh — Cognitive Cynefin: How Language and Bias Keep Us Complicated"
+    video: "https://www.youtube.com/embed/73uwRe7ctVg"
+    level: advanced
+    tags:
+      - bias
+      - socio-technical systems
+      - decision making
+  - title: "Alberto Brandolini — The Precision Blade"
+    video: "https://www.youtube.com/embed/lG46Yo_9DPc"
+    level: intermediate
+    tags:
+      - essential
+      - eventstorming
+      - problem space
+  - title: "Carlo Pescio — Software Design and the Physics of Software"
+    video: "https://www.youtube.com/embed/lG46Yo_9DPc"
+    level: advanced
+    tags:
+      - software architecture
+      - research
+      - software design
+  - title: "Jef Claes — Evil by Design"
+    video: "https://www.youtube.com/embed/EmMvnB2v1GQ"
+    level: intermediate
+    tags:
+      - ethics
+      - software design
+      - practical example
+      - experience report
+  - title: "Brian Troutwine — The Charming Genius of the Apollo Guidance Computer"
+    video: "https://www.youtube.com/embed/d1nz7vgyUh8"
+    level: intermediate
+    tags:
+      - history of programming
+  - title: "Paul Rayner — How Agile Can Cripple Effective Design Work (and what to do about it)"
+    video: "https://www.youtube.com/embed/Bl30X0MvT0I"
+    level: beginner
+    tags:
+      - agile
+      - software design
+  - title: "Jim Coplien — Symmetry in Design"
+    video: "https://www.youtube.com/embed/FAZ4GjPKmVI"
+    level: intermediate
+    tags:
+      - software design
+      - software architecture
+      - pattern language
+  - title: "oDDs and enDDs - Vaughn Vernon"
+    video: "https://www.youtube.com/embed/4UZZjyQDgT8"
+    level: beginner
+    tags:
+      - essential
+      - core
+      - microservices
+  - title: "Kelsey Gilmore-Innis — Immutable Data in the Real World"
+    video: "https://www.youtube.com/embed/HhP4dHzjiFo"
+    level: advanced
+    tags:
+      - immutability
+      - code
+      - object-oriented programming
+      - functional programming
+  - title: "Dan Bergh Johnsson & Daniel Deogun — Domain-Driven Security"
+    video: "https://www.youtube.com/embed/xNQZ9oGiRRo"
+    level: intermediate
+    tags:
+      - secure-by-design
+      - software design
+      - language
+  - title: "Cyrille Martraire — Interviewing Domain Experts: heuristics from the trenches"
+    video: "https://www.youtube.com/embed/XYw5Mn5yVMM"
+    level: beginner
+    tags:
+      - problem space
+      - heuristics
+  - title: "Martin Kleppmann — Event Sourcing and Stream Processing at Scale"
+    video: "https://www.youtube.com/embed/avi-TZI9t2I"
+    level: intermediate
+    tags:
+      - cqrs/es
+      - event-driven architecture
+      - event-based architecture
+      - software architecture
+  - title: "Yves Reynout — Amongst Models"
+    video: "https://www.youtube.com/embed/4TWGRewQdyI"
+    level: intermediate
+    tags:
+      - bounded context
+      - language
+      - domain models
+      - practical examples
+  - title: "Felienne Hermans — A board game night with geeks"
+    video: "https://www.youtube.com/embed/YjtlkQgchnw"
+    level: intermediate
+    tags:
+      - f#
+      - functional programming
+      - code
