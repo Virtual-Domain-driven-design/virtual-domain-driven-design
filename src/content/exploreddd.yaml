@@ -185,3 +185,144 @@ videos:
       - practical example
       - tactical patterns
       - refactoring
+  - title: "Jessica Kerr - Keynote: The Origins of Opera & the Future of Programming"
+    video: "https://www.youtube.com/embed/nVRUv30coyA"
+    level: beginner
+    tags:
+      - collaboration
+      - history
+      - keynote
+      - symmathese
+  - title: "Michael Feathers - Keynote: Error Elimination as a Design Driver"
+    video: "https://www.youtube.com/embed/3RtLCav0Bp4"
+    level: beginner
+    tags:
+      - keynote
+      - error cases
+      - software design
+  - title: "Eric Evans - Keynote: DDD Isn't Done: A Skeptical, Optimistic​, Pragmatic Look"
+    video: "https://www.youtube.com/embed/R2IAgnpkBck"
+    level: beginner
+    tags:
+      - keynote
+      - core
+      - essential
+  - title: "David Boike - Talk Session: Microservices & Distributed Monoliths"
+    video: "https://www.youtube.com/embed/aE-p0cfwTVU"
+    level: intermediate
+    tags:
+      - microservices
+      - monolith
+      - distributed software
+  - title: "Marco Heimeshoff - Talk Session: Software Development Is Not About Software"
+    video: "https://www.youtube.com/embed/5AcYKhB4hu4"
+    level: beginner
+    tags:
+      - socio-technical systems
+      - essential
+  - title: "Dave Buchanan - Talk: How to Get Started with DDD: A Case Study Breaking Away from a Legacy MVC App"
+    video: "https://www.youtube.com/embed/b8aXE6l8q8U"
+    level: intermediate
+    tags:
+      - case study
+      - real-world problem
+      - legacy
+  - title: "Jean Cloutier - Talk Session: Rethinking How My Robots Think: Adventures in DDD & Robotics Part Two"
+    video: "https://www.youtube.com/embed/v9xDUO_vp8M"
+    level: intermediate
+    tags:
+      - real-world problem
+      - robotics
+  - title: "Indu Alagarsamy - Talk Session: Evolving with the Changing Requirements: The DDD Dream"
+    video: "https://www.youtube.com/embed/pk4GrmWtjMk"
+    level: intermediate
+    tags:
+      - business policies
+      - problem space
+      - iterative architecture
+  - title: "Harry Brumleve - Talk Session: Refactoring for DDD Without Microservicing Your Monolith"
+    video: "https://www.youtube.com/embed/y2mL-6CcYBw"
+    level: intermediate
+    tags:
+      - monolith
+      - microservices
+      - refactoring
+  - title: "Trevor Conn - Talk Session: DDDecomposing the Monolith: A Personal Anecdote"
+    video: "https://www.youtube.com/embed/vEXkpcy31EY"
+    level: intermediate
+    tags:
+      - monolith
+      - decomposition
+      - refactoring
+  - title: "David Glaubman - Talk Session: Encapsulating Complexity in a DSL"
+    video: "https://www.youtube.com/embed/woMybx3gRIs"
+    level: intermediate
+    tags:
+      - dsl
+      - ubiquitous language
+      - model-driven design
+  - title: "Martin Schimak - Talk Session: Know the Flow! Events, Commands & Long-Running Services"
+    video: "https://www.youtube.com/embed/uSF5hyfez60"
+    level: intermediate
+    tags:
+      - event-driven architecture
+      - long-running services
+  - title: "Laura Savino - Talk Session: Readable Code"
+    video: "https://www.youtube.com/embed/IbOp_e9yh0k"
+    level: beginner
+    tags:
+      - ubiquitous language
+      - code
+      - fluency
+  - title: "Justin Holmes - Talk Session: Visualizing Your Event Storm in New Ways"
+    video: "https://www.youtube.com/embed/MHLFW0VAaS0"
+    level: intermediate
+    tags:
+      - eventstorming
+      - collaborative modelling
+  - title: "Rinat Shagisultanov - Talk Session: Kicking Over Monoliths: How DDD Drives Digital Transformation"
+    video: "https://www.youtube.com/embed/Qwn55wbpFVc"
+    level: intermediate
+    tags:
+      - monolith
+      - digital transformation
+  - title: "Mauro Servienti - Talk Session: All Our Aggregates Are Wrong"
+    video: "https://www.youtube.com/embed/KkzvQSuYd5I"
+    level: intermediate
+    tags:
+      - aggregates
+      - tactical patterns
+  - title: "Stefan & Henning - Talk Session: How Domain Storytelling Shaped Our View of Bounded Contexts"
+    video: "https://www.youtube.com/embed/MPQfb7fsw3I"
+    level: beginner
+    tags:
+      - domain storytelling
+      - bounded contexts
+      - collaborative modelling
+  - title: "Nick Tune - Talk Session: Strategic Autonomous Design: Patterns & Heuristics"
+    video: "https://www.youtube.com/embed/mEFbjt_87TU"
+    level: intermediate
+    tags:
+      - strategic design
+      - autonomy
+      - heuristics
+  - title: "Allard Buijze - Talk Session: The Inconveniences of Event Sourcing"
+    video: "https://www.youtube.com/embed/n_IM3omQUyg"
+    level: beginner
+    tags:
+      - event sourcing
+      - patterns
+  - title: "Paul Rayner - Talk Session: Modeling Team Flow"
+    video: "https://www.youtube.com/embed/q80FiugsO1Q"
+    level: intermediate
+    tags:
+      - eventstorming
+      - DevOps
+      - flow
+  - title: "Bruno & Thomas -Talk Session: Communication Is Everything; Especially While Pairing (Survival Guide)"
+    video: "https://www.youtube.com/embed/e1yLmYN0hXk"
+    level: intermediate
+    tags:
+      - pair programming
+      - code
+      - practical example

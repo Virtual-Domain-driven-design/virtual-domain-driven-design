@@ -86,3 +86,140 @@ videos:
       - essential
       - tactical patterns
       - heuristics
+  - title: "Crunching 'real-life stories' with DDD & Event Storming - Kenny Baas-Schwegler"
+    video: "https://www.youtube.com/embed/WvkBKvMnyuc"
+    level: beginner
+    tags:
+      - collaborative modelling
+      - behaviour-driven development
+      - eventstorming
+      - example mapping
+  - title: "Encouraging DDD Curiosity as a Product Owner - Zsófia Herendi"
+    video: "https://www.youtube.com/embed/eR1PKi3Z0JU"
+    level: beginner
+    tags:
+      - product owner
+      - domain knowledge
+  - title: "Do-It-Yourself: Event-Sourcing - Roman Sachse"
+    video: "https://www.youtube.com/embed/VSS_Q0Rf50E"
+    level: beginner
+    tags:
+      - practical example
+      - cqrs/es
+      - functional programming
+  - title: "From Capabilities to Services - Trond Hjorteland"
+    video: "https://www.youtube.com/embed/6SYPMZ76tos"
+    level: intermediate
+    tags:
+      - enterprise architecture
+      - capability modelling
+      - software architecture
+  - title: "Strategic Autonomous Design: Patterns and Heuristics - Nick Tune"
+    video: "https://www.youtube.com/embed/GQjPaQmK1gU"
+    level: intermediate
+    tags:
+      - strategic design
+      - autonomy
+      - heuristics
+  - title: "Systems Thinking - Lorraine Steyn"
+    video: "https://www.youtube.com/embed/fKLzw_cyKNk"
+    level: intermediate
+    tags:
+      - systems thinking
+      - systems traps
+  - title: "Beyond Consumer-Driven Contract Testing - Nicole Rauch"
+    video: "https://www.youtube.com/embed/n5QFe6uwWHI"
+    level: intermediate
+    tags:
+      - testing
+      - consumer-driven contract testing
+      - loosely coupling
+      - microservices architecture
+  - title: "Lessons learned from a cab drive about Serverless - Camal Cakar"
+    video: "https://www.youtube.com/embed/xz6YHA6Ek2s"
+    level: beginner
+    tags:
+      - serverless
+  - title: "Design Heuristics - Mathias Verraes"
+    video: "https://www.youtube.com/embed/9ZgSz6xAfL8"
+    level: intermediate
+    tags:
+      - design heuristics
+      - software design principles
+  - title: "Functional CQRS in Kotlin - Uberto Barbini"
+    video: "https://www.youtube.com/embed/y_h-tbOM5HU"
+    level: intermediate
+    tags:
+      - functional programming
+      - CQRS
+      - immutability
+  - title: "Some Underrated Elements of Success for the Modern Programmer - J. B. Rainsberger"
+    video: "https://www.youtube.com/embed/mbcV_Qdb7Ts"
+    level: intermediate
+    tags:
+      - practical examples
+  - title: "Bounded Contexts, Microservices, and Everything In Between - Vladik Khononov"
+    video: "https://www.youtube.com/embed/dlnu5pSsg7k"
+    level: beginner
+    tags:
+      - essential
+      - bounded context
+      - microservices
+  - title: "Getting to DDD: Pragmatic or Principled? - Julie Lerman"
+    video: "https://www.youtube.com/embed/CPd2BVR3hEM"
+    level: intermediate
+    tags:
+      - essential
+      - tactical patterns
+  - title: "How Domain Storytelling reveils the secrets of your domain - Henning Schwentner, Stefan Hofer"
+    video: "https://www.youtube.com/embed/lZYo2lKacYo"
+    level: beginner
+    tags:
+      - domain storytelling
+      - collaborative modelling
+  - title: "Timeless design in a cloud native world - Uwe Friedrichsen"
+    video: "https://www.youtube.com/embed/-zW9y1rg9Pk"
+    level: intermediate
+    tags:
+      - functional design
+      - API
+      - software architecture
+  - title: "What Do You Mean? - Kevlin Henney"
+    video: "https://www.youtube.com/embed/EbIEtV_31-w"
+    level: intermediate
+    tags:
+      - language
+      - semantics
+      - problem space
+  - title: "Tamed Eventual Consistency - Yves Lorphelin"
+    video: "https://www.youtube.com/embed/ED-Va1ZvoQs"
+    level: intermediate
+    tags:
+      - eventual consistency
+      - cqrs/es
+  - title: "Speak To Me: Voice App Conversation Practices - Heather Downing"
+    video: "https://www.youtube.com/embed/XYfTQzWluUc"
+    level: intermediate
+    tags:
+      - nlp
+      - software architecture
+      - language
+  - title: "How to Model Your Domain in a Serverless World - Dennis Traub"
+    video: "https://www.youtube.com/embed/-ZfobxldW9w"
+    level: beginner
+    tags:
+      - domain modelling
+      - serverless
+  - title: "Modeling complex processes and time with Saga/Process Manager patterns"
+    video: "https://www.youtube.com/embed/WvjTCmeGlGA"
+    level: intermediate
+    tags:
+      - modelling time
+      - saga
+      - process manager
+  - title: "The Design of Names and Spaces - Michael Feathers"
+    video: "https://www.youtube.com/embed/KyXAfqv0cjM"
+    level: beginner
+    tags:
+      - software design
+      - socio-technical systems

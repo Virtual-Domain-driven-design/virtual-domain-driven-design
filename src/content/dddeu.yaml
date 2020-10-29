@@ -238,3 +238,190 @@ videos:
     tags:
       - continuous learning
       - messaging
+  - title: "Complex Adaptive Systems - Dave Snowden"
+    video: "https://www.youtube.com/embed/l4-vpegxYPg"
+    level: advanced
+    tags:
+      - cynefin
+      - complex adaptive systems
+      - keynote
+  - title: "Complex Adaptive Systems - Dave Snowden"
+    video: "https://www.youtube.com/embed/l4-vpegxYPg"
+    level: advanced
+    tags:
+      - cynefin
+      - complex adaptive systems
+      - keynote
+  - title: "Distill the Core Domain from Your Legacy App - Thomas Pierrain and Bruno Boucard"
+    video: "https://www.youtube.com/embed/F3DV9YDeA6Q"
+    level: intermediate
+    tags:
+      - code
+      - refactoring
+      - design-by-coding
+  - title: "Ultra-Large Scale Systems - Prof. David West"
+    video: "https://www.youtube.com/embed/0qpUifmxlsA"
+    level: intermediate
+    tags:
+      - large-scale systems
+      - software architecture
+  - title: "Modelling Time - Eric Evans"
+    video: "https://www.youtube.com/embed/T29WzvaPNc8"
+    level: intermediate
+    tags:
+      - domain modelling
+      - tactical patterns
+      - domain modelling
+  - title: "Functional and Algebraic Domain Modeling - Debasish Ghosh"
+    video: "https://www.youtube.com/embed/BskNvfNjU_8"
+    level: intermediate
+    tags:
+      - functional programming
+      - domain modelling
+  - title: "Crossing the River by Feeling the Stones - Simon Wardley"
+    video: "https://www.youtube.com/embed/oZZKjxeg5W0"
+    level: intermediate
+    tags:
+      - wardley maps
+      - collaborative modelling
+  - title: "The importance of multiple perspectives when modeling software - Avraham Poupko"
+    video: "https://www.youtube.com/embed/n-hTQro_yos"
+    level: intermediate
+    tags:
+      - keynote
+      - history
+      - visulisation
+  - title: "Tackling Complexity in Marketing Systems - Vladik Khononov"
+    video: "https://www.youtube.com/embed/JTD3l8_4cjU"
+    level: intermediate
+    tags:
+      - complex adaptive systems
+      - practical example
+      - real-world problem
+  - title: "Find Context Boundaries with Domain Storytelling - Stefan Hofer and Henning Schwenter"
+    video: "https://www.youtube.com/embed/Y1ykXnl6r7s"
+    level: beginner
+    tags:
+      - domain storytelling
+      - bounded contexts
+      - collaborative modelling
+  - title: "As Time Goes By… (a Bi-temporal Event Sourcing story) - Thomas Pierrain"
+    video: "https://www.youtube.com/embed/xzekp1RuZbM"
+    level: advanced
+    tags:
+      - event sourcing
+      - temporal
+  - title: "Event Sourcing after launch - Michiel Overeem"
+    video: "https://www.youtube.com/embed/JzWJI8kW2kc"
+    level: intermediate
+    tags:
+      - event sourcing
+      - cqrs/es
+  - title: "Autonomy & Asynchrony: The key to designing reliable systems - Indu Alagarsamy"
+    video: "https://www.youtube.com/embed/IlEySNyzlPo"
+    level: intermediate
+    tags:
+      - reliable systems
+      - event-driven architecture
+      - software architecture
+  - title: "Distilling Your Design Heuristics: A Report and a Challenge - Rebecca Wirfs-Brock"
+    video: "https://www.youtube.com/embed/TP3xTZi_Qn8"
+    level: intermediate
+    tags:
+      - design heuristics
+      - software architecture
+      - software engineering
+  - title: "Domain Language throughout Tests, combining DDD and BDD - Kenny Baas"
+    video: "https://www.youtube.com/embed/xSZnKnZ8EAo"
+    level: beginner
+    tags:
+      - testing
+      - behaviour-driven development
+      - ubiquitous language
+  - title: "The human factor: Pursuing success and averting drift into failure - Sidney Dekker"
+    video: "https://www.youtube.com/embed/9fwJ9xgvu3A"
+    level: intermediate
+    tags:
+      - drive
+      - failure
+      - continuous learning
+  - title: "Complexity & Strategy: Open Discussion - Dave Snowden, Andra Sonea and Simon Wardley"
+    video: "https://www.youtube.com/embed/cel1vT0q1T8"
+    level: advanced
+    tags:
+      - complexity
+      - strategy
+  - title: "Simplicity versus Simplification - Alexey Zimarev"
+    video: "https://www.youtube.com/embed/UZY9iPcb0FQ"
+    level: intermediate
+    tags:
+      - simplicity
+      - refactoring
+  - title: "From Legacy Chaos to the Promised Land of DDD - Anita Kvamme and Ellen Lippe"
+    video: "https://www.youtube.com/embed/bnaYU4fjGe4"
+    level: beginner
+    tags:
+      - experience report
+      - practical examples
+  - title: "Promise & Purpose: Why understanding Promise Theory can make you better at DDD - Kiki Carter"
+    video: "https://www.youtube.com/embed/UvrygFuidGc"
+    level: intermediate
+    tags:
+      - promise theory
+      - practical example
+  - title: "The Systemics of the Liskov Substitution Principle - Romeu Moura"
+    video: "https://www.youtube.com/embed/tNpW-V2HXJ0"
+    level: intermediate
+    tags:
+      - liskov
+      - object-oriented programming
+  - title: "How open is Open Banking - Andrea Sonea"
+    video: "https://www.youtube.com/embed/yqMDoWVZYw8"
+    level: intermediate
+    tags:
+      - practical example
+      - real-world problem
+  - title: "Distributed Monolith - Alex Topalov"
+    video: "https://www.youtube.com/embed/AbZq32XCzU8"
+    level: intermediate
+    tags:
+      - distributed monolith
+      - microservices
+  - title: "Are You In or Are You Out? - Philippus Baalman"
+    video: "https://www.youtube.com/embed/o1g-I3H3cs4"
+    level: intermediate
+    tags:
+      - code
+  - title: "DDD Lessons - Barry O Sullivan"
+    video: "https://www.youtube.com/embed/PMWl5X1sK70"
+    level: beginner
+    tags:
+      - lightning talks
+      - essential
+  - title: "DDD, meet TDD - Arnaud Bailly"
+    video: "https://www.youtube.com/embed/cIx8LneHdpI"
+    level: beginner
+    tags:
+      - lightning talks
+      - tdd
+      - code-by-design
+  - title: "From Front to Back: Homomorphic Event Sourcing - Nicole Rauch & Arnaud Bailly"
+    video: "https://www.youtube.com/embed/KyOvBQ87aP4"
+    level: intermediate
+    tags:
+      - event sourcing
+      - front-end
+      - back-end
+  - title: "System Models Made Simple - Florin Zalum"
+    video: "https://www.youtube.com/embed/WNaWaT-cwMc"
+    level: beginner
+    tags:
+      - lightning talks
+      - domain modelling
+  - title: "Modelling for Mistakes - Alexander Langer"
+    video: "https://www.youtube.com/embed/WNaWaT-cwMc"
+    level: intermediate
+    tags:
+      - domain modelling
+      - continuous learning
+      - failure
