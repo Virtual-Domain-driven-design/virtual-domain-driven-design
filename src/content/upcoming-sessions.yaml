@@ -1,37 +1,39 @@
-  # - title: ""
-  #   date: ""
-  #   time: ""
-  #   img: ""
-  #   description: 
-  #     ""
-  #   links:
-  #     - label: ""
-  #       url: ""
+# - title: ""
+#   date: ""
+#   time: ""
+#   img: ""
+#   description:
+#     ""
+#   links:
+#     - label: ""
+#       url: ""
 upcomingSessions:
-  - title: ""
-    date: ""
-    time: ""
-    img: ""
-    description: 
-      ""
+  - title: "Hands-on case-study context mapping with Michael Plöd"
+    date: "Nov 3th, 2020"
+    time: "19:00 CET"
+    img: "https://secure.meetupstatic.com/photos/event/7/b/f/d/highres_493291741.jpeg"
+    description: "
+      Of course, we could spend two hours talking and discussing the theory around Context Maps and the related patterns but this time around we will apply them together in practice. This VDDD meetup episode will be based on a case study with some bounded contexts already being present. From there on we will explore the usage of the patterns found in the context map and we will also weigh in on some heuristics regarding their usage.
+
+      This session will contain 0% slides, it will be all hands-on context mapping."
     links:
-      - label: ""
-        url: ""
+      - label: "RSVP on meetup"
+        url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/274279404/"
+      - label: "Watch the stream"
+        url: "https://youtu.be/OthhRfqp-44"
   # - title: "[Panel] What makes you a DDD'er?"
   #   date: "Oct 19th, 2020"
   #   time: "19:00 CEST"
   #   img: "https://secure.meetupstatic.com/photos/event/2/0/4/1/highres_493028257.jpeg"
-  #   description: 
+  #   description:
   #     " From twitter: https://twitter.com/mathiasverraes/status/1298665213978447873?s=20
   #       Using collaborative modelling to build a shared understanding of your domain and use it to guide your design _is_ the philosophy behind DDD though. The rest is the principles, patterns, and practices. But perhaps just doing EventStorming does not actually make you a DDD'er, but what is?
-
   #       In today's panel, we will discuss with several people from the community what makes you a DDD'er? Joining us are:
-
   #       Emanuela Damiani
   #       Krisztina Hirth
   #       Mathias Verraes
   #       Jessica White
-  #       Nick Tune" 
+  #       Nick Tune"
   #   links:
   #     - label: "RSVP on Meetup"
   #       url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/273949280/"
