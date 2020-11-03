@@ -23,14 +23,12 @@ h2 {
   height: 20rem;
 }
 
-
 .ddd-crew {
   height: 20rem;
 }
 
-
 .levelbtn.active {
-  @apply bg-blue-700 text-white
+  @apply bg-blue-700 text-white;
 }
 
 @tailwind utilities;
@@ -101,10 +99,6 @@ a {
 
 .content {
   @apply leading-normal text-blue-800 py-4 flex flex-col items-center justify-center;
-}
-
-.footer {
-  @apply flex flex-col items-center justify-center p-4;
 }
 
 .videoframe {
