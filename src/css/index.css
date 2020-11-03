@@ -63,33 +63,6 @@ a {
   @apply z-0 absolute inset-0 bg-gray-900 opacity-75;
 }
 
-.hero {
-  height: fit-content;
-  @apply relative bg-scroll h-full;
-}
-
-.hero-content {
-  @apply h-full flex flex-col items-center justify-start;
-}
-
-.hero-logo {
-  @apply z-10 mt-24;
-}
-
-.hero-text {
-  @apply z-10 text-white leading-loose;
-}
-
-.hero-title {
-  font-size: calc(2vw + 1rem);
-  @apply font-black;
-}
-
-.hero-subtitle {
-  font-size: calc(1vw + 0.5rem);
-  @apply font-medium;
-}
-
 .section {
   @apply bg-gray-200 text-blue-800 flex flex-col items-center justify-center;
 }

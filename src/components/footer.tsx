@@ -1,5 +1,5 @@
-import React, { ReactElement } from "react"
 import { Link } from "gatsby"
+import React, { ReactElement } from "react"
 import "twin.macro"
 
 const Footer = (): ReactElement => {

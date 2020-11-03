@@ -1,17 +1,16 @@
-import React, { ReactElement } from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-
-import BlueButton from "./core/blue-button"
-
-import UpcomingSession from "./upcoming-session"
+import { Link, graphql, useStaticQuery } from "gatsby"
+import React, { ReactElement } from "react"
+import tw from "twin.macro"
 
 import BackgroundImage from "gatsby-background-image"
+import BlueButton from "./core/blue-button"
+import UpcomingSession from "./upcoming-session"
 
 const Sociallink = ({ url, label }) => {
   return (
     <a
-      className="text-xl m-2 p-2 text-white rounded-lg border-2 border-blue-500 hover:border-blue-400"
+      tw="text-xl m-2 p-2 text-white rounded-lg border-2 border-blue-500 hover:border-blue-400"
       href={url}
       target="_blank"
       rel="noopener noreferrer"
@@ -23,22 +22,22 @@ const Sociallink = ({ url, label }) => {
 
 const VDDDInfo = ({ data }) => {
   return (
-    <div className="w-full p-4 sm:mt-8 sm:w-5/6 sm:rounded-lg sm:shadow-lg bg-white  flex flex-col items-center justify-start">
+    <div tw="w-full p-4 sm:mt-8 sm:w-5/6 sm:rounded-lg sm:shadow-lg bg-white  flex flex-col items-center justify-start">
       <Img
         fixed={data.vdddLogoTp.childImageSharp.fixed}
-        className="hidden lg:block object-contain h-8 mb-4"
+        tw="hidden lg:block object-contain h-8 mb-4"
       />
-      <div className="mb-4 text-center">
+      <div tw="mb-4 text-center">
         A community driven site for people who want to get more in-depth
         knowledge of Domain-Driven Design. Go to the learning DDD part of the
         site, contribute your knowledge to the world on our website or attend
         one of our meetups anywhere at anytime. Everybody is welcome to join us,
         we love learning and growing together.
       </div>
-      <div className="mb-4 font-semibold">
+      <div tw="mb-4 font-semibold">
         Share your deep, creative, productive or crazy ideas!
       </div>
-      <div className="flex flex-row space-x-4">
+      <div tw="flex flex-row space-x-4">
         <BlueButton href="https://sessionize.com/virtual-ddd-meetup">
           Propose a Meetup
         </BlueButton>
@@ -96,14 +95,14 @@ const Hero = (): ReactElement => {
 
   return (
     <BackgroundImage
-      Tag="section"
-      className="hero flex flex-col items-center justify-center lg:flex-row-reverse lg:items-start"
+      css={{ height: "fit-content" }}
+      tw="flex flex-col items-center justify-center bg-scroll h-full lg:flex-row-reverse lg:items-start relative "
       fluid={imageData}
     >
-      <div className="overlay"></div>
-      <div className="w-full lg:w-1/3 flex flex-col items-center justify-center z-10">
+      <div tw="z-0 absolute inset-0 bg-gray-900 opacity-75"></div>
+      <div tw="w-full lg:w-1/3 flex flex-col items-center justify-center z-10">
         <VDDDInfo data={data}></VDDDInfo>
-        <div className="mt-4 flex items-center justify-center">
+        <div tw="mt-4 flex items-center justify-center">
           <Sociallink
             url="https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/"
             label="Meetup"
@@ -117,20 +116,18 @@ const Hero = (): ReactElement => {
       </div>
 
       <div
-        className={[
-          isUpcomingSession ? "" : "invisible",
-          "w-full mt-8 lg:w-2/3  flex flex-col items-center justify-center",
-        ].join(" ")}
+        tw="w-full mt-8 lg:w-2/3 flex flex-col items-center justify-center"
+        css={!isUpcomingSession && tw`invisible`}
       >
-        <div className="w-5/6 z-10 flex flex-col items-center">
-          <div className="w-full hidden md:flex items-stretch justify-start my-2">
+        <div tw="w-5/6 z-10 flex flex-col items-center">
+          <div tw="w-full hidden md:flex items-stretch justify-start my-2">
             <UpcomingSession
               session={data.allContentYaml.nodes[0].upcomingSessions[0]}
             ></UpcomingSession>
           </div>
           <Link
             to="/sessions"
-            className="text-xl mb-4 p-2 cursor-pointer text-white rounded-lg border-2 border-blue-500 hover:border-blue-400"
+            tw="text-xl mb-4 p-2 cursor-pointer text-white rounded-lg border-2 border-blue-500 hover:border-blue-400"
           >
             Show all sessions
           </Link>
