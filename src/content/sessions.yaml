@@ -10,20 +10,32 @@
 #     - label: ""
 #       url: ""
 sessions:
+  - title: "[Hands-on] case-study context mapping with Michael Plöd"
+    date: "Nov 3th, 2020"
+    time: "19:00 CET"
+    video: "https://www.youtube.com/embed/OthhRfqp-44"
+    podcast:
+    level: beginner
+    description: "
+      Of course, we could spend two hours talking and discussing the theory around Context Maps and the related patterns but this time around we will apply them together in practice. This VDDD meetup episode will be based on a case study with some bounded contexts already being present. From there on we will explore the usage of the patterns found in the context map and we will also weigh in on some heuristics regarding their usage.
+
+      This session will contain 0% slides, it will be all hands-on context mapping."
+    tags:
+      - collaborative modelling
+      - context mapping
   - title: "[Dialogue] Psychologic safety in remote collaboration with Gitte Klitgaard"
     date: "Sep 29th, 2020"
     time: "19:00 CEST"
     video: "https://www.youtube.com/embed/KMvEt18aO5c"
     podcast: "https://oembed.libsyn.com/embed?item_id=16213361"
     level: intermediate
-    description: 
-      "
+    description: "
       The recent COVID-19 pandemic forced us DDD practitioners to move our collaborative modelling efforts to the remote world. Within collaborative modelling, we want to share all the information we have, all the different perceptions, even if they might look weird, quirky or invalid at the start. Only then can we design and create enriched models to build sustainable and valuable software. The problem here is, people will only share all their information if there is psychological safety, and that is already hard in a physical session, let alone remote.
 
       In this session, we will have a dialogue with Gitte Klitgaard about the importance of psychological safety in these sessions. Why is it important and what are her heuristics and patterns for it in a remote session.
 
       Gitte Klitgaard is an agile coach with more than a decade of experience working for companies as well as coaching individuals. She lives and loves agile, and hates turf wars, which is why she took the oath of non-allegiance. Why fight over methods, when we can use that energy to help people? Gitte wants to change the world by helping people work better together and feel better about themselves. She is known for speaking her mind in a way that helps people actually listen to what she says; maybe because her main working tools are listening and caring. As an active part of the agile community, Gitte often engages in discussions online and offline, and is part of the organiser team of German Agile Coach Camp as well as a facilitator at other events.
-      " 
+      "
     tags:
       - agile teams
       - psychological safety
@@ -37,8 +49,7 @@ sessions:
     video: "https://www.youtube.com/embed/hi_DlT_dNg4"
     podcast: "https://oembed.libsyn.com/embed?item_id=16123616"
     level: intermediate
-    description: 
-      "Collaboration in remote meetings doesn’t have to be difficult, learn how to make it effective, enjoyable and valuable. Join us for a panel discussion and see how we as a DDD community can improve our remote collaborative modelling sessions from Kirsten Clacey and Jay-Allen Morris, authors of The Remote Facilitator’s Pocket Guide and Jo Perold Coach and Trainer at Agile42 & keynote speaker at conferences."
+    description: "Collaboration in remote meetings doesn’t have to be difficult, learn how to make it effective, enjoyable and valuable. Join us for a panel discussion and see how we as a DDD community can improve our remote collaborative modelling sessions from Kirsten Clacey and Jay-Allen Morris, authors of The Remote Facilitator’s Pocket Guide and Jo Perold Coach and Trainer at Agile42 & keynote speaker at conferences."
     tags:
       - agile teams
       - cross functional
@@ -52,18 +63,18 @@ sessions:
     video: "https://www.youtube.com/embed/RM0uErMljoA"
     podcast: "https://oembed.libsyn.com/embed?item_id=15774632"
     level: intermediate
-    description: 
-      "Too many products have been developed that serve one kind of client only. 
-      The reason is that the composition of the teams leads (subconsciously) to the development of products that serve only people that resemble the people in the team. 
+    description:
+      "Too many products have been developed that serve one kind of client only.
+      The reason is that the composition of the teams leads (subconsciously) to the development of products that serve only people that resemble the people in the team.
       One “famous” example is the soap dispenser that only works if your skin is white.
 
-      If teams are really cross-functional and are resembling the diversity of the market, the products they’re creating are also better. 
-      Thus, if the whole team has the full business expertise, knows the market, reflects the full diversity of the clients, 
-      then it can even disrupt the market and isn’t waiting for some person (e.g. the Product Owner) to decide on priorities. 
+      If teams are really cross-functional and are resembling the diversity of the market, the products they’re creating are also better.
+      Thus, if the whole team has the full business expertise, knows the market, reflects the full diversity of the clients,
+      then it can even disrupt the market and isn’t waiting for some person (e.g. the Product Owner) to decide on priorities.
       With this real cross-functionality, the team can fully understand the company’s business and has a holistic view of it, knowing its contribution to the company’s value stream.
 
-      Join us in a Panel dialogue with Jutta Eckstein and Maryse Meinen about that 
-      real cross-functional teams are an essential building block for implementing company-wide agility and 
+      Join us in a Panel dialogue with Jutta Eckstein and Maryse Meinen about that
+      real cross-functional teams are an essential building block for implementing company-wide agility and
       the organization benefits by creating better and in a way more real products and by having more options when entering the war of talent."
     tags:
       - agile teams
@@ -168,7 +179,7 @@ sessions:
   - title: "Free Trial Workshop: First Steps in DDD with Andrew (#BlackLivesMatter edition)"
     date: "Monday, July 20th. 2020"
     time: "16:00 CEST"
-    video: 
+    video:
     podcast:
     level: all
     description:
@@ -243,7 +254,6 @@ sessions:
       - bdd
       - strategic design
       - ux
-
 
   - title: "Creating a Playbook for DDD for the inside of your team with Julie Lerman"
     date: "Thursday, June 2th. 2020"
@@ -387,7 +397,6 @@ sessions:
       - design heuristics
       - team topologies
 
-
   - title: "Experimenting with Remote Wardley Mapping with Nick Tune"
     date: "Friday, May 1st. 2020"
     time: "19:00 CEST"
@@ -428,8 +437,8 @@ sessions:
       - label: "The Event on Meetup"
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/269885290/"
     tags:
-     - bdd
-     - collaborative modelling
+      - bdd
+      - collaborative modelling
 
   - title: "How cognitive biases and ranking kills your modelling sessions"
     date: "Tuesday, April 7th. 2020"
@@ -485,7 +494,6 @@ sessions:
     tags:
       - bounded context
       - strategic design
-
 
   - title: "An Introduction to Domain Storytelling"
     date: "Tuesday, February 18th. 2020"
@@ -720,7 +728,6 @@ sessions:
       - eventstorming
       - design heuristics
       - big picture
-      
 
   - title: "How To Read the Blue Book: Strategic Design with Mathias Verraes"
     date: "Tuesday, July 23th. 2019"
