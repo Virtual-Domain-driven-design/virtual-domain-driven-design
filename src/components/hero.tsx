@@ -26,13 +26,19 @@ const VDDDInfo = ({ data }) => {
         Share your deep, creative, productive or crazy ideas!
       </div>
       <div tw="flex flex-row space-x-4">
-        <ThreeDBlueButton href="https://sessionize.com/virtual-ddd-meetup">
+        <ThreeDBlueButton
+          tw="lg:text-lg"
+          href="https://sessionize.com/virtual-ddd-meetup"
+        >
           Propose a Meetup
         </ThreeDBlueButton>
-        <ThreeDBlueButton href="https://github.com/Virtual-Domain-driven-design/virtual-domain-driven-design">
+        <ThreeDBlueButton
+          tw="lg:text-lg"
+          href="https://github.com/Virtual-Domain-driven-design/virtual-domain-driven-design"
+        >
           Contribute on Github
         </ThreeDBlueButton>
-        <ThreeDBlueButton href="https://virtualddd.com/admin">
+        <ThreeDBlueButton tw="lg:text-lg" href="https://virtualddd.com/admin">
           Contribute on Netlify CMS
         </ThreeDBlueButton>
       </div>
@@ -90,13 +96,16 @@ const Hero = (): ReactElement => {
       <div tw="w-full lg:w-1/3 flex flex-col items-center justify-center z-10 m-4 sm:m-6 lg:m-8">
         <VDDDInfo data={data}></VDDDInfo>
         <div tw="flex items-center  justify-center space-x-4 m-4 sm:m-6 lg:m-8">
-          <OutlineBlueButton href="https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/">
+          <OutlineBlueButton
+            tw="lg:text-xl"
+            href="https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/"
+          >
             Meetup
           </OutlineBlueButton>
-          <OutlineBlueButton href="https://j.mp/ddd-es-cqrs">
+          <OutlineBlueButton tw="lg:text-xl" href="https://j.mp/ddd-es-cqrs">
             Slack
           </OutlineBlueButton>
-          <OutlineBlueButton href="https://j.mp/ddd-es-cqrs">
+          <OutlineBlueButton tw="lg:text-xl" href="https://j.mp/ddd-es-cqrs">
             Twitter
           </OutlineBlueButton>
         </div>
@@ -110,7 +119,7 @@ const Hero = (): ReactElement => {
           <UpcomingSession
             session={data.allContentYaml.nodes[0].upcomingSessions[0]}
           ></UpcomingSession>
-          <OutlineBlueButton to="/sessions">
+          <OutlineBlueButton tw="lg:text-xl" to="/sessions">
             Show all sessions
           </OutlineBlueButton>
         </div>

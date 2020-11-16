@@ -11,6 +11,7 @@ const OutlineBlueButton: FC<OutlineBlueButtonProps> = ({
   children,
   to,
   href,
+  ...props
 }) => {
   const style = tw`bg-transparent hover:bg-blue-500 text-center text-xs lg:text-base text-white font-semibold hover:text-white py-2 px-4 border-2 border-blue-500 hover:border-transparent rounded`
   if (href) {
@@ -21,6 +22,7 @@ const OutlineBlueButton: FC<OutlineBlueButtonProps> = ({
         href={href}
         target="_blank"
         rel="noopener noreferrer"
+        {...props}
       >
         {children}
       </a>
@@ -28,7 +30,7 @@ const OutlineBlueButton: FC<OutlineBlueButtonProps> = ({
   }
   if (to) {
     return (
-      <Link css={style} to={to}>
+      <Link css={style} to={to} {...props}>
         {children}
       </Link>
     )
