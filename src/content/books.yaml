@@ -111,3 +111,9 @@ books:
       - introductory
       - scala
       - functional programming
+  - title: Hands on Domain-Driven Design by example
+    author: Michael Plöd
+    img: ../images/books/dddbook.png
+    level: all
+    tags:
+      - strategic-design
