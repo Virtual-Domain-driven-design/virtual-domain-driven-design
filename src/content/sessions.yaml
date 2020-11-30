@@ -16,15 +16,16 @@ sessions:
     video: "https://www.youtube.com/embed/ArK5Ckid-sY"
     podcast: "https://oembed.libsyn.com/embed?item_id=17000141"
     level: intermediate
-    description: 
-    " From twitter: https://twitter.com/mathiasverraes/status/1298665213978447873?s=20
+    description: "
+      From twitter: https://twitter.com/mathiasverraes/status/1298665213978447873?s=20
       Using collaborative modelling to build a shared understanding of your domain and use it to guide your design _is_ the philosophy behind DDD though. The rest is the principles, patterns, and practices. But perhaps just doing EventStorming does not actually make you a DDD'er, but what is?
       In today's panel, we will discuss with several people from the community what makes you a DDD'er? Joining us are:
       Emanuela Damiani
       Krisztina Hirth
       Mathias Verraes
       Jessica White
-      Nick Tune"
+      Nick Tune
+      "
     tags:
       - essential
       - strategic design
