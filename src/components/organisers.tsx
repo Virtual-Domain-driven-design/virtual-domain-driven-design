@@ -135,6 +135,13 @@ const Organisers = (): ReactElement => {
           }
         }
       }
+      krisztina: file(relativePath: { eq: "organisers/katy2.jpg" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
   return (
@@ -194,6 +201,15 @@ const Organisers = (): ReactElement => {
             website="https://domaincentric.net/"
             twitter="cakper"
             linkedin="in/cakper"
+            data={data}
+          ></Organiser>
+          <Organiser
+            name="Krisztina Hirth"
+            image={data.krisztina.childImageSharp.fluid}
+            tagline="Coding Architect"
+            website="https://yellow-brick-code.org/"
+            twitter="YellowBrickC"
+            linkedin=""
             data={data}
           ></Organiser>
         </div>
