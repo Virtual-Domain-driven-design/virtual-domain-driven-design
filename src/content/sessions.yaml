@@ -14,7 +14,7 @@ sessions:
     date: "Dec 21st, 2020"
     time: "19:00 CET"
     video: "https://www.youtube.com/embed/QSZnrkMMZ6c"
-    podcast:
+    podcast: "https://oembed.libsyn.com/embed?item_id=17292032"
     level: beginner
     description:
       "Just before all the holidays start we are closing this year virtual Domain-driven design meetups with the last meetup. So grab your drinks (tea, lemonade or anything you want!) and come join with your DDD questions to this Ask us anything party! We have invited several people from the community who will join an online fishbowl in a zoom webinar. You post your questions and we will discuss them. With us will be:
