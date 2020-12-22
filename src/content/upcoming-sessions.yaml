@@ -8,32 +8,29 @@
 #     - label: ""
 #       url: ""
 upcomingSessions:
-  - title: "Domain-Drinking Dialogues - 2020 ending Ask us anything party "
-    date: "Dec 21st, 2020"
-    time: "19:00 CET"
-    img: "https://secure.meetupstatic.com/photos/event/2/0/4/1/highres_493028257.jpeg"
+  - title: "[Panel] Splitting systems towards bounded contexts and microservices"
+    date: "Jan 12th, 2021"
+    time: "19:30 CET"
+    img: "https://secure.meetupstatic.com/photos/event/3/5/9/6/highres_493993718.jpeg"
     description:
-      "Just before all the holidays start we are closing this year virtual Domain-driven design meetups with the last meetup. So grab your drinks (tea, lemonade or anything you want!) and come join with your DDD questions to this Ask us anything party! We have invited several people from the community who will join an online fishbowl in a zoom webinar. You post your questions and we will discuss them. With us will be:
+      "There are many reasons to split up large-scale systems towards more modular, smaller services with their own model and language. You can decouple teams and give full autonomy of that service to a team. By decoupling services and teams you can handle changes to the domain faster, having a faster time to market. You decrease the cognitive load of the teams, empowering teams to truly understand the complexity of their shared models with domain experts.
 
+      But how do we split up large-scale systems? What are the characteristics we can dissect a bounded context? How do we split towards a microservices architecture? We do not only have to deal with shifting terminology here but also different rates of change in the business.
+
+      Join us in this Panel where we will hunt for design heuristics to split systems towards bounded contexts and microservices.
+
+      With us will be:
+      Rebecca Wirfs-brock
+      Chris Richardson
       Alberto Brandolini
+      Nick Tune
       Krisztina Hirth
-      Romeu Moura
-      Evelyn van Kelle
       Trond Hjorteland
-      Dawn Ahukanna
-      Michael Plöd
-      Zsofia Herendi
-      Kim Koa
-      Aminata Sidibe
-      Marco heimeshoff
-      Vladik Khononov
-      Kenny Baas-Schwegler
-      DDD Borat (Not the real Borat)
       "
     links:
       - label: "RSVP on Meetup"
-        url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/275076698/"
+        url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/275246441/"
       - label: "Interact on Zoom"
-        url: "https://us02web.zoom.us/j/84929449075"
+        url: "https://us02web.zoom.us/j/86205812356"
       - label: "Watch youtube"
-        url: "https://youtu.be/QSZnrkMMZ6c"
+        url: "https://youtu.be/h-7-lMJ_jdw"
