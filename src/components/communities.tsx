@@ -1,15 +1,12 @@
-import React, { ReactElement } from "react"
 import { graphql, useStaticQuery } from "gatsby"
+import React, { ReactElement } from "react"
+import "twin.macro"
+
+import FloatingActionCard from "./core/floating-action-card"
 
 const Community = ({ index, community }) => {
   return (
-    <a
-      key={index}
-      className="group floating-action-button bg-white w-full sm:w-48 rounded-lg shadow-md m-2 flex flex-col items-center justify-start"
-      href={community.url}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+    <FloatingActionCard key={index} href={community.url}>
       <div className="flex flex-col items-center justify-start">
         <div className="m-2 h-8 font-semibold text-gray-800 text-sm text-center">
           {community.name}
@@ -23,7 +20,7 @@ const Community = ({ index, community }) => {
       <div className="text-gray-700 text-xs italic text-center">
         {community.country}
       </div>
-    </a>
+    </FloatingActionCard>
   )
 }
 
@@ -47,12 +44,16 @@ const Communities = (): ReactElement => {
   `)
   const communities = data.allContentYaml.nodes[0].communities
   return (
-    <div className="section bg-gray-200" id="communities">
-      <div className="w-full flex flex-col items-center justify-start">
-        <h2 className="mt-6 w-4/5 lg:w-2/3 xl:w-1/2">Communities</h2>
-        <h3 className="my-2 w-full text-center flex flex-col items-center justify-center">
-          Check out the communities near you.
-          <div>"Are missing your own community?</div>
+    <div
+      tw="bg-gray-100 flex flex-col items-center justify-center m-4"
+      id="communities"
+    >
+      <div tw="w-full flex flex-col items-center justify-start">
+        <h2 tw="my-2 w-4/5 lg:w-2/3 xl:w-1/2 text-blue-800 text-3xl">
+          Communities
+        </h2>
+        <h3 tw="my-2 w-full text-center flex flex-col items-center justify-center">
+          Check out the communities near you. "Are missing your own community?
           <a
             href="https://github.com/Baasie/virtual-domain-driven-design"
             target="_blank"
@@ -61,8 +62,8 @@ const Communities = (): ReactElement => {
             Send us a pull request!
           </a>
         </h3>
-        <div className="w-16/12 md:w-5/6">
-          <div className="flex justify-center flex-wrap">
+        <div tw="md:w-5/6">
+          <div tw="flex justify-center flex-wrap">
             {communities.map((community, index) => {
               return <Community key={index} community={community}></Community>
             })}

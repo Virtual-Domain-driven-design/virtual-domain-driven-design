@@ -1,8 +1,9 @@
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-import FloatingActionCard from "./core/floating-action-card"
 import React, { ReactElement } from "react"
 import "twin.macro"
+
+import FloatingActionCard from "./core/floating-action-card"
 
 const Conference = ({ name, image, location, date, website }) => {
   return (
