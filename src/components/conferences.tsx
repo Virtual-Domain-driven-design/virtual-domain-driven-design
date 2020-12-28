@@ -63,7 +63,7 @@ const Conferences = (): ReactElement => {
   return (
     <div
       tw="bg-white flex flex-col items-center justify-center m-4"
-      id="conferencess"
+      id="conferences"
     >
       <h2 tw="my-2 w-4/5 lg:w-2/3 xl:w-1/2 text-blue-800 text-3xl">
         Conferences

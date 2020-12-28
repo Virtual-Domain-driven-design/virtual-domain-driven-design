@@ -1,26 +1,22 @@
-import React, { ReactElement } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import React, { ReactElement } from "react"
+import "twin.macro"
+
+import FloatingActionCard from "./core/floating-action-card"
 
 const Sponsor = ({ name, image, website }) => {
   return (
-    <a
-      href={website}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="group floating-action-button bg-white w-full sm:w-64 rounded-lg shadow-md m-2 flex flex-col items-center justify-start"
-    >
-      <div className="flex flex-col items-center justify-start">
-        <div className="m-2 h-8 font-semibold text-gray-800 text-sm text-center">
-          {name}
-        </div>
-        <Img
-          className="my-2 w-64 h-32"
-          fluid={image}
-          imgStyle={{ objectFit: "contain" }}
-        ></Img>
+    <FloatingActionCard key={name} href={website}>
+      <div tw="m-2 h-8 font-semibold text-gray-800 text-sm text-center">
+        {name}
       </div>
-    </a>
+      <Img
+        tw="my-2 w-64 h-32"
+        fluid={image}
+        imgStyle={{ objectFit: "contain" }}
+      ></Img>
+    </FloatingActionCard>
   )
 }
 
@@ -86,10 +82,15 @@ const Sponsors = (): ReactElement => {
     }
   `)
   return (
-    <div className="section bg-gray-200" id="sponsors">
-      <div className="mt-8 w-4/5 lg:w-2/3 xl:w-1/2">
-        <h2>Sponsors</h2>
-        <div className="w-full flex-wrap flex flex-col sm:flex-row justify-center items-stretch">
+    <div
+      tw="bg-white flex flex-col items-center justify-center m-4"
+      id="sponsors"
+    >
+      <div tw="mt-8 w-4/5 lg:w-2/3 xl:w-1/2">
+        <h2 tw="my-2 w-4/5 lg:w-2/3 xl:w-1/2 text-blue-800 text-3xl">
+          Sponsors
+        </h2>
+        <div tw="w-full flex-wrap flex flex-col sm:flex-row justify-center items-stretch">
           <Sponsor
             name="Heimeshoff IT"
             image={data.heimeshoff.childImageSharp.fluid}

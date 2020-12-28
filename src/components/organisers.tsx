@@ -1,6 +1,8 @@
-import React, { ReactElement } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import React, { ReactElement } from "react"
+
+import "twin.macro"
 
 const Organiser = ({
   name,
@@ -14,28 +16,26 @@ const Organiser = ({
   return (
     <div
       key={name}
-      className="bg-white py-4 m-4 rounded-lg shadow-md flex flex-col items-stretch justify-between"
+      tw="bg-white py-4 m-4 rounded-lg shadow-md flex flex-col items-stretch justify-between"
     >
-      <div className="flex flex-col items-center justify-start">
-        <div className="text-gray-800 text-sm text-center">{name}</div>
-        <div className="text-gray-700 text-xs italic text-center">
-          {tagline}
-        </div>
+      <div tw="flex flex-col items-center justify-start">
+        <div tw="text-gray-800 text-sm text-center">{name}</div>
+        <div tw="text-gray-700 text-xs italic text-center">{tagline}</div>
         <Img
-          className="my-2 w-64 h-64"
+          tw="my-2 w-64 h-64"
           fluid={image}
           imgStyle={{ objectFit: "contain" }}
         ></Img>
       </div>
-      <div className="my-1 w-full flex items-center justify-around">
+      <div tw="my-1 w-full flex items-center justify-around">
         <a
           href={website}
           target="_blank"
           rel="noopener noreferrer"
-          className="floating-action-button rounded-full"
+          tw="rounded-full transform scale-100 duration-100 hover:scale-110"
         >
           <Img
-            className="h-10 w-10"
+            tw="h-10 w-10"
             fluid={data.website.childImageSharp.fluid}
             imgStyle={{ objectFit: "contain" }}
           ></Img>
@@ -44,10 +44,10 @@ const Organiser = ({
           href={twitter}
           target="_blank"
           rel="noopener noreferrer"
-          className="twitter-icon floating-action-button rounded-full"
+          tw="rounded-full transform scale-100 duration-100 hover:scale-110"
         >
           <Img
-            className="h-10 w-10"
+            tw="h-10 w-10"
             fluid={data.twitter.childImageSharp.fluid}
             imgStyle={{ objectFit: "contain" }}
           ></Img>
@@ -56,10 +56,10 @@ const Organiser = ({
           href={linkedin}
           target="_blank"
           rel="noopener noreferrer"
-          className="twitter-icon floating-action-button rounded-full"
+          tw="rounded-full transform scale-100 duration-100 hover:scale-110"
         >
           <Img
-            className="h-10 w-10"
+            tw="h-10 w-10"
             fluid={data.linkedin.childImageSharp.fluid}
             imgStyle={{ objectFit: "contain" }}
           ></Img>
@@ -145,10 +145,15 @@ const Organisers = (): ReactElement => {
     }
   `)
   return (
-    <div className="section bg-gray-200" id="organisers">
-      <div className="mt-8 w-4/5 lg:w-2/3 xl:w-1/2">
-        <h2>Organisers</h2>
-        <div className="w-full flex-wrap flex flex-col sm:flex-row justify-center items-stretch">
+    <div
+      tw="bg-gray-100 flex flex-col items-center justify-center m-4"
+      id="organisers"
+    >
+      <div tw="mt-8 w-4/5 lg:w-2/3 xl:w-1/2">
+        <h2 tw="my-2 w-4/5 lg:w-2/3 xl:w-1/2 text-blue-800 text-3xl">
+          Organisers
+        </h2>
+        <div tw="w-full flex-wrap flex flex-col sm:flex-row justify-center items-stretch">
           <Organiser
             name="Zsofia Herendi"
             image={data.zsofia.childImageSharp.fluid}

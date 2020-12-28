@@ -7,17 +7,17 @@ import FloatingActionCard from "./core/floating-action-card"
 const Community = ({ index, community }) => {
   return (
     <FloatingActionCard key={index} href={community.url}>
-      <div className="flex flex-col items-center justify-start">
-        <div className="m-2 h-8 font-semibold text-gray-800 text-sm text-center">
+      <div tw="flex flex-col items-center justify-start">
+        <div tw="m-2 h-8 font-semibold text-gray-800 text-sm text-center">
           {community.name}
         </div>
         <img
-          className="my-2 w-64 h-32 object-contain"
+          tw="my-2 w-64 h-32 object-contain"
           alt=""
           src={community.img}
         ></img>
       </div>
-      <div className="text-gray-700 text-xs italic text-center">
+      <div tw="text-gray-700 text-xs italic text-center">
         {community.country}
       </div>
     </FloatingActionCard>
