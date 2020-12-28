@@ -1,30 +1,21 @@
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import FloatingActionCard from "./core/floating-action-card"
 import React, { ReactElement } from "react"
 import "twin.macro"
 
 const Conference = ({ name, image, location, date, website }) => {
   return (
-    <a
-      key={name}
-      tw="flex justify-center "
-      href={website}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <div tw="bg-white w-full sm:w-64 shadow-md rounded-lg m-4 flex flex-col items-center justify-between transform scale-100 duration-100 hover:scale-110">
-        <div tw="m-2 font-semibold text-gray-800 text-sm text-center">
-          {name}
-        </div>
-        <div tw="text-gray-800 text-sm text-center">{date}</div>
-        <Img
-          fluid={image}
-          tw="my-2 w-64 h-32"
-          imgStyle={{ objectFit: "contain" }}
-        />
-        <div tw="mb-2 text-gray-800 text-sm text-center">{location}</div>
-      </div>
-    </a>
+    <FloatingActionCard key={name} href={website}>
+      <div tw="m-2 font-semibold text-gray-800 text-sm text-center">{name}</div>
+      <div tw="text-gray-800 text-sm text-center">{date}</div>
+      <Img
+        fluid={image}
+        tw="my-2 w-64 h-32"
+        imgStyle={{ objectFit: "contain" }}
+      />
+      <div tw="mb-2 text-gray-800 text-sm text-center">{location}</div>
+    </FloatingActionCard>
   )
 }
 
