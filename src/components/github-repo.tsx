@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import Img from "gatsby-image"
 import React, { FC } from "react"
 import "twin.macro"
