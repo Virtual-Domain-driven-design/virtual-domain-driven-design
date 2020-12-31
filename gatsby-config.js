@@ -176,13 +176,6 @@ module.exports = {
       },
     },
     "gatsby-plugin-postcss",
-    {
-      resolve: "gatsby-plugin-purgecss",
-      options: {
-        tailwind: true,
-        purgeOnly: ["src/css/index.css"],
-      },
-    },
     `gatsby-plugin-typescript`,
     {
       resolve: "gatsby-plugin-eslint",

@@ -19,20 +19,7 @@ module.exports = {
         "sans-serif",
       ],
     },
-    extend: {
-      width: {
-        "14": "3.5rem",
-      },
-      height: {
-        "14": "3.5rem",
-      },
-      padding: {
-        "14": "3.5rem",
-      },
-      margin: {
-        "14": "3.5rem",
-      },
-    },
+    extend: {},
     aspectRatio: {
       none: 0,
       square: [1, 1],
