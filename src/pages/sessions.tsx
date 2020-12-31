@@ -11,6 +11,8 @@ import UpcomingSession, {
   UpcomingSessionContent,
 } from "../components/upcoming-session"
 
+const initialLengthSize = 15
+
 interface UpcomingSessionProps {
   sessions: UpcomingSessionContent[]
 }
@@ -52,7 +54,7 @@ interface PastSessionProps {
 }
 
 const PastSessions: FC<PastSessionProps> = ({ allSessions }) => {
-  const [sessionsLength, setSessionsLength] = useState(15)
+  const [sessionsLength, setSessionsLength] = useState(initialLengthSize)
   const areAllSessionsVisible = sessionsLength > allSessions.length
 
   const sessions = allSessions.slice(0, sessionsLength)
@@ -67,7 +69,7 @@ const PastSessions: FC<PastSessionProps> = ({ allSessions }) => {
         </div>
       </div>
       <button
-        onClick={() => setSessionsLength(sessionsLength + 15)}
+        onClick={() => setSessionsLength(sessionsLength + initialLengthSize)}
         tw="my-4 bg-blue-500 hover:bg-blue-700 text-center text-xs lg:text-base text-white font-bold py-2 px-4 border-b-4 border-blue-900 hover:border-blue-900 rounded"
         css={areAllSessionsVisible && tw`invisible`}
       >

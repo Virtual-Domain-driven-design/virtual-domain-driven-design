@@ -23,6 +23,9 @@ module.exports = {
       width: {
         "96": "24rem",
       },
+      height: {
+        "80": "20rem",
+      },
     },
     aspectRatio: {
       none: 0,
