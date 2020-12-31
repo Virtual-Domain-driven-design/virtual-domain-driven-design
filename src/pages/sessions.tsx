@@ -53,7 +53,7 @@ interface PastSessionProps {
 
 const PastSessions: FC<PastSessionProps> = ({ allSessions }) => {
   const [sessionsLength, setSessionsLength] = useState(15)
-  const allSessionsVisible = sessionsLength > allSessions.length
+  const areAllSessionsVisible = sessionsLength > allSessions.length
 
   const sessions = allSessions.slice(0, sessionsLength)
   return (
@@ -69,7 +69,7 @@ const PastSessions: FC<PastSessionProps> = ({ allSessions }) => {
       <button
         onClick={() => setSessionsLength(sessionsLength + 15)}
         tw="my-4 bg-blue-500 hover:bg-blue-700 text-center text-xs lg:text-base text-white font-bold py-2 px-4 border-b-4 border-blue-900 hover:border-blue-900 rounded"
-        css={allSessionsVisible && tw`invisible`}
+        css={areAllSessionsVisible && tw`invisible`}
       >
         Load more
       </button>

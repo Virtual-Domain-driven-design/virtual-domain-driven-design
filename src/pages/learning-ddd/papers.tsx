@@ -1,12 +1,15 @@
 import { graphql, useStaticQuery } from "gatsby"
-import React, { FC } from "react"
+import React, { FC, useState } from "react"
+import tw from "twin.macro"
 
 import Paper, { PaperContent } from "../../components/paper"
 import Layout from "../../templates/layout"
 import SEO from "../../components/seo"
 
 const Papers: FC = () => {
-  const papers = useStaticQuery<{
+  const [papersLength, setPapersLength] = useState(24)
+
+  const allPapers = useStaticQuery<{
     allContentYaml: { nodes: { papers: PaperContent[] }[] }
   }>(graphql`
     query {
@@ -28,21 +31,32 @@ const Papers: FC = () => {
     }
   `).allContentYaml.nodes[0].papers
 
+  const areAllPapersVisible = papersLength > allPapers.length
+
+  const papers = allPapers.slice(0, papersLength)
+
   return (
     <Layout>
       <SEO
         title="Domain-Driven Design papers"
         description="A curated list of Domain-Driven Design and Software Architecture related papers"
       />
-      <div className="w-full flex flex-col items-center">
-        <h2 className="my-6 lg:w-2/3 xl:w-1/2">Papers</h2>
-        <div className="flex flex-row justify-center">
-          <div className="flex flex-row flex-wrap items-center w18/20">
+      <div tw="w-full flex flex-col items-center justify-start">
+        <h2 tw="my-6 w-4/5 lg:w-2/3 xl:w-1/2">Papers</h2>
+        <div tw="w-11/12 md:w-5/6">
+          <div tw="flex items-stretch justify-center flex-wrap">
             {papers.map((paper, index) => {
               return <Paper key={index} paper={paper}></Paper>
             })}
           </div>
         </div>
+        <button
+          onClick={() => setPapersLength(papersLength + 24)}
+          tw="my-4 bg-blue-500 hover:bg-blue-700 text-center text-xs lg:text-base text-white font-bold py-2 px-4 border-b-4 border-blue-900 hover:border-blue-900 rounded"
+          css={areAllPapersVisible && tw`invisible`}
+        >
+          Load more
+        </button>
       </div>
     </Layout>
   )

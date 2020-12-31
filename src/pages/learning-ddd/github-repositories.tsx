@@ -1,12 +1,15 @@
 import { graphql, useStaticQuery } from "gatsby"
-import React, { FC } from "react"
+import React, { FC, useState } from "react"
+import tw from "twin.macro"
 
 import GithubRepo, { GithubRepoContent } from "../../components/github-repo"
 import Layout from "../../templates/layout"
 import SEO from "../../components/seo"
 
 const DDDCrews: FC = () => {
-  const githubRepos = useStaticQuery<{
+  const [githubReposLength, setGithubReposLength] = useState(21)
+
+  const allGithubRepos = useStaticQuery<{
     allContentYaml: { nodes: { githubRepositories: GithubRepoContent[] }[] }
   }>(graphql`
     query {
@@ -31,16 +34,20 @@ const DDDCrews: FC = () => {
     }
   `).allContentYaml.nodes[0].githubRepositories
 
+  const areAllGithubReposVisible = githubReposLength > allGithubRepos.length
+
+  const githubRepos = allGithubRepos.slice(0, githubReposLength)
+
   return (
     <Layout>
       <SEO
         title="Domain-Driven Design Github repositories"
         description="A curated list of Domain-Driven Design and Software Architecture related Github repositories"
       />
-      <div className="w-full flex flex-col items-center">
-        <h2 className="my-6 lg:w-2/3 xl:w-1/2">Github Repos</h2>
-        <div className="flex flex-row justify-center">
-          <div className="flex flex-row flex-wrap items-center w18/20">
+      <div tw="w-full flex flex-col items-center justify-start">
+        <h2 tw="my-6 w-4/5 lg:w-2/3 xl:w-1/2">Github Repositories</h2>
+        <div tw="w-11/12 md:w-5/6">
+          <div tw="flex items-stretch justify-center flex-wrap">
             {githubRepos.map((githubRepo, index) => {
               return (
                 <GithubRepo key={index} githubRepo={githubRepo}></GithubRepo>
@@ -48,6 +55,13 @@ const DDDCrews: FC = () => {
             })}
           </div>
         </div>
+        <button
+          onClick={() => setGithubReposLength(githubReposLength + 21)}
+          tw="my-4 bg-blue-500 hover:bg-blue-700 text-center text-xs lg:text-base text-white font-bold py-2 px-4 border-b-4 border-blue-900 hover:border-blue-900 rounded"
+          css={areAllGithubReposVisible && tw`invisible`}
+        >
+          Load more
+        </button>
       </div>
     </Layout>
   )
