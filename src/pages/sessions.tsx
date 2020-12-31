@@ -1,14 +1,15 @@
 import { graphql, useStaticQuery } from "gatsby"
-import React, { FC } from "react"
+import NoUpcomingImg from "../images/no_upcoming.svg"
+import React, { FC, useState } from "react"
+import tw from "twin.macro"
 
 import Layout from "../templates/layout"
+import Session, { SessionContent } from "../components/session"
+import SEO from "../components/seo"
+import ThreeDBlueButton from "./../components/core/three-d-blue-button"
 import UpcomingSession, {
   UpcomingSessionContent,
 } from "../components/upcoming-session"
-import SEO from "../components/seo"
-import Session, { SessionContent } from "../components/session"
-
-import NoUpcomingImg from "../images/no_upcoming.svg"
 
 interface UpcomingSessionProps {
   sessions: UpcomingSessionContent[]
@@ -17,9 +18,9 @@ interface UpcomingSessionProps {
 const UpcomingSessions: FC<UpcomingSessionProps> = ({ sessions }) => {
   if (sessions.length > 0 && sessions[0].title) {
     return (
-      <div className="my-8 w-4/5 lg:w-2/3 xl:w-1/2">
+      <div tw="my-8 w-4/5 lg:w-2/3 xl:w-1/2">
         <h2>Upcoming Sessions</h2>
-        <div className="flex flex-col items-center justify-start">
+        <div tw="flex flex-col items-center justify-start">
           {sessions.map((session, index) => {
             return (
               <UpcomingSession key={index} session={session}></UpcomingSession>
@@ -30,44 +31,50 @@ const UpcomingSessions: FC<UpcomingSessionProps> = ({ sessions }) => {
     )
   }
   return (
-    <div className="my-8 w-4/5 lg:w-2/3 xl:w-1/2">
+    <div tw="my-8 w-4/5 lg:w-2/3 xl:w-1/2">
       <h2>Upcoming Sessions</h2>
-      <div className="flex flex-col items-center justify-start">
-        <NoUpcomingImg className="h-64 mb-6" />
-        <div>More sessions are coming to you eventually consistent...</div>
-        <a
-          className="p-4 mt-6 bg-blue-400 floating-action-button text-white"
-          href="https://sessionize.com/virtual-ddd-meetup"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+      <div tw="flex flex-col items-center justify-start">
+        <NoUpcomingImg tw="h-64 mb-6" />
+        <div tw="my-4">
+          More sessions are coming to you eventually consistent...
+        </div>
+        <ThreeDBlueButton href="https://sessionize.com/virtual-ddd-meetup">
+          {" "}
           Propose a session
-        </a>
+        </ThreeDBlueButton>
       </div>
     </div>
   )
 }
 
 interface PastSessionProps {
-  sessions: SessionContent[]
+  allSessions: SessionContent[]
 }
 
-const PastSessions: FC<PastSessionProps> = ({ sessions }) => {
-  if (sessions.length > 0) {
-    return (
-      <div className="w-full flex flex-col items-center justify-start">
-        <h2 className="my-6 w-4/5 lg:w-2/3 xl:w-1/2">Past Sessions</h2>
-        <div className="w-11/12 md:w-5/6">
-          <div className="flex items-stretch justify-center flex-wrap">
-            {sessions.map((session, index) => {
-              return <Session key={index} session={session} />
-            })}
-          </div>
+const PastSessions: FC<PastSessionProps> = ({ allSessions }) => {
+  const [sessionsLength, setSessionsLength] = useState(15)
+  const allSessionsVisible = sessionsLength > allSessions.length
+
+  const sessions = allSessions.slice(0, sessionsLength)
+  return (
+    <div tw="w-full flex flex-col items-center justify-start">
+      <h2 tw="my-6 w-4/5 lg:w-2/3 xl:w-1/2">Past Sessions</h2>
+      <div tw="w-11/12 md:w-5/6">
+        <div tw="flex items-stretch justify-center flex-wrap">
+          {sessions.map((session, index) => {
+            return <Session key={index} session={session} />
+          })}
         </div>
       </div>
-    )
-  }
-  return <div></div>
+      <button
+        onClick={() => setSessionsLength(sessionsLength + 15)}
+        tw="my-4 bg-blue-500 hover:bg-blue-700 text-center text-xs lg:text-base text-white font-bold py-2 px-4 border-b-4 border-blue-900 hover:border-blue-900 rounded"
+        css={allSessionsVisible && tw`invisible`}
+      >
+        Load more
+      </button>
+    </div>
+  )
 }
 
 const Sessions: FC = () => {
@@ -119,9 +126,12 @@ const Sessions: FC = () => {
         keywords="Domain-Driven Design,Software Architecture,meetup"
         image={data.upcoming.nodes[0].upcomingSessions[0].img}
       />
-      <div className="section" id="Sessions">
+      <div
+        tw="bg-gray-100 flex flex-col items-center justify-center m-4"
+        id="Sessions"
+      >
         <UpcomingSessions sessions={upcomingSessions}></UpcomingSessions>
-        <PastSessions sessions={pastSessions}></PastSessions>
+        <PastSessions allSessions={pastSessions}></PastSessions>
       </div>
     </Layout>
   )
