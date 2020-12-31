@@ -6,8 +6,10 @@ import Book, { BookContent } from "../../components/book"
 import Layout from "../../templates/layout"
 import SEO from "../../components/seo"
 
+const initialLengthSize = 21
+
 const Books: FC = () => {
-  const [booksLength, setBooksLength] = useState(30)
+  const [booksLength, setBooksLength] = useState(initialLengthSize)
 
   const allBooks = useStaticQuery<{
     allContentYaml: { nodes: { books: BookContent[] }[] }
@@ -55,7 +57,7 @@ const Books: FC = () => {
           </div>
         </div>
         <button
-          onClick={() => setBooksLength(booksLength + 30)}
+          onClick={() => setBooksLength(booksLength + initialLengthSize)}
           tw="my-4 bg-blue-500 hover:bg-blue-700 text-center text-xs lg:text-base text-white font-bold py-2 px-4 border-b-4 border-blue-900 hover:border-blue-900 rounded"
           css={areAllBooksVisible && tw`invisible`}
         >
