@@ -1,7 +1,6 @@
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import React, { ReactElement } from "react"
-
 import "twin.macro"
 
 const Organiser = ({
