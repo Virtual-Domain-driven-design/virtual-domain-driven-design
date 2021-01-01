@@ -7,8 +7,10 @@ import Podcast, { PodcastContent } from "../../components/podcast"
 import PodcastPlatforms from "../../components/podcast-platforms"
 import SEO from "../../components/seo"
 
+const initialLengthSize = 15
+
 const Podcasts: FC = () => {
-  const [podcastsLength, setPodcastsLength] = useState(30)
+  const [podcastsLength, setPodcastsLength] = useState(initialLengthSize)
 
   const allPodcasts = useStaticQuery<{
     allContentYaml: { nodes: { sessions: PodcastContent[] }[] }
@@ -50,7 +52,7 @@ const Podcasts: FC = () => {
           </div>
         </div>
         <button
-          onClick={() => setPodcastsLength(podcastsLength + 30)}
+          onClick={() => setPodcastsLength(podcastsLength + initialLengthSize)}
           tw="my-4 bg-blue-500 hover:bg-blue-700 text-center text-xs lg:text-base text-white font-bold py-2 px-4 border-b-4 border-blue-900 hover:border-blue-900 rounded"
           css={areAllPodcastsVisible && tw`invisible`}
         >

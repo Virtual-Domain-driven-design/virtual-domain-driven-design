@@ -20,7 +20,7 @@
     "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-remove-serviceworker": "^1.0.0",
     "gatsby-plugin-sitemap": "^2.4.11",
-    "gatsby-plugin-styled-components": "^3.3.10",
+    "gatsby-plugin-styled-components": "^3.7.0",
     "gatsby-remark-autolink-headers": "^2.3.11",
     "gatsby-remark-copy-linked-files": "^2.3.12",
     "gatsby-remark-images": "^3.3.25",
@@ -35,15 +35,15 @@
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
     "react-icons": "^3.10.0",
-    "styled-components": "^5.1.1",
-    "twin.macro": "^1.7.0"
+    "styled-components": "^5.2.1",
+    "twin.macro": "^2.0.7"
   },
   "devDependencies": {
     "@types/mdx-js__react": "^1.5.2",
     "@types/react": "^16.9.42",
     "@types/react-dom": "^16.9.8",
     "@types/react-helmet": "^6.0.0",
-    "@types/styled-components": "^5.1.2",
+    "@types/styled-components": "^5.1.7",
     "@typescript-eslint/eslint-plugin": "^3.6.0",
     "@typescript-eslint/parser": "^3.6.0",
     "autoprefixer": "^10.1.0",
@@ -70,8 +70,6 @@
     "lint-staged": "10.2.11",
     "prettier": "2.0.5",
     "tailwindcss": "^2.0.2",
-    "tailwindcss-aspect-ratio": "^3.0.0",
-    "tailwindcss-responsive-embed": "^1.0.0",
     "typescript": "3.9.6"
   },
   "scripts": {

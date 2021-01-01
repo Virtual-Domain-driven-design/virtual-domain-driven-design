@@ -23,6 +23,10 @@ h2 {
   height: 20rem;
 }
 
+.ddd-crew {
+  height: 20rem;
+}
+
 .levelbtn.active {
   @apply bg-blue-700 text-white;
 }

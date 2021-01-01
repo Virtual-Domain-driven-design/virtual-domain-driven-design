@@ -4,7 +4,7 @@ module.exports = {
     config: "tailwind.config.js",
     preset: "styled-components",
     autoCssProp: true,
-    debugProp: true,
+    dataTwProps: true,
     debugPlugins: false,
     debug: false,
   },
