@@ -17,7 +17,7 @@ interface VideosOverviewProps {
 
 const VideosOverview: FC<VideosOverviewProps> = ({ levelFilter }) => {
   const [offset, setOffset] = useState(0)
-  const pageLimit = 5
+  const pageLimit = 3
   const allVideos = useStaticQuery<{
     allContentYaml: { nodes: { videos: Video[] }[] }
   }>(graphql`

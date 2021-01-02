@@ -17,7 +17,7 @@ interface PodcastsOverviewProps {
 
 const PodcastsOverview: FC<PodcastsOverviewProps> = ({ levelFilter }) => {
   const [offset, setOffset] = useState(0)
-  const pageLimit = 5
+  const pageLimit = 3
   const allPodcasts = useStaticQuery<{
     allContentYaml: { nodes: { sessions: Podcast[] }[] }
   }>(graphql`

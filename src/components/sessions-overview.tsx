@@ -10,7 +10,7 @@ interface SessionOverviewProps {
 
 const SessionOverview: FC<SessionOverviewProps> = ({ levelFilter }) => {
   const [offset, setOffset] = useState(0)
-  const pageLimit = 5
+  const pageLimit = 3
   const allSessions = useStaticQuery<{
     allContentYaml: { nodes: { sessions: SessionContent[] }[] }
   }>(graphql`

@@ -41,7 +41,7 @@ const ContentGallery: FC<ContentGalleryProps> = ({
             <FontAwesomeIcon icon={faChevronCircleLeft} size="4x" />
           </button>
         </div>
-        <div tw="flex flex-row flex-wrap items-center w-4/6">{children}</div>
+        <div tw="flex items-stretch justify-center flex-wrap">{children}</div>
         <div tw="flex justify-center items-center w-1/6">
           <button
             onClick={() => setOffset(filteredOffSet + pageLimit)}

@@ -10,7 +10,7 @@ interface PapersOverviewProps {
 
 const PapersOverview: FC<PapersOverviewProps> = ({ levelFilter }) => {
   const [offset, setOffset] = useState(0)
-  const pageLimit = 5
+  const pageLimit = 4
   const allPapers = useStaticQuery<{
     allContentYaml: { nodes: { papers: PaperContent[] }[] }
   }>(graphql`

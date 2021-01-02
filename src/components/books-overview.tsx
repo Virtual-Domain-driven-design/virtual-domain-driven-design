@@ -10,7 +10,7 @@ interface BooksOverviewProps {
 
 const BooksOverview: FC<BooksOverviewProps> = ({ levelFilter }) => {
   const [offset, setOffset] = useState(0)
-  const pageLimit = 6
+  const pageLimit = 5
   const allBooks = useStaticQuery<{
     allContentYaml: { nodes: { books: BookContent[] }[] }
   }>(graphql`
