@@ -1,4 +1,5 @@
 import React, { FC, useState } from "react"
+import tw from "twin.macro"
 
 interface LevelFilterProps {
   setLevelFilter: Function
@@ -66,43 +67,31 @@ const LevelFilter: FC<LevelFilterProps> = ({ setLevelFilter }) => {
   }
 
   return (
-    <div className="flex flex-row items-center justify-center">
+    <div tw="flex flex-row items-center justify-center">
       <button
-        className={[
-          "levelbtn",
-          areButtonsActive.isAllActive ? "active" : "",
-          "text-xl m-2 p-2 text-white rounded-lg border-2 border-blue-500 hover:border-blue-400",
-        ].join(" ")}
+        tw="text-xl m-2 p-2 text-white rounded-lg border-2 border-blue-500 hover:border-blue-400"
+        css={areButtonsActive.isAllActive && tw`bg-blue-700`}
         onClick={() => levelButtonClicked(ContentLevel.All)}
       >
         All levels
       </button>
       <button
-        className={[
-          "levelbtn",
-          areButtonsActive.isBeginnerActive ? "active" : "",
-          "text-xl m-2 p-2 text-white rounded-lg border-2 border-blue-500 hover:border-blue-400",
-        ].join(" ")}
+        tw="text-xl m-2 p-2 text-white rounded-lg border-2 border-blue-500 hover:border-blue-400"
+        css={areButtonsActive.isBeginnerActive && tw`bg-blue-700`}
         onClick={() => levelButtonClicked(ContentLevel.Beginner)}
       >
         Beginner
       </button>
       <button
-        className={[
-          "levelbtn",
-          areButtonsActive.isIntermediateActive ? "active" : "",
-          "text-xl m-2 p-2 text-white rounded-lg border-2 border-blue-500 hover:border-blue-400",
-        ].join(" ")}
+        tw="text-xl m-2 p-2 text-white rounded-lg border-2 border-blue-500 hover:border-blue-400"
+        css={areButtonsActive.isIntermediateActive && tw`bg-blue-700`}
         onClick={() => levelButtonClicked(ContentLevel.Intermediate)}
       >
         Intermediate
       </button>
       <button
-        className={[
-          "levelbtn",
-          areButtonsActive.isAdvancedActive ? "active" : "",
-          "text-xl m-2 p-2 text-white rounded-lg border-2 border-blue-500 hover:border-blue-400",
-        ].join(" ")}
+        tw="text-xl m-2 p-2 text-white rounded-lg border-2 border-blue-500 hover:border-blue-400"
+        css={areButtonsActive.isAdvancedActive && tw`bg-blue-700`}
         onClick={() => levelButtonClicked(ContentLevel.Advanced)}
       >
         Advanced

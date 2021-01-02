@@ -1,6 +1,7 @@
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import React, { FC } from "react"
+import "twin.macro"
 
 interface PodcastPlatform {
   img: any
@@ -33,20 +34,17 @@ const PodcastPlatforms: FC = () => {
     }
   `).allContentYaml.nodes[0].podcastsPlatforms
   return (
-    <div className="my-1 w-full flex items-center justify-around">
+    <div tw="my-1 w-full flex items-center justify-around">
       {allPodcastsPlatforms.map((platform, index) => {
         return (
           <a
             key={index}
-            className="floating-action-button rounded-full"
+            tw="shadow-md transform scale-100 duration-100 hover:scale-110 rounded-full"
             href={platform.url}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Img
-              fluid={platform.img.childImageSharp.fluid}
-              className="h-10 w-10"
-            />
+            <Img fluid={platform.img.childImageSharp.fluid} tw="h-10 w-10" />
           </a>
         )
       })}
