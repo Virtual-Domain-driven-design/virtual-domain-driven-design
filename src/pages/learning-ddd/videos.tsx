@@ -7,7 +7,7 @@ import SEO from "../../components/seo"
 import Video, { VideoContent } from "../../components/video"
 
 const Videos: FC = () => {
-  const [videosLength, setVideosLength] = useState(21)
+  const [videosLength, setVideosLength] = useState(15)
 
   const allVideos = useStaticQuery<{
     allContentYaml: { nodes: { videos: VideoContent[] }[] }
