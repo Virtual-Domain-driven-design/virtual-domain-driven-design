@@ -28,5 +28,5 @@ module.exports = {
     overflow: ["responsive", "hover", "group-hover"],
     visibility: ["responsive", "group-hover"],
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 }
