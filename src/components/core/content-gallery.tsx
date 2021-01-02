@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import React, { FC } from "react"
 import tw from "twin.macro"
 
-import BlueButton from "./blue-button"
+import ThreeDBlueButton from "./three-d-blue-button"
 
 interface ContentGalleryProps {
   filteredOffSet: number
@@ -53,7 +53,7 @@ const ContentGallery: FC<ContentGalleryProps> = ({
         </div>
       </div>
 
-      <BlueButton to={allTo}>All {title}</BlueButton>
+      <ThreeDBlueButton to={allTo}>All {title}</ThreeDBlueButton>
     </div>
   )
 }
