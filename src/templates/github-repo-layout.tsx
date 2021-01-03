@@ -5,20 +5,20 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
 import { graphql } from "gatsby"
 import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-
-import MarkdownLink from "../plugins/markdown-link"
+import React from "react"
+import "twin.macro"
 
 import Layout from "./layout"
+import MarkdownLink from "../plugins/markdown-link"
 
 const GithubRepoLayout = ({ location, data: { mdx } }) => {
   return (
     <Layout>
-      <div className="flex flex-col items-center" id="markdown">
-        <div className="markdown w-3/5">
+      <div tw="flex flex-col items-center" id="github repository">
+        <div tw="prose prose-sm sm:prose lg:prose-lg xl:prose-lg lg:w-2/3">
           <MDXProvider
             components={{
               a: (props) => <MarkdownLink location={location} {...props} />,
