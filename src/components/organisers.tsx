@@ -1,9 +1,19 @@
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-import React, { ReactElement } from "react"
-import "twin.macro"
+import React, { ReactElement, FC } from "react"
+import tw from "twin.macro"
 
-const Organiser = ({
+interface OrganiserProps {
+  name: string
+  image: any
+  tagline: string
+  website: string
+  twitter: string
+  linkedin?: string
+  data: any
+}
+
+const Organiser: FC<OrganiserProps> = ({
   name,
   image,
   tagline,
@@ -32,6 +42,7 @@ const Organiser = ({
           target="_blank"
           rel="noopener noreferrer"
           tw="rounded-full transform scale-100 duration-100 hover:scale-110"
+          css={!website && tw`hidden`}
         >
           <Img
             tw="h-10 w-10"
@@ -40,10 +51,11 @@ const Organiser = ({
           ></Img>
         </a>
         <a
-          href={twitter}
+          href={"https://twitter.com/" + twitter}
           target="_blank"
           rel="noopener noreferrer"
           tw="rounded-full transform scale-100 duration-100 hover:scale-110"
+          css={!twitter && tw`hidden`}
         >
           <Img
             tw="h-10 w-10"
@@ -52,10 +64,11 @@ const Organiser = ({
           ></Img>
         </a>
         <a
-          href={linkedin}
+          href={"https://linkedin.com/" + linkedin}
           target="_blank"
           rel="noopener noreferrer"
           tw="rounded-full transform scale-100 duration-100 hover:scale-110"
+          css={!linkedin && tw`hidden`}
         >
           <Img
             tw="h-10 w-10"
@@ -68,7 +81,7 @@ const Organiser = ({
   )
 }
 
-const Organisers = (): ReactElement => {
+const Organisers: FC = ({}) => {
   const data = useStaticQuery(graphql`
     query {
       website: file(relativePath: { eq: "logo/website.png" }) {
@@ -213,7 +226,6 @@ const Organisers = (): ReactElement => {
             tagline="Coding Architect"
             website="https://yellow-brick-code.org/"
             twitter="YellowBrickC"
-            linkedin=""
             data={data}
           ></Organiser>
         </div>
