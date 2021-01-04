@@ -41,9 +41,8 @@ const Organiser: FC<OrganiserProps> = ({
           css={!website && tw`hidden`}
         >
           <Img
-            tw="h-10 w-10"
+            tw="h-10 w-10 object-contain"
             fluid={data.website.childImageSharp.fluid}
-            imgStyle={{ objectFit: "contain" }}
           ></Img>
         </a>
         <a
@@ -54,9 +53,8 @@ const Organiser: FC<OrganiserProps> = ({
           css={!twitter && tw`hidden`}
         >
           <Img
-            tw="h-10 w-10"
+            tw="h-10 w-10 object-contain"
             fluid={data.twitter.childImageSharp.fluid}
-            imgStyle={{ objectFit: "contain" }}
           ></Img>
         </a>
         <a
@@ -67,9 +65,8 @@ const Organiser: FC<OrganiserProps> = ({
           css={!linkedin && tw`hidden`}
         >
           <Img
-            tw="h-10 w-10"
+            tw="h-10 w-10 object-contain"
             fluid={data.linkedin.childImageSharp.fluid}
-            imgStyle={{ objectFit: "contain" }}
           ></Img>
         </a>
       </div>

@@ -20,8 +20,10 @@ interface UpcomingSessionProps {
 const UpcomingSessions: FC<UpcomingSessionProps> = ({ sessions }) => {
   if (sessions.length > 0 && sessions[0].title) {
     return (
-      <div tw="my-8 w-4/5 lg:w-2/3 xl:w-1/2">
-        <h2>Upcoming Sessions</h2>
+      <div tw="my-8 w-full lg:w-4/5 lg:w-2/3 xl:w-1/2">
+        <h2 tw="my-2 w-4/5 lg:w-2/3 xl:w-1/2 text-blue-800 text-3xl">
+          Upcoming Sessions
+        </h2>
         <div tw="flex flex-col items-center justify-start">
           {sessions.map((session, index) => {
             return (
@@ -34,7 +36,9 @@ const UpcomingSessions: FC<UpcomingSessionProps> = ({ sessions }) => {
   }
   return (
     <div tw="my-8 w-4/5 lg:w-2/3 xl:w-1/2">
-      <h2>Upcoming Sessions</h2>
+      <h2 tw="my-2 w-4/5 lg:w-2/3 xl:w-1/2 text-blue-800 text-3xl">
+        Upcoming Sessions
+      </h2>
       <div tw="flex flex-col items-center justify-start">
         <NoUpcomingImg tw="h-64 mb-6" />
         <div tw="my-4">
@@ -60,7 +64,9 @@ const PastSessions: FC<PastSessionProps> = ({ allSessions }) => {
   const sessions = allSessions.slice(0, sessionsLength)
   return (
     <div tw="w-full flex flex-col items-center justify-start">
-      <h2 tw="my-6 w-4/5 lg:w-2/3 xl:w-1/2">Past Sessions</h2>
+      <h2 tw="my-2 w-4/5 lg:w-2/3 xl:w-1/2 text-blue-800 text-3xl">
+        Past Sessions
+      </h2>
       <div tw="w-11/12 md:w-5/6">
         <div tw="flex items-stretch justify-center flex-wrap">
           {sessions.map((session, index) => {
@@ -129,7 +135,7 @@ const Sessions: FC = () => {
         image={data.upcoming.nodes[0].upcomingSessions[0].img}
       />
       <div
-        tw="bg-gray-100 flex flex-col items-center justify-center m-4"
+        tw="bg-gray-100 flex flex-col items-center justify-center"
         id="Sessions"
       >
         <UpcomingSessions sessions={upcomingSessions}></UpcomingSessions>

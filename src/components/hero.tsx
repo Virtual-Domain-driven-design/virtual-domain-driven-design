@@ -95,7 +95,7 @@ const Hero: FC = () => {
       <div tw="z-0 absolute inset-0 bg-gray-900 opacity-75"></div>
       <div tw="w-full lg:w-1/3 flex flex-col items-center justify-center z-10 m-4 sm:m-6 lg:m-8">
         <VDDDInfo data={data}></VDDDInfo>
-        <div tw="flex items-center  justify-center space-x-4 m-4 sm:m-6 lg:m-8">
+        <div tw="flex items-center justify-center space-x-4 m-4 sm:m-6 lg:m-8">
           <OutlineBlueButton
             tw="lg:text-xl"
             href="https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/"
@@ -118,14 +118,12 @@ const Hero: FC = () => {
         tw="w-full lg:w-2/3 flex flex-col items-center justify-center z-10 m-4 sm:m-6 lg:m-8"
         css={!isUpcomingSession && tw`invisible`}
       >
-        <div tw="flex flex-col items-center space-y-4 m-4 sm:m-6 lg:m-8">
-          <UpcomingSession
-            session={data.allContentYaml.nodes[0].upcomingSessions[0]}
-          ></UpcomingSession>
-          <OutlineBlueButton tw="lg:text-xl" to="/sessions">
-            Show all sessions
-          </OutlineBlueButton>
-        </div>
+        <UpcomingSession
+          session={data.allContentYaml.nodes[0].upcomingSessions[0]}
+        ></UpcomingSession>
+        <OutlineBlueButton tw="lg:text-xl" to="/sessions">
+          Show all sessions
+        </OutlineBlueButton>
       </div>
     </BackgroundImage>
   )

@@ -28,13 +28,13 @@ const UpcomingSession: FC<UpcomingSessionProps> = ({ session }) => {
       <div tw="text-sm text-gray-600">
         {session.date} - {session.time}
       </div>
-      <img tw="w-full" alt="" src={session.img}></img>
+      <img tw="w-full object-cover" alt="" src={session.img}></img>
       <div tw="py-2 text-justify">{session.description}</div>
-      <div tw="mt-4 pt-2 space-x-4 border-t border-solid flex items-center justify-start flex-wrap">
+      <div tw="mt-4 pt-2 space-x-4 border-t-2 border-solid flex items-center justify-start flex-nowrap">
         {session.links.map((link, index) => {
           return (
             <ThreeDBlueButton
-              tw="bg-gray-200 hover:bg-gray-500 text-blue-600"
+              tw="bg-gray-200 hover:bg-gray-500 text-blue-600 lg:text-xl"
               href={link.url}
             >
               {link.label}
