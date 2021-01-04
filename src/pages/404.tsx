@@ -1,9 +1,9 @@
-import React from "react"
+import React, { FC } from "react"
 import "twin.macro"
 
 import Layout from "../templates/layout"
 
-const NotFoundPage = () => {
+const NotFoundPage: FC = () => {
   return (
     <Layout>
       <div tw="flex flex-col items-center" id="404">

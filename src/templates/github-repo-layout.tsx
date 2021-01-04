@@ -8,13 +8,13 @@
 import { graphql } from "gatsby"
 import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import React from "react"
+import React, { FC } from "react"
 import "twin.macro"
 
 import Layout from "./layout"
 import MarkdownLink from "../plugins/markdown-link"
 
-const GithubRepoLayout = ({ location, data: { mdx } }) => {
+const GithubRepoLayout: FC = ({ location, data: { mdx } }) => {
   return (
     <Layout>
       <div tw="flex flex-col items-center" id="github repository">

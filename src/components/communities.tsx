@@ -1,10 +1,10 @@
 import { graphql, useStaticQuery } from "gatsby"
-import React, { ReactElement } from "react"
+import React, { FC } from "react"
 import "twin.macro"
 
 import FloatingActionCard from "./core/floating-action-card"
 
-const Community = ({ index, community }) => {
+const Community: FC = ({ index, community }) => {
   return (
     <FloatingActionCard key={index} href={community.url}>
       <div tw="flex flex-col items-center justify-start">
@@ -24,7 +24,7 @@ const Community = ({ index, community }) => {
   )
 }
 
-const Communities = (): ReactElement => {
+const Communities: FC = () => {
   const data = useStaticQuery(graphql`
     query {
       allContentYaml(

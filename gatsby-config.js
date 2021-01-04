@@ -98,6 +98,13 @@ module.exports = {
     {
       resolve: `gatsby-source-git`,
       options: {
+        name: `github-repo-ddd-crew-welcome-to-ddd`,
+        remote: `https://github.com/ddd-crew/welcome-to-ddd.git`,
+      },
+    },
+    {
+      resolve: `gatsby-source-git`,
+      options: {
         name: `github-repo-ddd-crew-starter-modelling`,
         remote: `https://github.com/ddd-crew/ddd-starter-modelling-process.git`,
       },

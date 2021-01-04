@@ -77,7 +77,7 @@ const Organiser: FC<OrganiserProps> = ({
   )
 }
 
-const Organisers: FC = ({}) => {
+const Organisers: FC = () => {
   const data = useStaticQuery(graphql`
     query {
       website: file(relativePath: { eq: "logo/website.png" }) {

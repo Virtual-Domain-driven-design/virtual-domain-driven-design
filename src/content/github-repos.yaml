@@ -1,78 +1,87 @@
-  githubRepositories:
-    - name: "Domain-Driven Design Starter Modelling Process"
-      repo: "https://github.com/ddd-crew/ddd-starter-modelling-process.git"
-      img: "../images/github-repositories/ddd-starter-modelling-process.jpg"
-      to: "/learning-ddd/ddd-crew-starter-modelling"
-      excerpt: "This process gives you a step-by-step guide for learning and practically applying each aspect of Domain-Driven Design (DDD)"
-      level: all
-      tags:
-        - essential
-        - strategic ddd
-        - bounded context
-        - tactical ddd
-    - name: "SATURN 2019 Workshop -- Architecture Island"
-      repo: "https://github.com/michaelkeeling/saturn2019-architecture-island-workshop.git"
-      img: "../images/github-repositories/saturn-2019.jpg"
-      to: "/learning-ddd/saturn2019-architecture-island-workshop"
-      excerpt: "Our goal is to identify the most important concepts, ideas, strategies, methods, patterns, and so on, that all software engineers must know about software architecture."
-      level: intermediate
-      tags:
-        - software architecture
-    - name: "EventStorming Glossary & Cheat sheet"
-      repo: "https://github.com/ddd-crew/eventstorming-glossary-cheat-sheet.git"
-      img: "../images/github-repositories/domain-event.png"
-      to: "/learning-ddd/ddd-crew-eventstorming-glossary-cheat-sheet"
-      excerpt: "Here you will find a combination of a glossary of terms on EventStorming core concepts written down in a consistent and comprehensive glossary."
-      level: all
-      tags:
-        - eventstorming
-    - name: "Context Mapping"
-      repo: "https://github.com/ddd-crew/context-mapping.git"
-      img: "../images/github-repositories/context-map-cheat-sheet.png"
-      to: "/learning-ddd/ddd-crew-context-mapping"
-      excerpt: "Context Maps describe the contact between bounded contexts and teams with a collection of patterns. There are nine context map patterns and three different team relationships."
-      level: all
-      tags:
-        - essential
-        - strategic ddd
-    - name: "Core Domain Charts"
-      repo: "https://github.com/ddd-crew/core-domain-charts.git"
-      img: "../images/github-repositories/core-domain-chart-template.jpg"
-      to: "/learning-ddd/ddd-crew-core-domain-charts"
-      excerpt: "Core Domain Charts help you to visualise the strategic importance of each sub-domain or business capability in your software architecture allowing you to make business model-aligned architectural decisions."
-      level: advanced
-      tags:
-        - strategic ddd
-    - name: "The Bounded Context Canvas"
-      repo: "https://github.com/ddd-crew/bounded-context-canvas.git"
-      img: "../images/github-repositories/bounded-context-canvas-v4.jpeg"
-      to: "/learning-ddd/ddd-crew-bounded-context-canvas"
-      excerpt: "The Bounded Context Canvas is a collaborative tool for designing and documenting the design of a single bounded context."
-      level: intermediate
-      tags:
-        - essential
-    - name: "Virtual Modelling Templates"
-      repo: "https://github.com/ddd-crew/virtual-modelling-templates.git"
-      img: "../images/github-repositories/strategic-ddd-miro-template.png"
-      to: "/learning-ddd/-virtual-modelling-template"
-      excerpt: "This repo contains a collection of resources for applying DDD collaboratively in remote environments."
-      level: all
-      tags:
-        - remote work
-    - name: "The Aggregate Design Canvas"
-      repo: "https://github.com/ddd-crew/aggregate-design-canvas.git"
-      img: "../images/github-repositories/aggregate-design-canvas-v1.jpg"
-      to: "/learning-ddd/ddd-crew-aggregate-design-canvas"
-      excerpt: "The Aggregate Design Canvas is a modelling tool meant to be used as a part of design-level domain modelling activities."
-      level: all
-      tags:
-        - essential
-        - tactical ddd
-    - name: "Domain Message Flow Modelling"
-      repo: "https://github.com/ddd-crew/domain-message-flow-modelling.git"
-      img: "../images/github-repositories/domain-message-flow.jpg"
-      to: "/learning-ddd/ddd-crew-domain-message-flow-modelling"
-      excerpt: "Designing loosely-coupled systems requires more than carefully designed boundaries."
-      level: intermediate
-      tags:
-        - strategic ddd
+githubRepositories:
+  - name: "Welcome to Domain-Driven Design"
+    repo: "https://github.com/ddd-crew/welcome-to-ddd.git"
+    img: "../images/github-repositories/ddd_on_a_page.jpg"
+    to: "/learning-ddd/ddd-crew-welcome-to-ddd"
+    excerpt: "This project contains definitions of DDD and fundamental concepts to reduce the learning curve and confusion."
+    level: all
+    tags:
+      - essential
+      - core
+  - name: "Domain-Driven Design Starter Modelling Process"
+    repo: "https://github.com/ddd-crew/ddd-starter-modelling-process.git"
+    img: "../images/github-repositories/ddd-starter-modelling-process.jpg"
+    to: "/learning-ddd/ddd-crew-starter-modelling"
+    excerpt: "This process gives you a step-by-step guide for learning and practically applying each aspect of Domain-Driven Design (DDD)"
+    level: all
+    tags:
+      - essential
+      - strategic ddd
+      - bounded context
+      - tactical ddd
+  - name: "SATURN 2019 Workshop -- Architecture Island"
+    repo: "https://github.com/michaelkeeling/saturn2019-architecture-island-workshop.git"
+    img: "../images/github-repositories/saturn-2019.jpg"
+    to: "/learning-ddd/saturn2019-architecture-island-workshop"
+    excerpt: "Our goal is to identify the most important concepts, ideas, strategies, methods, patterns, and so on, that all software engineers must know about software architecture."
+    level: intermediate
+    tags:
+      - software architecture
+  - name: "EventStorming Glossary & Cheat sheet"
+    repo: "https://github.com/ddd-crew/eventstorming-glossary-cheat-sheet.git"
+    img: "../images/github-repositories/domain-event.png"
+    to: "/learning-ddd/ddd-crew-eventstorming-glossary-cheat-sheet"
+    excerpt: "Here you will find a combination of a glossary of terms on EventStorming core concepts written down in a consistent and comprehensive glossary."
+    level: all
+    tags:
+      - eventstorming
+  - name: "Context Mapping"
+    repo: "https://github.com/ddd-crew/context-mapping.git"
+    img: "../images/github-repositories/context-map-cheat-sheet.png"
+    to: "/learning-ddd/ddd-crew-context-mapping"
+    excerpt: "Context Maps describe the contact between bounded contexts and teams with a collection of patterns. There are nine context map patterns and three different team relationships."
+    level: all
+    tags:
+      - essential
+      - strategic ddd
+  - name: "Core Domain Charts"
+    repo: "https://github.com/ddd-crew/core-domain-charts.git"
+    img: "../images/github-repositories/core-domain-chart-template.jpg"
+    to: "/learning-ddd/ddd-crew-core-domain-charts"
+    excerpt: "Core Domain Charts help you to visualise the strategic importance of each sub-domain or business capability in your software architecture allowing you to make business model-aligned architectural decisions."
+    level: advanced
+    tags:
+      - strategic ddd
+  - name: "The Bounded Context Canvas"
+    repo: "https://github.com/ddd-crew/bounded-context-canvas.git"
+    img: "../images/github-repositories/bounded-context-canvas-v4.jpeg"
+    to: "/learning-ddd/ddd-crew-bounded-context-canvas"
+    excerpt: "The Bounded Context Canvas is a collaborative tool for designing and documenting the design of a single bounded context."
+    level: intermediate
+    tags:
+      - essential
+  - name: "Virtual Modelling Templates"
+    repo: "https://github.com/ddd-crew/virtual-modelling-templates.git"
+    img: "../images/github-repositories/strategic-ddd-miro-template.png"
+    to: "/learning-ddd/-virtual-modelling-template"
+    excerpt: "This repo contains a collection of resources for applying DDD collaboratively in remote environments."
+    level: all
+    tags:
+      - remote work
+  - name: "The Aggregate Design Canvas"
+    repo: "https://github.com/ddd-crew/aggregate-design-canvas.git"
+    img: "../images/github-repositories/aggregate-design-canvas-v1.jpg"
+    to: "/learning-ddd/ddd-crew-aggregate-design-canvas"
+    excerpt: "The Aggregate Design Canvas is a modelling tool meant to be used as a part of design-level domain modelling activities."
+    level: all
+    tags:
+      - essential
+      - tactical ddd
+  - name: "Domain Message Flow Modelling"
+    repo: "https://github.com/ddd-crew/domain-message-flow-modelling.git"
+    img: "../images/github-repositories/domain-message-flow.jpg"
+    to: "/learning-ddd/ddd-crew-domain-message-flow-modelling"
+    excerpt: "Designing loosely-coupled systems requires more than carefully designed boundaries."
+    level: intermediate
+    tags:
+      - strategic ddd

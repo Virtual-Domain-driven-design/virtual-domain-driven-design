@@ -1,11 +1,11 @@
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-import React, { ReactElement } from "react"
+import React, { FC } from "react"
 import "twin.macro"
 
 import FloatingActionCard from "./core/floating-action-card"
 
-const Sponsor = ({ name, image, website }) => {
+const Sponsor: FC = ({ name, image, website }) => {
   return (
     <FloatingActionCard key={name} href={website}>
       <div tw="m-2 h-8 font-semibold text-gray-800 text-sm text-center">
@@ -20,7 +20,7 @@ const Sponsor = ({ name, image, website }) => {
   )
 }
 
-const Sponsors = (): ReactElement => {
+const Sponsors: FC = () => {
   const data = useStaticQuery(graphql`
     query {
       heimeshoff: file(relativePath: { eq: "logo/heimeshoffit.png" }) {

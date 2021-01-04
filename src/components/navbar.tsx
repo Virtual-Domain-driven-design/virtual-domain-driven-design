@@ -1,13 +1,13 @@
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-import React, { ReactElement, useState } from "react"
+import React, { FC, useState } from "react"
 import tw from "twin.macro"
 
 import MeetupSvg from "../images/logo/meetup.svg"
 
 // TODO: NEEDS MAJOR REFACTORING AND DYNAMIC CONFIG, this is UGLY but it works =). Problem I face now is the meetup SVG logo which cannot be imported from graphql dynamicly like other images can (See books for an example)
 
-const VDDDLogo = ({ data }) => {
+const VDDDLogo: FC = ({ data }) => {
   return (
     <Link
       to="/"
@@ -21,7 +21,7 @@ const VDDDLogo = ({ data }) => {
   )
 }
 
-const SocialMenu = ({ data }) => {
+const SocialMenu: FC = ({ data }) => {
   return (
     <button
       className="group"
@@ -35,7 +35,7 @@ const SocialMenu = ({ data }) => {
   )
 }
 
-const SocialMobileMenu = ({ data }) => {
+const SocialMobileMenu: FC = ({ data }) => {
   return (
     <div tw="relative border-t border-gray-400 w-full">
       <div tw="absolute top-0 right-0 text-gray-500 pt-2 pr-4">Socials</div>
@@ -44,7 +44,7 @@ const SocialMobileMenu = ({ data }) => {
   )
 }
 
-const SocialSubItems = ({ data }) => {
+const SocialSubItems: FC = ({ data }) => {
   return (
     <div>
       <a
@@ -77,7 +77,7 @@ const SocialSubItems = ({ data }) => {
   )
 }
 
-const ContributionMenu = ({ data }) => {
+const ContributionMenu: FC = ({ data }) => {
   return (
     <button
       className="group"
@@ -91,7 +91,7 @@ const ContributionMenu = ({ data }) => {
   )
 }
 
-const ContributionMobileMenu = ({ data }) => {
+const ContributionMobileMenu: FC = ({ data }) => {
   return (
     <div tw="relative border-t border-gray-400 w-full">
       <div tw="absolute top-0 right-0 text-gray-500 pt-2 pr-4">Contribute</div>
@@ -100,7 +100,7 @@ const ContributionMobileMenu = ({ data }) => {
   )
 }
 
-const ContributionSubItems = ({ data }) => {
+const ContributionSubItems: FC = ({ data }) => {
   return (
     <div>
       <a
@@ -125,7 +125,7 @@ const ContributionSubItems = ({ data }) => {
   )
 }
 
-const DesktopNavigationItem = ({ to, label }) => {
+const DesktopNavigationItem: FC = ({ to, label }) => {
   return (
     <Link
       to={to}
@@ -136,7 +136,7 @@ const DesktopNavigationItem = ({ to, label }) => {
   )
 }
 
-const MobileNavigationItem = ({ to, label }) => {
+const MobileNavigationItem: FC = ({ to, label }) => {
   return (
     <Link
       to={to}
@@ -147,7 +147,7 @@ const MobileNavigationItem = ({ to, label }) => {
   )
 }
 
-const NavbarMobile = ({ data }) => {
+const NavbarMobile: FC = ({ data }) => {
   const [isMenuOpen, setMenuOpen] = useState(false)
 
   return (
@@ -202,7 +202,7 @@ const NavbarMobile = ({ data }) => {
   )
 }
 
-const NavbarDesktop = ({ data }) => {
+const NavbarDesktop: FC = ({ data }) => {
   return (
     <div tw="w-4/5 xl:w-2/3 flex items-center justify-between">
       <VDDDLogo data={data}></VDDDLogo>
@@ -234,7 +234,7 @@ const NavbarDesktop = ({ data }) => {
   )
 }
 
-const NavBar = (): ReactElement => {
+const NavBar: FC = () => {
   const data = useStaticQuery(graphql`
     query {
       vdddLogoTp: file(relativePath: { eq: "logo/vddd_logo_tp.png" }) {

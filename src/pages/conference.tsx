@@ -1,7 +1,7 @@
-import React, { ReactElement } from "react"
+import React, { FC } from "react"
 import Layout from "../templates/layout"
 
-function Conference(): ReactElement {
+const Conference: FC = () => {
   return <Layout>Will be back soon</Layout>
 }
 

@@ -46,7 +46,7 @@ const VDDDInfo: FC = ({ data }) => {
   )
 }
 
-const Hero: FC = ({}) => {
+const Hero: FC = () => {
   const data = useStaticQuery(graphql`
     query {
       backgroundImage: file(relativePath: { eq: "kandddinsky.jpg" }) {

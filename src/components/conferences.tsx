@@ -1,11 +1,11 @@
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-import React, { ReactElement } from "react"
+import React, { FC } from "react"
 import "twin.macro"
 
 import FloatingActionCard from "./core/floating-action-card"
 
-const Conference = ({ name, image, location, date, website }) => {
+const Conference: FC = ({ name, image, location, date, website }) => {
   return (
     <FloatingActionCard key={name} href={website}>
       <div tw="m-2 font-semibold text-gray-800 text-sm text-center">{name}</div>
@@ -20,7 +20,7 @@ const Conference = ({ name, image, location, date, website }) => {
   )
 }
 
-const Conferences = (): ReactElement => {
+const Conferences: FC = () => {
   const data = useStaticQuery(graphql`
     query {
       dddeu: file(relativePath: { eq: "logo/dddeu.jpg" }) {
