@@ -14,11 +14,11 @@ interface PodcastProps {
 
 const Podcast: FC<PodcastProps> = ({ session }) => {
   return (
-    <div tw="bg-white w-96 h-48 rounded-lg shadow-md p-2 m-1">
+    <div tw="bg-white w-96 h-56 rounded-lg shadow-md p-2 m-2">
       <div
         css={[
           { "padding-bottom": "42.86%" },
-          tw`relative h-0 block overflow-hidden`,
+          tw`relative block overflow-hidden`,
         ]}
       >
         <iframe
@@ -33,7 +33,9 @@ const Podcast: FC<PodcastProps> = ({ session }) => {
           frameBorder={0}
         ></iframe>
       </div>
-      <div tw="text-sm text-left font-bold text-blue-600">{session.title}</div>
+      <div tw="m-2 text-sm text-left font-bold text-blue-600">
+        {session.title}
+      </div>
     </div>
   )
 }

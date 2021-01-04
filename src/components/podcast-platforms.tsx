@@ -34,7 +34,7 @@ const PodcastPlatforms: FC = () => {
     }
   `).allContentYaml.nodes[0].podcastsPlatforms
   return (
-    <div tw="my-1 w-full flex items-center justify-around">
+    <div tw="my-1 w-full flex items-center justify-around w-1/3">
       {allPodcastsPlatforms.map((platform, index) => {
         return (
           <a
