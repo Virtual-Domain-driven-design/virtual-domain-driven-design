@@ -1,14 +1,14 @@
 import BackgroundImage from "gatsby-background-image"
 import Img from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
-import React, { ReactElement } from "react"
+import React, { FC } from "react"
 import tw from "twin.macro"
 
 import OutlineBlueButton from "./core/outline-blue-button"
 import ThreeDBlueButton from "./core/three-d-blue-button"
 import UpcomingSession from "./upcoming-session"
 
-const VDDDInfo = ({ data }) => {
+const VDDDInfo: FC = ({ data }) => {
   return (
     <div tw="flex flex-col items-center justify-start w-full p-4 lg:p-8 sm:w-5/6 lg:w-full sm:rounded-lg sm:shadow-lg bg-white space-y-4">
       <Img
@@ -46,7 +46,7 @@ const VDDDInfo = ({ data }) => {
   )
 }
 
-const Hero = (): ReactElement => {
+const Hero: FC = ({}) => {
   const data = useStaticQuery(graphql`
     query {
       backgroundImage: file(relativePath: { eq: "kandddinsky.jpg" }) {
@@ -105,7 +105,10 @@ const Hero = (): ReactElement => {
           <OutlineBlueButton tw="lg:text-xl" href="https://j.mp/ddd-es-cqrs">
             Slack
           </OutlineBlueButton>
-          <OutlineBlueButton tw="lg:text-xl" href="https://j.mp/ddd-es-cqrs">
+          <OutlineBlueButton
+            tw="lg:text-xl"
+            href="https://twitter.com/virtualDDD"
+          >
             Twitter
           </OutlineBlueButton>
         </div>

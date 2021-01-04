@@ -1,6 +1,6 @@
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-import React, { ReactElement, FC } from "react"
+import React, { FC } from "react"
 import tw from "twin.macro"
 
 interface OrganiserProps {
