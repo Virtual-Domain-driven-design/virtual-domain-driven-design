@@ -10,6 +10,31 @@
 #     - label: ""
 #       url: ""
 sessions:
+  - title: "[Panel] Splitting systems towards bounded contexts and microservices"
+    date: "Jan 12th, 2021"
+    time: "19:30 CET"
+    video: "https://www.youtube.com/embed/h-7-lMJ_jdw"
+    podcast: "https://oembed.libsyn.com/embed?item_id=17529494"
+    description:
+      "There are many reasons to split up large-scale systems towards more modular, smaller services with their own model and language. You can decouple teams and give full autonomy of that service to a team. By decoupling services and teams you can handle changes to the domain faster, having a faster time to market. You decrease the cognitive load of the teams, empowering teams to truly understand the complexity of their shared models with domain experts.
+
+      But how do we split up large-scale systems? What are the characteristics we can dissect a bounded context? How do we split towards a microservices architecture? We do not only have to deal with shifting terminology here but also different rates of change in the business.
+
+      Join us in this Panel where we will hunt for design heuristics to split systems towards bounded contexts and microservices.
+
+      With us will be:
+      Rebecca Wirfs-brock
+      Chris Richardson
+      Alberto Brandolini
+      Nick Tune
+      Krisztina Hirth
+      Trond Hjorteland
+      "
+    tags:
+      - essential
+      - strategic design
+      - software architecture
+      - large-scale systems
   - title: "Domain-Drinking Dialogues - 2020 ending Ask us anything party "
     date: "Dec 21st, 2020"
     time: "19:00 CET"
