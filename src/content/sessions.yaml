@@ -10,11 +10,35 @@
 #     - label: ""
 #       url: ""
 sessions:
+  - title: "[Panel] Relationship(s) between problem and solution space"
+    date: "Jan 26th, 2021"
+    time: "19:30 CET"
+    video: "https://www.youtube.com/embed/xmkjODmaa8k"
+    podcast: "https://oembed.libsyn.com/embed?item_id=17709041"
+    level: advanced
+    description:
+      "One of the more confusing concepts in Domain-Driven Desing is that of problem and solution space. There has been a long debate on Twitter and the ddd-crew github:
+      https://github.com/ddd-crew/strategic-architecture-building-blocks/pulls?q=is%3Apr+is%3Aclosed
+
+      People wonder how distilling the Core with the Core, supportive and generic subdomains fit and what space. What concepts are in the problem space, and what is the solution? And what is a precise definition of problem and solution space?
+
+      Join us in this session are a diverse group of people spanning multiple disciplines to look at how they see the relationship(s) between problem and solution space in IT. And hopefully, in the end, we can have a useful, consistent model of those relationships between problem and solution space, core, supportive, generics (sub)domains for the #DDDesign community.
+
+      With us will be:
+      Dawn N Ahukanna
+      Jabe Bloom
+      Indi Young
+      Nick Tune
+      "
+    tags:
+      - strategic design
+      - UX
   - title: "[Panel] Splitting systems towards bounded contexts and microservices"
     date: "Jan 12th, 2021"
     time: "19:30 CET"
     video: "https://www.youtube.com/embed/h-7-lMJ_jdw"
     podcast: "https://oembed.libsyn.com/embed?item_id=17529494"
+    level: intermediate
     description:
       "There are many reasons to split up large-scale systems towards more modular, smaller services with their own model and language. You can decouple teams and give full autonomy of that service to a team. By decoupling services and teams you can handle changes to the domain faster, having a faster time to market. You decrease the cognitive load of the teams, empowering teams to truly understand the complexity of their shared models with domain experts.
 

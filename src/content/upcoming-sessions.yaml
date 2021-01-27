@@ -8,28 +8,23 @@
 #     - label: ""
 #       url: ""
 upcomingSessions:
-  - title: "[Panel] Relationship(s) between problem and solution space"
-    date: "Jan 26th, 2021"
+  - title: "Beyond the hexagonal architecture: Functional Core & ..."
+    date: "Feb 2nd, 2021"
     time: "19:30 CET"
-    img: "https://secure.meetupstatic.com/photos/event/3/5/9/f/highres_493993727.jpeg"
+    img: "https://secure.meetupstatic.com/photos/event/5/a/5/6/highres_494303126.jpeg"
     description:
-      "One of the more confusing concepts in Domain-Driven Desing is that of problem and solution space. There has been a long debate on Twitter and the ddd-crew github:
-      https://github.com/ddd-crew/strategic-architecture-building-blocks/pulls?q=is%3Apr+is%3Aclosed
+      "There are a few ways to split and protect your domain code from the intrusion of the technical stacks and other IT fads.
 
-      People wonder how distilling the Core with the Core, supportive and generic subdomains fit and what space. What concepts are in the problem space, and what is the solution? And what is a precise definition of problem and solution space?
+      After having promoted Hexagonal Architecture during all those years, we would like now to show one of its alternative: the Functional Core (combined with Imperative Shell). This short live-coding session will show you what it is and how it articulates with a cool domain.
 
-      Join us in this session are a diverse group of people spanning multiple disciplines to look at how they see the relationship(s) between problem and solution space in IT. And hopefully, in the end, we can have a useful, consistent model of those relationships between problem and solution space, core, supportive, generics (sub)domains for the #DDDesign community.
+      Also, and following some recent twitter discussions with Alistair Cockburn, we would like to finish this evening debating what hexagonal architecture is really about...
 
-      With us will be:
-      Dawn N Ahukanna
-      Jabe Bloom
-      Indi Young
-      Nick Tune
+      Join us in this session with Thomas PIERRAIN - co-organizer of the #DDDFR user group and co-founder of 42skillz, and Bruno BOUCARD - developer, trainer, agile coach and speaker.
       "
     links:
       - label: "RSVP on Meetup"
-        url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/275246453/"
+        url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/275700283/"
       - label: "Interact on Zoom"
-        url: "https://us02web.zoom.us/j/85472809103"
+        url: "https://us02web.zoom.us/j/82024119272"
       - label: "Watch youtube"
-        url: "https://youtu.be/xmkjODmaa8k"
+        url: "https://youtu.be/SAjsP2igBNk"
