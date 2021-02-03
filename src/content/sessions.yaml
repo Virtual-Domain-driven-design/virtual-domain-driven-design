@@ -10,6 +10,25 @@
 #     - label: ""
 #       url: ""
 sessions:
+  - title: "Beyond the hexagonal architecture: Functional Core & ..."
+    date: "Feb 2nd, 2021"
+    time: "19:30 CET"
+    video: "https://www.youtube.com/embed/SAjsP2igBNk"
+    podcast:
+    description:
+      "There are a few ways to split and protect your domain code from the intrusion of the technical stacks and other IT fads.
+
+      After having promoted Hexagonal Architecture during all those years, we would like now to show one of its alternative: the Functional Core (combined with Imperative Shell). This short live-coding session will show you what it is and how it articulates with a cool domain.
+
+      Also, and following some recent twitter discussions with Alistair Cockburn, we would like to finish this evening debating what hexagonal architecture is really about...
+
+      Join us in this session with Thomas PIERRAIN - co-organizer of the #DDDFR user group and co-founder of 42skillz, and Bruno BOUCARD - developer, trainer, agile coach and speaker.
+      "
+    tags:
+      - Hexagonal architecture
+      - tactical design
+      - functional core
+      - anti-corruption layer
   - title: "[Panel] Relationship(s) between problem and solution space"
     date: "Jan 26th, 2021"
     time: "19:30 CET"
