@@ -10,11 +10,25 @@
 #     - label: ""
 #       url: ""
 sessions:
+  - title: "[Dialogue] Transforming business models in the pandemic with Zsofia Herendi"
+    date: "16th Feb, 2021"
+    time: "19:30 CET"
+    video: "https://www.youtube.com/embed/uaRYe_bNsMg"
+    podcast:
+    level: intermediate
+    description:
+      "Those ones who know me they know that I'm a big fan of business modeling and business model innovation. I ran quite a few workshops in this topic, I really like how people come up with great ideas to disrupt a business model.
+      In these pandemic times if companies want to survive they really need to think through how they can best align their business to changing needs because of the covid situation. They need to surface, they need to continue delivering value to their customers, but sometimes it is not that straightforward.
+      I just have a few examples of recent business model innovation that I would like to share and I would also give some overview of business modeling and innovation in general."
+    tags:
+      - Business model canvas
+      - strategic design
   - title: "Beyond the hexagonal architecture: Functional Core & ..."
     date: "Feb 2nd, 2021"
     time: "19:30 CET"
     video: "https://www.youtube.com/embed/SAjsP2igBNk"
     podcast:
+    level: intermediate
     description:
       "There are a few ways to split and protect your domain code from the intrusion of the technical stacks and other IT fads.
 
