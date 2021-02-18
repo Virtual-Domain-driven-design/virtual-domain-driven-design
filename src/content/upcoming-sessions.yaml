@@ -23,3 +23,19 @@ upcomingSessions:
         url: "https://us02web.zoom.us/j/81793020795"
       - label: "YouTube and chill"
         url: "https://youtu.be/kdpGPDGcbxA"
+  - title: "[Fireside chat] Udi Dahan - Ask me Anything"
+    date: "10th March, 2021"
+    time: "16:45 CET"
+    img: "https://secure.meetupstatic.com/photos/event/7/a/1/a/highres_494791258.jpeg"
+    description:
+      "Join us in this special fireside chat with Udi Dahan answering all your questions spanning from Domain-Driven Design, Software Architecture from SOA, event-driven, CQRS, Large-scale distributed systems, Saga Patterns, Event sourcing, microservices and anything in between. Ask your questions upfront or during the session!
+
+      You can also already engage and see the questions that are already asked at this Twitter thread: https://twitter.com/UdiDahan/status/1349302917648568321
+      "
+    links:
+      - label: "RSVP on meetup"
+        url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/276419434/"
+      - label: "Join in on Zoom"
+        url: "https://us02web.zoom.us/j/82267103909"
+      - label: "YouTube and chill"
+        url: "https://youtu.be/c07zWlLBvVg"
