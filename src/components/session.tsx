@@ -2,6 +2,7 @@ import React, { FC } from "react"
 import tw from "twin.macro"
 
 export interface SessionContent {
+  id: string
   date: string
   level: string
   tags: string[]

@@ -10,7 +10,8 @@
 #     - label: ""
 #       url: ""
 sessions:
-  - title: "[Panel] Fostering autonomous teams with proper leadership culture"
+  - id: "50"
+    title: "[Panel] Fostering autonomous teams with proper leadership culture"
     date: "23nd Feb, 2021"
     time: "19:30 CET"
     video: "https://www.youtube.com/embed/kdpGPDGcbxA"
@@ -24,7 +25,8 @@ sessions:
       - Strategic design
       - leadership
       - culture
-  - title: "[Dialogue] Transforming business models in the pandemic with Zsofia Herendi"
+  - id: "49"
+    title: "[Dialogue] Transforming business models in the pandemic with Zsofia Herendi"
     date: "16th Feb, 2021"
     time: "19:30 CET"
     video: "https://www.youtube.com/embed/uaRYe_bNsMg"
@@ -37,7 +39,8 @@ sessions:
     tags:
       - Business model canvas
       - strategic design
-  - title: "Beyond the hexagonal architecture: Functional Core & ..."
+  - id: "48"
+    title: "Beyond the hexagonal architecture: Functional Core & ..."
     date: "Feb 2nd, 2021"
     time: "19:30 CET"
     video: "https://www.youtube.com/embed/SAjsP2igBNk"
@@ -57,7 +60,8 @@ sessions:
       - tactical design
       - functional core
       - anti-corruption layer
-  - title: "[Panel] Relationship(s) between problem and solution space"
+  - id: "47"
+    title: "[Panel] Relationship(s) between problem and solution space"
     date: "Jan 26th, 2021"
     time: "19:30 CET"
     video: "https://www.youtube.com/embed/xmkjODmaa8k"
@@ -80,7 +84,8 @@ sessions:
     tags:
       - strategic design
       - UX
-  - title: "[Panel] Splitting systems towards bounded contexts and microservices"
+  - id: "46"
+    title: "[Panel] Splitting systems towards bounded contexts and microservices"
     date: "Jan 12th, 2021"
     time: "19:30 CET"
     video: "https://www.youtube.com/embed/h-7-lMJ_jdw"
@@ -106,7 +111,8 @@ sessions:
       - strategic design
       - software architecture
       - large-scale systems
-  - title: "Domain-Drinking Dialogues - 2020 ending Ask us anything party "
+  - id: "45"
+    title: "Domain-Drinking Dialogues - 2020 ending Ask us anything party "
     date: "Dec 21st, 2020"
     time: "19:00 CET"
     video: "https://www.youtube.com/embed/QSZnrkMMZ6c"
@@ -135,7 +141,8 @@ sessions:
       - strategic design
       - tactical design
       - collaborate modelling
-  - title: "[Panel] What makes you a DDD'er?"
+  - id: "44"
+    title: "[Panel] What makes you a DDD'er?"
     date: "Nov 24th, 2020"
     time: "19:00 CET"
     video: "https://www.youtube.com/embed/ArK5Ckid-sY"
@@ -156,7 +163,8 @@ sessions:
       - strategic design
       - tactical design
       - collaborate modelling
-  - title: "TDD as a design tool with Dave Farley"
+  - id: "43"
+    title: "TDD as a design tool with Dave Farley"
     date: "Nov 10th, 2020"
     time: "19:30 CET"
     video: "https://www.youtube.com/embed/VaNaN_j9OCA"
@@ -168,7 +176,8 @@ sessions:
       - bdd
       - continuous delivery
       - tactical patterns
-  - title: "[Hands-on] case-study context mapping with Michael Plöd"
+  - id: "42"
+    title: "[Hands-on] case-study context mapping with Michael Plöd"
     date: "Nov 3th, 2020"
     time: "19:00 CET"
     video: "https://www.youtube.com/embed/OthhRfqp-44"
@@ -181,7 +190,8 @@ sessions:
     tags:
       - collaborative modelling
       - context mapping
-  - title: "[Dialogue] Psychologic safety in remote collaboration with Gitte Klitgaard"
+  - id: "41"
+    title: "[Dialogue] Psychologic safety in remote collaboration with Gitte Klitgaard"
     date: "Sep 29th, 2020"
     time: "19:00 CEST"
     video: "https://www.youtube.com/embed/KMvEt18aO5c"
@@ -201,7 +211,8 @@ sessions:
       - remote collaboration
       - collaborative modelling
       - socio-technical
-  - title: "[Panel] Remote facilitation with Kirsten Clacey, Jay-Allen Morris and Jo Perold"
+  - id: "40"
+    title: "[Panel] Remote facilitation with Kirsten Clacey, Jay-Allen Morris and Jo Perold"
     date: "Sep 22, 2020"
     time: "19:00 CEST"
     video: "https://www.youtube.com/embed/hi_DlT_dNg4"
@@ -215,7 +226,8 @@ sessions:
       - remote collaboration
       - collaborative modelling
       - socio-technical
-  - title: "[Panel] Design better products with real cross-functional teams - Jutta & Maryse"
+  - id: "39"
+    title: "[Panel] Design better products with real cross-functional teams - Jutta & Maryse"
     date: "Aug 26, 2020"
     time: "19:00 CEST"
     video: "https://www.youtube.com/embed/RM0uErMljoA"
@@ -242,7 +254,8 @@ sessions:
       - diversity
       - inclusion
       - socio-technical
-  - title: "[Hands-on] Exploring Techniques For Modelling Bounded Context Collaboration"
+  - id: "38"
+    title: "[Hands-on] Exploring Techniques For Modelling Bounded Context Collaboration"
     date: "Thursday, August 13th. 2020"
     time: "19:00 CEST"
     video: "https://www.youtube.com/embed/oj4zGj6sPDc"
@@ -266,7 +279,8 @@ sessions:
       - eventstorming
       - domain story telling
       - domain message flow modelling
-  - title: "[Panel What can we learn from open-source with Matteo Collina"
+  - id: "37"
+    title: "[Panel What can we learn from open-source with Matteo Collina"
     date: "Tuesday, August 4th. 2020"
     time: "18:30 CEST"
     video: "https://www.youtube.com/embed/F4SwUssweGY"
@@ -287,7 +301,8 @@ sessions:
     tags:
       - OSS
 
-  - title: "[Panel One user to bind them all? Products, teams and bounded contexts"
+  - id: "36"
+    title: "[Panel One user to bind them all? Products, teams and bounded contexts"
     date: "Wednesday, July 29th. 2020"
     time: "19:00 CEST"
     video: "https://www.youtube.com/embed/wMX9PdRYuRo"
@@ -314,7 +329,8 @@ sessions:
       - socio-technical
       - strategic design
 
-  - title: "[Hands-on Speaking truth to power: practice argumentation with Diana"
+  - id: "35"
+    title: "[Hands-on Speaking truth to power: practice argumentation with Diana"
     date: "Tuesday, July 21th. 2020"
     time: "19:00 CEST"
     video:
@@ -334,7 +350,8 @@ sessions:
       - socio-technical
       - decision-making
 
-  - title: "Free Trial Workshop: First Steps in DDD with Andrew (#BlackLivesMatter edition)"
+  - id: "34"
+    title: "Free Trial Workshop: First Steps in DDD with Andrew (#BlackLivesMatter edition)"
     date: "Monday, July 20th. 2020"
     time: "16:00 CEST"
     video:
@@ -352,7 +369,8 @@ sessions:
       - hands-on
       - essential
 
-  - title: "Experimenting with remote Big Picture EventStorming"
+  - id: "33"
+    title: "Experimenting with remote Big Picture EventStorming"
     date: "Wednesday, July 15th. 2020"
     time: "19:00 CEST"
     video:
@@ -371,7 +389,8 @@ sessions:
       - eventstorming
       - remote work
 
-  - title: "Balancing upfront design versus iterative design"
+  - id: "32"
+    title: "Balancing upfront design versus iterative design"
     date: "Thursday, June 25th. 2020"
     time: "20:00 CEST"
     video: "https://www.youtube.com/embed/6Mzff5zbQ6c"
@@ -394,7 +413,8 @@ sessions:
       - strategic design
       - ux
 
-  - title: "Virtual Lean Coffee Fishbowl: UX, DDD and BDD - take 2"
+  - id: "31"
+    title: "Virtual Lean Coffee Fishbowl: UX, DDD and BDD - take 2"
     date: "Wednesday, June 17th. 2020"
     time: "20:30 CEST"
     video: "https://www.youtube.com/embed/wF0OHhVELyo"
@@ -413,7 +433,8 @@ sessions:
       - strategic design
       - ux
 
-  - title: "Creating a Playbook for DDD for the inside of your team with Julie Lerman"
+  - id: "30"
+    title: "Creating a Playbook for DDD for the inside of your team with Julie Lerman"
     date: "Thursday, June 2th. 2020"
     time: "19:00 CEST"
     video: "https://www.youtube.com/embed/GVa5vI19kZo"
@@ -433,7 +454,8 @@ sessions:
       - socio-technical
       - essential
 
-  - title: "#DDDDD Speaking truth to power: a foundational skillset"
+  - id: "29"
+    title: "#DDDDD Speaking truth to power: a foundational skillset"
     date: "Friday, May 15th. 2020"
     time: "21:00 CEST"
     video: "https://www.youtube.com/embed/zPvYqrASCRA"
@@ -473,7 +495,8 @@ sessions:
       - socio-technical
       - decision-making
 
-  - title: "Natural Boundaries - how to read the signs and benefit from the problems"
+  - id: "28"
+    title: "Natural Boundaries - how to read the signs and benefit from the problems"
     date: "Friday, May 15th. 2020"
     time: "18:45 CEST"
     video: "https://www.youtube.com/embed/yMRuP3tcugQ"
@@ -490,7 +513,8 @@ sessions:
       - socio-technical
       - ux
 
-  - title: "#DDDDD Bounded Contexts, Microservices, and Everything In Between"
+  - id: "27"
+    title: "#DDDDD Bounded Contexts, Microservices, and Everything In Between"
     date: "Friday, May 15th. 2020"
     time: "07:00 CEST"
     video: "https://www.youtube.com/embed/Z0RgR9xIQE4"
@@ -513,7 +537,8 @@ sessions:
       - microservices
       - software architecture
 
-  - title: "[DDD London] Creating a Playbook for DDD Newcomers"
+  - id: "26"
+    title: "[DDD London] Creating a Playbook for DDD Newcomers"
     date: "Thursday, May 21th. 2020"
     time: "19:00 CEST"
     video: "https://www.youtube.com/embed/v=1aICKlpQRoc"
@@ -533,7 +558,8 @@ sessions:
     tags:
       - essential
 
-  - title: "[DDD London] DDD-Lite: Independent Service Heuristics with Matthew Skelton"
+  - id: "25"
+    title: "[DDD London] DDD-Lite: Independent Service Heuristics with Matthew Skelton"
     date: "Friday, May 12th. 2020"
     time: "19:30 CEST"
     video: "https://www.youtube.com/embed/UQq-Ayml0iI"
@@ -555,7 +581,8 @@ sessions:
       - design heuristics
       - team topologies
 
-  - title: "Experimenting with Remote Wardley Mapping with Nick Tune"
+  - id: "24"
+    title: "Experimenting with Remote Wardley Mapping with Nick Tune"
     date: "Friday, May 1st. 2020"
     time: "19:00 CEST"
     video: "https://www.youtube.com/embed/Rvt7k542fOI"
@@ -580,7 +607,8 @@ sessions:
       - collaborative modelling
       - wardley maps
 
-  - title: "How to improve modelling with Behaviour-driven development"
+  - id: "23"
+    title: "How to improve modelling with Behaviour-driven development"
     date: "Tuesday, April 14th. 2020"
     time: "19:30 CEST"
     video: "https://www.youtube.com/embed/HvT8wNE1C2U"
@@ -598,7 +626,8 @@ sessions:
       - bdd
       - collaborative modelling
 
-  - title: "How cognitive biases and ranking kills your modelling sessions"
+  - id: "22"
+    title: "How cognitive biases and ranking kills your modelling sessions"
     date: "Tuesday, April 7th. 2020"
     time: "19:00 CEST"
     video: "https://www.youtube.com/embed/djbbZnOIGE0"
@@ -618,7 +647,8 @@ sessions:
       - bias
       - deep democracy
 
-  - title: "Secure by Domain-driven design with Jessica, Dan Bergh and Daniel"
+  - id: "21"
+    title: "Secure by Domain-driven design with Jessica, Dan Bergh and Daniel"
     date: "Friday, April 3th. 2020"
     time: "16:00 CEST"
     video: "https://www.youtube.com/embed/BpMzn9AxNcw"
@@ -634,7 +664,8 @@ sessions:
     tags:
       - secure by design
 
-  - title: "Lost in bounded context translations with Julie, Indu, Michael and Nick"
+  - id: "20"
+    title: "Lost in bounded context translations with Julie, Indu, Michael and Nick"
     date: "Tuesday, March 17th. 2020"
     time: "19:00 CET"
     video: "https://www.youtube.com/embed/u-5sKvh48-g"
@@ -653,7 +684,8 @@ sessions:
       - bounded context
       - strategic design
 
-  - title: "An Introduction to Domain Storytelling"
+  - id: "19"
+    title: "An Introduction to Domain Storytelling"
     date: "Tuesday, February 18th. 2020"
     time: "20:00 CET"
     video: "https://www.youtube.com/embed/d9k9Szkdprk"
@@ -671,7 +703,8 @@ sessions:
       - domain storytelling
       - remote work
 
-  - title: "Trying out online EventStorming"
+  - id: "18"
+    title: "Trying out online EventStorming"
     date: "Tuesday, January 21th. 2020"
     time: "19:00 CET"
     video: "https://www.youtube.com/embed/CbPEibNUe0s"
@@ -695,7 +728,8 @@ sessions:
       - eventstorming
       - design heuristics
 
-  - title: "Virtual Lean Coffee Fishbowl: UX, DDD and BDD"
+  - id: "17"
+    title: "Virtual Lean Coffee Fishbowl: UX, DDD and BDD"
     date: "Thursday, January 16th. 2020"
     time: "20:00 CET"
     video: "https://www.youtube.com/embed/QelbEUblpLo"
@@ -731,7 +765,8 @@ sessions:
       - bdd
       - socio-technical
 
-  - title: "How feature branching affects domain-driven design with Thierry de Pauw"
+  - id: "16"
+    title: "How feature branching affects domain-driven design with Thierry de Pauw"
     date: "Tuesday, January 8th. 2020"
     time: "19:00 CET"
     video: "https://www.youtube.com/embed/mKaIR-EjoC0"
@@ -748,7 +783,8 @@ sessions:
     tags:
       - continuous delivery
 
-  - title: "Combatting the Near Enemies of Domain Driven Design at Scale"
+  - id: "15"
+    title: "Combatting the Near Enemies of Domain Driven Design at Scale"
     date: "Wednesday, December 11th. 2019"
     time: "19:00 CET"
     video: "https://www.youtube.com/embed/3CFyA4iecng"
@@ -765,7 +801,8 @@ sessions:
     tags:
       - strategic design
 
-  - title: "Does a Domain-driven design approach need an agile business?"
+  - id: "14"
+    title: "Does a Domain-driven design approach need an agile business?"
     date: "Tuesday, December 3st. 2019"
     time: "19:30 CET"
     video: "https://www.youtube.com/embed/hKBSmQCMEqQ"
@@ -781,7 +818,8 @@ sessions:
       - agile
       - essential
 
-  - title: "SunDDDay Discussion: Growing your local DDD community"
+  - id: "13"
+    title: "SunDDDay Discussion: Growing your local DDD community"
     date: "Tuesday, December 1st. 2019"
     time: "19:00 CET"
     video: "https://www.youtube.com/embed/sXdSjhWNeMg"
@@ -799,7 +837,8 @@ sessions:
     tags:
       - community
 
-  - title: "Make your tests tell the story of your domain with Anne and Mads"
+  - id: "12"
+    title: "Make your tests tell the story of your domain with Anne and Mads"
     date: "Tuesday, November 12th. 2019"
     time: "19:00 CET"
     video: "https://www.youtube.com/embed/7_KZ8_R4oOU"
@@ -816,7 +855,8 @@ sessions:
       - collaborative modelling
       - essential
 
-  - title: "What is an aggregate with Thomas Ploch"
+  - id: "11"
+    title: "What is an aggregate with Thomas Ploch"
     date: "Wednesday, November 6th. 2019"
     time: "18:30 CET"
     video: "https://www.youtube.com/embed/7h3DqZmvF9A"
@@ -835,7 +875,8 @@ sessions:
       - functional programming
       - tactical design
 
-  - title: "Introducing DDD to your Company with Barry O Sullivan"
+  - id: "10"
+    title: "Introducing DDD to your Company with Barry O Sullivan"
     date: "Tuesday, September 24th. 2019"
     time: "19:00 CEST"
     video: "https://www.youtube.com/embed/Vb7ZwYQPqqQ"
@@ -851,7 +892,8 @@ sessions:
     tags:
       - essential
 
-  - title: "SunDDDay discussion: CQRS & Event Sourcing systems with Alexey and Marco"
+  - id: "9"
+    title: "SunDDDay discussion: CQRS & Event Sourcing systems with Alexey and Marco"
     date: "Sunday, August 25th. 2019"
     time: "19:00 CEST"
     video: "https://www.youtube.com/embed/5e7lhY2q8WQ"
@@ -868,7 +910,8 @@ sessions:
       - event sourcing
       - cqrs
 
-  - title: "EventStorming Types and Heuristics with Rebecca, Paul and Alberto"
+  - id: "8"
+    title: "EventStorming Types and Heuristics with Rebecca, Paul and Alberto"
     date: "Thursday, August 8th. 2019"
     time: "24:00 CEST"
     video: "https://www.youtube.com/embed/jFEC7Pb1FtM"
@@ -887,7 +930,8 @@ sessions:
       - design heuristics
       - big picture
 
-  - title: "How To Read the Blue Book: Strategic Design with Mathias Verraes"
+  - id: "7"
+    title: "How To Read the Blue Book: Strategic Design with Mathias Verraes"
     date: "Tuesday, July 23th. 2019"
     time: "19:00 CEST"
     video: "https://www.youtube.com/embed/jZo44tbff1c"
@@ -904,7 +948,8 @@ sessions:
     tags:
       - strategic design
 
-  - title: "Socio-technical architecture with Ora Egozi-Barzilai and Evelyn van Kelle"
+  - id: "6"
+    title: "Socio-technical architecture with Ora Egozi-Barzilai and Evelyn van Kelle"
     date: "Thursday, July 18th. 2019"
     time: "18:30 CEST"
     video: "https://www.youtube.com/embed/YqbXEhO237w"
@@ -921,7 +966,8 @@ sessions:
       - socio-technical
       - strategic design
 
-  - title: "Can business capabilities be useful in DDD with Trond Hjorteland"
+  - id: "5"
+    title: "Can business capabilities be useful in DDD with Trond Hjorteland"
     date: "Tuesday, June 25th. 2019"
     time: "20:00 CEST"
     video: "https://www.youtube.com/embed/WSAHL7oHGUw"
@@ -941,7 +987,8 @@ sessions:
       - capability modelling
       - software architecture
 
-  - title: "Impact Mapping to manage change and strategic design"
+  - id: "4"
+    title: "Impact Mapping to manage change and strategic design"
     date: "Thursday, June 13th. 2019"
     time: "18:30 CEST"
     video: "https://www.youtube.com/embed/7u-EtXVKR5g"
@@ -963,7 +1010,8 @@ sessions:
       - collaborative modelling
       - strategic design
 
-  - title: "SunDDDay discussion: EventStorming and User story mapping for domain discovery"
+  - id: "3"
+    title: "SunDDDay discussion: EventStorming and User story mapping for domain discovery"
     date: "Sunday, May 26th. 2019"
     time: "16:30 CET"
     video: "https://www.youtube.com/embed/H553KZPCJQk"
@@ -985,7 +1033,8 @@ sessions:
       - user story mapping
       - collaborative modelling
 
-  - title: "CraftConf meetup with Nick Tune and Helin Akgul"
+  - id: "2"
+    title: "CraftConf meetup with Nick Tune and Helin Akgul"
     date: "Wednesday, May 8th. 2019"
     time: ""
     video: "https://www.ustream.tv/embed/recorded/121763272"
@@ -1004,8 +1053,8 @@ sessions:
       - microservices
       - strategic design
       - essential
-
-  - title: "Patterns for the People - Kevlin Henney"
+  - id: "1"
+    title: "Patterns for the People - Kevlin Henney"
     date: "Tuesday, April 2nd. 2019"
     time: ""
     video: "https://www.ustream.tv/embed/recorded/120901497"

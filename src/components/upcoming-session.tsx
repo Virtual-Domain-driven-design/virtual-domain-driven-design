@@ -4,6 +4,7 @@ import "twin.macro"
 import ThreeDBlueButton from "./core/three-d-blue-button"
 
 export interface UpcomingSessionContent {
+  id: string
   date: string
   description: string
   img: any

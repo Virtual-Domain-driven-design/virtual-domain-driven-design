@@ -93,6 +93,7 @@ const Sessions: FC = () => {
       ) {
         nodes {
           upcomingSessions {
+            id
             date
             description
             img
@@ -110,6 +111,7 @@ const Sessions: FC = () => {
       ) {
         nodes {
           sessions {
+            id
             title
             date
             level
