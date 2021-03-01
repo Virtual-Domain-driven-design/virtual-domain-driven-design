@@ -4,6 +4,7 @@ import React, { FC, useState } from "react"
 import tw from "twin.macro"
 
 import MeetupSvg from "../images/logo/meetup.svg"
+import SlackLinkedButton from "./core/slack-linked-button"
 
 // TODO: NEEDS MAJOR REFACTORING AND DYNAMIC CONFIG, this is UGLY but it works =). Problem I face now is the meetup SVG logo which cannot be imported from graphql dynamicly like other images can (See books for an example)
 
@@ -55,15 +56,7 @@ const SocialSubItems: FC = ({ data }) => {
       >
         <MeetupSvg tw="mr-2 h-8" />
       </a>
-      <a
-        tw="p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center"
-        href="https://j.mp/ddd-es-cqrs"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Img fixed={data.slackLogo.childImageSharp.fixed} tw="mr-2 h-8" />
-        Slack
-      </a>
+      <SlackLinkedButton />
       <a
         tw="p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center"
         href="https://twitter.com/VirtualDDD"

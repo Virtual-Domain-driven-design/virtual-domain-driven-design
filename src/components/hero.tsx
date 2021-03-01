@@ -4,6 +4,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import React, { FC } from "react"
 import tw from "twin.macro"
 
+import MeetupSvg from "../images/logo/meetup.svg"
 import OutlineBlueButton from "./core/outline-blue-button"
 import ThreeDBlueButton from "./core/three-d-blue-button"
 import UpcomingSession from "./upcoming-session"
@@ -56,6 +57,20 @@ const Hero: FC = () => {
           }
         }
       }
+      slackLogo: file(relativePath: { eq: "logo/slack_icon.png" }) {
+        childImageSharp {
+          fixed(height: 24, width: 24) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      twitterLogo: file(relativePath: { eq: "logo/twitter.png" }) {
+        childImageSharp {
+          fixed(height: 24, width: 24) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
       vdddLogoTp: file(relativePath: { eq: "logo/vddd_logo_tp.png" }) {
         childImageSharp {
           fixed(height: 32, width: 135) {
@@ -102,13 +117,18 @@ const Hero: FC = () => {
           >
             Meetup
           </OutlineBlueButton>
-          <OutlineBlueButton tw="lg:text-xl" href="https://j.mp/ddd-es-cqrs">
-            Slack
+          <OutlineBlueButton
+            tw="lg:text-xl"
+            href="https://github.com/ddd-cqrs-es/slack-community"
+          >
+            <Img fixed={data.slackLogo.childImageSharp.fixed} tw="mr-2 h-8" />
+            Slack community
           </OutlineBlueButton>
           <OutlineBlueButton
             tw="lg:text-xl"
             href="https://twitter.com/virtualDDD"
           >
+            <Img fixed={data.twitterLogo.childImageSharp.fixed} tw="mr-2 h-8" />
             Twitter
           </OutlineBlueButton>
         </div>
