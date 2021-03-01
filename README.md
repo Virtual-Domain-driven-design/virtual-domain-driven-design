@@ -8,7 +8,7 @@ We are continuously updating the website and functionality, if you have any idea
 There are two way to contribute:
 
 - directly through github, creating a fork and create a PR.
-- If you don't want all the Forking and PR hassle, all you need is a github account and go to the Netlify CMS on ![the website](https://virtualddd.com/admin).
+- If you don't want all the Forking and PR hassle, all you need is a github account and go to the Netlify CMS on [the website](https://virtualddd.com/admin/).
 
 The CMS now supports the following contribution:
 
@@ -109,4 +109,4 @@ yarn
 gatsby develop
 ```
 
-You should be able to go to ![localhost:8000](https://localhost:8000)
+You should be able to go to [localhost:8000](https://localhost:8000)
