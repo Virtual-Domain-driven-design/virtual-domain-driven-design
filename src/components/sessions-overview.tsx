@@ -19,12 +19,7 @@ const SessionOverview: FC<SessionOverviewProps> = ({ levelFilter }) => {
         filter: { sessions: { elemMatch: { title: { ne: null } } } }
       ) {
         nodes {
-          sessions {
-            title
-            level
-            video
-            tags
-          }
+          ...sessionOverviewQuery
         }
       }
     }
@@ -46,14 +41,14 @@ const SessionOverview: FC<SessionOverviewProps> = ({ levelFilter }) => {
   return (
     <ContentGallery
       filteredOffSet={filteredOffSet}
-      itemsLenght={filteredSessions.length}
+      itemsLength={filteredSessions.length}
       pageLimit={pageLimit}
       setOffset={setOffset}
       title="VDDD Sessions"
       allTo="/sessions"
     >
-      {currentSessions.map((session, index) => {
-        return <Session key={index} session={session} />
+      {currentSessions.map((session) => {
+        return <Session key={session.id} session={session} />
       })}
     </ContentGallery>
   )

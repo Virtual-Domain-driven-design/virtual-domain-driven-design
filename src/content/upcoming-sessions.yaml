@@ -1,7 +1,11 @@
 # - title: ""
+#   id: ""
 #   date: ""
 #   time: ""
 #   img: ""
+#   level: ""
+#   tags:
+#     - ""
 #   description:
 #     ""
 #   links:
@@ -13,6 +17,9 @@ upcomingSessions:
     date: "10th March, 2021"
     time: "16:45 CET"
     img: "https://secure.meetupstatic.com/photos/event/7/a/1/a/highres_494791258.jpeg"
+    level: intermediate
+    tags:
+      - event-driven architecture
     description:
       "Join us in this special fireside chat with Udi Dahan answering all your questions spanning from Domain-Driven Design, Software Architecture from SOA, event-driven, CQRS, Large-scale distributed systems, Saga Patterns, Event sourcing, microservices and anything in between. Ask your questions upfront or during the session!
 

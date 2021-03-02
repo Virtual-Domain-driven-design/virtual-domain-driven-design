@@ -1,4 +1,5 @@
 # - title: ""
+#   id: ""
 #   date: ""
 #   time: ""
 #   video: ""
@@ -6,9 +7,8 @@
 #   level: "all, beginner, intermediate or advanced"
 #   description:
 #     ""
-#   links:
-#     - label: ""
-#       url: ""
+#   tags:
+#     - ""
 sessions:
   - id: "50"
     title: "[Panel] Fostering autonomous teams with proper leadership culture"

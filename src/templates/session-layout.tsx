@@ -84,17 +84,7 @@ export default SessionLayout
 export const query = graphql`
   query($id: String) {
     sessionsYaml: contentYaml(sessions: { elemMatch: { id: { eq: $id } } }) {
-      sessions {
-        id
-        date
-        description
-        level
-        podcast
-        tags
-        time
-        title
-        video
-      }
+      ...sessionQuery
     }
     upcomingSessionsYaml: contentYaml(
       upcomingSessions: { elemMatch: { id: { eq: $id } } }

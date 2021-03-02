@@ -14,7 +14,7 @@ export interface UpcomingSessionContent {
 }
 
 interface UpcomingSessionContentLink {
-  index: string
+  url: string
   label: string
 }
 

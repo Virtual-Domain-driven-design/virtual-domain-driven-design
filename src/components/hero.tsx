@@ -4,7 +4,6 @@ import { graphql, useStaticQuery } from "gatsby"
 import React, { FC } from "react"
 import tw from "twin.macro"
 
-import MeetupSvg from "../images/logo/meetup.svg"
 import OutlineBlueButton from "./core/outline-blue-button"
 import ThreeDBlueButton from "./core/three-d-blue-button"
 import UpcomingSession from "./upcoming-session"

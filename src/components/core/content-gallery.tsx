@@ -10,7 +10,7 @@ import ThreeDBlueButton from "./three-d-blue-button"
 
 interface ContentGalleryProps {
   filteredOffSet: number
-  itemsLenght: number
+  itemsLength: number
   pageLimit: number
   setOffset: Function
   title: string
@@ -20,14 +20,14 @@ interface ContentGalleryProps {
 const ContentGallery: FC<ContentGalleryProps> = ({
   children,
   filteredOffSet,
-  itemsLenght,
+  itemsLength,
   pageLimit,
   setOffset,
   title,
   allTo,
 }) => {
   const leftVisible = filteredOffSet > 0
-  const rightVisible = itemsLenght > filteredOffSet + pageLimit
+  const rightVisible = itemsLength > filteredOffSet + pageLimit
   return (
     <div tw="w-full flex flex-col items-center my-2">
       <h2 tw="my-6 font-bold text-2xl w-2/3">{title}</h2>
