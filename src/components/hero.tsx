@@ -84,7 +84,13 @@ const Hero: FC = () => {
           upcomingSessions {
             date
             description
-            img
+            img {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             time
             title
             links {

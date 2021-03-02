@@ -96,7 +96,13 @@ const Sessions: FC = () => {
             id
             date
             description
-            img
+            img {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             time
             title
             links {

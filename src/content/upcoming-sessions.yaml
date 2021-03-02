@@ -12,11 +12,11 @@
 #     - label: ""
 #       url: ""
 upcomingSessions:
-  - id: "51"
+  - id: "65"
     title: "[Fireside chat] Udi Dahan - Ask me Anything"
     date: "10th March, 2021"
     time: "16:45 CET"
-    img: "https://secure.meetupstatic.com/photos/event/7/a/1/a/highres_494791258.jpeg"
+    img: ../images/sessions/session-65.jpeg
     level: intermediate
     tags:
       - event-driven architecture

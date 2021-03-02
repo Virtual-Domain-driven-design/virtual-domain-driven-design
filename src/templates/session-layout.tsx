@@ -93,7 +93,13 @@ export const query = graphql`
         id
         date
         description
-        img
+        img {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         time
         title
       }
