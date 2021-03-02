@@ -8,6 +8,16 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
   const result = await graphql(`
     query {
+      allContentYaml {
+        nodes {
+          upcomingSessions {
+            id
+          }
+          sessions {
+            id
+          }
+        }
+      }
       allMdx {
         edges {
           node {
@@ -23,6 +33,27 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   if (result.errors) {
     reporter.panic("failed to create posts ", result.errors)
   }
+
+  // Create a page per session or upcomingsession
+  result.data.allContentYaml.nodes
+    .filter(({ upcomingSessions, sessions }) => upcomingSessions || sessions)
+    .map(({ upcomingSessions, sessions }) => {
+      if (upcomingSessions) {
+        return upcomingSessions
+      }
+      if (sessions) {
+        return sessions
+      }
+    })
+    .flat()
+    .forEach(({ id }) => {
+      console.log("Creating page: /sessions/" + id)
+      createPage({
+        path: "/sessions/" + id,
+        component: require.resolve(`./src/templates/session-layout.tsx`),
+        context: { id: id },
+      })
+    })
 
   result.data.allMdx.edges.forEach(({ node }) => {
     if (
