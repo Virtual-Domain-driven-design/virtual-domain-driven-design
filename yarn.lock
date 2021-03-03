@@ -7507,11 +7507,6 @@ gatsby-plugin-breadcrumb@^10.0.0:
     identity-obj-proxy "^3.0.0"
     prop-types "^15.7.2"
 
-gatsby-plugin-disqus@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-disqus/-/gatsby-plugin-disqus-1.2.2.tgz#d10e72c2ac0f7205abd7dda2e8cb4ecc0743a824"
-  integrity sha512-RWiU8Jtg94kVphjBnxqnF+0txyJ3eZN/9vw/VlMgz0mor1FwULkiiiOyNXAJxbX6tFqYmypnmfa+edQWX/rMpQ==
-
 gatsby-plugin-eslint@^2.0.8:
   version "2.0.8"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-eslint/-/gatsby-plugin-eslint-2.0.8.tgz#1ff7f546a427d274dc2de3932ba29822aae330c3"
@@ -9237,6 +9232,11 @@ husky@4.2.5:
     please-upgrade-node "^3.2.0"
     slash "^3.0.0"
     which-pm-runs "^1.0.0"
+
+hyvor-talk-react@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/hyvor-talk-react/-/hyvor-talk-react-1.0.3.tgz#0f5561519971ff885412361ec349c0ffdcf845a0"
+  integrity sha512-r5iv5kX2ZrHUCGPSsfNhPDY/+YjP7TGJZ2uJJm1/xayBbQLV/QiYEBOABNJojZ39kH4NZVvVx3kS5ljmK280nQ==
 
 iconv-lite@0.4.24, iconv-lite@^0.4.17, iconv-lite@^0.4.24:
   version "0.4.24"

@@ -17,12 +17,6 @@ module.exports = {
     `gatsby-transformer-yaml`,
     `gatsby-plugin-sitemap`,
     {
-      resolve: `gatsby-plugin-disqus`,
-      options: {
-        shortname: `virtual-domain-driven-design`,
-      },
-    },
-    {
       resolve: `gatsby-plugin-page-creator`,
       options: {
         path: `${__dirname}/src/pages/learning-ddd`,

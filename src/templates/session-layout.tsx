@@ -4,8 +4,8 @@
  *
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
-import { Disqus } from "gatsby-plugin-disqus"
 import { graphql } from "gatsby"
+import HyvorTalk from "hyvor-talk-react"
 import React, { FC } from "react"
 import tw from "twin.macro"
 
@@ -17,11 +17,7 @@ const SessionLayout: FC = ({ pageContext, data }) => {
     const session = data.sessionsYaml.sessions.find(
       (session) => session.id === pageContext.id
     )
-    const disqusProps = {
-      url: "https://virtualddd.com/sessions/" + session.id,
-      identifier: "sessions-" + session.id,
-      title: session.title,
-    }
+    const sessionId = "sessions-" + session.id
     const keywords = session.tags.join(", ")
     return (
       <Layout>
@@ -68,7 +64,7 @@ const SessionLayout: FC = ({ pageContext, data }) => {
             </div>
           </div>
           <div tw="bg-white w-2/3 rounded-lg shadow-md p-2 m-2 flex flex-col">
-            <Disqus config={disqusProps} />
+            <HyvorTalk.Embed websiteId={3384} id={sessionId} />
           </div>
         </div>
       </Layout>
