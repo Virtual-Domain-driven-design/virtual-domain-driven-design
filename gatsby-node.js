@@ -23,6 +23,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           node {
             id
             fileAbsolutePath
+            frontmatter {
+              title
+            }
             slug
           }
         }
@@ -56,11 +59,13 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     })
 
   result.data.allMdx.edges.forEach(({ node }) => {
+    //DDD-CREW page creation
     if (
       !(
         node.fileAbsolutePath.includes("LICENSE.md") ||
         node.fileAbsolutePath.includes("LICENCE.md")
-      )
+      ) &&
+      node.fileAbsolutePath.includes("github-repo")
     ) {
       const indexOfGithubRepo = node.fileAbsolutePath.indexOf("github-repo")
       const subPath = node.fileAbsolutePath.substring(indexOfGithubRepo)
@@ -78,6 +83,22 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         path: "/learning-ddd/" + pathName,
         component: require.resolve(`./src/templates/github-repo-layout.tsx`),
         context: { id: node.id },
+      })
+    }
+    //Heuristics page creation for MD files
+    if (node.fileAbsolutePath.includes("/content/heuristics/")) {
+      const indexOfHeuristics = node.fileAbsolutePath.indexOf("heuristics/")
+      const subPath = node.fileAbsolutePath.substring(indexOfHeuristics)
+      const indexOfLastSlash = subPath.lastIndexOf("/")
+
+      const path = subPath.substring(0, indexOfLastSlash + 1)
+      const name = subPath.substring(indexOfLastSlash + 1, subPath.length - 3)
+
+      console.log("creating page: " + "/patterns-and-heuristics/" + path + name)
+      createPage({
+        path: "/patterns-and-heuristics/" + path + name,
+        component: require.resolve(`./src/templates/heuristic-layout.tsx`),
+        context: { id: node.id, name },
       })
     }
   })
