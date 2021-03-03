@@ -11,7 +11,7 @@ import LevelFilter from "../components/level-filter"
 import PapersOverview from "../components/papers-overview"
 import PodcastsOverview from "../components/podcasts-overview"
 import SEO from "../components/seo"
-import SessionsOverview from "../components/sessions-overview"
+import SessionsOverview from "../sessions/sessions-overview"
 import ThreeDBlueButton from "./../components/core/three-d-blue-button"
 import VideoOverview from "../components/video-overview"
 

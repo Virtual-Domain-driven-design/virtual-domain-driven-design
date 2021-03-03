@@ -47,6 +47,7 @@ const SessionLayout: FC = ({ pageContext, data }) => {
             >
               {session.title}
             </a>
+            <div tw="text-justify">{session.description}</div>
             <div tw="px-1 w-full flex flex-row flex-wrap">
               <div tw="flex-shrink-0 leading-none text-xs tracking-tighter bg-blue-700 text-white rounded-md p-1 m-1">
                 Level: {session.level}
@@ -80,25 +81,12 @@ export default SessionLayout
 export const query = graphql`
   query($id: String) {
     sessionsYaml: contentYaml(sessions: { elemMatch: { id: { eq: $id } } }) {
-      ...sessionQuery
+      ...session
     }
     upcomingSessionsYaml: contentYaml(
       upcomingSessions: { elemMatch: { id: { eq: $id } } }
     ) {
-      upcomingSessions {
-        id
-        date
-        description
-        img {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        time
-        title
-      }
+      ...upcomingSession
     }
   }
 `

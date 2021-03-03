@@ -2,22 +2,23 @@ import { graphql } from "gatsby"
 import React, { FC } from "react"
 import tw from "twin.macro"
 
-export const sessionQuery = graphql`
-  fragment sessionQuery on ContentYaml {
+export const session = graphql`
+  fragment session on ContentYaml {
     sessions {
       id
-      date
       title
+      date
       time
       description
       level
       tags
       video
       podcast
+      ...sessionImage
     }
   }
 `
-export interface SessionContent {
+export type SessionContent = {
   id: string
   date: string
   title: string
@@ -26,29 +27,11 @@ export interface SessionContent {
   level: string
   tags: string[]
   video: string
-  podcast?: string
+  podcast?: string,
+  img: any
 }
 
-export const sessionOverviewQuery = graphql`
-  fragment sessionOverviewQuery on ContentYaml {
-    sessions {
-      id
-      title
-      level
-      tags
-      video
-    }
-  }
-`
-export interface SessionOverview {
-  id: string
-  title: string
-  level: string
-  tags: string[]
-  video: string
-}
-
-interface SessionProps {
+type SessionProps = {
   session: SessionContent
 }
 

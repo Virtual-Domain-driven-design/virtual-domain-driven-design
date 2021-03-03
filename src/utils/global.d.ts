@@ -1,4 +1,5 @@
 import "twin.macro"
+import "hyvor-talk-react"
 import styledComponent, { CSSProp, css as cssProperty } from "styled-components"
 
 declare module "twin.macro" {
@@ -16,4 +17,9 @@ declare module "react" {
   interface SVGProps<T> extends SVGProps<SVGSVGElement> {
     css?: CSSProp
   }
+}
+
+// @ts-ignore
+declare module "hyvor-talk-react" {
+
 }

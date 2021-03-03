@@ -6,8 +6,9 @@ import tw from "twin.macro"
 
 import OutlineBlueButton from "./core/outline-blue-button"
 import ThreeDBlueButton from "./core/three-d-blue-button"
-import UpcomingSession from "./upcoming-session"
+import UpcomingSession from "../sessions/upcoming-session"
 
+// @ts-ignore
 const VDDDInfo: FC = ({ data }) => {
   return (
     <div tw="flex flex-col items-center justify-start w-full p-4 lg:p-8 sm:w-5/6 lg:w-full sm:rounded-lg sm:shadow-lg bg-white space-y-4">
@@ -77,36 +78,18 @@ const Hero: FC = () => {
           }
         }
       }
-      allContentYaml(
+      upcoming: allContentYaml(
         filter: { upcomingSessions: { elemMatch: { title: { ne: null } } } }
       ) {
         nodes {
-          upcomingSessions {
-            date
-            description
-            img {
-              childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            time
-            title
-            links {
-              label
-              url
-            }
-          }
+          ...upcomingSession
         }
       }
     }
   `)
   const imageData = data.backgroundImage.childImageSharp.fluid
-  const isUpcomingSession =
-    data.allContentYaml.nodes[0].upcomingSessions.length > 0 &&
-    data.allContentYaml.nodes[0].upcomingSessions[0].title
-
+  const upcomingSession = data.upcoming.nodes[0].upcomingSessions[0]
+  const isUpcomingSession = !!upcomingSession
   return (
     <BackgroundImage
       tw="flex flex-col items-center justify-center bg-scroll h-auto lg:flex-row-reverse lg:items-start relative"
@@ -144,7 +127,7 @@ const Hero: FC = () => {
         css={!isUpcomingSession && tw`invisible`}
       >
         <UpcomingSession
-          session={data.allContentYaml.nodes[0].upcomingSessions[0]}
+          session={upcomingSession}
         ></UpcomingSession>
         <OutlineBlueButton tw="lg:text-xl" to="/sessions">
           Show all sessions

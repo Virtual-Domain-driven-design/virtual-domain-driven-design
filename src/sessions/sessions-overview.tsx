@@ -1,7 +1,7 @@
 import { graphql, useStaticQuery } from "gatsby"
 import React, { FC, useState } from "react"
 
-import ContentGallery from "./core/content-gallery"
+import ContentGallery from "../components/core/content-gallery"
 import Session, { SessionContent } from "./session"
 
 interface SessionOverviewProps {
@@ -19,7 +19,7 @@ const SessionOverview: FC<SessionOverviewProps> = ({ levelFilter }) => {
         filter: { sessions: { elemMatch: { title: { ne: null } } } }
       ) {
         nodes {
-          ...sessionOverviewQuery
+          ...session
         }
       }
     }

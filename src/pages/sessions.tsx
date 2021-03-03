@@ -4,12 +4,10 @@ import React, { FC, useState } from "react"
 import tw from "twin.macro"
 
 import Layout from "../templates/layout"
-import Session, { SessionContent } from "../components/session"
+import Session, { SessionContent } from "../sessions/session"
 import SEO from "../components/seo"
 import ThreeDBlueButton from "./../components/core/three-d-blue-button"
-import UpcomingSession, {
-  UpcomingSessionContent,
-} from "../components/upcoming-session"
+import UpcomingSession, { UpcomingSessionContent } from "../sessions/upcoming-session"
 
 const initialLengthSize = 15
 
@@ -92,38 +90,14 @@ const Sessions: FC = () => {
         filter: { upcomingSessions: { elemMatch: { title: { ne: null } } } }
       ) {
         nodes {
-          upcomingSessions {
-            id
-            date
-            description
-            img {
-              childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            time
-            title
-            links {
-              label
-              url
-            }
-          }
+          ...upcomingSession
         }
       }
       past: allContentYaml(
         filter: { sessions: { elemMatch: { title: { ne: null } } } }
       ) {
         nodes {
-          sessions {
-            id
-            title
-            date
-            level
-            video
-            tags
-          }
+          ...session
         }
       }
     }
