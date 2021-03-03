@@ -1,8 +1,13 @@
 ---
 title: "EventStorming: Don't fill in the gaps"
 excerpt: "How can we get new insight during an EventStorming session?"
-tags: guiding-heuristics eventstorming
-authors: Kenny Baas-Schwegler
+type: guiding-heuristic
+category: eventstorming
+tags:
+  - guiding-heuristics
+  - eventstorming
+authors:
+  - Kenny Baas-Schwegler
 ---
 
 # Description

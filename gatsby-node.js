@@ -97,8 +97,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       console.log("creating page: " + "/patterns-and-heuristics/" + path + name)
       createPage({
         path: "/patterns-and-heuristics/" + path + name,
-        component: require.resolve(`./src/templates/github-repo-layout.tsx`),
-        context: { id: node.id },
+        component: require.resolve(`./src/templates/heuristic-layout.tsx`),
+        context: { id: node.id, name },
       })
     }
   })
