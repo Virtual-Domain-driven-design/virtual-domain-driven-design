@@ -55,7 +55,7 @@ const VideosOverview: FC<VideosOverviewProps> = ({ levelFilter }) => {
   return (
     <ContentGallery
       filteredOffSet={filteredOffSet}
-      itemsLenght={filteredVideos.length}
+      itemsLength={filteredVideos.length}
       pageLimit={pageLimit}
       setOffset={setOffset}
       title="Videos"

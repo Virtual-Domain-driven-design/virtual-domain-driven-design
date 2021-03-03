@@ -55,7 +55,7 @@ const PodcastsOverview: FC<PodcastsOverviewProps> = ({ levelFilter }) => {
   return (
     <ContentGallery
       filteredOffSet={filteredOffSet}
-      itemsLenght={filteredPodcasts.length}
+      itemsLength={filteredPodcasts.length}
       pageLimit={pageLimit}
       setOffset={setOffset}
       title="Podcasts"

@@ -55,7 +55,7 @@ const GithubRepoOverview: FC<GithubRepoProps> = ({ levelFilter }) => {
   return (
     <ContentGallery
       filteredOffSet={filteredOffSet}
-      itemsLenght={filteredGithubRepos.length}
+      itemsLength={filteredGithubRepos.length}
       pageLimit={pageLimit}
       setOffset={setOffset}
       title="Github Repositories"

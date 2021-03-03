@@ -49,7 +49,7 @@ const PapersOverview: FC<PapersOverviewProps> = ({ levelFilter }) => {
   return (
     <ContentGallery
       filteredOffSet={filteredOffSet}
-      itemsLenght={filteredPapers.length}
+      itemsLength={filteredPapers.length}
       pageLimit={pageLimit}
       setOffset={setOffset}
       title="Papers"
