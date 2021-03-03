@@ -49,7 +49,7 @@ const Communities: FC = () => {
       id="communities"
     >
       <div tw="w-full flex flex-col items-center justify-start">
-        <h2 tw="my-2 w-4/5 lg:w-2/3 xl:w-1/2 text-blue-800 text-3xl">
+        <h2 tw="my-2 w-4/5 lg:w-2/3 xl:w-1/2 text-blue-800 text-center text-3xl">
           Communities
         </h2>
         <h3 tw="my-2 w-full text-center flex flex-col items-center justify-center">

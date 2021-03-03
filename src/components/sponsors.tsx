@@ -87,7 +87,7 @@ const Sponsors: FC = () => {
       id="sponsors"
     >
       <div tw="mt-8 w-4/5 lg:w-2/3 xl:w-1/2">
-        <h2 tw="my-2 w-4/5 lg:w-2/3 xl:w-1/2 text-blue-800 text-3xl">
+        <h2 tw="my-2 w-4/5 lg:w-2/3 xl:w-1/2 text-blue-800 text-center text-3xl">
           Sponsors
         </h2>
         <div tw="w-full flex-wrap flex flex-col sm:flex-row justify-center items-stretch">

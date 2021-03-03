@@ -65,7 +65,7 @@ const Conferences: FC = () => {
       tw="bg-white flex flex-col items-center justify-center m-4"
       id="conferences"
     >
-      <h2 tw="my-2 w-4/5 lg:w-2/3 xl:w-1/2 text-blue-800 justify-center text-3xl">
+      <h2 tw="my-2 w-4/5 lg:w-2/3 xl:w-1/2 text-blue-800 text-center text-3xl">
         Conferences
       </h2>
       <div tw="md:w-5/6">

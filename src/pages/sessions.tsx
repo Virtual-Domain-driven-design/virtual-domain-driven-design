@@ -11,7 +11,7 @@ import UpcomingSession, { UpcomingSessionContent } from "../sessions/upcoming-se
 
 const initialLengthSize = 15
 
-interface UpcomingSessionProps {
+type UpcomingSessionProps = {
   sessions: UpcomingSessionContent[]
 }
 
@@ -51,7 +51,7 @@ const UpcomingSessions: FC<UpcomingSessionProps> = ({ sessions }) => {
   )
 }
 
-interface PastSessionProps {
+type PastSessionProps = {
   allSessions: SessionContent[]
 }
 
@@ -114,7 +114,7 @@ const Sessions: FC = () => {
         title="Virtual Domain-Driven Design meetups and sessions"
         description="An online community and meetup for Domain-Driven Design"
         keywords="Domain-Driven Design,Software Architecture,meetup"
-        image={data.upcoming.nodes[0].upcomingSessions[0].img}
+        image={upcomingSessions[0].img}
       />
       <div
         tw="bg-gray-100 flex flex-col items-center justify-center"

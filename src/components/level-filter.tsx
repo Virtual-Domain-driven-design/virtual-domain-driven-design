@@ -1,7 +1,7 @@
 import React, { FC, useState } from "react"
 import tw from "twin.macro"
 
-interface LevelFilterProps {
+type LevelFilterProps = {
   setLevelFilter: Function
 }
 
@@ -12,7 +12,7 @@ enum ContentLevel {
   Advanced = "advanced",
 }
 
-interface ButtonsActive {
+type ButtonsActive = {
   isAllActive: boolean
   isBeginnerActive: boolean
   isIntermediateActive: boolean
@@ -34,34 +34,28 @@ const LevelFilter: FC<LevelFilterProps> = ({ setLevelFilter }) => {
       isAdvancedActive: false,
     }
     switch (contentLevel) {
-      case ContentLevel.All: {
-        buttonsActive.isAllActive = true
-        setButtonsActive(buttonsActive)
-        setLevelFilter(["all", "beginner", "intermediate", "advanced"])
-        break
-      }
       case ContentLevel.Beginner: {
-        buttonsActive.isBeginnerActive = true
-        setButtonsActive(buttonsActive)
-        setLevelFilter(["all", "beginner"])
+        setButtonsActive({ ...buttonsActive, isBeginnerActive: true})
+        setLevelFilter([ContentLevel.All, contentLevel])
         break
       }
       case ContentLevel.Intermediate: {
-        buttonsActive.isIntermediateActive = true
-        setButtonsActive(buttonsActive)
-        setLevelFilter(["all", "intermediate"])
+        setButtonsActive({ ...buttonsActive, isIntermediateActive: true})
+        setLevelFilter([ContentLevel.All, contentLevel])
         break
       }
       case ContentLevel.Advanced: {
-        buttonsActive.isAdvancedActive = true
-        setButtonsActive(buttonsActive)
-        setLevelFilter(["all", "advanced"])
+        setButtonsActive({ ...buttonsActive, isAdvancedActive: true})
+        setLevelFilter([ContentLevel.All, contentLevel])
         break
       }
       default: {
-        buttonsActive.isAllActive = true
-        setButtonsActive(buttonsActive)
-        setLevelFilter(["all", "beginner", "intermediate", "advanced"])
+        setButtonsActive({ ...buttonsActive, isAllActive: true})
+        setLevelFilter([
+          ContentLevel.All,
+          ContentLevel.Beginner,
+          ContentLevel.Intermediate,
+          ContentLevel.Advanced])
       }
     }
   }

@@ -4,11 +4,9 @@ import React, { FC, useState } from "react"
 import ContentGallery from "../../components/core/content-gallery"
 import Session, { SessionContent } from "../../sessions/session"
 
-interface SessionOverviewProps {
+type SessionOverviewProps = {
   levelFilter: string[]
 }
-
-//Todo move to learning overview
 
 const SessionOverview: FC<SessionOverviewProps> = ({ levelFilter }) => {
   const [offset, setOffset] = useState(0)
