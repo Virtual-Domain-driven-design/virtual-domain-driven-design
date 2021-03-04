@@ -18,13 +18,21 @@ export const session = graphql`
     }
   }
 `
+
+export enum ContentLevel {
+  All = "all",
+  Beginner = "beginner",
+  Intermediate = "intermediate",
+  Advanced = "advanced",
+}
+
 export type SessionContent = {
   id: string
   date: string
   title: string
   time: string
   description: string
-  level: string
+  level: ContentLevel
   tags: string[]
   video: string
   podcast?: string,

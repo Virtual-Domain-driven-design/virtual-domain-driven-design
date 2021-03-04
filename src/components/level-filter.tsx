@@ -1,15 +1,9 @@
 import React, { FC, useState } from "react"
 import tw from "twin.macro"
+import { ContentLevel } from "../sessions/session"
 
 type LevelFilterProps = {
   setLevelFilter: Function
-}
-
-enum ContentLevel {
-  All = "all",
-  Beginner = "beginner",
-  Intermediate = "intermediate",
-  Advanced = "advanced",
 }
 
 type ButtonsActive = {
