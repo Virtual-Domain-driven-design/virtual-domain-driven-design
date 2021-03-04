@@ -35,7 +35,7 @@ export type SessionContent = {
   level: ContentLevel
   tags: string[]
   video: string
-  podcast?: string,
+  podcast?: string
   img: any
 }
 
