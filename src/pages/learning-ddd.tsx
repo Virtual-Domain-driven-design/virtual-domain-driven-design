@@ -14,8 +14,9 @@ import SEO from "../components/seo"
 import SessionsOverview from "./learning-ddd/sessions-overview"
 import ThreeDBlueButton from "./../components/core/three-d-blue-button"
 import VideoOverview from "../components/video-overview"
+import { ContentLevel } from "../sessions/session"
 
-interface LearningDDDInfoProps {
+type LearningDDDInfoProps = {
   img: any
 }
 
@@ -66,11 +67,11 @@ const LearningDDD: FC = () => {
   `)
 
   const [levelFilter, setLevelFilter] = useState([
-    "all",
-    "beginner",
-    "intermediate",
-    "advanced",
-  ])
+    ContentLevel.All,
+    ContentLevel.Beginner,
+    ContentLevel.Intermediate,
+    ContentLevel.Advanced
+    ])
 
   return (
     <Layout>

@@ -1,14 +1,14 @@
 import React, { FC } from "react"
 import tw from "twin.macro"
 
-export interface PodcastContent {
+export type PodcastContent = {
   title: string
   level: string
   podcast: string
   tags: string[]
 }
 
-interface PodcastProps {
+type PodcastProps = {
   session: PodcastContent
 }
 

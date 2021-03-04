@@ -12,7 +12,6 @@ import tw from "twin.macro"
 import Layout from "./layout"
 import SessionHero from "./../sessions/session-hero"
 import SEO from "../components/seo"
-import Sessions from "../pages/sessions"
 
 const SessionLayout: FC = ({ pageContext, data }) => {
   if (data.sessionsYaml) {

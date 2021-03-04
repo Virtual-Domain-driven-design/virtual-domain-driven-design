@@ -1,14 +1,14 @@
 import React, { FC } from "react"
 import tw from "twin.macro"
 
-export interface VideoContent {
+export type VideoContent ={
   title: string
   level: string
   tags: string[]
   video: string
 }
 
-interface VideoProps {
+type VideoProps = {
   video: VideoContent
 }
 

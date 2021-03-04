@@ -2,16 +2,9 @@ import { graphql, useStaticQuery } from "gatsby"
 import React, { FC, useState } from "react"
 
 import ContentGallery from "./core/content-gallery"
-import Podcast from "./podcast"
+import Podcast, {PodcastContent} from "./podcast"
 
-interface Podcast {
-  title: string
-  level: string
-  podcast: string
-  tags: string[]
-}
-
-interface PodcastsOverviewProps {
+type PodcastsOverviewProps = {
   levelFilter: string[]
 }
 
@@ -19,7 +12,7 @@ const PodcastsOverview: FC<PodcastsOverviewProps> = ({ levelFilter }) => {
   const [offset, setOffset] = useState(0)
   const pageLimit = 3
   const allPodcasts = useStaticQuery<{
-    allContentYaml: { nodes: { sessions: Podcast[] }[] }
+    allContentYaml: { nodes: { sessions: PodcastContent[] }[] }
   }>(graphql`
     query {
       allContentYaml(
