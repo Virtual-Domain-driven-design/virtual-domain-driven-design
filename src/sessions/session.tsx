@@ -1,6 +1,7 @@
 import { graphql } from "gatsby"
 import React, { FC } from "react"
-import tw from "twin.macro"
+import "twin.macro"
+import VideoEmbed from "./../components/video-embed"
 
 export const session = graphql`
   fragment session on ContentYaml {
@@ -47,16 +48,7 @@ const Session: FC<SessionProps> = ({ session }) => {
   return (
     <div tw="bg-white w-96 rounded-lg shadow-md p-2 m-2 flex flex-col">
       <div tw="text-sm text-gray-600">{session.date}</div>
-      <div css={[{ paddingTop: "56.25%" }, tw`relative`]}>
-        <iframe
-          title={session.title}
-          tw="absolute top-0 left-0 w-full h-full"
-          allowFullScreen={true}
-          src={session.video}
-          scrolling="no"
-          frameBorder={0}
-        ></iframe>
-      </div>
+      <VideoEmbed title={session.title} video={session.video} />
       <a
         tw="text-sm text-left font-bold text-blue-600 hover:cursor-pointer hover:text-blue-400"
         href={session.video}

@@ -1,7 +1,8 @@
 import React, { FC } from "react"
-import tw from "twin.macro"
+import "twin.macro"
+import VideoEmbed from "./video-embed"
 
-export type VideoContent ={
+export type VideoContent = {
   title: string
   level: string
   tags: string[]
@@ -15,16 +16,7 @@ type VideoProps = {
 const Video: FC<VideoProps> = ({ video }) => {
   return (
     <div tw="bg-white w-96 rounded-lg shadow-md p-2 m-2 flex flex-col">
-      <div css={[{ paddingTop: "56.25%" }, tw`relative`]}>
-        <iframe
-          title={video.title}
-          tw="absolute top-0 left-0 w-full h-full"
-          allowFullScreen={true}
-          src={video.video}
-          scrolling="no"
-          frameBorder={0}
-        ></iframe>
-      </div>
+      <VideoEmbed title={video.title} video={video.video} />
       <a
         tw="text-sm text-left font-bold hover:text-blue-400"
         href={video.video}

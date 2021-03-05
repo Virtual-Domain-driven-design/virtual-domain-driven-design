@@ -1,8 +1,9 @@
 import React from "react"
-import tw from "twin.macro"
+import "twin.macro"
 
 import SessionLink from "./../sessions/upcoming-session"
 import ThreeDBlueButton from "../components/core/three-d-blue-button"
+import VideoEmbed from "./../components/video-embed"
 
 type SessionBlockProps = {
   description: string
@@ -20,16 +21,10 @@ const SessionBlock = (sessionBlockProps: SessionBlockProps) => {
         </div>
       </div>
       <div tw="xl:w-1/3 w-full rounded-lg shadow-md p-1 m-2">
-        <div css={[{ paddingTop: "56.25%" }, tw`relative`]}>
-          <iframe
-            title={sessionBlockProps.title}
-            tw="absolute top-0 left-0 w-full h-full"
-            allowFullScreen={true}
-            src={sessionBlockProps.video}
-            scrolling="no"
-            frameBorder={0}
-          ></iframe>
-        </div>
+        <VideoEmbed
+          title={sessionBlockProps.title}
+          video={sessionBlockProps.video}
+        />
         {sessionBlockProps.links && (
           <div tw="m-4 sm:space-x-4 space-y-2 sm:space-y-0 flex flex-col sm:flex-row items-center justify-center">
             {sessionBlockProps.links.map((link) => {
