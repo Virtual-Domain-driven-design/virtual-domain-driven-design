@@ -29,6 +29,7 @@ const SessionLayout = ({ pageContext, data }) => {
       <SessionBlock
         description={session.description}
         title={session.title}
+        podcast={session.podcast}
         video={session.video}
       />
     )
@@ -64,7 +65,7 @@ const SessionLayout = ({ pageContext, data }) => {
       />
       <div tw="flex flex-col items-center m-8">
         {sessionBlock}
-        <div tw="bg-white lg:w-2/3 w-5/6 rounded-lg shadow-md p-2 m-2 flex flex-col">
+        <div tw="bg-white lg:w-2/3 w-5/6 rounded-lg shadow-xl p-2 m-2 flex flex-col">
           <HyvorTalk.Embed websiteId={3384} id={sessionId} />
         </div>
       </div>
