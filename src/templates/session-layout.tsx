@@ -6,30 +6,26 @@
  */
 import { graphql } from "gatsby"
 import HyvorTalk from "hyvor-talk-react"
-import React, { FC } from "react"
+import React from "react"
 import "twin.macro"
 
 import Layout from "./layout"
 import SessionBlock from "./../sessions/session-block"
-import UpcomingSessionBlock from "./../sessions/upcoming-session-block"
 import SessionHero from "./../sessions/session-hero"
 import SEO from "../components/seo"
 import { UpcomingSessionContent } from "../sessions/upcoming-session"
 import { SessionContent } from "../sessions/session"
 
-const SessionLayout: FC = ({ pageContext, data }) => {
+const SessionLayout = ({ pageContext, data }) => {
   const sessionId = "sessions-" + pageContext.id
 
   let session
-  let keywords
-  let sessionComponent
-
+  let sessionBlock
   if (data.sessionsYaml) {
     session = data.sessionsYaml.sessions.find(
       (session: SessionContent) => session.id === pageContext.id
     )
-    keywords = session.tags.join(", ")
-    sessionComponent = (
+    sessionBlock = (
       <SessionBlock
         description={session.description}
         title={session.title}
@@ -37,16 +33,20 @@ const SessionLayout: FC = ({ pageContext, data }) => {
       />
     )
   } else if (data.upcomingSessionsYaml) {
-    console.log("found")
     session = data.upcomingSessionsYaml.upcomingSessions.find(
       (upcomingSession: UpcomingSessionContent) =>
         upcomingSession.id === pageContext.id
     )
-    keywords = session.tags.join(", ")
-    sessionComponent = (
-      <UpcomingSessionBlock description={session.description} />
+    sessionBlock = (
+      <SessionBlock
+        description={session.description}
+        title={session.title}
+        links={session.links}
+        video={session.video}
+      />
     )
   }
+  const keywords = session.tags.join(", ")
   return (
     <Layout>
       <SEO
@@ -63,8 +63,8 @@ const SessionLayout: FC = ({ pageContext, data }) => {
         title={session.title}
       />
       <div tw="flex flex-col items-center m-8">
-        {sessionComponent}
-        <div tw="bg-white w-2/3 rounded-lg shadow-md p-2 m-2 flex flex-col">
+        {sessionBlock}
+        <div tw="bg-white lg:w-2/3 w-5/6 rounded-lg shadow-md p-2 m-2 flex flex-col">
           <HyvorTalk.Embed websiteId={3384} id={sessionId} />
         </div>
       </div>

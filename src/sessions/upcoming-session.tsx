@@ -15,6 +15,7 @@ export const upcomingSession = graphql`
       description
       level
       tags
+      video
       links {
         label
         url
@@ -24,7 +25,7 @@ export const upcomingSession = graphql`
   }
 `
 
-type SessionLink = {
+export type SessionLink = {
   url: string
   label: string
 }
@@ -36,6 +37,7 @@ export type UpcomingSessionContent = {
   img: any
   links: SessionLink[]
   time: string
+  video: string
   title: string
 }
 

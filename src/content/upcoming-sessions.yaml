@@ -17,6 +17,7 @@ upcomingSessions:
     date: "10th March, 2021"
     time: "16:45 CET"
     img: ../images/sessions/session-65.jpeg
+    video: "https://www.youtube.com/embed/c07zWlLBvVg"
     level: intermediate
     tags:
       - event-driven architecture
