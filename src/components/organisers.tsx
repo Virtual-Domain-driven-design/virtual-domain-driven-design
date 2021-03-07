@@ -190,7 +190,7 @@ const Organisers: FC = () => {
             name="Maxime Sanglan-Charlier"
             image={data.maxime.childImageSharp.fluid}
             tagline="Connecting people circa 97"
-            website="https://ncrafts.io"
+            website="https://blog.onehundredacorns.com/"
             twitter="__MaxS__"
             linkedin="company/ncrafts"
             data={data}
