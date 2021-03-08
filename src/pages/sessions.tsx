@@ -4,10 +4,12 @@ import React, { FC, useState } from "react"
 import tw from "twin.macro"
 
 import Layout from "../templates/layout"
-import Session, { SessionContent } from "../sessions/session"
+import Session, { SessionContent } from "../learning-ddd/learning-session-card"
 import SEO from "../components/seo"
 import ThreeDBlueButton from "./../components/core/three-d-blue-button"
-import UpcomingSession, { UpcomingSessionContent } from "../sessions/upcoming-session"
+import UpcomingSession, {
+  UpcomingSessionContent,
+} from "../sessions/upcoming-session"
 
 const initialLengthSize = 15
 

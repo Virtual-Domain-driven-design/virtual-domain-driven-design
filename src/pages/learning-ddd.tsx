@@ -11,10 +11,10 @@ import LevelFilter from "../components/level-filter"
 import PapersOverview from "../components/papers-overview"
 import PodcastsOverview from "../components/podcasts-overview"
 import SEO from "../components/seo"
-import SessionsOverview from "./learning-ddd/sessions-overview"
+import SessionsOverview from "../learning-ddd/sessions-overview"
 import ThreeDBlueButton from "./../components/core/three-d-blue-button"
 import VideoOverview from "../components/video-overview"
-import { ContentLevel } from "../sessions/session"
+import { ContentLevel } from "./../sessions/session"
 
 type LearningDDDInfoProps = {
   img: any
@@ -70,8 +70,8 @@ const LearningDDD: FC = () => {
     ContentLevel.All,
     ContentLevel.Beginner,
     ContentLevel.Intermediate,
-    ContentLevel.Advanced
-    ])
+    ContentLevel.Advanced,
+  ])
 
   return (
     <Layout>

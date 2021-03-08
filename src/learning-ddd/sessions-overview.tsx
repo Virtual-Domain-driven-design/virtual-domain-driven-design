@@ -1,14 +1,15 @@
 import { graphql, useStaticQuery } from "gatsby"
 import React, { FC, useState } from "react"
 
-import ContentGallery from "../../components/core/content-gallery"
-import Session, { SessionContent, ContentLevel } from "../../sessions/session"
+import ContentGallery from "../components/core/content-gallery"
+import { ContentLevel, SessionContent } from "../sessions/session"
+import Session from "./learning-session-card"
 
 type SessionOverviewProps = {
   levelFilter: ContentLevel[]
 }
 
-const SessionOverview: FC<SessionOverviewProps> = ({ levelFilter= [] }) => {
+const SessionOverview: FC<SessionOverviewProps> = ({ levelFilter = [] }) => {
   const [offset, setOffset] = useState(0)
   const pageLimit = 3
   const allSessions = useStaticQuery<{
