@@ -36,6 +36,7 @@ export type UpcomingSessionContent = {
   description: string
   img: any
   links: SessionLink[]
+  tags: string[]
   time: string
   video: string
   title: string
@@ -46,6 +47,8 @@ type UpcomingSessionProps = {
 }
 
 const UpcomingSession: FC<UpcomingSessionProps> = ({ session }) => {
+    const linkToSession = "/sessions/" + session.id
+
   return (
     <div tw="bg-white w-full rounded-lg shadow-md p-4 md:p-8 mb-2">
       <div tw="font-bold">{session.title}</div>
@@ -58,17 +61,24 @@ const UpcomingSession: FC<UpcomingSessionProps> = ({ session }) => {
         imgStyle={{ objectFit: "contain" }}
       ></Img>
       <div tw="py-2 text-justify">{session.description}</div>
-      <div tw="mt-4 pt-2 space-x-4 border-t-2 border-solid flex items-center justify-start flex-nowrap">
-        {session.links.map((link) => {
-          return (
-            <ThreeDBlueButton
-              tw="bg-gray-200 hover:bg-gray-500 text-blue-600 lg:text-xl"
-              href={link.url}
-            >
-              {link.label}
-            </ThreeDBlueButton>
-          )
-        })}
+      <div tw="mt-4 pt-2 space-x-4 border-t-2 border-solid">
+        <div tw="flex items-center mt-4 h-14 overflow-hidden ">
+          <div tw="flex flex-row flex-wrap w-3/5  ">
+            {session.tags.map((tag, index) => {
+              return (
+                <div
+                  key={index}
+                  tw="flex-shrink-0 leading-none text-xs tracking-tighter bg-gray-200 text-gray-700 rounded-md p-1 m-1"
+                >
+                  {tag}
+                </div>
+              )
+            })}
+          </div>
+          <div tw="w-2/5 flex">
+            <ThreeDBlueButton tw="flex-shrink-0" to={linkToSession}>More info</ThreeDBlueButton>
+          </div>
+        </div>
       </div>
     </div>
   )

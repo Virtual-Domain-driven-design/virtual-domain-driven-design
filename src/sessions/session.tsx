@@ -1,7 +1,8 @@
 import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import React, { FC } from "react"
 import "twin.macro"
-import VideoEmbed from "./../components/video-embed"
+import ThreeDBlueButton from "../components/core/three-d-blue-button"
 
 export const session = graphql`
   fragment session on ContentYaml {
@@ -45,32 +46,38 @@ type SessionProps = {
 }
 
 const Session: FC<SessionProps> = ({ session }) => {
+  const linkToSession = "/sessions/" + session.id
   return (
-    <div tw="bg-white w-96 rounded-lg shadow-md p-2 m-2 flex flex-col">
-      <div tw="text-sm text-gray-600">{session.date}</div>
-      <VideoEmbed title={session.title} video={session.video} />
-      <a
-        tw="text-sm text-left font-bold text-blue-600 hover:cursor-pointer hover:text-blue-400"
-        href={session.video}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {session.title}
-      </a>
-      <div tw="px-1 w-full flex flex-row flex-wrap">
-        <div tw="flex-shrink-0 leading-none text-xs tracking-tighter bg-blue-700 text-white rounded-md p-1 m-1">
-          Level: {session.level}
+    <div tw="md:flex shadow-lg mx-6 md:mx-auto my-4 max-w-lg lg:max-w-2xl h-96 md:h-64">
+      <Img
+        tw="h-full w-full md:w-1/3 object-cover rounded-lg rounded-r-none h-2/5 md:h-64"
+        fluid={session.img.childImageSharp.fluid}
+        alt="bag"
+      />
+      <div tw="w-full md:w-2/3 px-4 py-4 bg-white rounded-lg h-3/5 md:h-64">
+          <h2 tw="text-base md:text-xl text-gray-800 font-medium mr-auto">
+            {session.title}
+          </h2>
+        <p tw="text-xs md:text-sm text-gray-700 mt-4 break-all line-clamp-3 lg:line-clamp-4">
+          {session.description}
+        </p>
+        <div tw="flex items-center mt-4 h-14 overflow-hidden">
+          <div tw="flex flex-row flex-wrap w-3/5  ">
+            {session.tags.map((tag, index) => {
+              return (
+                <div
+                  key={index}
+                  tw="flex-shrink-0 leading-none text-xs tracking-tighter bg-gray-200 text-gray-700 rounded-md p-1 m-1"
+                >
+                  {tag}
+                </div>
+              )
+            })}
+          </div>
+          <div tw="w-2/5 flex">
+            <ThreeDBlueButton tw="flex-shrink-0 " to={linkToSession}>More info</ThreeDBlueButton>
+          </div>
         </div>
-        {session.tags.map((tag, index) => {
-          return (
-            <div
-              key={index}
-              tw="flex-shrink-0 leading-none text-xs tracking-tighter bg-gray-200 text-gray-700 rounded-md p-1 m-1"
-            >
-              {tag}
-            </div>
-          )
-        })}
       </div>
     </div>
   )

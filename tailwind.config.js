@@ -28,5 +28,8 @@ module.exports = {
     overflow: ["responsive", "hover", "group-hover"],
     visibility: ["responsive", "group-hover"],
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/line-clamp"),
+  ],
 }

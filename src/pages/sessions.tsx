@@ -4,14 +4,14 @@ import React, { FC, useState } from "react"
 import tw from "twin.macro"
 
 import Layout from "../templates/layout"
-import Session, { SessionContent } from "../learning-ddd/learning-session-card"
+import Session, { SessionContent } from "../sessions/session"
 import SEO from "../components/seo"
 import ThreeDBlueButton from "./../components/core/three-d-blue-button"
 import UpcomingSession, {
   UpcomingSessionContent,
 } from "../sessions/upcoming-session"
 
-const initialLengthSize = 15
+const initialLengthSize = 10
 
 type UpcomingSessionProps = {
   sessions: UpcomingSessionContent[]
@@ -68,7 +68,7 @@ const PastSessions: FC<PastSessionProps> = ({ allSessions }) => {
         Past Sessions
       </h2>
       <div tw="w-11/12 md:w-5/6">
-        <div tw="flex items-stretch justify-center flex-wrap">
+        <div tw="flex flex-wrap justify-center">
           {sessions.map((session, index) => {
             return <Session key={index} session={session} />
           })}
