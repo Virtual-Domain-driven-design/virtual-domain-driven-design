@@ -54,20 +54,23 @@ const Session: FC<SessionProps> = ({ session }) => {
         fluid={session.img.childImageSharp.fluid}
         alt="bag"
       />
-      <div tw="w-full md:w-2/3 px-4 py-4 bg-white rounded-lg h-3/5 md:h-64">
-          <h2 tw="text-base md:text-xl text-gray-800 font-medium mr-auto">
-            {session.title}
-          </h2>
+      <div tw="w-full md:w-2/3 px-4 py-2 bg-white rounded-lg h-3/5 md:h-64">
+        <h2 tw="text-base md:text-xl text-gray-800 font-medium mr-auto">
+          {session.title}
+        </h2>
         <p tw="text-xs md:text-sm text-gray-700 mt-4 break-all line-clamp-3 lg:line-clamp-4">
           {session.description}
         </p>
-        <div tw="flex items-center mt-4 h-14 overflow-hidden">
-          <div tw="flex flex-row flex-wrap w-3/5  ">
+        <div tw="flex items-center mt-2 mb-2 h-14 overflow-hidden">
+          <div tw="flex flex-wrap w-3/5 h-14">
+            <div tw="flex-shrink-0 leading-none text-xs bg-blue-700 text-white rounded-md p-1 m-1 h-6">
+              Level: {session.level}
+            </div>
             {session.tags.map((tag, index) => {
               return (
                 <div
                   key={index}
-                  tw="flex-shrink-0 leading-none text-xs tracking-tighter bg-gray-200 text-gray-700 rounded-md p-1 m-1"
+                  tw="flex-shrink-0 leading-none text-xs bg-gray-200 text-gray-700 rounded-md p-1 m-1 h-6"
                 >
                   {tag}
                 </div>
@@ -75,7 +78,9 @@ const Session: FC<SessionProps> = ({ session }) => {
             })}
           </div>
           <div tw="w-2/5 flex">
-            <ThreeDBlueButton tw="flex-shrink-0 " to={linkToSession}>More info</ThreeDBlueButton>
+            <ThreeDBlueButton tw="flex-shrink-0 " to={linkToSession}>
+              More info
+            </ThreeDBlueButton>
           </div>
         </div>
       </div>

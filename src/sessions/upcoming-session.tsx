@@ -35,6 +35,7 @@ export type UpcomingSessionContent = {
   date: string
   description: string
   img: any
+  level: string
   links: SessionLink[]
   tags: string[]
   time: string
@@ -47,7 +48,7 @@ type UpcomingSessionProps = {
 }
 
 const UpcomingSession: FC<UpcomingSessionProps> = ({ session }) => {
-    const linkToSession = "/sessions/" + session.id
+  const linkToSession = "/sessions/" + session.id
 
   return (
     <div tw="bg-white w-full rounded-lg shadow-md p-4 md:p-8 mb-2">
@@ -64,6 +65,9 @@ const UpcomingSession: FC<UpcomingSessionProps> = ({ session }) => {
       <div tw="mt-4 pt-2 space-x-4 border-t-2 border-solid">
         <div tw="flex items-center mt-4 h-14 overflow-hidden ">
           <div tw="flex flex-row flex-wrap w-3/5  ">
+            <div tw="flex-shrink-0 leading-none text-xs tracking-tighter bg-blue-700 text-white rounded-md p-1 m-1">
+              Level: {session.level}
+            </div>
             {session.tags.map((tag, index) => {
               return (
                 <div
@@ -76,7 +80,9 @@ const UpcomingSession: FC<UpcomingSessionProps> = ({ session }) => {
             })}
           </div>
           <div tw="w-2/5 flex">
-            <ThreeDBlueButton tw="flex-shrink-0" to={linkToSession}>More info</ThreeDBlueButton>
+            <ThreeDBlueButton tw="flex-shrink-0" to={linkToSession}>
+              More info
+            </ThreeDBlueButton>
           </div>
         </div>
       </div>

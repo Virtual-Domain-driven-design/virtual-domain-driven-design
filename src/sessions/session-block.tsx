@@ -17,7 +17,7 @@ const SessionBlock = (sessionBlockProps: SessionBlockProps) => {
   return (
     <div tw="flex xl:flex-row flex-col items-center lg:w-2/3 xl:m-4 m-2">
       <div tw="xl:w-2/3 w-5/6 xl:m-4 xl:p-8">
-        <div tw="text-center xl:w-4/5 shadow-xl rounded-xl p-4 m-4">
+        <div tw="xl:w-4/5 shadow-xl rounded-xl p-4 m-4">
           {sessionBlockProps.description}
         </div>
       </div>
