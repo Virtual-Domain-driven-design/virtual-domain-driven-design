@@ -13,7 +13,7 @@
 #       url: ""
 upcomingSessions:
   - id: "66"
-    title: "[Live voding] Legacy live coding with Dr. Carola Lilienthal"
+    title: "[Live coding] Legacy live coding with Dr. Carola Lilienthal"
     date: "23th March, 2021"
     time: "18:00 CET"
     img: ../images/sessions/session-66.jpeg
