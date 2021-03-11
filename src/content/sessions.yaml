@@ -10,6 +10,26 @@
 #   tags:
 #     - ""
 sessions:
+  - id: "65"
+    title: "[Fireside chat] Udi Dahan - Ask me Anything"
+    date: "10th March, 2021"
+    time: "16:45 CET"
+    img: ../images/sessions/session-65.jpeg
+    video: "https://www.youtube.com/embed/c07zWlLBvVg"
+    podcast: "https://oembed.libsyn.com/embed?item_id=18280454"
+    level: intermediate
+    description:
+      "Join us in this special fireside chat with Udi Dahan answering all your questions spanning from Domain-Driven Design, Software Architecture from SOA, event-driven, CQRS, Large-scale distributed systems, Saga Patterns, Event sourcing, microservices and anything in between. Ask your questions upfront or during the session!
+
+      You can also already engage and see the questions that are already asked at this Twitter thread: https://twitter.com/UdiDahan/status/1349302917648568321
+      "
+    tags:
+      - event-driven architecture
+      - cqrs/es
+      - event sourcing
+      - long running process
+      - process manager
+      - bounded context
   - id: "64"
     title: "[Panel] Fostering autonomous teams with proper leadership culture"
     date: "23nd Feb, 2021"
