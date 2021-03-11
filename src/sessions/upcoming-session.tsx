@@ -57,9 +57,8 @@ const UpcomingSession: FC<UpcomingSessionProps> = ({ session }) => {
         {session.date} - {session.time}
       </div>
       <Img
-        tw="w-full object-cover"
+        tw="md:h-96 h-64 w-full object-cover"
         fluid={session.img.childImageSharp.fluid}
-        imgStyle={{ objectFit: "contain" }}
       ></Img>
       <div tw="py-2 text-justify">{session.description}</div>
       <div tw="mt-4 pt-2 space-x-4 border-t-2 border-solid">
