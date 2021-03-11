@@ -29,9 +29,9 @@ const VDDDInfo: FC = ({ data }) => {
       <div tw="flex flex-row space-x-4">
         <ThreeDBlueButton
           tw="lg:text-lg"
-          href="https://sessionize.com/virtual-ddd-meetup"
+          href="https://feedback.userreport.com/a15e4e61-2323-40a1-90b4-1267e010e35c"
         >
-          Propose a Meetup
+          Call for Speakers
         </ThreeDBlueButton>
         <ThreeDBlueButton
           tw="lg:text-lg"
