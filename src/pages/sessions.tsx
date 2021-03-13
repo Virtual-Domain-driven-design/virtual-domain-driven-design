@@ -116,7 +116,7 @@ const Sessions: FC = () => {
         title="Virtual Domain-Driven Design meetups and sessions"
         description="An online community and meetup for Domain-Driven Design"
         keywords="Domain-Driven Design,Software Architecture,meetup"
-        image={upcomingSessions[0].img}
+        image={upcomingSessions[0].img.publicURL}
       />
       <div
         tw="bg-gray-100 flex flex-col items-center justify-center"

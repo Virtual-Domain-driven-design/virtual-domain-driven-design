@@ -51,7 +51,7 @@ const SessionLayout = ({ pageContext, data }) => {
   return (
     <Layout>
       <SEO
-        image={session.img}
+        image={session.img.publicURL}
         title={session.title}
         description={session.description}
         keywords={keywords}

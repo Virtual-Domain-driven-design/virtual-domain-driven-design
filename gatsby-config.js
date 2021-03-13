@@ -6,7 +6,7 @@ module.exports = {
     description: `Learn, explore and collaborate with the Domain-Driven Design community`,
     url: "https://virtualddd.com",
     twitterUsername: "@virtualddd",
-    image: "/images/kandddsinky.jpg",
+    image: "/kandddinsky.jpg",
     defaultKeywords:
       "Domain-Driven Design, Domain Driven Design, Behaviour-Driven Development, Software Architecture, Socio-technical, Sociotechnical, Socio-technical architecture, Sociotechnical architecture, Microservices, cqrs/es, evenstorming, event storming, strategic design, organisational design",
   },
