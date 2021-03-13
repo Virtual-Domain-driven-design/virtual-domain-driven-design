@@ -1,10 +1,10 @@
 import React, { FC } from "react"
 
-import Hero from "../components/hero"
-import Conferences from "../components/conferences"
-import Communities from "../components/communities"
-import Sponsors from "../components/sponsors"
-import Organisers from "../components/organisers"
+import Hero from "../home/hero"
+import Conferences from "../home/conferences"
+import Communities from "../home/communities"
+import Sponsors from "../home/sponsors"
+import Organisers from "../home/organisers"
 import Layout from "../templates/layout"
 
 const Index: FC = () => {

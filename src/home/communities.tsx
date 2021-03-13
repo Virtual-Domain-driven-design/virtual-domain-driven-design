@@ -2,7 +2,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import React, { FC } from "react"
 import "twin.macro"
 
-import FloatingActionCard from "./core/floating-action-card"
+import FloatingActionCard from "../components/floating-action-card"
 
 const Community: FC = ({ index, community }) => {
   return (

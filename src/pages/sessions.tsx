@@ -6,7 +6,7 @@ import tw from "twin.macro"
 import Layout from "../templates/layout"
 import Session, { SessionContent } from "../sessions/session"
 import SEO from "../components/seo"
-import ThreeDBlueButton from "./../components/core/three-d-blue-button"
+import ThreeDBlueButton from "../components/three-d-blue-button"
 import UpcomingSession, {
   UpcomingSessionContent,
 } from "../sessions/upcoming-session"

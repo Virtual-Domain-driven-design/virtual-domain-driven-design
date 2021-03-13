@@ -1,7 +1,7 @@
 import { graphql, useStaticQuery } from "gatsby"
 import React, { FC, useState } from "react"
 
-import ContentGallery from "./core/content-gallery"
+import ContentGallery from "../components/content-gallery"
 import Podcast, {PodcastContent} from "./podcast"
 
 type PodcastsOverviewProps = {

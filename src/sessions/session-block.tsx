@@ -2,7 +2,7 @@ import React from "react"
 import tw from "twin.macro"
 
 import SessionLink from "./../sessions/upcoming-session"
-import ThreeDBlueButton from "../components/core/three-d-blue-button"
+import ThreeDBlueButton from "../components/three-d-blue-button"
 import VideoEmbed from "./../components/video-embed"
 
 type SessionBlockProps = {

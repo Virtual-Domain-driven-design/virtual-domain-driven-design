@@ -4,7 +4,7 @@ import tw from "twin.macro"
 
 import Layout from "../../templates/layout"
 import SEO from "../../components/seo"
-import Video, { VideoContent } from "../../components/video"
+import Video, { VideoContent } from "../../learning-ddd/video"
 
 const Videos: FC = () => {
   const [videosLength, setVideosLength] = useState(15)

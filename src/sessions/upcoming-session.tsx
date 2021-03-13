@@ -2,7 +2,7 @@ import Img from "gatsby-image"
 import React, { FC } from "react"
 import "twin.macro"
 
-import ThreeDBlueButton from "../components/core/three-d-blue-button"
+import ThreeDBlueButton from "../components/three-d-blue-button"
 import { graphql } from "gatsby"
 
 export const upcomingSession = graphql`

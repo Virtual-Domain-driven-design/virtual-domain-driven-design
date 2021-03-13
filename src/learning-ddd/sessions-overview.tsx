@@ -1,7 +1,7 @@
 import { graphql, useStaticQuery } from "gatsby"
 import React, { FC, useState } from "react"
 
-import ContentGallery from "../components/core/content-gallery"
+import ContentGallery from "../components/content-gallery"
 import { ContentLevel, SessionContent } from "../sessions/session"
 import Session from "./learning-session-card"
 

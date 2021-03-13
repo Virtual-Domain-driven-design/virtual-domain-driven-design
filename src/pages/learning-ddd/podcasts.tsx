@@ -3,8 +3,8 @@ import React, { FC, useState } from "react"
 import tw from "twin.macro"
 
 import Layout from "../../templates/layout"
-import Podcast, { PodcastContent } from "../../components/podcast"
-import PodcastPlatforms from "../../components/podcast-platforms"
+import Podcast, { PodcastContent } from "../../learning-ddd/podcast"
+import PodcastPlatforms from "../../learning-ddd/podcast-platforms"
 import SEO from "../../components/seo"
 
 const initialLengthSize = 15

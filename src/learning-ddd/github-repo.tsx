@@ -2,7 +2,7 @@ import Img from "gatsby-image"
 import React, { FC } from "react"
 import "twin.macro"
 
-import FloatingActionCard from "./core/floating-action-card"
+import FloatingActionCard from "../components/floating-action-card"
 
 export interface GithubRepoContent {
   excerpt: string

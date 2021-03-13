@@ -1,7 +1,7 @@
 import { graphql, useStaticQuery } from "gatsby"
 import React, { FC, useState } from "react"
 
-import ContentGallery from "./core/content-gallery"
+import ContentGallery from "../components/content-gallery"
 import GithubRepo, { GithubRepoContent } from "./github-repo"
 
 interface GithubRepoProps {

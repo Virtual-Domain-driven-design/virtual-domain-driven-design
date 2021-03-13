@@ -1,8 +1,8 @@
 import { graphql, useStaticQuery } from "gatsby"
 import React, { FC, useState } from "react"
 
-import ContentGallery from "./core/content-gallery"
-import Video, {VideoContent} from "./video"
+import ContentGallery from "../components/content-gallery"
+import Video, { VideoContent } from "./video"
 
 interface VideosOverviewProps {
   levelFilter: string[]

@@ -2,7 +2,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import React, { FC, useState } from "react"
 
 import Paper, { PaperContent } from "./paper"
-import ContentGallery from "./core/content-gallery"
+import ContentGallery from "../components/content-gallery"
 
 interface PapersOverviewProps {
   levelFilter: string[]

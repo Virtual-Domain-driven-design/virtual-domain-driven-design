@@ -1,6 +1,6 @@
 import React, { FC } from "react"
 import "twin.macro"
-import VideoEmbed from "./video-embed"
+import VideoEmbed from "../components/video-embed"
 
 export type VideoContent = {
   title: string

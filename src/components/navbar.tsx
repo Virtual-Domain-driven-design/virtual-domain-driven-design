@@ -4,7 +4,7 @@ import React, { FC, useState } from "react"
 import tw from "twin.macro"
 
 import MeetupSvg from "../images/logo/meetup.svg"
-import SlackLinkedButton from "./core/slack-linked-button"
+import SlackLinkedButton from "./slack-linked-button"
 
 // TODO: NEEDS MAJOR REFACTORING AND DYNAMIC CONFIG, this is UGLY but it works =). Problem I face now is the meetup SVG logo which cannot be imported from graphql dynamicly like other images can (See books for an example)
 

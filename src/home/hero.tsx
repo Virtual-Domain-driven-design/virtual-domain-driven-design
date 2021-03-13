@@ -4,8 +4,8 @@ import { graphql, useStaticQuery } from "gatsby"
 import React, { FC } from "react"
 import tw from "twin.macro"
 
-import OutlineBlueButton from "./core/outline-blue-button"
-import ThreeDBlueButton from "./core/three-d-blue-button"
+import OutlineBlueButton from "../components/outline-blue-button"
+import ThreeDBlueButton from "../components/three-d-blue-button"
 import UpcomingSession from "../sessions/upcoming-session"
 
 // @ts-ignore

@@ -1,7 +1,7 @@
 import React, { FC } from "react"
 import "twin.macro"
 
-import FloatingActionCard from "./core/floating-action-card"
+import FloatingActionCard from "../components/floating-action-card"
 
 export interface PaperContent {
   authors: string
