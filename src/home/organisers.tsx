@@ -3,7 +3,7 @@ import Img from "gatsby-image"
 import React, { FC } from "react"
 import tw from "twin.macro"
 
-interface OrganiserProps {
+type OrganiserProps = {
   name: string
   image: any
   tagline: string
@@ -30,7 +30,7 @@ const Organiser: FC<OrganiserProps> = ({
       <div tw="flex flex-col items-center justify-start">
         <div tw="text-gray-800 text-sm text-center">{name}</div>
         <div tw="text-gray-700 text-xs italic text-center">{tagline}</div>
-        <Img tw="my-2 w-64 h-64 object-cover" fluid={image}></Img>
+        <Img tw="my-2 w-64 h-64 object-cover" fluid={image}/>
       </div>
       <div tw="my-1 w-full flex items-center justify-around">
         <a
@@ -219,6 +219,7 @@ const Organisers: FC = () => {
             tagline="Coding Architect"
             website="https://yellow-brick-code.org/"
             twitter="YellowBrickC"
+            linkedin="in/christina-hirth-yellowbrickcode?locale=en_US"
             data={data}
           ></Organiser>
         </div>
