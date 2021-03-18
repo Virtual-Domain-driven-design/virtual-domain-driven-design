@@ -1,4 +1,3 @@
-import { graphql } from "gatsby"
 import React from "react"
 import "twin.macro"
 import VideoEmbed from "../components/video-embed"

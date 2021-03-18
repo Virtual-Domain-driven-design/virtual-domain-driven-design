@@ -1,11 +1,11 @@
 # Virtual Domain-Driven Design
 
-An online Domain-Driven Design meetup and conference for the community by the community. Help us develop this world wide community further!
+An online Domain-Driven Design meetup and conference for the community by the community. Help us develop this worldwide community further!
 We are continuously updating the website and functionality, if you have any ideas or bugs you want to share please feel free to add a ticket!
 
 ## Contribute
 
-There are two way to contribute:
+There are two ways to contribute:
 
 - directly through github, creating a fork and create a PR.
 - If you don't want all the Forking and PR hassle, all you need is a github account and go to the Netlify CMS on [the website](https://virtualddd.com/admin/).
@@ -66,19 +66,20 @@ Fill in your own based on the following template:
     - collaborative-modelling
 ```
 
+### Note for no upcoming session:
+
+Remove the old upcoming session and replace the content of the file with
+```yaml
+- id: "none"
+  img: ../images/kandddinsky.jpg
+```
+
+or some existing image. Important is that the id is not a number but also not empty
+
 ## Help develop the website
 
-We love community contribution and we build Virtual Domain-Driven Design with Gatsby to make it and flexible and hopefully easy enough so that people can contribute on building the website.
-The following Gatsby plugins are already configured, but don't shy away from adding any of your own:
-
-- gatsby-plugin-typescript
-- gatsby-plugin-postcss, gatsby-plugin-purgecss with Tailwind
-- gatsby-plugin-mdx
-- gatsby-plugin-react-svg
-- gatsby-plugin-netlify-cms
-- gatsby-source-git
-- gatsby-plugin-offline
-- gatsby-plugin-breadcrumb (Not used yet)
+We love community contribution so we built the site Virtual Domain-Driven Design with Gatsby to make it flexible and hopefully easy enough so that people can contribute on building the website.
+There are a lot of Gatsby plugins already used, but don't shy away from adding any of your own.
 
 Also included is frontawesome:
 
@@ -90,8 +91,7 @@ Also included is frontawesome:
 Requirements to build:
 
 - Node
-- NPM
-- Yarn
+- NPM or Yarn
 
 ### Start developing
 
@@ -104,9 +104,26 @@ npm i --global gatsby-cli
 
 Then do a Yarn install and Gatbsy develop to get you started
 
-```
+```sh
 yarn
 gatsby develop
 ```
+or
 
-You should be able to go to [localhost:8000](https://localhost:8000)
+```sh
+npm install
+gatsby develop
+# or
+npm run develop
+```
+
+You should be able to go to [localhost:8000](https://localhost:8000) to see the site or to [http://localhost:8000/_graphql](http://localhost:8000/_graphql) to explore the graphQl scheme
+
+Before you commit your changes build the project
+
+```sh
+gatsby build
+# or
+npm run build
+```
+You will see graphql errors with a hint where they occur if any content is incorrect.

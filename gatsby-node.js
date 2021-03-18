@@ -3,7 +3,6 @@
  *
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
-
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
   const result = await graphql(`
@@ -40,21 +39,14 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // Create a page per session or upcomingsession
   result.data.allContentYaml.nodes
     .filter(({ upcomingSessions, sessions }) => upcomingSessions || sessions)
-    .map(({ upcomingSessions, sessions }) => {
-      if (upcomingSessions) {
-        return upcomingSessions
-      }
-      if (sessions) {
-        return sessions
-      }
-    })
+    .map(({ upcomingSessions, sessions }) => upcomingSessions || sessions)
     .flat()
     .forEach(({ id }) => {
-      console.log("Creating page: /sessions/" + id)
+      console.log(`Creating page: /sessions/${id}`)
       createPage({
-        path: "/sessions/" + id,
+        path: `/sessions/${id}`,
         component: require.resolve(`./src/templates/session-layout.tsx`),
-        context: { id: id },
+        context: { id },
       })
     })
 
@@ -78,9 +70,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       }
       //12 start to remove github-repo-
       const pathName = subPath.substring(12, indexOfSlash)
-      console.log("creating page: " + "/learning-ddd/" + pathName)
+      console.log(`creating page: /learning-ddd/${pathName}`)
       createPage({
-        path: "/learning-ddd/" + pathName,
+        path: `/learning-ddd/${pathName}`,
         component: require.resolve(`./src/templates/github-repo-layout.tsx`),
         context: { id: node.id },
       })
@@ -94,12 +86,87 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       const path = subPath.substring(0, indexOfLastSlash + 1)
       const name = subPath.substring(indexOfLastSlash + 1, subPath.length - 3)
 
-      console.log("creating page: " + "/patterns-and-heuristics/" + path + name)
+      console.log(`creating page: /patterns-and-heuristics/${path}${name}`)
       createPage({
-        path: "/patterns-and-heuristics/" + path + name,
+        path: `/patterns-and-heuristics/${path}${name}`,
         component: require.resolve(`./src/templates/heuristic-layout.tsx`),
         context: { id: node.id, name },
       })
     }
   })
+}
+
+const stringListResolver = (fieldName) => (source) => {
+  if (!source[fieldName] || (Array.isArray(source[fieldName]) && !source[fieldName][0])) {
+    return ["uncategorized"]
+  }
+  return source[fieldName]
+}
+
+const stringResolver = (fieldName) => (source) => !source[fieldName] ? "-" : source[fieldName]
+
+
+exports.createSchemaCustomization = ({ actions, schema }) => {
+  const { createTypes } = actions
+  const typeDefs = [
+    "type ContentYamlUpcomingSessions implements Node",
+    schema.buildObjectType({
+      name: "ContentYamlUpcomingSessions",
+      fields: {
+        id: {
+          type: "String!",
+          resolve: stringResolver("id")
+        },
+        title: {
+          type: "String!",
+          resolve: stringResolver("title")
+        },
+        date: {
+          type: "String!",
+          resolve: stringResolver("date")
+        },
+        time: {
+          type: "String!",
+          resolve: stringResolver("time")
+        },
+        video:{
+          type: "String!",
+          resolve: stringResolver("video")
+        },
+        tags: {
+          type: "[String!]",
+          resolve: stringListResolver("tags"),
+        },
+        level: {
+          type: "String!",
+          resolve: stringResolver("level"),
+        },
+        description: {
+          type: "String!",
+          resolve: stringResolver("description")
+        },
+        links: {
+          type: "[ContentYamlUpcomingSessionsLinks]",
+          resolve: source => {
+            return !source.links ? [] : source.links
+          }
+        }
+      },
+    }),
+    "type ContentYamlUpcomingSessionsLinks",
+    schema.buildObjectType({
+      name: "ContentYamlUpcomingSessionsLinks",
+      fields: {
+        label:{
+          type: "String!",
+          resolve: stringResolver("label")
+        },
+        url:{
+          type: "String!",
+          resolve: stringResolver("url")
+        }
+      }
+    })
+  ]
+  createTypes(typeDefs)
 }

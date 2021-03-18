@@ -11,6 +11,12 @@
 #   links:
 #     - label: ""
 #       url: ""
+
+# fallback:
+#upcomingSessions:
+#- id: "none"
+#  img: ../images/kandddinsky.jpg
+
 upcomingSessions:
   - id: "66"
     title: "[Live coding] Legacy live coding with Dr. Carola Lilienthal"

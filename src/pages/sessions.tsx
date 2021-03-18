@@ -1,57 +1,33 @@
 import { graphql, useStaticQuery } from "gatsby"
-import NoUpcomingImg from "../images/no_upcoming.svg"
 import React, { FC, useState } from "react"
 import tw from "twin.macro"
 
 import Layout from "../templates/layout"
 import Session, { SessionContent } from "../sessions/session"
 import SEO from "../components/seo"
-import ThreeDBlueButton from "../components/three-d-blue-button"
 import UpcomingSession, {
   UpcomingSessionContent,
 } from "../sessions/upcoming-session"
-
+import NoUpcoming from "../sessions/no-upcoming"
 const initialLengthSize = 10
 
 type UpcomingSessionProps = {
   sessions: UpcomingSessionContent[]
 }
 
-const UpcomingSessions: FC<UpcomingSessionProps> = ({ sessions }) => {
-  if (sessions.length > 0 && sessions[0].title) {
-    return (
-      <div tw="my-8 w-full lg:w-4/5 lg:w-2/3 xl:w-1/2">
-        <h2 tw="my-2 w-4/5 lg:w-2/3 xl:w-1/2 text-blue-800 text-3xl">
-          Upcoming Sessions
-        </h2>
-        <div tw="flex flex-col items-center justify-start">
-          {sessions.map((session, index) => {
-            return (
-              <UpcomingSession key={index} session={session}></UpcomingSession>
-            )
-          })}
-        </div>
-      </div>
-    )
-  }
-  return (
-    <div tw="my-8 w-4/5 lg:w-2/3 xl:w-1/2">
-      <h2 tw="my-2 w-4/5 lg:w-2/3 xl:w-1/2 text-blue-800 text-3xl">
-        Upcoming Sessions
-      </h2>
-      <div tw="flex flex-col items-center justify-start">
-        <NoUpcomingImg tw="h-64 mb-6" />
-        <div tw="my-4">
-          More sessions are coming to you eventually consistent...
-        </div>
-        <ThreeDBlueButton href="https://sessionize.com/virtual-ddd-meetup">
-          {" "}
-          Propose a session
-        </ThreeDBlueButton>
-      </div>
+const upcomingSessionAvailable = (sessions:UpcomingSessionContent[]) => sessions.length > 0 && sessions.filter(s => parseInt(s.id, 10) > 0).length > 0
+
+const UpcomingSessions: FC<UpcomingSessionProps> = ({ sessions }) =>
+  upcomingSessionAvailable(sessions) ? (<div tw="my-8 w-full lg:w-4/5 lg:w-2/3 xl:w-1/2">
+    <h2 tw="my-2 w-4/5 lg:w-2/3 xl:w-1/2 text-blue-800 text-3xl">Upcoming Sessions</h2>
+    <div tw="flex flex-col items-center justify-start">
+      {
+        sessions.map((session, index) =>
+          (
+            <UpcomingSession key={parseInt(session.id, 10)} session={session}/>
+          ))}
     </div>
-  )
-}
+  </div>) : (<NoUpcoming />)
 
 type PastSessionProps = {
   allSessions: SessionContent[]
