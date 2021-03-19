@@ -27,7 +27,7 @@ describe("The session pages", () => {
     }
   ]
 
-  it("should filter out null vales", () => {
+  it("should filter out null values", () => {
       sessionPages({ nodes: nodesWithSessions }, createPage, reporter)
 
       // expect(createPage).toHaveBeenCalledTimes(4)
