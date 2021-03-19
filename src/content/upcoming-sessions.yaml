@@ -12,7 +12,7 @@
 #     - label: ""
 #       url: ""
 
-# fallback:
+# fallback with non-numeric id and a real image:
 #upcomingSessions:
 #- id: "none"
 #  img: ../images/kandddinsky.jpg
