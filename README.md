@@ -1,4 +1,9 @@
+![banner](src/images/logo/vddd_logo_tp.png)
+
 # Virtual Domain-Driven Design
+[![Build Status](https://img.shields.io/github/workflow/status/Virtual-Domain-driven-design/virtual-domain-driven-design/CI)](https://github.com/Virtual-Domain-driven-design/virtual-domain-driven-design/actions)
+
+[comment]: <> ([![Coverage Status]&#40;https://coveralls.io/repos/github/Virtual-Domain-driven-design/virtual-domain-driven-design/badge.svg?branch=master&#41;]&#40;https://coveralls.io/github/Virtual-Domain-driven-design/virtual-domain-driven-design?branch=master&#41;)
 
 An online Domain-Driven Design meetup and conference for the community by the community. Help us develop this worldwide community further!
 We are continuously updating the website and functionality, if you have any ideas or bugs you want to share please feel free to add a ticket!
@@ -119,11 +124,54 @@ npm run develop
 
 You should be able to go to [localhost:8000](https://localhost:8000) to see the site or to [http://localhost:8000/_graphql](http://localhost:8000/_graphql) to explore the graphQl scheme
 
-Before you commit your changes build the project
+#### Test
+The tests are written with [jest](https://jestjs.io/) as Javascript (not TypeScript) No need to transpile them too. 
+
+Run the tests with `npm test`
+
+Development with TDD works like magic when using the watcher:
+```sh
+npm run test:watch
+```
+
+#### Pre-Commit
+Check the linting and build the project before you commit your changes
 
 ```sh
+npm run lint
+
+#and
 gatsby build
 # or
 npm run build
+
+# or as one command:
+npm run pre-commit
 ```
-You will see graphql errors with a hint where they occur if any content is incorrect.
+You will see linting or graphql errors with a description and advice to fix them if any content is incorrect.
+
+**The commit message** should contain the issue number and should be meaningful so that the commit can be found later, if necessary. 
+
+```git
+#33 Add a build job to the pipeline
+```
+
+#### Pre-Push
+
+Before pushing everything you should check if the packages are outdated and/or have security issues. Security warnings should not be ignored but fixed. Big leaps in versions should not be ignored but updated so that this task does not take to long and doesn't become risky.
+```sh
+# security checks:
+yarn audit
+
+# outdated packages
+yarn outdated
+```
+The commit message for these updates should be `Maintenance: package updates` so that later we can filter them eventually out when using semantic release
+
+
+#### Release
+TODO - define the corresponding workflow with a pipeline and versioning (maybe with [semantic-release](https://github.com/semantic-release/semantic-release))
+
+## Tasks
+ - create at least one test for every functionality
+ - include readme-badge for coverage
