@@ -14,8 +14,8 @@
 
 # fallback with non-numeric id and a real image:
 #upcomingSessions:
-#- id: "none"
-#  img: ../images/kandddinsky.jpg
+#  - id: "none"
+#    img: ../images/kandddinsky.jpg
 
 upcomingSessions:
   - id: "66"
