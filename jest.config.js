@@ -14,5 +14,5 @@ module.exports = {
   setupFiles: [`<rootDir>/loadershim.js`],
   collectCoverage    : true,
   coverageDirectory  : 'coverage',
-  coverageReporters  : ['json-summary', 'text', 'html'],
+  coverageReporters  : ['json-summary', 'lcov', 'html'],
 }

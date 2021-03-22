@@ -1,7 +1,7 @@
 ![banner](src/images/logo/vddd_logo_tp.png)
 
 # Virtual Domain-Driven Design
-[![Build Status](https://img.shields.io/github/workflow/status/Virtual-Domain-driven-design/virtual-domain-driven-design/CI)](https://github.com/Virtual-Domain-driven-design/virtual-domain-driven-design/actions)
+[![Build Status](https://github.com/Virtual-Domain-driven-design/virtual-domain-driven-design/actions/workflows/main.yml/badge.svg)](https://github.com/Virtual-Domain-driven-design/virtual-domain-driven-design/actions/workflows/main.yml)
 [![Coverage Status](https://coveralls.io/repos/github/Virtual-Domain-driven-design/virtual-domain-driven-design/badge.svg?branch=master)](https://coveralls.io/github/Virtual-Domain-driven-design/virtual-domain-driven-design?branch=master)
 
 An online Domain-Driven Design meetup and conference for the community by the community. Help us develop this worldwide community further!

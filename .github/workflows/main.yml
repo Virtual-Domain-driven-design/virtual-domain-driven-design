@@ -21,19 +21,34 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     - uses: actions/checkout@v2
-    - uses: actions/setup-node@v2
+
+    - name: Use Node.js 14.x
+      uses: actions/setup-node@v2
       with:
         node-version: '14'
-    - run: yarn
-    - run: yarn test
+
+    - name: Install and test
+      run: |
+        yarn
+        yarn test --  --coverage && coveralls < coverage/lcov.info
+
+    - name: Coveralls
+      uses: coverallsapp/github-action@master
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
 
   build:
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
-    - uses: actions/setup-node@v2
+
+    - name: Use Node.js 14.x
+      uses: actions/setup-node@v2
       with:
         node-version: '14'
-    - run: yarn
-    - run: yarn run build
+
+    - name: Install and build
+      run: |
+        yarn
+        yarn run build
