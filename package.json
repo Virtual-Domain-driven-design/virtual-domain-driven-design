@@ -2,7 +2,7 @@
   "name": "vddd-site",
   "private": false,
   "description": "Virtual DDD site",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Kenny Baas-Schwegler",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
