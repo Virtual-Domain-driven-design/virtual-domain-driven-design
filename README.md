@@ -2,8 +2,7 @@
 
 # Virtual Domain-Driven Design
 [![Build Status](https://img.shields.io/github/workflow/status/Virtual-Domain-driven-design/virtual-domain-driven-design/CI)](https://github.com/Virtual-Domain-driven-design/virtual-domain-driven-design/actions)
-
-[comment]: <> ([![Coverage Status]&#40;https://coveralls.io/repos/github/Virtual-Domain-driven-design/virtual-domain-driven-design/badge.svg?branch=master&#41;]&#40;https://coveralls.io/github/Virtual-Domain-driven-design/virtual-domain-driven-design?branch=master&#41;)
+[![Coverage Status](https://coveralls.io/repos/github/Virtual-Domain-driven-design/virtual-domain-driven-design/badge.svg?branch=master)](https://coveralls.io/github/Virtual-Domain-driven-design/virtual-domain-driven-design?branch=master)
 
 An online Domain-Driven Design meetup and conference for the community by the community. Help us develop this worldwide community further!
 We are continuously updating the website and functionality, if you have any ideas or bugs you want to share please feel free to add a ticket!
@@ -174,4 +173,4 @@ TODO - define the corresponding workflow with a pipeline and versioning (maybe w
 
 ## Tasks
  - create at least one test for every functionality
- - include readme-badge for coverage
+ - enable readme-badge for coverage

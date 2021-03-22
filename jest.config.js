@@ -12,4 +12,7 @@ module.exports = {
     __PATH_PREFIX__: ``,
   },
   setupFiles: [`<rootDir>/loadershim.js`],
+  collectCoverage    : true,
+  coverageDirectory  : 'coverage',
+  coverageReporters  : ['json-summary', 'text', 'html'],
 }

@@ -7,6 +7,7 @@
 const sessionPages = ({nodes}, createPage, reporter) => {
   nodes
     .filter(n => n.upcomingSessions !== null || n.sessions !== null)
+    // eslint-disable-next-line array-callback-return
     .map(({ upcomingSessions, sessions }) => {
       if(!!upcomingSessions) return upcomingSessions.map(session => session)
       if(!!sessions) return sessions.map(session => session)
@@ -16,7 +17,9 @@ const sessionPages = ({nodes}, createPage, reporter) => {
       reporter.info(`Creating page: /sessions/${id}`)
       createPage({
         path: `/sessions/${id}`,
-        component: require.resolve(`../templates/session-layout.tsx`),
+        component: id==='none' ?
+          require.resolve(`../templates/no-upcoming-layout.tsx`):
+          require.resolve(`../templates/session-layout.tsx`),
         context: { id },
       })
     })
