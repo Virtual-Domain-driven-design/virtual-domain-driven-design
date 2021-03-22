@@ -173,4 +173,4 @@ TODO - define the corresponding workflow with a pipeline and versioning (maybe w
 
 ## Tasks
  - create at least one test for every functionality
- - enable readme-badge for coverage
+ - enable readme-badge for coverage with https://github.com/luk-schweizer/jest-code-coverage-badge-action

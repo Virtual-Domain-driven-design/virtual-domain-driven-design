@@ -3,7 +3,7 @@
  *
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
-const { sessionPages, gitHubPages, heuristicPages } = require("./src/gatsby-node-api/pages")
+const { sessionPages, pagesFromMdx } = require("./src/gatsby-node-api/pages")
 const { getTypeDefs } = require("./src/gatsby-node-api/resolvers")
 
 
@@ -42,11 +42,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   const {data} = result
   sessionPages(data.allContentYaml, createPage, reporter)
-
-  result.data.allMdx.edges.forEach(({ node }) => {
-    gitHubPages(node, createPage, reporter)
-    heuristicPages(node, createPage, reporter)
-  })
+  pagesFromMdx(data.allMdx, createPage, reporter)
 }
 
 exports.createSchemaCustomization = ({ actions, schema }) => {

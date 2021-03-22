@@ -1,0 +1,464 @@
+{
+  "edges": [
+    {
+      "node": {
+        "id": "a968a5ee-d1ff-5821-aff9-bd7284921428",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/src/content/heuristics/design-heuristics/eventstorming-dont-fill-in-the-gaps.md",
+        "frontmatter": {
+          "title": "EventStorming: Don't fill in the gaps"
+        },
+        "slug": "heuristics/design-heuristics/eventstorming-dont-fill-in-the-gaps"
+      }
+    },
+    {
+      "node": {
+        "id": "0120c7eb-b769-5f70-b487-5340c0a1b717",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-ddd-crew-welcome-to-ddd/README.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "README"
+      }
+    },
+    {
+      "node": {
+        "id": "1caf20b2-6b7a-5a59-b32f-ba8f0e4fef32",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-ddd-crew-welcome-to-ddd/LICENCE.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "LICENCE"
+      }
+    },
+    {
+      "node": {
+        "id": "3170f0d4-df87-57df-8625-024e2ae7645f",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-ddd-crew-starter-modelling/LICENCE.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "LICENCE"
+      }
+    },
+    {
+      "node": {
+        "id": "a9b0e53e-b194-5eb4-ae20-f65c985c0af4",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-ddd-crew-starter-modelling/README.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "README"
+      }
+    },
+    {
+      "node": {
+        "id": "c949b11c-456b-5aac-be94-cd419be71afa",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-saturn2019-architecture-island-workshop/agenda.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "agenda"
+      }
+    },
+    {
+      "node": {
+        "id": "c470fa1a-eeaf-5116-94ac-1d31ca4431f1",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-saturn2019-architecture-island-workshop/README.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "README"
+      }
+    },
+    {
+      "node": {
+        "id": "1e54b625-0a5c-5e65-995f-34881b2c34c0",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-saturn2019-architecture-island-workshop/how-to-join.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "how-to-join"
+      }
+    },
+    {
+      "node": {
+        "id": "86159c07-d7ed-5d9f-a7ca-269bc9b99c2b",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-saturn2019-architecture-island-workshop/questions.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "questions"
+      }
+    },
+    {
+      "node": {
+        "id": "083bcf93-bdfa-5443-8734-982067ef523b",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-saturn2019-architecture-island-workshop/references.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "references"
+      }
+    },
+    {
+      "node": {
+        "id": "b2a05e2d-7dfe-5816-b603-cf3a900a8932",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-saturn2019-architecture-island-workshop/outcomes/README.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "outcomes/README"
+      }
+    },
+    {
+      "node": {
+        "id": "d5681ef1-84ca-54d0-b5f0-14aa58ef6284",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-saturn2019-architecture-island-workshop/outcomes/cards.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "outcomes/cards"
+      }
+    },
+    {
+      "node": {
+        "id": "2ad47e90-dc81-5bf5-81ed-5d6fcf575437",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-saturn2019-architecture-island-workshop/outcomes/open-discussion.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "outcomes/open-discussion"
+      }
+    },
+    {
+      "node": {
+        "id": "8c03b608-053f-5c83-afa9-fd1143e8ec57",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-saturn2019-architecture-island-workshop/outcomes/three-types-of-systems.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "outcomes/three-types-of-systems"
+      }
+    },
+    {
+      "node": {
+        "id": "bb68e52a-556f-5037-a30a-3fdb36d7637f",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-saturn2019-architecture-island-workshop/outcomes/what-do-you-want-to-get-from-the-workshop.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "outcomes/what-do-you-want-to-get-from-the-workshop"
+      }
+    },
+    {
+      "node": {
+        "id": "f180d5c5-e4d7-56ca-a714-5ebcf359adc1",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-saturn2019-architecture-island-workshop/positions-papers/Bryan-Osterkamp.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "positions-papers/Bryan-Osterkamp"
+      }
+    },
+    {
+      "node": {
+        "id": "55295196-1081-56d3-8b16-026d43cd80c1",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-saturn2019-architecture-island-workshop/positions-papers/George-Fairbanks.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "positions-papers/George-Fairbanks"
+      }
+    },
+    {
+      "node": {
+        "id": "7f2094a5-6b0e-52ed-8222-ecb13c876be8",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-saturn2019-architecture-island-workshop/positions-papers/Len-Bass.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "positions-papers/Len-Bass"
+      }
+    },
+    {
+      "node": {
+        "id": "3d558aac-c02a-5a08-b005-5ae5f29f28bc",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-saturn2019-architecture-island-workshop/positions-papers/Matthias-Kittner.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "positions-papers/Matthias-Kittner"
+      }
+    },
+    {
+      "node": {
+        "id": "c8ca1c56-e54b-56e5-9fdf-0d245586c302",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-saturn2019-architecture-island-workshop/positions-papers/README.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "positions-papers/README"
+      }
+    },
+    {
+      "node": {
+        "id": "bd23ef65-d173-50b8-9f82-04dea6fd708a",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-saturn2019-architecture-island-workshop/positions-papers/de_gooijer-software_quality_distributed_decisions.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "positions-papers/de_gooijer-software_quality_distributed_decisions"
+      }
+    },
+    {
+      "node": {
+        "id": "af179f8c-d517-5d93-8621-b81bad15875e",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-saturn2019-architecture-island-workshop/positions-papers/keeling-draft-taxonomy-of-architecture-design-knowledge.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "positions-papers/keeling-draft-taxonomy-of-architecture-design-knowledge"
+      }
+    },
+    {
+      "node": {
+        "id": "fd30b55e-4cd2-5a89-a2d9-1d055ada61c4",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-saturn2019-architecture-island-workshop/positions-papers/novakom-position_paper.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "positions-papers/novakom-position_paper"
+      }
+    },
+    {
+      "node": {
+        "id": "6acda9be-a37d-59c7-84a6-d453c8d6ee97",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-saturn2019-architecture-island-workshop/positions-papers/ruth-malan-position.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "positions-papers/ruth-malan-position"
+      }
+    },
+    {
+      "node": {
+        "id": "6290e87f-bed8-5f62-b2a5-c547e828468c",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-saturn2019-architecture-island-workshop/outcomes/images/README.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "outcomes/images/README"
+      }
+    },
+    {
+      "node": {
+        "id": "ad666773-eed0-5cac-b97c-c171f4ce6e84",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-ddd-crew-eventstorming-glossary-cheat-sheet/README.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "README"
+      }
+    },
+    {
+      "node": {
+        "id": "d7494ecb-4644-55b7-ae3c-2fd93bcd1c0b",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-ddd-crew-context-mapping/README.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "README"
+      }
+    },
+    {
+      "node": {
+        "id": "239a6194-74f9-5a74-a3ef-063ec21ad798",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-ddd-crew-context-mapping/LICENCE.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "LICENCE"
+      }
+    },
+    {
+      "node": {
+        "id": "ca18723c-d274-51d3-9603-e779c977244d",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-ddd-crew-core-domain-charts/LICENCE.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "LICENCE"
+      }
+    },
+    {
+      "node": {
+        "id": "9e51c558-c234-58e5-94ab-f9a44e7f9fa2",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-ddd-crew-core-domain-charts/README.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "README"
+      }
+    },
+    {
+      "node": {
+        "id": "54e54895-b4e6-590e-8b71-a9a293d57a42",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-ddd-crew-core-domain-charts/examples/first-to-market-core.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "examples/first-to-market-core"
+      }
+    },
+    {
+      "node": {
+        "id": "9b1cbf84-eb2c-519c-8007-4b54a6577873",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-ddd-crew-core-domain-charts/examples/pioneers-run-experiments.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "examples/pioneers-run-experiments"
+      }
+    },
+    {
+      "node": {
+        "id": "9589ee4b-febb-5783-8b66-5e7cb4b71bab",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-ddd-crew-core-domain-charts/docs/adr/0-template_adr.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "docs/adr/0-template_adr"
+      }
+    },
+    {
+      "node": {
+        "id": "bd806947-55b4-5789-a6d9-24e5848387d8",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-ddd-crew-core-domain-charts/resources/drawio-template/readme.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "resources/drawio-template/readme"
+      }
+    },
+    {
+      "node": {
+        "id": "78fa3bfc-3dfd-5c0a-bf44-b17b1c06bddd",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-ddd-crew-bounded-context-canvas/README.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "README"
+      }
+    },
+    {
+      "node": {
+        "id": "c41b086a-611f-5dc0-9121-a3b9db19a0e8",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-ddd-crew-bounded-context-canvas/LICENCE.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "LICENCE"
+      }
+    },
+    {
+      "node": {
+        "id": "c9456f4e-80ef-583a-984f-8fd3c703cb15",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-ddd-crew-bounded-context-canvas/resources/model-traits-worksheet-FR.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "resources/model-traits-worksheet-FR"
+      }
+    },
+    {
+      "node": {
+        "id": "ad545d73-3cb0-58c0-992c-a04a234a4fd5",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-ddd-crew-bounded-context-canvas/resources/model-traits-worksheet.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "resources/model-traits-worksheet"
+      }
+    },
+    {
+      "node": {
+        "id": "0a6ad038-b4bf-5dae-8689-d4191e9edd9b",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-ddd-crew-bounded-context-canvas/tools/drawio-svg-version/instructions.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "tools/drawio-svg-version/instructions"
+      }
+    },
+    {
+      "node": {
+        "id": "52adaef0-a54c-506c-9168-22fd6a9bedd5",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-ddd-crew-bounded-context-canvas/tools/html-version/instructions.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "tools/html-version/instructions"
+      }
+    },
+    {
+      "node": {
+        "id": "b4493c67-e207-5c9c-8b23-e90c1af69052",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-ddd-crew-virtual-modelling-template/LICENCE.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "LICENCE"
+      }
+    },
+    {
+      "node": {
+        "id": "3a37de0e-536d-58d6-9175-60e3450a7e0b",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-ddd-crew-virtual-modelling-template/README.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "README"
+      }
+    },
+    {
+      "node": {
+        "id": "de6880bc-e292-5994-b196-868389272ed3",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-ddd-crew-aggregate-design-canvas/README.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "README"
+      }
+    },
+    {
+      "node": {
+        "id": "b6727078-0892-518a-be93-0b38e856f7b0",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-ddd-crew-aggregate-design-canvas/LICENSE.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "LICENSE"
+      }
+    },
+    {
+      "node": {
+        "id": "95b3392e-75fe-5a07-b870-f78f8d2da93d",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-ddd-crew-domain-message-flow-modelling/README.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "README"
+      }
+    },
+    {
+      "node": {
+        "id": "903e3d94-df22-5ca3-8c4e-7e1ec97371d1",
+        "fileAbsolutePath": "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-ddd-crew-domain-message-flow-modelling/LICENCE.md",
+        "frontmatter": {
+          "title": ""
+        },
+        "slug": "LICENCE"
+      }
+    }
+  ]
+}
