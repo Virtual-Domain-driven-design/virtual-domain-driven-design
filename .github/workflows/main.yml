@@ -47,3 +47,11 @@ jobs:
       run: |
         yarn
         yarn run build
+  
+  deploy:
+    needs: [test, build]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger netlify build hook
+        run: curl -X POST -d {} ${{ secrets.NETLIFY_BUILD_HOOK }}
+
