@@ -1,4 +1,4 @@
-const { sessionPages, gitHubPages, heuristicPages, pagesFromMdx } = require("./pages")
+const { sessionPages, gitHubPages, heuristicPages, pagesFromMarkdown } = require("./pages")
 const samples = require("../../__mocks__/samples")
 
 const createPage = jest.fn()
@@ -72,7 +72,7 @@ describe("When the static pages are generated", () => {
     })
   })
 
-  describe("The creation of pages from mdx", () => {
+  describe("The creation of pages from markdown", () => {
     it("should generate heuristics and GitHub pages", () => {
       let heuristicPageCounter = 0
       let githubPageCounter = 0
@@ -81,7 +81,7 @@ describe("When the static pages are generated", () => {
         if(component.indexOf("github-repo-layout.tsx") > 0) githubPageCounter +=1
       })
 
-      pagesFromMdx(samples.allMdx, createPage, reporter)
+      pagesFromMarkdown(samples.allMdx, createPage, reporter)
       expect(createPage).toHaveBeenCalledTimes(38)
       expect(heuristicPageCounter).toEqual(1)
       expect(githubPageCounter).toEqual(37)
@@ -89,22 +89,43 @@ describe("When the static pages are generated", () => {
   })
 
   describe("The creation of the gitHub pages", () => {
+
     it("should filter out License files", () => {
       gitHubPages(samples.licenceMdxNode, createPage, reporter)
 
       expect(createPage).toHaveBeenCalledTimes(0)
     })
 
-    it("should recognize relevant files", () => {
+    it("should generate entry pages from README files", () => {
       gitHubPages(samples.readmeMdxNodes[0], createPage, reporter)
       gitHubPages(samples.readmeMdxNodes[1], createPage, reporter)
 
       expect(createPage).toHaveBeenCalledTimes(2)
+      expect(createPage).toHaveBeenCalledWith({
+        path:"/learning-ddd/ddd-crew-welcome-to-ddd",
+        component:expect.stringContaining("/templates/github-repo-layout.tsx"),
+        context: { id: samples.readmeMdxNodes[0].id }
+      })
+      expect(createPage).toHaveBeenCalledWith({
+        path:"/learning-ddd/saturn2019-architecture-island-workshop/outcomes",
+        component:expect.stringContaining("/templates/github-repo-layout.tsx"),
+        context: { id: samples.readmeMdxNodes[1].id }
+      })
+    })
+
+    it("should keep the name and the reference for non-readme files", () => {
+      gitHubPages(samples.nonRootMdxNode, createPage, reporter)
+
+      expect(createPage).toHaveBeenCalledWith({
+        path: "/learning-ddd/ddd-crew-bounded-context-canvas/tools/html-version/instructions.md",
+        component: expect.any(String),
+        context: { id: samples.nonRootMdxNode.id }
+      })
     })
   })
 
   describe("The creation of the heuristic pages", () => {
-
+    //Todo => test + functionality for the path
     it("should use the right path, template and context", () => {
       heuristicPages(samples.heuristicMdxNode, createPage, reporter)
       expect(createPage).toHaveBeenCalledWith({

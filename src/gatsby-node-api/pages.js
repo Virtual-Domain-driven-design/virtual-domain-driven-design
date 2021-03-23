@@ -27,6 +27,19 @@ const sessionPages = ({ nodes }, createPage, reporter) => {
       })
     })
 }
+
+/** Calculate the path to the generated MDX page. The path to README is considered as the base path
+ * all other .md in it's own full path +.md (because that is what is usually used in github repo's to link to other md's). Does not work for everything
+ * @param {string} absolutePath
+ * @return {string} basePath
+ */
+const getRepoPath = (absolutePath) => {
+  const indexOfGithubRepo = absolutePath.indexOf("github-repo")
+  const replaceValues = new RegExp(/(github-repo-|\/README.md)/gi)
+  const workingPath = absolutePath.replace(replaceValues, "")
+  return workingPath.substring(indexOfGithubRepo)
+}
+
 /**
  * Create all static pages for GitHub repos
  * @param {{fileAbsolutePath: string, id: string, slug: string, frontmatter: {title:string}}} node
@@ -37,17 +50,7 @@ const gitHubPages = (node, createPage, reporter) => {
   //DDD-CREW page creation
   if (node.slug.startsWith("LICEN")) return
 
-  const indexOfGithubRepo = node.fileAbsolutePath.indexOf("github-repo")
-  const subPath = node.fileAbsolutePath.substring(indexOfGithubRepo)
-  let indexOfSlash
-  // We want to process README as the base path, and all other .md in it's own full path +.md (because that is what is usually used in github repo's to link to other md's). Does not work for everything
-  if (subPath.indexOf("/README") !== -1) {
-    indexOfSlash = subPath.indexOf("/README")
-  } else {
-    indexOfSlash = subPath.length
-  }
-  //12 start to remove github-repo-
-  const pathName = subPath.substring(12, indexOfSlash)
+  const pathName = getRepoPath(node.fileAbsolutePath)
   reporter.info(`creating page: /learning-ddd/${pathName}`)
   createPage({
     path: `/learning-ddd/${pathName}`,
@@ -83,16 +86,18 @@ const heuristicPages = (node, createPage, reporter) => {
  * @param {{info: function}} reporter
  * @param {function} createPage
  */
-const pagesFromMdx = ({edges}, createPage, reporter) => {
+const pagesFromMarkdown = ({edges}, createPage, reporter) => {
   edges.forEach(({ node }) => {
     gitHubRegex.test(node.fileAbsolutePath) && gitHubPages(node, createPage, reporter)
     heuristicsRegex.test(node.fileAbsolutePath) && heuristicPages(node, createPage, reporter)
   })
 }
 
+
+// todo: do not expose the gitHubPages & heuristicPages anymore
 module.exports = {
   sessionPages,
   gitHubPages,
   heuristicPages,
-  pagesFromMdx
+  pagesFromMarkdown
 }
