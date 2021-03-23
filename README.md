@@ -123,6 +123,8 @@ npm run develop
 
 You should be able to go to [localhost:8000](https://localhost:8000) to see the site or to [http://localhost:8000/_graphql](http://localhost:8000/_graphql) to explore the graphQl scheme
 
+**Troubleshooting**: if you encounter the error _Error: The result of this StaticQuery could not be fetched._ removing the node-modules and reinstalling them will help ([issue on github](https://github.com/gatsbyjs/gatsby/issues/24902))
+
 #### Test
 The tests are written with [jest](https://jestjs.io/) as Javascript (not TypeScript) No need to transpile them too. 
 

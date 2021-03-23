@@ -10,19 +10,18 @@ const domainRegex = /http[s]*:\/\/[www.]*virtualddd\.com[/]?/
 
 // /http[s]*:\/\/[www.]*YOURDOMAIN\.com(?!\/i-am-external|\/me-too)[/]?/
 
-interface MarkdownLinkProps {
+type MarkdownLinkProps = {
   location: { pathname: string }
   href: string
 }
 
 const MarkdownLink: FC<MarkdownLinkProps> = ({ location, href, ...rest }) => {
-  if (!href.endsWith(".pdf")) {
+  if (!href.endsWith(".pdf") && !href.startsWith("/static")) {
     const sameDomain = domainRegex.test(href)
 
     if (sameDomain) {
       href = href.replace(domainRegex, "/")
     }
-
     if (!(href.includes("/") || href.includes("#"))) {
       return (
         <GatsbyLink
@@ -34,11 +33,10 @@ const MarkdownLink: FC<MarkdownLinkProps> = ({ location, href, ...rest }) => {
     }
 
     if (href.startsWith("/")) {
-      console.log(href)
       return (
         <GatsbyLink
           data-link-internal
-          to={location.pathname + "/" + href}
+          to={location.pathname + href}
           {...rest}
         />
       )
