@@ -1,4 +1,4 @@
-const { sessionPages, gitHubPages, heuristicPages, pagesFromMarkdown } = require("./pages")
+const { sessionPages, pagesFromMarkdown } = require("./pages")
 const samples = require("../../__mocks__/samples")
 
 const createPage = jest.fn()
@@ -91,43 +91,41 @@ describe("When the static pages are generated", () => {
   describe("The creation of the gitHub pages", () => {
 
     it("should filter out License files", () => {
-      gitHubPages(samples.licenceMdxNode, createPage, reporter)
+      pagesFromMarkdown({ edges: samples.licenceMdxNode }, createPage, reporter)
 
       expect(createPage).toHaveBeenCalledTimes(0)
     })
 
     it("should generate entry pages from README files", () => {
-      gitHubPages(samples.readmeMdxNodes[0], createPage, reporter)
-      gitHubPages(samples.readmeMdxNodes[1], createPage, reporter)
+      pagesFromMarkdown({edges:samples.readmeMdxNodes}, createPage, reporter)
 
       expect(createPage).toHaveBeenCalledTimes(2)
       expect(createPage).toHaveBeenCalledWith({
         path:"/learning-ddd/ddd-crew-welcome-to-ddd",
         component:expect.stringContaining("/templates/github-repo-layout.tsx"),
-        context: { id: samples.readmeMdxNodes[0].id }
+        context: { id: "0120c7eb-b769-5f70-b487-5340c0a1b717" }
       })
       expect(createPage).toHaveBeenCalledWith({
         path:"/learning-ddd/saturn2019-architecture-island-workshop/outcomes",
         component:expect.stringContaining("/templates/github-repo-layout.tsx"),
-        context: { id: samples.readmeMdxNodes[1].id }
+        context: { id: "b2a05e2d-7dfe-5816-b603-cf3a900a8932" }
       })
     })
 
     it("should keep the name and the reference for non-readme files", () => {
-      gitHubPages(samples.nonRootMdxNode, createPage, reporter)
+      pagesFromMarkdown({edges:samples.nonRootMdxNode}, createPage, reporter)
 
       expect(createPage).toHaveBeenCalledWith({
         path: "/learning-ddd/ddd-crew-bounded-context-canvas/tools/html-version/instructions.md",
         component: expect.any(String),
-        context: { id: samples.nonRootMdxNode.id }
+        context: { id: "52adaef0-a54c-506c-9168-22fd6a9bedd5" }
       })
     })
   })
 
   describe("The creation of the heuristic pages", () => {
-    //Todo => test + functionality for the path
     it("should use the right path, template and context", () => {
-      heuristicPages(samples.heuristicMdxNode, createPage, reporter)
+      pagesFromMarkdown({edges: samples.heuristicMdxNode}, createPage, reporter)
       expect(createPage).toHaveBeenCalledWith({
         path: "/patterns-and-heuristics/heuristics/design-heuristics/eventstorming-dont-fill-in-the-gaps",
         component: expect.stringContaining("/templates/heuristic-layout.tsx"),
