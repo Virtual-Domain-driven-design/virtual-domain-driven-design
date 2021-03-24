@@ -89,15 +89,15 @@ const Hero: FC = () => {
   `)
   const imageData = data.backgroundImage.childImageSharp.fluid
   const upcomingSession = data.upcoming.nodes[0].upcomingSessions[0]
-  const isUpcomingSession = !!upcomingSession
+  const isUpcomingSession = !!upcomingSession && upcomingSession.id !== "none"
   return (
     <BackgroundImage
       tw="flex flex-col items-center justify-center bg-scroll h-auto lg:flex-row-reverse lg:items-start relative"
       fluid={imageData}
     >
-      <div tw="z-0 absolute inset-0 bg-gray-900 opacity-75"></div>
+      <div tw="z-0 absolute inset-0 bg-gray-900 opacity-75"/>
       <div tw="w-full lg:w-1/3 flex flex-col items-center justify-center z-10 m-4 sm:m-6 lg:m-8">
-        <VDDDInfo data={data}></VDDDInfo>
+        <VDDDInfo data={data}/>
         <div tw="flex items-center justify-center space-x-4 m-4 sm:m-6 lg:m-8">
           <OutlineBlueButton
             tw="lg:text-xl"
@@ -126,9 +126,9 @@ const Hero: FC = () => {
         tw="w-full lg:w-2/3 flex flex-col items-center justify-center z-10 m-4 sm:m-6 lg:m-8"
         css={!isUpcomingSession && tw`invisible`}
       >
-        <UpcomingSession
-          session={upcomingSession}
-        ></UpcomingSession>
+        <UpcomingSession session={upcomingSession}/>
+      </div>
+      <div tw="w-full lg:w-2/3 flex flex-col items-center justify-center z-10 m-4 sm:m-6 lg:m-8" >
         <OutlineBlueButton tw="lg:text-xl" to="/sessions">
           Show all sessions
         </OutlineBlueButton>

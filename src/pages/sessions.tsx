@@ -8,7 +8,6 @@ import SEO from "../components/seo"
 import UpcomingSession, {
   UpcomingSessionContent,
 } from "../sessions/upcoming-session"
-import NoUpcoming from "../sessions/no-upcoming"
 const initialLengthSize = 10
 
 type UpcomingSessionProps = {
@@ -22,12 +21,12 @@ const UpcomingSessions: FC<UpcomingSessionProps> = ({ sessions }) =>
     <h2 tw="my-2 w-4/5 lg:w-2/3 xl:w-1/2 text-blue-800 text-3xl">Upcoming Sessions</h2>
     <div tw="flex flex-col items-center justify-start">
       {
-        sessions.map((session, index) =>
+        sessions.map((session) =>
           (
             <UpcomingSession key={parseInt(session.id, 10)} session={session}/>
           ))}
     </div>
-  </div>) : (<NoUpcoming />)
+  </div>) : (<div/>)
 
 type PastSessionProps = {
   allSessions: SessionContent[]
@@ -98,8 +97,8 @@ const Sessions: FC = () => {
         tw="bg-gray-100 flex flex-col items-center justify-center"
         id="Sessions"
       >
-        <UpcomingSessions sessions={upcomingSessions}></UpcomingSessions>
-        <PastSessions allSessions={pastSessions}></PastSessions>
+        <UpcomingSessions sessions={upcomingSessions}/>
+        <PastSessions allSessions={pastSessions}/>
       </div>
     </Layout>
   )
