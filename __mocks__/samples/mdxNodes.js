@@ -32,6 +32,19 @@ const nonRootMdxNode = [{
     },
 }]
 
+const deepResourceNode = [
+  {
+    node: {
+      id: "c9456f4e-80ef-583a-984f-8fd3c703cb15",
+      fileAbsolutePath: "/home/christina/sourceCode/github/Virtual-Domain-driven-design/virtual-domain-driven-design/.cache/gatsby-source-git/github-repo-ddd-crew-bounded-context-canvas/resources/model-traits-worksheet-FR.md",
+      frontmatter: {
+        "title": ""
+      },
+      slug: "resources/model-traits-worksheet-FR"
+    }
+  }
+]
+
 const licenceMdxNode = [{
   node: {
     id: "1caf20b2-6b7a-5a59-b32f-ba8f0e4fef32",
@@ -58,6 +71,7 @@ module.exports = {
   allMdx,
   licenceMdxNode,
   nonRootMdxNode,
+  deepResourceNode,
   readmeMdxNodes,
   heuristicMdxNode,
 }

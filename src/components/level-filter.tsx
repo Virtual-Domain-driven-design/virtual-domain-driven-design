@@ -21,7 +21,7 @@ const LevelFilter: FC<LevelFilterProps> = ({ setLevelFilter }) => {
     isAdvancedActive: false,
   })
   const levelButtonClicked = (contentLevel: ContentLevel) => {
-    let buttonsActive: ButtonsActive = {
+    const buttonsActive: ButtonsActive = {
       isAllActive: false,
       isBeginnerActive: false,
       isIntermediateActive: false,

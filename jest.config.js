@@ -1,5 +1,5 @@
 module.exports = {
-  preset: 'ts-jest',
+  preset: "ts-jest",
   transform: {
     "^.+\\.tsx?$": "ts-jest",
   },
@@ -10,6 +10,8 @@ module.exports = {
   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
   testPathIgnorePatterns: ["node_modules", "\\.cache", `<rootDir>.*/public`],
   transformIgnorePatterns: ["node_modules/(?!(gatsby)/)"],
+  setupFilesAfterEnv: ["<rootDir>src/setupTests.ts"],
+  snapshotSerializers: ["enzyme-to-json"],
   globals: {
     __PATH_PREFIX__: "",
     "ts-jest": {

@@ -1,7 +1,29 @@
 {
-  "extends": "react-app",
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+     "project": [
+       "./tsconfig.json",
+       "./gatsby-browser.js"
+     ]
+  },
+  "extends": [
+    "react-app",
+    "plugin:jest/style"
+    // TODO: Enable typescript linting and fix the errors (240 at the moment)
+    //"plugin:@typescript-eslint/recommended-requiring-type-checking"
+  ],
+  "plugins": ["jest","@typescript-eslint"],
+  "rules": {
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/prefer-to-have-length": "warn",
+    "jest/valid-expect": "error",
+    "@typescript-eslint/no-unsafe-return": "off"
+  },
   "globals": {
-    "__PATH_PREFIX__": true
+    "__PATH_PREFIX__": true,
+    "tw": true
   }
 }
 

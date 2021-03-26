@@ -14,6 +14,7 @@ module.exports = {
        partiallyActive,
        ref,
        replace,
+       css,
        to,
        ...rest
      }) =>
