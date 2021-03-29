@@ -1,7 +1,6 @@
 module.exports = {
-  preset: "ts-jest",
   transform: {
-    "^.+\\.tsx?$": "ts-jest",
+    "^.+\\.[jt]sx?$": "<rootDir>/jest-preprocess.js",
   },
   moduleNameMapper: {
     ".+\\.(css|styl|less|sass|scss)$": `identity-obj-proxy`,
@@ -10,15 +9,10 @@ module.exports = {
   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
   testPathIgnorePatterns: ["node_modules", "\\.cache", `<rootDir>.*/public`],
   transformIgnorePatterns: ["node_modules/(?!(gatsby)/)"],
-  setupFilesAfterEnv: ["<rootDir>src/setupTests.ts"],
-  snapshotSerializers: ["enzyme-to-json"],
   globals: {
     __PATH_PREFIX__: "",
-    "ts-jest": {
-
-    }
   },
-  collectCoverage    : true,
-  coverageDirectory  : "coverage",
-  coverageReporters  : ["json-summary", "text", "lcov", "html"],
+  collectCoverage: true,
+  coverageDirectory: "coverage",
+  coverageReporters: ["json-summary", "text", "lcov", "html"],
 }

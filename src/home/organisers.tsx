@@ -30,7 +30,7 @@ const Organiser: FC<OrganiserProps> = ({
       <div tw="flex flex-col items-center justify-start">
         <div tw="text-gray-800 text-sm text-center">{name}</div>
         <div tw="text-gray-700 text-xs italic text-center">{tagline}</div>
-        <Img tw="my-2 w-64 h-64 object-cover" fluid={image}/>
+        <Img tw="my-2 w-64 h-64 object-cover" fluid={image} />
       </div>
       <div tw="my-1 w-full flex items-center justify-around">
         <a

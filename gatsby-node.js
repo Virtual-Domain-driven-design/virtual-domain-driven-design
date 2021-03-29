@@ -3,9 +3,11 @@
  *
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
-const { sessionPages, pagesFromMarkdown } = require("./src/gatsby-node-api/pages")
+const {
+  sessionPages,
+  pagesFromMarkdown,
+} = require("./src/gatsby-node-api/pages")
 const { getTypeDefs } = require("./src/gatsby-node-api/resolvers")
-
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
@@ -40,7 +42,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     reporter.panic("failed to load content or Mdx ", result.errors)
   }
 
-  const {data} = result
+  const { data } = result
   sessionPages(data.allContentYaml, createPage, reporter)
   pagesFromMarkdown(data.allMdx, createPage, reporter)
 }

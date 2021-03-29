@@ -5,6 +5,7 @@ import tw from "twin.macro"
 interface ThreeDBlueButtonProps {
   to?: string
   href?: string
+  css?: string
 }
 
 const ThreeDBlueButton: FC<ThreeDBlueButtonProps> = ({

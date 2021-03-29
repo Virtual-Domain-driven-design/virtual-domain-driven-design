@@ -9,21 +9,22 @@ const heuristicsRegex = new RegExp(/(\/content\/heuristics)((.)*([^(.md)]))/)
  */
 const sessionPages = ({ nodes }, createPage, reporter) => {
   nodes
-    .filter(n => n.upcomingSessions !== null || n.sessions !== null)
+    .filter((n) => n.upcomingSessions !== null || n.sessions !== null)
     // eslint-disable-next-line array-callback-return
     .map(({ upcomingSessions, sessions }) => {
-      if (!!upcomingSessions) return upcomingSessions.map(session => session)
-      if (!!sessions) return sessions.map(session => session)
+      if (!!upcomingSessions) return upcomingSessions.map((session) => session)
+      if (!!sessions) return sessions.map((session) => session)
       return { id: "none" }
     })
     .flat()
     .forEach(({ id }) => {
-      reporter.info(`Creating page: /sessions/${(id)}`)
+      reporter.info(`Creating page: /sessions/${id}`)
       createPage({
-        path: `/sessions/${(id)}`,
-        component: id === "none" ?
-          require.resolve(`../templates/no-upcoming-layout.tsx`) :
-          require.resolve(`../templates/session-layout.tsx`),
+        path: `/sessions/${id}`,
+        component:
+          id === "none"
+            ? require.resolve(`../templates/no-upcoming-layout.tsx`)
+            : require.resolve(`../templates/session-layout.tsx`),
         context: { id: id },
       })
     })
@@ -87,8 +88,10 @@ const heuristicPages = (node, createPage, reporter) => {
  */
 const pagesFromMarkdown = ({ edges }, createPage, reporter) => {
   edges.forEach(({ node }) => {
-    gitHubRegex.test(node.fileAbsolutePath) && gitHubPages(node, createPage, reporter)
-    heuristicsRegex.test(node.fileAbsolutePath) && heuristicPages(node, createPage, reporter)
+    gitHubRegex.test(node.fileAbsolutePath) &&
+      gitHubPages(node, createPage, reporter)
+    heuristicsRegex.test(node.fileAbsolutePath) &&
+      heuristicPages(node, createPage, reporter)
   })
 }
 

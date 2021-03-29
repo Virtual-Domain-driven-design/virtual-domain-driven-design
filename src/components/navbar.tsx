@@ -214,12 +214,12 @@ const NavbarDesktop: FC = ({ data }) => {
         ></DesktopNavigationItem>
         <a
           tw="p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center"
-            href="https://feedback.userreport.com/a15e4e61-2323-40a1-90b4-1267e010e35c/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Propose & Vote!
-          </a>
+          href="https://feedback.userreport.com/a15e4e61-2323-40a1-90b4-1267e010e35c/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Propose & Vote!
+        </a>
         <a
           tw="p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center"
           href="https://dddheuristics.com"

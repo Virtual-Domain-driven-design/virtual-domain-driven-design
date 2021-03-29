@@ -22,6 +22,4 @@ declare module "react" {
 }
 
 // @ts-ignore
-declare module "hyvor-talk-react" {
-
-}
+declare module "hyvor-talk-react" {}

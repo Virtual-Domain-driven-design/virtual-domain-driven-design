@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react"
+import React, { useState } from "react"
 import tw from "twin.macro"
 import { ContentLevel } from "../sessions/session"
 
@@ -13,7 +13,7 @@ type ButtonsActive = {
   isAdvancedActive: boolean
 }
 
-const LevelFilter: FC<LevelFilterProps> = ({ setLevelFilter }) => {
+const LevelFilter = ({ setLevelFilter }: LevelFilterProps) => {
   const [areButtonsActive, setButtonsActive] = useState<ButtonsActive>({
     isAllActive: true,
     isBeginnerActive: false,
@@ -29,27 +29,23 @@ const LevelFilter: FC<LevelFilterProps> = ({ setLevelFilter }) => {
     }
     switch (contentLevel) {
       case ContentLevel.Beginner: {
-        setButtonsActive({ ...buttonsActive, isBeginnerActive: true})
+        setButtonsActive({ ...buttonsActive, isBeginnerActive: true })
         setLevelFilter([ContentLevel.All, contentLevel])
         break
       }
       case ContentLevel.Intermediate: {
-        setButtonsActive({ ...buttonsActive, isIntermediateActive: true})
+        setButtonsActive({ ...buttonsActive, isIntermediateActive: true })
         setLevelFilter([ContentLevel.All, contentLevel])
         break
       }
       case ContentLevel.Advanced: {
-        setButtonsActive({ ...buttonsActive, isAdvancedActive: true})
+        setButtonsActive({ ...buttonsActive, isAdvancedActive: true })
         setLevelFilter([ContentLevel.All, contentLevel])
         break
       }
       default: {
-        setButtonsActive({ ...buttonsActive, isAllActive: true})
-        setLevelFilter([
-          ContentLevel.All,
-          ContentLevel.Beginner,
-          ContentLevel.Intermediate,
-          ContentLevel.Advanced])
+        setButtonsActive({ ...buttonsActive, isAllActive: true })
+        setLevelFilter([...Object.values(ContentLevel)])
       }
     }
   }

@@ -5,11 +5,11 @@ export const upcomingImage = graphql`
     img {
       publicURL
       childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-         }
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
       }
+    }
   }
 `
 
@@ -18,12 +18,10 @@ export const sessionImage = graphql`
     img {
       publicURL
       childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-         }
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
       }
+    }
   }
 `
-
-

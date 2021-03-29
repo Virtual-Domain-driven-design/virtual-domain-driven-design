@@ -1,4 +1,3 @@
-
 //Todo: create and use a special template for the upcoming session with the ID "none"
 
 import React from "react"

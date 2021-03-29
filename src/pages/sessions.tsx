@@ -14,19 +14,25 @@ type UpcomingSessionProps = {
   sessions: UpcomingSessionContent[]
 }
 
-const upcomingSessionAvailable = (sessions:UpcomingSessionContent[]) => sessions.length > 0 && sessions.filter(s => parseInt(s.id, 10) > 0).length > 0
+const upcomingSessionAvailable = (sessions: UpcomingSessionContent[]) =>
+  sessions.length > 0 &&
+  sessions.filter((s) => parseInt(s.id, 10) > 0).length > 0
 
 const UpcomingSessions: FC<UpcomingSessionProps> = ({ sessions }) =>
-  upcomingSessionAvailable(sessions) ? (<div tw="my-8 w-full lg:w-4/5 lg:w-2/3 xl:w-1/2">
-    <h2 tw="my-2 w-4/5 lg:w-2/3 xl:w-1/2 text-blue-800 text-3xl">Upcoming Sessions</h2>
-    <div tw="flex flex-col items-center justify-start">
-      {
-        sessions.map((session) =>
-          (
-            <UpcomingSession key={parseInt(session.id, 10)} session={session}/>
-          ))}
+  upcomingSessionAvailable(sessions) ? (
+    <div tw="my-8 w-full lg:w-4/5 lg:w-2/3 xl:w-1/2">
+      <h2 tw="my-2 w-4/5 lg:w-2/3 xl:w-1/2 text-blue-800 text-3xl">
+        Upcoming Sessions
+      </h2>
+      <div tw="flex flex-col items-center justify-start">
+        {sessions.map((session) => (
+          <UpcomingSession key={parseInt(session.id, 10)} session={session} />
+        ))}
+      </div>
     </div>
-  </div>) : (<div/>)
+  ) : (
+    <div />
+  )
 
 type PastSessionProps = {
   allSessions: SessionContent[]
@@ -97,8 +103,8 @@ const Sessions: FC = () => {
         tw="bg-gray-100 flex flex-col items-center justify-center"
         id="Sessions"
       >
-        <UpcomingSessions sessions={upcomingSessions}/>
-        <PastSessions allSessions={pastSessions}/>
+        <UpcomingSessions sessions={upcomingSessions} />
+        <PastSessions allSessions={pastSessions} />
       </div>
     </Layout>
   )

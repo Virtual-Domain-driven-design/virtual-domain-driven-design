@@ -1,4 +1,3 @@
-
 const exampleAnchor = {
   href: "#how-to-use",
   location: {
@@ -8,11 +7,12 @@ const exampleAnchor = {
   },
   rest: {
     "aria-label": "how to use permalink",
-    "className": "header-link-icon after",
+    className: "header-link-icon after",
   },
 }
 const exampleStatic = {
-  href: "/static/67812f25072873039b0b8298f263cf04/9f108/core-domain-chart-template.jpg",
+  href:
+    "/static/67812f25072873039b0b8298f263cf04/9f108/core-domain-chart-template.jpg",
   location: {
     host: "localhost:8000",
     hostname: "localhost",
@@ -30,7 +30,8 @@ const exampleStatic = {
   },
 }
 const exampleExternalLink = {
-  href: "https://medium.com/nick-tune-tech-strategy-blog/core-domain-patterns-941f89446af5",
+  href:
+    "https://medium.com/nick-tune-tech-strategy-blog/core-domain-patterns-941f89446af5",
   location: {
     host: "localhost:8000",
     hostname: "localhost",
@@ -54,7 +55,7 @@ const exampleSameDomain = {
     host: "localhost:8000",
     hostname: "localhost",
     href: "http://localhost:8000/code-of-conduct",
-    pathname: ""
+    pathname: "",
   },
 }
 
@@ -62,5 +63,5 @@ module.exports = {
   exampleAnchor,
   exampleExternalLink,
   exampleStatic,
-  exampleSameDomain
+  exampleSameDomain,
 }

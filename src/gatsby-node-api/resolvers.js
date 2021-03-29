@@ -1,11 +1,13 @@
 // @ts-nocheck
 
 const stringListResolver = (fieldName) => (source) =>
-  !source[fieldName] || (Array.isArray(source[fieldName]) && !source[fieldName][0]) ?
-    ["uncategorized"] :
-    source[fieldName]
+  !source[fieldName] ||
+  (Array.isArray(source[fieldName]) && !source[fieldName][0])
+    ? ["uncategorized"]
+    : source[fieldName]
 
-const stringResolver = (fieldName) => (source) => !source[fieldName] ? "-" : source[fieldName]
+const stringResolver = (fieldName) => (source) =>
+  !source[fieldName] ? "-" : source[fieldName]
 
 const sessionLinkFields = () => ({
   label: {
@@ -53,7 +55,7 @@ const upcomingSessionFields = () => ({
   },
   links: {
     type: "[ContentYamlUpcomingSessionsLinks]",
-    resolve: source => !source.links ? [] : source.links,
+    resolve: (source) => (!source.links ? [] : source.links),
   },
 })
 
@@ -73,5 +75,5 @@ function getTypeDefs(schema) {
 }
 
 module.exports = {
-  getTypeDefs
+  getTypeDefs,
 }

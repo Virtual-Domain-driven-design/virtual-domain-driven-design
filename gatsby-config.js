@@ -44,7 +44,7 @@ module.exports = {
             options: {
               linkImagesToOriginal: true,
               maxWidth: 1000,
-              wrapperStyle: (result) => `width: 100%;margin-left: 0;`,
+              wrapperStyle: () => `width: 100%;margin-left: 0;`,
             },
           },
           {
@@ -65,20 +65,6 @@ module.exports = {
             resolve: `gatsby-remark-smartypants`,
           },
         ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-breadcrumb`,
-      options: {
-        // defaultCrumb: optional To create a default crumb
-        // see Click Tracking default crumb example below
-        defaultCrumb: {
-          location: {
-            pathname: "/",
-          },
-          crumbLabel: "Home",
-          crumbSeparator: " / ",
-        },
       },
     },
     {

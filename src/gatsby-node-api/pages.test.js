@@ -3,8 +3,7 @@ const samples = require("../../__mocks__/samples")
 
 const createPage = jest.fn()
 const reporter = {
-  info: () => {
-  },
+  info: () => {},
 }
 describe("When the static pages are generated", () => {
   beforeEach(() => {
@@ -77,8 +76,10 @@ describe("When the static pages are generated", () => {
       let heuristicPageCounter = 0
       let githubPageCounter = 0
       createPage.mockImplementation(({ component }) => {
-        if(component.indexOf("heuristic-layout.tsx") > 0) heuristicPageCounter +=1
-        if(component.indexOf("github-repo-layout.tsx") > 0) githubPageCounter +=1
+        if (component.indexOf("heuristic-layout.tsx") > 0)
+          heuristicPageCounter += 1
+        if (component.indexOf("github-repo-layout.tsx") > 0)
+          githubPageCounter += 1
       })
 
       pagesFromMarkdown(samples.allMdx, createPage, reporter)
@@ -89,7 +90,6 @@ describe("When the static pages are generated", () => {
   })
 
   describe("The creation of the gitHub pages", () => {
-
     it("should filter out License files", () => {
       pagesFromMarkdown({ edges: samples.licenceMdxNode }, createPage, reporter)
 
@@ -97,41 +97,64 @@ describe("When the static pages are generated", () => {
     })
 
     it("should generate entry pages from README files", () => {
-      pagesFromMarkdown({edges:samples.readmeMdxNodes}, createPage, reporter)
+      pagesFromMarkdown({ edges: samples.readmeMdxNodes }, createPage, reporter)
 
       expect(createPage).toHaveBeenCalledTimes(2)
       expect(createPage).toHaveBeenCalledWith({
-        path:"/learning-ddd/ddd-crew-welcome-to-ddd",
-        component:expect.stringContaining("/templates/github-repo-layout.tsx"),
-        context: { id: "0120c7eb-b769-5f70-b487-5340c0a1b717" }
+        path: "/learning-ddd/ddd-crew-welcome-to-ddd",
+        component: expect.stringContaining("/templates/github-repo-layout.tsx"),
+        context: { id: "0120c7eb-b769-5f70-b487-5340c0a1b717" },
       })
       expect(createPage).toHaveBeenCalledWith({
-        path:"/learning-ddd/saturn2019-architecture-island-workshop/outcomes",
-        component:expect.stringContaining("/templates/github-repo-layout.tsx"),
-        context: { id: "b2a05e2d-7dfe-5816-b603-cf3a900a8932" }
+        path: "/learning-ddd/saturn2019-architecture-island-workshop/outcomes",
+        component: expect.stringContaining("/templates/github-repo-layout.tsx"),
+        context: { id: "b2a05e2d-7dfe-5816-b603-cf3a900a8932" },
       })
     })
 
     it("should keep the name and the reference for non-readme files", () => {
-      pagesFromMarkdown({edges:samples.nonRootMdxNode}, createPage, reporter)
+      pagesFromMarkdown({ edges: samples.nonRootMdxNode }, createPage, reporter)
 
       expect(createPage).toHaveBeenCalledWith({
-        path: "/learning-ddd/ddd-crew-bounded-context-canvas/tools/html-version/instructions.md",
+        path:
+          "/learning-ddd/ddd-crew-bounded-context-canvas/tools/html-version/instructions.md",
         component: expect.any(String),
-        context: { id: "52adaef0-a54c-506c-9168-22fd6a9bedd5" }
+        context: { id: "52adaef0-a54c-506c-9168-22fd6a9bedd5" },
+      })
+    })
+
+    it("should keep the name and the reference for deep references too", () => {
+      pagesFromMarkdown(
+        { edges: samples.deepResourceNode },
+        createPage,
+        reporter
+      )
+
+      expect(createPage).toHaveBeenCalledWith({
+        path:
+          "/learning-ddd/ddd-crew-bounded-context-canvas/resources/model-traits-worksheet-FR.md",
+        component: expect.any(String),
+        context: { id: "c9456f4e-80ef-583a-984f-8fd3c703cb15" },
       })
     })
   })
 
   describe("The creation of the heuristic pages", () => {
     it("should use the right path, template and context", () => {
-      pagesFromMarkdown({edges: samples.heuristicMdxNode}, createPage, reporter)
+      pagesFromMarkdown(
+        { edges: samples.heuristicMdxNode },
+        createPage,
+        reporter
+      )
       expect(createPage).toHaveBeenCalledWith({
-        path: "/patterns-and-heuristics/heuristics/design-heuristics/eventstorming-dont-fill-in-the-gaps",
+        path:
+          "/patterns-and-heuristics/heuristics/design-heuristics/eventstorming-dont-fill-in-the-gaps",
         component: expect.stringContaining("/templates/heuristic-layout.tsx"),
-        context: { id: "a968a5ee-d1ff-5821-aff9-bd7284921428", name: "eventstorming-dont-fill-in-the-gaps" }
+        context: {
+          id: "a968a5ee-d1ff-5821-aff9-bd7284921428",
+          name: "eventstorming-dont-fill-in-the-gaps",
+        },
       })
     })
   })
 })
-

@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The LevelFilter should create or check the snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c1 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(255,255,255,var(--tw-text-opacity));
+  border-radius: 0.5rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgba(59,130,246,var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgba(29,78,216,var(--tw-bg-opacity));
+}
+
+.c1:hover {
+  --tw-border-opacity: 1;
+  border-color: rgba(96,165,250,var(--tw-border-opacity));
+}
+
+.c2 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(255,255,255,var(--tw-text-opacity));
+  border-radius: 0.5rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgba(59,130,246,var(--tw-border-opacity));
+}
+
+.c2:hover {
+  --tw-border-opacity: 1;
+  border-color: rgba(96,165,250,var(--tw-border-opacity));
+}
+
+.c3 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(255,255,255,var(--tw-text-opacity));
+  border-radius: 0.5rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgba(59,130,246,var(--tw-border-opacity));
+}
+
+.c3:hover {
+  --tw-border-opacity: 1;
+  border-color: rgba(96,165,250,var(--tw-border-opacity));
+}
+
+.c4 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(255,255,255,var(--tw-text-opacity));
+  border-radius: 0.5rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgba(59,130,246,var(--tw-border-opacity));
+}
+
+.c4:hover {
+  --tw-border-opacity: 1;
+  border-color: rgba(96,165,250,var(--tw-border-opacity));
+}
+
+<div
+  className="c0"
+>
+  <button
+    className="c1"
+    onClick={[Function]}
+  >
+    All levels
+  </button>
+  <button
+    className="c2"
+    onClick={[Function]}
+  >
+    Beginner
+  </button>
+  <button
+    className="c3"
+    onClick={[Function]}
+  >
+    Intermediate
+  </button>
+  <button
+    className="c4"
+    onClick={[Function]}
+  >
+    Advanced
+  </button>
+</div>
+`;
