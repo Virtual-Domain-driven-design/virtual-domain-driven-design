@@ -44,7 +44,7 @@ module.exports = {
             options: {
               linkImagesToOriginal: true,
               maxWidth: 1000,
-              wrapperStyle: () => `width: 100%;margin-left: 0;`,
+              wrapperStyle: (result) => `width: 100%;margin-left: 0;`,
             },
           },
           {

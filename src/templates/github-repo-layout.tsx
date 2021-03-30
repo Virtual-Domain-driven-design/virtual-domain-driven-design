@@ -5,7 +5,7 @@ import React, { FC } from "react"
 import "twin.macro"
 
 import Layout from "./layout"
-import MarkdownLink from "../plugins/markdown-link"
+import GithubLink from "../plugins/github-link"
 
 const GithubRepoLayout: FC = ({ location, data: { mdx } }) => {
   return (
@@ -14,7 +14,7 @@ const GithubRepoLayout: FC = ({ location, data: { mdx } }) => {
         <div tw="prose prose-sm sm:prose lg:prose-lg xl:prose-lg lg:w-2/3">
           <MDXProvider
             components={{
-              a: (props) => <MarkdownLink location={location} {...props} />,
+              a: (props) => <GithubLink location={location} {...props} />,
               // NEED TO ESCAPE BECAUSE OF A BUG
               embed: () => <div></div>,
             }}

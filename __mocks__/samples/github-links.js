@@ -10,6 +10,20 @@ const exampleAnchor = {
     className: "header-link-icon after",
   },
 }
+
+//Expect href: https://github.com/emgsilva, data-link-external
+const exampleLinkPerson = {
+  href: "@emgsilva",
+  location: {
+    pathname: "/learning-ddd/ddd-crew-core-domain-charts",
+    href: "http://localhost:8000/learning-ddd/ddd-crew-core-domain-charts",
+    origin: "http://localhost:8000",
+  },
+  rest: {
+    children: "Eduardo da Silva",
+  },
+}
+
 const exampleStatic = {
   href:
     "/static/67812f25072873039b0b8298f263cf04/9f108/core-domain-chart-template.jpg",
@@ -48,14 +62,31 @@ const exampleExternalLink = {
   },
 }
 
-//Todo: need a real life example, this is faked
-const exampleSameDomain = {
-  href: "/code-of-conduct",
+const exampleInternalLink = {
+  href: "tools/html-version/instructions.md",
   location: {
     host: "localhost:8000",
     hostname: "localhost",
-    href: "http://localhost:8000/code-of-conduct",
-    pathname: "",
+    href: "http://localhost:8000/learning-ddd/ddd-crew-bounded-context-canvas/",
+    key: "initial",
+    origin: "http://localhost:8000",
+    pathname: "/learning-ddd/ddd-crew-bounded-context-canvas/",
+    protocol: "http",
+    port: "8000",
+  },
+}
+
+const exampleMiroBackupFile = {
+  href: "/cf06b31273a7a77e83422dcf4ab9366e/aggregate-design-canvas-v1.rtb",
+  location: {
+    host: "localhost:8000",
+    hostname: "localhost",
+    href: "http://localhost:8000/learning-ddd/ddd-crew-aggregate-design-canvas",
+    key: "initial",
+    origin: "http://localhost:8000",
+    pathname: "/learning-ddd/ddd-crew-aggregate-design-canvas",
+    protocol: "http",
+    port: "8000",
   },
 }
 
@@ -63,5 +94,6 @@ module.exports = {
   exampleAnchor,
   exampleExternalLink,
   exampleStatic,
-  exampleSameDomain,
+  exampleMiroBackupFile,
+  exampleInternalLink,
 }

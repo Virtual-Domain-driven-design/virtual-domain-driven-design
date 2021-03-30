@@ -1,30 +1,31 @@
-import MarkdownLink from "./markdown-link"
+import GithubLink from "./github-link"
 import samples from "../../__mocks__/samples"
 
 describe("The markdown link plugin", () => {
   it("should not change /static addresses", () => {
-    const result = MarkdownLink(samples.exampleStatic)
+    const result = GithubLink(samples.exampleStatic)
     expect(result?.props.href).toEqual(samples.exampleStatic.href)
     expect(result?.props.to).toBeUndefined()
   })
 
   it("should not change anchors", () => {
-    const result = MarkdownLink(samples.exampleAnchor)
+    const result = GithubLink(samples.exampleAnchor)
 
     expect(result?.props.href).toEqual(samples.exampleAnchor.href)
     expect(result?.props.to).toBeUndefined()
   })
 
-  it("should not external references", () => {
-    const result = MarkdownLink(samples.exampleExternalLink)
+  it("should not change external references", () => {
+    const result = GithubLink(samples.exampleExternalLink)
 
     expect(result?.props.href).toEqual(samples.exampleExternalLink.href)
     expect(result?.props.to).toBeUndefined()
   })
-  it("should change the reference of an internal link for same domain", () => {
-    const result = MarkdownLink(samples.exampleSameDomain)
-
-    expect(result?.props.href).toBeUndefined()
-    expect(result?.props.to).toEqual(samples.exampleSameDomain.href)
+  it("should build the correct reference for an internal link", () => {
+    const result = GithubLink(samples.exampleInternalLink)
+    expect(result?.props.to).toEqual(
+      samples.exampleInternalLink.location.pathname +
+        samples.exampleInternalLink.href
+    )
   })
 })
