@@ -122,12 +122,10 @@ const Hero: FC = () => {
         </div>
       </div>
 
-      <div
-        tw="w-full lg:w-2/3 flex flex-col items-center justify-center z-10 m-4 sm:m-6 lg:m-8"
-
-      >
-        <div  css={!isUpcomingSession && tw`invisible`}>
-          <UpcomingSession session={upcomingSession} /></div>
+      <div tw="w-full lg:w-2/3 flex flex-col items-center justify-center z-10 m-4 sm:m-6 lg:m-8">
+        <div css={!isUpcomingSession && tw`invisible`}>
+          <UpcomingSession session={upcomingSession} />
+        </div>
         <OutlineBlueButton tw="lg:text-xl" to="/sessions">
           Show all sessions
         </OutlineBlueButton>

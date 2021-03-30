@@ -19,7 +19,8 @@
     "jest/no-identical-title": "error",
     "jest/prefer-to-have-length": "warn",
     "jest/valid-expect": "error",
-    "@typescript-eslint/no-unsafe-return": "off"
+    "@typescript-eslint/no-unsafe-return": "off",
+    "jsx-a11y/anchor-has-content": "off"
   },
   "globals": {
     "__PATH_PREFIX__": true,
