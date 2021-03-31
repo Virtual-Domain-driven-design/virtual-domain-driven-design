@@ -1,4 +1,4 @@
-import React, { FC } from "react"
+import React from "react"
 import "twin.macro"
 
 import FloatingActionCard from "../components/floating-action-card"
@@ -17,9 +17,9 @@ interface PaperProps {
   paper: PaperContent
 }
 
-const GithubRepo: FC<PaperProps> = ({ paper }) => {
+const Paper = ({ paper }: PaperProps) => {
   return (
-    <FloatingActionCard key={paper.title} href={paper.link}>
+    <FloatingActionCard key={paper.title} id={paper.title} href={paper.link}>
       <div tw="flex flex-col items-center justify-start">
         <div tw="m-2 h-16 font-semibold text-gray-800 text-sm text-center">
           {paper.title}
@@ -48,4 +48,4 @@ const GithubRepo: FC<PaperProps> = ({ paper }) => {
   )
 }
 
-export default GithubRepo
+export default Paper

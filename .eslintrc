@@ -8,8 +8,8 @@
   "extends": [
     "react-app",
     "plugin:jest/style"
-    // TODO: Enable typescript linting and fix the errors (240 at the moment)
-    //"plugin:@typescript-eslint/recommended-requiring-type-checking"
+    // TODO: Enable typescript linting and fix the errors (227 at the moment)
+    // ,"plugin:@typescript-eslint/recommended-requiring-type-checking"
   ],
   "plugins": ["jest","@typescript-eslint"],
   "rules": {

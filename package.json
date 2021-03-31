@@ -2,7 +2,7 @@
   "name": "vddd-site",
   "private": false,
   "description": "Virtual DDD site, an online Domain-Driven Design meetup and conference for the community by the community",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Kenny Baas-Schwegler",
   "scripts": {
     "type-check": "tsc --noEmit",

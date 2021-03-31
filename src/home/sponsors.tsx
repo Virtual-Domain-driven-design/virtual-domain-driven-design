@@ -5,9 +5,15 @@ import "twin.macro"
 
 import FloatingActionCard from "../components/floating-action-card"
 
-const Sponsor: FC = ({ name, image, website }) => {
+interface SponsorContent {
+  name: string
+  image: any
+  website: string
+}
+
+const Sponsor = ({ name, image, website }: SponsorContent) => {
   return (
-    <FloatingActionCard key={name} href={website}>
+    <FloatingActionCard key={name} id={name} href={website}>
       <div tw="m-2 h-8 font-semibold text-gray-800 text-sm text-center">
         {name}
       </div>
@@ -15,7 +21,7 @@ const Sponsor: FC = ({ name, image, website }) => {
         tw="my-2 w-64 h-32"
         fluid={image}
         imgStyle={{ objectFit: "contain" }}
-      ></Img>
+      />
     </FloatingActionCard>
   )
 }
@@ -95,42 +101,42 @@ const Sponsors: FC = () => {
             name="Heimeshoff IT"
             image={data.heimeshoff.childImageSharp.fluid}
             website="https://www.heimeshoff.de/"
-          ></Sponsor>
+          />
           <Sponsor
             name="Ubiquitous AS"
             image={data.ubiquitous.childImageSharp.fluid}
             website="https://www.ubiquitous.no/"
-          ></Sponsor>
+          />
           <Sponsor
             name="Xebia"
             image={data.xebia.childImageSharp.fluid}
             website="https://www.xebia.com/"
-          ></Sponsor>
+          />
           <Sponsor
             name="KanDDDinsky"
             image={data.kddd.childImageSharp.fluid}
             website="https://kandddinsky.de/"
-          ></Sponsor>
+          />
           <Sponsor
             name="DDD Europe"
             image={data.dddeu.childImageSharp.fluid}
             website="https://dddeurope.com/"
-          ></Sponsor>
+          />
           <Sponsor
             name="Explore DDD"
             image={data.eddd.childImageSharp.fluid}
             website="https://exploreddd.com/"
-          ></Sponsor>
+          />
           <Sponsor
             name="nCrafts"
             image={data.ncrafts.childImageSharp.fluid}
             website="https://ncrafts.io/"
-          ></Sponsor>
+          />
           <Sponsor
             name="Sessionize"
             image={data.sessionize.childImageSharp.fluid}
             website="https://sessionize.com/"
-          ></Sponsor>
+          />
         </div>
       </div>
     </div>

@@ -4,18 +4,31 @@ import "twin.macro"
 
 import FloatingActionCard from "../components/floating-action-card"
 
-const Community: FC = ({ index, community }) => {
+type CommunityContent = {
+  id: number
+  city: string
+  country: string
+  name: string
+  url: string
+  img: any
+}
+
+interface CommunityProps {
+  community: CommunityContent
+}
+
+const Community = ({ community }: CommunityProps) => {
   return (
-    <FloatingActionCard key={index} href={community.url}>
+    <FloatingActionCard id={community.id.toString()} href={community.url}>
       <div tw="flex flex-col items-center justify-start">
         <div tw="m-2 h-8 font-semibold text-gray-800 text-sm text-center">
           {community.name}
         </div>
         <img
           tw="my-2 w-64 h-32 object-contain"
-          alt=""
+          alt="{community.name}"
           src={community.img}
-        ></img>
+        />
       </div>
       <div tw="text-gray-700 text-xs italic text-center">
         {community.country}
@@ -25,13 +38,16 @@ const Community: FC = ({ index, community }) => {
 }
 
 const Communities: FC = () => {
-  const data = useStaticQuery(graphql`
+  const data = useStaticQuery<{
+    allContentYaml: { nodes: { communities: CommunityContent[] }[] }
+  }>(graphql`
     query {
       allContentYaml(
         filter: { communities: { elemMatch: { name: { ne: null } } } }
       ) {
         nodes {
           communities {
+            id
             city
             country
             name
@@ -64,8 +80,8 @@ const Communities: FC = () => {
         </h3>
         <div tw="md:w-5/6">
           <div tw="flex justify-center flex-wrap">
-            {communities.map((community, index) => {
-              return <Community key={index} community={community}></Community>
+            {communities.map((community) => {
+              return <Community key={community.id} community={community} />
             })}
           </div>
         </div>

@@ -13,15 +13,15 @@ type OrganiserProps = {
   data: any
 }
 
-const Organiser: FC<OrganiserProps> = ({
+const Organiser = ({
   name,
   image,
   tagline,
   website,
   twitter,
-  linkedin,
+  linkedin = "",
   data,
-}) => {
+}: OrganiserProps) => {
   return (
     <div
       key={name}
@@ -43,10 +43,10 @@ const Organiser: FC<OrganiserProps> = ({
           <Img
             tw="h-10 w-10 object-contain"
             fluid={data.website.childImageSharp.fluid}
-          ></Img>
+          />
         </a>
         <a
-          href={"https://twitter.com/" + twitter}
+          href={`https://twitter.com/${twitter}`}
           target="_blank"
           rel="noopener noreferrer"
           tw="rounded-full transform scale-100 duration-100 hover:scale-110"
@@ -55,10 +55,10 @@ const Organiser: FC<OrganiserProps> = ({
           <Img
             tw="h-10 w-10 object-contain"
             fluid={data.twitter.childImageSharp.fluid}
-          ></Img>
+          />
         </a>
         <a
-          href={"https://linkedin.com/" + linkedin}
+          href={`https://linkedin.com/${linkedin}`}
           target="_blank"
           rel="noopener noreferrer"
           tw="rounded-full transform scale-100 duration-100 hover:scale-110"
@@ -67,7 +67,7 @@ const Organiser: FC<OrganiserProps> = ({
           <Img
             tw="h-10 w-10 object-contain"
             fluid={data.linkedin.childImageSharp.fluid}
-          ></Img>
+          />
         </a>
       </div>
     </div>
@@ -167,7 +167,7 @@ const Organisers: FC = () => {
             twitter="ZHerendi"
             linkedin="in/zsófia-herendi-2296b48"
             data={data}
-          ></Organiser>
+          />
           <Organiser
             name="Marco Heimeshoff"
             image={data.marco.childImageSharp.fluid}
@@ -176,7 +176,7 @@ const Organisers: FC = () => {
             twitter="Heimeshoff"
             linkedin="in/heimeshoff"
             data={data}
-          ></Organiser>
+          />
           <Organiser
             name="Kenny Baas-Schwegler"
             image={data.kenny.childImageSharp.fluid}
@@ -185,7 +185,7 @@ const Organisers: FC = () => {
             twitter="kenny_baas"
             linkedin="in/kenny-baas"
             data={data}
-          ></Organiser>
+          />
           <Organiser
             name="Maxime Sanglan-Charlier"
             image={data.maxime.childImageSharp.fluid}
@@ -194,7 +194,7 @@ const Organisers: FC = () => {
             twitter="__MaxS__"
             linkedin="company/ncrafts"
             data={data}
-          ></Organiser>
+          />
           <Organiser
             name="Evelyn van Kelle"
             image={data.evelyn.childImageSharp.fluid}
@@ -203,7 +203,7 @@ const Organisers: FC = () => {
             twitter="EvelynvanKelle"
             linkedin="in/evelynvankelle"
             data={data}
-          ></Organiser>
+          />
           <Organiser
             name="Kacper Gunia"
             image={data.kacper.childImageSharp.fluid}
@@ -212,7 +212,7 @@ const Organisers: FC = () => {
             twitter="cakper"
             linkedin="in/cakper"
             data={data}
-          ></Organiser>
+          />
           <Organiser
             name="Krisztina Hirth"
             image={data.krisztina.childImageSharp.fluid}
@@ -221,7 +221,7 @@ const Organisers: FC = () => {
             twitter="YellowBrickC"
             linkedin="in/christina-hirth-yellowbrickcode?locale=en_US"
             data={data}
-          ></Organiser>
+          />
         </div>
       </div>
     </div>

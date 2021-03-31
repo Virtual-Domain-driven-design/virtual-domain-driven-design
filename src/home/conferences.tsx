@@ -5,9 +5,23 @@ import "twin.macro"
 
 import FloatingActionCard from "../components/floating-action-card"
 
-const Conference: FC = ({ name, image, location, date, website }) => {
+interface ConferenceContent {
+  name: string
+  image: any
+  location: string
+  date: string
+  website: string
+}
+
+const Conference = ({
+  name,
+  image,
+  location,
+  date,
+  website,
+}: ConferenceContent) => {
   return (
-    <FloatingActionCard key={name} href={website}>
+    <FloatingActionCard key={name} id={name} href={website}>
       <div tw="m-2 font-semibold text-gray-800 text-sm text-center">{name}</div>
       <div tw="text-gray-800 text-sm text-center">{date}</div>
       <Img
@@ -76,35 +90,35 @@ const Conferences: FC = () => {
             location="Online-only"
             date="February 4-5, 2021"
             website="https://dddeurope.com/"
-          ></Conference>
+          />
           <Conference
             name="Explore DDD"
             image={data.eddd.childImageSharp.fluid}
             location="Keystone, Colorado, USA"
             date="November (Virtual)"
             website="https://exploreddd.com/"
-          ></Conference>
+          />
           <Conference
             name="KanDDDinsky"
             image={data.kddd.childImageSharp.fluid}
             location="Berlin, Germany"
             date="2021"
             website="https://kandddinsky.de/"
-          ></Conference>
+          />
           <Conference
             name="DDD China"
             image={data.dddchina.childImageSharp.fluid}
             location="Beijing, China"
             date="November"
             website="http://ddd-china.com/"
-          ></Conference>
+          />
           <Conference
             name="DDD Taiwan"
             image={data.dddtaiwan.childImageSharp.fluid}
             location="Taipei, Taiwan"
             date="November"
             website="https://www.ddd-tw.com/"
-          ></Conference>
+          />
         </div>
       </div>
     </div>

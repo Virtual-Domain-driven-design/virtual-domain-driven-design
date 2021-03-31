@@ -193,4 +193,8 @@ TODO - define the corresponding workflow with a pipeline and versioning (maybe w
 ## Tasks
 
 - create at least one test for every functionality
-- enable readme-badge for coverage with https://github.com/luk-schweizer/jest-code-coverage-badge-action
+- enable readme-badge for coverage (for example with https://github.com/luk-schweizer/jest-code-coverage-badge-action)
+
+## Notes
+
+- github links work fine but when linking to a directory which does not contain a readme.md
