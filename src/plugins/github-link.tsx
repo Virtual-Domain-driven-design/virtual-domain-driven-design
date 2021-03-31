@@ -1,22 +1,27 @@
-import React, { FC } from "react"
+import React from "react"
 
 import { Link as GatsbyLink } from "gatsby"
 
-// Checks against absolute URLs that share 👇 so we can still pass it along to Gatsby's internal link component
-// preview host: https://master--virtualddd.netlify.app/
-const domainRegex = /(http[s]*:\/\/((www\.|master--)*virtualddd\.(com|netlify.app)|localhost:\d{4})[\/])+?/i
+export type GithubLinkLocation = {
+  host: string
+  hostname: string
+  href: string
+  key: string
+  origin?: string
+  pathname: string
+  port: string
+  protocol: string
+}
 
-// @NOTE We can use a REGEX like this for URLs we want to be treated as external which could be used for Netlify redirects
-
-// /http[s]*:\/\/[www.]*YOURDOMAIN\.com(?!\/i-am-external|\/me-too)[/]?/
-
-type MarkdownLinkProps = {
-  location: {
-    pathname: string
-    href: string
-  }
+export type MarkdownLinkProps = {
+  location: GithubLinkLocation
   href: string
 }
+
+// @NOTE We can use a REGEX like this for URLs we want to be treated as external which could be used for Netlify redirects
+// /http[s]*:\/\/[www.]*YOURDOMAIN\.com(?!\/i-am-external|\/me-too)[/]?/
+// Checks against absolute URLs that share 👇 so we can still pass it along to Gatsby's internal link component
+const domainRegex = /(http[s]*:\/\/((www\.|master--)*virtualddd\.(com|netlify.app)|localhost:\d{4})[\/])+?/i
 
 /**
  * Transform the links on the same domain in relative paths
@@ -38,13 +43,13 @@ const filesToIgnore = [
   ".pdf",
 ]
 
-const linkRemainsUnchanged = (hrefLowerCase: string) =>
-  !!filesToIgnore.find((e) => hrefLowerCase.endsWith(e))
+const linkToResource = (hrefLowerCase: string) =>
+  filesToIgnore.some((e) => hrefLowerCase.endsWith(e))
 
 const removeTrailingSlash = (pathname: string) =>
   pathname.endsWith("/") ? pathname.slice(0, -1) : pathname
 
-const GithubLink: FC<MarkdownLinkProps> = ({ location, href, ...rest }) => {
+const GithubLink = ({ location, href, ...rest }: MarkdownLinkProps) => {
   const defaultLink = (
     <a
       data-link-external
@@ -55,24 +60,27 @@ const GithubLink: FC<MarkdownLinkProps> = ({ location, href, ...rest }) => {
     />
   )
 
-  if (linkRemainsUnchanged(href.toLowerCase())) return defaultLink
+  //Handle external links
+  if (linkToResource(href.toLowerCase())) return defaultLink
 
   const workingHref = handleCallsOnSameDomain(href)
+  // fully defined links
   if (workingHref.startsWith("http")) return defaultLink
-  // this works for relative paths
-  if (
-    domainRegex.test(location.href) &&
-    !href.startsWith("/") &&
-    !href.startsWith("#")
-  ) {
+
+  // handle github user references
+  if (workingHref.startsWith("@"))
     return (
-      <GatsbyLink
-        data-link-internal
-        to={removeTrailingSlash(location.pathname) + "/" + workingHref}
+      <a
+        data-link-external
+        href={workingHref.replace("@", "https://github.com/")}
+        target="_blank"
+        rel="noopener noreferrer nofollow"
         {...rest}
       />
     )
-  }
+
+  // Relative links
+  // starting with a /
   if (workingHref.startsWith("/"))
     return (
       <GatsbyLink
@@ -82,11 +90,17 @@ const GithubLink: FC<MarkdownLinkProps> = ({ location, href, ...rest }) => {
       />
     )
 
-  // Treat urls that aren't web protocols as "normal" links
+  // anchors
+  if (workingHref.startsWith("#")) return <a href={workingHref} {...rest} />
 
-  if (!workingHref.startsWith("http")) return <a href={workingHref} {...rest} />
-
-  return defaultLink
+  // the rest, like "tools/html-version/instructions.md"
+  return (
+    <GatsbyLink
+      data-link-internal
+      to={removeTrailingSlash(location.pathname) + "/" + workingHref}
+      {...rest}
+    />
+  )
 }
 
 export default GithubLink

@@ -1,9 +1,15 @@
 const exampleAnchor = {
   href: "#how-to-use",
   location: {
-    pathname: "/learning-ddd/ddd-crew-core-domain-charts",
-    href: "http://localhost:8000/learning-ddd/ddd-crew-core-domain-charts",
+    pathname: "/learning-ddd/ddd-crew-core-domain-charts/",
+    href: "http://localhost:8000/learning-ddd/ddd-crew-core-domain-charts/",
     origin: "http://localhost:8000",
+    host: "localhost:8000",
+    hostname: "localhost",
+    key: "initial",
+    port: "8000",
+    protocol: "http:",
+    search: "",
   },
   rest: {
     "aria-label": "how to use permalink",
@@ -12,12 +18,18 @@ const exampleAnchor = {
 }
 
 //Expect href: https://github.com/emgsilva, data-link-external
-const exampleLinkPerson = {
+const exampleGithubUser = {
   href: "@emgsilva",
   location: {
     pathname: "/learning-ddd/ddd-crew-core-domain-charts",
     href: "http://localhost:8000/learning-ddd/ddd-crew-core-domain-charts",
     origin: "http://localhost:8000",
+    host: "localhost:8000",
+    hostname: "localhost",
+    key: "initial",
+    port: "8000",
+    protocol: "http:",
+    search: "",
   },
   rest: {
     children: "Eduardo da Silva",
@@ -96,4 +108,5 @@ module.exports = {
   exampleStatic,
   exampleMiroBackupFile,
   exampleInternalLink,
+  exampleGithubUser,
 }
