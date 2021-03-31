@@ -2,8 +2,7 @@
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
      "project": [
-       "./tsconfig.json",
-       "./gatsby-browser.js"
+       "./tsconfig.json"
      ]
   },
   "extends": [

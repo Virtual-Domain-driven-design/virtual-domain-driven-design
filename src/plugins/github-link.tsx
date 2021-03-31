@@ -3,8 +3,8 @@ import React, { FC } from "react"
 import { Link as GatsbyLink } from "gatsby"
 
 // Checks against absolute URLs that share 👇 so we can still pass it along to Gatsby's internal link component
-
-const domainRegex = /(http[s]*:\/\/((www\.)*virtualddd\.com|localhost:\d{4})[/])+?/i
+// preview host: https://master--virtualddd.netlify.app/
+const domainRegex = /(http[s]*:\/\/((www\.|master--)*virtualddd\.(com|netlify.app)|localhost:\d{4})[\/])+?/i
 
 // @NOTE We can use a REGEX like this for URLs we want to be treated as external which could be used for Netlify redirects
 
@@ -18,6 +18,13 @@ type MarkdownLinkProps = {
   href: string
 }
 
+/**
+ * Transform the links on the same domain in relative paths
+ * @param href
+ * Possible values: https://virtualddd.com/learning-ddd
+ * preview on https://master--virtualddd.netlify.app/learning-ddd/ddd-crew-bounded-context-canvas
+ * local development: http://localhost:8000/learning-ddd/
+ */
 const handleCallsOnSameDomain = (href: string) =>
   domainRegex.test(href) ? href.replace(domainRegex, "/") : href
 
