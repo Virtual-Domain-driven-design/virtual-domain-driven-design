@@ -58,6 +58,20 @@ const Conferences: FC = () => {
           }
         }
       }
+        dddexchange: file(relativePath: { eq: "logo/ddd-exchange.png" }) {
+            childImageSharp {
+                fluid {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        muconexchange: file(relativePath: { eq: "logo/mucon-exchange.png" }) {
+            childImageSharp {
+                fluid {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
     }
   `)
   return (
@@ -74,21 +88,21 @@ const Conferences: FC = () => {
             name="Domain-Driven Design Europe"
             image={data.dddeu.childImageSharp.fluid}
             location="Online-only"
-            date="February 4-5, 2021"
+            date="2022"
             website="https://dddeurope.com/"
           ></Conference>
           <Conference
             name="Explore DDD"
             image={data.eddd.childImageSharp.fluid}
             location="Keystone, Colorado, USA"
-            date="November (Virtual)"
+            date="2021 (Workshops)"
             website="https://exploreddd.com/"
           ></Conference>
           <Conference
             name="KanDDDinsky"
             image={data.kddd.childImageSharp.fluid}
             location="Berlin, Germany"
-            date="2021"
+            date="October"
             website="https://kandddinsky.de/"
           ></Conference>
           <Conference
@@ -104,6 +118,20 @@ const Conferences: FC = () => {
             location="Taipei, Taiwan"
             date="November"
             website="https://www.ddd-tw.com/"
+          ></Conference>
+          <Conference
+            name="DDDx: Domain-Driven Design eXchange "
+            image={data.dddexchange.childImageSharp.fluid}
+            location="Online"
+            date="8-9 June 2021 "
+            website="DDDx: Domain-Driven Design eXchange "
+          ></Conference>
+          <Conference
+            name="μCon: The Microservices eXchange "
+            image={data.muconexchange.childImageSharp.fluid}
+            location="Online"
+            date="13-14 April 2021"
+            website="https://skillsmatter.com/conferences/13252-mucon-2021"
           ></Conference>
         </div>
       </div>
