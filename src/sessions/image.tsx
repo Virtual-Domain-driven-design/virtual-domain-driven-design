@@ -5,9 +5,7 @@ export const upcomingImage = graphql`
     img {
       publicURL
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
   }
@@ -18,9 +16,7 @@ export const sessionImage = graphql`
     img {
       publicURL
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
   }

@@ -14,7 +14,7 @@ const BooksOverview: FC<BooksOverviewProps> = ({ levelFilter }) => {
   const allBooks = useStaticQuery<{
     allContentYaml: { nodes: { books: BookContent[] }[] }
   }>(graphql`
-    query {
+    {
       allContentYaml(
         filter: { books: { elemMatch: { title: { ne: null } } } }
       ) {
@@ -26,9 +26,7 @@ const BooksOverview: FC<BooksOverviewProps> = ({ levelFilter }) => {
             tags
             img {
               childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(layout: FULL_WIDTH)
               }
             }
           }
@@ -59,8 +57,8 @@ const BooksOverview: FC<BooksOverviewProps> = ({ levelFilter }) => {
       title="Books"
       allTo="/learning-ddd/books"
     >
-      {currentBooks.map((book, index) => {
-        return <Book key={index} book={book}></Book>
+      {currentBooks.map((book) => {
+        return <Book key={book.title} book={book} />
       })}
     </ContentGallery>
   )

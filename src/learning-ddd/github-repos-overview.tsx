@@ -14,7 +14,7 @@ const GithubRepoOverview: FC<GithubRepoProps> = ({ levelFilter }) => {
   const allGithubRepos = useStaticQuery<{
     allContentYaml: { nodes: { githubRepositories: GithubRepoContent[] }[] }
   }>(graphql`
-    query {
+    {
       allContentYaml(
         filter: { githubRepositories: { elemMatch: { name: { ne: null } } } }
       ) {
@@ -27,9 +27,7 @@ const GithubRepoOverview: FC<GithubRepoProps> = ({ levelFilter }) => {
             level
             img {
               childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(layout: FULL_WIDTH)
               }
             }
           }
@@ -61,8 +59,8 @@ const GithubRepoOverview: FC<GithubRepoProps> = ({ levelFilter }) => {
       title="Github Repositories"
       allTo="/learning-ddd/github-repositories"
     >
-      {currentGithubRepos.map((githubRepo, index) => {
-        return <GithubRepo key={index} githubRepo={githubRepo}></GithubRepo>
+      {currentGithubRepos.map((githubRepo) => {
+        return <GithubRepo key={githubRepo.name} githubRepo={githubRepo} />
       })}
     </ContentGallery>
   )

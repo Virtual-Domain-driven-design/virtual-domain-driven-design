@@ -55,8 +55,8 @@ const PapersOverview: FC<PapersOverviewProps> = ({ levelFilter }) => {
       title="Papers"
       allTo="/learning-ddd/papers"
     >
-      {currentPapers.map((paper, index) => {
-        return <Paper key={index} paper={paper} />
+      {currentPapers.map((paper) => {
+        return <Paper key={paper.title} paper={paper} />
       })}
     </ContentGallery>
   )

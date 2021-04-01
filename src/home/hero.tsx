@@ -1,5 +1,7 @@
+import { getImage } from "gatsby-plugin-image"
+import { convertToBgImage } from "gbimage-bridge"
 import BackgroundImage from "gatsby-background-image"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { graphql, useStaticQuery } from "gatsby"
 import React, { FC } from "react"
 import tw from "twin.macro"
@@ -12,8 +14,9 @@ import UpcomingSession from "../sessions/upcoming-session"
 const VDDDInfo: FC = ({ data }) => {
   return (
     <div tw="flex flex-col items-center justify-start w-full p-4 lg:p-8 sm:w-5/6 lg:w-full sm:rounded-lg sm:shadow-lg bg-white space-y-4">
-      <Img
-        fixed={data.vdddLogoTp.childImageSharp.fixed}
+      <GatsbyImage
+        image={data.vdddLogoTp.childImageSharp.gatsbyImageData}
+        alt="Virtual DDD"
         tw="hidden lg:block object-contain h-8"
       />
       <div tw="text-center">
@@ -49,33 +52,25 @@ const VDDDInfo: FC = ({ data }) => {
 
 const Hero: FC = () => {
   const data = useStaticQuery(graphql`
-    query {
+    {
       backgroundImage: file(relativePath: { eq: "kandddinsky.jpg" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid_withWebp
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       slackLogo: file(relativePath: { eq: "logo/slack_icon.png" }) {
         childImageSharp {
-          fixed(height: 24, width: 24) {
-            ...GatsbyImageSharpFixed
-          }
+          gatsbyImageData(height: 24, width: 24, layout: FIXED)
         }
       }
       twitterLogo: file(relativePath: { eq: "logo/twitter.png" }) {
         childImageSharp {
-          fixed(height: 24, width: 24) {
-            ...GatsbyImageSharpFixed
-          }
+          gatsbyImageData(height: 24, width: 24, layout: FIXED)
         }
       }
       vdddLogoTp: file(relativePath: { eq: "logo/vddd_logo_tp.png" }) {
         childImageSharp {
-          fixed(height: 32, width: 135) {
-            ...GatsbyImageSharpFixed
-          }
+          gatsbyImageData(height: 32, width: 135, layout: FIXED)
         }
       }
       upcoming: allContentYaml(
@@ -87,13 +82,15 @@ const Hero: FC = () => {
       }
     }
   `)
-  const imageData = data.backgroundImage.childImageSharp.fluid
+  const image = getImage(data.backgroundImage)
+  const bgImage = image && convertToBgImage(image)
+
   const upcomingSession = data.upcoming.nodes[0].upcomingSessions[0]
   const isUpcomingSession = !!upcomingSession && upcomingSession.id !== "none"
   return (
     <BackgroundImage
       tw="flex flex-col items-center justify-center bg-scroll h-auto lg:flex-row-reverse lg:items-start relative"
-      fluid={imageData}
+      {...bgImage}
     >
       <div tw="z-0 absolute inset-0 bg-gray-900 opacity-75" />
       <div tw="w-full lg:w-1/3 flex flex-col items-center justify-center z-10 m-4 sm:m-6 lg:m-8">
@@ -109,14 +106,22 @@ const Hero: FC = () => {
             tw="lg:text-xl"
             href="https://github.com/ddd-cqrs-es/slack-community"
           >
-            <Img fixed={data.slackLogo.childImageSharp.fixed} tw="mr-2 h-8" />
+            <GatsbyImage
+              image={data.slackLogo.childImageSharp.gatsbyImageData}
+              tw="mr-2 h-8"
+              alt="Slack"
+            />
             Slack community
           </OutlineBlueButton>
           <OutlineBlueButton
             tw="lg:text-xl"
             href="https://twitter.com/virtualDDD"
           >
-            <Img fixed={data.twitterLogo.childImageSharp.fixed} tw="mr-2 h-8" />
+            <GatsbyImage
+              image={data.twitterLogo.childImageSharp.gatsbyImageData}
+              tw="mr-2 h-8"
+              alt="Twitter"
+            />
             Twitter
           </OutlineBlueButton>
         </div>

@@ -44,8 +44,8 @@ const Videos: FC = () => {
         <h2 tw="my-6 w-4/5 lg:w-2/3 xl:w-1/2">Videos</h2>
         <div tw="w-11/12 md:w-5/6">
           <div tw="flex items-stretch justify-center flex-wrap">
-            {videos.map((video, index) => {
-              return <Video key={index} video={video}></Video>
+            {videos.map((video) => {
+              return <Video key={video.title} video={video} />
             })}
           </div>
         </div>

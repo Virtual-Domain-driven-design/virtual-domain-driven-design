@@ -1,15 +1,13 @@
 import { graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import React, { FC } from "react"
 
 const SlackLinkedButton: FC = () => {
   const data = useStaticQuery(graphql`
-    query {
+    {
       slackLogo: file(relativePath: { eq: "logo/slack_icon.png" }) {
         childImageSharp {
-          fixed(height: 24, width: 24) {
-            ...GatsbyImageSharpFixed
-          }
+          gatsbyImageData(height: 24, width: 24, layout: FIXED)
         }
       }
     }
@@ -21,7 +19,11 @@ const SlackLinkedButton: FC = () => {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <Img fixed={data.slackLogo.childImageSharp.fixed} tw="mr-2 h-8" />
+      <GatsbyImage
+        image={data.slackLogo.childImageSharp.gatsbyImageData}
+        tw="mr-2 h-8"
+        alt="Slack"
+      />
       Slack
     </a>
   )

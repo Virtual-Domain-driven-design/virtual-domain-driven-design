@@ -1,5 +1,5 @@
 import { graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import React, { FC } from "react"
 import "twin.macro"
 
@@ -17,9 +17,10 @@ const Sponsor = ({ name, image, website }: SponsorContent) => {
       <div tw="m-2 h-8 font-semibold text-gray-800 text-sm text-center">
         {name}
       </div>
-      <Img
+      <GatsbyImage
+        image={image}
+        alt={name}
         tw="my-2 w-64 h-32"
-        fluid={image}
         imgStyle={{ objectFit: "contain" }}
       />
     </FloatingActionCard>
@@ -28,61 +29,45 @@ const Sponsor = ({ name, image, website }: SponsorContent) => {
 
 const Sponsors: FC = () => {
   const data = useStaticQuery(graphql`
-    query {
+    {
       heimeshoff: file(relativePath: { eq: "logo/heimeshoffit.png" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       ubiquitous: file(relativePath: { eq: "logo/Ubiquitous.png" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       xebia: file(relativePath: { eq: "logo/xebia.png" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       kddd: file(relativePath: { eq: "logo/KDDD-conf.png" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       dddeu: file(relativePath: { eq: "logo/dddeu.jpg" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       eddd: file(relativePath: { eq: "logo/EDDD_Logo.png" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       ncrafts: file(relativePath: { eq: "logo/logo_newcrafts_noir.png" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       sessionize: file(relativePath: { eq: "logo/sessionize.png" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
     }
@@ -99,42 +84,42 @@ const Sponsors: FC = () => {
         <div tw="w-full flex-wrap flex flex-col sm:flex-row justify-center items-stretch">
           <Sponsor
             name="Heimeshoff IT"
-            image={data.heimeshoff.childImageSharp.fluid}
+            image={data.heimeshoff.childImageSharp.gatsbyImageData}
             website="https://www.heimeshoff.de/"
           />
           <Sponsor
             name="Ubiquitous AS"
-            image={data.ubiquitous.childImageSharp.fluid}
+            image={data.ubiquitous.childImageSharp.gatsbyImageData}
             website="https://www.ubiquitous.no/"
           />
           <Sponsor
             name="Xebia"
-            image={data.xebia.childImageSharp.fluid}
+            image={data.xebia.childImageSharp.gatsbyImageData}
             website="https://www.xebia.com/"
           />
           <Sponsor
             name="KanDDDinsky"
-            image={data.kddd.childImageSharp.fluid}
+            image={data.kddd.childImageSharp.gatsbyImageData}
             website="https://kandddinsky.de/"
           />
           <Sponsor
             name="DDD Europe"
-            image={data.dddeu.childImageSharp.fluid}
+            image={data.dddeu.childImageSharp.gatsbyImageData}
             website="https://dddeurope.com/"
           />
           <Sponsor
             name="Explore DDD"
-            image={data.eddd.childImageSharp.fluid}
+            image={data.eddd.childImageSharp.gatsbyImageData}
             website="https://exploreddd.com/"
           />
           <Sponsor
             name="nCrafts"
-            image={data.ncrafts.childImageSharp.fluid}
+            image={data.ncrafts.childImageSharp.gatsbyImageData}
             website="https://ncrafts.io/"
           />
           <Sponsor
             name="Sessionize"
-            image={data.sessionize.childImageSharp.fluid}
+            image={data.sessionize.childImageSharp.gatsbyImageData}
             website="https://sessionize.com/"
           />
         </div>

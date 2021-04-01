@@ -14,7 +14,7 @@ const DDDCrews: FC = () => {
   const allGithubRepos = useStaticQuery<{
     allContentYaml: { nodes: { githubRepositories: GithubRepoContent[] }[] }
   }>(graphql`
-    query {
+    {
       allContentYaml(
         filter: { githubRepositories: { elemMatch: { name: { ne: null } } } }
       ) {
@@ -25,9 +25,7 @@ const DDDCrews: FC = () => {
             to
             img {
               childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(layout: FULL_WIDTH)
               }
             }
           }
@@ -50,9 +48,9 @@ const DDDCrews: FC = () => {
         <h2 tw="my-6 w-4/5 lg:w-2/3 xl:w-1/2">Github Repositories</h2>
         <div tw="w-11/12 md:w-5/6">
           <div tw="flex items-stretch justify-center flex-wrap">
-            {githubRepos.map((githubRepo, index) => {
+            {githubRepos.map((githubRepo) => {
               return (
-                <GithubRepo key={index} githubRepo={githubRepo}></GithubRepo>
+                <GithubRepo key={githubRepo.name} githubRepo={githubRepo} />
               )
             })}
           </div>

@@ -47,8 +47,8 @@ const Papers: FC = () => {
         <h2 tw="my-6 w-4/5 lg:w-2/3 xl:w-1/2">Papers</h2>
         <div tw="w-11/12 md:w-5/6">
           <div tw="flex items-stretch justify-center flex-wrap">
-            {papers.map((paper, index) => {
-              return <Paper key={index} paper={paper}></Paper>
+            {papers.map((paper) => {
+              return <Paper key={paper.title} paper={paper} />
             })}
           </div>
         </div>

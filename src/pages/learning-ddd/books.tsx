@@ -14,7 +14,7 @@ const Books: FC = () => {
   const allBooks = useStaticQuery<{
     allContentYaml: { nodes: { books: BookContent[] }[] }
   }>(graphql`
-    query {
+    {
       allContentYaml(
         filter: { books: { elemMatch: { title: { ne: null } } } }
       ) {
@@ -26,9 +26,7 @@ const Books: FC = () => {
             tags
             img {
               childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(layout: FULL_WIDTH)
               }
             }
           }
@@ -51,8 +49,8 @@ const Books: FC = () => {
         <h2 tw="my-6 w-4/5 lg:w-2/3 xl:w-1/2">Books</h2>
         <div tw="w-11/12 md:w-5/6">
           <div tw="flex items-stretch justify-center flex-wrap">
-            {books.map((book, index) => {
-              return <Book key={index} book={book}></Book>
+            {books.map((book) => {
+              return <Book key={book.title} book={book} />
             })}
           </div>
         </div>

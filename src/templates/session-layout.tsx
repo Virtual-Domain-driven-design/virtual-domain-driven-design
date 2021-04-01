@@ -1,10 +1,5 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
 import { graphql } from "gatsby"
+// @ts-ignore
 import HyvorTalk from "hyvor-talk-react"
 import React from "react"
 import "twin.macro"
@@ -17,7 +12,7 @@ import { UpcomingSessionContent } from "../sessions/upcoming-session"
 import { SessionContent } from "../sessions/session"
 
 const SessionLayout = ({ pageContext, data }) => {
-  const sessionId = "sessions-" + pageContext.id
+  const sessionId = `sessions-${pageContext.id}`
 
   let session
   let sessionBlock

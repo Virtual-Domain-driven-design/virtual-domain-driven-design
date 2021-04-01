@@ -1,10 +1,11 @@
 import { graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
+import { IGatsbyImageData } from "gatsby-plugin-image/dist/src/components/gatsby-image.browser"
 import React, { FC } from "react"
 import "twin.macro"
 
 interface PodcastPlatform {
-  img: any
+  img: { childImageSharp: { gatsbyImageData: IGatsbyImageData } }
   name: string
   url: string
 }
@@ -13,7 +14,7 @@ const PodcastPlatforms: FC = () => {
   const allPodcastsPlatforms = useStaticQuery<{
     allContentYaml: { nodes: { podcastsPlatforms: PodcastPlatform[] }[] }
   }>(graphql`
-    query {
+    {
       allContentYaml(
         filter: { podcastsPlatforms: { elemMatch: { name: { ne: null } } } }
       ) {
@@ -23,9 +24,7 @@ const PodcastPlatforms: FC = () => {
             url
             img {
               childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(layout: FULL_WIDTH)
               }
             }
           }
@@ -35,16 +34,20 @@ const PodcastPlatforms: FC = () => {
   `).allContentYaml.nodes[0].podcastsPlatforms
   return (
     <div tw="my-1 w-full flex items-center justify-around w-1/3">
-      {allPodcastsPlatforms.map((platform, index) => {
+      {allPodcastsPlatforms.map((platform) => {
         return (
           <a
-            key={index}
+            key={platform.name}
             tw="shadow-md transform scale-100 duration-100 hover:scale-110 rounded-full"
             href={platform.url}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Img fluid={platform.img.childImageSharp.fluid} tw="h-10 w-10" />
+            <GatsbyImage
+              image={platform.img.childImageSharp.gatsbyImageData}
+              alt={platform.name}
+              tw="h-10 w-10"
+            />
           </a>
         )
       })}

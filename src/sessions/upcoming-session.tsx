@@ -1,7 +1,8 @@
-import Img from "gatsby-image"
-import React, { FC } from "react"
-import "twin.macro"
+import { GatsbyImage } from "gatsby-plugin-image"
+import { IGatsbyImageData } from "gatsby-plugin-image/dist/src/components/gatsby-image.browser"
+import React from "react"
 
+import "twin.macro"
 import ThreeDBlueButton from "../components/three-d-blue-button"
 import { graphql } from "gatsby"
 
@@ -34,7 +35,7 @@ export type UpcomingSessionContent = {
   id: string
   date: string
   description: string
-  img: any
+  img: { childImageSharp: { gatsbyImageData: IGatsbyImageData } }
   level: string
   links: SessionLink[]
   tags: string[]
@@ -47,8 +48,8 @@ type UpcomingSessionProps = {
   session: UpcomingSessionContent
 }
 
-const UpcomingSession: FC<UpcomingSessionProps> = ({ session }) => {
-  const linkToSession = "/sessions/" + session.id
+const UpcomingSession = ({ session }: UpcomingSessionProps) => {
+  const linkToSession = `/sessions/${session.id}`
 
   return (
     <div tw="bg-white w-full rounded-lg shadow-md p-4 md:p-8 mb-2">
@@ -56,10 +57,11 @@ const UpcomingSession: FC<UpcomingSessionProps> = ({ session }) => {
       <div tw="text-sm text-gray-600">
         {session.date} - {session.time}
       </div>
-      <Img
+      <GatsbyImage
+        image={session.img.childImageSharp.gatsbyImageData}
+        alt={session.title}
         tw="md:h-96 h-64 w-full object-cover"
-        fluid={session.img.childImageSharp.fluid}
-      ></Img>
+      />
       <div tw="py-2 text-justify">{session.description}</div>
       <div tw="mt-4 pt-2 space-x-4 border-t-2 border-solid">
         <div tw="flex items-center mt-4 h-14 overflow-hidden ">
@@ -67,10 +69,10 @@ const UpcomingSession: FC<UpcomingSessionProps> = ({ session }) => {
             <div tw="flex-shrink-0 leading-none text-xs tracking-tighter bg-blue-700 text-white rounded-md p-1 m-1">
               Level: {session.level}
             </div>
-            {session.tags.map((tag, index) => {
+            {session.tags.map((tag) => {
               return (
                 <div
-                  key={index}
+                  key={tag}
                   tw="flex-shrink-0 leading-none text-xs tracking-tighter bg-gray-200 text-gray-700 rounded-md p-1 m-1"
                 >
                   {tag}

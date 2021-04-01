@@ -50,8 +50,8 @@ const PastSessions: FC<PastSessionProps> = ({ allSessions }) => {
       </h2>
       <div tw="w-11/12 md:w-5/6">
         <div tw="flex flex-wrap justify-center">
-          {sessions.map((session, index) => {
-            return <Session key={index} session={session} />
+          {sessions.map((session) => {
+            return <Session key={session.id} session={session} />
           })}
         </div>
       </div>

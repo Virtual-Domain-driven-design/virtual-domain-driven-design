@@ -1,14 +1,14 @@
 import React from "react"
 import tw from "twin.macro"
 
-import SessionLink from "./../sessions/upcoming-session"
+import { SessionLink } from "./upcoming-session"
 import ThreeDBlueButton from "../components/three-d-blue-button"
 import VideoEmbed from "./../components/video-embed"
 
 type SessionBlockProps = {
   description: string
   title: string
-  links?: typeof SessionLink[]
+  links?: SessionLink[]
   podcast?: string
   video: string
 }
@@ -32,7 +32,11 @@ const SessionBlock = (sessionBlockProps: SessionBlockProps) => {
             <div tw="m-4 sm:space-x-4 space-y-2 sm:space-y-0 flex flex-col sm:flex-row items-center justify-center">
               {sessionBlockProps.links.map((link) => {
                 return (
-                  <ThreeDBlueButton tw="text-xs " href={link.url}>
+                  <ThreeDBlueButton
+                    tw="text-xs "
+                    href={link.url}
+                    key={link.label}
+                  >
                     {link.label}
                   </ThreeDBlueButton>
                 )
@@ -59,7 +63,7 @@ const SessionBlock = (sessionBlockProps: SessionBlockProps) => {
                 src={sessionBlockProps.podcast}
                 scrolling="no"
                 frameBorder={0}
-              ></iframe>
+              />
             </div>
           </div>
         )}

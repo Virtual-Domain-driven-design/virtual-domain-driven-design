@@ -54,8 +54,8 @@ const PodcastsOverview: FC<PodcastsOverviewProps> = ({ levelFilter }) => {
       title="Podcasts"
       allTo="/learning-ddd/podcasts"
     >
-      {currentPodcasts.map((session, index) => {
-        return <Podcast key={index} session={session}></Podcast>
+      {currentPodcasts.map((session) => {
+        return <Podcast key={session.title} session={session} />
       })}
     </ContentGallery>
   )

@@ -46,8 +46,8 @@ const Podcasts: FC = () => {
         <PodcastPlatforms />
         <div tw="w-11/12 md:w-5/6">
           <div tw="flex items-stretch justify-center flex-wrap">
-            {podcasts.map((session, index) => {
-              return <Podcast key={index} session={session}></Podcast>
+            {podcasts.map((session) => {
+              return <Podcast key={session.title} session={session} />
             })}
           </div>
         </div>

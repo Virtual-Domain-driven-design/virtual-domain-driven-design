@@ -1,5 +1,6 @@
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
+import { IGatsbyImageData } from "gatsby-plugin-image/dist/src/components/gatsby-image.browser"
 import React, { FC } from "react"
 import "twin.macro"
 import ThreeDBlueButton from "../components/three-d-blue-button"
@@ -38,7 +39,7 @@ export type SessionContent = {
   tags: string[]
   video: string
   podcast?: string
-  img: any
+  img: { childImageSharp: { gatsbyImageData: IGatsbyImageData } }
 }
 
 type SessionProps = {
@@ -49,10 +50,10 @@ const Session: FC<SessionProps> = ({ session }) => {
   const linkToSession = "/sessions/" + session.id
   return (
     <div tw="md:flex shadow-lg mx-6 md:mx-auto my-4 max-w-lg lg:max-w-2xl h-96 md:h-64">
-      <Img
+      <GatsbyImage
+        image={session.img.childImageSharp.gatsbyImageData}
         tw="h-full w-full md:w-1/3 object-cover rounded-lg rounded-r-none h-2/5 md:h-64"
-        fluid={session.img.childImageSharp.fluid}
-        alt="bag"
+        alt={session.title}
       />
       <div tw="w-full md:w-2/3 px-4 py-2 bg-white rounded-lg h-3/5 md:h-64">
         <h2 tw="text-base md:text-xl text-gray-800 font-medium mr-auto">
@@ -66,10 +67,10 @@ const Session: FC<SessionProps> = ({ session }) => {
             <div tw="flex-shrink-0 leading-none text-xs bg-blue-700 text-white rounded-md p-1 m-1 h-6">
               Level: {session.level}
             </div>
-            {session.tags.map((tag, index) => {
+            {session.tags.map((tag) => {
               return (
                 <div
-                  key={index}
+                  key={tag}
                   tw="flex-shrink-0 leading-none text-xs bg-gray-200 text-gray-700 rounded-md p-1 m-1 h-6"
                 >
                   {tag}

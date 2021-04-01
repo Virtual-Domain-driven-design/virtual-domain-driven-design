@@ -151,6 +151,7 @@ module.exports = {
         remote: `https://github.com/ddd-crew/domain-message-flow-modelling.git`,
       },
     },
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {

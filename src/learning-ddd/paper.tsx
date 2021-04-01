@@ -32,10 +32,10 @@ const Paper = ({ paper }: PaperProps) => {
           <div tw="flex-shrink-0 leading-none text-xs tracking-tighter bg-blue-700 text-white rounded-md p-1 m-1">
             Level: {paper.level}
           </div>
-          {paper.tags.map((tag, index) => {
+          {paper.tags.map((tag) => {
             return (
               <div
-                key={index}
+                key={tag}
                 tw="flex-shrink-0 leading-none text-xs tracking-tighter bg-gray-200 text-gray-700 rounded-md p-1 m-1"
               >
                 {tag}

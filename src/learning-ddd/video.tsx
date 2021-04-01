@@ -29,10 +29,10 @@ const Video: FC<VideoProps> = ({ video }) => {
         <div tw="flex-shrink-0 leading-none text-xs tracking-tighter bg-blue-700 text-white rounded-md p-1 m-1">
           Level: {video.level}
         </div>
-        {video.tags.map((tag, index) => {
+        {video.tags.map((tag) => {
           return (
             <div
-              key={index}
+              key={tag}
               tw="flex-shrink-0 leading-none text-xs tracking-tighter bg-gray-200 text-gray-700 rounded-md p-1 m-1"
             >
               {tag}

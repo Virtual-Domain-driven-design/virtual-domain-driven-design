@@ -54,8 +54,8 @@ const VideosOverview: FC<VideosOverviewProps> = ({ levelFilter }) => {
       title="Videos"
       allTo="/learning-ddd/videos"
     >
-      {currentVideos.map((video, index) => {
-        return <Video key={index} video={video}></Video>
+      {currentVideos.map((video) => {
+        return <Video key={video.title} video={video} />
       })}
     </ContentGallery>
   )

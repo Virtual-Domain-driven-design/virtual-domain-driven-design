@@ -1,5 +1,5 @@
 import { graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import React, { FC } from "react"
 import tw from "twin.macro"
 
@@ -30,7 +30,11 @@ const Organiser = ({
       <div tw="flex flex-col items-center justify-start">
         <div tw="text-gray-800 text-sm text-center">{name}</div>
         <div tw="text-gray-700 text-xs italic text-center">{tagline}</div>
-        <Img tw="my-2 w-64 h-64 object-cover" fluid={image} />
+        <GatsbyImage
+          image={image}
+          alt={name}
+          tw="my-2 w-64 h-64 object-cover"
+        />
       </div>
       <div tw="my-1 w-full flex items-center justify-around">
         <a
@@ -40,9 +44,10 @@ const Organiser = ({
           tw="rounded-full transform scale-100 duration-100 hover:scale-110"
           css={!website && tw`hidden`}
         >
-          <Img
+          <GatsbyImage
+            image={data.website.childImageSharp.gatsbyImageData}
+            alt={website}
             tw="h-10 w-10 object-contain"
-            fluid={data.website.childImageSharp.fluid}
           />
         </a>
         <a
@@ -52,9 +57,10 @@ const Organiser = ({
           tw="rounded-full transform scale-100 duration-100 hover:scale-110"
           css={!twitter && tw`hidden`}
         >
-          <Img
+          <GatsbyImage
+            image={data.twitter.childImageSharp.gatsbyImageData}
+            alt={twitter}
             tw="h-10 w-10 object-contain"
-            fluid={data.twitter.childImageSharp.fluid}
           />
         </a>
         <a
@@ -64,9 +70,10 @@ const Organiser = ({
           tw="rounded-full transform scale-100 duration-100 hover:scale-110"
           css={!linkedin && tw`hidden`}
         >
-          <Img
+          <GatsbyImage
+            image={data.linkedin.childImageSharp.gatsbyImageData}
+            alt={linkedin}
             tw="h-10 w-10 object-contain"
-            fluid={data.linkedin.childImageSharp.fluid}
           />
         </a>
       </div>
@@ -76,75 +83,55 @@ const Organiser = ({
 
 const Organisers: FC = () => {
   const data = useStaticQuery(graphql`
-    query {
+    {
       website: file(relativePath: { eq: "logo/website.png" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       twitter: file(relativePath: { eq: "logo/twitter.png" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       linkedin: file(relativePath: { eq: "logo/linkedin.png" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       zsofia: file(relativePath: { eq: "organisers/zsofia.jpeg" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       marco: file(relativePath: { eq: "organisers/MarcoHeimeshoff.jpg" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       kenny: file(relativePath: { eq: "organisers/kenny.jpg" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       maxime: file(relativePath: { eq: "organisers/photo_maxime_s.jpg" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       evelyn: file(relativePath: { eq: "organisers/evelyn.jpg" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       kacper: file(relativePath: { eq: "organisers/kacper.jpg" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       krisztina: file(relativePath: { eq: "organisers/katy2.jpg" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
     }
@@ -161,7 +148,7 @@ const Organisers: FC = () => {
         <div tw="w-full flex-wrap flex flex-col sm:flex-row justify-center items-stretch">
           <Organiser
             name="Zsofia Herendi"
-            image={data.zsofia.childImageSharp.fluid}
+            image={data.zsofia.childImageSharp.gatsbyImageData}
             tagline="Flow addict PM"
             website="https://www.zherendi.com/"
             twitter="ZHerendi"
@@ -170,7 +157,7 @@ const Organisers: FC = () => {
           />
           <Organiser
             name="Marco Heimeshoff"
-            image={data.marco.childImageSharp.fluid}
+            image={data.marco.childImageSharp.gatsbyImageData}
             tagline="Business software artist"
             website="https://www.heimeshoff.de/"
             twitter="Heimeshoff"
@@ -179,7 +166,7 @@ const Organisers: FC = () => {
           />
           <Organiser
             name="Kenny Baas-Schwegler"
-            image={data.kenny.childImageSharp.fluid}
+            image={data.kenny.childImageSharp.gatsbyImageData}
             tagline="Deep Democratic modeller"
             website="https://baasie.com"
             twitter="kenny_baas"
@@ -188,7 +175,7 @@ const Organisers: FC = () => {
           />
           <Organiser
             name="Maxime Sanglan-Charlier"
-            image={data.maxime.childImageSharp.fluid}
+            image={data.maxime.childImageSharp.gatsbyImageData}
             tagline="Connecting people circa 97"
             website="https://blog.onehundredacorns.com/"
             twitter="__MaxS__"
@@ -197,7 +184,7 @@ const Organisers: FC = () => {
           />
           <Organiser
             name="Evelyn van Kelle"
-            image={data.evelyn.childImageSharp.fluid}
+            image={data.evelyn.childImageSharp.gatsbyImageData}
             tagline="Socio-technical super fan"
             website="https://medium.com/@e.vankelle"
             twitter="EvelynvanKelle"
@@ -206,7 +193,7 @@ const Organisers: FC = () => {
           />
           <Organiser
             name="Kacper Gunia"
-            image={data.kacper.childImageSharp.fluid}
+            image={data.kacper.childImageSharp.gatsbyImageData}
             tagline="Domain Explorer"
             website="https://domaincentric.net/"
             twitter="cakper"
@@ -215,7 +202,7 @@ const Organisers: FC = () => {
           />
           <Organiser
             name="Krisztina Hirth"
-            image={data.krisztina.childImageSharp.fluid}
+            image={data.krisztina.childImageSharp.gatsbyImageData}
             tagline="Coding Architect"
             website="https://yellow-brick-code.org/"
             twitter="YellowBrickC"

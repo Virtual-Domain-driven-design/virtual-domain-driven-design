@@ -1,7 +1,8 @@
 import { graphql, useStaticQuery } from "gatsby"
+import { IGatsbyImageData } from "gatsby-plugin-image/dist/src/components/gatsby-image.browser"
 import React, { FC } from "react"
-import "twin.macro"
 
+import "twin.macro"
 import FloatingActionCard from "../components/floating-action-card"
 
 type CommunityContent = {
@@ -10,7 +11,7 @@ type CommunityContent = {
   country: string
   name: string
   url: string
-  img: any
+  img: IGatsbyImageData
 }
 
 interface CommunityProps {

@@ -1,5 +1,7 @@
 import { graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
+import { getImage } from "gatsby-plugin-image"
+import { convertToBgImage } from "gbimage-bridge"
+import { GatsbyImage } from "gatsby-plugin-image"
 import React, { FC, useState } from "react"
 import "twin.macro"
 
@@ -15,15 +17,20 @@ import SessionsOverview from "../learning-ddd/sessions-overview"
 import ThreeDBlueButton from "../components/three-d-blue-button"
 import VideoOverview from "../learning-ddd/video-overview"
 import { ContentLevel } from "../sessions/session"
+import { IGatsbyImageData } from "gatsby-plugin-image/dist/src/components/gatsby-image.browser"
 
 type LearningDDDInfoProps = {
-  img: any
+  img: IGatsbyImageData
 }
 
 const LearningDDDInfo: FC<LearningDDDInfoProps> = ({ img }) => {
   return (
     <div tw="w-full p-4 sm:mt-8 sm:w-5/6 sm:rounded-lg sm:shadow-lg bg-white  flex flex-col items-center justify-start">
-      <Img fixed={img} className="hidden lg:block object-contain} h-8 mb-4" />
+      <GatsbyImage
+        image={img}
+        alt="Learning DDD"
+        className="hidden lg:block object-contain} h-8 mb-4"
+      />
       <div tw="mb-4 text-center">
         Below you can find all the curated content by the Domain-Driven Design
         community. You can easily filtered these based on your knowledge level,
@@ -48,19 +55,15 @@ const LearningDDDInfo: FC<LearningDDDInfoProps> = ({ img }) => {
 
 const LearningDDD: FC = () => {
   const data = useStaticQuery(graphql`
-    query {
+    {
       backgroundImage: file(relativePath: { eq: "kandddinsky.jpg" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid_withWebp
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       vdddLogoTp: file(relativePath: { eq: "logo/vddd_logo_tp.png" }) {
         childImageSharp {
-          fixed(height: 32, width: 135) {
-            ...GatsbyImageSharpFixed
-          }
+          gatsbyImageData(height: 32, width: 135, layout: FIXED)
         }
       }
     }
@@ -72,7 +75,8 @@ const LearningDDD: FC = () => {
     ContentLevel.Intermediate,
     ContentLevel.Advanced,
   ])
-
+  const image = getImage(data.backgroundImage)
+  const bgImage = image && convertToBgImage(image)
   return (
     <Layout>
       <SEO
@@ -82,11 +86,13 @@ const LearningDDD: FC = () => {
       <BackgroundImage
         Tag="section"
         className="hero flex flex-col items-center justify-center lg:flex-row-reverse lg:items-start"
-        fluid={data.backgroundImage.childImageSharp.fluid}
+        {...bgImage}
       >
-        <div tw="z-0 absolute inset-0 bg-gray-900 opacity-75"></div>
+        <div tw="z-0 absolute inset-0 bg-gray-900 opacity-75" />
         <div tw="w-full m-4 lg:w-1/3 flex flex-col items-center justify-center z-10">
-          <LearningDDDInfo img={data.vdddLogoTp.childImageSharp.fixed} />
+          <LearningDDDInfo
+            img={data.vdddLogoTp.childImageSharp.gatsbyImageData}
+          />
         </div>
         <div tw="w-full mt-8 lg:w-2/3 flex flex-col items-center justify-center z-10">
           <div tw="w-full rounded-lg shadow-md p-4 md:p-8 mb-2">
@@ -98,12 +104,12 @@ const LearningDDD: FC = () => {
         </div>
       </BackgroundImage>
 
-      <GithubRepoOverview levelFilter={levelFilter}></GithubRepoOverview>
-      <VideoOverview levelFilter={levelFilter}></VideoOverview>
-      <BooksOverview levelFilter={levelFilter}></BooksOverview>
-      <PapersOverview levelFilter={levelFilter}></PapersOverview>
-      <SessionsOverview levelFilter={levelFilter}></SessionsOverview>
-      <PodcastsOverview levelFilter={levelFilter}></PodcastsOverview>
+      <GithubRepoOverview levelFilter={levelFilter} />
+      <VideoOverview levelFilter={levelFilter} />
+      <BooksOverview levelFilter={levelFilter} />
+      <PapersOverview levelFilter={levelFilter} />
+      <SessionsOverview levelFilter={levelFilter} />
+      <PodcastsOverview levelFilter={levelFilter} />
     </Layout>
   )
 }
