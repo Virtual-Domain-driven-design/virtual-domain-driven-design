@@ -138,7 +138,7 @@ const Conferences: FC = () => {
             image={data.dddexchange.childImageSharp.fluid}
             location="Online"
             date="8-9 June 2021 "
-            website="DDDx: Domain-Driven Design eXchange "
+            website="https://skillsmatter.com/conferences/13257-dddx-2021"
           />
           <Conference
             name="μCon: The Microservices eXchange "
