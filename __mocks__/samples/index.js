@@ -1,5 +1,5 @@
 const mdxNodes = require("./mdxNodes")
-const markdownLinks = require("./markdown-links")
+const markdownLinks = require("./github-links")
 
 const upcomingSession = {
   id: "66",

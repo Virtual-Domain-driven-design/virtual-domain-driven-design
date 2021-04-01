@@ -2,7 +2,7 @@
   "name": "vddd-site",
   "private": false,
   "description": "Virtual DDD site, an online Domain-Driven Design meetup and conference for the community by the community",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "author": "Kenny Baas-Schwegler",
   "scripts": {
     "type-check": "tsc --noEmit",
@@ -14,7 +14,7 @@
     "serve": "gatsby serve",
     "test": "jest",
     "test:watch": "jest --watch",
-    "pre-commit": "yarn run lint && yarn run build"
+    "pre-commit": "yarn run format && yarn run lint && yarn test && yarn run build"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",

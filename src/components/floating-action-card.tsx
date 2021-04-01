@@ -1,27 +1,28 @@
 import { Link } from "gatsby"
-import React, { FC } from "react"
+import React from "react"
 import tw from "twin.macro"
 
 interface FloatingActionCardProps {
-  key: string
+  id: string
   href?: string
   to?: string
+  children: any
 }
 
-const FloatingActionCard: FC<FloatingActionCardProps> = ({
+const FloatingActionCard = ({
   children,
-  key,
+  id,
   href,
   to,
   ...props
-}) => {
+}: FloatingActionCardProps) => {
   const style = [
     tw`bg-white w-full sm:w-64 shadow-md rounded-lg m-4 flex flex-col items-center justify-between transform scale-100 duration-100 hover:scale-110`,
   ]
   if (href) {
     return (
       <a
-        key={key}
+        key={id}
         tw="flex justify-center "
         href={href}
         target="_blank"
@@ -33,6 +34,7 @@ const FloatingActionCard: FC<FloatingActionCardProps> = ({
   }
   if (to) {
     return (
+      // @ts-ignore
       <Link css={style} to={to} {...props}>
         {children}
       </Link>

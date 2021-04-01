@@ -1,20 +1,35 @@
 import { graphql } from "gatsby"
 import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import React, { FC } from "react"
+import React from "react"
 import "twin.macro"
 
 import Layout from "./layout"
-import MarkdownLink from "../plugins/markdown-link"
+import GithubLink, { GithubLinkLocation } from "../plugins/github-link"
+type MdxNode = {
+  id: string
+  body: string
+  headings: [
+    {
+      value: string
+    }
+  ]
+}
 
-const GithubRepoLayout: FC = ({ location, data: { mdx } }) => {
+interface GithubRepoFile {
+  location: GithubLinkLocation
+  data: {
+    mdx: MdxNode
+  }
+}
+const GithubRepoLayout = ({ location, data: { mdx } }: GithubRepoFile) => {
   return (
     <Layout>
       <div tw="flex flex-col items-center" id="github repository">
         <div tw="prose prose-sm sm:prose lg:prose-lg xl:prose-lg lg:w-2/3">
           <MDXProvider
             components={{
-              a: (props) => <MarkdownLink location={location} {...props} />,
+              a: (props) => <GithubLink location={location} {...props} />,
               // NEED TO ESCAPE BECAUSE OF A BUG
               embed: () => <div></div>,
             }}

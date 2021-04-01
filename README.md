@@ -102,23 +102,27 @@ Requirements to build:
 ### Start developing
 
 Fork and check-out the master branch.
-Install the Gatsby CLI:
+Install the Gatsby CLI to be able to call gatsby directly, without a node script:
 
 ```sh
 npm i --global gatsby-cli
 ```
 
-Then do a Yarn install and Gatbsy develop to get you started
+Then do a Yarn install and Gatsby develop to get you started
 
 ```sh
 yarn
+
 gatsby develop
+# or
+yarn run develop
 ```
 
 or
 
 ```sh
 npm install
+
 gatsby develop
 # or
 npm run develop
@@ -133,30 +137,31 @@ You should be able to go to [localhost:8000](https://localhost:8000) to see the 
 The tests are written with [jest](https://jestjs.io/) either as `.test.js` or as `.test.ts(x)` corresponding to the "system under test". We use
 
 - [react-test-renderer](https://reactjs.org/docs/test-renderer.html)
-- @testing-library/react
+- [@testing-library/react](https://github.com/testing-library/react-testing-library)
 
 Run the tests with `npm test` or `yarn test`
 
 Development with TDD works like magic when using the watcher:
 
 ```sh
-npm run test:watch
+yarn run test:watch
 ```
 
 #### Pre-Commit
 
-Check the linting and build the project before you commit your changes
+Let prettier to format your files, check the linting and build the project before you commit your changes
 
 ```sh
-npm run lint
+yarn run format
+yarn run lint
 
 #and
 gatsby build
 # or
-npm run build
+yarn run build
 
 # or as one command:
-npm run pre-commit
+yarn run pre-commit
 ```
 
 You will see linting or graphql errors with a description and advice to fix them if any content is incorrect.
@@ -188,4 +193,8 @@ TODO - define the corresponding workflow with a pipeline and versioning (maybe w
 ## Tasks
 
 - create at least one test for every functionality
-- enable readme-badge for coverage with https://github.com/luk-schweizer/jest-code-coverage-badge-action
+- enable readme-badge for coverage (for example with https://github.com/luk-schweizer/jest-code-coverage-badge-action)
+
+## Notes
+
+- github links work fine but when linking to a directory which does not contain a readme.md

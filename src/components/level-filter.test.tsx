@@ -12,7 +12,7 @@ describe("The LevelFilter", () => {
   beforeEach(() => jest.resetAllMocks())
 
   const setLevelFilter = jest.fn()
-  it("should create or check the snapshot", async () => {
+  it("should create or check the snapshot", () => {
     const container = renderer
       .create(<LevelFilter setLevelFilter={setLevelFilter} />)
       .toJSON()
@@ -20,7 +20,7 @@ describe("The LevelFilter", () => {
     expect(container).toMatchSnapshot()
   })
 
-  it("should render one button for each level", async () => {
+  it("should render one button for each level", () => {
     const { queryAllByRole } = render(
       <LevelFilter setLevelFilter={setLevelFilter} />
     )
@@ -30,7 +30,7 @@ describe("The LevelFilter", () => {
     expect(result).toHaveLength(4)
   })
 
-  it("should set the correct level with each click", async () => {
+  it("should set the correct level with each click", () => {
     const { queryAllByRole } = render(
       <LevelFilter setLevelFilter={setLevelFilter} />
     )

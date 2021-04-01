@@ -1,5 +1,5 @@
 import Img from "gatsby-image"
-import React, { FC } from "react"
+import React from "react"
 import "twin.macro"
 
 import FloatingActionCard from "../components/floating-action-card"
@@ -17,9 +17,9 @@ interface GithubRepoProps {
   githubRepo: GithubRepoContent
 }
 
-const GithubRepo: FC<GithubRepoProps> = ({ githubRepo }) => {
+const GithubRepo = ({ githubRepo }: GithubRepoProps) => {
   return (
-    <FloatingActionCard key={githubRepo.name} to={githubRepo.to}>
+    <FloatingActionCard id={githubRepo.name} to={githubRepo.to}>
       <div tw="flex flex-col items-center justify-start">
         <div tw="m-2 h-8 font-semibold text-gray-800 text-sm text-center">
           {githubRepo.name}
