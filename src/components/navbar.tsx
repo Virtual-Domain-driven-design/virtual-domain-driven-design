@@ -2,7 +2,7 @@ import { Link, graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import React, { FC, useState } from "react"
 import tw from "twin.macro"
-
+import { VdddLogo, SlackLogo, TwitterLogo } from "./logos"
 // @ts-ignore
 import MeetupSvg from "../images/logo/meetup.svg"
 
@@ -13,22 +13,18 @@ interface NavigationItem {
   label: string
 }
 
-const VDDDLogo: FC = ({ data }) => {
+const VDDDLink = () => {
   return (
     <Link
       to="/"
       tw="p-4 cursor-pointer flex-shrink-0 flex items-center justify-center rounded-lg hover:bg-gray-400"
     >
-      <GatsbyImage
-        image={data.vdddLogoTp.childImageSharp.gatsbyImageData}
-        alt="Virtual DDD"
-        tw="object-contain mr-2 h-8"
-      />
+      <VdddLogo />
     </Link>
   )
 }
 
-const SocialMenu: FC = ({ data }) => {
+const SocialMenu = () => {
   return (
     <button
       className="group"
@@ -36,22 +32,22 @@ const SocialMenu: FC = ({ data }) => {
     >
       Socials
       <div tw="absolute top-0 right-0 mt-14 w-32 bg-white rounded shadow-lg z-30 hidden group-hover:block">
-        <SocialSubItems data={data} />
+        <SocialSubItems />
       </div>
     </button>
   )
 }
 
-const SocialMobileMenu: FC = ({ data }) => {
+const SocialMobileMenu = () => {
   return (
     <div tw="relative border-t border-gray-400 w-full">
       <div tw="absolute top-0 right-0 text-gray-500 pt-2 pr-4">Socials</div>
-      <SocialSubItems data={data} />
+      <SocialSubItems />
     </div>
   )
 }
 
-const SocialSubItems: FC = ({ data }) => {
+const SocialSubItems = () => {
   return (
     <div>
       <a
@@ -68,12 +64,8 @@ const SocialSubItems: FC = ({ data }) => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <GatsbyImage
-          image={data.twitterLogo.childImageSharp.gatsbyImageData}
-          tw="mr-2 h-8"
-          alt="Twitter"
-        />
-        twitter
+        <TwitterLogo />
+        <div tw="pl-1">Twitter</div>
       </a>
       <a
         tw="p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center lg:justify-center"
@@ -81,12 +73,8 @@ const SocialSubItems: FC = ({ data }) => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <GatsbyImage
-          image={data.slackLogo.childImageSharp.gatsbyImageData}
-          tw="mr-2 h-8"
-          alt="Slack"
-        />
-        Slack
+        <SlackLogo />
+        <div tw="pl-1">Slack</div>
       </a>
     </div>
   )
@@ -176,7 +164,7 @@ const NavbarMobile: FC = ({ data }) => {
   return (
     <div tw="lg:hidden">
       <div tw="w-full flex flex-row items-center justify-between shadow-md">
-        <VDDDLogo data={data} />
+        <VDDDLink />
         <button
           tw="relative flex-shrink-0 flex items-center m-4 px-3 py-2 border rounded border-white hover:text-blue-400 hover:border-blue-400"
           onClick={() => setMenuOpen((isMenuOpen) => !isMenuOpen)}
@@ -226,7 +214,7 @@ const NavbarMobile: FC = ({ data }) => {
 const NavbarDesktop: FC = ({ data }) => {
   return (
     <div tw="w-4/5 xl:w-2/3 flex items-center justify-between">
-      <VDDDLogo data={data} />
+      <VDDDLink data={data} />
       <div tw="flex flex-col lg:flex-row items-start lg:items-stretch justify-end">
         <DesktopNavigationItem to="/sessions" label="Sessions" />
         <DesktopNavigationItem to="/learning-ddd" label="Learning DDD" />
@@ -256,21 +244,6 @@ const NavbarDesktop: FC = ({ data }) => {
 const NavBar: FC = () => {
   const data = useStaticQuery(graphql`
     {
-      vdddLogoTp: file(relativePath: { eq: "logo/vddd_logo_tp.png" }) {
-        childImageSharp {
-          gatsbyImageData(height: 32, width: 135, layout: FIXED)
-        }
-      }
-      slackLogo: file(relativePath: { eq: "logo/slack_icon.png" }) {
-        childImageSharp {
-          gatsbyImageData(height: 24, width: 24, layout: FIXED)
-        }
-      }
-      twitterLogo: file(relativePath: { eq: "logo/twitter.png" }) {
-        childImageSharp {
-          gatsbyImageData(height: 24, width: 24, layout: FIXED)
-        }
-      }
       githubLogo: file(relativePath: { eq: "logo/github.png" }) {
         childImageSharp {
           gatsbyImageData(height: 24, width: 24, layout: FIXED)

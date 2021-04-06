@@ -1,16 +1,34 @@
 import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
-import React, { FC } from "react"
+import * as React from "react"
 import tw from "twin.macro"
+import { IGatsbyImageData } from "gatsby-plugin-image/dist/src/components/gatsby-image.browser"
+import { ChildImageSharp } from "../components/logos/vddd"
+
+type SocialLogos = {
+  websiteLogo: ChildImageSharp
+  twitterLogo: ChildImageSharp
+  linkedInLogo: ChildImageSharp
+}
+
+type Images = {
+  zsofia: ChildImageSharp
+  marco: ChildImageSharp
+  kenny: ChildImageSharp
+  evelyn: ChildImageSharp
+  maxime: ChildImageSharp
+  kacper: ChildImageSharp
+  krisztina: ChildImageSharp
+}
 
 type OrganiserProps = {
   name: string
-  image: any
+  image: IGatsbyImageData
   tagline: string
   website: string
   twitter: string
   linkedin?: string
-  data: any
+  socialLogos: SocialLogos
 }
 
 const Organiser = ({
@@ -20,7 +38,7 @@ const Organiser = ({
   website,
   twitter,
   linkedin = "",
-  data,
+  socialLogos,
 }: OrganiserProps) => {
   return (
     <div
@@ -45,7 +63,7 @@ const Organiser = ({
           css={!website && tw`hidden`}
         >
           <GatsbyImage
-            image={data.website.childImageSharp.gatsbyImageData}
+            image={socialLogos.websiteLogo.childImageSharp.gatsbyImageData}
             alt={website}
             tw="h-10 w-10 object-contain"
           />
@@ -58,7 +76,7 @@ const Organiser = ({
           css={!twitter && tw`hidden`}
         >
           <GatsbyImage
-            image={data.twitter.childImageSharp.gatsbyImageData}
+            image={socialLogos.twitterLogo.childImageSharp.gatsbyImageData}
             alt={twitter}
             tw="h-10 w-10 object-contain"
           />
@@ -71,7 +89,7 @@ const Organiser = ({
           css={!linkedin && tw`hidden`}
         >
           <GatsbyImage
-            image={data.linkedin.childImageSharp.gatsbyImageData}
+            image={socialLogos.linkedInLogo.childImageSharp.gatsbyImageData}
             alt={linkedin}
             tw="h-10 w-10 object-contain"
           />
@@ -81,20 +99,20 @@ const Organiser = ({
   )
 }
 
-const Organisers: FC = () => {
-  const data = useStaticQuery(graphql`
+const Organisers = () => {
+  const images = useStaticQuery<SocialLogos & Images>(graphql`
     {
-      website: file(relativePath: { eq: "logo/website.png" }) {
+      websiteLogo: file(relativePath: { eq: "logo/website.png" }) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
         }
       }
-      twitter: file(relativePath: { eq: "logo/twitter.png" }) {
+      twitterLogo: file(relativePath: { eq: "logo/twitter.png" }) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
         }
       }
-      linkedin: file(relativePath: { eq: "logo/linkedin.png" }) {
+      linkedInLogo: file(relativePath: { eq: "logo/linkedin.png" }) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
         }
@@ -136,6 +154,11 @@ const Organisers: FC = () => {
       }
     }
   `)
+  const logos: SocialLogos = {
+    twitterLogo: images.twitterLogo,
+    linkedInLogo: images.linkedInLogo,
+    websiteLogo: images.websiteLogo,
+  }
   return (
     <div
       tw="bg-gray-100 flex flex-col items-center justify-center m-4"
@@ -148,66 +171,66 @@ const Organisers: FC = () => {
         <div tw="w-full flex-wrap flex flex-col sm:flex-row justify-center items-stretch">
           <Organiser
             name="Zsofia Herendi"
-            image={data.zsofia.childImageSharp.gatsbyImageData}
+            image={images.zsofia.childImageSharp.gatsbyImageData}
             tagline="Flow addict PM"
             website="https://www.zherendi.com/"
             twitter="ZHerendi"
             linkedin="in/zsófia-herendi-2296b48"
-            data={data}
+            socialLogos={logos}
           />
           <Organiser
             name="Marco Heimeshoff"
-            image={data.marco.childImageSharp.gatsbyImageData}
+            image={images.marco.childImageSharp.gatsbyImageData}
             tagline="Business software artist"
             website="https://www.heimeshoff.de/"
             twitter="Heimeshoff"
             linkedin="in/heimeshoff"
-            data={data}
+            socialLogos={logos}
           />
           <Organiser
             name="Kenny Baas-Schwegler"
-            image={data.kenny.childImageSharp.gatsbyImageData}
+            image={images.kenny.childImageSharp.gatsbyImageData}
             tagline="Deep Democratic modeller"
             website="https://baasie.com"
             twitter="kenny_baas"
             linkedin="in/kenny-baas"
-            data={data}
+            socialLogos={logos}
           />
           <Organiser
             name="Maxime Sanglan-Charlier"
-            image={data.maxime.childImageSharp.gatsbyImageData}
+            image={images.maxime.childImageSharp.gatsbyImageData}
             tagline="Connecting people circa 97"
             website="https://blog.onehundredacorns.com/"
             twitter="__MaxS__"
             linkedin="company/ncrafts"
-            data={data}
+            socialLogos={logos}
           />
           <Organiser
             name="Evelyn van Kelle"
-            image={data.evelyn.childImageSharp.gatsbyImageData}
+            image={images.evelyn.childImageSharp.gatsbyImageData}
             tagline="Socio-technical super fan"
             website="https://medium.com/@e.vankelle"
             twitter="EvelynvanKelle"
             linkedin="in/evelynvankelle"
-            data={data}
+            socialLogos={logos}
           />
           <Organiser
             name="Kacper Gunia"
-            image={data.kacper.childImageSharp.gatsbyImageData}
+            image={images.kacper.childImageSharp.gatsbyImageData}
             tagline="Domain Explorer"
             website="https://domaincentric.net/"
             twitter="cakper"
             linkedin="in/cakper"
-            data={data}
+            socialLogos={logos}
           />
           <Organiser
             name="Krisztina Hirth"
-            image={data.krisztina.childImageSharp.gatsbyImageData}
+            image={images.krisztina.childImageSharp.gatsbyImageData}
             tagline="Coding Architect"
             website="https://yellow-brick-code.org/"
             twitter="YellowBrickC"
             linkedin="in/christina-hirth-yellowbrickcode?locale=en_US"
-            data={data}
+            socialLogos={logos}
           />
         </div>
       </div>
