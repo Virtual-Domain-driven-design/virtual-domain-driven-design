@@ -97,13 +97,13 @@ const Hero: FC = () => {
         <VDDDInfo data={data} />
         <div tw="flex items-center justify-center space-x-4 m-4 sm:m-6 lg:m-8">
           <OutlineBlueButton
-            tw="lg:text-xl"
+            tw="lg:text-xl flex"
             href="https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/"
           >
             Meetup
           </OutlineBlueButton>
           <OutlineBlueButton
-            tw="lg:text-xl"
+            tw="lg:text-xl flex"
             href="https://github.com/ddd-cqrs-es/slack-community"
           >
             <GatsbyImage
@@ -114,7 +114,7 @@ const Hero: FC = () => {
             Slack community
           </OutlineBlueButton>
           <OutlineBlueButton
-            tw="lg:text-xl"
+            tw="lg:text-xl flex"
             href="https://twitter.com/virtualDDD"
           >
             <GatsbyImage
