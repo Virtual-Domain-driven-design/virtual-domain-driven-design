@@ -1,0 +1,74 @@
+{
+  "vdddLogo": {
+    "childImageSharp": {
+      "gatsbyImageData": {
+        "layout": "fixed",
+        "backgroundColor": "#f8f8f8",
+        "images": {
+          "fallback": {
+            "src": "/static/a1a17b228142a711010aff197345ee4b/aff94/vddd_logo_tp.png",
+            "srcSet": "/static/a1a17b228142a711010aff197345ee4b/aff94/vddd_logo_tp.png 135w,\n/static/a1a17b228142a711010aff197345ee4b/046af/vddd_logo_tp.png 270w",
+            "sizes": "135px"
+          },
+          "sources": [
+            {
+              "srcSet": "/static/a1a17b228142a711010aff197345ee4b/45989/vddd_logo_tp.webp 135w,\n/static/a1a17b228142a711010aff197345ee4b/20969/vddd_logo_tp.webp 270w",
+              "type": "image/webp",
+              "sizes": "135px"
+            }
+          ]
+        },
+        "width": 135,
+        "height": 32
+      }
+    }
+  },
+  "slackLogo": {
+    "childImageSharp": {
+      "gatsbyImageData": {
+        "layout": "fixed",
+        "backgroundColor": "#080808",
+        "images": {
+          "fallback": {
+            "src": "/static/6b04981d71d140833cb93793287c6a38/2391d/slack_icon.png",
+            "srcSet": "/static/6b04981d71d140833cb93793287c6a38/2391d/slack_icon.png 24w,\n/static/6b04981d71d140833cb93793287c6a38/fcdb9/slack_icon.png 48w",
+            "sizes": "24px"
+          },
+          "sources": [
+            {
+              "srcSet": "/static/6b04981d71d140833cb93793287c6a38/4e704/slack_icon.webp 24w,\n/static/6b04981d71d140833cb93793287c6a38/e78b1/slack_icon.webp 48w",
+              "type": "image/webp",
+              "sizes": "24px"
+            }
+          ]
+        },
+        "width": 24,
+        "height": 24
+      }
+    }
+  },
+  "twitterLogo": {
+    "childImageSharp": {
+      "gatsbyImageData": {
+        "layout": "fixed",
+        "backgroundColor": "#28a8e8",
+        "images": {
+          "fallback": {
+            "src": "/static/9102af32fe26d52fd80240f7ebdaf365/2391d/twitter.png",
+            "srcSet": "/static/9102af32fe26d52fd80240f7ebdaf365/2391d/twitter.png 24w,\n/static/9102af32fe26d52fd80240f7ebdaf365/fcdb9/twitter.png 48w",
+            "sizes": "24px"
+          },
+          "sources": [
+            {
+              "srcSet": "/static/9102af32fe26d52fd80240f7ebdaf365/4e704/twitter.webp 24w,\n/static/9102af32fe26d52fd80240f7ebdaf365/e78b1/twitter.webp 48w",
+              "type": "image/webp",
+              "sizes": "24px"
+            }
+          ]
+        },
+        "width": 24,
+        "height": 24
+      }
+    }
+  }
+}
