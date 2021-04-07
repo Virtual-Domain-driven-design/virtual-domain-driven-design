@@ -169,7 +169,7 @@ module.exports = {
         },
       },
     },
-    "gatsby-plugin-postcss",
+    `gatsby-plugin-postcss`,
     `gatsby-plugin-typescript`,
     {
       resolve: "gatsby-plugin-eslint",
@@ -192,5 +192,6 @@ module.exports = {
     // },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-netlify-cache`,
+    `gatsby-plugin-testing`,
   ],
 }

@@ -9,6 +9,8 @@ module.exports = {
   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
   testPathIgnorePatterns: ["node_modules", "\\.cache", `<rootDir>.*/public`],
   transformIgnorePatterns: ["node_modules/(?!(gatsby)/)"],
+  watchPathIgnorePatterns: ["\\.gql\\.json$"],
+  watchPlugins: ["gatsby-plugin-testing/jest-plugin"],
   globals: {
     __PATH_PREFIX__: "",
   },

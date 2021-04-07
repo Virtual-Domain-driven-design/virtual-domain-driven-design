@@ -138,8 +138,11 @@ The tests are written with [jest](https://jestjs.io/) either as `.test.js` or as
 
 - [react-test-renderer](https://reactjs.org/docs/test-renderer.html)
 - [@testing-library/react](https://github.com/testing-library/react-testing-library)
+- [gatsby-plugin-testing](https://www.gatsbyjs.com/plugins/gatsby-plugin-testing/) to test the real static queries, without mocking them
 
-Run the tests with `npm test` or `yarn test`
+Run the tests with `npm test` or `yarn test`.
+
+Important: The components using graphQl need a fresh run of `build` or `develop` so that they can generate the latest static queries
 
 Development with TDD works like magic when using the watcher:
 

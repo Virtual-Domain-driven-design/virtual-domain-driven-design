@@ -27,29 +27,14 @@ jobs:
       with:
         node-version: '14'
 
-    - name: Install and test
-      run: |
-        yarn
-        yarn test --coverage
-
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v2
-
-    - name: Use Node.js 14.x
-      uses: actions/setup-node@v2
-      with:
-        node-version: '14'
-
-    - name: Install and build
+    - name: Install, build and test
       run: |
         yarn
         yarn run build
-  
+        yarn test --coverage
+
   deploy:
-    needs: [test, build]
+    needs: [test]
     runs-on: ubuntu-latest
     steps:
       - name: Trigger netlify build hook
