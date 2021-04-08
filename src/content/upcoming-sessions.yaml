@@ -13,35 +13,6 @@
 #       url: ""
 
 # fallback with non-numeric id and a real image:
-#upcomingSessions:
-#  - id: "none"
-#    img: ../images/kandddinsky.jpg
-
 upcomingSessions:
-  - id: "67"
-    title: "[Fireside chat] How Epistemic injustice impacts Domain Crunching with Cat Swetel"
-    date: "6th April, 2021"
-    time: "19:00 CEST"
-    img: ../images/sessions/session-67.jpg
-    video: "https://www.youtube.com/embed/tRgqD2ztHpk"
-    level: Advanced
-    tags:
-      - Inclusion
-      - diversity
-      - domain crunching
-      - Epistemic Injustice
-    description:
-      "Cat Swetel gave a brilliant Technologist's Introduction to Epistemic Injustice explaining 'epistemic injustice'—what we know, how we know, and who gets to decide and influence our reality. There are two kinds of epistemic injustice:
-
-      * Testimonial injustice; When someone is ignored, or not believed, because of their sex, sexuality, gender presentation, race, or, broadly, because of their identity.
-      * Hermeneutical injustice;  injustice related to how people interpret their lives.
-
-      Join us in this session where Cat will do a short introduction on the topic, and after, we will talk about how this impact domain crunching. For instance, if we don't include software developers in requirements engineering, what is the impact? What if the software teams only allowed to build user stories and aren't part of the narrative for their building? And what about the exchange of narratives across the ecosystem, i.e. across domains. Do we have the hermeneutic resources to describe emergent behaviour across the system?
-      "
-    links:
-      - label: "RSVP on meetup"
-        url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/277252981/"
-      - label: "Join in on Zoom"
-        url: "https://us02web.zoom.us/j/82119405232"
-      - label: "YouTube and chill"
-        url: "https://youtu.be/tRgqD2ztHpk"
+  - id: "none"
+    img: ../images/kandddinsky.jpg
