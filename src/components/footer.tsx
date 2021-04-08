@@ -1,8 +1,8 @@
 import { Link } from "gatsby"
-import React, { FC } from "react"
+import * as React from "react"
 import "twin.macro"
 
-const Footer: FC = () => {
+const Footer = () => {
   return (
     <div tw="bg-white flex flex-col items-center justify-center p-4  text-center">
       <div>Copyright © Virtual Domain-Driven Design</div>

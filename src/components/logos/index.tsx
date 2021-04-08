@@ -1,3 +1,5 @@
 export { VdddLogo } from "./vddd"
 export { SlackLogo } from "./slack"
 export { TwitterLogo } from "./twitter"
+export { GithubLogo } from "./github"
+export { NetlifyLogo } from "./netlify"

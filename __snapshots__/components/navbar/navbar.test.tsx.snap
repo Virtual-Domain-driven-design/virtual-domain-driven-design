@@ -1,0 +1,2103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The NavBar should render the whole navigation bar 1`] = `
+.c3 {
+  padding: 1rem;
+  cursor: pointer;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+}
+
+.c3:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(156,163,175,var(--tw-bg-opacity));
+}
+
+.c13 {
+  padding: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.25;
+  cursor: pointer;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c13:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(156,163,175,var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(29,78,216,var(--tw-text-opacity));
+}
+
+.c14 {
+  margin-right: 0.5rem;
+  height: 2rem;
+}
+
+.c15 {
+  padding: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.25;
+  cursor: pointer;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c15:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(156,163,175,var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(29,78,216,var(--tw-text-opacity));
+}
+
+.c16 {
+  padding-left: 0.25rem;
+}
+
+.c17 {
+  padding: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.25;
+  cursor: pointer;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c17:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(156,163,175,var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(29,78,216,var(--tw-text-opacity));
+}
+
+.c18 {
+  padding-left: 0.25rem;
+}
+
+.c30 {
+  position: relative;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.25;
+  cursor: pointer;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(37,99,235,var(--tw-text-opacity));
+}
+
+.c30:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(156,163,175,var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(29,78,216,var(--tw-text-opacity));
+}
+
+.c30:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.c32 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin-top: 3.5rem;
+  width: 8rem;
+  --tw-bg-opacity: 1;
+  background-color: rgba(255,255,255,var(--tw-bg-opacity));
+  border-radius: 0.25rem;
+  --tw-shadow: 0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05);
+  box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+  z-index: 30;
+  display: none;
+}
+
+.group:hover .c31 {
+  display: block;
+}
+
+.c11 {
+  position: relative;
+  border-top-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgba(156,163,175,var(--tw-border-opacity));
+  width: 100%;
+}
+
+.c12 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  --tw-text-opacity: 1;
+  color: rgba(107,114,128,var(--tw-text-opacity));
+  padding-top: 0.5rem;
+  padding-right: 1rem;
+}
+
+.c21 {
+  padding: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.25;
+  cursor: pointer;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c21:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(156,163,175,var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(29,78,216,var(--tw-text-opacity));
+}
+
+.c22 {
+  padding-left: 0.25rem;
+}
+
+.c23 {
+  padding: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.25;
+  cursor: pointer;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c23:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(156,163,175,var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(29,78,216,var(--tw-text-opacity));
+}
+
+.c33 {
+  position: relative;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.25;
+  cursor: pointer;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(37,99,235,var(--tw-text-opacity));
+}
+
+.c33:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(156,163,175,var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(29,78,216,var(--tw-text-opacity));
+}
+
+.c33:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.c35 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin-top: 3.5rem;
+  width: 8rem;
+  --tw-bg-opacity: 1;
+  background-color: rgba(255,255,255,var(--tw-bg-opacity));
+  border-radius: 0.25rem;
+  --tw-shadow: 0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05);
+  box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+  z-index: 30;
+  display: none;
+}
+
+.group:hover .c34 {
+  display: block;
+}
+
+.c19 {
+  position: relative;
+  border-top-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgba(156,163,175,var(--tw-border-opacity));
+  width: 100%;
+}
+
+.c20 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  --tw-text-opacity: 1;
+  color: rgba(107,114,128,var(--tw-text-opacity));
+  padding-top: 0.5rem;
+  padding-right: 1rem;
+}
+
+.c27 {
+  position: relative;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.25;
+  cursor: pointer;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(37,99,235,var(--tw-text-opacity));
+}
+
+.c27:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(156,163,175,var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(29,78,216,var(--tw-text-opacity));
+}
+
+.c27:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.c8 {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.25;
+  cursor: pointer;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c8:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(156,163,175,var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(29,78,216,var(--tw-text-opacity));
+}
+
+.c2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  --tw-shadow: 0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06);
+  box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+}
+
+.c4 {
+  position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 1rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-width: 1px;
+  border-radius: 0.25rem;
+  --tw-border-opacity: 1;
+  border-color: rgba(255,255,255,var(--tw-border-opacity));
+}
+
+.c4:hover {
+  --tw-text-opacity: 1;
+  color: rgba(96,165,250,var(--tw-text-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgba(96,165,250,var(--tw-border-opacity));
+}
+
+.c5 {
+  fill: currentColor;
+  height: 0.75rem;
+  width: 0.75rem;
+}
+
+.c6 {
+  display: block;
+  --tw-bg-opacity: 1;
+  background-color: rgba(255,255,255,var(--tw-bg-opacity));
+  width: 100%;
+  z-index: 30;
+  --tw-shadow: 0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06);
+  box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+  visibility: hidden;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c9 {
+  padding: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.25;
+  cursor: pointer;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c9:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(156,163,175,var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(29,78,216,var(--tw-text-opacity));
+}
+
+.c10 {
+  padding: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.25;
+  cursor: pointer;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c10:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(156,163,175,var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(29,78,216,var(--tw-text-opacity));
+}
+
+.c25 {
+  width: 80%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c26 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c28 {
+  padding: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.25;
+  cursor: pointer;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c28:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(156,163,175,var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(29,78,216,var(--tw-text-opacity));
+}
+
+.c29 {
+  padding: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.25;
+  cursor: pointer;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c29:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(156,163,175,var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(29,78,216,var(--tw-text-opacity));
+}
+
+.c0 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255,255,255,var(--tw-bg-opacity));
+  --tw-shadow: 0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06);
+  box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+  --tw-text-opacity: 1;
+  color: rgba(37,99,235,var(--tw-text-opacity));
+  height: 4rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 50;
+}
+
+.c24 {
+  display: none;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media (min-width:1024px) {
+  .c13 {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width:1024px) {
+  .c15 {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width:1024px) {
+  .c17 {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width:1024px) {
+  .c21 {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width:1024px) {
+  .c23 {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    display: none;
+  }
+}
+
+@media (min-width:1024px) {
+  .c7 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: stretch;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+}
+
+@media (min-width:1024px) {
+  .c9 {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width:1024px) {
+  .c10 {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width:1280px) {
+  .c25 {
+    width: 66.666667%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c26 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: stretch;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+}
+
+@media (min-width:1024px) {
+  .c28 {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width:1024px) {
+  .c29 {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width:1024px) {
+  .c24 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <a
+        className="c3"
+        href="/"
+      >
+        <div
+          className="gatsby-image-wrapper"
+          data-gatsby-image-wrapper=""
+          style={
+            Object {
+              "backgroundColor": undefined,
+              "height": 32,
+              "overflow": "hidden",
+              "position": "relative",
+              "width": 135,
+            }
+          }
+        >
+          <div
+            aria-hidden={true}
+            data-placeholder-image=""
+            style={
+              Object {
+                "height": "100%",
+                "left": 0,
+                "position": "absolute",
+                "top": 0,
+                "width": "100%",
+              }
+            }
+          />
+          <picture>
+            <source
+              data-srcset="/static/a1a17b228142a711010aff197345ee4b/45989/vddd_logo_tp.webp 135w,/static/a1a17b228142a711010aff197345ee4b/20969/vddd_logo_tp.webp 270w"
+              sizes="135px"
+              type="image/webp"
+            />
+            <img
+              alt="Virtual DDD"
+              data-gatsby-image-ssr=""
+              data-main-image=""
+              data-src="/static/a1a17b228142a711010aff197345ee4b/aff94/vddd_logo_tp.png"
+              data-srcset="/static/a1a17b228142a711010aff197345ee4b/aff94/vddd_logo_tp.png 135w,/static/a1a17b228142a711010aff197345ee4b/046af/vddd_logo_tp.png 270w"
+              decoding="async"
+              loading="lazy"
+              onLoad={[Function]}
+              sizes="135px"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                  "height": "100%",
+                  "left": 0,
+                  "objectFit": undefined,
+                  "objectPosition": undefined,
+                  "opacity": 0,
+                  "position": "absolute",
+                  "top": 0,
+                  "transform": "translateZ(0)",
+                  "transition": "opacity 250ms linear",
+                  "width": "100%",
+                  "willChange": "opacity",
+                }
+              }
+              tw="object-contain mr-2 h-8"
+            />
+          </picture>
+          <noscript>
+            <picture>
+              <source
+                sizes="135px"
+                srcSet="/static/a1a17b228142a711010aff197345ee4b/45989/vddd_logo_tp.webp 135w,/static/a1a17b228142a711010aff197345ee4b/20969/vddd_logo_tp.webp 270w"
+                type="image/webp"
+              />
+              <img
+                alt="Virtual DDD"
+                data-gatsby-image-ssr=""
+                data-main-image=""
+                decoding="async"
+                loading="lazy"
+                onLoad={[Function]}
+                sizes="135px"
+                src="/static/a1a17b228142a711010aff197345ee4b/aff94/vddd_logo_tp.png"
+                srcSet="/static/a1a17b228142a711010aff197345ee4b/aff94/vddd_logo_tp.png 135w,/static/a1a17b228142a711010aff197345ee4b/046af/vddd_logo_tp.png 270w"
+                style={
+                  Object {
+                    "backgroundColor": undefined,
+                    "height": "100%",
+                    "left": 0,
+                    "objectFit": undefined,
+                    "objectPosition": undefined,
+                    "opacity": 0,
+                    "position": "absolute",
+                    "top": 0,
+                    "transform": "translateZ(0)",
+                    "transition": "opacity 250ms linear",
+                    "width": "100%",
+                    "willChange": "opacity",
+                  }
+                }
+                tw="object-contain mr-2 h-8"
+              />
+            </picture>
+          </noscript>
+          <script
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "const t=\\"undefined\\"!=typeof HTMLImageElement&&\\"loading\\"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll(\\"img[data-main-image]\\");for(let e of t){e.dataset.src&&(e.setAttribute(\\"src\\",e.dataset.src),e.removeAttribute(\\"data-src\\")),e.dataset.srcset&&(e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\"));const t=e.parentNode.querySelectorAll(\\"source[data-srcset]\\");for(let e of t)e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\");e.complete&&(e.style.opacity=1)}}",
+              }
+            }
+            type="module"
+          />
+        </div>
+      </a>
+      <button
+        className="c4"
+        onClick={[Function]}
+      >
+        <svg
+          className="c5"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>
+            Menu
+          </title>
+          <path
+            d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      className="c6"
+    >
+      <div
+        className="c7"
+      >
+        <a
+          className="c8"
+          href="/sessions"
+        >
+          Sessions
+        </a>
+        <a
+          className="c8"
+          href="/learning-ddd"
+        >
+          Learning DDD
+        </a>
+        <a
+          className="c9"
+          href="https://feedback.userreport.com/a15e4e61-2323-40a1-90b4-1267e010e35c/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Propose & Vote!
+        </a>
+        <a
+          className="c10"
+          href="https://dddheuristics.com"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Heuristics
+        </a>
+        <div
+          className="c11"
+        >
+          <div
+            className="c12"
+          >
+            Socials
+          </div>
+          <div>
+            <a
+              className="c13"
+              href="https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <
+                className="c14"
+              />
+            </a>
+            <a
+              className="c15"
+              href="https://twitter.com/VirtualDDD"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <div
+                className="gatsby-image-wrapper"
+                data-gatsby-image-wrapper=""
+                style={
+                  Object {
+                    "backgroundColor": undefined,
+                    "height": 24,
+                    "overflow": "hidden",
+                    "position": "relative",
+                    "width": 24,
+                  }
+                }
+              >
+                <div
+                  aria-hidden={true}
+                  data-placeholder-image=""
+                  style={
+                    Object {
+                      "height": "100%",
+                      "left": 0,
+                      "position": "absolute",
+                      "top": 0,
+                      "width": "100%",
+                    }
+                  }
+                />
+                <picture>
+                  <source
+                    data-srcset="/static/9102af32fe26d52fd80240f7ebdaf365/4e704/twitter.webp 24w,/static/9102af32fe26d52fd80240f7ebdaf365/e78b1/twitter.webp 48w"
+                    sizes="24px"
+                    type="image/webp"
+                  />
+                  <img
+                    alt="Twitter"
+                    data-gatsby-image-ssr=""
+                    data-main-image=""
+                    data-src="/static/9102af32fe26d52fd80240f7ebdaf365/2391d/twitter.png"
+                    data-srcset="/static/9102af32fe26d52fd80240f7ebdaf365/2391d/twitter.png 24w,/static/9102af32fe26d52fd80240f7ebdaf365/fcdb9/twitter.png 48w"
+                    decoding="async"
+                    loading="lazy"
+                    onLoad={[Function]}
+                    sizes="24px"
+                    style={
+                      Object {
+                        "backgroundColor": undefined,
+                        "height": "100%",
+                        "left": 0,
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "opacity": 0,
+                        "position": "absolute",
+                        "top": 0,
+                        "transform": "translateZ(0)",
+                        "transition": "opacity 250ms linear",
+                        "width": "100%",
+                        "willChange": "opacity",
+                      }
+                    }
+                    tw="mr-2 h-8"
+                  />
+                </picture>
+                <noscript>
+                  <picture>
+                    <source
+                      sizes="24px"
+                      srcSet="/static/9102af32fe26d52fd80240f7ebdaf365/4e704/twitter.webp 24w,/static/9102af32fe26d52fd80240f7ebdaf365/e78b1/twitter.webp 48w"
+                      type="image/webp"
+                    />
+                    <img
+                      alt="Twitter"
+                      data-gatsby-image-ssr=""
+                      data-main-image=""
+                      decoding="async"
+                      loading="lazy"
+                      onLoad={[Function]}
+                      sizes="24px"
+                      src="/static/9102af32fe26d52fd80240f7ebdaf365/2391d/twitter.png"
+                      srcSet="/static/9102af32fe26d52fd80240f7ebdaf365/2391d/twitter.png 24w,/static/9102af32fe26d52fd80240f7ebdaf365/fcdb9/twitter.png 48w"
+                      style={
+                        Object {
+                          "backgroundColor": undefined,
+                          "height": "100%",
+                          "left": 0,
+                          "objectFit": undefined,
+                          "objectPosition": undefined,
+                          "opacity": 0,
+                          "position": "absolute",
+                          "top": 0,
+                          "transform": "translateZ(0)",
+                          "transition": "opacity 250ms linear",
+                          "width": "100%",
+                          "willChange": "opacity",
+                        }
+                      }
+                      tw="mr-2 h-8"
+                    />
+                  </picture>
+                </noscript>
+                <script
+                  dangerouslySetInnerHTML={
+                    Object {
+                      "__html": "const t=\\"undefined\\"!=typeof HTMLImageElement&&\\"loading\\"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll(\\"img[data-main-image]\\");for(let e of t){e.dataset.src&&(e.setAttribute(\\"src\\",e.dataset.src),e.removeAttribute(\\"data-src\\")),e.dataset.srcset&&(e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\"));const t=e.parentNode.querySelectorAll(\\"source[data-srcset]\\");for(let e of t)e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\");e.complete&&(e.style.opacity=1)}}",
+                    }
+                  }
+                  type="module"
+                />
+              </div>
+              <div
+                className="c16"
+              >
+                Twitter
+              </div>
+            </a>
+            <a
+              className="c17"
+              href="https://github.com/ddd-cqrs-es/slack-community"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <div
+                className="gatsby-image-wrapper"
+                data-gatsby-image-wrapper=""
+                style={
+                  Object {
+                    "backgroundColor": undefined,
+                    "height": 24,
+                    "overflow": "hidden",
+                    "position": "relative",
+                    "width": 24,
+                  }
+                }
+              >
+                <div
+                  aria-hidden={true}
+                  data-placeholder-image=""
+                  style={
+                    Object {
+                      "height": "100%",
+                      "left": 0,
+                      "position": "absolute",
+                      "top": 0,
+                      "width": "100%",
+                    }
+                  }
+                />
+                <picture>
+                  <source
+                    data-srcset="/static/6b04981d71d140833cb93793287c6a38/4e704/slack_icon.webp 24w,/static/6b04981d71d140833cb93793287c6a38/e78b1/slack_icon.webp 48w"
+                    sizes="24px"
+                    type="image/webp"
+                  />
+                  <img
+                    alt="Slack"
+                    data-gatsby-image-ssr=""
+                    data-main-image=""
+                    data-src="/static/6b04981d71d140833cb93793287c6a38/2391d/slack_icon.png"
+                    data-srcset="/static/6b04981d71d140833cb93793287c6a38/2391d/slack_icon.png 24w,/static/6b04981d71d140833cb93793287c6a38/fcdb9/slack_icon.png 48w"
+                    decoding="async"
+                    loading="lazy"
+                    onLoad={[Function]}
+                    sizes="24px"
+                    style={
+                      Object {
+                        "backgroundColor": undefined,
+                        "height": "100%",
+                        "left": 0,
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "opacity": 0,
+                        "position": "absolute",
+                        "top": 0,
+                        "transform": "translateZ(0)",
+                        "transition": "opacity 250ms linear",
+                        "width": "100%",
+                        "willChange": "opacity",
+                      }
+                    }
+                    tw="mr-2 h-8"
+                  />
+                </picture>
+                <noscript>
+                  <picture>
+                    <source
+                      sizes="24px"
+                      srcSet="/static/6b04981d71d140833cb93793287c6a38/4e704/slack_icon.webp 24w,/static/6b04981d71d140833cb93793287c6a38/e78b1/slack_icon.webp 48w"
+                      type="image/webp"
+                    />
+                    <img
+                      alt="Slack"
+                      data-gatsby-image-ssr=""
+                      data-main-image=""
+                      decoding="async"
+                      loading="lazy"
+                      onLoad={[Function]}
+                      sizes="24px"
+                      src="/static/6b04981d71d140833cb93793287c6a38/2391d/slack_icon.png"
+                      srcSet="/static/6b04981d71d140833cb93793287c6a38/2391d/slack_icon.png 24w,/static/6b04981d71d140833cb93793287c6a38/fcdb9/slack_icon.png 48w"
+                      style={
+                        Object {
+                          "backgroundColor": undefined,
+                          "height": "100%",
+                          "left": 0,
+                          "objectFit": undefined,
+                          "objectPosition": undefined,
+                          "opacity": 0,
+                          "position": "absolute",
+                          "top": 0,
+                          "transform": "translateZ(0)",
+                          "transition": "opacity 250ms linear",
+                          "width": "100%",
+                          "willChange": "opacity",
+                        }
+                      }
+                      tw="mr-2 h-8"
+                    />
+                  </picture>
+                </noscript>
+                <script
+                  dangerouslySetInnerHTML={
+                    Object {
+                      "__html": "const t=\\"undefined\\"!=typeof HTMLImageElement&&\\"loading\\"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll(\\"img[data-main-image]\\");for(let e of t){e.dataset.src&&(e.setAttribute(\\"src\\",e.dataset.src),e.removeAttribute(\\"data-src\\")),e.dataset.srcset&&(e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\"));const t=e.parentNode.querySelectorAll(\\"source[data-srcset]\\");for(let e of t)e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\");e.complete&&(e.style.opacity=1)}}",
+                    }
+                  }
+                  type="module"
+                />
+              </div>
+              <div
+                className="c18"
+              >
+                Slack
+              </div>
+            </a>
+          </div>
+        </div>
+        <div
+          className="c19"
+        >
+          <div
+            className="c20"
+          >
+            Contribute
+          </div>
+          <div>
+            <a
+              className="c21"
+              href="https://github.com/Virtual-Domain-driven-design/virtual-domain-driven-design"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <div
+                className="gatsby-image-wrapper"
+                data-gatsby-image-wrapper=""
+                style={
+                  Object {
+                    "backgroundColor": undefined,
+                    "height": 24,
+                    "overflow": "hidden",
+                    "position": "relative",
+                    "width": 24,
+                  }
+                }
+              >
+                <div
+                  aria-hidden={true}
+                  data-placeholder-image=""
+                  style={
+                    Object {
+                      "height": "100%",
+                      "left": 0,
+                      "position": "absolute",
+                      "top": 0,
+                      "width": "100%",
+                    }
+                  }
+                />
+                <picture>
+                  <source
+                    data-srcset="/static/b15eedbdafbbdbca3249e3942f4faf3b/4e704/github.webp 24w,/static/b15eedbdafbbdbca3249e3942f4faf3b/e78b1/github.webp 48w"
+                    sizes="24px"
+                    type="image/webp"
+                  />
+                  <img
+                    alt="GitHub"
+                    data-gatsby-image-ssr=""
+                    data-main-image=""
+                    data-src="/static/b15eedbdafbbdbca3249e3942f4faf3b/2391d/github.png"
+                    data-srcset="/static/b15eedbdafbbdbca3249e3942f4faf3b/2391d/github.png 24w,/static/b15eedbdafbbdbca3249e3942f4faf3b/fcdb9/github.png 48w"
+                    decoding="async"
+                    loading="lazy"
+                    onLoad={[Function]}
+                    sizes="24px"
+                    style={
+                      Object {
+                        "backgroundColor": undefined,
+                        "height": "100%",
+                        "left": 0,
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "opacity": 0,
+                        "position": "absolute",
+                        "top": 0,
+                        "transform": "translateZ(0)",
+                        "transition": "opacity 250ms linear",
+                        "width": "100%",
+                        "willChange": "opacity",
+                      }
+                    }
+                    tw="mr-2 h-8"
+                  />
+                </picture>
+                <noscript>
+                  <picture>
+                    <source
+                      sizes="24px"
+                      srcSet="/static/b15eedbdafbbdbca3249e3942f4faf3b/4e704/github.webp 24w,/static/b15eedbdafbbdbca3249e3942f4faf3b/e78b1/github.webp 48w"
+                      type="image/webp"
+                    />
+                    <img
+                      alt="GitHub"
+                      data-gatsby-image-ssr=""
+                      data-main-image=""
+                      decoding="async"
+                      loading="lazy"
+                      onLoad={[Function]}
+                      sizes="24px"
+                      src="/static/b15eedbdafbbdbca3249e3942f4faf3b/2391d/github.png"
+                      srcSet="/static/b15eedbdafbbdbca3249e3942f4faf3b/2391d/github.png 24w,/static/b15eedbdafbbdbca3249e3942f4faf3b/fcdb9/github.png 48w"
+                      style={
+                        Object {
+                          "backgroundColor": undefined,
+                          "height": "100%",
+                          "left": 0,
+                          "objectFit": undefined,
+                          "objectPosition": undefined,
+                          "opacity": 0,
+                          "position": "absolute",
+                          "top": 0,
+                          "transform": "translateZ(0)",
+                          "transition": "opacity 250ms linear",
+                          "width": "100%",
+                          "willChange": "opacity",
+                        }
+                      }
+                      tw="mr-2 h-8"
+                    />
+                  </picture>
+                </noscript>
+                <script
+                  dangerouslySetInnerHTML={
+                    Object {
+                      "__html": "const t=\\"undefined\\"!=typeof HTMLImageElement&&\\"loading\\"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll(\\"img[data-main-image]\\");for(let e of t){e.dataset.src&&(e.setAttribute(\\"src\\",e.dataset.src),e.removeAttribute(\\"data-src\\")),e.dataset.srcset&&(e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\"));const t=e.parentNode.querySelectorAll(\\"source[data-srcset]\\");for(let e of t)e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\");e.complete&&(e.style.opacity=1)}}",
+                    }
+                  }
+                  type="module"
+                />
+              </div>
+              <div
+                className="c22"
+              >
+                Github
+              </div>
+            </a>
+            <a
+              className="c23"
+              href="https://virtualddd.com/admin"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <div
+                className="gatsby-image-wrapper"
+                data-gatsby-image-wrapper=""
+                style={
+                  Object {
+                    "backgroundColor": undefined,
+                    "height": 24,
+                    "overflow": "hidden",
+                    "position": "relative",
+                    "width": 24,
+                  }
+                }
+              >
+                <div
+                  aria-hidden={true}
+                  data-placeholder-image=""
+                  style={
+                    Object {
+                      "height": "100%",
+                      "left": 0,
+                      "position": "absolute",
+                      "top": 0,
+                      "width": "100%",
+                    }
+                  }
+                />
+                <picture>
+                  <source
+                    data-srcset="/static/0d3f1de90438c57fca4c24b29fb1aaab/4e704/netlify.webp 24w,/static/0d3f1de90438c57fca4c24b29fb1aaab/e78b1/netlify.webp 48w"
+                    sizes="24px"
+                    type="image/webp"
+                  />
+                  <img
+                    alt="Netlify"
+                    data-gatsby-image-ssr=""
+                    data-main-image=""
+                    data-src="/static/0d3f1de90438c57fca4c24b29fb1aaab/2391d/netlify.png"
+                    data-srcset="/static/0d3f1de90438c57fca4c24b29fb1aaab/2391d/netlify.png 24w,/static/0d3f1de90438c57fca4c24b29fb1aaab/fcdb9/netlify.png 48w"
+                    decoding="async"
+                    loading="lazy"
+                    onLoad={[Function]}
+                    sizes="24px"
+                    style={
+                      Object {
+                        "backgroundColor": undefined,
+                        "height": "100%",
+                        "left": 0,
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "opacity": 0,
+                        "position": "absolute",
+                        "top": 0,
+                        "transform": "translateZ(0)",
+                        "transition": "opacity 250ms linear",
+                        "width": "100%",
+                        "willChange": "opacity",
+                      }
+                    }
+                    tw="mr-2 h-8"
+                  />
+                </picture>
+                <noscript>
+                  <picture>
+                    <source
+                      sizes="24px"
+                      srcSet="/static/0d3f1de90438c57fca4c24b29fb1aaab/4e704/netlify.webp 24w,/static/0d3f1de90438c57fca4c24b29fb1aaab/e78b1/netlify.webp 48w"
+                      type="image/webp"
+                    />
+                    <img
+                      alt="Netlify"
+                      data-gatsby-image-ssr=""
+                      data-main-image=""
+                      decoding="async"
+                      loading="lazy"
+                      onLoad={[Function]}
+                      sizes="24px"
+                      src="/static/0d3f1de90438c57fca4c24b29fb1aaab/2391d/netlify.png"
+                      srcSet="/static/0d3f1de90438c57fca4c24b29fb1aaab/2391d/netlify.png 24w,/static/0d3f1de90438c57fca4c24b29fb1aaab/fcdb9/netlify.png 48w"
+                      style={
+                        Object {
+                          "backgroundColor": undefined,
+                          "height": "100%",
+                          "left": 0,
+                          "objectFit": undefined,
+                          "objectPosition": undefined,
+                          "opacity": 0,
+                          "position": "absolute",
+                          "top": 0,
+                          "transform": "translateZ(0)",
+                          "transition": "opacity 250ms linear",
+                          "width": "100%",
+                          "willChange": "opacity",
+                        }
+                      }
+                      tw="mr-2 h-8"
+                    />
+                  </picture>
+                </noscript>
+                <script
+                  dangerouslySetInnerHTML={
+                    Object {
+                      "__html": "const t=\\"undefined\\"!=typeof HTMLImageElement&&\\"loading\\"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll(\\"img[data-main-image]\\");for(let e of t){e.dataset.src&&(e.setAttribute(\\"src\\",e.dataset.src),e.removeAttribute(\\"data-src\\")),e.dataset.srcset&&(e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\"));const t=e.parentNode.querySelectorAll(\\"source[data-srcset]\\");for(let e of t)e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\");e.complete&&(e.style.opacity=1)}}",
+                    }
+                  }
+                  type="module"
+                />
+              </div>
+              Netlify CMS
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c24"
+  >
+    <div
+      className="c25"
+    >
+      <a
+        className="c3"
+        href="/"
+      >
+        <div
+          className="gatsby-image-wrapper"
+          data-gatsby-image-wrapper=""
+          style={
+            Object {
+              "backgroundColor": undefined,
+              "height": 32,
+              "overflow": "hidden",
+              "position": "relative",
+              "width": 135,
+            }
+          }
+        >
+          <div
+            aria-hidden={true}
+            data-placeholder-image=""
+            style={
+              Object {
+                "height": "100%",
+                "left": 0,
+                "position": "absolute",
+                "top": 0,
+                "width": "100%",
+              }
+            }
+          />
+          <picture>
+            <source
+              data-srcset="/static/a1a17b228142a711010aff197345ee4b/45989/vddd_logo_tp.webp 135w,/static/a1a17b228142a711010aff197345ee4b/20969/vddd_logo_tp.webp 270w"
+              sizes="135px"
+              type="image/webp"
+            />
+            <img
+              alt="Virtual DDD"
+              data-gatsby-image-ssr=""
+              data-main-image=""
+              data-src="/static/a1a17b228142a711010aff197345ee4b/aff94/vddd_logo_tp.png"
+              data-srcset="/static/a1a17b228142a711010aff197345ee4b/aff94/vddd_logo_tp.png 135w,/static/a1a17b228142a711010aff197345ee4b/046af/vddd_logo_tp.png 270w"
+              decoding="async"
+              loading="lazy"
+              onLoad={[Function]}
+              sizes="135px"
+              style={
+                Object {
+                  "backgroundColor": undefined,
+                  "height": "100%",
+                  "left": 0,
+                  "objectFit": undefined,
+                  "objectPosition": undefined,
+                  "opacity": 0,
+                  "position": "absolute",
+                  "top": 0,
+                  "transform": "translateZ(0)",
+                  "transition": "opacity 250ms linear",
+                  "width": "100%",
+                  "willChange": "opacity",
+                }
+              }
+              tw="object-contain mr-2 h-8"
+            />
+          </picture>
+          <noscript>
+            <picture>
+              <source
+                sizes="135px"
+                srcSet="/static/a1a17b228142a711010aff197345ee4b/45989/vddd_logo_tp.webp 135w,/static/a1a17b228142a711010aff197345ee4b/20969/vddd_logo_tp.webp 270w"
+                type="image/webp"
+              />
+              <img
+                alt="Virtual DDD"
+                data-gatsby-image-ssr=""
+                data-main-image=""
+                decoding="async"
+                loading="lazy"
+                onLoad={[Function]}
+                sizes="135px"
+                src="/static/a1a17b228142a711010aff197345ee4b/aff94/vddd_logo_tp.png"
+                srcSet="/static/a1a17b228142a711010aff197345ee4b/aff94/vddd_logo_tp.png 135w,/static/a1a17b228142a711010aff197345ee4b/046af/vddd_logo_tp.png 270w"
+                style={
+                  Object {
+                    "backgroundColor": undefined,
+                    "height": "100%",
+                    "left": 0,
+                    "objectFit": undefined,
+                    "objectPosition": undefined,
+                    "opacity": 0,
+                    "position": "absolute",
+                    "top": 0,
+                    "transform": "translateZ(0)",
+                    "transition": "opacity 250ms linear",
+                    "width": "100%",
+                    "willChange": "opacity",
+                  }
+                }
+                tw="object-contain mr-2 h-8"
+              />
+            </picture>
+          </noscript>
+          <script
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "const t=\\"undefined\\"!=typeof HTMLImageElement&&\\"loading\\"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll(\\"img[data-main-image]\\");for(let e of t){e.dataset.src&&(e.setAttribute(\\"src\\",e.dataset.src),e.removeAttribute(\\"data-src\\")),e.dataset.srcset&&(e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\"));const t=e.parentNode.querySelectorAll(\\"source[data-srcset]\\");for(let e of t)e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\");e.complete&&(e.style.opacity=1)}}",
+              }
+            }
+            type="module"
+          />
+        </div>
+      </a>
+      <div
+        className="c26"
+      >
+        <a
+          className="c27"
+          href="/sessions"
+        >
+          Sessions
+        </a>
+        <a
+          className="c27"
+          href="/learning-ddd"
+        >
+          Learning DDD
+        </a>
+        <a
+          className="c28"
+          href="https://feedback.userreport.com/a15e4e61-2323-40a1-90b4-1267e010e35c/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Propose & Vote!
+        </a>
+        <a
+          className="c29"
+          href="https://dddheuristics.com"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Heuristics
+        </a>
+        <button
+          className="c30 group"
+        >
+          Socials
+          <div
+            className="c31 c32"
+          >
+            <div>
+              <a
+                className="c13"
+                href="https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <
+                  className="c14"
+                />
+              </a>
+              <a
+                className="c15"
+                href="https://twitter.com/VirtualDDD"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <div
+                  className="gatsby-image-wrapper"
+                  data-gatsby-image-wrapper=""
+                  style={
+                    Object {
+                      "backgroundColor": undefined,
+                      "height": 24,
+                      "overflow": "hidden",
+                      "position": "relative",
+                      "width": 24,
+                    }
+                  }
+                >
+                  <div
+                    aria-hidden={true}
+                    data-placeholder-image=""
+                    style={
+                      Object {
+                        "height": "100%",
+                        "left": 0,
+                        "position": "absolute",
+                        "top": 0,
+                        "width": "100%",
+                      }
+                    }
+                  />
+                  <picture>
+                    <source
+                      data-srcset="/static/9102af32fe26d52fd80240f7ebdaf365/4e704/twitter.webp 24w,/static/9102af32fe26d52fd80240f7ebdaf365/e78b1/twitter.webp 48w"
+                      sizes="24px"
+                      type="image/webp"
+                    />
+                    <img
+                      alt="Twitter"
+                      data-gatsby-image-ssr=""
+                      data-main-image=""
+                      data-src="/static/9102af32fe26d52fd80240f7ebdaf365/2391d/twitter.png"
+                      data-srcset="/static/9102af32fe26d52fd80240f7ebdaf365/2391d/twitter.png 24w,/static/9102af32fe26d52fd80240f7ebdaf365/fcdb9/twitter.png 48w"
+                      decoding="async"
+                      loading="lazy"
+                      onLoad={[Function]}
+                      sizes="24px"
+                      style={
+                        Object {
+                          "backgroundColor": undefined,
+                          "height": "100%",
+                          "left": 0,
+                          "objectFit": undefined,
+                          "objectPosition": undefined,
+                          "opacity": 0,
+                          "position": "absolute",
+                          "top": 0,
+                          "transform": "translateZ(0)",
+                          "transition": "opacity 250ms linear",
+                          "width": "100%",
+                          "willChange": "opacity",
+                        }
+                      }
+                      tw="mr-2 h-8"
+                    />
+                  </picture>
+                  <noscript>
+                    <picture>
+                      <source
+                        sizes="24px"
+                        srcSet="/static/9102af32fe26d52fd80240f7ebdaf365/4e704/twitter.webp 24w,/static/9102af32fe26d52fd80240f7ebdaf365/e78b1/twitter.webp 48w"
+                        type="image/webp"
+                      />
+                      <img
+                        alt="Twitter"
+                        data-gatsby-image-ssr=""
+                        data-main-image=""
+                        decoding="async"
+                        loading="lazy"
+                        onLoad={[Function]}
+                        sizes="24px"
+                        src="/static/9102af32fe26d52fd80240f7ebdaf365/2391d/twitter.png"
+                        srcSet="/static/9102af32fe26d52fd80240f7ebdaf365/2391d/twitter.png 24w,/static/9102af32fe26d52fd80240f7ebdaf365/fcdb9/twitter.png 48w"
+                        style={
+                          Object {
+                            "backgroundColor": undefined,
+                            "height": "100%",
+                            "left": 0,
+                            "objectFit": undefined,
+                            "objectPosition": undefined,
+                            "opacity": 0,
+                            "position": "absolute",
+                            "top": 0,
+                            "transform": "translateZ(0)",
+                            "transition": "opacity 250ms linear",
+                            "width": "100%",
+                            "willChange": "opacity",
+                          }
+                        }
+                        tw="mr-2 h-8"
+                      />
+                    </picture>
+                  </noscript>
+                  <script
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "const t=\\"undefined\\"!=typeof HTMLImageElement&&\\"loading\\"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll(\\"img[data-main-image]\\");for(let e of t){e.dataset.src&&(e.setAttribute(\\"src\\",e.dataset.src),e.removeAttribute(\\"data-src\\")),e.dataset.srcset&&(e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\"));const t=e.parentNode.querySelectorAll(\\"source[data-srcset]\\");for(let e of t)e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\");e.complete&&(e.style.opacity=1)}}",
+                      }
+                    }
+                    type="module"
+                  />
+                </div>
+                <div
+                  className="c16"
+                >
+                  Twitter
+                </div>
+              </a>
+              <a
+                className="c17"
+                href="https://github.com/ddd-cqrs-es/slack-community"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <div
+                  className="gatsby-image-wrapper"
+                  data-gatsby-image-wrapper=""
+                  style={
+                    Object {
+                      "backgroundColor": undefined,
+                      "height": 24,
+                      "overflow": "hidden",
+                      "position": "relative",
+                      "width": 24,
+                    }
+                  }
+                >
+                  <div
+                    aria-hidden={true}
+                    data-placeholder-image=""
+                    style={
+                      Object {
+                        "height": "100%",
+                        "left": 0,
+                        "position": "absolute",
+                        "top": 0,
+                        "width": "100%",
+                      }
+                    }
+                  />
+                  <picture>
+                    <source
+                      data-srcset="/static/6b04981d71d140833cb93793287c6a38/4e704/slack_icon.webp 24w,/static/6b04981d71d140833cb93793287c6a38/e78b1/slack_icon.webp 48w"
+                      sizes="24px"
+                      type="image/webp"
+                    />
+                    <img
+                      alt="Slack"
+                      data-gatsby-image-ssr=""
+                      data-main-image=""
+                      data-src="/static/6b04981d71d140833cb93793287c6a38/2391d/slack_icon.png"
+                      data-srcset="/static/6b04981d71d140833cb93793287c6a38/2391d/slack_icon.png 24w,/static/6b04981d71d140833cb93793287c6a38/fcdb9/slack_icon.png 48w"
+                      decoding="async"
+                      loading="lazy"
+                      onLoad={[Function]}
+                      sizes="24px"
+                      style={
+                        Object {
+                          "backgroundColor": undefined,
+                          "height": "100%",
+                          "left": 0,
+                          "objectFit": undefined,
+                          "objectPosition": undefined,
+                          "opacity": 0,
+                          "position": "absolute",
+                          "top": 0,
+                          "transform": "translateZ(0)",
+                          "transition": "opacity 250ms linear",
+                          "width": "100%",
+                          "willChange": "opacity",
+                        }
+                      }
+                      tw="mr-2 h-8"
+                    />
+                  </picture>
+                  <noscript>
+                    <picture>
+                      <source
+                        sizes="24px"
+                        srcSet="/static/6b04981d71d140833cb93793287c6a38/4e704/slack_icon.webp 24w,/static/6b04981d71d140833cb93793287c6a38/e78b1/slack_icon.webp 48w"
+                        type="image/webp"
+                      />
+                      <img
+                        alt="Slack"
+                        data-gatsby-image-ssr=""
+                        data-main-image=""
+                        decoding="async"
+                        loading="lazy"
+                        onLoad={[Function]}
+                        sizes="24px"
+                        src="/static/6b04981d71d140833cb93793287c6a38/2391d/slack_icon.png"
+                        srcSet="/static/6b04981d71d140833cb93793287c6a38/2391d/slack_icon.png 24w,/static/6b04981d71d140833cb93793287c6a38/fcdb9/slack_icon.png 48w"
+                        style={
+                          Object {
+                            "backgroundColor": undefined,
+                            "height": "100%",
+                            "left": 0,
+                            "objectFit": undefined,
+                            "objectPosition": undefined,
+                            "opacity": 0,
+                            "position": "absolute",
+                            "top": 0,
+                            "transform": "translateZ(0)",
+                            "transition": "opacity 250ms linear",
+                            "width": "100%",
+                            "willChange": "opacity",
+                          }
+                        }
+                        tw="mr-2 h-8"
+                      />
+                    </picture>
+                  </noscript>
+                  <script
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "const t=\\"undefined\\"!=typeof HTMLImageElement&&\\"loading\\"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll(\\"img[data-main-image]\\");for(let e of t){e.dataset.src&&(e.setAttribute(\\"src\\",e.dataset.src),e.removeAttribute(\\"data-src\\")),e.dataset.srcset&&(e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\"));const t=e.parentNode.querySelectorAll(\\"source[data-srcset]\\");for(let e of t)e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\");e.complete&&(e.style.opacity=1)}}",
+                      }
+                    }
+                    type="module"
+                  />
+                </div>
+                <div
+                  className="c18"
+                >
+                  Slack
+                </div>
+              </a>
+            </div>
+          </div>
+        </button>
+        <button
+          className="c33 group"
+        >
+          Contribute
+          <div
+            className="c34 c35"
+          >
+            <div>
+              <a
+                className="c21"
+                href="https://github.com/Virtual-Domain-driven-design/virtual-domain-driven-design"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <div
+                  className="gatsby-image-wrapper"
+                  data-gatsby-image-wrapper=""
+                  style={
+                    Object {
+                      "backgroundColor": undefined,
+                      "height": 24,
+                      "overflow": "hidden",
+                      "position": "relative",
+                      "width": 24,
+                    }
+                  }
+                >
+                  <div
+                    aria-hidden={true}
+                    data-placeholder-image=""
+                    style={
+                      Object {
+                        "height": "100%",
+                        "left": 0,
+                        "position": "absolute",
+                        "top": 0,
+                        "width": "100%",
+                      }
+                    }
+                  />
+                  <picture>
+                    <source
+                      data-srcset="/static/b15eedbdafbbdbca3249e3942f4faf3b/4e704/github.webp 24w,/static/b15eedbdafbbdbca3249e3942f4faf3b/e78b1/github.webp 48w"
+                      sizes="24px"
+                      type="image/webp"
+                    />
+                    <img
+                      alt="GitHub"
+                      data-gatsby-image-ssr=""
+                      data-main-image=""
+                      data-src="/static/b15eedbdafbbdbca3249e3942f4faf3b/2391d/github.png"
+                      data-srcset="/static/b15eedbdafbbdbca3249e3942f4faf3b/2391d/github.png 24w,/static/b15eedbdafbbdbca3249e3942f4faf3b/fcdb9/github.png 48w"
+                      decoding="async"
+                      loading="lazy"
+                      onLoad={[Function]}
+                      sizes="24px"
+                      style={
+                        Object {
+                          "backgroundColor": undefined,
+                          "height": "100%",
+                          "left": 0,
+                          "objectFit": undefined,
+                          "objectPosition": undefined,
+                          "opacity": 0,
+                          "position": "absolute",
+                          "top": 0,
+                          "transform": "translateZ(0)",
+                          "transition": "opacity 250ms linear",
+                          "width": "100%",
+                          "willChange": "opacity",
+                        }
+                      }
+                      tw="mr-2 h-8"
+                    />
+                  </picture>
+                  <noscript>
+                    <picture>
+                      <source
+                        sizes="24px"
+                        srcSet="/static/b15eedbdafbbdbca3249e3942f4faf3b/4e704/github.webp 24w,/static/b15eedbdafbbdbca3249e3942f4faf3b/e78b1/github.webp 48w"
+                        type="image/webp"
+                      />
+                      <img
+                        alt="GitHub"
+                        data-gatsby-image-ssr=""
+                        data-main-image=""
+                        decoding="async"
+                        loading="lazy"
+                        onLoad={[Function]}
+                        sizes="24px"
+                        src="/static/b15eedbdafbbdbca3249e3942f4faf3b/2391d/github.png"
+                        srcSet="/static/b15eedbdafbbdbca3249e3942f4faf3b/2391d/github.png 24w,/static/b15eedbdafbbdbca3249e3942f4faf3b/fcdb9/github.png 48w"
+                        style={
+                          Object {
+                            "backgroundColor": undefined,
+                            "height": "100%",
+                            "left": 0,
+                            "objectFit": undefined,
+                            "objectPosition": undefined,
+                            "opacity": 0,
+                            "position": "absolute",
+                            "top": 0,
+                            "transform": "translateZ(0)",
+                            "transition": "opacity 250ms linear",
+                            "width": "100%",
+                            "willChange": "opacity",
+                          }
+                        }
+                        tw="mr-2 h-8"
+                      />
+                    </picture>
+                  </noscript>
+                  <script
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "const t=\\"undefined\\"!=typeof HTMLImageElement&&\\"loading\\"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll(\\"img[data-main-image]\\");for(let e of t){e.dataset.src&&(e.setAttribute(\\"src\\",e.dataset.src),e.removeAttribute(\\"data-src\\")),e.dataset.srcset&&(e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\"));const t=e.parentNode.querySelectorAll(\\"source[data-srcset]\\");for(let e of t)e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\");e.complete&&(e.style.opacity=1)}}",
+                      }
+                    }
+                    type="module"
+                  />
+                </div>
+                <div
+                  className="c22"
+                >
+                  Github
+                </div>
+              </a>
+              <a
+                className="c23"
+                href="https://virtualddd.com/admin"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <div
+                  className="gatsby-image-wrapper"
+                  data-gatsby-image-wrapper=""
+                  style={
+                    Object {
+                      "backgroundColor": undefined,
+                      "height": 24,
+                      "overflow": "hidden",
+                      "position": "relative",
+                      "width": 24,
+                    }
+                  }
+                >
+                  <div
+                    aria-hidden={true}
+                    data-placeholder-image=""
+                    style={
+                      Object {
+                        "height": "100%",
+                        "left": 0,
+                        "position": "absolute",
+                        "top": 0,
+                        "width": "100%",
+                      }
+                    }
+                  />
+                  <picture>
+                    <source
+                      data-srcset="/static/0d3f1de90438c57fca4c24b29fb1aaab/4e704/netlify.webp 24w,/static/0d3f1de90438c57fca4c24b29fb1aaab/e78b1/netlify.webp 48w"
+                      sizes="24px"
+                      type="image/webp"
+                    />
+                    <img
+                      alt="Netlify"
+                      data-gatsby-image-ssr=""
+                      data-main-image=""
+                      data-src="/static/0d3f1de90438c57fca4c24b29fb1aaab/2391d/netlify.png"
+                      data-srcset="/static/0d3f1de90438c57fca4c24b29fb1aaab/2391d/netlify.png 24w,/static/0d3f1de90438c57fca4c24b29fb1aaab/fcdb9/netlify.png 48w"
+                      decoding="async"
+                      loading="lazy"
+                      onLoad={[Function]}
+                      sizes="24px"
+                      style={
+                        Object {
+                          "backgroundColor": undefined,
+                          "height": "100%",
+                          "left": 0,
+                          "objectFit": undefined,
+                          "objectPosition": undefined,
+                          "opacity": 0,
+                          "position": "absolute",
+                          "top": 0,
+                          "transform": "translateZ(0)",
+                          "transition": "opacity 250ms linear",
+                          "width": "100%",
+                          "willChange": "opacity",
+                        }
+                      }
+                      tw="mr-2 h-8"
+                    />
+                  </picture>
+                  <noscript>
+                    <picture>
+                      <source
+                        sizes="24px"
+                        srcSet="/static/0d3f1de90438c57fca4c24b29fb1aaab/4e704/netlify.webp 24w,/static/0d3f1de90438c57fca4c24b29fb1aaab/e78b1/netlify.webp 48w"
+                        type="image/webp"
+                      />
+                      <img
+                        alt="Netlify"
+                        data-gatsby-image-ssr=""
+                        data-main-image=""
+                        decoding="async"
+                        loading="lazy"
+                        onLoad={[Function]}
+                        sizes="24px"
+                        src="/static/0d3f1de90438c57fca4c24b29fb1aaab/2391d/netlify.png"
+                        srcSet="/static/0d3f1de90438c57fca4c24b29fb1aaab/2391d/netlify.png 24w,/static/0d3f1de90438c57fca4c24b29fb1aaab/fcdb9/netlify.png 48w"
+                        style={
+                          Object {
+                            "backgroundColor": undefined,
+                            "height": "100%",
+                            "left": 0,
+                            "objectFit": undefined,
+                            "objectPosition": undefined,
+                            "opacity": 0,
+                            "position": "absolute",
+                            "top": 0,
+                            "transform": "translateZ(0)",
+                            "transition": "opacity 250ms linear",
+                            "width": "100%",
+                            "willChange": "opacity",
+                          }
+                        }
+                        tw="mr-2 h-8"
+                      />
+                    </picture>
+                  </noscript>
+                  <script
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "const t=\\"undefined\\"!=typeof HTMLImageElement&&\\"loading\\"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll(\\"img[data-main-image]\\");for(let e of t){e.dataset.src&&(e.setAttribute(\\"src\\",e.dataset.src),e.removeAttribute(\\"data-src\\")),e.dataset.srcset&&(e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\"));const t=e.parentNode.querySelectorAll(\\"source[data-srcset]\\");for(let e of t)e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\");e.complete&&(e.style.opacity=1)}}",
+                      }
+                    }
+                    type="module"
+                  />
+                </div>
+                Netlify CMS
+              </a>
+            </div>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

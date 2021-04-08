@@ -9,10 +9,10 @@ const Layout: FC = ({ children }) => {
   return (
     <>
       <div id="top" tw="font-sans">
-        <SEO></SEO>
-        <NavBar></NavBar>
+        <SEO />
+        <NavBar />
         {children}
-        <Footer></Footer>
+        <Footer />
       </div>
     </>
   )

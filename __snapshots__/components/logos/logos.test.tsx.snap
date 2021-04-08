@@ -1,5 +1,225 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`The logos should render the GitHub logo 1`] = `
+<div
+  className="gatsby-image-wrapper"
+  data-gatsby-image-wrapper=""
+  style={
+    Object {
+      "backgroundColor": undefined,
+      "height": 24,
+      "overflow": "hidden",
+      "position": "relative",
+      "width": 24,
+    }
+  }
+>
+  <div
+    aria-hidden={true}
+    data-placeholder-image=""
+    style={
+      Object {
+        "height": "100%",
+        "left": 0,
+        "position": "absolute",
+        "top": 0,
+        "width": "100%",
+      }
+    }
+  />
+  <picture>
+    <source
+      data-srcset="/static/b15eedbdafbbdbca3249e3942f4faf3b/4e704/github.webp 24w,/static/b15eedbdafbbdbca3249e3942f4faf3b/e78b1/github.webp 48w"
+      sizes="24px"
+      type="image/webp"
+    />
+    <img
+      alt="GitHub"
+      data-gatsby-image-ssr=""
+      data-main-image=""
+      data-src="/static/b15eedbdafbbdbca3249e3942f4faf3b/2391d/github.png"
+      data-srcset="/static/b15eedbdafbbdbca3249e3942f4faf3b/2391d/github.png 24w,/static/b15eedbdafbbdbca3249e3942f4faf3b/fcdb9/github.png 48w"
+      decoding="async"
+      loading="lazy"
+      onLoad={[Function]}
+      sizes="24px"
+      style={
+        Object {
+          "backgroundColor": undefined,
+          "height": "100%",
+          "left": 0,
+          "objectFit": undefined,
+          "objectPosition": undefined,
+          "opacity": 0,
+          "position": "absolute",
+          "top": 0,
+          "transform": "translateZ(0)",
+          "transition": "opacity 250ms linear",
+          "width": "100%",
+          "willChange": "opacity",
+        }
+      }
+      tw="mr-2 h-8"
+    />
+  </picture>
+  <noscript>
+    <picture>
+      <source
+        sizes="24px"
+        srcSet="/static/b15eedbdafbbdbca3249e3942f4faf3b/4e704/github.webp 24w,/static/b15eedbdafbbdbca3249e3942f4faf3b/e78b1/github.webp 48w"
+        type="image/webp"
+      />
+      <img
+        alt="GitHub"
+        data-gatsby-image-ssr=""
+        data-main-image=""
+        decoding="async"
+        loading="lazy"
+        onLoad={[Function]}
+        sizes="24px"
+        src="/static/b15eedbdafbbdbca3249e3942f4faf3b/2391d/github.png"
+        srcSet="/static/b15eedbdafbbdbca3249e3942f4faf3b/2391d/github.png 24w,/static/b15eedbdafbbdbca3249e3942f4faf3b/fcdb9/github.png 48w"
+        style={
+          Object {
+            "backgroundColor": undefined,
+            "height": "100%",
+            "left": 0,
+            "objectFit": undefined,
+            "objectPosition": undefined,
+            "opacity": 0,
+            "position": "absolute",
+            "top": 0,
+            "transform": "translateZ(0)",
+            "transition": "opacity 250ms linear",
+            "width": "100%",
+            "willChange": "opacity",
+          }
+        }
+        tw="mr-2 h-8"
+      />
+    </picture>
+  </noscript>
+  <script
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "const t=\\"undefined\\"!=typeof HTMLImageElement&&\\"loading\\"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll(\\"img[data-main-image]\\");for(let e of t){e.dataset.src&&(e.setAttribute(\\"src\\",e.dataset.src),e.removeAttribute(\\"data-src\\")),e.dataset.srcset&&(e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\"));const t=e.parentNode.querySelectorAll(\\"source[data-srcset]\\");for(let e of t)e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\");e.complete&&(e.style.opacity=1)}}",
+      }
+    }
+    type="module"
+  />
+</div>
+`;
+
+exports[`The logos should render the Netlify logo 1`] = `
+<div
+  className="gatsby-image-wrapper"
+  data-gatsby-image-wrapper=""
+  style={
+    Object {
+      "backgroundColor": undefined,
+      "height": 24,
+      "overflow": "hidden",
+      "position": "relative",
+      "width": 24,
+    }
+  }
+>
+  <div
+    aria-hidden={true}
+    data-placeholder-image=""
+    style={
+      Object {
+        "height": "100%",
+        "left": 0,
+        "position": "absolute",
+        "top": 0,
+        "width": "100%",
+      }
+    }
+  />
+  <picture>
+    <source
+      data-srcset="/static/0d3f1de90438c57fca4c24b29fb1aaab/4e704/netlify.webp 24w,/static/0d3f1de90438c57fca4c24b29fb1aaab/e78b1/netlify.webp 48w"
+      sizes="24px"
+      type="image/webp"
+    />
+    <img
+      alt="Netlify"
+      data-gatsby-image-ssr=""
+      data-main-image=""
+      data-src="/static/0d3f1de90438c57fca4c24b29fb1aaab/2391d/netlify.png"
+      data-srcset="/static/0d3f1de90438c57fca4c24b29fb1aaab/2391d/netlify.png 24w,/static/0d3f1de90438c57fca4c24b29fb1aaab/fcdb9/netlify.png 48w"
+      decoding="async"
+      loading="lazy"
+      onLoad={[Function]}
+      sizes="24px"
+      style={
+        Object {
+          "backgroundColor": undefined,
+          "height": "100%",
+          "left": 0,
+          "objectFit": undefined,
+          "objectPosition": undefined,
+          "opacity": 0,
+          "position": "absolute",
+          "top": 0,
+          "transform": "translateZ(0)",
+          "transition": "opacity 250ms linear",
+          "width": "100%",
+          "willChange": "opacity",
+        }
+      }
+      tw="mr-2 h-8"
+    />
+  </picture>
+  <noscript>
+    <picture>
+      <source
+        sizes="24px"
+        srcSet="/static/0d3f1de90438c57fca4c24b29fb1aaab/4e704/netlify.webp 24w,/static/0d3f1de90438c57fca4c24b29fb1aaab/e78b1/netlify.webp 48w"
+        type="image/webp"
+      />
+      <img
+        alt="Netlify"
+        data-gatsby-image-ssr=""
+        data-main-image=""
+        decoding="async"
+        loading="lazy"
+        onLoad={[Function]}
+        sizes="24px"
+        src="/static/0d3f1de90438c57fca4c24b29fb1aaab/2391d/netlify.png"
+        srcSet="/static/0d3f1de90438c57fca4c24b29fb1aaab/2391d/netlify.png 24w,/static/0d3f1de90438c57fca4c24b29fb1aaab/fcdb9/netlify.png 48w"
+        style={
+          Object {
+            "backgroundColor": undefined,
+            "height": "100%",
+            "left": 0,
+            "objectFit": undefined,
+            "objectPosition": undefined,
+            "opacity": 0,
+            "position": "absolute",
+            "top": 0,
+            "transform": "translateZ(0)",
+            "transition": "opacity 250ms linear",
+            "width": "100%",
+            "willChange": "opacity",
+          }
+        }
+        tw="mr-2 h-8"
+      />
+    </picture>
+  </noscript>
+  <script
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "const t=\\"undefined\\"!=typeof HTMLImageElement&&\\"loading\\"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll(\\"img[data-main-image]\\");for(let e of t){e.dataset.src&&(e.setAttribute(\\"src\\",e.dataset.src),e.removeAttribute(\\"data-src\\")),e.dataset.srcset&&(e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\"));const t=e.parentNode.querySelectorAll(\\"source[data-srcset]\\");for(let e of t)e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\");e.complete&&(e.style.opacity=1)}}",
+      }
+    }
+    type="module"
+  />
+</div>
+`;
+
 exports[`The logos should render the Slack logo 1`] = `
 <div
   className="gatsby-image-wrapper"
@@ -144,7 +364,7 @@ exports[`The logos should render the Twitter logo 1`] = `
       type="image/webp"
     />
     <img
-      alt="Slack"
+      alt="Twitter"
       data-gatsby-image-ssr=""
       data-main-image=""
       data-src="/static/9102af32fe26d52fd80240f7ebdaf365/2391d/twitter.png"
@@ -180,7 +400,7 @@ exports[`The logos should render the Twitter logo 1`] = `
         type="image/webp"
       />
       <img
-        alt="Slack"
+        alt="Twitter"
         data-gatsby-image-ssr=""
         data-main-image=""
         decoding="async"

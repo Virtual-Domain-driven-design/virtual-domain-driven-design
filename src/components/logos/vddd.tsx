@@ -9,6 +9,10 @@ export type ChildImageSharp = {
   }
 }
 
+export type TwContent = {
+  twContent?: string
+}
+
 interface VdddLogoData {
   vdddLogo: ChildImageSharp
 }
@@ -23,12 +27,14 @@ export const vdddImage = graphql`
   }
 `
 
-export const VdddLogo = ({ twContent }: { twContent?: string }) => {
+export const VdddLogo = ({
+  twContent = "object-contain mr-2 h-8",
+}: TwContent) => {
   const { vdddLogo } = useStaticQuery<VdddLogoData>(vdddImage)
   return (
     <GatsbyImage
       image={vdddLogo.childImageSharp.gatsbyImageData}
-      tw={twContent || "object-contain mr-2 h-8"}
+      tw={twContent}
       alt="Virtual DDD"
     />
   )

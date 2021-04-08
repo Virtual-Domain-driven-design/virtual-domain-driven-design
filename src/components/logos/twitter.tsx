@@ -1,7 +1,7 @@
 import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import * as React from "react"
-import { ChildImageSharp } from "./vddd"
+import { ChildImageSharp, TwContent } from "./vddd"
 
 interface TwitterLogoData {
   twitterLogo: ChildImageSharp
@@ -17,13 +17,13 @@ export const twitterImage = graphql`
   }
 `
 
-export const TwitterLogo = ({ twContent }: { twContent?: string }) => {
+export const TwitterLogo = ({ twContent = "mr-2 h-8" }: TwContent) => {
   const { twitterLogo } = useStaticQuery<TwitterLogoData>(twitterImage)
   return (
     <GatsbyImage
       image={twitterLogo.childImageSharp.gatsbyImageData}
-      tw={twContent || "mr-2 h-8"}
-      alt="Slack"
+      tw={twContent}
+      alt="Twitter"
     />
   )
 }

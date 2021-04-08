@@ -1,17 +1,18 @@
-import { Link, graphql, useStaticQuery } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
-import React, { FC, useState } from "react"
+import { Link } from "gatsby"
+import React, { useState } from "react"
 import tw from "twin.macro"
-import { VdddLogo, SlackLogo, TwitterLogo } from "./logos"
+import {
+  VdddLogo,
+  SlackLogo,
+  TwitterLogo,
+  NetlifyLogo,
+  GithubLogo,
+} from "../logos"
 // @ts-ignore
-import MeetupSvg from "../images/logo/meetup.svg"
+import MeetupSvg from "../../images/logo/meetup.svg"
 
-// TODO: NEEDS MAJOR REFACTORING AND DYNAMIC CONFIG, this is UGLY but it works =). Problem I face now is the meetup SVG logo which cannot be imported from graphql dynamicly like other images can (See books for an example)
-
-interface NavigationItem {
-  to: string
-  label: string
-}
+// TODO: NEEDS MAJOR REFACTORING AND DYNAMIC CONFIG, this is UGLY but it works =). The problem is that extracted components need extra effort for styling
+// TODO move the social links and the contributions to separate files
 
 const VDDDLink = () => {
   return (
@@ -21,29 +22,6 @@ const VDDDLink = () => {
     >
       <VdddLogo />
     </Link>
-  )
-}
-
-const SocialMenu = () => {
-  return (
-    <button
-      className="group"
-      tw="relative px-2 py-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 text-blue-600 focus:outline-none"
-    >
-      Socials
-      <div tw="absolute top-0 right-0 mt-14 w-32 bg-white rounded shadow-lg z-30 hidden group-hover:block">
-        <SocialSubItems />
-      </div>
-    </button>
-  )
-}
-
-const SocialMobileMenu = () => {
-  return (
-    <div tw="relative border-t border-gray-400 w-full">
-      <div tw="absolute top-0 right-0 text-gray-500 pt-2 pr-4">Socials</div>
-      <SocialSubItems />
-    </div>
   )
 }
 
@@ -79,31 +57,29 @@ const SocialSubItems = () => {
     </div>
   )
 }
-
-const ContributionMenu: FC = ({ data }) => {
+const SocialMenu = () => {
   return (
     <button
       className="group"
       tw="relative px-2 py-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 text-blue-600 focus:outline-none"
     >
-      Contribute
+      Socials
       <div tw="absolute top-0 right-0 mt-14 w-32 bg-white rounded shadow-lg z-30 hidden group-hover:block">
-        <ContributionSubItems data={data} />
+        <SocialSubItems />
       </div>
     </button>
   )
 }
-
-const ContributionMobileMenu: FC = ({ data }) => {
+const SocialMobileMenu = () => {
   return (
     <div tw="relative border-t border-gray-400 w-full">
-      <div tw="absolute top-0 right-0 text-gray-500 pt-2 pr-4">Contribute</div>
-      <ContributionSubItems data={data} />
+      <div tw="absolute top-0 right-0 text-gray-500 pt-2 pr-4">Socials</div>
+      <SocialSubItems />
     </div>
   )
 }
 
-const ContributionSubItems: FC = ({ data }) => {
+const ContributionSubItems = () => {
   return (
     <div>
       <a
@@ -112,12 +88,8 @@ const ContributionSubItems: FC = ({ data }) => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <GatsbyImage
-          image={data.githubLogo.childImageSharp.gatsbyImageData}
-          tw="mr-2 h-8"
-          alt="GitHub"
-        />
-        Github
+        <GithubLogo />
+        <div tw="pl-1">Github</div>
       </a>
       <a
         tw="p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center"
@@ -125,30 +97,49 @@ const ContributionSubItems: FC = ({ data }) => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <GatsbyImage
-          image={data.netlifyLogo.childImageSharp.gatsbyImageData}
-          tw="mr-2 h-8"
-          alt="Netlify"
-        />
+        <NetlifyLogo />
         Netlify CMS
       </a>
     </div>
   )
 }
-
-const DesktopNavigationItem = ({ to, label }: NavigationItem) => {
+const ContributionMenu = () => {
   return (
+    <button
+      className="group"
+      tw="relative px-2 py-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 text-blue-600 focus:outline-none"
+    >
+      Contribute
+      <div tw="absolute top-0 right-0 mt-14 w-32 bg-white rounded shadow-lg z-30 hidden group-hover:block">
+        <ContributionSubItems />
+      </div>
+    </button>
+  )
+}
+const ContributionMobileMenu = () => {
+  return (
+    <div tw="relative border-t border-gray-400 w-full">
+      <div tw="absolute top-0 right-0 text-gray-500 pt-2 pr-4">Contribute</div>
+      <ContributionSubItems />
+    </div>
+  )
+}
+
+interface NavigationData {
+  to: string
+  label: string
+  forDesktop: boolean
+}
+
+const NavigationItem = ({ to, label, forDesktop }: NavigationData) => {
+  return forDesktop ? (
     <Link
       to={to}
       tw="relative px-2 py-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 text-blue-600 focus:outline-none"
     >
       {label}
     </Link>
-  )
-}
-
-const MobileNavigationItem = ({ to, label }: NavigationItem) => {
-  return (
+  ) : (
     <Link
       to={to}
       tw="w-full p-4 text-lg leading-tight cursor-pointer flex-shrink-0 hover:bg-gray-400 hover:text-blue-700"
@@ -158,9 +149,9 @@ const MobileNavigationItem = ({ to, label }: NavigationItem) => {
   )
 }
 
-const NavbarMobile: FC = ({ data }) => {
+const NavbarMobile = () => {
   const [isMenuOpen, setMenuOpen] = useState(false)
-
+  const forDesktop = false
   return (
     <div tw="lg:hidden">
       <div tw="w-full flex flex-row items-center justify-between shadow-md">
@@ -185,8 +176,16 @@ const NavbarMobile: FC = ({ data }) => {
         css={!isMenuOpen && tw`invisible`}
       >
         <div tw="flex flex-col lg:flex-row items-start lg:items-stretch justify-end">
-          <MobileNavigationItem to="/sessions" label="Sessions" />
-          <MobileNavigationItem to="/learning-ddd" label="Learning DDD" />
+          <NavigationItem
+            to="/sessions"
+            label="Sessions"
+            forDesktop={forDesktop}
+          />
+          <NavigationItem
+            to="/learning-ddd"
+            label="Learning DDD"
+            forDesktop={forDesktop}
+          />
           <a
             tw="p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center"
             href="https://feedback.userreport.com/a15e4e61-2323-40a1-90b4-1267e010e35c/"
@@ -203,21 +202,30 @@ const NavbarMobile: FC = ({ data }) => {
           >
             Heuristics
           </a>
-          <SocialMobileMenu data={data} />
-          <ContributionMobileMenu data={data} />
+          <SocialMobileMenu />
+          <ContributionMobileMenu />
         </div>
       </div>
     </div>
   )
 }
 
-const NavbarDesktop: FC = ({ data }) => {
+const NavbarDesktop = () => {
+  const forDesktop = true
   return (
     <div tw="w-4/5 xl:w-2/3 flex items-center justify-between">
-      <VDDDLink data={data} />
+      <VDDDLink />
       <div tw="flex flex-col lg:flex-row items-start lg:items-stretch justify-end">
-        <DesktopNavigationItem to="/sessions" label="Sessions" />
-        <DesktopNavigationItem to="/learning-ddd" label="Learning DDD" />
+        <NavigationItem
+          to="/sessions"
+          label="Sessions"
+          forDesktop={forDesktop}
+        />
+        <NavigationItem
+          to="/learning-ddd"
+          label="Learning DDD"
+          forDesktop={forDesktop}
+        />
         <a
           tw="p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center"
           href="https://feedback.userreport.com/a15e4e61-2323-40a1-90b4-1267e010e35c/"
@@ -234,34 +242,19 @@ const NavbarDesktop: FC = ({ data }) => {
         >
           Heuristics
         </a>
-        <SocialMenu data={data} />
-        <ContributionMenu data={data} />
+        <SocialMenu />
+        <ContributionMenu />
       </div>
     </div>
   )
 }
 
-const NavBar: FC = () => {
-  const data = useStaticQuery(graphql`
-    {
-      githubLogo: file(relativePath: { eq: "logo/github.png" }) {
-        childImageSharp {
-          gatsbyImageData(height: 24, width: 24, layout: FIXED)
-        }
-      }
-      netlifyLogo: file(relativePath: { eq: "logo/netlify.png" }) {
-        childImageSharp {
-          gatsbyImageData(height: 24, width: 24, layout: FIXED)
-        }
-      }
-    }
-  `)
-
+const NavBar = () => {
   return (
     <div tw="bg-white shadow-md text-blue-600 h-16 sticky top-0 inset-x-0 z-50">
-      <NavbarMobile data={data} />
+      <NavbarMobile />
       <div tw="hidden lg:flex flex-row items-center justify-center">
-        <NavbarDesktop data={data} />
+        <NavbarDesktop />
       </div>
     </div>
   )
