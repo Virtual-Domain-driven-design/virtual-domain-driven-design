@@ -62,7 +62,9 @@ const UpcomingSession = ({ session }: UpcomingSessionProps) => {
         alt={session.title}
         tw="md:h-96 h-64 w-full object-cover"
       />
-      <div tw="py-2 text-justify">{session.description}</div>
+      <div tw="py-2 text-justify lg:text-base md:text-sm sm:text-xs ">
+        {session.description}
+      </div>
       <div tw="mt-4 pt-2 space-x-4 border-t-2 border-solid">
         <div tw="flex items-center mt-4 h-14 overflow-hidden ">
           <div tw="flex flex-row flex-wrap w-3/5  ">

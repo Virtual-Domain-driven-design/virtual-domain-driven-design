@@ -53,28 +53,28 @@ const LevelFilter = ({ setLevelFilter }: LevelFilterProps) => {
   return (
     <div tw="flex flex-row items-center justify-center">
       <button
-        tw="text-xl m-2 p-2 text-white rounded-lg border-2 border-blue-500 hover:border-blue-400"
+        tw="lg:text-base md:text-sm sm:text-xs m-2 p-2 text-white rounded-lg border-2 border-blue-500 hover:border-blue-400"
         css={areButtonsActive.isAllActive && tw`bg-blue-700`}
         onClick={() => levelButtonClicked(ContentLevel.All)}
       >
         All levels
       </button>
       <button
-        tw="text-xl m-2 p-2 text-white rounded-lg border-2 border-blue-500 hover:border-blue-400"
+        tw="lg:text-base md:text-sm sm:text-xs m-2 p-2 text-white rounded-lg border-2 border-blue-500 hover:border-blue-400"
         css={areButtonsActive.isBeginnerActive && tw`bg-blue-700`}
         onClick={() => levelButtonClicked(ContentLevel.Beginner)}
       >
         Beginner
       </button>
       <button
-        tw="text-xl m-2 p-2 text-white rounded-lg border-2 border-blue-500 hover:border-blue-400"
+        tw="lg:text-base md:text-sm sm:text-xs m-2 p-2 text-white rounded-lg border-2 border-blue-500 hover:border-blue-400"
         css={areButtonsActive.isIntermediateActive && tw`bg-blue-700`}
         onClick={() => levelButtonClicked(ContentLevel.Intermediate)}
       >
         Intermediate
       </button>
       <button
-        tw="text-xl m-2 p-2 text-white rounded-lg border-2 border-blue-500 hover:border-blue-400"
+        tw="lg:text-base md:text-sm sm:text-xs m-2 p-2 text-white rounded-lg border-2 border-blue-500 hover:border-blue-400"
         css={areButtonsActive.isAdvancedActive && tw`bg-blue-700`}
         onClick={() => levelButtonClicked(ContentLevel.Advanced)}
       >

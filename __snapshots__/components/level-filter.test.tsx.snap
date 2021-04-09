@@ -20,8 +20,6 @@ exports[`The LevelFilter should create or check the snapshot 1`] = `
 }
 
 .c1 {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
   margin: 0.5rem;
   padding: 0.5rem;
   --tw-text-opacity: 1;
@@ -40,8 +38,6 @@ exports[`The LevelFilter should create or check the snapshot 1`] = `
 }
 
 .c2 {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
   margin: 0.5rem;
   padding: 0.5rem;
   --tw-text-opacity: 1;
@@ -58,8 +54,6 @@ exports[`The LevelFilter should create or check the snapshot 1`] = `
 }
 
 .c3 {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
   margin: 0.5rem;
   padding: 0.5rem;
   --tw-text-opacity: 1;
@@ -76,8 +70,6 @@ exports[`The LevelFilter should create or check the snapshot 1`] = `
 }
 
 .c4 {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
   margin: 0.5rem;
   padding: 0.5rem;
   --tw-text-opacity: 1;
@@ -91,6 +83,90 @@ exports[`The LevelFilter should create or check the snapshot 1`] = `
 .c4:hover {
   --tw-border-opacity: 1;
   border-color: rgba(96,165,250,var(--tw-border-opacity));
+}
+
+@media (min-width:640px) {
+  .c1 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:640px) {
+  .c2 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:1024px) {
+  .c2 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:640px) {
+  .c3 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:1024px) {
+  .c3 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:640px) {
+  .c4 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:1024px) {
+  .c4 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 <div

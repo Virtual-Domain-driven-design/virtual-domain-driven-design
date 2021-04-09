@@ -15,7 +15,8 @@ const ThreeDBlueButton: FC<ThreeDBlueButtonProps> = ({
   ...props
 }) => {
   const style = [
-    tw`bg-blue-500 hover:bg-blue-700 text-center text-xs lg:text-base text-white font-bold py-2 px-4 border-b-4 border-blue-900 hover:border-blue-900 rounded`,
+    tw`text-center text-sm text-white py-2 px-2 w-auto h-auto 
+    border-b-4 border-blue-900 bg-blue-500 hover:bg-blue-700 hover:border-blue-900 rounded break-words`,
   ]
   if (href) {
     return (
