@@ -173,7 +173,7 @@ const NavbarMobile = () => {
 
       <div
         tw="block bg-white w-full z-30 shadow-md"
-        css={!isMenuOpen && tw`invisible`}
+        css={!isMenuOpen ? tw`invisible h-5` : tw`h-auto`}
       >
         <div tw="flex flex-col lg:flex-row items-start lg:items-stretch justify-end">
           <NavigationItem
