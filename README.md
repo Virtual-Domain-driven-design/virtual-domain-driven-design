@@ -5,9 +5,7 @@
 
 [![Build Status](https://github.com/Virtual-Domain-driven-design/virtual-domain-driven-design/actions/workflows/main.yml/badge.svg)](https://github.com/Virtual-Domain-driven-design/virtual-domain-driven-design/actions/workflows/main.yml)
 [![Coverage Status](https://coveralls.io/repos/github/Virtual-Domain-driven-design/virtual-domain-driven-design/badge.svg?branch=master)](https://coveralls.io/github/Virtual-Domain-driven-design/virtual-domain-driven-design?branch=master)
-<a href="https://www.netlify.com">
-  <img src="https://www.netlify.com/img/global/badges/netlify-color-bg.svg" alt="Deploys by Netlify" />
-</a>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/532e8383-2c1c-4e76-b0fb-9ddeccae725e/deploy-status)](https://app.netlify.com/sites/virtualddd/deploys)
 
 An online Domain-Driven Design meetup and conference for the community by the community. Help us develop this worldwide community further!
 We are continuously updating the website and functionality, if you have any ideas or bugs you want to share please feel free to add a ticket!
