@@ -18,6 +18,9 @@ const Footer = () => {
       <Link to="/code-of-conduct" className="link p-2">
         Code of conduct
       </Link>
+      <a href="https://www.netlify.com">
+        <img src="https://www.netlify.com/img/global/badges/netlify-color-bg.svg" alt="Deploys by Netlify" />
+      </a>
     </div>
   )
 }
