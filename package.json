@@ -55,6 +55,7 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^4.2.0",
     "react-is": "16.8.0",
+    "react-process-string": "^1.2.0",
     "styled-components": "^5.2.1",
     "twin.macro": "^2.3.0"
   },

@@ -1,9 +1,10 @@
-import React from "react"
+import * as React from "react"
 import tw from "twin.macro"
 
 import { SessionLink } from "./upcoming-session"
 import ThreeDBlueButton from "../components/three-d-blue-button"
 import VideoEmbed from "./../components/video-embed"
+import ParsedContent from "../components/link-parser"
 
 type SessionBlockProps = {
   description: string
@@ -17,8 +18,8 @@ const SessionBlock = (sessionBlockProps: SessionBlockProps) => {
   return (
     <div tw="flex xl:flex-row flex-col items-center lg:w-2/3 xl:m-4 m-2">
       <div tw="xl:w-2/3 w-5/6 xl:m-4 xl:p-8">
-        <div tw="xl:w-4/5 shadow-xl rounded-xl p-10 break-all lg:text-base md:text-sm sm:text-xs ">
-          {sessionBlockProps.description}
+        <div tw="xl:w-4/5 shadow-xl rounded-xl p-10 break-words lg:text-base md:text-sm sm:text-xs ">
+          <ParsedContent text={sessionBlockProps.description} />
         </div>
       </div>
       <div tw="flex flex-col xl:w-1/3 w-5/6 m-2 items-center xl:p-4 space-y-2">
