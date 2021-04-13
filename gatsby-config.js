@@ -151,6 +151,27 @@ module.exports = {
         remote: `https://github.com/ddd-crew/domain-message-flow-modelling.git`,
       },
     },
+    {
+      resolve: `gatsby-source-git`,
+      options: {
+        name: `github-repo-sociotechnical-architecture`,
+        remote: `https://github.com/matthewskelton/sociotechnical-architecture`,
+      },
+    },
+    {
+      resolve: `gatsby-source-git`,
+      options: {
+        name: `github-repo-awesome-ddd`,
+        remote: `https://github.com/heynickc/awesome-ddd`,
+      },
+    },
+    {
+      resolve: `gatsby-source-git`,
+      options: {
+        name: `github-repo-awesome-eventstorming`,
+        remote: `https://github.com/mariuszgil/awesome-eventstorming`,
+      },
+    },
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
