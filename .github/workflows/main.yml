@@ -33,11 +33,19 @@ jobs:
         yarn run build
         yarn test --coverage
 
-  deploy:
+  build-and-deploy:
     needs: [test]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - name: Install and build
+        run: |
+          yarn
+          yarn run build
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.1
         with:
