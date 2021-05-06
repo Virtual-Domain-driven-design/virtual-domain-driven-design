@@ -30,6 +30,38 @@ const sessionPages = ({ nodes }, createPage, reporter) => {
     })
 }
 
+/**
+ * Create static pages to search through the content of all sessions
+ * @param {{nodes:{upcomingSessions:{id: string}[]|null, sessions: {id: string}[]|null}[]}} content
+ * @param {{info: function}} reporter
+ * @param {function} createPage
+ */
+const searchPages = ({ nodes }, createPage, reporter) => {
+  const sessions = nodes
+    .filter((n) => n.upcomingSessions !== null || n.sessions !== null)
+    // eslint-disable-next-line array-callback-return
+    .map(({ upcomingSessions, sessions }) => {
+      if (!!upcomingSessions) return upcomingSessions.map((session) => session)
+      if (!!sessions) return sessions.map((session) => session)
+    })
+    .flat()
+  reporter.info(`Creating search page for ${sessions.length} sessions:  /search`)
+      createPage({
+        path: `/search`,
+        component: require.resolve(`../templates/search-layout.tsx`),
+        context: {
+            allSessions: sessions,
+            options: {
+              indexStrategy: "Prefix match",
+              searchSanitizer: "Lower Case",
+              TitleIndex: true,
+              DescriptionIndex: true,
+              SearchByTerm: true,
+          },
+        },
+      })
+}
+
 /** Calculate the path to the generated MDX page for github repos.
  * The path to README is considered as the base path
  * all other .md in it's own full path because that is what is usually used in github repo's to link to other md's. Does not work for everything
@@ -97,5 +129,6 @@ const pagesFromMarkdown = ({ edges }, createPage, reporter) => {
 
 module.exports = {
   sessionPages,
+  searchPages,
   pagesFromMarkdown,
 }

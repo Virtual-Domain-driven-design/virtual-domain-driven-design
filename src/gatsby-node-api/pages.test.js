@@ -1,4 +1,4 @@
-const { sessionPages, pagesFromMarkdown } = require("./pages")
+const { sessionPages, pagesFromMarkdown, searchPages } = require("./pages")
 const samples = require("../../__mocks__/samples")
 
 const createPage = jest.fn()
@@ -67,6 +67,30 @@ describe("When the static pages are generated", () => {
         path: "/sessions/none",
         component: expect.stringMatching(/templates(.)+no-upcoming-layout\.tsx/g),
         context: { id: "none" },
+      })
+    })
+
+    it("should add the data to a search template", () => {
+
+      searchPages({ nodes: nodesWithSessions }, createPage, reporter)
+
+      expect(createPage).toHaveBeenCalledTimes(1)
+
+      expect(createPage).toHaveBeenCalledWith({
+        path: "/search",
+        component: expect.stringMatching(/templates(.)+search-layout\.tsx/g),
+        context: expect.objectContaining({
+          sessionContent: {
+            allSessions: [{ id: "66" },{ id: "65" }, { id: "64" }, { id: "63" } ],
+            options: {
+              indexStrategy: "Prefix match",
+              searchSanitizer: "Lower Case",
+              TitleIndex: true,
+              DescriptionIndex: true,
+              SearchByTerm: true,
+            }
+          }
+        }),
       })
     })
   })

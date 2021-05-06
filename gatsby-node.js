@@ -5,6 +5,7 @@
  */
 const {
   sessionPages,
+  searchPages,
   pagesFromMarkdown,
 } = require("./src/gatsby-node-api/pages")
 const { getTypeDefs } = require("./src/gatsby-node-api/resolvers")
@@ -17,9 +18,35 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         nodes {
           upcomingSessions {
             id
+            title
+            date
+            time
+            description
+            level
+            tags
+            img {
+              publicURL
+              childImageSharp {
+                gatsbyImageData(layout: FULL_WIDTH)
+              }
+            }
           }
           sessions {
             id
+            title
+            date
+            time
+            description
+            level
+            tags
+            video
+            podcast
+            img {
+              publicURL
+              childImageSharp {
+                gatsbyImageData(layout: FULL_WIDTH)
+              }
+            }
           }
         }
       }
@@ -44,6 +71,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   const { data } = result
   sessionPages(data.allContentYaml, createPage, reporter)
+  searchPages(data.allContentYaml, createPage, reporter)
   pagesFromMarkdown(data.allMdx, createPage, reporter)
 }
 
