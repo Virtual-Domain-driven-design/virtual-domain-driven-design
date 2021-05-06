@@ -2501,6 +2501,11 @@
     jest-diff "^26.0.0"
     pretty-format "^26.0.0"
 
+"@types/js-search@^1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@types/js-search/-/js-search-1.4.0.tgz#f2d4afa176a4fc7b17fb46a1593847887fa1fb7b"
+  integrity sha1-8tSvoXak/HsX+0ahWThHiH+h+3s=
+
 "@types/json-schema@*":
   version "7.0.7"
   resolved "https://registry.npmjs.org/@types/json-schema/-/json-schema-7.0.7.tgz"
@@ -3533,7 +3538,7 @@ array.prototype.flat@^1.2.3:
 
 array.prototype.flatmap@^1.2.3:
   version "1.2.4"
-  resolved "https://registry.npmjs.org/array.prototype.flatmap/-/array.prototype.flatmap-1.2.4.tgz"
+  resolved "https://registry.yarnpkg.com/array.prototype.flatmap/-/array.prototype.flatmap-1.2.4.tgz#94cfd47cc1556ec0747d97f7c7738c58122004c9"
   integrity sha512-r9Z0zYoxqHz60vvQbWEdXIEtCwHF0yxaWfno9qzXeNHvfyl3BZqygmGzb84dsubyaXLH4husF+NFgMSdpZhk2Q==
   dependencies:
     call-bind "^1.0.0"
@@ -6779,9 +6784,9 @@ eslint@^7.20.0:
     v8-compile-cache "^2.0.3"
 
 eslint@^7.22.0:
-  version "7.22.0"
-  resolved "https://registry.npmjs.org/eslint/-/eslint-7.22.0.tgz"
-  integrity sha512-3VawOtjSJUQiiqac8MQc+w457iGLfuNGLFn8JmF051tTKbh5/x/0vlcEj8OgDCaw7Ysa2Jn8paGshV7x2abKXg==
+  version "7.25.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.25.0.tgz#1309e4404d94e676e3e831b3a3ad2b050031eb67"
+  integrity sha512-TVpSovpvCNpLURIScDRB6g5CYu/ZFq9GfX2hLNIV4dSBKxIWojeDODvYl3t0k0VtMxYeR8OXPCFE5+oHMlGfhw==
   dependencies:
     "@babel/code-frame" "7.12.11"
     "@eslint/eslintrc" "^0.4.0"
@@ -11043,6 +11048,11 @@ js-base64@^3.0.0:
   resolved "https://registry.npmjs.org/js-base64/-/js-base64-3.6.0.tgz"
   integrity sha512-wVdUBYQeY2gY73RIlPrysvpYx+2vheGo8Y1SNQv/BzHToWpAZzJU7Z6uheKMAe+GLSBig5/Ps2nxg/8tRB73xg==
 
+js-search@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/js-search/-/js-search-2.0.0.tgz#84dc9d44e34ca0870d067e04b86d8038b77edc26"
+  integrity sha512-lJ8KzjlwcelIWuAdKyzsXv45W6OIwRpayzc7XmU8mzgWadg5UVOKVmnq/tXudddEB9Ceic3tVaGu6QOK/eebhg==
+
 js-sha256@^0.9.0:
   version "0.9.0"
   resolved "https://registry.npmjs.org/js-sha256/-/js-sha256-0.9.0.tgz"
@@ -13038,7 +13048,7 @@ object.assign@^4.1.0, object.assign@^4.1.1, object.assign@^4.1.2:
 
 object.entries@^1.1.2:
   version "1.1.3"
-  resolved "https://registry.npmjs.org/object.entries/-/object.entries-1.1.3.tgz"
+  resolved "https://registry.yarnpkg.com/object.entries/-/object.entries-1.1.3.tgz#c601c7f168b62374541a07ddbd3e2d5e4f7711a6"
   integrity sha512-ym7h7OZebNS96hn5IJeyUmaWhaSM4SVtAPPfNLQEI2MYWCO2egsITb9nab2+i/Pwibx+R0mtn+ltKJXRSeTMGg==
   dependencies:
     call-bind "^1.0.0"
@@ -16175,7 +16185,7 @@ short-uuid@^4.1.0:
 
 side-channel@^1.0.2, side-channel@^1.0.3:
   version "1.0.4"
-  resolved "https://registry.npmjs.org/side-channel/-/side-channel-1.0.4.tgz"
+  resolved "https://registry.yarnpkg.com/side-channel/-/side-channel-1.0.4.tgz#efce5c8fdc104ee751b25c58d4290011fa5ea2cf"
   integrity sha512-q5XPytqFEIKHkGdiMIrY10mvLRvnQh42/+GoBlFW3b2LXLE2xxJpZFdm94we0BaoV3RwJyGqg5wS7epxTv0Zvw==
   dependencies:
     call-bind "^1.0.0"

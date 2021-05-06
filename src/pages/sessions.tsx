@@ -1,5 +1,5 @@
 import { graphql, useStaticQuery } from "gatsby"
-import React, { FC, useState } from "react"
+import React, { useState } from "react"
 import tw from "twin.macro"
 
 import Layout from "../templates/layout"
@@ -18,7 +18,7 @@ const upcomingSessionAvailable = (sessions: UpcomingSessionContent[]) =>
   sessions.length > 0 &&
   sessions.filter((s) => parseInt(s.id, 10) > 0).length > 0
 
-const UpcomingSessions: FC<UpcomingSessionProps> = ({ sessions }) =>
+const UpcomingSessions = ({ sessions }: UpcomingSessionProps) =>
   upcomingSessionAvailable(sessions) ? (
     <div tw="my-8 w-full lg:w-4/5 lg:w-2/3 xl:w-1/2">
       <h2 tw="my-2 w-4/5 lg:w-2/3 xl:w-1/2 text-blue-800 text-3xl">
@@ -38,7 +38,7 @@ type PastSessionProps = {
   allSessions: SessionContent[]
 }
 
-const PastSessions: FC<PastSessionProps> = ({ allSessions }) => {
+const PastSessions = ({ allSessions }: PastSessionProps) => {
   const [sessionsLength, setSessionsLength] = useState(initialLengthSize)
   const areAllSessionsVisible = sessionsLength > allSessions.length
 
@@ -66,7 +66,7 @@ const PastSessions: FC<PastSessionProps> = ({ allSessions }) => {
   )
 }
 
-const Sessions: FC = () => {
+const Sessions = () => {
   const data = useStaticQuery(graphql`
     query {
       upcoming: allContentYaml(

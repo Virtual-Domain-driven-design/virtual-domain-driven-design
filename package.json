@@ -7,6 +7,7 @@
   "scripts": {
     "type-check": "tsc --noEmit",
     "lint": "eslint . --ext ts,tsx",
+    "clean": "gatsby clean",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md,ts,tsx}\"",
@@ -25,6 +26,7 @@
     "@mdx-js/react": "^1.6.22",
     "@tailwindcss/line-clamp": "^0.2.0",
     "@tailwindcss/typography": "^0.4.0",
+    "@types/js-search": "^1.4.0",
     "eslint-plugin-jest": "^24.3.2",
     "gatsby-background-image": "^1.5.0",
     "gatsby-cli": "^3.2.0",
@@ -47,6 +49,7 @@
     "gatsby-transformer-yaml": "^3.1.0",
     "gbimage-bridge": "^0.1.2",
     "hyvor-talk-react": "^1.0.3",
+    "js-search": "^2.0.0",
     "netlify-cms-app": "^2.14.32",
     "postcss": "^8.2.8",
     "prop-types": "^15.5.4",

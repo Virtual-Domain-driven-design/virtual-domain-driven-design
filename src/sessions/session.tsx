@@ -1,7 +1,7 @@
 import { graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { IGatsbyImageData } from "gatsby-plugin-image/dist/src/components/gatsby-image.browser"
-import React, { FC } from "react"
+import React from "react"
 import "twin.macro"
 import ThreeDBlueButton from "../components/three-d-blue-button"
 
@@ -46,7 +46,7 @@ type SessionProps = {
   session: SessionContent
 }
 
-const Session: FC<SessionProps> = ({ session }) => {
+const Session = ({ session }:SessionProps) => {
   const linkToSession = "/sessions/" + session.id
   return (
     <div

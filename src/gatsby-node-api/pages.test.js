@@ -37,13 +37,13 @@ describe("When the static pages are generated", () => {
 
       expect(createPage).toHaveBeenCalledWith({
         path: "/sessions/66",
-        component: expect.stringContaining("/templates/session-layout.tsx"),
+        component: expect.stringMatching(/templates(.)+session-layout\.tsx/g),
         context: { id: "66" },
       })
 
       expect(createPage).toHaveBeenCalledWith({
         path: "/sessions/63",
-        component: expect.stringContaining("/templates/session-layout.tsx"),
+        component: expect.stringMatching(/templates(.)+session-layout\.tsx/g),
         context: { id: "63" },
       })
     })
@@ -65,7 +65,7 @@ describe("When the static pages are generated", () => {
 
       expect(createPage).toHaveBeenCalledWith({
         path: "/sessions/none",
-        component: expect.stringContaining("/templates/no-upcoming-layout.tsx"),
+        component: expect.stringMatching(/templates(.)+no-upcoming-layout\.tsx/g),
         context: { id: "none" },
       })
     })
@@ -102,12 +102,12 @@ describe("When the static pages are generated", () => {
       expect(createPage).toHaveBeenCalledTimes(2)
       expect(createPage).toHaveBeenCalledWith({
         path: "/learning-ddd/ddd-crew-welcome-to-ddd",
-        component: expect.stringContaining("/templates/github-repo-layout.tsx"),
+        component: expect.stringMatching(/templates(.)+github-repo-layout\.tsx/g),
         context: { id: "0120c7eb-b769-5f70-b487-5340c0a1b717" },
       })
       expect(createPage).toHaveBeenCalledWith({
         path: "/learning-ddd/saturn2019-architecture-island-workshop/outcomes",
-        component: expect.stringContaining("/templates/github-repo-layout.tsx"),
+        component: expect.stringMatching(/templates(.)+github-repo-layout\.tsx/g),
         context: { id: "b2a05e2d-7dfe-5816-b603-cf3a900a8932" },
       })
     })
@@ -149,7 +149,7 @@ describe("When the static pages are generated", () => {
       expect(createPage).toHaveBeenCalledWith({
         path:
           "/patterns-and-heuristics/heuristics/design-heuristics/eventstorming-dont-fill-in-the-gaps",
-        component: expect.stringContaining("/templates/heuristic-layout.tsx"),
+        component: expect.stringMatching(/templates(.)+heuristic-layout\.tsx/g),
         context: {
           id: "a968a5ee-d1ff-5821-aff9-bd7284921428",
           name: "eventstorming-dont-fill-in-the-gaps",
