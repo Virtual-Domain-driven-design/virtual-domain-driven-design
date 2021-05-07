@@ -39,7 +39,7 @@ const SessionSearch = (props:SessionSearchProps) => {
 
   return (
     <div tw="w-full flex flex-col items-center justify-start">
-      <Search value={searchQuery} onChange={e => searchData(e.target.value)}/>
+      <Search value={searchQuery} onChange={e => searchData(e.target.value)} label="Search in sessions"/>
       <div tw="w-11/12 md:w-5/6">
         <div tw="flex flex-wrap justify-center" data-testid="Sessions">
           {queryResults && queryResults.map((sessionDetails) => {

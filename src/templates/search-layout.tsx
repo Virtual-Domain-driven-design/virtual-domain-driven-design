@@ -17,12 +17,7 @@ const SearchLayout = ({pageContext}:SearchProps) => {
   return (
     <Layout>
         <div tw="bg-gray-100 flex flex-col items-center justify-center" id="Search">
-          <h1 style={{ marginTop: `3em`, textAlign: `center` }}>
-            Search data using JS and Gatsby API
-          </h1>
-          <div>
             <SessionSearch sessions={allSessions} engine={options} />
-          </div>
         </div>
     </Layout>
   )

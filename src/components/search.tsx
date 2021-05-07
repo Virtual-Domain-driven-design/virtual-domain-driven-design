@@ -82,10 +82,10 @@ export const rebuildIndex = (options:SearchOptions, content:[Searchable]):{searc
 
 const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => e.preventDefault()
 
-const Search = (props: { value: string, onChange: ChangeEventHandler<HTMLInputElement> }) => <div
+const Search = (props: { value: string, label?:string, onChange: ChangeEventHandler<HTMLInputElement> }) => <div
   tw=" flex flex-col items-center justify-center">
   <form onSubmit={handleSubmit}>
-
+    <label>{props.label || "Search"}</label>
     <input
       tw="lg:text-base md:text-sm sm:text-xs m-2 p-2 rounded-lg border-2 border-blue-500 hover:border-blue-400"
       id="Search"
