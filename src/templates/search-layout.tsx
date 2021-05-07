@@ -2,8 +2,9 @@ import React from "react"
 import "twin.macro"
 
 import Layout from "./layout"
-import SessionSearch, { SearchOptions } from "../sessions/session-search"
+import SessionSearch from "../sessions/session-search"
 import { SessionContent } from "../sessions/session"
+import { SearchOptions } from "../components/search"
 
 interface SearchProps {
   pageContext: {
