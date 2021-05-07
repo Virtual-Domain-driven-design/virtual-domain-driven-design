@@ -5,7 +5,7 @@ const path = require('path');
  * @return {string} snapshotPath
  */
 const resolveSnapshotPath = (testPath, snapshotExtension) =>
-  testPath.replace("src"+path.sep, "__snapshots__"+path.sep) + snapshotExtension
+  testPath.replace(`src${path.sep}`, `__snapshots__${path.sep}`) + snapshotExtension
 
 /** resolves from snapshot to test path
  * @param {string} snapshotFilePath
@@ -14,12 +14,12 @@ const resolveSnapshotPath = (testPath, snapshotExtension) =>
  */
 const resolveTestPath = (snapshotFilePath, snapshotExtension) =>
   snapshotFilePath
-    .replace("__snapshots__"+path.sep, "src"+path.sep)
+    .replace(`__snapshots__${path.sep}`, `src${path.sep}`)
     .slice(0, -snapshotExtension.length)
 
 module.exports = {
   resolveSnapshotPath,
   resolveTestPath,
   // Example test path, used for preflight consistency check of the implementation above
-  testPathForConsistencyCheck: "src"+path.sep+"components"+path.sep+"level-filter.test.tsx",
+  testPathForConsistencyCheck: `src${path.sep}components${path.sep}level-filter.test.tsx`,
 }

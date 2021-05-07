@@ -70,9 +70,15 @@ describe("When the static pages are generated", () => {
       })
     })
 
-    it("should add the data to a search template", () => {
-
-      searchPages({ nodes: nodesWithSessions }, createPage, reporter)
+    it("should add the all sessions with content to a search template", () => {
+      const allSessions = [
+        {
+          upcomingSessions: [{ id: "none" }],
+          sessions: null,
+        },
+       ...nodesWithSessions
+      ]
+      searchPages({ nodes: allSessions }, createPage, reporter)
 
       expect(createPage).toHaveBeenCalledTimes(1)
 
@@ -80,7 +86,6 @@ describe("When the static pages are generated", () => {
         path: "/search",
         component: expect.stringMatching(/templates(.)+search-layout\.tsx/g),
         context: expect.objectContaining({
-          sessionContent: {
             allSessions: [{ id: "66" },{ id: "65" }, { id: "64" }, { id: "63" } ],
             options: {
               indexStrategy: "Prefix match",
@@ -88,7 +93,6 @@ describe("When the static pages are generated", () => {
               TitleIndex: true,
               DescriptionIndex: true,
               SearchByTerm: true,
-            }
           }
         }),
       })

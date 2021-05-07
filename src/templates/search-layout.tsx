@@ -8,7 +8,7 @@ import { SessionContent } from "../sessions/session"
 interface SearchProps {
   pageContext: {
     allSessions:[SessionContent],
-    options:SearchOptions
+    options?:SearchOptions
   }
 }
 

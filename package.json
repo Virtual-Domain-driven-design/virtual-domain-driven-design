@@ -63,8 +63,8 @@
     "twin.macro": "^2.3.0"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.11.10",
-    "@testing-library/react": "^11.2.5",
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^11.2.6",
     "@types/jest": "^26.0.21",
     "@types/mdx-js__react": "^1.5.3",
     "@types/react": "^17.0.3",

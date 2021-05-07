@@ -45,6 +45,7 @@ const searchPages = ({ nodes }, createPage, reporter) => {
       if (!!sessions) return sessions.map((session) => session)
     })
     .flat()
+    .filter(s => s && s.id !== 'none')
   reporter.info(`Creating search page for ${sessions.length} sessions:  /search`)
       createPage({
         path: `/search`,
