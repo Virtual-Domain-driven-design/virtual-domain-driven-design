@@ -15,28 +15,5 @@
 
 # fallback with non-numeric id and a real image:
 upcomingSessions:
-#  - id: "none"
-#    img: ../images/kandddinsky.jpg
- - id: "68"
-   title: "[Hands-on] Collaborating and Communicating with Wardley Maps"
-   date: "6th of May, 2021"
-   time: "19:00 CEST"
-   img: ../images/sessions/session-68.jpg
-   video: "https://www.youtube.com/embed/bobkuufKPoQ"
-   level: intermediate
-   tags:
-     - collaborative modelling
-     - wardley mapping
-     - facilitation
-   description:
-     "
-      Wardley Mapping is a great tool in the DDD practitioner toolkit. Use it to explore and define domains and bounded contexts, examine the implications of change, compare different strategic options, and design the team topologies needed to make them happen. But what are the most effective ways to use this highly effective tool in collaboration with others?
-
-      There are several challenges with Wardley Mapping for collaboration and communication. What if people can't read or write maps? How far should you go to get an agreement on a map? And what about mapping that contradicts politics or authority? Join us for this hands-on session with Ben Mosior and Kenny Baas-Schwegler, where we will tour different ways of Wardley Mapping together and discuss their tradeoffs."
-   links:
-     - label: "RSVP on meetup"
-       url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/277659390/"
-     - label: "Join hands-on on zoom"
-       url: "https://us02web.zoom.us/j/88402194375"
-     - label: "Youtube and chill"
-       url: "https://youtu.be/bobkuufKPoQ"
+  - id: "none"
+    img: ../images/kandddinsky.jpg
