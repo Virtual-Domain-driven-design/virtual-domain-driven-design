@@ -45,6 +45,11 @@ const SessionSearch = ({ engine, sessions, showItems=initialLengthSize }: Sessio
     updateSearchStatus({ searchQuery: newQuery, searchResults: queryResult })
   }
 
+  const searchTag= (tag:string) => {
+    const queryResult = searchMethod.search(tag) as SessionContent[]
+    updateSearchStatus({ searchQuery: tag, searchResults: queryResult })
+  }
+
   const queryResults = searchQuery === "" ? sessions : searchResults
   const resultsToShow = queryResults?.slice(0, sessionsLength) || []
   const offerPaging = sessionsLength < queryResults.length
@@ -61,7 +66,7 @@ const SessionSearch = ({ engine, sessions, showItems=initialLengthSize }: Sessio
         <div tw="flex flex-wrap justify-center" data-testid="Sessions">
           {resultsToShow.map((sessionDetails) => {
             return (
-              <Session key={sessionDetails.id} session={sessionDetails}/>
+              <Session key={sessionDetails.id} session={sessionDetails} searchTag={searchTag}/>
             )
           })}
         </div>

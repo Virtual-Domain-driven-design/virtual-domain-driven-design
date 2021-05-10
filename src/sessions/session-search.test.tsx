@@ -30,6 +30,19 @@ describe("The session search component", () => {
     expect(searchResult.childElementCount).toEqual(1)
   })
 
+  it("should trigger a search when clicking on a tag", () => {
+    const { getByLabelText, getByTestId } = render(
+      <SessionSearch sessions={sessions} />
+    )
+
+    const input = getByLabelText("Search")
+    const searchResult = getByTestId("Sessions")
+    const firstSession = getByTestId(sessions[0].tags[0])
+    fireEvent.click(firstSession)
+    expect(searchResult.childElementCount).toEqual(1)
+    expect(input.value).toEqual(sessions[0].tags[0])
+  })
+
   it("should work without search results too", () => {
     const { getByLabelText, getByTestId } = render(
       <SessionSearch sessions={sessions} />

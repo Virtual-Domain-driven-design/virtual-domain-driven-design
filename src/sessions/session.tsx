@@ -43,10 +43,11 @@ export type SessionContent = {
 }
 
 type SessionProps = {
-  session: SessionContent
+  session: SessionContent,
+  searchTag: (tag:string) => void
 }
 
-const Session = ({ session }: SessionProps) => {
+const Session = ({ session, searchTag }: SessionProps) => {
   const linkToSession = "/sessions/" + session.id
   return (
     <div
@@ -70,12 +71,14 @@ const Session = ({ session }: SessionProps) => {
             </div>
             {session.tags.map((tag) => {
               return (
-                <div
+                <button
                   key={tag}
+                  data-testid={tag}
                   tw="flex-shrink-0 leading-none text-xs bg-gray-200 text-gray-700 rounded-md p-1 m-1 h-6"
+                  onClick={() => searchTag(tag)}
                 >
                   {tag}
-                </div>
+                </button>
               )
             })}
           </div>

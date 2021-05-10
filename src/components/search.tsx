@@ -7,6 +7,7 @@ export type SearchOptions = {
   searchSanitizer: string
   TitleIndex: boolean
   DescriptionIndex: boolean
+  TagIndex: boolean
   SearchByTerm: boolean
   removeStopWords?: boolean
 }
@@ -16,6 +17,7 @@ export const defaultOptions: SearchOptions = {
   searchSanitizer: "Lower Case",
   TitleIndex: true,
   DescriptionIndex: true,
+  TagIndex: true,
   SearchByTerm: true,
 }
 
@@ -36,6 +38,7 @@ export const rebuildIndex = (
     SearchByTerm,
     TitleIndex,
     DescriptionIndex,
+    TagIndex
   } = options
   const dataToSearch = new JsSearch.Search("id")
 
@@ -69,13 +72,14 @@ export const rebuildIndex = (
     ? (dataToSearch.searchIndex = new JsSearch.TfIdfSearchIndex("id"))
     : (dataToSearch.searchIndex = new JsSearch.UnorderedSearchIndex())
 
-  // sets the index attribute for the data
   if (TitleIndex) {
     dataToSearch.addIndex("title")
   }
-  // sets the index attribute for the data
   if (DescriptionIndex) {
     dataToSearch.addIndex("description")
+  }
+  if (TagIndex) {
+    dataToSearch.addIndex("tags")
   }
 
   dataToSearch.addDocuments(content) // adds the data to be searched
