@@ -1,14 +1,14 @@
 import { graphql, useStaticQuery } from "gatsby"
-import React, { useState } from "react"
-import tw from "twin.macro"
+import React from "react"
+import "twin.macro"
 
 import Layout from "../templates/layout"
-import Session, { SessionContent } from "../sessions/session"
+import  { SessionContent } from "../sessions/session"
 import SEO from "../components/seo"
 import UpcomingSession, {
   UpcomingSessionContent,
 } from "../sessions/upcoming-session"
-const initialLengthSize = 10
+import SessionSearch from "../sessions/session-search"
 
 type UpcomingSessionProps = {
   sessions: UpcomingSessionContent[]
@@ -34,34 +34,13 @@ const UpcomingSessions = ({ sessions }: UpcomingSessionProps) =>
     <div />
   )
 
-type PastSessionProps = {
-  allSessions: SessionContent[]
-}
-
-const PastSessions = ({ allSessions }: PastSessionProps) => {
-  const [sessionsLength, setSessionsLength] = useState(initialLengthSize)
-  const areAllSessionsVisible = sessionsLength > allSessions.length
-
-  const sessions = allSessions.slice(0, sessionsLength)
+const PastSessions = (props: { sessions: SessionContent[] }) => {
   return (
     <div tw="w-full flex flex-col items-center justify-start">
       <h2 tw="my-2 w-4/5 lg:w-2/3 xl:w-1/2 text-blue-800 text-3xl">
         Past Sessions
       </h2>
-      <div tw="w-11/12 md:w-5/6">
-        <div tw="flex flex-wrap justify-center">
-          {sessions.map((session) => {
-            return <Session key={session.id} session={session} />
-          })}
-        </div>
-      </div>
-      <button
-        onClick={() => setSessionsLength(sessionsLength + initialLengthSize)}
-        tw="my-4 bg-blue-500 hover:bg-blue-700 text-center text-xs lg:text-base text-white font-bold py-2 px-4 border-b-4 border-blue-900 hover:border-blue-900 rounded"
-        css={areAllSessionsVisible && tw`invisible`}
-      >
-        Load more
-      </button>
+      <SessionSearch sessions={props.sessions} />
     </div>
   )
 }
@@ -90,6 +69,10 @@ const Sessions = () => {
   const pastSessions: SessionContent[] = data.past.nodes[0].sessions.filter(
     (session: SessionContent) => session.video
   )
+  const allSessions = [
+    ...(upcomingSessions as SessionContent[]).filter((s) => s.id !== "none"),
+    ...pastSessions,
+  ]
 
   return (
     <Layout>
@@ -104,7 +87,7 @@ const Sessions = () => {
         id="Sessions"
       >
         <UpcomingSessions sessions={upcomingSessions} />
-        <PastSessions allSessions={pastSessions} />
+        <PastSessions sessions={allSessions} />
       </div>
     </Layout>
   )

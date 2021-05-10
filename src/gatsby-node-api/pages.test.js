@@ -65,7 +65,9 @@ describe("When the static pages are generated", () => {
 
       expect(createPage).toHaveBeenCalledWith({
         path: "/sessions/none",
-        component: expect.stringMatching(/templates(.)+no-upcoming-layout\.tsx/g),
+        component: expect.stringMatching(
+          /templates(.)+no-upcoming-layout\.tsx/g
+        ),
         context: { id: "none" },
       })
     })
@@ -76,7 +78,7 @@ describe("When the static pages are generated", () => {
           upcomingSessions: [{ id: "none" }],
           sessions: null,
         },
-       ...nodesWithSessions
+        ...nodesWithSessions,
       ]
       searchPages({ nodes: allSessions }, createPage, reporter)
 
@@ -86,14 +88,14 @@ describe("When the static pages are generated", () => {
         path: "/search",
         component: expect.stringMatching(/templates(.)+search-layout\.tsx/g),
         context: expect.objectContaining({
-            allSessions: [{ id: "66" },{ id: "65" }, { id: "64" }, { id: "63" } ],
-            options: {
-              indexStrategy: "Prefix match",
-              searchSanitizer: "Lower Case",
-              TitleIndex: true,
-              DescriptionIndex: true,
-              SearchByTerm: true,
-          }
+          allSessions: [{ id: "66" }, { id: "65" }, { id: "64" }, { id: "63" }],
+          options: {
+            indexStrategy: "Prefix match",
+            searchSanitizer: "Lower Case",
+            TitleIndex: true,
+            DescriptionIndex: true,
+            SearchByTerm: true,
+          },
         }),
       })
     })
@@ -130,12 +132,16 @@ describe("When the static pages are generated", () => {
       expect(createPage).toHaveBeenCalledTimes(2)
       expect(createPage).toHaveBeenCalledWith({
         path: "/learning-ddd/ddd-crew-welcome-to-ddd",
-        component: expect.stringMatching(/templates(.)+github-repo-layout\.tsx/g),
+        component: expect.stringMatching(
+          /templates(.)+github-repo-layout\.tsx/g
+        ),
         context: { id: "0120c7eb-b769-5f70-b487-5340c0a1b717" },
       })
       expect(createPage).toHaveBeenCalledWith({
         path: "/learning-ddd/saturn2019-architecture-island-workshop/outcomes",
-        component: expect.stringMatching(/templates(.)+github-repo-layout\.tsx/g),
+        component: expect.stringMatching(
+          /templates(.)+github-repo-layout\.tsx/g
+        ),
         context: { id: "b2a05e2d-7dfe-5816-b603-cf3a900a8932" },
       })
     })

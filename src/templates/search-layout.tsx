@@ -8,18 +8,21 @@ import { SearchOptions } from "../components/search"
 
 interface SearchProps {
   pageContext: {
-    allSessions:[SessionContent],
-    options?:SearchOptions
+    allSessions: SessionContent[]
+    options?: SearchOptions
   }
 }
 
-const SearchLayout = ({pageContext}:SearchProps) => {
-  const {allSessions, options} = pageContext
+const SearchLayout = ({ pageContext }: SearchProps) => {
+  const { allSessions, options } = pageContext
   return (
     <Layout>
-        <div tw="bg-gray-100 flex flex-col items-center justify-center" id="Search">
-            <SessionSearch sessions={allSessions} engine={options} />
-        </div>
+      <div
+        tw="bg-gray-100 flex flex-col items-center justify-center"
+        id="Search"
+      >
+        <SessionSearch sessions={allSessions} engine={options} />
+      </div>
     </Layout>
   )
 }

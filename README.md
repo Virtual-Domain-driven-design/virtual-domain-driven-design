@@ -1,6 +1,5 @@
 ![banner](src/images/logo/vddd_logo_tp.png)
 
-
 # Virtual Domain-Driven Design
 
 [![Build Status](https://github.com/Virtual-Domain-driven-design/virtual-domain-driven-design/actions/workflows/main.yml/badge.svg)](https://github.com/Virtual-Domain-driven-design/virtual-domain-driven-design/actions/workflows/main.yml)

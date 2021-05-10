@@ -1,11 +1,12 @@
-const path = require('path');
+const path = require("path")
 /** resolves from test to snapshot path
  * @param {string} testPath
  * @param {string} snapshotExtension
  * @return {string} snapshotPath
  */
 const resolveSnapshotPath = (testPath, snapshotExtension) =>
-  testPath.replace(`src${path.sep}`, `__snapshots__${path.sep}`) + snapshotExtension
+  testPath.replace(`src${path.sep}`, `__snapshots__${path.sep}`) +
+  snapshotExtension
 
 /** resolves from snapshot to test path
  * @param {string} snapshotFilePath

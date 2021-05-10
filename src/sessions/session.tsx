@@ -46,7 +46,7 @@ type SessionProps = {
   session: SessionContent
 }
 
-const Session = ({ session }:SessionProps) => {
+const Session = ({ session }: SessionProps) => {
   const linkToSession = "/sessions/" + session.id
   return (
     <div
