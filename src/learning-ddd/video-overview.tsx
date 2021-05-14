@@ -1,14 +1,11 @@
 import { graphql, useStaticQuery } from "gatsby"
-import React, { FC, useState } from "react"
+import React, { useState } from "react"
 
 import ContentGallery from "../components/content-gallery"
 import Video, { VideoContent } from "./video"
 
-interface VideosOverviewProps {
-  levelFilter: string[]
-}
-
-const VideosOverview: FC<VideosOverviewProps> = ({ levelFilter }) => {
+const VideosOverview = (props: { levelFilter: string[] }) => {
+  const { levelFilter } = props
   const [offset, setOffset] = useState(0)
   const pageLimit = 3
   const allVideos = useStaticQuery<{

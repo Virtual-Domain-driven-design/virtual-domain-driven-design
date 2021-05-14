@@ -1,6 +1,6 @@
 import { GatsbyImage } from "gatsby-plugin-image"
 import { IGatsbyImageData } from "gatsby-plugin-image/dist/src/components/gatsby-image.browser"
-import React from "react"
+import * as React from "react"
 
 import "twin.macro"
 import FloatingActionCard from "../components/floating-action-card"

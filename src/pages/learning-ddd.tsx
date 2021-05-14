@@ -8,14 +8,13 @@ import BackgroundImage from "gatsby-background-image"
 import BooksOverview from "../learning-ddd/books-overview"
 import GithubRepoOverview from "../learning-ddd/github-repos-overview"
 import Layout from "../templates/layout"
-import LevelFilter from "../components/level-filter"
+import LevelFilter, { allLevels } from "../components/level-filter"
 import PapersOverview from "../learning-ddd/papers-overview"
 import PodcastsOverview from "../learning-ddd/podcasts-overview"
 import SEO from "../components/seo"
 import SessionsOverview from "../learning-ddd/sessions-overview"
 import ThreeDBlueButton from "../components/three-d-blue-button"
 import VideoOverview from "../learning-ddd/video-overview"
-import { ContentLevel } from "../sessions/session"
 import { VdddLogo } from "../components/logos"
 
 const LearningDDDInfo = () => {
@@ -55,12 +54,7 @@ const LearningDDD: FC = () => {
     }
   `)
 
-  const [levelFilter, setLevelFilter] = useState([
-    ContentLevel.All,
-    ContentLevel.Beginner,
-    ContentLevel.Intermediate,
-    ContentLevel.Advanced,
-  ])
+  const [levelFilter, setLevelFilter] = useState(allLevels)
   const image = getImage(data.backgroundImage)
   const bgImage = image && convertToBgImage(image)
   return (

@@ -1,7 +1,7 @@
 import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { IGatsbyImageData } from "gatsby-plugin-image/dist/src/components/gatsby-image.browser"
-import React, { FC } from "react"
+import * as React from "react"
 import "twin.macro"
 
 interface PodcastPlatform {
@@ -10,7 +10,7 @@ interface PodcastPlatform {
   url: string
 }
 
-const PodcastPlatforms: FC = () => {
+const PodcastPlatforms = () => {
   const allPodcastsPlatforms = useStaticQuery<{
     allContentYaml: { nodes: { podcastsPlatforms: PodcastPlatform[] }[] }
   }>(graphql`

@@ -3,7 +3,7 @@ import React from "react"
 import "twin.macro"
 
 import Layout from "../templates/layout"
-import  { SessionContent } from "../sessions/session"
+import { SessionContent } from "../sessions/session"
 import SEO from "../components/seo"
 import UpcomingSession, {
   UpcomingSessionContent,

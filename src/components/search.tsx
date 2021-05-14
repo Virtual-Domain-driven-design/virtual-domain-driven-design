@@ -38,7 +38,7 @@ export const rebuildIndex = (
     SearchByTerm,
     TitleIndex,
     DescriptionIndex,
-    TagIndex
+    TagIndex,
   } = options
   const dataToSearch = new JsSearch.Search("id")
 

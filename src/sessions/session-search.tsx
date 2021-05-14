@@ -21,17 +21,21 @@ const initialState: SearchResults = {
 
 type SessionSearchProps = {
   sessions: SessionContent[]
-  engine?: SearchOptions,
+  engine?: SearchOptions
   showItems?: number
 }
 
 let search: JsSearch.Search
 
-const SessionSearch = ({ engine, sessions, showItems=initialLengthSize }: SessionSearchProps) => {
+const SessionSearch = ({
+  engine,
+  sessions,
+  showItems = initialLengthSize,
+}: SessionSearchProps) => {
   const [sessionsLength, setSessionsLength] = useState(showItems)
-  const options = { ...(engine), ...defaultOptions }
+  const options = { ...engine, ...defaultOptions }
   const [searchStatus, updateSearchStatus] = useState<SearchResults>(
-    initialState,
+    initialState
   )
   const { searchResults, searchQuery } = searchStatus
   const searchMethod = search || rebuildIndex(options, sessions).search
@@ -45,7 +49,7 @@ const SessionSearch = ({ engine, sessions, showItems=initialLengthSize }: Sessio
     updateSearchStatus({ searchQuery: newQuery, searchResults: queryResult })
   }
 
-  const searchTag= (tag:string) => {
+  const searchTag = (tag: string) => {
     const queryResult = searchMethod.search(tag) as SessionContent[]
     updateSearchStatus({ searchQuery: tag, searchResults: queryResult })
   }
@@ -66,7 +70,11 @@ const SessionSearch = ({ engine, sessions, showItems=initialLengthSize }: Sessio
         <div tw="flex flex-wrap justify-center" data-testid="Sessions">
           {resultsToShow.map((sessionDetails) => {
             return (
-              <Session key={sessionDetails.id} session={sessionDetails} searchTag={searchTag}/>
+              <Session
+                key={sessionDetails.id}
+                session={sessionDetails}
+                searchTag={searchTag}
+              />
             )
           })}
         </div>

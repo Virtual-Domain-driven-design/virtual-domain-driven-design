@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import tw from "twin.macro"
-import { ContentLevel } from "../sessions/session"
 
 type LevelFilterProps = {
   setLevelFilter: Function
@@ -12,6 +11,15 @@ type ButtonsActive = {
   isIntermediateActive: boolean
   isAdvancedActive: boolean
 }
+
+export enum ContentLevel {
+  All = "all",
+  Beginner = "beginner",
+  Intermediate = "intermediate",
+  Advanced = "advanced",
+}
+
+export const allLevels = [...Object.values(ContentLevel)]
 
 const LevelFilter = ({ setLevelFilter }: LevelFilterProps) => {
   const [areButtonsActive, setButtonsActive] = useState<ButtonsActive>({
@@ -45,7 +53,7 @@ const LevelFilter = ({ setLevelFilter }: LevelFilterProps) => {
       }
       default: {
         setButtonsActive({ ...buttonsActive, isAllActive: true })
-        setLevelFilter([...Object.values(ContentLevel)])
+        setLevelFilter(allLevels)
       }
     }
   }
@@ -56,6 +64,7 @@ const LevelFilter = ({ setLevelFilter }: LevelFilterProps) => {
         tw="lg:text-base md:text-sm sm:text-xs m-2 p-2 text-white rounded-lg border-2 border-blue-500 hover:border-blue-400"
         css={areButtonsActive.isAllActive && tw`bg-blue-700`}
         onClick={() => levelButtonClicked(ContentLevel.All)}
+        data-testid={ContentLevel.All}
       >
         All levels
       </button>
@@ -63,6 +72,7 @@ const LevelFilter = ({ setLevelFilter }: LevelFilterProps) => {
         tw="lg:text-base md:text-sm sm:text-xs m-2 p-2 text-white rounded-lg border-2 border-blue-500 hover:border-blue-400"
         css={areButtonsActive.isBeginnerActive && tw`bg-blue-700`}
         onClick={() => levelButtonClicked(ContentLevel.Beginner)}
+        data-testid={ContentLevel.Beginner}
       >
         Beginner
       </button>
@@ -70,6 +80,7 @@ const LevelFilter = ({ setLevelFilter }: LevelFilterProps) => {
         tw="lg:text-base md:text-sm sm:text-xs m-2 p-2 text-white rounded-lg border-2 border-blue-500 hover:border-blue-400"
         css={areButtonsActive.isIntermediateActive && tw`bg-blue-700`}
         onClick={() => levelButtonClicked(ContentLevel.Intermediate)}
+        data-testid={ContentLevel.Intermediate}
       >
         Intermediate
       </button>
@@ -77,6 +88,7 @@ const LevelFilter = ({ setLevelFilter }: LevelFilterProps) => {
         tw="lg:text-base md:text-sm sm:text-xs m-2 p-2 text-white rounded-lg border-2 border-blue-500 hover:border-blue-400"
         css={areButtonsActive.isAdvancedActive && tw`bg-blue-700`}
         onClick={() => levelButtonClicked(ContentLevel.Advanced)}
+        data-testid={ContentLevel.Advanced}
       >
         Advanced
       </button>

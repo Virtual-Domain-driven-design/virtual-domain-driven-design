@@ -5,8 +5,7 @@ import { fireEvent, render } from "@testing-library/react"
 
 // This below import is what gives us the "toBeInTheDocument" method
 import "@testing-library/jest-dom/extend-expect"
-import LevelFilter from "./level-filter"
-import { ContentLevel } from "../sessions/session"
+import LevelFilter, { allLevels, ContentLevel } from "./level-filter"
 
 describe("The LevelFilter", () => {
   beforeEach(() => jest.resetAllMocks())
@@ -21,32 +20,44 @@ describe("The LevelFilter", () => {
   })
 
   it("should render one button for each level", () => {
-    const { queryAllByRole } = render(
+    const { getByTestId } = render(
       <LevelFilter setLevelFilter={setLevelFilter} />
     )
-    const result = queryAllByRole("button")
 
-    //TODO test if the right button is active
-    expect(result).toHaveLength(4)
+    expect(getByTestId(ContentLevel.All)).toBeDefined()
+    expect(getByTestId(ContentLevel.Beginner)).toBeDefined()
+    expect(getByTestId(ContentLevel.Intermediate)).toBeDefined()
+    expect(getByTestId(ContentLevel.Advanced)).toBeDefined()
   })
 
   it("should set the correct level with each click", () => {
-    const { queryAllByRole } = render(
+    const { getByTestId } = render(
       <LevelFilter setLevelFilter={setLevelFilter} />
     )
-    const buttons = queryAllByRole("button")
-    const all = buttons[0]
-    const beginner = buttons[1]
+    const all = getByTestId(ContentLevel.All)
+    const beginner = getByTestId(ContentLevel.Beginner)
+    const intermediate = getByTestId(ContentLevel.Intermediate)
+    const advanced = getByTestId(ContentLevel.Advanced)
 
     fireEvent.click(all)
-    expect(setLevelFilter).toHaveBeenCalledWith([
-      ...Object.values(ContentLevel),
-    ])
+    expect(setLevelFilter).toHaveBeenCalledWith(allLevels)
 
     fireEvent.click(beginner)
     expect(setLevelFilter).toHaveBeenCalledWith([
       ContentLevel.All,
       ContentLevel.Beginner,
+    ])
+
+    fireEvent.click(intermediate)
+    expect(setLevelFilter).toHaveBeenCalledWith([
+      ContentLevel.All,
+      ContentLevel.Intermediate,
+    ])
+
+    fireEvent.click(advanced)
+    expect(setLevelFilter).toHaveBeenCalledWith([
+      ContentLevel.All,
+      ContentLevel.Advanced,
     ])
   })
 })

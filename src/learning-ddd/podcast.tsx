@@ -1,4 +1,4 @@
-import React, { FC } from "react"
+import * as React from "react"
 import tw from "twin.macro"
 
 export type PodcastContent = {
@@ -12,7 +12,7 @@ type PodcastProps = {
   session: PodcastContent
 }
 
-const Podcast: FC<PodcastProps> = ({ session }) => {
+const Podcast = ({ session }: PodcastProps) => {
   return (
     <div tw="bg-white w-96 h-56 rounded-lg shadow-md p-2 m-2">
       <div
@@ -31,7 +31,7 @@ const Podcast: FC<PodcastProps> = ({ session }) => {
           src={session.podcast}
           scrolling="no"
           frameBorder={0}
-        ></iframe>
+        />
       </div>
       <div tw="m-2 text-sm text-left font-bold text-blue-600">
         {session.title}

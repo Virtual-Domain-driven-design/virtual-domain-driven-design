@@ -1,16 +1,15 @@
 import { graphql, useStaticQuery } from "gatsby"
-import React, { FC, useState } from "react"
+import React, { useState } from "react"
 
 import ContentGallery from "../components/content-gallery"
 import GithubRepo, { GithubRepoContent } from "./github-repo"
 
-interface GithubRepoProps {
+const GithubRepoOverview = (props: {
   levelFilter: string[]
-}
-
-const GithubRepoOverview: FC<GithubRepoProps> = ({ levelFilter }) => {
+  pageLimit?: number
+}) => {
+  const { levelFilter, pageLimit = 4 } = props
   const [offset, setOffset] = useState(0)
-  const pageLimit = 4
   const allGithubRepos = useStaticQuery<{
     allContentYaml: { nodes: { githubRepositories: GithubRepoContent[] }[] }
   }>(graphql`

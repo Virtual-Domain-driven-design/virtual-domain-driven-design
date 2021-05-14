@@ -68,7 +68,7 @@ describe("The session search component", () => {
   })
 
   it("should not offer paging if all items are shown", () => {
-    const {  getByTestId } = render(
+    const { getByTestId } = render(
       <SessionSearch sessions={sessions} showItems={2} />
     )
 

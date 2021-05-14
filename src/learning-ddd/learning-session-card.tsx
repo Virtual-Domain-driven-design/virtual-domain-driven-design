@@ -1,4 +1,4 @@
-import React from "react"
+import * as React from "react"
 import "twin.macro"
 import VideoEmbed from "../components/video-embed"
 import { SessionContent } from "../sessions/session"
@@ -7,31 +7,25 @@ type LearningSessionCardProps = {
   session: SessionContent
 }
 
-const LearningSessionCard = (
-  learningSessionCardProps: LearningSessionCardProps
-) => {
+const LearningSessionCard = (props: LearningSessionCardProps) => {
+  const { session } = props
   return (
     <div tw="bg-white w-96 rounded-lg shadow-md p-2 m-2 flex flex-col">
-      <div tw="text-sm text-gray-600">
-        {learningSessionCardProps.session.date}
-      </div>
-      <VideoEmbed
-        title={learningSessionCardProps.session.title}
-        video={learningSessionCardProps.session.video}
-      />
+      <div tw="text-sm text-gray-600">{session.date}</div>
+      <VideoEmbed title={session.title} video={session.video} />
       <a
         tw="text-sm text-left font-bold text-blue-600 hover:cursor-pointer hover:text-blue-400"
-        href={learningSessionCardProps.session.video}
+        href={session.video}
         target="_blank"
         rel="noopener noreferrer"
       >
-        {learningSessionCardProps.session.title}
+        {session.title}
       </a>
       <div tw="px-1 w-full flex flex-row flex-wrap">
         <div tw="flex-shrink-0 leading-none text-xs tracking-tighter bg-blue-700 text-white rounded-md p-1 m-1">
-          Level: {learningSessionCardProps.session.level}
+          Level: {session.level}
         </div>
-        {learningSessionCardProps.session.tags.map((tag) => {
+        {session.tags.map((tag) => {
           return (
             <div
               key={tag}

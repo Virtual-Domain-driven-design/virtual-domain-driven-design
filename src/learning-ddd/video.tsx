@@ -1,4 +1,4 @@
-import React, { FC } from "react"
+import * as React from "react"
 import "twin.macro"
 import VideoEmbed from "../components/video-embed"
 
@@ -13,7 +13,7 @@ type VideoProps = {
   video: VideoContent
 }
 
-const Video: FC<VideoProps> = ({ video }) => {
+const Video = ({ video }: VideoProps) => {
   return (
     <div tw="bg-white w-96 rounded-lg shadow-md p-2 m-2 flex flex-col">
       <VideoEmbed title={video.title} video={video.video} />

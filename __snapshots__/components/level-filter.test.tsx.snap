@@ -174,24 +174,28 @@ exports[`The LevelFilter should create or check the snapshot 1`] = `
 >
   <button
     className="c1"
+    data-testid="all"
     onClick={[Function]}
   >
     All levels
   </button>
   <button
     className="c2"
+    data-testid="beginner"
     onClick={[Function]}
   >
     Beginner
   </button>
   <button
     className="c3"
+    data-testid="intermediate"
     onClick={[Function]}
   >
     Intermediate
   </button>
   <button
     className="c4"
+    data-testid="advanced"
     onClick={[Function]}
   >
     Advanced

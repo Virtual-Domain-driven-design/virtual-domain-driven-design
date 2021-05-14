@@ -1,6 +1,6 @@
 import { GatsbyImage } from "gatsby-plugin-image"
 import { IGatsbyImageData } from "gatsby-plugin-image/dist/src/components/gatsby-image.browser"
-import React, { FC } from "react"
+import * as React from "react"
 import "twin.macro"
 
 export interface BookContent {
@@ -15,7 +15,7 @@ interface BookProps {
   book: BookContent
 }
 
-const Book: FC<BookProps> = ({ book }) => {
+const Book = ({ book }: BookProps) => {
   return (
     <div tw="bg-white w-64 h-64 rounded-lg shadow-md m-2 flex flex-col items-center justify-start">
       <GatsbyImage

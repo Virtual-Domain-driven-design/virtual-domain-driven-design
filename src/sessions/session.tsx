@@ -4,6 +4,7 @@ import { IGatsbyImageData } from "gatsby-plugin-image/dist/src/components/gatsby
 import React from "react"
 import "twin.macro"
 import ThreeDBlueButton from "../components/three-d-blue-button"
+import { ContentLevel } from "../components/level-filter"
 
 export const session = graphql`
   fragment session on ContentYaml {
@@ -22,13 +23,6 @@ export const session = graphql`
   }
 `
 
-export enum ContentLevel {
-  All = "all",
-  Beginner = "beginner",
-  Intermediate = "intermediate",
-  Advanced = "advanced",
-}
-
 export type SessionContent = {
   id: string
   date: string
@@ -43,8 +37,8 @@ export type SessionContent = {
 }
 
 type SessionProps = {
-  session: SessionContent,
-  searchTag: (tag:string) => void
+  session: SessionContent
+  searchTag: (tag: string) => void
 }
 
 const Session = ({ session, searchTag }: SessionProps) => {
