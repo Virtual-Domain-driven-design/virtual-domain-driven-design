@@ -14,3 +14,17 @@ global.__BASE_PATH__ = "/"
 window.___navigate = pathname => {
   action("NavigateTo:")(pathname)
 }
+
+export const parameters = {
+  actions: { argTypesRegex: "^on[A-Z].*" },
+  layout: "centered",
+  backgrounds: {
+    default: "electric-ribbon",
+    values: [
+      {
+        name: "electric-ribbon",
+      },
+    ],
+  },
+  controls: { expanded: true },
+}
