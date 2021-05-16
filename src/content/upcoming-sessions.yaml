@@ -1,5 +1,5 @@
-# - title: ""
-#   id: ""
+# - id: ""
+#   title: ""
 #   date: ""
 #   time: ""
 #   img: ""
@@ -14,6 +14,31 @@
 #       url: ""
 
 # fallback with non-numeric id and a real image:
+#  - id: "none"
+#    img: ../images/kandddinsky.jpg
 upcomingSessions:
-  - id: "none"
-    img: ../images/kandddinsky.jpg
+  - id: "69"
+    title: "[Open Discussion] Do we need software architects?"
+    date: "1st of June, 2021"
+    time: "19:00 CEST"
+    img: ../images/sessions/session-69.jpg
+    video: "https://www.youtube.com/embed/nGdlw7bbaaY"
+    level: all
+    tags:
+      - software architect
+      - ivory tower
+      - team topologies
+      - collaboration
+    description:
+      "Do Software architects have a bad name? Why? What are your expectations, what anti-patterns you experience? What are you thankful for from your architects? Should you have a software architect in the team, or between the teams?
+
+       Changing the world starts with thinking and sharing the reasons. We would like to discuss this conflict at our next meetup in this open discussion.
+       Please reach out if you are a developer and you would like to participate in a constructive discussion.
+       Until then: fire away, put your thoughts, stories, examples on this https://t.co/dMUUI4DH1S?amp=1 miro board Thank you!"
+    links:
+      - label: "RSVP on Meetup"
+        url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/278212910/"
+      - label: "Interact live on Zoom"
+        url: "https://us02web.zoom.us/j/87310560737?pwd=dCs2ai9YSlFTU0pWQXZGcTVRTzF2dz09"
+      - label: "Youtube and Chill"
+        url: "https://youtu.be/nGdlw7bbaaY"
