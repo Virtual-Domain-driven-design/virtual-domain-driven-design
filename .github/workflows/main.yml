@@ -17,7 +17,9 @@ jobs:
   test:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
+    defaults:
+        run:
+          working-directory: ./app
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     - uses: actions/checkout@v2
@@ -29,13 +31,16 @@ jobs:
 
     - name: Install, build and test
       run: |
-        cd ./app & yarn
+        yarn
         yarn run build
         yarn test --coverage
 
   build-and-deploy:
     needs: [test]
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./app
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js 14.x
@@ -44,7 +49,7 @@ jobs:
           node-version: '14'
       - name: Install and build
         run: |
-          cd ./app & yarn
+          yarn
           yarn run build
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.1
