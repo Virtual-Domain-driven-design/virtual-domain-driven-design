@@ -1,4 +1,4 @@
-![banner](src/images/logo/vddd_logo_tp.png)
+![banner](app/src/images/logo/vddd_logo_tp.png)
 
 # Virtual Domain-Driven Design
 
@@ -10,6 +10,8 @@ An online Domain-Driven Design meetup and conference for the community by the co
 We are continuously updating the website and functionality, if you have any ideas or bugs you want to share please feel free to add a ticket!
 
 ## Contribute
+
+The repository contains tw projects: ./app and ./stories (for storybook tests and playground).
 
 There are two ways to contribute:
 
@@ -29,13 +31,13 @@ More will be added later!
 
 ## Code of Conduct
 
-See [Code of Conduct markdown](./Code-of-Conduct.md)
+See [Code of Conduct markdown](./app/Code-of-Conduct.md)
 
 ## Github Contribution
 
 ### Communities
 
-The communities on the site are sources from `src/content/communities.yaml`
+The communities on the site are sources from `app/src/content/communities.yaml`
 Fill in your own based on the following template:
 
 ```
@@ -48,8 +50,8 @@ Fill in your own based on the following template:
 
 ### Books
 
-The books on the site are sources from `src/content/books.yaml`
-You must put the image of the book in `src/images/book/` and point to it in the entry img.
+The books on the site are sources from `app/src/content/books.yaml`
+You must put the image of the book in `app/src/images/book/` and point to it in the entry img.
 Fill in your own based on the following template:
 
 ```
@@ -64,7 +66,7 @@ Fill in your own based on the following template:
 
 ### Videos
 
-The videos on the site are sources from `src/content/videos.yaml` except for DDD Europe `src/content/dddeu.yaml`, KanDDDinsky `src/content/kandddinsky.yaml` and ExploreDDD `src/content/exploreddd.yaml`.
+The videos on the site are sources from `app/src/content/videos.yaml` except for DDD Europe `app/src/content/dddeu.yaml`, KanDDDinsky `app/src/content/kandddinsky.yaml` and ExploreDDD `app/src/content/exploreddd.yaml`.
 Fill in your own based on the following template:
 
 ```
@@ -116,6 +118,7 @@ npm i --global gatsby-cli
 Then do a Yarn install and Gatsby develop to get you started
 
 ```sh
+cd ./app
 yarn
 
 gatsby develop
@@ -126,6 +129,7 @@ yarn run develop
 or
 
 ```sh
+cd ./app
 npm install
 
 gatsby develop
