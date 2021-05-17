@@ -4,6 +4,7 @@ import React from "react"
 
 import "twin.macro"
 import ThreeDBlueButton from "../components/three-d-blue-button"
+import ParsedContent from "../components/link-parser"
 import { graphql } from "gatsby"
 
 export const upcomingSession = graphql`
@@ -63,7 +64,7 @@ const UpcomingSession = ({ session }: UpcomingSessionProps) => {
         tw="md:h-96 h-64 w-full object-cover"
       />
       <div tw="py-2 text-justify lg:text-base md:text-sm sm:text-xs ">
-        {session.description}
+        <ParsedContent text={session.description} />
       </div>
       <div tw="mt-4 pt-2 space-x-4 border-t-2 border-solid">
         <div tw="flex items-center mt-4 h-14 overflow-hidden ">

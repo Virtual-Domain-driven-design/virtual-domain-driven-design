@@ -72,4 +72,4 @@ yarn-error.log
 .yarn-integrity
 
 obj/
-/.testing-static-queries.json
+/app/.testing-static-queries.json
