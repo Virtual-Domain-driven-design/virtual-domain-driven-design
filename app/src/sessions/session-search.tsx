@@ -59,7 +59,7 @@ const SessionSearch = ({
   const offerPaging = sessionsLength < queryResults.length
   return (
     <div tw="w-full flex flex-col items-center justify-start">
-      <div tw="flex items-start w-6/12 md:w-3/6">
+      <div tw=" flex items-start w-6/12 md:w-3/6">
         <Search
           value={searchQuery}
           onChange={(e) => searchData(e.target.value)}

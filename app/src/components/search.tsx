@@ -94,16 +94,16 @@ const Search = (props: {
   label?: string
   onChange: ChangeEventHandler<HTMLInputElement>
 }) => (
-  <div tw=" flex flex-col items-center justify-center">
+  <div>
     <form onSubmit={handleSubmit}>
       <label>{props.label || "Search"}</label>
       <input
-        tw="w-64 lg:text-base md:text-sm sm:text-xs m-2 p-2 rounded-lg border-2 border-blue-500 hover:border-blue-400"
+        tw="lg:w-64 sm:w-56 text-xs m-2 p-2 rounded-lg border border-blue-500 hover:border-blue-400"
         id="Search"
         aria-label="Search"
         value={props.value}
         onChange={props.onChange}
-        placeholder="Search for ..."
+        placeholder="type or click on tag"
       />
     </form>
   </div>

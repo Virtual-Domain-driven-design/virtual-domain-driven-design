@@ -63,7 +63,7 @@ githubRepositories:
   - name: "Virtual Modelling Templates"
     repo: "https://github.com/ddd-crew/virtual-modelling-templates.git"
     img: "../images/github-repositories/strategic-ddd-miro-template.png"
-    to: "/learning-ddd/-virtual-modelling-template"
+    to: "/learning-ddd/virtual-modelling-template"
     excerpt: "This repo contains a collection of resources for applying DDD collaboratively in remote environments."
     level: all
     tags:

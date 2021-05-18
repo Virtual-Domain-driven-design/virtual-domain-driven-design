@@ -1,4 +1,4 @@
-import React, { FC } from "react"
+import React from "react"
 
 import Hero from "../home/hero"
 import Conferences from "../home/conferences"
@@ -7,7 +7,7 @@ import Sponsors from "../home/sponsors"
 import Organisers from "../home/organisers"
 import Layout from "../templates/layout"
 
-const Index: FC = () => {
+const Index = () => {
   return (
     <Layout>
       <Hero></Hero>
