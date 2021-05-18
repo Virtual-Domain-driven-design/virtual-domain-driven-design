@@ -53,7 +53,7 @@ const GithubLink = ({ location, href, ...rest }: MarkdownLinkProps) => {
   const defaultLink = (
     <a
       data-link-external
-      href={href}
+      href={href.replace("http://", "https://")}
       target="_blank"
       rel="noopener noreferrer nofollow"
       {...rest}

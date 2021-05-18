@@ -18,8 +18,21 @@ describe("The github link plugin", () => {
     expect(result?.props["data-link-internal"]).toBeUndefined()
   })
 
-  it("should not change external references", () => {
+  it("should not change external https references", () => {
     const result = GithubLink(samples.exampleExternalLink)
+
+    expect(result?.props.href).toEqual(samples.exampleExternalLink.href)
+    expect(result?.props.to).toBeUndefined()
+    expect(result?.props["data-link-external"]).toBeTruthy()
+  })
+
+  it("should change external http references to https", () => {
+    const unsecureLink = {
+      ...samples.exampleExternalLink,
+      href:
+        "http://medium.com/nick-tune-tech-strategy-blog/core-domain-patterns-941f89446af5",
+    }
+    const result = GithubLink(unsecureLink)
 
     expect(result?.props.href).toEqual(samples.exampleExternalLink.href)
     expect(result?.props.to).toBeUndefined()
