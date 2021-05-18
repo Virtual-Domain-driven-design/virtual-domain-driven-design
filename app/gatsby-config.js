@@ -16,6 +16,17 @@ module.exports = {
     `gatsby-transformer-yaml`,
     `gatsby-plugin-sitemap`,
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        short_name: `V-DDD`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        display: `standalone`,
+        icon: `./static/favicon.png`,
+        theme_color_in_head: false,
+      },
+    },
+    {
       resolve: `gatsby-plugin-page-creator`,
       options: {
         path: `${__dirname}/src/pages/learning-ddd`,

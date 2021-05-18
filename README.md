@@ -84,7 +84,7 @@ Remove the old upcoming session and replace the content of the file with
 
 ```yaml
 - id: "none"
-  img: ../images/kandddinsky.jpg
+  img: ./kandddinsky.jpg
 ```
 
 or some existing image. Important is that the id is not a number but also not empty
