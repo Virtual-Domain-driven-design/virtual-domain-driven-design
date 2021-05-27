@@ -5,7 +5,7 @@
  */
 const {
   sessionPages,
-  searchPages,
+  sessionSearchPage,
   pagesFromMarkdown,
 } = require("./src/gatsby-node-api/pages")
 const { getTypeDefs } = require("./src/gatsby-node-api/resolvers")
@@ -71,7 +71,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   const { data } = result
   sessionPages(data.allContentYaml, createPage, reporter)
-  searchPages(data.allContentYaml, createPage, reporter)
+  sessionSearchPage(data.allContentYaml, createPage, reporter)
   pagesFromMarkdown(data.allMdx, createPage, reporter)
 }
 

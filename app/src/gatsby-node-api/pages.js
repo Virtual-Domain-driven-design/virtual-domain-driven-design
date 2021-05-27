@@ -1,3 +1,12 @@
+const defaultOptions = {
+  indexStrategy: "Prefix match",
+  searchSanitizer: "Lower Case",
+  TitleIndex: true,
+  DescriptionIndex: true,
+  TagIndex: true,
+  SearchByTerm: true,
+}
+
 const gitHubRegex = new RegExp(/(github-repo)/)
 const heuristicsRegex = new RegExp(/(\/content\/heuristics)((.)*([^(.md)]))/)
 
@@ -31,12 +40,12 @@ const sessionPages = ({ nodes }, createPage, reporter) => {
 }
 
 /**
- * Create static pages to search through the content of all sessions
+ * Create a static page to search through the content of all sessions
  * @param {{nodes:{upcomingSessions:{id: string}[]|null, sessions: {id: string}[]|null}[]}} content
  * @param {{info: function}} reporter
  * @param {function} createPage
  */
-const searchPages = ({ nodes }, createPage, reporter) => {
+const sessionSearchPage = ({ nodes }, createPage, reporter) => {
   const sessions = nodes
     .filter((n) => n.upcomingSessions !== null || n.sessions !== null)
     // eslint-disable-next-line array-callback-return
@@ -54,13 +63,7 @@ const searchPages = ({ nodes }, createPage, reporter) => {
     component: require.resolve(`../templates/search-layout.tsx`),
     context: {
       allSessions: sessions,
-      options: {
-        indexStrategy: "Prefix match",
-        searchSanitizer: "Lower Case",
-        TitleIndex: true,
-        DescriptionIndex: true,
-        SearchByTerm: true,
-      },
+      options: defaultOptions,
     },
   })
 }
@@ -132,6 +135,6 @@ const pagesFromMarkdown = ({ edges }, createPage, reporter) => {
 
 module.exports = {
   sessionPages,
-  searchPages,
+  sessionSearchPage,
   pagesFromMarkdown,
 }

@@ -1,4 +1,8 @@
-const { sessionPages, pagesFromMarkdown, searchPages } = require("./pages")
+const {
+  sessionPages,
+  pagesFromMarkdown,
+  sessionSearchPage,
+} = require("./pages")
 const samples = require("../../__mocks__/samples")
 
 const createPage = jest.fn()
@@ -80,7 +84,7 @@ describe("When the static pages are generated", () => {
         },
         ...nodesWithSessions,
       ]
-      searchPages({ nodes: allSessions }, createPage, reporter)
+      sessionSearchPage({ nodes: allSessions }, createPage, reporter)
 
       expect(createPage).toHaveBeenCalledTimes(1)
 
@@ -94,6 +98,7 @@ describe("When the static pages are generated", () => {
             searchSanitizer: "Lower Case",
             TitleIndex: true,
             DescriptionIndex: true,
+            TagIndex: true,
             SearchByTerm: true,
           },
         }),

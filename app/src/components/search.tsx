@@ -25,6 +25,7 @@ type Searchable = {
   id: string
   title: string
   description: string
+  tags: string[]
 }
 
 export const rebuildIndex = (
@@ -103,7 +104,7 @@ const Search = (props: {
         aria-label="Search"
         value={props.value}
         onChange={props.onChange}
-        placeholder="type or click on tag"
+        placeholder="start typing or click on tag"
       />
     </form>
   </div>

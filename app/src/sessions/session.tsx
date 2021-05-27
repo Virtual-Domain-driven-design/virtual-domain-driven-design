@@ -55,7 +55,7 @@ const Session = ({ session, searchTag }: SessionProps) => {
       />
       <div tw="w-full md:w-2/3 px-4 py-2 bg-white rounded-lg h-3/5 md:h-64 lg:text-base md:text-sm sm:text-xs ">
         <h2 tw="text-gray-800 font-medium mr-auto">{session.title}</h2>
-        <p tw="text-gray-700 mt-4 break-all line-clamp-3 lg:line-clamp-4">
+        <p tw="text-gray-700 mt-4 break-words line-clamp-3 lg:line-clamp-4">
           {session.description}
         </p>
         <div tw="flex items-center mt-2 mb-2 h-14 overflow-hidden">

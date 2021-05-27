@@ -18,6 +18,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
+        name: `vddd-site`,
         short_name: `V-DDD`,
         start_url: `/`,
         background_color: `#f7f0eb`,
