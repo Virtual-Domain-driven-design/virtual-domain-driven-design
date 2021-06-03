@@ -16,7 +16,7 @@
 # fallback with non-numeric id and a real image:
 upcomingSessions:
   - id: "none"
-    img: ./kandddinsky.jpg
+    img: ../images/kandddinsky.jpg
 #upcomingSessions:
 #  - id: "69"
 #    title: "[Open Discussion] Do we need software architects?"
