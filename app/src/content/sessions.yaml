@@ -10,6 +10,24 @@
 #   tags:
 #     - ""
 sessions:
+  - id: "71"
+    title: "[Talk] Fifty Ways to Scale Your Agile with Grady Booch"
+    date: "27th of July, 2021"
+    time: "19:00 CEST"
+    img: ../images/sessions/session-71.jpg
+    video: "https://www.youtube.com/embed/UcCifzd-xzk"
+    podcast: "https://oembed.libsyn.com/embed?item_id=19955492"
+    level: all
+    tags:
+      - agile
+      - architecture
+      - scaling
+    description:
+      "
+      Some will say that you shouldn't even try to tackle a system bigger than what a typical agile team can absorb; others will say that agile just doesn’t scale beyond the simplest of systems. Experience suggests that reality lives somewhere between these two extremes, but where, exactly, is the clear and present question.
+
+      In this talk, we’ll first consider the dimensions of scale - complexity, risk, and time - and then explore the ways that agility works (and sometimes doesn’t). Along, the way, we’ll study contemporary approaches to scaling agile, and conclude with an examination of work yet to be done.
+      "
   - id: "70"
     title: "[Hands-on] Collaborating and Communicating with Wardley Maps Part 2"
     date: "22th of June, 2021"
