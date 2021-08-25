@@ -14,8 +14,40 @@
 #       url: ""
 
 # fallback with non-numeric id and a real image:
+# upcomingSessions:
+#   - id: "none"
+#     img: ../images/kandddinsky.jpg
 upcomingSessions:
-  - id: "none"
-    img: ../images/kandddinsky.jpg
-#upcomingSessions:
+  - id: "72"
+    title: "[Interactive] Outcome Mapping for Flow engineering with Steve Pereira"
+    date: "1st of September, 2021"
+    time: "19:30 CEST"
+    img: ../images/sessions/session-71.jpg
+    video: "https://www.youtube.com/embed/1XA4bUcgp8Q"
+    level: "advanced"
+    tags:
+      - "flow engineering"
+      - "Outcome mapping"
+    description: 
+    "
+      'Begin with the end in mind' - Stephen Covey
 
+      70% of transformation efforts fail, and they fail because they lack clarity. 8 people will have 8 understandings of problems and solutions. By breaking down a target outcome, we create clarity and converge.
+
+      Outcome Mapping is the first activity in Flow Engineering, which arose out of the need for clarity before starting further mapping activities. Outcome Mapping has its own flow, from ideas and pains to methods, guiding you from desire to action. You can map outcomes whether you are starting, in the middle or in the home stretch. It's a great way to bring a group together to converge, and set off in the right direction as a team.
+
+      In this session:
+
+      * Why outcome mapping is a critical activity
+      * You'll see how outcome mapping works
+      * How to create your own outcome map
+      * Outcome mapping outcomes :]
+      * I'll also share similar and complimentary techniques to provide many options for future exploration.
+    "
+    links:
+      - label: "RSVP on Meetup"
+        url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/280331116/"
+      - label: "Interact on Zoom"
+        url: "https://us02web.zoom.us/j/81955724732?pwd=eUFiYVk3SjJvMDNkZkJCYzAydTMrUT09"
+      - label: "Youtube and Chill"
+        url: "https://youtu.be/1XA4bUcgp8Q"
