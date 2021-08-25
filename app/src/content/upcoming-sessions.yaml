@@ -28,8 +28,7 @@ upcomingSessions:
     tags:
       - "flow engineering"
       - "Outcome mapping"
-    description: 
-    "
+    description: "
       'Begin with the end in mind' - Stephen Covey
 
       70% of transformation efforts fail, and they fail because they lack clarity. 8 people will have 8 understandings of problems and solutions. By breaking down a target outcome, we create clarity and converge.
@@ -43,7 +42,7 @@ upcomingSessions:
       * How to create your own outcome map
       * Outcome mapping outcomes :]
       * I'll also share similar and complimentary techniques to provide many options for future exploration.
-    "
+      "
     links:
       - label: "RSVP on Meetup"
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/280331116/"
