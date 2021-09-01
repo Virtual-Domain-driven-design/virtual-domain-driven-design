@@ -10,6 +10,31 @@
 #   tags:
 #     - ""
 sessions:
+  - id: "72"
+    title: "[Interactive] Outcome Mapping for Flow engineering with Steve Pereira"
+    date: "1st of September, 2021"
+    time: "19:30 CEST"
+    img: ../images/sessions/session-72.jpg
+    video: "https://www.youtube.com/embed/1XA4bUcgp8Q"
+    level: "advanced"
+    tags:
+      - "flow engineering"
+      - "Outcome mapping"
+    description: "
+      'Begin with the end in mind' - Stephen Covey
+
+      70% of transformation efforts fail, and they fail because they lack clarity. 8 people will have 8 understandings of problems and solutions. By breaking down a target outcome, we create clarity and converge.
+
+      Outcome Mapping is the first activity in Flow Engineering, which arose out of the need for clarity before starting further mapping activities. Outcome Mapping has its own flow, from ideas and pains to methods, guiding you from desire to action. You can map outcomes whether you are starting, in the middle or in the home stretch. It's a great way to bring a group together to converge, and set off in the right direction as a team.
+
+      In this session:
+
+      * Why outcome mapping is a critical activity
+      * You'll see how outcome mapping works
+      * How to create your own outcome map
+      * Outcome mapping outcomes :]
+      * I'll also share similar and complimentary techniques to provide many options for future exploration.ddddd
+      "
   - id: "71"
     title: "[Talk] Fifty Ways to Scale Your Agile with Grady Booch"
     date: "27th of July, 2021"
@@ -22,8 +47,7 @@ sessions:
       - agile
       - architecture
       - scaling
-    description:
-      "
+    description: "
       Some will say that you shouldn't even try to tackle a system bigger than what a typical agile team can absorb; others will say that agile just doesn’t scale beyond the simplest of systems. Experience suggests that reality lives somewhere between these two extremes, but where, exactly, is the clear and present question.
 
       In this talk, we’ll first consider the dimensions of scale - complexity, risk, and time - and then explore the ways that agility works (and sometimes doesn’t). Along, the way, we’ll study contemporary approaches to scaling agile, and conclude with an examination of work yet to be done.
@@ -39,8 +63,7 @@ sessions:
       - collaborative modelling
       - wardley mapping
       - facilitation
-    description:
-      "
+    description: "
       Check out the first part here: https://virtualddd.com/sessions/68
 
       We will continue to pick up other approaches.
@@ -64,9 +87,9 @@ sessions:
     description:
       "Do Software architects have a bad name? Why? What are your expectations, what anti-patterns you experience? What are you thankful for from your architects? Should you have a software architect in the team, or between the teams?
 
-       Changing the world starts with thinking and sharing the reasons. We would like to discuss this conflict at our next meetup in this open discussion.
-       Please reach out if you are a developer and you would like to participate in a constructive discussion.
-       Until then: fire away, put your thoughts, stories, examples on this https://t.co/dMUUI4DH1S?amp=1 miro board Thank you!"
+      Changing the world starts with thinking and sharing the reasons. We would like to discuss this conflict at our next meetup in this open discussion.
+      Please reach out if you are a developer and you would like to participate in a constructive discussion.
+      Until then: fire away, put your thoughts, stories, examples on this https://t.co/dMUUI4DH1S?amp=1 miro board Thank you!"
   - id: "68"
     title: "[Hands-on] Collaborating and Communicating with Wardley Maps"
     date: "6th of May, 2021"
@@ -78,8 +101,7 @@ sessions:
       - collaborative modelling
       - wardley mapping
       - facilitation
-    description:
-      "
+    description: "
       Wardley Mapping is a great tool in the DDD practitioner toolkit. Use it to explore and define domains and bounded contexts, examine the implications of change, compare different strategic options, and design the team topologies needed to make them happen. But what are the most effective ways to use this highly effective tool in collaboration with others?
 
       There are several challenges with Wardley Mapping for collaboration and communication. What if people can't read or write maps? How far should you go to get an agreement on a map? And what about mapping that contradicts politics or authority? Join us for this hands-on session with Ben Mosior and Kenny Baas-Schwegler, where we will tour different ways of Wardley Mapping together and discuss their tradeoffs."

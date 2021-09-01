@@ -65,11 +65,6 @@ const Sponsors: FC = () => {
           gatsbyImageData(layout: FULL_WIDTH)
         }
       }
-      sessionize: file(relativePath: { eq: "logo/sessionize.png" }) {
-        childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
-        }
-      }
     }
   `)
   return (
@@ -116,11 +111,6 @@ const Sponsors: FC = () => {
             name="nCrafts"
             image={data.ncrafts.childImageSharp.gatsbyImageData}
             website="https://ncrafts.io/"
-          />
-          <Sponsor
-            name="Sessionize"
-            image={data.sessionize.childImageSharp.gatsbyImageData}
-            website="https://sessionize.com/"
           />
         </div>
       </div>

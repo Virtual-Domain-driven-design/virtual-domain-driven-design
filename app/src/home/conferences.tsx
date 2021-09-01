@@ -73,6 +73,11 @@ const Conferences: FC = () => {
           gatsbyImageData(layout: FULL_WIDTH)
         }
       }
+      sag: file(relativePath: { eq: "logo/SAG-2021.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
+        }
+      }
     }
   `)
   return (
@@ -88,8 +93,8 @@ const Conferences: FC = () => {
           <Conference
             name="Domain-Driven Design Europe"
             image={data.dddeu.childImageSharp.gatsbyImageData}
-            location="Online-only"
-            date="2022"
+            location="Amsterdam, Netherlands"
+            date="23-24 June 2022"
             website="https://dddeurope.com/"
           />
           <Conference
@@ -103,7 +108,7 @@ const Conferences: FC = () => {
             name="KanDDDinsky"
             image={data.kddd.childImageSharp.gatsbyImageData}
             location="Berlin, Germany"
-            date="October"
+            date="21-22 October 2021"
             website="https://kandddinsky.de/"
           />
           <Conference
@@ -116,23 +121,30 @@ const Conferences: FC = () => {
           <Conference
             name="DDD Taiwan"
             image={data.dddtaiwan.childImageSharp.gatsbyImageData}
-            location="Taipei, Taiwan"
-            date="November"
-            website="https://www.ddd-tw.com/"
+            location="Online"
+            date="October 16th 2021"
+            website="https://conference.ddd-tw.com/2021/"
           />
           <Conference
-            name="DDDx: Domain-Driven Design eXchange "
+            name="DDDx: Domain-Driven Design eXchange"
             image={data.dddexchange.childImageSharp.gatsbyImageData}
             location="Online"
             date="8-9 June 2021 "
             website="https://skillsmatter.com/conferences/13257-dddx-2021"
           />
           <Conference
-            name="μCon: The Microservices eXchange "
+            name="μCon: The Microservices eXchange"
             image={data.muconexchange.childImageSharp.gatsbyImageData}
             location="Online"
             date="13-14 April 2021"
             website="https://skillsmatter.com/conferences/13252-mucon-2021"
+          />
+          <Conference
+            name="Software architecture gathering "
+            image={data.sag.childImageSharp.gatsbyImageData}
+            location="Online"
+            date="11-14 October 2021"
+            website="https://conferences.isaqb.org/software-architecture-gathering/"
           />
         </div>
       </div>
