@@ -18,24 +18,28 @@
 #   - id: "none"
 #     img: ../images/kandddinsky.jpg
 upcomingSessions:
-  - id: "73"
-    title: "Domain-Driven Frontend with Francesco Strazzullo"
-    date: "21nd of September, 2021"
-    time: "18:00 CEST"
-    img: ../images/sessions/session-73.jpg
-    video: "https://www.youtube.com/embed/gX_Nx1vqeBQ"
+  - id: "74"
+    title: "When to invest in Strategic design and when in Tactical design"
+    date: "2nd of November, 2021"
+    time: "19:00 CEST"
+    img: ../images/sessions/session-74.jpg
+    video: "https://www.youtube.com/embed/6hvuLjQpfx4"
     level: "all"
     tags:
-      - "frontend"
+      - "strategic design"
       - "software architecture"
-      - "tactical patterns"
+      - "tactical design"
+      - "polarity mapping"
+      - "design patterns"
     description: "
-      DDD is probably one of the most important ecosystems of the last 20 years of software engineering. Nowadays frontend applications are an important piece of software architecture. Nevertheless, Bounded Contexts, Aggregates, Anticorruption Layers are all well-known concepts that somehow are often not applied when building large and complex frontend applications. The purpose of this talk is to show how some of the DDD techniques are easily applied to Frontend engineering, resulting in more robust and evolvable codebases.
-      "
+     Most people introduced to Domain-Driven Design usually start with the first parts of the book, a very tactical approach treating DDD as a programming discipline. Then people begin discovering the architecture ideas in it, telling DDD is more than code. That is where they get introduced to the more strategic approach. But tactical vs strategic thinking can quickly turn into a polarity discussion where one is perceived as more important than the other. But with any polarity, both have up and down-side, you cannot do the one without the other. But when do we invest in one, and when into the other?
+
+    Join us in this collaborative modelling session, where through dialogues we can discover signals when either strategy or tactical is not helpful anymore, and explore heuristics together to move to the other side, keeping the balance, doing tactical AND strategic design when we most need it!
+    "
     links:
       - label: "RSVP on Meetup"
-        url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/280489703/"
+        url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/281649519/"
       - label: "Interact on Zoom"
-        url: "https://us02web.zoom.us/j/89183996170?pwd=Mk94a2ZFczVEaGsxWHcwTUxONDBydz09"
+        url: "https://us02web.zoom.us/j/88271095371?pwd=RDR2cFFmak1jZDFURHIwQ1JIQTQ1QT09"
       - label: "Youtube and Chill"
-        url: "https://youtu.be/gX_Nx1vqeBQ"
+        url: "https://youtu.be/6hvuLjQpfx4"
