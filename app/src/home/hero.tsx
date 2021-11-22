@@ -3,12 +3,14 @@ import { convertToBgImage } from "gbimage-bridge"
 import BackgroundImage from "gatsby-background-image"
 import { graphql, useStaticQuery } from "gatsby"
 import * as React from "react"
-import tw from "twin.macro"
+
+import "twin.macro"
 
 import OutlineBlueButton from "../components/outline-blue-button"
 import ThreeDBlueButton from "../components/three-d-blue-button"
 import UpcomingSession from "../sessions/upcoming-session"
 import { VdddLogo, SlackLogo, TwitterLogo } from "../components/logos"
+import NoUpcoming from "../sessions/no-upcoming"
 
 const VDDDInfo = () => {
   return (
@@ -60,12 +62,20 @@ const Hero = () => {
           ...upcomingSession
         }
       }
+      allSessions: allContentYaml(
+        filter: { sessions: { elemMatch: { title: { ne: null } } } }
+      ) {
+        nodes {
+          ...session
+        }
+      }
     }
   `)
   const image = getImage(data.backgroundImage)
   const bgImage = image && convertToBgImage(image)
 
   const upcomingSession = data.upcoming.nodes[0].upcomingSessions[0]
+  const lastSession = data.allSessions.nodes[0].sessions[0]
   const isUpcomingSession = !!upcomingSession && upcomingSession.id !== "none"
   return (
     <BackgroundImage
@@ -100,10 +110,19 @@ const Hero = () => {
       </div>
 
       <div tw="w-full lg:w-2/3 flex flex-col items-center justify-center z-10 m-4 sm:m-6 lg:m-8">
-        <div css={!isUpcomingSession && tw`invisible`}>
-          <UpcomingSession session={upcomingSession} />
-        </div>
-        <OutlineBlueButton tw="lg:text-xl" to="/sessions">
+        {isUpcomingSession ? (
+          <div>
+            <UpcomingSession session={upcomingSession} />
+          </div>
+        ) : (
+          <div>
+            <NoUpcoming>
+              {/* UpcomingSession sounds a bit off here */}
+              <UpcomingSession session={lastSession} />
+            </NoUpcoming>
+          </div>
+        )}
+        <OutlineBlueButton tw="lg:text-xl space-x-4 m-4" to="/sessions">
           Show all sessions
         </OutlineBlueButton>
       </div>
