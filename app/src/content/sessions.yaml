@@ -16,6 +16,7 @@ sessions:
     time: "19:00 CEST"
     img: ../images/sessions/session-75.jpg
     video: "https://www.youtube.com/embed/f9ywr8Mo9k4"
+    podcast: "https://oembed.libsyn.com/embed?item_id=21308663"
     level: "all"
     tags:
       - "strategic design"
