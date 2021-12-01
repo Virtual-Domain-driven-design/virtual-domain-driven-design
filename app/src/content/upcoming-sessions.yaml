@@ -14,7 +14,29 @@
 #       url: ""
 
 # fallback with non-numeric id and a real image:
-upcomingSessions:
-  - id: "none"
-    img: ../images/kandddinsky.jpg
 # upcomingSessions:
+#   - id: "none"
+#     img: ../images/kandddinsky.jpg
+upcomingSessions:
+  - id: "76"
+    title: "Domain-Drinking Dialogues 2nd edition - 2021 Lean coffee"
+    date: "Dec 28st, 2021"
+    time: "19:00 CET"
+    img: ../images/sessions/session-76.jpeg
+    video: "https://www.youtube.com/embed/OO3egnXnpMw"
+    level: all
+    description: "
+      In the last week of this year, we are closing another full year of virtual Domain-driven design meetups with the last meetup. So grab your drinks (tea, lemonade or anything you want!) and come join with your DDD questions to this lean coffee! We all post topics we want to discuss and together we will get into dialogues, so bring us your knowledge and DDD questions and see you then!
+      "
+    tags:
+      - essential
+      - strategic design
+      - tactical design
+      - collaborate modelling
+    links:
+      - label: "RSVP on Meetup"
+        url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/275076698/"
+      - label: "Interact on Zoom"
+        url: " https://us02web.zoom.us/j/88180003145?pwd=enRKeUxZV0twZ1BJZ1FmcTVuMTZlZz09"
+      - label: "Youtube and Chill"
+        url: "https://youtu.be/OO3egnXnpMw"
