@@ -15,5 +15,26 @@
 
 # fallback with non-numeric id and a real image:
 upcomingSessions:
-  - id: "none"
-    img: ../images/kandddinsky.jpg
+  #   - id: "none"
+  #     img: ../images/kandddinsky.jpg
+  - id: "77"
+    title: "Design & Reality with Mathias Verreas"
+    date: "Jan 13th, 2022"
+    time: "19:00 CET"
+    img: ../images/sessions/session-77.jpeg
+    video: "https://www.youtube.com/embed/s_ihqdfcHDY"
+    level: all
+    description: "
+      Our models should be driven by the domain, but not constrained by what domain experts tell us. After all, the domain language is messy, organic, ambiguous, social, incomplete, and if it has any intentional design to it at all, it's not designed to be turned into software. Modelling is more than capturing requirements, it's the opportunity to create novel concepts. This talk will use real-world stories to invite you to discuss.
+      "
+    tags:
+      - essential
+      - software design
+      - domain language
+    links:
+      - label: "RSVP on Meetup"
+        url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/283117565/"
+      - label: "Interact on Zoom"
+        url: "https://us02web.zoom.us/j/85314987720?pwd=MXR6QnlHdUgreVdaNDlnbnpJVE9VUT09"
+      - label: "Youtube and Chill"
+        url: "https://youtu.be/s_ihqdfcHDY"
