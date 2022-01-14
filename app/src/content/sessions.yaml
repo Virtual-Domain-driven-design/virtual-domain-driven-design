@@ -10,6 +10,21 @@
 #   tags:
 #     - ""
 sessions:
+  - id: "77"
+    title: "Design & Reality with Mathias Verraes"
+    date: "Jan 13th, 2022"
+    time: "19:00 CET"
+    img: ../images/sessions/session-77.jpeg
+    video: "https://www.youtube.com/embed/s_ihqdfcHDY"
+    podcast: "https://oembed.libsyn.com/embed?item_id=21773594"
+    level: all
+    description: "
+      Our models should be driven by the domain, but not constrained by what domain experts tell us. After all, the domain language is messy, organic, ambiguous, social, incomplete, and if it has any intentional design to it at all, it's not designed to be turned into software. Modelling is more than capturing requirements, it's the opportunity to create novel concepts. This talk will use real-world stories to invite you to discuss.
+      "
+    tags:
+      - essential
+      - software design
+      - domain language
   - id: "76"
     title: "Domain-Drinking Dialogues 2nd edition - 2021 Lean coffee"
     date: "Dec 28st, 2021"
