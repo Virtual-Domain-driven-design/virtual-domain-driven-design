@@ -15,26 +15,28 @@
 
 # fallback with non-numeric id and a real image:
 upcomingSessions:
-  - id: "none"
-    img: ../images/kandddinsky.jpg
-  # - id: "77"
-  #   title: "Design & Reality with Mathias Verraes"
-  #   date: "Jan 13th, 2022"
-  #   time: "19:00 CET"
-  #   img: ../images/sessions/session-77.jpeg
-  #   video: "https://www.youtube.com/embed/s_ihqdfcHDY"
-  #   level: all
-  #   description: "
-  #     Our models should be driven by the domain, but not constrained by what domain experts tell us. After all, the domain language is messy, organic, ambiguous, social, incomplete, and if it has any intentional design to it at all, it's not designed to be turned into software. Modelling is more than capturing requirements, it's the opportunity to create novel concepts. This talk will use real-world stories to invite you to discuss.
-  #     "
-  #   tags:
-  #     - essential
-  #     - software design
-  #     - domain language
-  #   links:
-  #     - label: "RSVP on Meetup"
-  #       url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/283117565/"
-  #     - label: "Interact on Zoom"
-  #       url: "https://us02web.zoom.us/j/85314987720?pwd=MXR6QnlHdUgreVdaNDlnbnpJVE9VUT09"
-  #     - label: "Youtube and Chill"
-  #       url: "https://youtu.be/s_ihqdfcHDY"
+  # - id: "none"
+  #   img: ../images/kandddinsky.jpg
+  - id: "78"
+    title: "From The Problem To Software - a Walkthrough with Krisztina Hirth "
+    date: "Feb 8th, 2022"
+    time: "19:00 CET"
+    img: ../images/sessions/session-78.jpg
+    video: "https://www.youtube.com/embed/zI31Dh-lU8o"
+    level: all
+    description: "
+      'It is not the domain experts knowledge that goes in production, it is the assumption of the developers that goes into production' This famous quote from Alberto Brandolini is unfortunately true but it also points to the right direction: we need to bring the domain knowledge into our software.
+      This time one of our organisers Krisztina will show you how this can be done in the day to day business, she will share her experience including the list of techniques needed to succeed in having real Domain-driven development.
+      This won't be a slide show, challenges, questions are welcome! "
+    tags:
+      - Continuous Improvement
+      - walktrough
+      - Product Development
+      - Teams and Organizations
+    links:
+      - label: "RSVP on Meetup"
+        url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/283630017/"
+      - label: "Interact on Zoom"
+        url: "https://us02web.zoom.us/j/85055779272?pwd=MFh6VnF3Vjg5eEduaEJ3a1NNYmprZz09"
+      - label: "Youtube and Chill"
+        url: "https://youtu.be/zI31Dh-lU8o"
