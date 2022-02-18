@@ -38,6 +38,11 @@ const Conference = ({
 const Conferences: FC = () => {
   const data = useStaticQuery(graphql`
     {
+      esrc_live: file(relativePath: { eq: "logo/ESRC_Live.png" }) {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
+        }
+      }
       dddeu: file(relativePath: { eq: "logo/dddeu.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
@@ -90,6 +95,13 @@ const Conferences: FC = () => {
       </h2>
       <div tw="md:w-5/6">
         <div tw="flex justify-center flex-wrap">
+          <Conference
+            name="EventSourcing Live"
+            image={data.esrc_live.childImageSharp.gatsbyImageData}
+            location="Antwerp, Belgium"
+            date="3-4 October 2022"
+            website="https://eventsourcing.live/"
+          />
           <Conference
             name="Domain-Driven Design Europe"
             image={data.dddeu.childImageSharp.gatsbyImageData}
