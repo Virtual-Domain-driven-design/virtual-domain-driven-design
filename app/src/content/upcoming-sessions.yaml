@@ -17,26 +17,27 @@
 upcomingSessions:
   # - id: "none"
   #   img: ../images/kandddinsky.jpg
-  - id: "78"
-    title: "From The Problem To Software - a Walkthrough with Krisztina Hirth "
-    date: "Feb 8th, 2022"
-    time: "19:00 CET"
-    img: ../images/sessions/session-78.jpg
-    video: "https://www.youtube.com/embed/zI31Dh-lU8o"
+  - id: "79"
+    title: "What writing a book taught us about collaborative modeling"
+    date: "March 7th, 2022"
+    time: "17:30 CET"
+    img: ../images/sessions/session-79.jpg
+    video: "https://www.youtube.com/embed/HbyTUrblaN4"
     level: all
     description: "
-      'It is not the domain experts knowledge that goes in production, it is the assumption of the developers that goes into production' This famous quote from Alberto Brandolini is unfortunately true but it also points to the right direction: we need to bring the domain knowledge into our software.
-      This time one of our organisers Krisztina will show you how this can be done in the day to day business, she will share her experience including the list of techniques needed to succeed in having real Domain-driven development.
-      This won't be a slide show, challenges, questions are welcome! "
+      Writing a book about a modeling method (in our case: Domain Storytelling) necessarily makes you reflect on your own modeling practices. We had to frame things that we intuitively did in workshops. And we had to put our own approach into relation to other modeling methods. In this Meetup, we would like to talk about two concepts that came from these thoughts and discuss with you if they are applicable to collaborative modeling in general:
+
+      Scope: Before a workshop, we try to figure out which kind of model is needed to make the workshop successful. This led to the concept of “scope”: Which point in time should we model? At which level of granularity should we model? Should we model the pure business process or how the software-supported process works?
+      Scenario-based modeling: Several modeling methods that are popular with DDD practitioners are based on scenarios – meaning that one model shows only one case. Scenarios help a lot to learn and to deal with complexity. But they also raise the questions of which scenarios are relevant and how to keep an overview over many scenarios.
+    "
     tags:
-      - Continuous Improvement
-      - walktrough
-      - Product Development
-      - Teams and Organizations
+      - Domain storytelling
+      - software architecture
+      - collaborative modelling 
     links:
       - label: "RSVP on Meetup"
-        url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/283630017/"
+        url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/284304556/"
       - label: "Interact on Zoom"
-        url: "https://us02web.zoom.us/j/85055779272?pwd=MFh6VnF3Vjg5eEduaEJ3a1NNYmprZz09"
+        url: "https://us02web.zoom.us/j/84348759931?pwd=dFozUUZqRUs5cGhZRWJtNHhhVzVOdz09"
       - label: "Youtube and Chill"
-        url: "https://youtu.be/zI31Dh-lU8o"
+        url: "https://youtu.be/HbyTUrblaN4"

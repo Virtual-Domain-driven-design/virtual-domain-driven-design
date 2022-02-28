@@ -10,6 +10,22 @@
 #   tags:
 #     - ""
 sessions:
+  - id: "78"
+    title: "From The Problem To Software - a Walkthrough with Krisztina Hirth "
+    date: "Feb 8th, 2022"
+    time: "19:00 CET"
+    img: ../images/sessions/session-78.jpg
+    video: "https://www.youtube.com/embed/zI31Dh-lU8o"
+    level: all
+    description: "
+      'It is not the domain experts knowledge that goes in production, it is the assumption of the developers that goes into production' This famous quote from Alberto Brandolini is unfortunately true but it also points to the right direction: we need to bring the domain knowledge into our software.
+      This time one of our organisers Krisztina will show you how this can be done in the day to day business, she will share her experience including the list of techniques needed to succeed in having real Domain-driven development.
+      This won't be a slide show, challenges, questions are welcome! "
+    tags:
+      - Continuous Improvement
+      - walktrough
+      - Product Development
+      - Teams and Organizations
   - id: "77"
     title: "Design & Reality with Mathias Verraes"
     date: "Jan 13th, 2022"
