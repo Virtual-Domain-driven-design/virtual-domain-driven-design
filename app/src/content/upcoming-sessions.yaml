@@ -15,29 +15,35 @@
 
 # fallback with non-numeric id and a real image:
 upcomingSessions:
-  - id: "none"
-    img: ../images/kandddinsky.jpg
-  # - id: "79"
-  #   title: "What writing a book taught us about collaborative modeling"
-  #   date: "March 7th, 2022"
-  #   time: "17:30 CET"
-  #   img: ../images/sessions/session-79.jpg
-  #   video: "https://www.youtube.com/embed/HbyTUrblaN4"
-  #   level: all
-  #   description: "
-  #     Writing a book about a modeling method (in our case: Domain Storytelling) necessarily makes you reflect on your own modeling practices. We had to frame things that we intuitively did in workshops. And we had to put our own approach into relation to other modeling methods. In this Meetup, we would like to talk about two concepts that came from these thoughts and discuss with you if they are applicable to collaborative modeling in general:
+  # - id: "none"
+  #   img: ../images/kandddinsky.jpg
+  - id: "80"
+    title: "[Panel] Long term impact of architectural design decision"
+    date: "March 31st, 2022"
+    time: "19:00 CEST"
+    img: ../images/sessions/session-80.jpg
+    video: "https://www.youtube.com/embed/dcSup2me344"
+    level: all
+    description: "
+      There is a quote made famous by Ruth Malan from Grady Booch: 'Architecture represents the significant design decisions that shape a system.' And shaping a system takes time, and seeing the impact of these significant design decisions can take years after the changes have been done. And most of us are usually not there to reak the benefit, or worse, feel its pain. So in collaboration with D-EDGE we will have a panel of people that did experience and will discuss how architecture decisions shaped the system years after the change.
 
-  #     Scope: Before a workshop, we try to figure out which kind of model is needed to make the workshop successful. This led to the concept of “scope”: Which point in time should we model? At which level of granularity should we model? Should we model the pure business process or how the software-supported process works?
-  #     Scenario-based modeling: Several modeling methods that are popular with DDD practitioners are based on scenarios – meaning that one model shows only one case. Scenarios help a lot to learn and to deal with complexity. But they also raise the questions of which scenarios are relevant and how to keep an overview over many scenarios.
-  #   "
-  #   tags:
-  #     - Domain storytelling
-  #     - software architecture
-  #     - collaborative modelling
-  #   links:
-  #     - label: "RSVP on Meetup"
-  #       url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/284304556/"
-  #     - label: "Interact on Zoom"
-  #       url: "https://us02web.zoom.us/j/84348759931?pwd=dFozUUZqRUs5cGhZRWJtNHhhVzVOdz09"
-  #     - label: "Youtube and Chill"
-  #       url: "https://youtu.be/HbyTUrblaN4"
+      About D-EDGE
+
+      Have you ever booked a hotel online? Then you've probably used D-EDGE without knowing it.
+      Every day, we help more than 17,000 hotels worldwide to develop their online visibility and sales through a range of SaaS and digital marketing solutions.
+      Amongst the 480 D-EDGERS, the R&D team is made up of a hundred or so enthusiasts who are reinventing hotel booking for both the traveller and the hotelier.
+      As a subsidiary of the Accor group, D-EDGE simplifies the life of independent hotels and hotel chains alike.
+
+      https://www.meetup.com/D-EDGE-tech/
+      "
+    tags:
+      - architecte decisions
+      - software design
+      - long term impact
+    links:
+      - label: "RSVP on Meetup"
+        url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/284481137/"
+      - label: "Interact on Zoom"
+        url: "https://us02web.zoom.us/j/81632113460?pwd=bmR0eHN6QVRWdWxaTEpPWFRVY3pXdz09"
+      - label: "Youtube and Chill"
+        url: "https://youtu.be/dcSup2me344"
