@@ -17,7 +17,7 @@ const NoUpcoming = ({ children }: PropsWithChildren<{}>) => (
           <NoUpcomingImg tw="w-24 h-auto object-scale-down" />
         </div>
         <div tw="font-bold">
-          Currently we have no upcoming session finalized yet
+          Working on upcoming sessions ...
         </div>
         <div tw="flex flex-col space-x-4 items-center justify-center">
           <ThreeDBlueButton href="https://feedback.userreport.com/a15e4e61-2323-40a1-90b4-1267e010e35c/">

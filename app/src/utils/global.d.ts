@@ -1,5 +1,4 @@
 import "twin.macro"
-import "hyvor-talk-react"
 import styledComponent, { CSSProp, css as cssProperty } from "styled-components"
 import { TwStyle } from "twin.macro"
 
@@ -20,6 +19,3 @@ declare module "react" {
     css?: CSSProp
   }
 }
-
-// @ts-ignore
-declare module "hyvor-talk-react" {}

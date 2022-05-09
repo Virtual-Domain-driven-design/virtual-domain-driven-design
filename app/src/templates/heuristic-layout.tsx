@@ -6,7 +6,6 @@
  */
 
 import { graphql } from "gatsby"
-import HyvorTalk from "hyvor-talk-react"
 import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import React from "react"
@@ -17,7 +16,7 @@ import Layout from "./layout"
 import HeuristicHero from "./../heuristics/heuristic-hero"
 
 const GithubRepoLayout = ({ data: { mdx } }) => {
-  const heuristicId = mdx.frontmatter.title
+  // const heuristicId = mdx.frontmatter.title
 
   return (
     <Layout>
@@ -35,9 +34,6 @@ const GithubRepoLayout = ({ data: { mdx } }) => {
           <MDXProvider components={{}}>
             <MDXRenderer>{mdx.body}</MDXRenderer>
           </MDXProvider>
-        </div>
-        <div tw="bg-white w-2/6 rounded-lg shadow-md p-2 m-2 flex flex-col">
-          <HyvorTalk.Embed websiteId={3384} id={heuristicId} />
         </div>
       </div>
     </Layout>
