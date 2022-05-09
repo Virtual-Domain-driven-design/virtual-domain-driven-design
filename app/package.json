@@ -16,7 +16,8 @@
     "serve": "gatsby serve",
     "test": "jest",
     "test:watch": "jest --watch",
-    "pre-commit": "yarn run format && yarn run lint && yarn test && yarn run build"
+    "pre-commit": "yarn run format && yarn run lint && yarn test && yarn run build",
+    "ci:coverage": "yarn run test --coverage && coveralls < coverage/lcov.info"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
@@ -79,6 +80,7 @@
     "autoprefixer": "^10.2.5",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.6.3",
+    "coveralls": "^3.1.1",
     "eslint": "^7.22.0",
     "eslint-config-react-app": "^6.0.0",
     "eslint-loader": "^4.0.2",
