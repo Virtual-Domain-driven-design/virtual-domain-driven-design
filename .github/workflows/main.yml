@@ -18,33 +18,39 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     defaults:
-        run:
-          working-directory: ./app
+      run:
+        working-directory: ./app
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
-    - name: Use Node.js 14.x
-      uses: actions/setup-node@v2
-      with:
-        node-version: '14'
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
 
-    - name: Install, build and test
-      run: |
-        yarn
-        yarn run build
-        yarn test --coverage
+      - name: Install, build and test
+        run: |
+          yarn
+          yarn run build
+          yarn test --coverage
+
+      - name: Archive code coverage results
+        uses: actions/upload-artifact@v3
+        with:
+          name: code-coverage-report
+          path: ./coverage/index.html
 
   build-and-deploy:
-    needs: [test]
+    needs: [ test ]
     runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: ./app
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Use Node.js 14.x
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: '14'
       - name: Install and build
@@ -65,4 +71,3 @@ jobs:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         timeout-minutes: 2
-
