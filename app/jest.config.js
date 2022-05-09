@@ -16,6 +16,6 @@ module.exports = {
   },
   collectCoverage: true,
   coverageDirectory: "coverage",
-  coverageReporters: ["json-summary", "text", "lcov", "html"],
+  coverageReporters: ["lcov"],
   snapshotResolver: "<rootDir>/snapshot-resolver.js",
 }

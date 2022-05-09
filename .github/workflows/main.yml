@@ -35,11 +35,13 @@ jobs:
           yarn run build
           yarn run ci:coverage
 
-#      - name: Coveralls
-#        uses: coverallsapp/github-action@master
-#        with:
-#          path-to-lcov: './app/coverage/lcov.info'
-#          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Coveralls
+        uses: coverallsapp/github-action@master
+        with:
+          path-to-lcov: './app/coverage/lcov.info'
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          NODE_COVERALLS_DEBUG: 1
 
   build-and-deploy:
     needs: [ test ]
