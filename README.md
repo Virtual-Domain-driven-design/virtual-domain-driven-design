@@ -4,7 +4,8 @@
 
 [![Build Status](https://github.com/Virtual-Domain-driven-design/virtual-domain-driven-design/actions/workflows/main.yml/badge.svg)](https://github.com/Virtual-Domain-driven-design/virtual-domain-driven-design/actions/workflows/main.yml)
 [![Coverage Status](https://coveralls.io/repos/github/Virtual-Domain-driven-design/virtual-domain-driven-design/badge.svg?branch=master)](https://coveralls.io/github/Virtual-Domain-driven-design/virtual-domain-driven-design?branch=master)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/532e8383-2c1c-4e76-b0fb-9ddeccae725e/deploy-status)](https://app.netlify.com/sites/virtualddd/deploys)
+
+[//]: # ([![Netlify Status]&#40;https://api.netlify.com/api/v1/badges/532e8383-2c1c-4e76-b0fb-9ddeccae725e/deploy-status&#41;]&#40;https://app.netlify.com/sites/virtualddd/deploys&#41;)
 
 An online Domain-Driven Design meetup and conference for the community by the community. Help us develop this worldwide community further!
 We are continuously updating the website and functionality, if you have any ideas or bugs you want to share please feel free to add a ticket!
@@ -104,7 +105,7 @@ Also included is frontawesome:
 Requirements to build:
 
 - Node
-- NPM or Yarn
+- Yarn (or NPM)
 
 ### Start developing
 
@@ -112,7 +113,7 @@ Fork and check-out the master branch.
 Install the Gatsby CLI to be able to call gatsby directly, without a node script:
 
 ```sh
-npm i --global gatsby-cli
+yarn global add gatsby-cli
 ```
 
 Then do a Yarn install and Gatsby develop to get you started
@@ -124,17 +125,6 @@ yarn
 gatsby develop
 # or
 yarn run develop
-```
-
-or
-
-```sh
-cd ./app
-npm install
-
-gatsby develop
-# or
-npm run develop
 ```
 
 You should be able to go to [localhost:8000](https://localhost:8000) to see the site or to [http://localhost:8000/\_graphql](http://localhost:8000/_graphql) to explore the graphQl scheme
@@ -149,7 +139,7 @@ The tests are written with [jest](https://jestjs.io/) either as `.test.js` or as
 - [@testing-library/react](https://github.com/testing-library/react-testing-library)
 - [gatsby-plugin-testing](https://www.gatsbyjs.com/plugins/gatsby-plugin-testing/) to test the real static queries, without mocking them
 
-Run the tests with `npm test` or `yarn test`.
+Run the tests with `yarn test`.
 
 Important: The components using graphQl need a fresh run of `build` or `develop` so that they can generate the latest static queries
 
