@@ -35,11 +35,11 @@ jobs:
           yarn run build
           yarn test --coverage
 
-      - name: Archive code coverage results
-        uses: actions/upload-artifact@v3
-        with:
-          name: code-coverage-report
-          path: ./coverage/index.html
+#      - name: Archive code coverage results
+#        uses: actions/upload-artifact@v3
+#        with:
+#          name: code-coverage-report
+#          path: ./coverage/index.html
 
   build-and-deploy:
     needs: [ test ]
