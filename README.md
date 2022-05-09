@@ -3,7 +3,8 @@
 # Virtual Domain-Driven Design
 
 [![Build Status](https://github.com/Virtual-Domain-driven-design/virtual-domain-driven-design/actions/workflows/main.yml/badge.svg)](https://github.com/Virtual-Domain-driven-design/virtual-domain-driven-design/actions/workflows/main.yml)
-[![Coverage Status](https://coveralls.io/repos/github/Virtual-Domain-driven-design/virtual-domain-driven-design/badge.svg?branch=master)](https://coveralls.io/github/Virtual-Domain-driven-design/virtual-domain-driven-design?branch=master)
+
+[//]: # ([![Coverage Status]&#40;https://coveralls.io/repos/github/Virtual-Domain-driven-design/virtual-domain-driven-design/badge.svg?branch=master&#41;]&#40;https://coveralls.io/github/Virtual-Domain-driven-design/virtual-domain-driven-design?branch=master&#41;)
 
 [//]: # ([![Netlify Status]&#40;https://api.netlify.com/api/v1/badges/532e8383-2c1c-4e76-b0fb-9ddeccae725e/deploy-status&#41;]&#40;https://app.netlify.com/sites/virtualddd/deploys&#41;)
 
@@ -200,3 +201,4 @@ TODO - define the corresponding workflow with a pipeline and versioning (maybe w
 ## Notes
 
 - github links work fine but when linking to a directory which does not contain a readme.md
+- the coverage-badge is broken because coveralls can't work with this code structure. [TODO](https://github.com/lemurheavy/coveralls-public/issues/1530#issuecomment-855204301)
