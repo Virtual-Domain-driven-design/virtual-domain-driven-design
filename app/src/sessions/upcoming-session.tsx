@@ -36,7 +36,10 @@ export type UpcomingSessionContent = {
   id: string
   date: string
   description: string
-  img: { childImageSharp: { gatsbyImageData: IGatsbyImageData } }
+  img: {
+    childImageSharp: { gatsbyImageData: IGatsbyImageData },
+    publicURL?: string
+  }
   level: string
   links: SessionLink[]
   tags: string[]
@@ -64,7 +67,7 @@ const UpcomingSession = ({ session }: UpcomingSessionProps) => {
         tw="md:h-96 h-64 w-full object-cover"
       />
       <div tw="py-2 text-justify lg:text-base md:text-sm sm:text-xs ">
-        <ParsedContent text={session.description} />
+        <ParsedContent text={session.description}/>
       </div>
       <div tw="mt-4 pt-2 space-x-4 border-t-2 border-solid">
         <div tw="flex items-center mt-4 h-14 overflow-hidden ">

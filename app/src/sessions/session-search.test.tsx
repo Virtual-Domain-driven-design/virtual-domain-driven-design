@@ -13,7 +13,7 @@ describe("The session search component", () => {
       <SessionSearch sessions={sessions} />
     )
 
-    const input = getByLabelText("Search")
+    const input = getByLabelText("Search") as HTMLInputElement
     const searchResult = getByTestId("Sessions")
     expect(input.value).toEqual("")
     expect(searchResult.childElementCount).toEqual(2)
@@ -35,7 +35,7 @@ describe("The session search component", () => {
       <SessionSearch sessions={sessions} />
     )
 
-    const input = getByLabelText("Search")
+    const input = getByLabelText("Search") as HTMLInputElement
     const searchResult = getByTestId("Sessions")
     const firstSession = getByTestId(sessions[0].tags[0])
     fireEvent.click(firstSession)
@@ -48,7 +48,7 @@ describe("The session search component", () => {
       <SessionSearch sessions={sessions} />
     )
 
-    const input = getByLabelText("Search")
+    const input = getByLabelText("Search") as HTMLInputElement
     const searchResult = getByTestId("Sessions")
 
     fireEvent.change(input, { target: { value: "xyz" } })
@@ -60,7 +60,7 @@ describe("The session search component", () => {
       <SessionSearch sessions={sessions} showItems={1} />
     )
 
-    const input = getByLabelText("Search")
+    const input = getByLabelText("Search") as HTMLInputElement
     const pagingButton = getByTestId("More")
 
     expect(input.value).toEqual("")

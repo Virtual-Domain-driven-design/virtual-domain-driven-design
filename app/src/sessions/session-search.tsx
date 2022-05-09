@@ -54,7 +54,7 @@ const SessionSearch = ({
     updateSearchStatus({ searchQuery: tag, searchResults: queryResult })
   }
 
-  const queryResults = searchQuery === "" ? sessions : searchResults
+  const queryResults = searchQuery === "" ? sessions : searchResults || []
   const resultsToShow = queryResults?.slice(0, sessionsLength) || []
   const offerPaging = sessionsLength < queryResults.length
   return (
