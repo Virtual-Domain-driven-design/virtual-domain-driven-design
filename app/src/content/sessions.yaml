@@ -16,6 +16,7 @@ sessions:
     time: "19:00 CEST"
     img: ../images/sessions/session-81.jpg
     video: "https://www.youtube.com/embed/WNQ3ZLcW4Mw"
+    podcast: "https://oembed.libsyn.com/embed?item_id=23061497"
     level: all
     description:
       "
