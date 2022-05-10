@@ -40,6 +40,7 @@ jobs:
         with:
           path-to-lcov: './app/coverage/lcov.info'
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          base-path: 'app'
         env:
           NODE_COVERALLS_DEBUG: 1
 
