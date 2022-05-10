@@ -4,7 +4,8 @@
 
 [![Build Status](https://github.com/Virtual-Domain-driven-design/virtual-domain-driven-design/actions/workflows/main.yml/badge.svg)](https://github.com/Virtual-Domain-driven-design/virtual-domain-driven-design/actions/workflows/main.yml)
 
-[//]: # ([![Coverage Status]&#40;https://coveralls.io/repos/github/Virtual-Domain-driven-design/virtual-domain-driven-design/badge.svg?branch=master&#41;]&#40;https://coveralls.io/github/Virtual-Domain-driven-design/virtual-domain-driven-design?branch=master&#41;)
+[![Coverage Status](https://coveralls.io/repos/github/Virtual-Domain-driven-design/virtual-domain-driven-design/badge.svg?branch=master)](https://coveralls.io/github/Virtual-Domain-driven-design/virtual-domain-driven-design?branch=master)
+
 
 [//]: # ([![Netlify Status]&#40;https://api.netlify.com/api/v1/badges/532e8383-2c1c-4e76-b0fb-9ddeccae725e/deploy-status&#41;]&#40;https://app.netlify.com/sites/virtualddd/deploys&#41;)
 
