@@ -15,5 +15,33 @@
 
 # fallback with non-numeric id and a real image:
 upcomingSessions:
-  - id: "none"
-    img: ../images/kandddinsky.jpg
+  # - id: "none"
+  #   img: ../images/kandddinsky.jpg
+  - id: "82"
+    title: " The hard skills? with Diana Montalion "
+    date: "June 7th, 2022"
+    time: "19:00 CEST"
+    img: ../images/sessions/session-82.jpg
+    video: "https://www.youtube.com/embed/QwqNdQSgjeM "
+    level: all
+    description:
+      "
+     16 years ago, my teammates and I built software for big internet properties. Now, we build information systems - data platforms, decoupled frontends, event streams, lots of interdependent software and services with many types of consumers.
+
+      In the world of “digital transformation”, software is becoming systems. Unfortunately, we don't think in systems.
+
+      Systems are nonlinear. They reorganize our mental models and communication structures. Yes, we need skills in cloud-native architectures, Kafka, Kubernetes, GoLang, Terraforming, etc. But those are not the key to our success. We also need to transform how we think together. Otherwise, we will build the same old things with fancy new tools.
+
+      Let's explore essential nonlinear skills and practices for IT professionals, skills we might not think of as “IT”. What are the practices that help us navigate from software to systems?
+     "
+    tags:
+      - systems thinking
+      - software architecture
+      - digital transformation
+    links:
+      - label: "RSVP on Meetup"
+        url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/286217516/"
+      - label: "Interact on Zoom"
+        url: "https://us02web.zoom.us/j/81571820278?pwd=dk9WSGNKWXJTSlNzOG5CaVgxcktBZz09"
+      - label: "Youtube and Chill"
+        url: "https://youtu.be/QwqNdQSgjeM "
