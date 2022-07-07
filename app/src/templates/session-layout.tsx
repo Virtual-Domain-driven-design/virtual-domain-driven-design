@@ -56,9 +56,7 @@ const SessionLayout = ({ pageContext, data }) => {
         tags={session.tags}
         title={session.title}
       />
-      <div tw="flex flex-col items-center m-8">
-        {sessionBlock}
-      </div>
+      <div tw="flex flex-col items-center m-8">{sessionBlock}</div>
     </Layout>
   )
 }
