@@ -15,12 +15,12 @@ interface ConferenceContent {
 }
 
 const Conference = ({
-  name,
-  image,
-  location,
-  date,
-  website,
-}: ConferenceContent) => {
+                      name,
+                      image,
+                      location,
+                      date,
+                      website,
+                    }: ConferenceContent) => {
   return (
     <FloatingActionCard key={name} id={name} href={website}>
       <div tw="m-2 font-semibold text-gray-800 text-sm text-center">{name}</div>
@@ -97,13 +97,6 @@ const Conferences: FC = () => {
       <div tw="md:w-5/6">
         <div tw="flex justify-center flex-wrap">
           <Conference
-            name="EventSourcing Live"
-            image={data.esrc_live.childImageSharp.gatsbyImageData}
-            location="Antwerp, Belgium"
-            date="3-4 October 2022"
-            website="https://eventsourcing.live/"
-          />
-          <Conference
             name="Domain-Driven Design Europe"
             image={data.dddeu.childImageSharp.gatsbyImageData}
             location="Amsterdam, Netherlands"
@@ -111,53 +104,18 @@ const Conferences: FC = () => {
             website="https://dddeurope.com/"
           />
           <Conference
-            name="Explore DDD"
-            image={data.eddd.childImageSharp.gatsbyImageData}
-            location="Keystone, Colorado, USA"
-            date="2021 (Workshops)"
-            website="https://exploreddd.com/"
+            name="EventSourcing Live"
+            image={data.esrc_live.childImageSharp.gatsbyImageData}
+            location="Antwerp, Belgium"
+            date="3-4 October 2022"
+            website="https://eventsourcing.live/"
           />
           <Conference
             name="KanDDDinsky"
             image={data.kddd.childImageSharp.gatsbyImageData}
             location="Berlin, Germany"
-            date="21-22 October 2021"
+            date="31 Oct.-1 Nov. 2022"
             website="https://kandddinsky.de/"
-          />
-          <Conference
-            name="DDD China"
-            image={data.dddchina.childImageSharp.gatsbyImageData}
-            location="Beijing, China"
-            date="November"
-            website="http://ddd-china.com/"
-          />
-          <Conference
-            name="DDD Taiwan"
-            image={data.dddtaiwan.childImageSharp.gatsbyImageData}
-            location="Online"
-            date="October 16th 2021"
-            website="https://conference.ddd-tw.com/2021/"
-          />
-          <Conference
-            name="DDDx: Domain-Driven Design eXchange"
-            image={data.dddexchange.childImageSharp.gatsbyImageData}
-            location="Online"
-            date="8-9 June 2021 "
-            website="https://skillsmatter.com/conferences/13257-dddx-2021"
-          />
-          <Conference
-            name="μCon: The Microservices eXchange"
-            image={data.muconexchange.childImageSharp.gatsbyImageData}
-            location="Online"
-            date="13-14 April 2021"
-            website="https://skillsmatter.com/conferences/13252-mucon-2021"
-          />
-          <Conference
-            name="Software architecture gathering "
-            image={data.sag.childImageSharp.gatsbyImageData}
-            location="Online"
-            date="11-14 October 2021"
-            website="https://conferences.isaqb.org/software-architecture-gathering/"
           />
         </div>
       </div>
