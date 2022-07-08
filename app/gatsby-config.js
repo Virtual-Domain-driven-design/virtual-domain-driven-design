@@ -223,7 +223,7 @@ module.exports = {
     //   },
     // },
     `gatsby-plugin-styled-components`,
-    `gatsby-plugin-netlify-cache`,
+    `gatsby-plugin-netlify`,
     `gatsby-plugin-testing`,
   ],
 }

@@ -1,5 +1,6 @@
 import * as React from "react"
 import "twin.macro"
+import "styled-components/macro"
 import VideoEmbed from "../components/video-embed"
 import { SessionContent } from "../sessions/session"
 

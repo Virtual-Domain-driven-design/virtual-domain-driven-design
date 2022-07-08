@@ -11,6 +11,7 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import React from "react"
 import SEO from "../components/seo"
 import "twin.macro"
+import "styled-components/macro"
 
 import Layout from "./layout"
 import HeuristicHero from "./../heuristics/heuristic-hero"

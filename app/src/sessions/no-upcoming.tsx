@@ -4,6 +4,7 @@ import ThreeDBlueButton from "../components/three-d-blue-button"
 import React, { PropsWithChildren } from "react"
 
 import "twin.macro"
+import "styled-components/macro"
 
 const NoUpcoming = ({ children }: PropsWithChildren<{}>) => (
   <div tw="bg-gray-100 w-full space-y-2 rounded-lg shadow-md p-4 md:p-8 mb-2">

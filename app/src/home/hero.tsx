@@ -5,6 +5,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import * as React from "react"
 
 import "twin.macro"
+import "styled-components/macro"
 
 import OutlineBlueButton from "../components/outline-blue-button"
 import ThreeDBlueButton from "../components/three-d-blue-button"
@@ -77,8 +78,7 @@ const Hero = () => {
   const upcomingSession = data.upcoming.nodes[0].upcomingSessions[0]
   const lastSession = data.allSessions.nodes[0].sessions[0]
   const isUpcomingSession = !!upcomingSession && upcomingSession.id !== "none"
-  return (
-    <BackgroundImage
+  return (<BackgroundImage
       tw="flex flex-col items-center justify-center bg-scroll h-auto lg:flex-row-reverse lg:items-start relative"
       {...bgImage}
     >

@@ -2,6 +2,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import * as React from "react"
 import tw from "twin.macro"
+import "styled-components/macro"
 import { IGatsbyImageData } from "gatsby-plugin-image/dist/src/components/gatsby-image.browser"
 import { ChildImageSharp } from "../components/logos/vddd"
 

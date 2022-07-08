@@ -1,9 +1,10 @@
-import React, { FC } from "react"
+import React from "react"
 import "twin.macro"
+import "styled-components/macro"
 
 import Layout from "./layout"
 
-const PageLayout: FC = ({ children }) => {
+const PageLayout = ({ children }) => {
   return (
     <Layout>
       <div tw="flex flex-col items-center" id="codeofconduct">

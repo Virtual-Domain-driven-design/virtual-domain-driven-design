@@ -1,6 +1,7 @@
 import { graphql, useStaticQuery } from "gatsby"
 import React, { FC, useState } from "react"
 import tw from "twin.macro"
+import 'styled-components/macro'
 
 import Paper, { PaperContent } from "../../learning-ddd/paper"
 import Layout from "../../templates/layout"

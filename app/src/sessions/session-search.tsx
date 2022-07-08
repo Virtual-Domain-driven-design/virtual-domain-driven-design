@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import * as JsSearch from "js-search"
 import tw from "twin.macro"
+import "styled-components/macro"
 import Session, { SessionContent } from "./session"
 import Search, {
   defaultOptions,

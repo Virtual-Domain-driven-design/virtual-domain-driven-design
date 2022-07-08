@@ -3,6 +3,7 @@ import { getImage } from "gatsby-plugin-image"
 import { convertToBgImage } from "gbimage-bridge"
 import React, { FC, useState } from "react"
 import "twin.macro"
+import "styled-components/macro"
 
 import BackgroundImage from "gatsby-background-image"
 import BooksOverview from "../learning-ddd/books-overview"

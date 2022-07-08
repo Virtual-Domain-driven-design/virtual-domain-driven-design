@@ -3,6 +3,7 @@ import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import React from "react"
 import "twin.macro"
+import "styled-components/macro"
 
 import Layout from "./layout"
 import GithubLink, { GithubLinkLocation } from "../plugins/github-link"

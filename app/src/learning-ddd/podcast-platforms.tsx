@@ -3,6 +3,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import { IGatsbyImageData } from "gatsby-plugin-image/dist/src/components/gatsby-image.browser"
 import * as React from "react"
 import "twin.macro"
+import "styled-components/macro"
 
 interface PodcastPlatform {
   img: { childImageSharp: { gatsbyImageData: IGatsbyImageData } }

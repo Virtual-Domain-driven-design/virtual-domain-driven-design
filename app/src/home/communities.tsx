@@ -2,6 +2,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
 
 import "twin.macro"
+import "styled-components/macro"
 import FloatingActionCard from "../components/floating-action-card"
 
 type CommunityContent = {

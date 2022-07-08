@@ -1,5 +1,6 @@
 import React, { FC } from "react"
 import "twin.macro"
+import 'styled-components/macro'
 
 import Layout from "../templates/layout"
 

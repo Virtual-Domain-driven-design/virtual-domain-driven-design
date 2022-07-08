@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 import tw from "twin.macro"
+import "styled-components/macro"
 
 interface FloatingActionCardProps {
   id: string
@@ -34,7 +35,6 @@ const FloatingActionCard = ({
   }
   if (to) {
     return (
-      // @ts-ignore
       <Link css={style} to={to} {...props}>
         {children}
       </Link>

@@ -82,20 +82,19 @@ const GithubLink = ({ location, href, ...rest }: MarkdownLinkProps) => {
   // Relative links
   // starting with a /
   if (workingHref.startsWith("/"))
-    return (
-      <GatsbyLink
-        data-link-internal
-        to={removeTrailingSlash(location.pathname) + workingHref}
-        {...rest}
-      />
-    )
+    {
+      return (<GatsbyLink
+              data-link-internal
+              to={removeTrailingSlash(location.pathname) + workingHref}
+              {...rest}
+            />)
+    }
 
   // anchors
   if (workingHref.startsWith("#")) return <a href={workingHref} {...rest} />
 
   // the rest, like "tools/html-version/instructions.md"
-  return (
-    <GatsbyLink
+  return (<GatsbyLink
       data-link-internal
       to={removeTrailingSlash(location.pathname) + "/" + workingHref}
       {...rest}

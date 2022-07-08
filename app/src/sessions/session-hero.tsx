@@ -5,6 +5,7 @@ import BackgroundImage from "gatsby-background-image"
 import React from "react"
 import ContentLevel from "./session"
 import "twin.macro"
+import "styled-components/macro"
 
 type SessionHeroProps = {
   date: string
@@ -17,8 +18,8 @@ type SessionHeroProps = {
 const SessionHero = (sessionHeroProps: SessionHeroProps) => {
   const image = getImage(sessionHeroProps.img)
   const bgImage = image && convertToBgImage(image)
-  return (
-    <BackgroundImage
+
+  return (<BackgroundImage
       tw="flex flex-col items-center justify-center bg-scroll h-auto  relative"
       {...bgImage}
     >

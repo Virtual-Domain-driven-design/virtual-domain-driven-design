@@ -1,6 +1,7 @@
 import React, { ChangeEventHandler } from "react"
 import * as JsSearch from "js-search"
 import "twin.macro"
+import "styled-components/macro"
 
 export type SearchOptions = {
   indexStrategy: string

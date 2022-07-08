@@ -1,5 +1,6 @@
 import * as React from "react"
 import tw from "twin.macro"
+import "styled-components/macro"
 
 export type PodcastContent = {
   title: string

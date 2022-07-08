@@ -1,6 +1,7 @@
 import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
 import "twin.macro"
+import "styled-components/macro"
 
 import Layout from "../templates/layout"
 import { SessionContent } from "../sessions/session"

@@ -2,6 +2,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import React, { FC } from "react"
 import "twin.macro"
+import "styled-components/macro"
 
 import FloatingActionCard from "../components/floating-action-card"
 

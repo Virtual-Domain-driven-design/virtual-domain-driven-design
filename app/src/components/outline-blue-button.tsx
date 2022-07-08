@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import * as React from "react"
 import tw from "twin.macro"
+import "styled-components/macro"
 
 interface OutlineBlueButtonProps {
   to?: string
@@ -31,7 +32,6 @@ const OutlineBlueButton = ({
   }
   if (to) {
     return (
-      // @ts-ignore
       <Link css={style} to={to} {...props}>
         {children}
       </Link>

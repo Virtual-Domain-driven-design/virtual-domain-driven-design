@@ -1,9 +1,11 @@
+import React from "react"
+import "twin.macro"
+import "styled-components/macro"
 import { getImage } from "gatsby-plugin-image"
 import { convertToBgImage } from "gbimage-bridge"
 import BackgroundImage from "gatsby-background-image"
 import { graphql, useStaticQuery } from "gatsby"
-import React from "react"
-import "twin.macro"
+
 
 type HeuristicsHeroProps = {
   excerpt: string
@@ -23,8 +25,7 @@ const HeuristicHero = (heuristicHeroProps: HeuristicsHeroProps) => {
 
   const image = getImage(data.backgroundImage)
   const bgImage = image && convertToBgImage(image)
-  return (
-    <BackgroundImage
+  return (<BackgroundImage
       tw="flex flex-col items-center justify-center bg-scroll h-auto  relative"
       {...bgImage}
     >

@@ -3,6 +3,7 @@ import { IGatsbyImageData } from "gatsby-plugin-image/dist/src/components/gatsby
 import React from "react"
 
 import "twin.macro"
+import "styled-components/macro"
 import ThreeDBlueButton from "../components/three-d-blue-button"
 import ParsedContent from "../components/link-parser"
 import { graphql } from "gatsby"

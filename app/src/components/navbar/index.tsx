@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import React, { useState } from "react"
 import tw from "twin.macro"
+import "styled-components/macro"
 import {
   VdddLogo,
   SlackLogo,
@@ -15,8 +16,7 @@ import MeetupSvg from "../../images/logo/meetup.svg"
 // TODO move the social links and the contributions to separate files
 
 const VDDDLink = () => {
-  return (
-    <Link
+  return (<Link
       to="/"
       tw="p-4 cursor-pointer flex-shrink-0 flex items-center justify-center rounded-lg hover:bg-gray-400"
     >
@@ -132,15 +132,13 @@ interface NavigationData {
 }
 
 const NavigationItem = ({ to, label, forDesktop }: NavigationData) => {
-  return forDesktop ? (
-    <Link
+  return forDesktop ? (<Link
       to={to}
       tw="relative px-2 py-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 text-blue-600 focus:outline-none"
     >
       {label}
     </Link>
-  ) : (
-    <Link
+  ) : (<Link
       to={to}
       tw="w-full p-4 text-lg leading-tight cursor-pointer flex-shrink-0 hover:bg-gray-400 hover:text-blue-700"
     >
