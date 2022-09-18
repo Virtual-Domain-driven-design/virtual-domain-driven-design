@@ -3,7 +3,7 @@ import renderer from "react-test-renderer"
 import "jest-styled-components"
 import {
   VdddLogo,
-  SlackLogo,
+  DiscordLogo,
   TwitterLogo,
   GithubLogo,
   NetlifyLogo,
@@ -11,7 +11,7 @@ import {
 
 describe("The logos", () => {
   it("should render the Vddd logo", () => {
-    const container = renderer.create(<VdddLogo />).toJSON()
+    const container = renderer.create(<VdddLogo/>).toJSON()
 
     expect(container).toMatchSnapshot()
   })
@@ -23,21 +23,21 @@ describe("The logos", () => {
     expect(result.props.tw).toEqual("mr4")
   })
 
-  it("should render the Slack logo", () => {
-    const container = renderer.create(<SlackLogo />).toJSON()
+  it("should render the Discord logo", () => {
+    const container = renderer.create(<DiscordLogo/>).toJSON()
 
     expect(container).toMatchSnapshot()
   })
 
-  it("should have defaults for Slack but allow to override the tailwind values", () => {
-    const initial = SlackLogo({ twContent: undefined })
+  it("should have defaults for Discord but allow to override the tailwind values", () => {
+    const initial = DiscordLogo({ twContent: undefined })
     expect(initial.props.tw).toContain("mr-2 h-8")
-    const result = SlackLogo({ twContent: "mr4" })
+    const result = DiscordLogo({ twContent: "mr4" })
     expect(result.props.tw).toEqual("mr4")
   })
 
   it("should render the Twitter logo", () => {
-    const container = renderer.create(<TwitterLogo />).toJSON()
+    const container = renderer.create(<TwitterLogo/>).toJSON()
 
     expect(container).toMatchSnapshot()
   })
@@ -50,7 +50,7 @@ describe("The logos", () => {
   })
 
   it("should render the GitHub logo", () => {
-    const container = renderer.create(<GithubLogo />).toJSON()
+    const container = renderer.create(<GithubLogo/>).toJSON()
 
     expect(container).toMatchSnapshot()
   })
@@ -63,7 +63,7 @@ describe("The logos", () => {
   })
 
   it("should render the Netlify logo", () => {
-    const container = renderer.create(<NetlifyLogo />).toJSON()
+    const container = renderer.create(<NetlifyLogo/>).toJSON()
 
     expect(container).toMatchSnapshot()
   })

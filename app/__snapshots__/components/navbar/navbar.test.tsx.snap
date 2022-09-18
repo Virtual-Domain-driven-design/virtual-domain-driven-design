@@ -1077,7 +1077,7 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
             </a>
             <a
               className="c17"
-              href="https://github.com/ddd-cqrs-es/slack-community"
+              href="https://discord.gg/sEZGSHNNbH"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -1109,16 +1109,16 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
                 />
                 <picture>
                   <source
-                    data-srcset="/static/6b04981d71d140833cb93793287c6a38/4e704/slack_icon.webp 24w,/static/6b04981d71d140833cb93793287c6a38/e78b1/slack_icon.webp 48w"
+                    data-srcset="/static/1331fc0e23ba5a555d5901a8b886afa0/4e704/discord.webp 24w,/static/1331fc0e23ba5a555d5901a8b886afa0/e78b1/discord.webp 48w"
                     sizes="24px"
                     type="image/webp"
                   />
                   <img
-                    alt="Slack"
+                    alt="Discord Logo"
                     data-gatsby-image-ssr=""
                     data-main-image=""
-                    data-src="/static/6b04981d71d140833cb93793287c6a38/2391d/slack_icon.png"
-                    data-srcset="/static/6b04981d71d140833cb93793287c6a38/2391d/slack_icon.png 24w,/static/6b04981d71d140833cb93793287c6a38/fcdb9/slack_icon.png 48w"
+                    data-src="/static/1331fc0e23ba5a555d5901a8b886afa0/2391d/discord.png"
+                    data-srcset="/static/1331fc0e23ba5a555d5901a8b886afa0/2391d/discord.png 24w,/static/1331fc0e23ba5a555d5901a8b886afa0/fcdb9/discord.png 48w"
                     decoding="async"
                     loading="lazy"
                     onLoad={[Function]}
@@ -1146,19 +1146,19 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
                   <picture>
                     <source
                       sizes="24px"
-                      srcSet="/static/6b04981d71d140833cb93793287c6a38/4e704/slack_icon.webp 24w,/static/6b04981d71d140833cb93793287c6a38/e78b1/slack_icon.webp 48w"
+                      srcSet="/static/1331fc0e23ba5a555d5901a8b886afa0/4e704/discord.webp 24w,/static/1331fc0e23ba5a555d5901a8b886afa0/e78b1/discord.webp 48w"
                       type="image/webp"
                     />
                     <img
-                      alt="Slack"
+                      alt="Discord Logo"
                       data-gatsby-image-ssr=""
                       data-main-image=""
                       decoding="async"
                       loading="lazy"
                       onLoad={[Function]}
                       sizes="24px"
-                      src="/static/6b04981d71d140833cb93793287c6a38/2391d/slack_icon.png"
-                      srcSet="/static/6b04981d71d140833cb93793287c6a38/2391d/slack_icon.png 24w,/static/6b04981d71d140833cb93793287c6a38/fcdb9/slack_icon.png 48w"
+                      src="/static/1331fc0e23ba5a555d5901a8b886afa0/2391d/discord.png"
+                      srcSet="/static/1331fc0e23ba5a555d5901a8b886afa0/2391d/discord.png 24w,/static/1331fc0e23ba5a555d5901a8b886afa0/fcdb9/discord.png 48w"
                       style={
                         Object {
                           "backgroundColor": undefined,
@@ -1191,7 +1191,7 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
               <div
                 className="c18"
               >
-                Slack
+                Discord
               </div>
             </a>
           </div>
@@ -1732,7 +1732,7 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
               </a>
               <a
                 className="c17"
-                href="https://github.com/ddd-cqrs-es/slack-community"
+                href="https://discord.gg/sEZGSHNNbH"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -1764,16 +1764,16 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
                   />
                   <picture>
                     <source
-                      data-srcset="/static/6b04981d71d140833cb93793287c6a38/4e704/slack_icon.webp 24w,/static/6b04981d71d140833cb93793287c6a38/e78b1/slack_icon.webp 48w"
+                      data-srcset="/static/1331fc0e23ba5a555d5901a8b886afa0/4e704/discord.webp 24w,/static/1331fc0e23ba5a555d5901a8b886afa0/e78b1/discord.webp 48w"
                       sizes="24px"
                       type="image/webp"
                     />
                     <img
-                      alt="Slack"
+                      alt="Discord Logo"
                       data-gatsby-image-ssr=""
                       data-main-image=""
-                      data-src="/static/6b04981d71d140833cb93793287c6a38/2391d/slack_icon.png"
-                      data-srcset="/static/6b04981d71d140833cb93793287c6a38/2391d/slack_icon.png 24w,/static/6b04981d71d140833cb93793287c6a38/fcdb9/slack_icon.png 48w"
+                      data-src="/static/1331fc0e23ba5a555d5901a8b886afa0/2391d/discord.png"
+                      data-srcset="/static/1331fc0e23ba5a555d5901a8b886afa0/2391d/discord.png 24w,/static/1331fc0e23ba5a555d5901a8b886afa0/fcdb9/discord.png 48w"
                       decoding="async"
                       loading="lazy"
                       onLoad={[Function]}
@@ -1801,19 +1801,19 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
                     <picture>
                       <source
                         sizes="24px"
-                        srcSet="/static/6b04981d71d140833cb93793287c6a38/4e704/slack_icon.webp 24w,/static/6b04981d71d140833cb93793287c6a38/e78b1/slack_icon.webp 48w"
+                        srcSet="/static/1331fc0e23ba5a555d5901a8b886afa0/4e704/discord.webp 24w,/static/1331fc0e23ba5a555d5901a8b886afa0/e78b1/discord.webp 48w"
                         type="image/webp"
                       />
                       <img
-                        alt="Slack"
+                        alt="Discord Logo"
                         data-gatsby-image-ssr=""
                         data-main-image=""
                         decoding="async"
                         loading="lazy"
                         onLoad={[Function]}
                         sizes="24px"
-                        src="/static/6b04981d71d140833cb93793287c6a38/2391d/slack_icon.png"
-                        srcSet="/static/6b04981d71d140833cb93793287c6a38/2391d/slack_icon.png 24w,/static/6b04981d71d140833cb93793287c6a38/fcdb9/slack_icon.png 48w"
+                        src="/static/1331fc0e23ba5a555d5901a8b886afa0/2391d/discord.png"
+                        srcSet="/static/1331fc0e23ba5a555d5901a8b886afa0/2391d/discord.png 24w,/static/1331fc0e23ba5a555d5901a8b886afa0/fcdb9/discord.png 48w"
                         style={
                           Object {
                             "backgroundColor": undefined,
@@ -1846,7 +1846,7 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
                 <div
                   className="c18"
                 >
-                  Slack
+                  Discord
                 </div>
               </a>
             </div>

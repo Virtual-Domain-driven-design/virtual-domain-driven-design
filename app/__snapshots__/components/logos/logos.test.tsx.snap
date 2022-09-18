@@ -1,5 +1,115 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`The logos should render the Discord logo 1`] = `
+<div
+  className="gatsby-image-wrapper"
+  data-gatsby-image-wrapper=""
+  style={
+    Object {
+      "backgroundColor": undefined,
+      "height": 24,
+      "overflow": "hidden",
+      "position": "relative",
+      "width": 24,
+    }
+  }
+>
+  <div
+    aria-hidden={true}
+    data-placeholder-image=""
+    style={
+      Object {
+        "height": "100%",
+        "left": 0,
+        "position": "absolute",
+        "top": 0,
+        "width": "100%",
+      }
+    }
+  />
+  <picture>
+    <source
+      data-srcset="/static/1331fc0e23ba5a555d5901a8b886afa0/4e704/discord.webp 24w,/static/1331fc0e23ba5a555d5901a8b886afa0/e78b1/discord.webp 48w"
+      sizes="24px"
+      type="image/webp"
+    />
+    <img
+      alt="Discord Logo"
+      data-gatsby-image-ssr=""
+      data-main-image=""
+      data-src="/static/1331fc0e23ba5a555d5901a8b886afa0/2391d/discord.png"
+      data-srcset="/static/1331fc0e23ba5a555d5901a8b886afa0/2391d/discord.png 24w,/static/1331fc0e23ba5a555d5901a8b886afa0/fcdb9/discord.png 48w"
+      decoding="async"
+      loading="lazy"
+      onLoad={[Function]}
+      sizes="24px"
+      style={
+        Object {
+          "backgroundColor": undefined,
+          "height": "100%",
+          "left": 0,
+          "objectFit": undefined,
+          "objectPosition": undefined,
+          "opacity": 0,
+          "position": "absolute",
+          "top": 0,
+          "transform": "translateZ(0)",
+          "transition": "opacity 250ms linear",
+          "width": "100%",
+          "willChange": "opacity",
+        }
+      }
+      tw="mr-2 h-8"
+    />
+  </picture>
+  <noscript>
+    <picture>
+      <source
+        sizes="24px"
+        srcSet="/static/1331fc0e23ba5a555d5901a8b886afa0/4e704/discord.webp 24w,/static/1331fc0e23ba5a555d5901a8b886afa0/e78b1/discord.webp 48w"
+        type="image/webp"
+      />
+      <img
+        alt="Discord Logo"
+        data-gatsby-image-ssr=""
+        data-main-image=""
+        decoding="async"
+        loading="lazy"
+        onLoad={[Function]}
+        sizes="24px"
+        src="/static/1331fc0e23ba5a555d5901a8b886afa0/2391d/discord.png"
+        srcSet="/static/1331fc0e23ba5a555d5901a8b886afa0/2391d/discord.png 24w,/static/1331fc0e23ba5a555d5901a8b886afa0/fcdb9/discord.png 48w"
+        style={
+          Object {
+            "backgroundColor": undefined,
+            "height": "100%",
+            "left": 0,
+            "objectFit": undefined,
+            "objectPosition": undefined,
+            "opacity": 0,
+            "position": "absolute",
+            "top": 0,
+            "transform": "translateZ(0)",
+            "transition": "opacity 250ms linear",
+            "width": "100%",
+            "willChange": "opacity",
+          }
+        }
+        tw="mr-2 h-8"
+      />
+    </picture>
+  </noscript>
+  <script
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "const t=\\"undefined\\"!=typeof HTMLImageElement&&\\"loading\\"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll(\\"img[data-main-image]\\");for(let e of t){e.dataset.src&&(e.setAttribute(\\"src\\",e.dataset.src),e.removeAttribute(\\"data-src\\")),e.dataset.srcset&&(e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\"));const t=e.parentNode.querySelectorAll(\\"source[data-srcset]\\");for(let e of t)e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\");e.complete&&(e.style.opacity=1)}}",
+      }
+    }
+    type="module"
+  />
+</div>
+`;
+
 exports[`The logos should render the GitHub logo 1`] = `
 <div
   className="gatsby-image-wrapper"
@@ -189,116 +299,6 @@ exports[`The logos should render the Netlify logo 1`] = `
         sizes="24px"
         src="/static/0d3f1de90438c57fca4c24b29fb1aaab/2391d/netlify.png"
         srcSet="/static/0d3f1de90438c57fca4c24b29fb1aaab/2391d/netlify.png 24w,/static/0d3f1de90438c57fca4c24b29fb1aaab/fcdb9/netlify.png 48w"
-        style={
-          Object {
-            "backgroundColor": undefined,
-            "height": "100%",
-            "left": 0,
-            "objectFit": undefined,
-            "objectPosition": undefined,
-            "opacity": 0,
-            "position": "absolute",
-            "top": 0,
-            "transform": "translateZ(0)",
-            "transition": "opacity 250ms linear",
-            "width": "100%",
-            "willChange": "opacity",
-          }
-        }
-        tw="mr-2 h-8"
-      />
-    </picture>
-  </noscript>
-  <script
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "const t=\\"undefined\\"!=typeof HTMLImageElement&&\\"loading\\"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll(\\"img[data-main-image]\\");for(let e of t){e.dataset.src&&(e.setAttribute(\\"src\\",e.dataset.src),e.removeAttribute(\\"data-src\\")),e.dataset.srcset&&(e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\"));const t=e.parentNode.querySelectorAll(\\"source[data-srcset]\\");for(let e of t)e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\");e.complete&&(e.style.opacity=1)}}",
-      }
-    }
-    type="module"
-  />
-</div>
-`;
-
-exports[`The logos should render the Slack logo 1`] = `
-<div
-  className="gatsby-image-wrapper"
-  data-gatsby-image-wrapper=""
-  style={
-    Object {
-      "backgroundColor": undefined,
-      "height": 24,
-      "overflow": "hidden",
-      "position": "relative",
-      "width": 24,
-    }
-  }
->
-  <div
-    aria-hidden={true}
-    data-placeholder-image=""
-    style={
-      Object {
-        "height": "100%",
-        "left": 0,
-        "position": "absolute",
-        "top": 0,
-        "width": "100%",
-      }
-    }
-  />
-  <picture>
-    <source
-      data-srcset="/static/6b04981d71d140833cb93793287c6a38/4e704/slack_icon.webp 24w,/static/6b04981d71d140833cb93793287c6a38/e78b1/slack_icon.webp 48w"
-      sizes="24px"
-      type="image/webp"
-    />
-    <img
-      alt="Slack"
-      data-gatsby-image-ssr=""
-      data-main-image=""
-      data-src="/static/6b04981d71d140833cb93793287c6a38/2391d/slack_icon.png"
-      data-srcset="/static/6b04981d71d140833cb93793287c6a38/2391d/slack_icon.png 24w,/static/6b04981d71d140833cb93793287c6a38/fcdb9/slack_icon.png 48w"
-      decoding="async"
-      loading="lazy"
-      onLoad={[Function]}
-      sizes="24px"
-      style={
-        Object {
-          "backgroundColor": undefined,
-          "height": "100%",
-          "left": 0,
-          "objectFit": undefined,
-          "objectPosition": undefined,
-          "opacity": 0,
-          "position": "absolute",
-          "top": 0,
-          "transform": "translateZ(0)",
-          "transition": "opacity 250ms linear",
-          "width": "100%",
-          "willChange": "opacity",
-        }
-      }
-      tw="mr-2 h-8"
-    />
-  </picture>
-  <noscript>
-    <picture>
-      <source
-        sizes="24px"
-        srcSet="/static/6b04981d71d140833cb93793287c6a38/4e704/slack_icon.webp 24w,/static/6b04981d71d140833cb93793287c6a38/e78b1/slack_icon.webp 48w"
-        type="image/webp"
-      />
-      <img
-        alt="Slack"
-        data-gatsby-image-ssr=""
-        data-main-image=""
-        decoding="async"
-        loading="lazy"
-        onLoad={[Function]}
-        sizes="24px"
-        src="/static/6b04981d71d140833cb93793287c6a38/2391d/slack_icon.png"
-        srcSet="/static/6b04981d71d140833cb93793287c6a38/2391d/slack_icon.png 24w,/static/6b04981d71d140833cb93793287c6a38/fcdb9/slack_icon.png 48w"
         style={
           Object {
             "backgroundColor": undefined,

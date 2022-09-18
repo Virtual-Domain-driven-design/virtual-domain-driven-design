@@ -10,7 +10,7 @@ import "styled-components/macro"
 import OutlineBlueButton from "../components/outline-blue-button"
 import ThreeDBlueButton from "../components/three-d-blue-button"
 import UpcomingSession from "../sessions/upcoming-session"
-import { VdddLogo, SlackLogo, TwitterLogo } from "../components/logos"
+import { VdddLogo, DiscordLogo, TwitterLogo } from "../components/logos"
 import NoUpcoming from "../sessions/no-upcoming"
 
 const VDDDInfo = () => {
@@ -94,10 +94,10 @@ const Hero = () => {
           </OutlineBlueButton>
           <OutlineBlueButton
             tw="lg:text-xl flex"
-            href="https://github.com/ddd-cqrs-es/slack-community"
+            href="https://discord.gg/sEZGSHNNbH"
           >
-            <SlackLogo />
-            <div tw="pl-1">Slack community</div>
+            <DiscordLogo />
+            <div tw="pl-1">Discord community</div>
           </OutlineBlueButton>
           <OutlineBlueButton
             tw="lg:text-xl flex"

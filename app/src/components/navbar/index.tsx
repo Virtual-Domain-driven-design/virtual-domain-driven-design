@@ -4,7 +4,7 @@ import tw from "twin.macro"
 import "styled-components/macro"
 import {
   VdddLogo,
-  SlackLogo,
+  DiscordLogo,
   TwitterLogo,
   NetlifyLogo,
   GithubLogo,
@@ -47,12 +47,12 @@ const SocialSubItems = () => {
       </a>
       <a
         tw="p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center lg:justify-center"
-        href="https://github.com/ddd-cqrs-es/slack-community"
+        href="https://discord.gg/sEZGSHNNbH"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <SlackLogo />
-        <div tw="pl-1">Slack</div>
+        <DiscordLogo />
+        <div tw="pl-1">Discord</div>
       </a>
     </div>
   )
