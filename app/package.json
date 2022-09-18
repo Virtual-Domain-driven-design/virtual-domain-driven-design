@@ -106,5 +106,12 @@
     "react-test-renderer": "^18.0.0",
     "tailwindcss": "^2.2.19",
     "typescript": "^4.4.4"
+  },
+  "resolutions": {
+    "ansi-html": "^0.0.8",
+    "node-fetch": "^2.6.7",
+    "object-path": "^0.11.8",
+    "shell-quote": "^1.7.3",
+    "trim": "^0.0.3"
   }
 }
