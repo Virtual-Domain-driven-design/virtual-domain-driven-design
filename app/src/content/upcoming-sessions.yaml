@@ -15,5 +15,27 @@
 
 # fallback with non-numeric id and a real image:
 upcomingSessions:
-  - id: "none"
-    img: ../images/kandddinsky.jpg
+  # - id: "none"
+  #   img: ../images/kandddinsky.jpg
+  - id: "83"
+    title: "An Introduction to Residuality Theory by Barry O'Reilly"
+    date: "October 25th, 2022"
+    time: "19:00 CET"
+    img: ../images/sessions/session-83.jpg
+    video: "https://us02web.zoom.us/j/81603630748"
+    level: expert
+    description:
+     "
+      Residuality theory is a revolutionary new theory of software design that aims to make it easier to design software systems for complex business environments. Residuality theory models software systems as interconnected residues - an alternative to component and process modeling that uses applied complexity science to make managing uncertainty a fundamental part of the design process.
+     "
+    tags:
+      - software design
+      - software architecture
+      - complexity theory
+    links:
+      - label: "RSVP on Meetup"
+        url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/289044793/"
+      - label: "Interact on Zoom"
+        url: "https://us02web.zoom.us/j/81603630748"
+      - label: "Youtube and Chill"
+        url: "https://youtu.be/ZAoHBOVgmr4"
