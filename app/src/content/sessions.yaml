@@ -10,12 +10,27 @@
 #   tags:
 #     - ""
 sessions:
+  - id: "83"
+    title: "An Introduction to Residuality Theory by Barry M O'Reilly"
+    date: "October 25th, 2022"
+    time: "19:00 CET"
+    img: ../images/sessions/session-83.jpg
+    video: "https://www.youtube.com/embed/ZAoHBOVgmr4"
+    level: expert
+    description:
+     "
+      Residuality theory is a revolutionary new theory of software design that aims to make it easier to design software systems for complex business environments. Residuality theory models software systems as interconnected residues - an alternative to component and process modeling that uses applied complexity science to make managing uncertainty a fundamental part of the design process.
+     "
+    tags:
+      - software design
+      - software architecture
+      - complexity theory
   - id: "82"
-    title: " The hard skills? with Diana Montalion "
+    title: " The hard skills? with Diana Montalion"
     date: "June 7th, 2022"
     time: "19:00 CEST"
     img: ../images/sessions/session-82.jpg
-    video: "https://www.youtube.com/embed/QwqNdQSgjeM "
+    video: "https://www.youtube.com/embed/QwqNdQSgjeM"
     level: all
     description:
       "
@@ -31,13 +46,6 @@ sessions:
       - systems thinking
       - software architecture
       - digital transformation
-    links:
-      - label: "RSVP on Meetup"
-        url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/286217516/"
-      - label: "Interact on Zoom"
-        url: "https://us02web.zoom.us/j/81571820278?pwd=dk9WSGNKWXJTSlNzOG5CaVgxcktBZz09"
-      - label: "Youtube and Chill"
-        url: "https://youtu.be/QwqNdQSgjeM "
   - id: "81"
     title: "Effective team collaboration and why we need it for modern product experiences?"
     date: "May 5th, 2022"
@@ -57,13 +65,6 @@ sessions:
       - architect decisions
       - software design
       - long term impact
-    links:
-      - label: "RSVP on Meetup"
-        url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/285588689/"
-      - label: "Interact on Zoom"
-        url: "https://us02web.zoom.us/j/82364335767?pwd=Vmw5d2lHcUhBWFR5Zk5ZbW16SDhEdz09"
-      - label: "Youtube and Chill"
-        url: "https://youtu.be/WNQ3ZLcW4Mw"
   - id: "80"
     title: "[Panel] Long term impact of architectural design decision"
     date: "March 31st, 2022"
