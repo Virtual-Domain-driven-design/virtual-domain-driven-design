@@ -15,6 +15,35 @@
 
 # fallback with non-numeric id and a real image:
 upcomingSessions:
-  - id: "none"
-    img: ../images/kandddinsky.jpg
-  
+  # - id: "none"
+  #   img: ../images/kandddinsky.jpg
+  - id: "84"
+    title: "Sharing your (Systems) knowledge with Bytesize Architecture Sessions with Andrea Magnorsky"
+    date: "November 17th, 2022"
+    time: "19:00 CET"
+    img: ../images/sessions/session-84.jpg
+    video: "https://www.youtube.com/embed/uJ0f8fLU2Vw"
+    level: all
+    description:
+     "
+      It is not trivial to share knowledge about your systems with people on your team. Some sharing sessions try to it all at once, or be too long.
+      In this talk we will go into detail on a technique called Bytesize Architecture Sessions. It addresses the problems mentioned above and gives you a lot more. The idea behind Bytesize Architecture Sessions is to have short meetings every 2~3 weeks with a well defined (modelling) goal. The participants of the meeting will have five minutes 'alone together' to focus on diagramming. After that, they will come to a consensus with a unified picture.
+      The sessions have the following benefits:
+        * It teaches the team to how to deliberately learn architecture in a safe environment
+        * It helps with systems thinking
+        * The resulting diagrams become a design tool that is inherently familiar to the team, since they created it.
+        * It gives the team an homogeneous understanding of their systems
+        * The resulting diagrams highlight areas for improvement.
+     "
+    tags:
+      - software design
+      - software architecture
+      - diagramming
+      - software modeling
+    links:
+      - label: "RSVP on Meetup"
+        url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/289368919/"
+      - label: "Interact on Zoom"
+        url: "https://us02web.zoom.us/j/89120570120"
+      - label: "Youtube and Chill"
+        url: "https://youtu.be/uJ0f8fLU2Vw"
