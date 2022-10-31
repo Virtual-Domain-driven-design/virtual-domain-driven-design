@@ -26,14 +26,24 @@ upcomingSessions:
     level: all
     description:
      "
-      It is not trivial to share knowledge about your systems with people on your team. Some sharing sessions try to it all at once, or be too long.
-      In this talk we will go into detail on a technique called Bytesize Architecture Sessions. It addresses the problems mentioned above and gives you a lot more. The idea behind Bytesize Architecture Sessions is to have short meetings every 2~3 weeks with a well defined (modelling) goal. The participants of the meeting will have five minutes 'alone together' to focus on diagramming. After that, they will come to a consensus with a unified picture.
-      The sessions have the following benefits:
-        * It teaches the team to how to deliberately learn architecture in a safe environment
-        * It helps with systems thinking
-        * The resulting diagrams become a design tool that is inherently familiar to the team, since they created it.
-        * It gives the team an homogeneous understanding of their systems
-        * The resulting diagrams highlight areas for improvement.
+    Does your team suffer from:
+
+    * Inconsistent views of your systems?
+    * Producing incohesive solutions?
+    * Ineffective architecture practices and tools?
+
+    Introducing Bytesize Architecture Sessions!
+
+    Bytesize Sessions are a workshop format that enables collaborative and iterative knowledge sharing.
+
+    This talk will enable you to run Bytesize Sessions resulting in the following benefits:
+
+    * Improved systems thinking.
+    * Enriching collaboration within the team.
+    * Understanding architecture practices and tools in a safe environment.
+    * A feedback loop controlled by the team produces better documentation across sessions.
+    * Revealing the Bermuda Triangles!
+
      "
     tags:
       - software design
