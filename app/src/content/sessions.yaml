@@ -10,6 +10,40 @@
 #   tags:
 #     - ""
 sessions:
+  - id: "84"
+    title: "Sharing your (Systems) knowledge with Bytesize Architecture Sessions with Andrea Magnorsky"
+    date: "November 17th, 2022"
+    time: "19:00 CET"
+    img: ../images/sessions/session-84.jpg
+    video: "https://www.youtube.com/embed/uJ0f8fLU2Vw"
+    podcast: "https://oembed.libsyn.com/embed?item_id=25081833"
+    level: all
+    description:
+     "
+    Does your team suffer from:
+
+    * Inconsistent views of your systems?
+    * Producing incohesive solutions?
+    * Ineffective architecture practices and tools?
+
+    Introducing Bytesize Architecture Sessions!
+
+    Bytesize Sessions are a workshop format that enables collaborative and iterative knowledge sharing.
+
+    This talk will enable you to run Bytesize Sessions resulting in the following benefits:
+
+    * Improved systems thinking.
+    * Enriching collaboration within the team.
+    * Understanding architecture practices and tools in a safe environment.
+    * A feedback loop controlled by the team produces better documentation across sessions.
+    * Revealing the Bermuda Triangles!
+
+     "
+    tags:
+      - software design
+      - software architecture
+      - diagramming
+      - software modeling
   - id: "83"
     title: "An Introduction to Residuality Theory by Barry M O'Reilly"
     date: "October 25th, 2022"
