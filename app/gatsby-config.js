@@ -120,13 +120,13 @@ module.exports = {
         remote: `https://github.com/ddd-crew/eventstorming-glossary-cheat-sheet.git`,
       },
     },
-    {
-      resolve: `gatsby-source-git`,
-      options: {
-        name: `github-repo-ddd-crew-context-mapping`,
-        remote: `https://github.com/ddd-crew/context-mapping.git`,
-      },
-    },
+    // { REMOVED BECAUSE THROWING ERRORS
+    //   resolve: `gatsby-source-git`,
+    //   options: {
+    //     name: `github-repo-ddd-crew-context-mapping`,
+    //     remote: `https://github.com/ddd-crew/context-mapping.git`,
+    //   },
+    // },
     {
       resolve: `gatsby-source-git`,
       options: {
