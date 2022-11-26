@@ -94,7 +94,7 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
 
 .c17 {
   padding: 1rem;
-  font-size: 1.125rem;
+  font-size: 0.875rem;
   line-height: 1.25;
   cursor: pointer;
   -webkit-flex-shrink: 0;
@@ -122,7 +122,37 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
   padding-left: 0.25rem;
 }
 
-.c30 {
+.c19 {
+  padding: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.25;
+  cursor: pointer;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c19:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(156,163,175,var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(29,78,216,var(--tw-text-opacity));
+}
+
+.c20 {
+  padding-left: 0.25rem;
+}
+
+.c32 {
   position: relative;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -139,19 +169,19 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
   color: rgba(37,99,235,var(--tw-text-opacity));
 }
 
-.c30:hover {
+.c32:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(156,163,175,var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgba(29,78,216,var(--tw-text-opacity));
 }
 
-.c30:focus {
+.c32:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
 
-.c32 {
+.c34 {
   position: absolute;
   top: 0px;
   right: 0px;
@@ -166,7 +196,7 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
   display: none;
 }
 
-.group:hover .c31 {
+.group:hover .c33 {
   display: block;
 }
 
@@ -186,40 +216,6 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
   color: rgba(107,114,128,var(--tw-text-opacity));
   padding-top: 0.5rem;
   padding-right: 1rem;
-}
-
-.c21 {
-  padding: 1rem;
-  font-size: 1.125rem;
-  line-height: 1.25;
-  cursor: pointer;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  border-radius: 0.5rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-}
-
-.c21:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgba(156,163,175,var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgba(29,78,216,var(--tw-text-opacity));
-}
-
-.c22 {
-  padding-left: 0.25rem;
 }
 
 .c23 {
@@ -252,7 +248,37 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
   color: rgba(29,78,216,var(--tw-text-opacity));
 }
 
-.c33 {
+.c24 {
+  padding-left: 0.25rem;
+}
+
+.c25 {
+  padding: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  cursor: pointer;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c25:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(156,163,175,var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(29,78,216,var(--tw-text-opacity));
+}
+
+.c35 {
   position: relative;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -269,19 +295,19 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
   color: rgba(37,99,235,var(--tw-text-opacity));
 }
 
-.c33:hover {
+.c35:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(156,163,175,var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgba(29,78,216,var(--tw-text-opacity));
 }
 
-.c33:focus {
+.c35:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
 
-.c35 {
+.c37 {
   position: absolute;
   top: 0px;
   right: 0px;
@@ -296,11 +322,11 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
   display: none;
 }
 
-.group:hover .c34 {
+.group:hover .c36 {
   display: block;
 }
 
-.c19 {
+.c21 {
   position: relative;
   border-top-width: 1px;
   --tw-border-opacity: 1;
@@ -308,7 +334,7 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
   width: 100%;
 }
 
-.c20 {
+.c22 {
   position: absolute;
   top: 0px;
   right: 0px;
@@ -318,7 +344,7 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
   padding-right: 1rem;
 }
 
-.c27 {
+.c29 {
   position: relative;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -335,14 +361,14 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
   color: rgba(37,99,235,var(--tw-text-opacity));
 }
 
-.c27:hover {
+.c29:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(156,163,175,var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgba(29,78,216,var(--tw-text-opacity));
 }
 
-.c27:focus {
+.c29:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
@@ -513,7 +539,7 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
   color: rgba(29,78,216,var(--tw-text-opacity));
 }
 
-.c25 {
+.c27 {
   width: 80%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -529,7 +555,7 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
   justify-content: space-between;
 }
 
-.c26 {
+.c28 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -547,7 +573,7 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
   justify-content: flex-end;
 }
 
-.c28 {
+.c30 {
   padding: 1rem;
   font-size: 1.125rem;
   line-height: 1.25;
@@ -570,14 +596,14 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
   justify-content: flex-start;
 }
 
-.c28:hover {
+.c30:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(156,163,175,var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgba(29,78,216,var(--tw-text-opacity));
 }
 
-.c29 {
+.c31 {
   padding: 1rem;
   font-size: 1.125rem;
   line-height: 1.25;
@@ -600,7 +626,7 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
   justify-content: flex-start;
 }
 
-.c29:hover {
+.c31:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(156,163,175,var(--tw-bg-opacity));
   --tw-text-opacity: 1;
@@ -623,7 +649,7 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
   z-index: 50;
 }
 
-.c24 {
+.c26 {
   display: none;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -666,7 +692,7 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c21 {
+  .c19 {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -676,6 +702,15 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
 
 @media (min-width:1024px) {
   .c23 {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width:1024px) {
+  .c25 {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -720,13 +755,13 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
 }
 
 @media (min-width:1280px) {
-  .c25 {
+  .c27 {
     width: 66.666667%;
   }
 }
 
 @media (min-width:1024px) {
-  .c26 {
+  .c28 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -738,7 +773,7 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c28 {
+  .c30 {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -747,7 +782,7 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c29 {
+  .c31 {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -756,7 +791,7 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c24 {
+  .c26 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -958,125 +993,6 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
             </a>
             <a
               className="c15"
-              href="https://twitter.com/VirtualDDD"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <div
-                className="gatsby-image-wrapper"
-                data-gatsby-image-wrapper=""
-                style={
-                  Object {
-                    "backgroundColor": undefined,
-                    "height": 24,
-                    "overflow": "hidden",
-                    "position": "relative",
-                    "width": 24,
-                  }
-                }
-              >
-                <div
-                  aria-hidden={true}
-                  data-placeholder-image=""
-                  style={
-                    Object {
-                      "height": "100%",
-                      "left": 0,
-                      "position": "absolute",
-                      "top": 0,
-                      "width": "100%",
-                    }
-                  }
-                />
-                <picture>
-                  <source
-                    data-srcset="/static/9102af32fe26d52fd80240f7ebdaf365/4e704/twitter.webp 24w,/static/9102af32fe26d52fd80240f7ebdaf365/e78b1/twitter.webp 48w"
-                    sizes="24px"
-                    type="image/webp"
-                  />
-                  <img
-                    alt="Twitter"
-                    data-gatsby-image-ssr=""
-                    data-main-image=""
-                    data-src="/static/9102af32fe26d52fd80240f7ebdaf365/2391d/twitter.png"
-                    data-srcset="/static/9102af32fe26d52fd80240f7ebdaf365/2391d/twitter.png 24w,/static/9102af32fe26d52fd80240f7ebdaf365/fcdb9/twitter.png 48w"
-                    decoding="async"
-                    loading="lazy"
-                    onLoad={[Function]}
-                    sizes="24px"
-                    style={
-                      Object {
-                        "backgroundColor": undefined,
-                        "height": "100%",
-                        "left": 0,
-                        "objectFit": undefined,
-                        "objectPosition": undefined,
-                        "opacity": 0,
-                        "position": "absolute",
-                        "top": 0,
-                        "transform": "translateZ(0)",
-                        "transition": "opacity 250ms linear",
-                        "width": "100%",
-                        "willChange": "opacity",
-                      }
-                    }
-                    tw="mr-2 h-8"
-                  />
-                </picture>
-                <noscript>
-                  <picture>
-                    <source
-                      sizes="24px"
-                      srcSet="/static/9102af32fe26d52fd80240f7ebdaf365/4e704/twitter.webp 24w,/static/9102af32fe26d52fd80240f7ebdaf365/e78b1/twitter.webp 48w"
-                      type="image/webp"
-                    />
-                    <img
-                      alt="Twitter"
-                      data-gatsby-image-ssr=""
-                      data-main-image=""
-                      decoding="async"
-                      loading="lazy"
-                      onLoad={[Function]}
-                      sizes="24px"
-                      src="/static/9102af32fe26d52fd80240f7ebdaf365/2391d/twitter.png"
-                      srcSet="/static/9102af32fe26d52fd80240f7ebdaf365/2391d/twitter.png 24w,/static/9102af32fe26d52fd80240f7ebdaf365/fcdb9/twitter.png 48w"
-                      style={
-                        Object {
-                          "backgroundColor": undefined,
-                          "height": "100%",
-                          "left": 0,
-                          "objectFit": undefined,
-                          "objectPosition": undefined,
-                          "opacity": 0,
-                          "position": "absolute",
-                          "top": 0,
-                          "transform": "translateZ(0)",
-                          "transition": "opacity 250ms linear",
-                          "width": "100%",
-                          "willChange": "opacity",
-                        }
-                      }
-                      tw="mr-2 h-8"
-                    />
-                  </picture>
-                </noscript>
-                <script
-                  dangerouslySetInnerHTML={
-                    Object {
-                      "__html": "const t=\\"undefined\\"!=typeof HTMLImageElement&&\\"loading\\"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll(\\"img[data-main-image]\\");for(let e of t){e.dataset.src&&(e.setAttribute(\\"src\\",e.dataset.src),e.removeAttribute(\\"data-src\\")),e.dataset.srcset&&(e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\"));const t=e.parentNode.querySelectorAll(\\"source[data-srcset]\\");for(let e of t)e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\");e.complete&&(e.style.opacity=1)}}",
-                    }
-                  }
-                  type="module"
-                />
-              </div>
-              <div
-                className="c16"
-              >
-                Twitter
-              </div>
-            </a>
-            <a
-              className="c17"
               href="https://discord.gg/sEZGSHNNbH"
               rel="noopener noreferrer"
               target="_blank"
@@ -1189,24 +1105,262 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
                 />
               </div>
               <div
-                className="c18"
+                className="c16"
               >
                 Discord
+              </div>
+            </a>
+            <a
+              className="c17"
+              href="https://techhub.social/@virtualddd"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <div
+                className="gatsby-image-wrapper"
+                data-gatsby-image-wrapper=""
+                style={
+                  Object {
+                    "backgroundColor": undefined,
+                    "height": 24,
+                    "overflow": "hidden",
+                    "position": "relative",
+                    "width": 24,
+                  }
+                }
+              >
+                <div
+                  aria-hidden={true}
+                  data-placeholder-image=""
+                  style={
+                    Object {
+                      "height": "100%",
+                      "left": 0,
+                      "position": "absolute",
+                      "top": 0,
+                      "width": "100%",
+                    }
+                  }
+                />
+                <picture>
+                  <source
+                    data-srcset="/static/f5653a69e6495190c124dd3f89af0ac6/4e704/mastodon.webp 24w,/static/f5653a69e6495190c124dd3f89af0ac6/e78b1/mastodon.webp 48w"
+                    sizes="24px"
+                    type="image/webp"
+                  />
+                  <img
+                    alt="Mastodon Logo"
+                    data-gatsby-image-ssr=""
+                    data-main-image=""
+                    data-src="/static/f5653a69e6495190c124dd3f89af0ac6/2391d/mastodon.png"
+                    data-srcset="/static/f5653a69e6495190c124dd3f89af0ac6/2391d/mastodon.png 24w,/static/f5653a69e6495190c124dd3f89af0ac6/fcdb9/mastodon.png 48w"
+                    decoding="async"
+                    loading="lazy"
+                    onLoad={[Function]}
+                    sizes="24px"
+                    style={
+                      Object {
+                        "backgroundColor": undefined,
+                        "height": "100%",
+                        "left": 0,
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "opacity": 0,
+                        "position": "absolute",
+                        "top": 0,
+                        "transform": "translateZ(0)",
+                        "transition": "opacity 250ms linear",
+                        "width": "100%",
+                        "willChange": "opacity",
+                      }
+                    }
+                    tw="mr-2 h-8"
+                  />
+                </picture>
+                <noscript>
+                  <picture>
+                    <source
+                      sizes="24px"
+                      srcSet="/static/f5653a69e6495190c124dd3f89af0ac6/4e704/mastodon.webp 24w,/static/f5653a69e6495190c124dd3f89af0ac6/e78b1/mastodon.webp 48w"
+                      type="image/webp"
+                    />
+                    <img
+                      alt="Mastodon Logo"
+                      data-gatsby-image-ssr=""
+                      data-main-image=""
+                      decoding="async"
+                      loading="lazy"
+                      onLoad={[Function]}
+                      sizes="24px"
+                      src="/static/f5653a69e6495190c124dd3f89af0ac6/2391d/mastodon.png"
+                      srcSet="/static/f5653a69e6495190c124dd3f89af0ac6/2391d/mastodon.png 24w,/static/f5653a69e6495190c124dd3f89af0ac6/fcdb9/mastodon.png 48w"
+                      style={
+                        Object {
+                          "backgroundColor": undefined,
+                          "height": "100%",
+                          "left": 0,
+                          "objectFit": undefined,
+                          "objectPosition": undefined,
+                          "opacity": 0,
+                          "position": "absolute",
+                          "top": 0,
+                          "transform": "translateZ(0)",
+                          "transition": "opacity 250ms linear",
+                          "width": "100%",
+                          "willChange": "opacity",
+                        }
+                      }
+                      tw="mr-2 h-8"
+                    />
+                  </picture>
+                </noscript>
+                <script
+                  dangerouslySetInnerHTML={
+                    Object {
+                      "__html": "const t=\\"undefined\\"!=typeof HTMLImageElement&&\\"loading\\"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll(\\"img[data-main-image]\\");for(let e of t){e.dataset.src&&(e.setAttribute(\\"src\\",e.dataset.src),e.removeAttribute(\\"data-src\\")),e.dataset.srcset&&(e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\"));const t=e.parentNode.querySelectorAll(\\"source[data-srcset]\\");for(let e of t)e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\");e.complete&&(e.style.opacity=1)}}",
+                    }
+                  }
+                  type="module"
+                />
+              </div>
+              <div
+                className="c18"
+              >
+                Mastodon
+              </div>
+            </a>
+            <a
+              className="c19"
+              href="https://twitter.com/VirtualDDD"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <div
+                className="gatsby-image-wrapper"
+                data-gatsby-image-wrapper=""
+                style={
+                  Object {
+                    "backgroundColor": undefined,
+                    "height": 24,
+                    "overflow": "hidden",
+                    "position": "relative",
+                    "width": 24,
+                  }
+                }
+              >
+                <div
+                  aria-hidden={true}
+                  data-placeholder-image=""
+                  style={
+                    Object {
+                      "height": "100%",
+                      "left": 0,
+                      "position": "absolute",
+                      "top": 0,
+                      "width": "100%",
+                    }
+                  }
+                />
+                <picture>
+                  <source
+                    data-srcset="/static/9102af32fe26d52fd80240f7ebdaf365/4e704/twitter.webp 24w,/static/9102af32fe26d52fd80240f7ebdaf365/e78b1/twitter.webp 48w"
+                    sizes="24px"
+                    type="image/webp"
+                  />
+                  <img
+                    alt="Twitter"
+                    data-gatsby-image-ssr=""
+                    data-main-image=""
+                    data-src="/static/9102af32fe26d52fd80240f7ebdaf365/2391d/twitter.png"
+                    data-srcset="/static/9102af32fe26d52fd80240f7ebdaf365/2391d/twitter.png 24w,/static/9102af32fe26d52fd80240f7ebdaf365/fcdb9/twitter.png 48w"
+                    decoding="async"
+                    loading="lazy"
+                    onLoad={[Function]}
+                    sizes="24px"
+                    style={
+                      Object {
+                        "backgroundColor": undefined,
+                        "height": "100%",
+                        "left": 0,
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "opacity": 0,
+                        "position": "absolute",
+                        "top": 0,
+                        "transform": "translateZ(0)",
+                        "transition": "opacity 250ms linear",
+                        "width": "100%",
+                        "willChange": "opacity",
+                      }
+                    }
+                    tw="mr-2 h-8"
+                  />
+                </picture>
+                <noscript>
+                  <picture>
+                    <source
+                      sizes="24px"
+                      srcSet="/static/9102af32fe26d52fd80240f7ebdaf365/4e704/twitter.webp 24w,/static/9102af32fe26d52fd80240f7ebdaf365/e78b1/twitter.webp 48w"
+                      type="image/webp"
+                    />
+                    <img
+                      alt="Twitter"
+                      data-gatsby-image-ssr=""
+                      data-main-image=""
+                      decoding="async"
+                      loading="lazy"
+                      onLoad={[Function]}
+                      sizes="24px"
+                      src="/static/9102af32fe26d52fd80240f7ebdaf365/2391d/twitter.png"
+                      srcSet="/static/9102af32fe26d52fd80240f7ebdaf365/2391d/twitter.png 24w,/static/9102af32fe26d52fd80240f7ebdaf365/fcdb9/twitter.png 48w"
+                      style={
+                        Object {
+                          "backgroundColor": undefined,
+                          "height": "100%",
+                          "left": 0,
+                          "objectFit": undefined,
+                          "objectPosition": undefined,
+                          "opacity": 0,
+                          "position": "absolute",
+                          "top": 0,
+                          "transform": "translateZ(0)",
+                          "transition": "opacity 250ms linear",
+                          "width": "100%",
+                          "willChange": "opacity",
+                        }
+                      }
+                      tw="mr-2 h-8"
+                    />
+                  </picture>
+                </noscript>
+                <script
+                  dangerouslySetInnerHTML={
+                    Object {
+                      "__html": "const t=\\"undefined\\"!=typeof HTMLImageElement&&\\"loading\\"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll(\\"img[data-main-image]\\");for(let e of t){e.dataset.src&&(e.setAttribute(\\"src\\",e.dataset.src),e.removeAttribute(\\"data-src\\")),e.dataset.srcset&&(e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\"));const t=e.parentNode.querySelectorAll(\\"source[data-srcset]\\");for(let e of t)e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\");e.complete&&(e.style.opacity=1)}}",
+                    }
+                  }
+                  type="module"
+                />
+              </div>
+              <div
+                className="c20"
+              >
+                Twitter
               </div>
             </a>
           </div>
         </div>
         <div
-          className="c19"
+          className="c21"
         >
           <div
-            className="c20"
+            className="c22"
           >
             Contribute
           </div>
           <div>
             <a
-              className="c21"
+              className="c23"
               href="https://github.com/Virtual-Domain-driven-design/virtual-domain-driven-design"
               rel="noopener noreferrer"
               target="_blank"
@@ -1319,13 +1473,13 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
                 />
               </div>
               <div
-                className="c22"
+                className="c24"
               >
                 Github
               </div>
             </a>
             <a
-              className="c23"
+              className="c25"
               href="https://virtualddd.com/admin"
               rel="noopener noreferrer"
               target="_blank"
@@ -1445,10 +1599,10 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
     </div>
   </div>
   <div
-    className="c24"
+    className="c26"
   >
     <div
-      className="c25"
+      className="c27"
     >
       <a
         className="c3"
@@ -1563,22 +1717,22 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
         </div>
       </a>
       <div
-        className="c26"
+        className="c28"
       >
         <a
-          className="c27"
+          className="c29"
           href="/sessions"
         >
           Sessions
         </a>
         <a
-          className="c27"
+          className="c29"
           href="/learning-ddd"
         >
           Learning DDD
         </a>
         <a
-          className="c28"
+          className="c30"
           href="https://feedback.userreport.com/a15e4e61-2323-40a1-90b4-1267e010e35c/"
           rel="noopener noreferrer"
           target="_blank"
@@ -1586,7 +1740,7 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
           Propose & Vote!
         </a>
         <a
-          className="c29"
+          className="c31"
           href="https://dddheuristics.com"
           rel="noopener noreferrer"
           target="_blank"
@@ -1594,11 +1748,11 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
           Heuristics
         </a>
         <button
-          className="c30 group"
+          className="c32 group"
         >
           Socials
           <div
-            className="c31 c32"
+            className="c33 c34"
           >
             <div>
               <a
@@ -1613,125 +1767,6 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
               </a>
               <a
                 className="c15"
-                href="https://twitter.com/VirtualDDD"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <div
-                  className="gatsby-image-wrapper"
-                  data-gatsby-image-wrapper=""
-                  style={
-                    Object {
-                      "backgroundColor": undefined,
-                      "height": 24,
-                      "overflow": "hidden",
-                      "position": "relative",
-                      "width": 24,
-                    }
-                  }
-                >
-                  <div
-                    aria-hidden={true}
-                    data-placeholder-image=""
-                    style={
-                      Object {
-                        "height": "100%",
-                        "left": 0,
-                        "position": "absolute",
-                        "top": 0,
-                        "width": "100%",
-                      }
-                    }
-                  />
-                  <picture>
-                    <source
-                      data-srcset="/static/9102af32fe26d52fd80240f7ebdaf365/4e704/twitter.webp 24w,/static/9102af32fe26d52fd80240f7ebdaf365/e78b1/twitter.webp 48w"
-                      sizes="24px"
-                      type="image/webp"
-                    />
-                    <img
-                      alt="Twitter"
-                      data-gatsby-image-ssr=""
-                      data-main-image=""
-                      data-src="/static/9102af32fe26d52fd80240f7ebdaf365/2391d/twitter.png"
-                      data-srcset="/static/9102af32fe26d52fd80240f7ebdaf365/2391d/twitter.png 24w,/static/9102af32fe26d52fd80240f7ebdaf365/fcdb9/twitter.png 48w"
-                      decoding="async"
-                      loading="lazy"
-                      onLoad={[Function]}
-                      sizes="24px"
-                      style={
-                        Object {
-                          "backgroundColor": undefined,
-                          "height": "100%",
-                          "left": 0,
-                          "objectFit": undefined,
-                          "objectPosition": undefined,
-                          "opacity": 0,
-                          "position": "absolute",
-                          "top": 0,
-                          "transform": "translateZ(0)",
-                          "transition": "opacity 250ms linear",
-                          "width": "100%",
-                          "willChange": "opacity",
-                        }
-                      }
-                      tw="mr-2 h-8"
-                    />
-                  </picture>
-                  <noscript>
-                    <picture>
-                      <source
-                        sizes="24px"
-                        srcSet="/static/9102af32fe26d52fd80240f7ebdaf365/4e704/twitter.webp 24w,/static/9102af32fe26d52fd80240f7ebdaf365/e78b1/twitter.webp 48w"
-                        type="image/webp"
-                      />
-                      <img
-                        alt="Twitter"
-                        data-gatsby-image-ssr=""
-                        data-main-image=""
-                        decoding="async"
-                        loading="lazy"
-                        onLoad={[Function]}
-                        sizes="24px"
-                        src="/static/9102af32fe26d52fd80240f7ebdaf365/2391d/twitter.png"
-                        srcSet="/static/9102af32fe26d52fd80240f7ebdaf365/2391d/twitter.png 24w,/static/9102af32fe26d52fd80240f7ebdaf365/fcdb9/twitter.png 48w"
-                        style={
-                          Object {
-                            "backgroundColor": undefined,
-                            "height": "100%",
-                            "left": 0,
-                            "objectFit": undefined,
-                            "objectPosition": undefined,
-                            "opacity": 0,
-                            "position": "absolute",
-                            "top": 0,
-                            "transform": "translateZ(0)",
-                            "transition": "opacity 250ms linear",
-                            "width": "100%",
-                            "willChange": "opacity",
-                          }
-                        }
-                        tw="mr-2 h-8"
-                      />
-                    </picture>
-                  </noscript>
-                  <script
-                    dangerouslySetInnerHTML={
-                      Object {
-                        "__html": "const t=\\"undefined\\"!=typeof HTMLImageElement&&\\"loading\\"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll(\\"img[data-main-image]\\");for(let e of t){e.dataset.src&&(e.setAttribute(\\"src\\",e.dataset.src),e.removeAttribute(\\"data-src\\")),e.dataset.srcset&&(e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\"));const t=e.parentNode.querySelectorAll(\\"source[data-srcset]\\");for(let e of t)e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\");e.complete&&(e.style.opacity=1)}}",
-                      }
-                    }
-                    type="module"
-                  />
-                </div>
-                <div
-                  className="c16"
-                >
-                  Twitter
-                </div>
-              </a>
-              <a
-                className="c17"
                 href="https://discord.gg/sEZGSHNNbH"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1844,24 +1879,262 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
                   />
                 </div>
                 <div
-                  className="c18"
+                  className="c16"
                 >
                   Discord
+                </div>
+              </a>
+              <a
+                className="c17"
+                href="https://techhub.social/@virtualddd"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <div
+                  className="gatsby-image-wrapper"
+                  data-gatsby-image-wrapper=""
+                  style={
+                    Object {
+                      "backgroundColor": undefined,
+                      "height": 24,
+                      "overflow": "hidden",
+                      "position": "relative",
+                      "width": 24,
+                    }
+                  }
+                >
+                  <div
+                    aria-hidden={true}
+                    data-placeholder-image=""
+                    style={
+                      Object {
+                        "height": "100%",
+                        "left": 0,
+                        "position": "absolute",
+                        "top": 0,
+                        "width": "100%",
+                      }
+                    }
+                  />
+                  <picture>
+                    <source
+                      data-srcset="/static/f5653a69e6495190c124dd3f89af0ac6/4e704/mastodon.webp 24w,/static/f5653a69e6495190c124dd3f89af0ac6/e78b1/mastodon.webp 48w"
+                      sizes="24px"
+                      type="image/webp"
+                    />
+                    <img
+                      alt="Mastodon Logo"
+                      data-gatsby-image-ssr=""
+                      data-main-image=""
+                      data-src="/static/f5653a69e6495190c124dd3f89af0ac6/2391d/mastodon.png"
+                      data-srcset="/static/f5653a69e6495190c124dd3f89af0ac6/2391d/mastodon.png 24w,/static/f5653a69e6495190c124dd3f89af0ac6/fcdb9/mastodon.png 48w"
+                      decoding="async"
+                      loading="lazy"
+                      onLoad={[Function]}
+                      sizes="24px"
+                      style={
+                        Object {
+                          "backgroundColor": undefined,
+                          "height": "100%",
+                          "left": 0,
+                          "objectFit": undefined,
+                          "objectPosition": undefined,
+                          "opacity": 0,
+                          "position": "absolute",
+                          "top": 0,
+                          "transform": "translateZ(0)",
+                          "transition": "opacity 250ms linear",
+                          "width": "100%",
+                          "willChange": "opacity",
+                        }
+                      }
+                      tw="mr-2 h-8"
+                    />
+                  </picture>
+                  <noscript>
+                    <picture>
+                      <source
+                        sizes="24px"
+                        srcSet="/static/f5653a69e6495190c124dd3f89af0ac6/4e704/mastodon.webp 24w,/static/f5653a69e6495190c124dd3f89af0ac6/e78b1/mastodon.webp 48w"
+                        type="image/webp"
+                      />
+                      <img
+                        alt="Mastodon Logo"
+                        data-gatsby-image-ssr=""
+                        data-main-image=""
+                        decoding="async"
+                        loading="lazy"
+                        onLoad={[Function]}
+                        sizes="24px"
+                        src="/static/f5653a69e6495190c124dd3f89af0ac6/2391d/mastodon.png"
+                        srcSet="/static/f5653a69e6495190c124dd3f89af0ac6/2391d/mastodon.png 24w,/static/f5653a69e6495190c124dd3f89af0ac6/fcdb9/mastodon.png 48w"
+                        style={
+                          Object {
+                            "backgroundColor": undefined,
+                            "height": "100%",
+                            "left": 0,
+                            "objectFit": undefined,
+                            "objectPosition": undefined,
+                            "opacity": 0,
+                            "position": "absolute",
+                            "top": 0,
+                            "transform": "translateZ(0)",
+                            "transition": "opacity 250ms linear",
+                            "width": "100%",
+                            "willChange": "opacity",
+                          }
+                        }
+                        tw="mr-2 h-8"
+                      />
+                    </picture>
+                  </noscript>
+                  <script
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "const t=\\"undefined\\"!=typeof HTMLImageElement&&\\"loading\\"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll(\\"img[data-main-image]\\");for(let e of t){e.dataset.src&&(e.setAttribute(\\"src\\",e.dataset.src),e.removeAttribute(\\"data-src\\")),e.dataset.srcset&&(e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\"));const t=e.parentNode.querySelectorAll(\\"source[data-srcset]\\");for(let e of t)e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\");e.complete&&(e.style.opacity=1)}}",
+                      }
+                    }
+                    type="module"
+                  />
+                </div>
+                <div
+                  className="c18"
+                >
+                  Mastodon
+                </div>
+              </a>
+              <a
+                className="c19"
+                href="https://twitter.com/VirtualDDD"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <div
+                  className="gatsby-image-wrapper"
+                  data-gatsby-image-wrapper=""
+                  style={
+                    Object {
+                      "backgroundColor": undefined,
+                      "height": 24,
+                      "overflow": "hidden",
+                      "position": "relative",
+                      "width": 24,
+                    }
+                  }
+                >
+                  <div
+                    aria-hidden={true}
+                    data-placeholder-image=""
+                    style={
+                      Object {
+                        "height": "100%",
+                        "left": 0,
+                        "position": "absolute",
+                        "top": 0,
+                        "width": "100%",
+                      }
+                    }
+                  />
+                  <picture>
+                    <source
+                      data-srcset="/static/9102af32fe26d52fd80240f7ebdaf365/4e704/twitter.webp 24w,/static/9102af32fe26d52fd80240f7ebdaf365/e78b1/twitter.webp 48w"
+                      sizes="24px"
+                      type="image/webp"
+                    />
+                    <img
+                      alt="Twitter"
+                      data-gatsby-image-ssr=""
+                      data-main-image=""
+                      data-src="/static/9102af32fe26d52fd80240f7ebdaf365/2391d/twitter.png"
+                      data-srcset="/static/9102af32fe26d52fd80240f7ebdaf365/2391d/twitter.png 24w,/static/9102af32fe26d52fd80240f7ebdaf365/fcdb9/twitter.png 48w"
+                      decoding="async"
+                      loading="lazy"
+                      onLoad={[Function]}
+                      sizes="24px"
+                      style={
+                        Object {
+                          "backgroundColor": undefined,
+                          "height": "100%",
+                          "left": 0,
+                          "objectFit": undefined,
+                          "objectPosition": undefined,
+                          "opacity": 0,
+                          "position": "absolute",
+                          "top": 0,
+                          "transform": "translateZ(0)",
+                          "transition": "opacity 250ms linear",
+                          "width": "100%",
+                          "willChange": "opacity",
+                        }
+                      }
+                      tw="mr-2 h-8"
+                    />
+                  </picture>
+                  <noscript>
+                    <picture>
+                      <source
+                        sizes="24px"
+                        srcSet="/static/9102af32fe26d52fd80240f7ebdaf365/4e704/twitter.webp 24w,/static/9102af32fe26d52fd80240f7ebdaf365/e78b1/twitter.webp 48w"
+                        type="image/webp"
+                      />
+                      <img
+                        alt="Twitter"
+                        data-gatsby-image-ssr=""
+                        data-main-image=""
+                        decoding="async"
+                        loading="lazy"
+                        onLoad={[Function]}
+                        sizes="24px"
+                        src="/static/9102af32fe26d52fd80240f7ebdaf365/2391d/twitter.png"
+                        srcSet="/static/9102af32fe26d52fd80240f7ebdaf365/2391d/twitter.png 24w,/static/9102af32fe26d52fd80240f7ebdaf365/fcdb9/twitter.png 48w"
+                        style={
+                          Object {
+                            "backgroundColor": undefined,
+                            "height": "100%",
+                            "left": 0,
+                            "objectFit": undefined,
+                            "objectPosition": undefined,
+                            "opacity": 0,
+                            "position": "absolute",
+                            "top": 0,
+                            "transform": "translateZ(0)",
+                            "transition": "opacity 250ms linear",
+                            "width": "100%",
+                            "willChange": "opacity",
+                          }
+                        }
+                        tw="mr-2 h-8"
+                      />
+                    </picture>
+                  </noscript>
+                  <script
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "const t=\\"undefined\\"!=typeof HTMLImageElement&&\\"loading\\"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll(\\"img[data-main-image]\\");for(let e of t){e.dataset.src&&(e.setAttribute(\\"src\\",e.dataset.src),e.removeAttribute(\\"data-src\\")),e.dataset.srcset&&(e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\"));const t=e.parentNode.querySelectorAll(\\"source[data-srcset]\\");for(let e of t)e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\");e.complete&&(e.style.opacity=1)}}",
+                      }
+                    }
+                    type="module"
+                  />
+                </div>
+                <div
+                  className="c20"
+                >
+                  Twitter
                 </div>
               </a>
             </div>
           </div>
         </button>
         <button
-          className="c33 group"
+          className="c35 group"
         >
           Contribute
           <div
-            className="c34 c35"
+            className="c36 c37"
           >
             <div>
               <a
-                className="c21"
+                className="c23"
                 href="https://github.com/Virtual-Domain-driven-design/virtual-domain-driven-design"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1974,13 +2247,13 @@ exports[`The NavBar should render the whole navigation bar 1`] = `
                   />
                 </div>
                 <div
-                  className="c22"
+                  className="c24"
                 >
                   Github
                 </div>
               </a>
               <a
-                className="c23"
+                className="c25"
                 href="https://virtualddd.com/admin"
                 rel="noopener noreferrer"
                 target="_blank"

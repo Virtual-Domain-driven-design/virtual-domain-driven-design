@@ -10,7 +10,7 @@ import "styled-components/macro"
 import OutlineBlueButton from "../components/outline-blue-button"
 import ThreeDBlueButton from "../components/three-d-blue-button"
 import UpcomingSession from "../sessions/upcoming-session"
-import { VdddLogo, DiscordLogo, TwitterLogo } from "../components/logos"
+import { VdddLogo, DiscordLogo,MastodonLogo, TwitterLogo } from "../components/logos"
 import NoUpcoming from "../sessions/no-upcoming"
 
 const VDDDInfo = () => {
@@ -85,22 +85,31 @@ const Hero = () => {
       <div tw="z-0 absolute inset-0 bg-gray-900 opacity-75" />
       <div tw="w-full lg:w-1/3 flex flex-col items-center justify-center z-10 m-4 sm:m-6 lg:m-8">
         <VDDDInfo />
-        <div tw="flex items-center justify-center space-x-4 m-4 sm:m-6 lg:m-8">
+        <div tw="flex flex-wrap items-center justify-center space-x-4 m-4 sm:m-6 lg:m-8">
           <OutlineBlueButton
-            tw="lg:text-xl flex"
+            tw="lg:text-sm flex"
             href="https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/"
           >
             Meetup
           </OutlineBlueButton>
           <OutlineBlueButton
-            tw="lg:text-xl flex"
+            tw="lg:text-sm flex"
             href="https://discord.gg/sEZGSHNNbH"
           >
             <DiscordLogo />
-            <div tw="pl-1">Discord community</div>
+            <div tw="pl-2">Discord</div>
+          </OutlineBlueButton>
+        </div>
+        <div tw="flex flex-wrap items-center justify-center space-x-4 m-4 sm:m-6 lg:m-8">
+          <OutlineBlueButton
+            tw="lg:text-sm flex"
+            href="https://techhub.social/@virtualddd"
+          >
+            <MastodonLogo />
+            <div tw="pl-2"><a rel="me" href="https://techhub.social/@virtualddd">Mastodon</a></div>
           </OutlineBlueButton>
           <OutlineBlueButton
-            tw="lg:text-xl flex"
+            tw="lg:text-sm flex"
             href="https://twitter.com/virtualDDD"
           >
             <TwitterLogo />

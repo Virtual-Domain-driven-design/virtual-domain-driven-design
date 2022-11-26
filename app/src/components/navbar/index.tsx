@@ -5,6 +5,7 @@ import "styled-components/macro"
 import {
   VdddLogo,
   DiscordLogo,
+  MastodonLogo,
   TwitterLogo,
   NetlifyLogo,
   GithubLogo,
@@ -38,21 +39,30 @@ const SocialSubItems = () => {
       </a>
       <a
         tw="p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center lg:justify-center"
-        href="https://twitter.com/VirtualDDD"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <TwitterLogo />
-        <div tw="pl-1">Twitter</div>
-      </a>
-      <a
-        tw="p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center lg:justify-center"
         href="https://discord.gg/sEZGSHNNbH"
         target="_blank"
         rel="noopener noreferrer"
       >
         <DiscordLogo />
         <div tw="pl-1">Discord</div>
+      </a>
+      <a
+        tw="p-4 text-sm leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center lg:justify-center"
+        href="https://techhub.social/@virtualddd"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <MastodonLogo />
+        <div tw="pl-1">Mastodon</div>
+      </a>
+      <a
+        tw="p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center lg:justify-center"
+        href="https://twitter.com/VirtualDDD"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <TwitterLogo />
+        <div tw="pl-1">Twitter</div>
       </a>
     </div>
   )
@@ -92,7 +102,7 @@ const ContributionSubItems = () => {
         <div tw="pl-1">Github</div>
       </a>
       <a
-        tw="p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center justify-start lg:justify-center"
+        tw="p-4 text-sm leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center lg:justify-center"
         href="https://virtualddd.com/admin"
         target="_blank"
         rel="noopener noreferrer"

@@ -4,6 +4,7 @@ import "jest-styled-components"
 import {
   VdddLogo,
   DiscordLogo,
+  MastodonLogo,
   TwitterLogo,
   GithubLogo,
   NetlifyLogo,
@@ -33,6 +34,19 @@ describe("The logos", () => {
     const initial = DiscordLogo({ twContent: undefined })
     expect(initial.props.tw).toContain("mr-2 h-8")
     const result = DiscordLogo({ twContent: "mr4" })
+    expect(result.props.tw).toEqual("mr4")
+  })
+
+  it("should render the Mastodon logo", () => {
+    const container = renderer.create(<MastodonLogo/>).toJSON()
+
+    expect(container).toMatchSnapshot()
+  })
+
+  it("should have defaults for Mastodon but allow to override the tailwind values", () => {
+    const initial = MastodonLogo({ twContent: undefined })
+    expect(initial.props.tw).toContain("mr-2 h-8")
+    const result = MastodonLogo({ twContent: "mr4" })
     expect(result.props.tw).toEqual("mr4")
   })
 

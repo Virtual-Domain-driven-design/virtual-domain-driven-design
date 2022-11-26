@@ -220,6 +220,116 @@ exports[`The logos should render the GitHub logo 1`] = `
 </div>
 `;
 
+exports[`The logos should render the Mastodon logo 1`] = `
+<div
+  className="gatsby-image-wrapper"
+  data-gatsby-image-wrapper=""
+  style={
+    Object {
+      "backgroundColor": undefined,
+      "height": 24,
+      "overflow": "hidden",
+      "position": "relative",
+      "width": 24,
+    }
+  }
+>
+  <div
+    aria-hidden={true}
+    data-placeholder-image=""
+    style={
+      Object {
+        "height": "100%",
+        "left": 0,
+        "position": "absolute",
+        "top": 0,
+        "width": "100%",
+      }
+    }
+  />
+  <picture>
+    <source
+      data-srcset="/static/f5653a69e6495190c124dd3f89af0ac6/4e704/mastodon.webp 24w,/static/f5653a69e6495190c124dd3f89af0ac6/e78b1/mastodon.webp 48w"
+      sizes="24px"
+      type="image/webp"
+    />
+    <img
+      alt="Mastodon Logo"
+      data-gatsby-image-ssr=""
+      data-main-image=""
+      data-src="/static/f5653a69e6495190c124dd3f89af0ac6/2391d/mastodon.png"
+      data-srcset="/static/f5653a69e6495190c124dd3f89af0ac6/2391d/mastodon.png 24w,/static/f5653a69e6495190c124dd3f89af0ac6/fcdb9/mastodon.png 48w"
+      decoding="async"
+      loading="lazy"
+      onLoad={[Function]}
+      sizes="24px"
+      style={
+        Object {
+          "backgroundColor": undefined,
+          "height": "100%",
+          "left": 0,
+          "objectFit": undefined,
+          "objectPosition": undefined,
+          "opacity": 0,
+          "position": "absolute",
+          "top": 0,
+          "transform": "translateZ(0)",
+          "transition": "opacity 250ms linear",
+          "width": "100%",
+          "willChange": "opacity",
+        }
+      }
+      tw="mr-2 h-8"
+    />
+  </picture>
+  <noscript>
+    <picture>
+      <source
+        sizes="24px"
+        srcSet="/static/f5653a69e6495190c124dd3f89af0ac6/4e704/mastodon.webp 24w,/static/f5653a69e6495190c124dd3f89af0ac6/e78b1/mastodon.webp 48w"
+        type="image/webp"
+      />
+      <img
+        alt="Mastodon Logo"
+        data-gatsby-image-ssr=""
+        data-main-image=""
+        decoding="async"
+        loading="lazy"
+        onLoad={[Function]}
+        sizes="24px"
+        src="/static/f5653a69e6495190c124dd3f89af0ac6/2391d/mastodon.png"
+        srcSet="/static/f5653a69e6495190c124dd3f89af0ac6/2391d/mastodon.png 24w,/static/f5653a69e6495190c124dd3f89af0ac6/fcdb9/mastodon.png 48w"
+        style={
+          Object {
+            "backgroundColor": undefined,
+            "height": "100%",
+            "left": 0,
+            "objectFit": undefined,
+            "objectPosition": undefined,
+            "opacity": 0,
+            "position": "absolute",
+            "top": 0,
+            "transform": "translateZ(0)",
+            "transition": "opacity 250ms linear",
+            "width": "100%",
+            "willChange": "opacity",
+          }
+        }
+        tw="mr-2 h-8"
+      />
+    </picture>
+  </noscript>
+  <script
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "const t=\\"undefined\\"!=typeof HTMLImageElement&&\\"loading\\"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll(\\"img[data-main-image]\\");for(let e of t){e.dataset.src&&(e.setAttribute(\\"src\\",e.dataset.src),e.removeAttribute(\\"data-src\\")),e.dataset.srcset&&(e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\"));const t=e.parentNode.querySelectorAll(\\"source[data-srcset]\\");for(let e of t)e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\");e.complete&&(e.style.opacity=1)}}",
+      }
+    }
+    type="module"
+  />
+</div>
+`;
+
 exports[`The logos should render the Netlify logo 1`] = `
 <div
   className="gatsby-image-wrapper"
