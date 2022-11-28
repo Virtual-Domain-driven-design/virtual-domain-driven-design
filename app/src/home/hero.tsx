@@ -94,7 +94,7 @@ const Hero = () => {
           </OutlineBlueButton>
           <OutlineBlueButton
             tw="lg:text-sm flex"
-            href="https://discord.gg/sEZGSHNNbH"
+            href="https://discord.gg/QtKQ2McGdU"
           >
             <DiscordLogo />
             <div tw="pl-2">Discord</div>

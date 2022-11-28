@@ -15,5 +15,34 @@
 
 # fallback with non-numeric id and a real image:
 upcomingSessions:
-  - id: "none"
-    img: ../images/kandddinsky.jpg
+  # - id: "none"
+  #   img: ../images/kandddinsky.jpg
+  - id: "85"
+    title: "[Open Space] - (Architectural) Decision Making Gathering"
+    date: "January 2nd, 2023"
+    time: "19:00 CET"
+    img: ../images/sessions/session-85.jpg
+    level: all
+    description:
+     "
+      A common topic at conferences and on social media last year has been “How do we structure (architectural) decision-making?” Let’s begin 2023 exploring this question together!
+
+      On January 2, 2022, 8:00 PM GMT (Check for your timezone here) join the online virtual Decision Making Open Space.
+
+      In this four-hour unconference, you can be both a participant and a speaker in this open-space format. Everyone joining can suggest session topics; the attendees set the agenda they want to explore. This means this conference will go wherever the attendees want it to go.
+
+      You’ll be sent a link to the event space prior to the event if you RSVP yes and get accepted on Meetup. We will be using Spatial chat and miro to facilitate this!
+
+      The event will be free of charge, but space is limited. We do accept donations to help us pay for Spatial chat. You can donate any number you want or pay for 1 Spatial chat day pass on our open collective page. We are happy with any donations! The more donations we get, the higher the attendee limit. Any money left over will be donated to a cause promoting software design to nontraditional communities!
+
+      See you in 2023! If you have any questions, you can contact us at organisers@virtualddd.com.
+     "
+    tags:
+      - software design
+      - software architecture
+      - decision-making
+    links:
+      - label: "RSVP on the Meetup"
+        url: "https://www.meetup.com/virtual-domain-driven-design-meetup/events/289743148/"
+      - label: "Donate for our event"
+        url: "https://opencollective.com/virtualddd/events/architectural-decision-making-gathering-d2203754"
