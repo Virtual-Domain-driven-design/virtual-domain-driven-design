@@ -9,7 +9,7 @@ type VideoEmbedProps = {
 
 //Note: the video-link equals '-', the default value used here for building gatsby pages
 const VideoEmbed = (videoEmbedProps: VideoEmbedProps) => {
-  return videoEmbedProps.video.length > 5 ? (
+  return videoEmbedProps?.video?.length > 5 ? (
     <div css={[{ paddingTop: "56.25%" }, tw`relative`]}>
       <div tw="text-center m-1">Video</div>
       <iframe
