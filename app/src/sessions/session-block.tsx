@@ -25,7 +25,6 @@ const SessionBlock = (sessionBlockProps: SessionBlockProps) => {
       </div>
       <div tw="flex flex-col xl:w-1/3 w-5/6 m-2 items-center space-y-2">
         <div tw="w-full rounded-lg shadow-md">
-          <div tw="text-center m-1">Video</div>
           <VideoEmbed
             title={sessionBlockProps.title}
             video={sessionBlockProps.video}

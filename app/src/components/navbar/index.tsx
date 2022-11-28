@@ -39,7 +39,7 @@ const SocialSubItems = () => {
       </a>
       <a
         tw="p-4 text-lg leading-tight cursor-pointer flex-shrink-0 rounded-lg hover:bg-gray-400 hover:text-blue-700 flex items-center lg:justify-center"
-        href="https://discord.gg/sEZGSHNNbH"
+        href="https://discord.gg/QtKQ2McGdU"
         target="_blank"
         rel="noopener noreferrer"
       >
