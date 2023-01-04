@@ -18,4 +18,18 @@ describe("The link parser", () => {
     )
     expect(result?.text).toEqual("(https://twitter.com...)")
   })
+
+  it("should replace miro URIs with links", () => {
+    const description =
+      "Link to miro:\n" +
+      "https://miro.com/app/board/uXjVPEdHYFg=/\n"
+
+    const { container } = render(<ParsedContent text={description} />)
+
+    const result = container.querySelector("span")?.querySelector("a")
+    expect(result?.href).toEqual(
+      "https://miro.com/app/board/uXjVPEdHYFg="
+    )
+    expect(result?.text).toEqual("(https://miro.com...)")
+  })
 })
