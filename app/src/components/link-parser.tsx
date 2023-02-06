@@ -5,7 +5,7 @@ import processString from "react-process-string"
 const ParsedContent = (props: { text: string }) => {
   const config = [
     {
-      regex: /(www|http:\/\/|https:\/\/[\w.]+)[^\s]+[\w]/gim,
+      regex: /(www|http:\/\/|https:\/\/[\w.]+)[^\s]+[\w=]/gim,
       fn: (key: string, result: string) => (
         <span key={key}>
           <a
