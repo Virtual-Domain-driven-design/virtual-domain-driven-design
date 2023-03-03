@@ -10,7 +10,7 @@ type SocialLogos = {
   websiteLogo: ChildImageSharp
   twitterLogo: ChildImageSharp
   linkedInLogo: ChildImageSharp
-  mastadonLogo: ChildImageSharp
+  mastodonLogo: ChildImageSharp
 }
 
 type Images = {
@@ -31,7 +31,7 @@ type OrganiserProps = {
   tagline: string
   website?: string
   twitter?: string
-  mastadon?: string
+  mastodon?: string
   linkedin?: string
   socialLogos: SocialLogos
 }
@@ -42,7 +42,7 @@ const Organiser = ({
   tagline,
   website,
   twitter,
-  mastadon,
+  mastodon,
   linkedin = "",
   socialLogos,
 }: OrganiserProps) => {
@@ -88,15 +88,15 @@ const Organiser = ({
           />
         </a>
         <a
-          href={`${mastadon}`}
+          href={`${mastodon}`}
           target="_blank"
           rel="noopener noreferrer"
           tw="rounded-full transform scale-100 duration-100 hover:scale-110"
-          css={!mastadon && tw`hidden`}
+          css={!mastodon && tw`hidden`}
         >
           <GatsbyImage
-            image={socialLogos.mastadonLogo.childImageSharp.gatsbyImageData}
-            alt={mastadon}
+            image={socialLogos.mastodonLogo.childImageSharp.gatsbyImageData}
+            alt={mastodon}
             tw="h-10 w-10 object-contain"
           />
         </a>
@@ -136,7 +136,7 @@ const Organisers = () => {
           gatsbyImageData(layout: FULL_WIDTH)
         }
       }
-      mastadonLogo: file(relativePath: { eq: "logo/mastadon.png" }) {
+      mastodonLogo: file(relativePath: { eq: "logo/mastodon.png" }) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
         }
@@ -192,7 +192,7 @@ const Organisers = () => {
     twitterLogo: images.twitterLogo,
     linkedInLogo: images.linkedInLogo,
     websiteLogo: images.websiteLogo,
-    mastadonLogo: images.mastadonLogo,
+    mastodonLogo: images.mastodonLogo,
   }
   return (
     <div
@@ -209,7 +209,7 @@ const Organisers = () => {
             image={images.krisztina.childImageSharp.gatsbyImageData}
             tagline="Coding Architect"
             website="https://yellow-brick-code.org/"
-            mastadon="https://mastodon.social/@yellowbrickc"
+            mastodon="https://mastodon.social/@yellowbrickc"
             linkedin="in/christina-hirth-yellowbrickcode?locale=en_US"
             socialLogos={logos}
           />
@@ -227,7 +227,7 @@ const Organisers = () => {
             image={images.andrea.childImageSharp.gatsbyImageData}
             tagline=""
             website="https://www.roundcrisis.com"
-            mastadon="https://types.pl/@roundcrisis"
+            mastodon="https://types.pl/@roundcrisis"
             linkedin="in/magnorsky"
             socialLogos={logos}
           />
@@ -236,7 +236,7 @@ const Organisers = () => {
             image={images.diana.childImageSharp.gatsbyImageData}
             tagline="Nonlinear thinker"
             twitter="dianamontalion"
-            mastadon="https://hachyderm.io/@diana"
+            mastodon="https://hachyderm.io/@diana"
             linkedin="in/dianamontalion/"
             socialLogos={logos}
           />
