@@ -10,6 +10,7 @@ type SocialLogos = {
   websiteLogo: ChildImageSharp
   twitterLogo: ChildImageSharp
   linkedInLogo: ChildImageSharp
+  mastadonLogo: ChildImageSharp
 }
 
 type Images = {
@@ -20,14 +21,17 @@ type Images = {
   maxime: ChildImageSharp
   kacper: ChildImageSharp
   krisztina: ChildImageSharp
+  andrea: ChildImageSharp
+  diana: ChildImageSharp
 }
 
 type OrganiserProps = {
   name: string
   image: IGatsbyImageData
   tagline: string
-  website: string
-  twitter: string
+  website?: string
+  twitter?: string
+  mastadon?: string
   linkedin?: string
   socialLogos: SocialLogos
 }
@@ -38,6 +42,7 @@ const Organiser = ({
   tagline,
   website,
   twitter,
+  mastadon,
   linkedin = "",
   socialLogos,
 }: OrganiserProps) => {
@@ -83,6 +88,19 @@ const Organiser = ({
           />
         </a>
         <a
+          href={`${mastadon}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          tw="rounded-full transform scale-100 duration-100 hover:scale-110"
+          css={!mastadon && tw`hidden`}
+        >
+          <GatsbyImage
+            image={socialLogos.mastadonLogo.childImageSharp.gatsbyImageData}
+            alt={mastadon}
+            tw="h-10 w-10 object-contain"
+          />
+        </a>
+        <a
           href={`https://linkedin.com/${linkedin}`}
           target="_blank"
           rel="noopener noreferrer"
@@ -114,6 +132,11 @@ const Organisers = () => {
         }
       }
       linkedInLogo: file(relativePath: { eq: "logo/linkedin.png" }) {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
+        }
+      }
+      mastadonLogo: file(relativePath: { eq: "logo/mastadon.png" }) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
         }
@@ -153,12 +176,23 @@ const Organisers = () => {
           gatsbyImageData(layout: FULL_WIDTH)
         }
       }
+      andrea: file(relativePath: { eq: "organisers/andrea.jpeg" }) {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
+        }
+      }
+      andrea: file(relativePath: { eq: "organisers/diana.png" }) {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
+        }
+      }
     }
   `)
   const logos: SocialLogos = {
     twitterLogo: images.twitterLogo,
     linkedInLogo: images.linkedInLogo,
     websiteLogo: images.websiteLogo,
+    mastadonLogo: images.mastadonLogo,
   }
   return (
     <div
@@ -171,21 +205,12 @@ const Organisers = () => {
         </h2>
         <div tw="w-full flex-wrap flex flex-col sm:flex-row justify-center items-stretch">
           <Organiser
-            name="Zsofia Herendi"
-            image={images.zsofia.childImageSharp.gatsbyImageData}
-            tagline="Flow addict PM"
-            website="https://www.zherendi.com/"
-            twitter="ZHerendi"
-            linkedin="in/zsófia-herendi-2296b48"
-            socialLogos={logos}
-          />
-          <Organiser
-            name="Marco Heimeshoff"
-            image={images.marco.childImageSharp.gatsbyImageData}
-            tagline="Business software artist"
-            website="https://www.heimeshoff.de/"
-            twitter="Heimeshoff"
-            linkedin="in/heimeshoff"
+            name="Krisztina Hirth"
+            image={images.krisztina.childImageSharp.gatsbyImageData}
+            tagline="Coding Architect"
+            website="https://yellow-brick-code.org/"
+            mastadon="https://mastodon.social/@yellowbrickc"
+            linkedin="in/christina-hirth-yellowbrickcode?locale=en_US"
             socialLogos={logos}
           />
           <Organiser
@@ -198,12 +223,39 @@ const Organisers = () => {
             socialLogos={logos}
           />
           <Organiser
-            name="Maxime Sanglan-Charlier"
-            image={images.maxime.childImageSharp.gatsbyImageData}
-            tagline="Connecting people circa 97"
-            website="https://blog.onehundredacorns.com/"
-            twitter="__MaxS__"
-            linkedin="company/ncrafts"
+            name="Andrea Magnorsky"
+            image={images.krisztina.childImageSharp.gatsbyImageData}
+            tagline=""
+            website="https://www.roundcrisis.com"
+            twitter="YellowBrickC"
+            linkedin="in/christina-hirth-yellowbrickcode?locale=en_US"
+            socialLogos={logos}
+          />
+          <Organiser
+            name="Diana Montalion"
+            image={images.krisztina.childImageSharp.gatsbyImageData}
+            tagline="Nonlinear thinker"
+            twitter="dianamontalion"
+            mastadon="https://hachyderm.io/@diana"
+            linkedin="in/dianamontalion/"
+            socialLogos={logos}
+          />
+          <Organiser
+            name="Marco Heimeshoff"
+            image={images.marco.childImageSharp.gatsbyImageData}
+            tagline="Business software artist"
+            website="https://www.heimeshoff.de/"
+            twitter="Heimeshoff"
+            linkedin="in/heimeshoff"
+            socialLogos={logos}
+          />
+          <Organiser
+            name="Zsofia Herendi"
+            image={images.zsofia.childImageSharp.gatsbyImageData}
+            tagline="Flow addict PM"
+            website="https://www.zherendi.com/"
+            twitter="ZHerendi"
+            linkedin="in/zsófia-herendi-2296b48"
             socialLogos={logos}
           />
           <Organiser
@@ -216,21 +268,21 @@ const Organisers = () => {
             socialLogos={logos}
           />
           <Organiser
+            name="Maxime Sanglan-Charlier"
+            image={images.maxime.childImageSharp.gatsbyImageData}
+            tagline="Connecting people circa 97"
+            website="https://blog.onehundredacorns.com/"
+            twitter="__MaxS__"
+            linkedin="company/ncrafts"
+            socialLogos={logos}
+          />
+          <Organiser
             name="Kacper Gunia"
             image={images.kacper.childImageSharp.gatsbyImageData}
             tagline="Domain Explorer"
             website="https://domaincentric.net/"
             twitter="cakper"
             linkedin="in/cakper"
-            socialLogos={logos}
-          />
-          <Organiser
-            name="Krisztina Hirth"
-            image={images.krisztina.childImageSharp.gatsbyImageData}
-            tagline="Coding Architect"
-            website="https://yellow-brick-code.org/"
-            twitter="YellowBrickC"
-            linkedin="in/christina-hirth-yellowbrickcode?locale=en_US"
             socialLogos={logos}
           />
         </div>
