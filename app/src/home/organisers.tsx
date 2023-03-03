@@ -181,7 +181,7 @@ const Organisers = () => {
           gatsbyImageData(layout: FULL_WIDTH)
         }
       }
-      andrea: file(relativePath: { eq: "organisers/diana.png" }) {
+      diana: file(relativePath: { eq: "organisers/diana.png" }) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
         }
@@ -224,16 +224,16 @@ const Organisers = () => {
           />
           <Organiser
             name="Andrea Magnorsky"
-            image={images.krisztina.childImageSharp.gatsbyImageData}
+            image={images.andrea.childImageSharp.gatsbyImageData}
             tagline=""
             website="https://www.roundcrisis.com"
-            twitter="YellowBrickC"
-            linkedin="in/christina-hirth-yellowbrickcode?locale=en_US"
+            mastadon="https://types.pl/@roundcrisis"
+            linkedin="in/magnorsky"
             socialLogos={logos}
           />
           <Organiser
             name="Diana Montalion"
-            image={images.krisztina.childImageSharp.gatsbyImageData}
+            image={images.diana.childImageSharp.gatsbyImageData}
             tagline="Nonlinear thinker"
             twitter="dianamontalion"
             mastadon="https://hachyderm.io/@diana"
