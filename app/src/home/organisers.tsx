@@ -225,7 +225,7 @@ const Organisers = () => {
           <Organiser
             name="Andrea Magnorsky"
             image={images.andrea.childImageSharp.gatsbyImageData}
-            tagline=""
+            tagline="Systems and Functional Programming"
             website="https://www.roundcrisis.com"
             mastodon="https://types.pl/@roundcrisis"
             linkedin="in/magnorsky"

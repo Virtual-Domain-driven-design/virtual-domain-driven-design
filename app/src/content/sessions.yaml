@@ -10,6 +10,36 @@
 #   tags:
 #     - ""
 sessions:
+  - id: "86"
+    title: "(Hands-on) The power of personal engagement by Rozemarijn & Evelien"
+    date: "February 7th, 2023"
+    time: "19:00 CET"
+    img: ../images/sessions/session-86.jpg
+    video: "https://www.youtube.com/embed/Xof9iz2uOms"
+    podcast: 
+    level: all
+    description:
+     "
+        Do you want to understand how to increase your team's engagement and help your team grow? Come and explore the advantages of personal engagement. What makes a team thrive? How do you increase the effectiveness of a Scrum team? In this session, we will help you forward by using scientific principles and practical tools!
+
+        In the Power of personal engagement we share how to increase personal engagement, we will provide you with useful information and practices to get everyone involved and we will help you gain insight into non-verbal behavior to increase your communication skills.
+
+        We will be combining brain science principles from ‘Training From the Back of the Room’ and the science behind non-verbal behavior to help you improve your personal impact and the engagement of your team.
+        We practice what we preach; expect an interactive workshop full of exercises to keep you engaged.
+
+        Learning outcomes:
+
+            Apply brain science principles in your daily work
+            Recognize and adjust non-verbal signs to better connect your team
+            Activate your teams through personal engagement
+
+        ** This is a hands-on session, were you require Pen and Paper for **
+     "
+    tags:
+      - behavioral science
+      - team building
+      - software development
+      - agile coaching
   - id: "85"
     title: "[Open Space] - (Architectural) Decision Making Gathering"
     date: "January 2nd, 2023"
