@@ -1,5 +1,5 @@
 # - name: "Name of your community"
-#   id: 17
+#   id: 18
 #   country: "Country of the community"
 #   city: "optional - the city the community is in"
 #   url: "The url to the website of the community"
@@ -101,3 +101,9 @@ communities:
 #    city:
 #    url: "https://www.facebook.com/groups/dddnepal"
 #    img: "https://scontent.fktm4-1.fna.fbcdn.net/v/t1.0-9/156606279_104231895063171_6728976815590896314_o.png?_nc_cat=105&ccb=3&_nc_sid=825194&_nc_ohc=3LKORrGlXy8AX_CE_uv&_nc_ht=scontent.fktm4-1.fna&oh=6385cf3ff503de67a073e48215a3967a&oe=6065620F"
+  - name: "Domain-Driven Design Australia"
+    id: 17
+    country: "Australia"
+    city: "Sydney & Melbourne"
+    url: "https://www.meetup.com/en-AU/domain-driven-design-australia/"
+    img: "https://secure.meetupstatic.com/photos/event/e/3/9/5/clean_510478261.jpeg"
