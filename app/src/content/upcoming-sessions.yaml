@@ -22,7 +22,7 @@ upcomingSessions:
     date: "May 23st, 2023"
     time: "19:00 CEST"
     img: ../images/sessions/session-88.jpg
-    video: 
+    video: "https://www.youtube.com/embed/4wGbHpIMtvM"
     podcast: 
     level: all
     description:
