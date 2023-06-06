@@ -17,29 +17,64 @@
 upcomingSessions:
   # - id: "none"
   #   img: ../images/kandddinsky.jpg
-  - id: "88"
-    title: "Practical Residuality by Barry M O'Reilly"
-    date: "May 23st, 2023"
+  # - id: "88"
+  #   title: "Practical Residuality by Barry M O'Reilly"
+  #   date: "May 23st, 2023"
+  #   time: "19:00 CEST"
+  #   img: ../images/sessions/session-88.jpg
+  #   video: "https://www.youtube.com/embed/4wGbHpIMtvM"
+  #   podcast: 
+  #   level: all
+  #   description:
+  #    "
+  #     This session focuses on how residuality theory is used in practice and will involve hands on work with matrices to test and validate architectures that participants are currently working on.
+
+  #     Check-out the recording of the previous meetup to learn more about Residuality theory by Barry: https://virtualddd.com/sessions/83
+  #   "
+  #   tags:
+  #     - software design
+  #     - software architecture
+  #     - complexity theory
+  #   links:
+  #     - label: "RSVP on Meetup"
+  #       url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/291931659/"
+  #     - label: "interact on zoom"
+  #       url: "https://us02web.zoom.us/j/81536582609"
+  #     - label: "Watch on YouTube"
+  #       url: "https://youtube.com/live/4wGbHpIMtvM"
+  - id: "89"
+    title: "Domain Experiments with Mike Wojtyna"
+    date: "June 29th, 2023"
     time: "19:00 CEST"
-    img: ../images/sessions/session-88.jpg
-    video: "https://www.youtube.com/embed/4wGbHpIMtvM"
+    img: ../images/sessions/session-89.jpg
+    video: "https://www.youtube.com/embed/bl0E7-ov4gw"
     podcast: 
     level: all
     description:
      "
-      This session focuses on how residuality theory is used in practice and will involve hands on work with matrices to test and validate architectures that participants are currently working on.
+      Our clients don't know what they need.
 
-      Check-out the recording of the previous meetup to learn more about Residuality theory by Barry: https://virtualddd.com/sessions/83
-    "
+      This happens because no one can foresee the future.
+      Requirements will evolve and change rapidly over the lifecycle of the project. That's why we need to constantly refine systems.
+      We can keep building and discarding prototypes, but it's extremely costly.
+      Often we can't afford to rewrite everything from scratch only because some new domain insights were discovered.
+
+      This eventually leads to a mismatched model.
+      Is there another way?
+
+      We can focus on domain only and refine our model through examples, until we find the right conceptual contours (http://ddd.fed.wiki.org/view/welcome-visitors/view/conceptual-contours).
+      Each such iteration of the model is a kind of experiment challenging the upfront decisions.
+
+      During this presentation I'm going to show how you can use example mapping combined with business-oriented TDD to be able to run rapid experiments directly on the domain model, without a need to rewrite the system again.
+      "
     tags:
       - software design
       - software architecture
-      - complexity theory
     links:
       - label: "RSVP on Meetup"
-        url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/291931659/"
+        url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/294019574/"
       - label: "interact on zoom"
-        url: "https://us02web.zoom.us/j/81536582609"
+        url: "https://us02web.zoom.us/j/87978164653"
       - label: "Watch on YouTube"
-        url: "https://youtube.com/live/4wGbHpIMtvM"
+        url: "https://youtube.com/live/bl0E7-ov4gw"
  
