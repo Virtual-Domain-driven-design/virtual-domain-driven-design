@@ -43,8 +43,8 @@ sessions:
     date: "April 21st, 2023"
     time: "18:00 CET"
     img: ../images/sessions/session-87.jpg
-    video: 
-    podcast: 
+    video: "https://www.youtube.com/embed/npEMhjMY3ks"
+    podcast: "https://oembed.libsyn.com/embed?item_id=27362913"
     level: all
     description:
      "
