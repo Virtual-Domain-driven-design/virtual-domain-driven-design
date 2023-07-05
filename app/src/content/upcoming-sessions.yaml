@@ -15,8 +15,8 @@
 
 # fallback with non-numeric id and a real image:
 upcomingSessions:
-  - id: "none"
-    img: ../images/kandddinsky.jpg
+  # - id: "none"
+  #   img: ../images/kandddinsky.jpg
   - id: "90"
     title: "[Fireside chat] orchestration and choreography with Laila Bougria & Udi Dahan"
     date: "July 26th, 2023"
