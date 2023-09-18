@@ -2,6 +2,7 @@
 #   id: ""
 #   date: ""
 #   time: ""
+#   img: ""
 #   video: ""
 #   podcast: ""
 #   level: "all, beginner, intermediate or advanced"
@@ -10,6 +11,24 @@
 #   tags:
 #     - ""
 sessions:
+  - id: "91"
+    title: "Practical Residuality by Barry M O'Reilly"
+    date: "August 29th, 2023"
+    time: "19:00 CEST"
+    img: ../images/sessions/session-88.jpg
+    video:
+    podcast:
+    level: advanced
+    description:
+      "
+      This session focuses on how residuality theory is used in practice and will involve hands on work with matrices to test and validate architectures that participants are currently working on.
+
+      Check-out the recording of the previous meetup to learn more about Residuality theory by Barry: https://virtualddd.com/sessions/83
+    "
+    tags:
+      - software design
+      - software architecture
+      - complexity theory
   - id: "90"
     title: "[Fireside chat] orchestration and choreography with Laila Bougria & Udi Dahan"
     date: "July 26th, 2023"
@@ -34,7 +53,7 @@ sessions:
     time: "19:00 CEST"
     img: ../images/sessions/session-89.jpg
     video: "https://www.youtube.com/embed/bl0E7-ov4gw"
-    podcast: 
+    podcast:
     level: all
     description:
      "
@@ -90,7 +109,7 @@ sessions:
     time: "19:00 CET"
     img: ../images/sessions/session-86.jpg
     video: "https://www.youtube.com/embed/Xof9iz2uOms"
-    podcast: 
+    podcast:
     level: all
     description:
      "

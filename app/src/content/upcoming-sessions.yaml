@@ -17,38 +17,13 @@
 upcomingSessions:
   # - id: "none"
   #   img: ../images/kandddinsky.jpg
-  - id: "91"
-    title: "Practical Residuality by Barry M O'Reilly"
-    date: "August 29th, 2023"
-    time: "19:00 CEST"
-    img: ../images/sessions/session-88.jpg
-    video: "https://www.youtube.com/embed/4wGbHpIMtvM"
-    podcast: 
-    level: all
-    description:
-     "
-      This session focuses on how residuality theory is used in practice and will involve hands on work with matrices to test and validate architectures that participants are currently working on.
-
-      Check-out the recording of the previous meetup to learn more about Residuality theory by Barry: https://virtualddd.com/sessions/83
-    "
-    tags:
-      - software design
-      - software architecture
-      - complexity theory
-    links:
-      - label: "RSVP on Meetup"
-        url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/294468736/"
-      - label: "interact on zoom"
-        url: "https://us02web.zoom.us/j/85405449724"
-      - label: "Watch on YouTube"
-        url: "https://youtube.com/live/4wGbHpIMtvM"
   - id: "92"
     title: "[Virtual open Space] Systems Thinking and Skillful Interaction"
     date: "September 20th, 2023"
     time: "18:00 CEST"
     img: ../images/sessions/session-92.jpg
-    video: 
-    podcast: 
+    video:
+    podcast:
     level: all
     description:
      "
@@ -67,4 +42,3 @@ upcomingSessions:
         url: "https://opencollective.com/virtualddd/events/a-virtual-open-space-meetup-on-systems-thinking-and-skillful-interaction-9075b732"
       - label: "RSVP on Meetup"
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/295145833/"
- 
