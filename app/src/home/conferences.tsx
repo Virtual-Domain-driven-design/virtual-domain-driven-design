@@ -100,15 +100,15 @@ const Conferences: FC = () => {
             name="Domain-Driven Design Europe"
             image={data.dddeu.childImageSharp.gatsbyImageData}
             location="Amsterdam, Netherlands"
-            date="23-24 June 2022"
+            date="May 27-30 2024"
             website="https://dddeurope.com/"
           />
-          <Conference
-            name="EventSourcing Live"
-            image={data.esrc_live.childImageSharp.gatsbyImageData}
-            location="Antwerp, Belgium"
-            date="3-4 October 2022"
-            website="https://eventsourcing.live/"
+        <Conference
+            name="DDD Foundations"
+            image={data.dddeu.childImageSharp.gatsbyImageData}
+            location="Amsterdam, Netherlands"
+            date="May 29 2024"
+            website="https://dddeurope.com/"
           />
           <Conference
             name="KanDDDinsky"
