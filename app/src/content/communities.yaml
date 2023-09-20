@@ -107,3 +107,9 @@ communities:
     city: "Sydney & Melbourne"
     url: "https://www.meetup.com/en-AU/domain-driven-design-australia/"
     img: "https://secure.meetupstatic.com/photos/event/e/3/9/5/clean_510478261.jpeg"
+  - name: "Domain-Driven Design United States"
+    id: 18
+    country: "United States"
+    city: "virtual"
+    url: "https://dddunitedstates.com/"
+    img: "https://dddunitedstates.com/wp-content/uploads/2023/09/DDD-LOGOFINALSTEEL-BLUE-1536x540.png"
