@@ -97,6 +97,27 @@ const Conferences: FC = () => {
       <div tw="md:w-5/6">
         <div tw="flex justify-center flex-wrap">
           <Conference
+            name="KanDDDinsky"
+            image={data.kddd.childImageSharp.gatsbyImageData}
+            location="Berlin, Germany"
+            date="Oct 4-6 2023"
+            website="https://kandddinsky.de/"
+          />
+          <Conference
+            name="Explore DDD"
+            image={data.eddd.childImageSharp.gatsbyImageData}
+            location="Denver, United States"
+            date="March 12-15 2024"
+            website="http://exploreddd.com/"
+          />
+          <Conference
+            name="KanDDDinsky"
+            image={data.kddd.childImageSharp.gatsbyImageData}
+            location="Berlin, Germany"
+            date="Oct 4-6 2023"
+            website="https://kandddinsky.de/"
+          />
+          <Conference
             name="Domain-Driven Design Europe"
             image={data.dddeu.childImageSharp.gatsbyImageData}
             location="Amsterdam, Netherlands"
@@ -109,13 +130,6 @@ const Conferences: FC = () => {
             location="Amsterdam, Netherlands"
             date="May 29 2024"
             website="https://dddeurope.com/"
-          />
-          <Conference
-            name="KanDDDinsky"
-            image={data.kddd.childImageSharp.gatsbyImageData}
-            location="Berlin, Germany"
-            date="31 Oct.-1 Nov. 2022"
-            website="https://kandddinsky.de/"
           />
         </div>
       </div>
