@@ -111,13 +111,6 @@ const Conferences: FC = () => {
             website="http://exploreddd.com/"
           />
           <Conference
-            name="KanDDDinsky"
-            image={data.kddd.childImageSharp.gatsbyImageData}
-            location="Berlin, Germany"
-            date="Oct 4-6 2023"
-            website="https://kandddinsky.de/"
-          />
-          <Conference
             name="Domain-Driven Design Europe"
             image={data.dddeu.childImageSharp.gatsbyImageData}
             location="Amsterdam, Netherlands"
