@@ -11,6 +11,26 @@
 #   tags:
 #     - ""
 sessions:
+  - id: "92"
+    title: "[Virtual open Space] Systems Thinking and Skillful Interaction"
+    date: "September 20th, 2023"
+    time: "18:00 CEST"
+    img: ../images/sessions/session-92.jpg
+    video:
+    podcast:
+    level: all
+    description:
+     "
+      Complexity is inevitable. As our software solutions continue to evolve and expand, we need skills that enable us to deliver features, at scale, reliably. The challenge lies in understanding and building up skills to pivot from 'keep it simple' to 'work in complexity'.
+
+      Let's explore this question together at our upcoming Virtual Domain-Driven Design Open Space Meetup on September 20th, 2023. Jessica Kerr, a renowned systems thinker, will kick off the event with a keynote.
+    "
+    tags:
+      - software design
+      - software architecture
+      - complexity theory
+      - systems thinking
+      - observability
   - id: "91"
     title: "Practical Residuality by Barry M O'Reilly"
     date: "August 29th, 2023"

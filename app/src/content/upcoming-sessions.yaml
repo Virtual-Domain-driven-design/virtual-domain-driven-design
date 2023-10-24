@@ -17,19 +17,19 @@
 upcomingSessions:
   # - id: "none"
   #   img: ../images/kandddinsky.jpg
-  - id: "92"
-    title: "[Virtual open Space] Systems Thinking and Skillful Interaction"
-    date: "September 20th, 2023"
+  - id: "93"
+    title: "[Virtual open Space] Improving your software design by Nourishing diversity"
+    date: "December 6th, 2023"
     time: "18:00 CEST"
-    img: ../images/sessions/session-92.jpg
+    img: ../images/sessions/session-93.jpg
     video:
     podcast:
     level: all
     description:
      "
-      Complexity is inevitable. As our software solutions continue to evolve and expand, we need skills that enable us to deliver features, at scale, reliably. The challenge lies in understanding and building up skills to pivot from 'keep it simple' to 'work in complexity'.
-
-      Let's explore this question together at our upcoming Virtual Domain-Driven Design Open Space Meetup on September 20th, 2023. Jessica Kerr, a renowned systems thinker, will kick off the event with a keynote.
+     Equality in software design isn't just nice to have; it's a game-changer. Imagine a brainstorming session where everyone's ideas are valued, regardless of their experience, gender, or background. When we're navigating the complexities of Domain-Driven Design, every unique perspective can be the key to unlocking new potentials. But here's the deal: we've been cycling through the same concepts because we've not tapped into the full spectrum of our team's diverse insights. This isn't about just ticking boxes; it's about unleashing a wealth of creativity and innovation that's been sidelined. We need to dismantle old barriers, create an even playing field, and celebrate the best ideas, no matter where they originate. So, how do we start making equality the heart of our design process?
+     
+     Let’s explore this question together at our upcoming Virtual Domain-Driven Design Open Space Meetup on December 6th, 2023 from 05:00 PM - 22:00 GMT. As usual we will start out the open space with a keynote, which we will announce at a later point in time.
     "
     tags:
       - software design
@@ -39,6 +39,6 @@ upcomingSessions:
       - observability
     links:
       - label: "Buy your 5 USD ticket"
-        url: "https://opencollective.com/virtualddd/events/a-virtual-open-space-meetup-on-systems-thinking-and-skillful-interaction-9075b732"
+        url: "https://opencollective.com/virtualddd/events/improving-your-software-design-by-nourishing-diversity-76a631f8"
       - label: "RSVP on Meetup"
-        url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/295145833/"
+        url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/296929045/"
