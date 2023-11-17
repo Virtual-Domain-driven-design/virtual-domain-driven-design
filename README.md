@@ -12,7 +12,7 @@ We are continuously updating the website and functionality, if you have any idea
 
 ## Contribute
 
-The repository contains tw projects: ./app and ./stories (for storybook tests and playground).
+The repository contains two projects: ./app and ./stories (for storybook tests and playground).
 
 There are two ways to contribute:
 
