@@ -11,6 +11,26 @@
 #   tags:
 #     - ""
 sessions:
+  - id: "93"
+    title: "[Virtual open Space] Improving your software design by Nourishing diversity"
+    date: "December 6th, 2023"
+    time: "18:00 CET"
+    img: ../images/sessions/session-93.jpg
+    video:
+    podcast:
+    level: all
+    description:
+     "
+     Equality in software design isn't just nice to have; it's a game-changer. Imagine a brainstorming session where everyone's ideas are valued, regardless of their experience, gender, or background. When we're navigating the complexities of Domain-Driven Design, every unique perspective can be the key to unlocking new potentials. But here's the deal: we've been cycling through the same concepts because we've not tapped into the full spectrum of our team's diverse insights. This isn't about just ticking boxes; it's about unleashing a wealth of creativity and innovation that's been sidelined. We need to dismantle old barriers, create an even playing field, and celebrate the best ideas, no matter where they originate. So, how do we start making equality the heart of our design process?
+     
+     Let’s explore this question together at our upcoming Virtual Domain-Driven Design Open Space Meetup on December 6th, 2023 from 04:00 PM - 21:00 UTC. Matt Wynne, a programmer, consultant and coach with some thoughtful opinions on this matter, will kick us off with a keynote.
+    "
+    tags:
+      - software design
+      - software architecture
+      - complexity theory
+      - systems thinking
+      - observability
   - id: "92"
     title: "[Virtual open Space] Systems Thinking and Skillful Interaction"
     date: "September 20th, 2023"

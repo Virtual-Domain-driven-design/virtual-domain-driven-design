@@ -17,28 +17,32 @@
 upcomingSessions:
   # - id: "none"
   #   img: ../images/kandddinsky.jpg
-  - id: "93"
-    title: "[Virtual open Space] Improving your software design by Nourishing diversity"
-    date: "December 6th, 2023"
-    time: "18:00 CET"
-    img: ../images/sessions/session-93.jpg
-    video:
+  - id: "94"
+    title: "[Talk] Soft Skills for Technical Professionals by Jacqui Read"
+    date: "February 22nd, 2024"
+    time: "21:00 CET"
+    img: ../images/sessions/session-94.jpg
+    video: "https://www.youtube.com/embed/vYJaccD9HTQ"
     podcast:
     level: all
     description:
      "
-     Equality in software design isn't just nice to have; it's a game-changer. Imagine a brainstorming session where everyone's ideas are valued, regardless of their experience, gender, or background. When we're navigating the complexities of Domain-Driven Design, every unique perspective can be the key to unlocking new potentials. But here's the deal: we've been cycling through the same concepts because we've not tapped into the full spectrum of our team's diverse insights. This isn't about just ticking boxes; it's about unleashing a wealth of creativity and innovation that's been sidelined. We need to dismantle old barriers, create an even playing field, and celebrate the best ideas, no matter where they originate. So, how do we start making equality the heart of our design process?
-     
-     Let’s explore this question together at our upcoming Virtual Domain-Driven Design Open Space Meetup on December 6th, 2023 from 04:00 PM - 21:00 UTC. Matt Wynne, a programmer, consultant and coach with some thoughtful opinions on this matter, will kick us off with a keynote.
-    "
+    The strongest tech skills don't necessarily guarantee success. To get the best from those around you—and maximize your own influence—you need to boost your tech skills with soft skills. Luckily, small changes in the way you work can produce big results.
+    In this free webinar, Jacqui Read, author of Communication Patterns: A Guide for Developers and Architects, takes you on a whistle-stop tour of patterns and techniques to improve your visual, verbal, nonverbal, written, knowledge, and remote communication skills. You'll learn communication soft skills tuned specifically to a technical audience, which you can easily integrate into your existing workflows for quick and transformative results.
+    You'll learn how to:
+
+    Use soft skills to boost your technical skills
+    Explore visual, nonverbal, written, knowledge, and remote communication skills
+    Integrate communication soft skills into your everyday workflow for transformative results
+   "
     tags:
-      - software design
       - software architecture
-      - complexity theory
-      - systems thinking
-      - observability
+      - Domain-Driven Design
+      - Software development
     links:
-      - label: "Buy your 5 USD ticket"
-        url: "https://opencollective.com/virtualddd/events/improving-your-software-design-by-nourishing-diversity-76a631f8"
       - label: "RSVP on Meetup"
         url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/296929045/"
+      - label: "Goto zoom"
+        url: "https://us02web.zoom.us/j/87942675175"
+      - label: "YouTube and chill"
+        url: "https://youtube.com/live/vYJaccD9HTQ"
