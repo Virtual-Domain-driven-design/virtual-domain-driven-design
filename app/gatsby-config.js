@@ -155,13 +155,13 @@ module.exports = {
         remote: `https://github.com/ddd-crew/aggregate-design-canvas.git`,
       },
     },
-    {
-      resolve: `gatsby-source-git`,
-      options: {
-        name: `github-repo-ddd-crew-domain-message-flow-modelling`,
-        remote: `https://github.com/ddd-crew/domain-message-flow-modelling.git`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-git`,
+    //   options: {
+    //     name: `github-repo-ddd-crew-domain-message-flow-modelling`,
+    //     remote: `https://github.com/ddd-crew/domain-message-flow-modelling.git`,
+    //   },
+    // },
     {
       resolve: `gatsby-source-git`,
       options: {
