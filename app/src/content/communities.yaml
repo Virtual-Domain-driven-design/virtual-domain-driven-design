@@ -118,4 +118,10 @@ communities:
     country: "Italy"
     city: "Milan"
     url: "https://www.linkedin.com/company/ddd-open/"
-    img: "https://pbs.twimg.com/profile_images/1347128548415442945/VV_bL0Zk_400x400.png"
+    img: "https://pbs.twimg.com/profile_images/1347128548415442945/VV_bL0Zk_400x400.png" 
+  - name: "Era dos DDDescobrimentos"
+    id: 20
+    country: "Portugal"
+    city:
+    url: "https://www.linkedin.com/groups/9588357/"
+    img: "https://habrastorage.org/webt/gk/6e/ge/gk6ege9e0cewmpuwtti8mxoj3oa.png" 
