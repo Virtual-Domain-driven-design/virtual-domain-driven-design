@@ -71,6 +71,12 @@ communities:
     city: "Cologne"
     url: "https://www.meetup.com/Domain-Driven-Design-Koln-Bonn/"
     img: "https://secure.meetupstatic.com/photos/event/d/2/4/b/600_463013835.jpeg"
+  - name: "Do DDD - Domain Driven Design Dortmund"
+    id: 21
+    country: "Germany"
+    city: "Dortmund"
+    url: "https://www.meetup.com/de-DE/ddd-dortmund/"
+    img: "https://secure.meetupstatic.com/photos/event/a/e/d/7/clean_518564759.webp" 
   - name: "Domain-Driven Design Injection Kharkiv"
     id: 12
     country: "Ukraine"
