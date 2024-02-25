@@ -11,6 +11,28 @@
 #   tags:
 #     - ""
 sessions:
+  - id: "94"
+    title: "[Talk] Soft Skills for Technical Professionals by Jacqui Read"
+    date: "February 22nd, 2024"
+    time: "19:00 CET"
+    img: ../images/sessions/session-94.jpg
+    video: "https://www.youtube.com/embed/DYFKzqLnJmU"
+    podcast: "https://oembed.libsyn.com/embed?item_id=30096913"
+    level: all
+    description:
+     "
+    The strongest tech skills don't necessarily guarantee success. To get the best from those around you—and maximize your own influence—you need to boost your tech skills with soft skills. Luckily, small changes in the way you work can produce big results.
+    In this free webinar, Jacqui Read, author of Communication Patterns: A Guide for Developers and Architects, takes you on a whistle-stop tour of patterns and techniques to improve your visual, verbal, nonverbal, written, knowledge, and remote communication skills. You'll learn communication soft skills tuned specifically to a technical audience, which you can easily integrate into your existing workflows for quick and transformative results.
+    You'll learn how to:
+
+    Use soft skills to boost your technical skills
+    Explore visual, nonverbal, written, knowledge, and remote communication skills
+    Integrate communication soft skills into your everyday workflow for transformative results
+   "
+    tags:
+      - software architecture
+      - Domain-Driven Design
+      - Software development
   - id: "93"
     title: "[Virtual open Space] Improving your software design by Nourishing diversity"
     date: "December 6th, 2023"

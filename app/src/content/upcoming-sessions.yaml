@@ -15,34 +15,6 @@
 
 # fallback with non-numeric id and a real image:
 upcomingSessions:
-  # - id: "none"
-  #   img: ../images/kandddinsky.jpg
-  - id: "94"
-    title: "[Talk] Soft Skills for Technical Professionals by Jacqui Read"
-    date: "February 22nd, 2024"
-    time: "21:00 CET"
-    img: ../images/sessions/session-94.jpg
-    video: "https://www.youtube.com/embed/vYJaccD9HTQ"
-    podcast:
-    level: all
-    description:
-     "
-    The strongest tech skills don't necessarily guarantee success. To get the best from those around you—and maximize your own influence—you need to boost your tech skills with soft skills. Luckily, small changes in the way you work can produce big results.
-    In this free webinar, Jacqui Read, author of Communication Patterns: A Guide for Developers and Architects, takes you on a whistle-stop tour of patterns and techniques to improve your visual, verbal, nonverbal, written, knowledge, and remote communication skills. You'll learn communication soft skills tuned specifically to a technical audience, which you can easily integrate into your existing workflows for quick and transformative results.
-    You'll learn how to:
+  - id: "none"
+    img: ../images/kandddinsky.jpg
 
-    Use soft skills to boost your technical skills
-    Explore visual, nonverbal, written, knowledge, and remote communication skills
-    Integrate communication soft skills into your everyday workflow for transformative results
-   "
-    tags:
-      - software architecture
-      - Domain-Driven Design
-      - Software development
-    links:
-      - label: "RSVP on Meetup"
-        url: "https://www.meetup.com/Virtual-Domain-Driven-Design-meetup/events/296929045/"
-      - label: "Goto zoom"
-        url: "https://us02web.zoom.us/j/87942675175"
-      - label: "YouTube and chill"
-        url: "https://youtube.com/live/vYJaccD9HTQ"
