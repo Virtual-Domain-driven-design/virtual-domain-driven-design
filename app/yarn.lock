@@ -2,7 +2,7 @@
 # Manual changes might be lost - proceed with caution!
 
 __metadata:
-  version: 7
+  version: 6
   cacheKey: 9
 
 "@ampproject/remapping@npm:^2.1.0":
@@ -2946,9 +2946,9 @@ __metadata:
   linkType: hard
 
 "@sideway/formula@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@sideway/formula@npm:3.0.0"
-  checksum: 0c210798e48f58f10b9ba066f0b3d00098bb0485bac2d4ac01767d25e9f751c3b6890e08a7b123585207294f0024020c7ad81261dee7320fc9efe26b00b7752f
+  version: 3.0.1
+  resolution: "@sideway/formula@npm:3.0.1"
+  checksum: 8/e4beeebc9dbe2ff4ef0def15cec0165e00d1612e3d7cea0bc9ce5175c3263fc2c818b679bd558957f49400ee7be9d4e5ac90487e1625b4932e15c4aa7919c57a
   languageName: node
   linkType: hard
 
@@ -8891,9 +8891,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fsevents@patch:fsevents@npm%3A^2.1.2#optional!builtin<compat/fsevents>, fsevents@patch:fsevents@npm%3A~2.3.2#optional!builtin<compat/fsevents>":
+"fsevents@patch:fsevents@npm%3A^2.1.2#~builtin<compat/fsevents>, fsevents@patch:fsevents@npm%3A~2.3.2#~builtin<compat/fsevents>":
   version: 2.3.2
-  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#optional!builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"
+  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=18f3a7"
   dependencies:
     node-gyp: "npm:latest"
   conditions: os=darwin
@@ -17569,29 +17569,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@patch:resolve@npm%3A^1.10.0#optional!builtin<compat/resolve>, resolve@patch:resolve@npm%3A^1.12.0#optional!builtin<compat/resolve>, resolve@patch:resolve@npm%3A^1.14.2#optional!builtin<compat/resolve>, resolve@patch:resolve@npm%3A^1.18.1#optional!builtin<compat/resolve>, resolve@patch:resolve@npm%3A^1.20.0#optional!builtin<compat/resolve>, resolve@patch:resolve@npm%3A^1.22.0#optional!builtin<compat/resolve>, resolve@patch:resolve@npm%3A^1.3.2#optional!builtin<compat/resolve>":
+"resolve@patch:resolve@npm%3A^1.10.0#~builtin<compat/resolve>, resolve@patch:resolve@npm%3A^1.12.0#~builtin<compat/resolve>, resolve@patch:resolve@npm%3A^1.14.2#~builtin<compat/resolve>, resolve@patch:resolve@npm%3A^1.18.1#~builtin<compat/resolve>, resolve@patch:resolve@npm%3A^1.20.0#~builtin<compat/resolve>, resolve@patch:resolve@npm%3A^1.22.0#~builtin<compat/resolve>, resolve@patch:resolve@npm%3A^1.3.2#~builtin<compat/resolve>":
   version: 1.22.1
-  resolution: "resolve@patch:resolve@npm%3A1.22.1#optional!builtin<compat/resolve>::version=1.22.1&hash=c3c19d"
+  resolution: "resolve@patch:resolve@npm%3A1.22.1#~builtin<compat/resolve>::version=1.22.1&hash=07638b"
   dependencies:
     is-core-module: "npm:^2.9.0"
     path-parse: "npm:^1.0.7"
     supports-preserve-symlinks-flag: "npm:^1.0.0"
   bin:
     resolve: bin/resolve
-  checksum: a6f214b97d932445796f78dab7a898ec78966327e0d6cb571f90b6ac0f3b3347bf6bab0a071d899bfdc316b26ed845f6655310b38b8f6ee4da5272a0c5ecef85
+  checksum: 8/5656f4d0bedcf8eb52685c1abdf8fbe73a1603bb1160a24d716e27a57f6cecbe2432ff9c89c2bd57542c3a7b9d14b1882b73bfe2e9d7849c9a4c0b8b39f02b8b
   languageName: node
   linkType: hard
 
-"resolve@patch:resolve@npm%3A^2.0.0-next.3#optional!builtin<compat/resolve>":
+"resolve@patch:resolve@npm%3A^2.0.0-next.3#~builtin<compat/resolve>":
   version: 2.0.0-next.4
-  resolution: "resolve@patch:resolve@npm%3A2.0.0-next.4#optional!builtin<compat/resolve>::version=2.0.0-next.4&hash=c3c19d"
+  resolution: "resolve@patch:resolve@npm%3A2.0.0-next.4#~builtin<compat/resolve>::version=2.0.0-next.4&hash=07638b"
   dependencies:
     is-core-module: "npm:^2.9.0"
     path-parse: "npm:^1.0.7"
     supports-preserve-symlinks-flag: "npm:^1.0.0"
   bin:
     resolve: bin/resolve
-  checksum: 04c825cca722397520f79c0d7a9160259032af786efcc9d434c728e5e69117a9241da844a9ca3cc430fe63a0c41571c8ac9f193dd3216a3b65a14d7850f8ef5d
+  checksum: 8/4bf9f4f8a458607af90518ff73c67a4bc1a38b5a23fef2bb0ccbd45e8be89820a1639b637b0ba377eb2be9eedfb1739a84cde24fe4cd670c8207d8fea922b011
   languageName: node
   linkType: hard
 
@@ -19859,13 +19859,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A^4.4.4#optional!builtin<compat/typescript>":
+"typescript@patch:typescript@^4.4.4#~builtin<compat/typescript>":
   version: 4.4.4
-  resolution: "typescript@patch:typescript@npm%3A4.4.4#optional!builtin<compat/typescript>::version=4.4.4&hash=bbeadb"
+  resolution: "typescript@patch:typescript@npm%3A4.4.4#~builtin<compat/typescript>::version=4.4.4&hash=a1c5e5"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: aad326b217b0dc534a0f6c401096586831e96811c91400bcfce2d33cc0744493ab0b919586518dd6df9a1dc1d36829b5612f1022fe616e7882e434db23bd29fa
+  checksum: 8/3d1b04449662193544b81d055479d03b4c5dca95f1a82f8922596f089d894c9fefbe16639d1d9dfe26a7054419645530cef44001bc17aed1fe1eb3c237e9b3c7
   languageName: node
   linkType: hard
 
@@ -20582,90 +20582,90 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "vddd-site@workspace:."
   dependencies:
-    "@babel/core": "npm:^7.14.2"
-    "@babel/preset-typescript": "npm:^7.13.0"
-    "@fortawesome/fontawesome-svg-core": "npm:^6.1.1"
-    "@fortawesome/free-brands-svg-icons": "npm:^6.1.1"
-    "@fortawesome/free-solid-svg-icons": "npm:^6.1.1"
-    "@fortawesome/react-fontawesome": "npm:^0.1.19"
-    "@mdx-js/mdx": "npm:^1.6.22"
-    "@mdx-js/react": "npm:^1.6.22"
-    "@tailwindcss/line-clamp": "npm:^0.2.0"
-    "@tailwindcss/typography": "npm:^0.4.0"
-    "@testing-library/jest-dom": "npm:^5.16.4"
-    "@testing-library/react": "npm:^13.3.0"
-    "@types/jest": "npm:^26.0.21"
-    "@types/js-search": "npm:^1.4.0"
-    "@types/mdx-js__react": "npm:^1.5.3"
-    "@types/react": "npm:^18.0.0"
-    "@types/react-dom": "npm:^18.0.6"
-    "@types/react-helmet": "npm:^6.1.0"
-    "@types/react-test-renderer": "npm:^18.0.0"
-    "@types/styled-components": "npm:^5.1.9"
-    "@typescript-eslint/eslint-plugin": "npm:^4.18.0"
-    "@typescript-eslint/parser": "npm:^4.18.0"
-    autoprefixer: "npm:^10.2.5"
-    babel-eslint: "npm:^10.1.0"
-    babel-jest: "npm:^26.6.3"
-    babel-preset-gatsby: "npm:^1.5.0"
-    eslint: "npm:^7.22.0"
-    eslint-config-react-app: "npm:^6.0.0"
-    eslint-loader: "npm:^4.0.2"
-    eslint-plugin-flowtype: "npm:^5.4.0"
-    eslint-plugin-import: "npm:^2.22.1"
-    eslint-plugin-jest: "npm:^24.3.2"
-    eslint-plugin-jsx-a11y: "npm:6.4.1"
-    eslint-plugin-react: "npm:^7.22.0"
-    eslint-plugin-react-hooks: "npm:^4.2.0"
-    eslint-webpack-plugin: "npm:^2.5.2"
-    gatsby: "npm:^3.14.6"
-    gatsby-background-image: "npm:^1.5.0"
-    gatsby-cli: "npm:^3.14.2"
-    gatsby-plugin-eslint: "npm:^3.0.0"
-    gatsby-plugin-image: "npm:^1.2.0"
-    gatsby-plugin-manifest: "npm:^3.14.0"
-    gatsby-plugin-mdx: "npm:^2.14.2"
-    gatsby-plugin-netlify: "npm:^3.14.0"
-    gatsby-plugin-page-creator: "npm:^3.14.0"
-    gatsby-plugin-postcss: "npm:^4.1.0"
-    gatsby-plugin-react-helmet: "npm:^4.1.0"
-    gatsby-plugin-react-svg: "npm:^3.1.0"
-    gatsby-plugin-remove-serviceworker: "npm:^1.0.0"
-    gatsby-plugin-sharp: "npm:^3.14.3"
-    gatsby-plugin-sitemap: "npm:^3.3.0"
-    gatsby-plugin-styled-components: "npm:^4.1.0"
-    gatsby-plugin-testing: "npm:^0.3.4"
-    gatsby-plugin-typescript: "npm:3.14.0"
-    gatsby-remark-autolink-headers: "npm:^3.2.0"
-    gatsby-remark-copy-linked-files: "npm:^3.2.0"
-    gatsby-remark-images: "npm:^4.1.0"
-    gatsby-remark-smartypants: "npm:^3.2.0"
-    gatsby-source-filesystem: "npm:^3.14.0"
-    gatsby-source-git: "npm:^1.1.0"
-    gatsby-transformer-json: "npm:^3.14.0"
-    gatsby-transformer-remark: "npm:^3.2.0"
-    gatsby-transformer-sharp: "npm:^3.2.0"
-    gatsby-transformer-yaml: "npm:^3.14.0"
-    gbimage-bridge: "npm:^0.1.2"
-    identity-obj-proxy: "npm:^3.0.0"
-    jest: "npm:^26.6.3"
-    jest-styled-components: "npm:^7.0.3"
-    js-search: "npm:^2.0.0"
-    lint-staged: "npm:10.5.4"
-    postcss: "npm:^8.2.8"
-    prettier: "npm:2.2.1"
-    prop-types: "npm:^15.5.4"
-    react: "npm:^18.0.0"
-    react-dom: "npm:^18.0.0"
-    react-helmet: "npm:^6.1.0"
-    react-icons: "npm:^4.4.0"
-    react-is: "npm:^18.0.0"
-    react-process-string: "npm:^1.2.0"
-    react-test-renderer: "npm:^18.0.0"
-    styled-components: "npm:5.2.1"
-    tailwindcss: "npm:^2.2.19"
-    twin.macro: "npm:^2.8.1"
-    typescript: "npm:^4.4.4"
+    "@babel/core": ^7.14.2
+    "@babel/preset-typescript": ^7.13.0
+    "@fortawesome/fontawesome-svg-core": ^6.1.1
+    "@fortawesome/free-brands-svg-icons": ^6.1.1
+    "@fortawesome/free-solid-svg-icons": ^6.1.1
+    "@fortawesome/react-fontawesome": ^0.1.19
+    "@mdx-js/mdx": ^1.6.22
+    "@mdx-js/react": ^1.6.22
+    "@tailwindcss/line-clamp": ^0.2.0
+    "@tailwindcss/typography": ^0.4.0
+    "@testing-library/jest-dom": ^5.16.4
+    "@testing-library/react": ^13.3.0
+    "@types/jest": ^26.0.21
+    "@types/js-search": ^1.4.0
+    "@types/mdx-js__react": ^1.5.3
+    "@types/react": ^18.0.0
+    "@types/react-dom": ^18.0.6
+    "@types/react-helmet": ^6.1.0
+    "@types/react-test-renderer": ^18.0.0
+    "@types/styled-components": ^5.1.9
+    "@typescript-eslint/eslint-plugin": ^4.18.0
+    "@typescript-eslint/parser": ^4.18.0
+    autoprefixer: ^10.2.5
+    babel-eslint: ^10.1.0
+    babel-jest: ^26.6.3
+    babel-preset-gatsby: ^1.5.0
+    eslint: ^7.22.0
+    eslint-config-react-app: ^6.0.0
+    eslint-loader: ^4.0.2
+    eslint-plugin-flowtype: ^5.4.0
+    eslint-plugin-import: ^2.22.1
+    eslint-plugin-jest: ^24.3.2
+    eslint-plugin-jsx-a11y: 6.4.1
+    eslint-plugin-react: ^7.22.0
+    eslint-plugin-react-hooks: ^4.2.0
+    eslint-webpack-plugin: ^2.5.2
+    gatsby: ^3.14.6
+    gatsby-background-image: ^1.5.0
+    gatsby-cli: ^3.14.2
+    gatsby-plugin-eslint: ^3.0.0
+    gatsby-plugin-image: ^1.2.0
+    gatsby-plugin-manifest: ^3.14.0
+    gatsby-plugin-mdx: ^2.14.2
+    gatsby-plugin-netlify: ^3.14.0
+    gatsby-plugin-page-creator: ^3.14.0
+    gatsby-plugin-postcss: ^4.1.0
+    gatsby-plugin-react-helmet: ^4.1.0
+    gatsby-plugin-react-svg: ^3.1.0
+    gatsby-plugin-remove-serviceworker: ^1.0.0
+    gatsby-plugin-sharp: ^3.14.3
+    gatsby-plugin-sitemap: ^3.3.0
+    gatsby-plugin-styled-components: ^4.1.0
+    gatsby-plugin-testing: ^0.3.4
+    gatsby-plugin-typescript: 3.14.0
+    gatsby-remark-autolink-headers: ^3.2.0
+    gatsby-remark-copy-linked-files: ^3.2.0
+    gatsby-remark-images: ^4.1.0
+    gatsby-remark-smartypants: ^3.2.0
+    gatsby-source-filesystem: ^3.14.0
+    gatsby-source-git: ^1.1.0
+    gatsby-transformer-json: ^3.14.0
+    gatsby-transformer-remark: ^3.2.0
+    gatsby-transformer-sharp: ^3.2.0
+    gatsby-transformer-yaml: ^3.14.0
+    gbimage-bridge: ^0.1.2
+    identity-obj-proxy: ^3.0.0
+    jest: ^26.6.3
+    jest-styled-components: ^7.0.3
+    js-search: ^2.0.0
+    lint-staged: 10.5.4
+    postcss: ^8.2.8
+    prettier: 2.2.1
+    prop-types: ^15.5.4
+    react: ^18.0.0
+    react-dom: ^18.0.0
+    react-helmet: ^6.1.0
+    react-icons: ^4.4.0
+    react-is: ^18.0.0
+    react-process-string: ^1.2.0
+    react-test-renderer: ^18.0.0
+    styled-components: 5.2.1
+    tailwindcss: ^2.2.19
+    twin.macro: ^2.8.1
+    typescript: ^4.4.4
   languageName: unknown
   linkType: soft
 
